@@ -46,23 +46,28 @@ export function CountdownTimer({
   secLabel,
   targetMs,
 }: CountdownTimerProps) {
-  // SSR-stable initial: compute a deterministic target so the server
-  // and the first client render match exactly (no hydration mismatch).
-  const target =
-    typeof targetMs === 'number'
-      ? targetMs
-      : Date.now() + DEFAULT_TARGET_OFFSET
-
-  const [remaining, setRemaining] = useState(target - Date.now())
+  // ── Hydration-safe: target is computed once on the client, NOT during SSR.
+  // The initial paint always shows the default offset value, so server and
+  // client first render match. We recompute the real `remaining` in an
+  // effect on mount.
+  const [remaining, setRemaining] = useState<number>(DEFAULT_TARGET_OFFSET)
   const prefersReduced = useReducedMotion()
 
   useEffect(() => {
-    // First paint already has the SSR value; this just keeps it ticking.
+    // Compute real target on mount (client only) — must run after SSR to
+    // avoid hydration mismatch (Date.now() differs server vs client).
+    const realTarget =
+      typeof targetMs === 'number'
+        ? targetMs
+        : Date.now() + DEFAULT_TARGET_OFFSET
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- mount 时同步真实剩余时间，并启动 1s interval
+    setRemaining(Math.max(0, realTarget - Date.now()))
+
     const id = setInterval(() => {
-      setRemaining(Math.max(0, target - Date.now()))
+      setRemaining(Math.max(0, realTarget - Date.now()))
     }, 1000)
     return () => clearInterval(id)
-  }, [target])
+  }, [targetMs])
 
   const { d, h, m, s } = format(remaining)
 

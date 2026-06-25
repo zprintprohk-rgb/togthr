@@ -186,12 +186,13 @@ export default function CapsulePage() {
           })}
         </div>
 
-        {/* Pet character overlay */}
+        {/* Pet character overlay — sits at the center of the active cell.
+            Grid cells: each 1/3 of container, center at (col+0.5)/3, (row+0.5)/3. */}
         <motion.div
           className="pointer-events-none absolute z-10"
           animate={{
-            top: `calc(${row * 33.33}% + ${row === 1 ? '50%' : '0%'})`,
-            left: `calc(${col * 33.33}% + ${col === 1 ? '50%' : '0%'})`,
+            top: `${(row + 0.5) * 33.3333}%`,
+            left: `${(col + 0.5) * 33.3333}%`,
           }}
           transition={{ type: 'spring', stiffness: 100, damping: 15 }}
           style={{ transform: 'translate(-50%, -50%)' }}
