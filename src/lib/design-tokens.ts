@@ -33,7 +33,8 @@ export const RELATION_MODES: RelationModeConfig[] = [
     labelEn: 'Couple',
     gradient: 'linear-gradient(135deg, #7C3AED 0%, #F472B6 100%)',
     arcColor: 'rgba(244, 114, 182, 0.32)',
-    petSprite: '/pets/expression-loveyou.png',
+    // FIX 2026-06-26: expression-loveyou.png 不存在于 public/pets/，改成 sticker-loveyou.png
+    petSprite: '/pets/sticker-loveyou.png',
   },
   {
     id: 'bff',
