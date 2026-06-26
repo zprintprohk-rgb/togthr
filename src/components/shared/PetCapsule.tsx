@@ -108,7 +108,7 @@ export function PetCapsule({
     <div
       ref={wrapRef}
       className={cn(
-        'group relative',
+        'group relative shrink-0',
         SIZE_CLASS[size],
         parallax && 'transition-transform duration-200 ease-out',
         onClick && 'cursor-pointer',

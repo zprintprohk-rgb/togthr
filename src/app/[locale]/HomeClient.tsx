@@ -74,7 +74,12 @@ const STICKERS: Array<{ src: string; label: string }> = [
   { src: '/pets/sticker-thumbsup.png', label: '👍' },
 ]
 
-/* ── Typewriter (本地小组件 — 单行 + 循环光标) ── */
+/* ── Typewriter (本地小组件 — 单行 + 循环光标) ──
+ * Hydration-safe 设计：
+ *   - SSR 阶段：displayed = text（直接渲染全文，避免 hydration mismatch）
+ *   - CSR mount 后：根据 prefers-reduced-motion 决定是否清空重打
+ *   - 修复了 prefersReduced 在 SSR 阶段 null、CSR 阶段 true 时的 token 漂移 bug
+ */
 function Typewriter({
   text,
   className,
@@ -86,13 +91,26 @@ function Typewriter({
   speed?: number
   startDelay?: number
 }) {
-  const prefersReduced = useReducedMotion()
-  // SSR-safe 初始值：prefersReduced 时直接显示全文
-  const [displayed, setDisplayed] = useState(() => (prefersReduced ? text : ''))
+  const prefersReducedRaw = useReducedMotion()
+  // SSR 一律按 false 处理（与 server 端一致）；CSR mount 后再异步更新
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true)
+  }, [])
+  // 只在客户端 mounted 后才用 prefersReduced；SSR + 首次 CSR 渲染都显示全文
+  const prefersReduced = mounted ? !!prefersReducedRaw : false
+
+  // 初始值始终 = text（SSR + CSR 一致）→ 修复 hydration mismatch
+  const [displayed, setDisplayed] = useState(text)
 
   useEffect(() => {
-    if (prefersReduced) return
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- typewriter 动画必须在 mount 后启动
+    if (prefersReduced) {
+      // 用户偏好减少动效：保持全文显示
+      setDisplayed(text)
+      return
+    }
+    // mount 后清空 + 重打（这样不影响首屏 SSR/CSR 一致性）
     setDisplayed('')
     let i = 0
     let timer: ReturnType<typeof setTimeout> | null = null
@@ -113,7 +131,9 @@ function Typewriter({
 
   return (
     <span className={className} aria-label={text} role="text">
-      <span aria-hidden="true">{displayed || '\u00A0'}</span>
+      <span aria-hidden="true" suppressHydrationWarning>
+        {displayed || '\u00A0'}
+      </span>
       <span
         aria-hidden="true"
         className="ml-0.5 inline-block w-[2px] align-baseline animate-cursor-blink"
@@ -218,14 +238,15 @@ export function HomeClient({
       className={`relative min-h-screen overflow-hidden bg-gradient-to-b ${SCENE_BG[skin]} text-zinc-100`}
     >
       {/* ════════════════ Hero — Always Here 沉浸式首屏 ════════════════ */}
+      {/* isolation: isolate — 创建独立 stacking context，防止 EmotionParticles 的 Canvas 监听整页 mouse + 避免 motion 节点被推到外面 */}
       <section
-        className="relative flex min-h-screen flex-col items-center justify-center px-4 pt-20 pb-12"
+        className="relative isolate flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 pt-20 pb-12"
         aria-label="Always Here hero"
       >
         {/* ── Layer 1: 大弧光 (关系模式驱动，深夜自动柔和) ── */}
         <motion.div
           aria-hidden="true"
-          className="pointer-events-none absolute left-1/2 top-1/2 h-[820px] w-[820px] -translate-x-1/2 -translate-y-1/2"
+          className="pointer-events-none absolute left-1/2 top-1/2 z-[1] h-[820px] w-[820px] -translate-x-1/2 -translate-y-1/2"
           style={{
             background: modeConfig.arcColor,
             filter: 'blur(80px)',
@@ -242,7 +263,7 @@ export function HomeClient({
         {/* 副弧光 — 与主弧光互补色调 */}
         <motion.div
           aria-hidden="true"
-          className="pointer-events-none absolute left-[20%] top-[15%] h-[420px] w-[420px]"
+          className="pointer-events-none absolute left-[20%] top-[15%] z-[1] h-[420px] w-[420px]"
           style={{
             background:
               'radial-gradient(ellipse at center, rgba(168,85,247,0.20) 0%, transparent 70%)',
@@ -258,16 +279,18 @@ export function HomeClient({
           transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
         />
 
-        {/* ── Layer 2: 情感粒子 (Canvas 2D — bubble + star + dust) ── */}
+        {/* ── Layer 2: 情感粒子 (Canvas 2D — bubble + star + dust)
+              pointer-events-none：不拦截鼠标，避免与 PetCapsule 监听打架 + 让用户能正常点击 CTA
+              z-[2]：在弧光之上、主内容之下 */}
         <EmotionParticles
           kinds={['bubble', 'star', 'dust']}
           intensity={particleIntensity}
           interactive
-          className="pointer-events-auto absolute inset-0 z-0"
+          className="pointer-events-none absolute inset-0 z-[2]"
         />
 
-        {/* ── 主体内容 ── */}
-        <div className="relative z-10 flex w-full max-w-4xl flex-col items-center gap-6">
+        {/* ── 主体内容 ── z-[3] 强制在所有装饰层之上，确保 hydration 期间 PetCapsule / Title 可见 */}
+        <div className="relative z-[3] flex w-full max-w-4xl flex-col items-center gap-6">
           {/* Eyebrow */}
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -278,11 +301,13 @@ export function HomeClient({
             ✦ {heroEyebrow} ✦
           </motion.p>
 
-          {/* PetCapsule (xl) — 中央休眠舱 */}
+          {/* PetCapsule (xl) — 中央休眠舱
+              motion.div 加 flex 容器，保证 spring 动画期间位置不漂移到角落 */}
           <motion.div
             initial={{ opacity: 0, scale: 0.7, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 1.0, type: 'spring', stiffness: 90 }}
+            className="flex items-center justify-center"
           >
             <PetCapsule
               src={modeConfig.petSprite}
@@ -401,7 +426,7 @@ export function HomeClient({
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.45 }}
           transition={{ delay: 2.3, duration: 0.5 }}
-          className="absolute bottom-6 left-1/2 -translate-x-1/2"
+          className="absolute bottom-6 left-1/2 z-[3] -translate-x-1/2"
           aria-hidden="true"
         >
           <motion.div
