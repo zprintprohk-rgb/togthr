@@ -803,5 +803,12 @@
     "autoPurgeHint": "{hours}時間後に消えます",
     "empty": "まだメモがありません。最初に一つ落としましょう。",
     "mockNotice": "Day 1 クライアントモック — 自動消去は Day 2。"
+  },
+  "errorPage": {
+    "title": "問題が発生しました",
+    "message": "ページでエラーが発生しました。ペットが対応中です。",
+    "tryAgain": "再試行",
+    "home": "ホーム",
+    "errorId": "エラー ID"
   }
 }

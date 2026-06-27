@@ -120,7 +120,7 @@ export function organizationSchema(locale: Locale): Record<string, unknown> {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      email: 'support@Togthr.com',
+      email: 'support@togthr.life',
       availableLanguage: routing.locales,
     },
   }

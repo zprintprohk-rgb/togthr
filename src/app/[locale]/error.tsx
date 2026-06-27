@@ -11,6 +11,7 @@
 
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 
 export default function GlobalError({
   error,
@@ -20,6 +21,7 @@ export default function GlobalError({
   reset: () => void
 }) {
   const router = useRouter()
+  const t = useTranslations('errorPage')
 
   useEffect(() => {
     // Server-side errors are logged with a digest for tracing.
@@ -33,18 +35,18 @@ export default function GlobalError({
   return (
     <div className="mx-auto flex min-h-[60vh] max-w-2xl flex-col items-center justify-center px-4 py-16 text-center">
       {/* Pixel art mascot for visual continuity */}
-      <div className="text-7xl mb-4 animate-pulse-slow">🐾</div>
+      <div className="mb-4 animate-pulse-slow text-7xl">🐾</div>
 
       <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-        Something went sideways
+        {t('title')}
       </h1>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        The page hit a snag. Your pet is on it.
+        {t('message')}
       </p>
 
       {error.digest && (
         <p className="mt-4 rounded-md bg-zinc-100 px-3 py-1 font-mono text-xs text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
-          Error ID: {error.digest}
+          {t('errorId')}: {error.digest}
         </p>
       )}
 
@@ -53,13 +55,13 @@ export default function GlobalError({
           onClick={reset}
           className="rounded-full bg-linear-to-r from-rose-500 to-purple-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50"
         >
-          🔄 Try again
+          🔄 {t('tryAgain')}
         </button>
         <button
           onClick={() => router.push('/')}
           className="rounded-full border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700"
         >
-          🏠 Home
+          🏠 {t('home')}
         </button>
       </div>
     </div>

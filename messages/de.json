@@ -803,5 +803,12 @@
     "autoPurgeHint": "verschwindet in {hours}h",
     "empty": "Noch keine Notizen. Sei die erste.",
     "mockNotice": "Day 1 Client-Mock — Auto-Löschung in Day 2."
+  },
+  "errorPage": {
+    "title": "Etwas ist schiefgelaufen",
+    "message": "Die Seite hat ein Problem. Dein Haustier kümmert sich darum.",
+    "tryAgain": "Erneut versuchen",
+    "home": "Startseite",
+    "errorId": "Fehler-ID"
   }
 }

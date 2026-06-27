@@ -803,5 +803,12 @@
     "autoPurgeHint": "{hours}시간 후 사라짐",
     "empty": "아직 메모가 없어요. 가장 먼저 하나 남겨보세요.",
     "mockNotice": "Day 1 클라이언트 목업 — 자동 삭제는 Day 2."
+  },
+  "errorPage": {
+    "title": "문제가 발생했습니다",
+    "message": "페이지에 오류가 발생했습니다. 펫이 처리 중입니다.",
+    "tryAgain": "다시 시도",
+    "home": "홈",
+    "errorId": "오류 ID"
   }
 }

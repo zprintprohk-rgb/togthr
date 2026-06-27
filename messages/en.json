@@ -809,5 +809,12 @@
     "autoPurgeHint": "vanishes in {hours}h",
     "empty": "No notes yet. Be the first to drop one.",
     "mockNotice": "Day 1 client mock — server-purge in Day 2."
+  },
+  "errorPage": {
+    "title": "Something went sideways",
+    "message": "The page hit a snag. Your pet is on it.",
+    "tryAgain": "Try again",
+    "home": "Home",
+    "errorId": "Error ID"
   }
 }

@@ -803,5 +803,12 @@
     "autoPurgeHint": "{hours}小时后消失",
     "empty": "还没有留言。第一个来留个脚印。",
     "mockNotice": "Day 1 客户端 mock — 服务端自动清理 Day 2 上线。"
+  },
+  "errorPage": {
+    "title": "出了点小状况",
+    "message": "页面遇到了小问题。你的宠物正在处理。",
+    "tryAgain": "重试",
+    "home": "首页",
+    "errorId": "错误 ID"
   }
 }

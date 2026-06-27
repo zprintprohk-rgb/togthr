@@ -803,5 +803,12 @@
     "autoPurgeHint": "disparaît dans {hours}h",
     "empty": "Pas encore de notes. Sois le premier.",
     "mockNotice": "Maquette Day 1 — suppression auto en Day 2."
+  },
+  "errorPage": {
+    "title": "Quelque chose a mal tourné",
+    "message": "La page a rencontré un problème. Votre animal s'en occupe.",
+    "tryAgain": "Réessayer",
+    "home": "Accueil",
+    "errorId": "ID d'erreur"
   }
 }

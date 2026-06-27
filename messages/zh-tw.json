@@ -803,5 +803,12 @@
     "autoPurgeHint": "{hours}小時後消失",
     "empty": "還沒有留言。第一個來留個腳印。",
     "mockNotice": "Day 1 客戶端 mock — 服務端自動清理 Day 2 上線。"
+  },
+  "errorPage": {
+    "title": "出了點小狀況",
+    "message": "頁面遇到了小問題。你的寵物正在處理。",
+    "tryAgain": "重試",
+    "home": "首頁",
+    "errorId": "錯誤 ID"
   }
 }

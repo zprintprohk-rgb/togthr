@@ -803,5 +803,12 @@
     "autoPurgeHint": "desaparece en {hours}h",
     "empty": "Aún no hay notas. Sé el primero.",
     "mockNotice": "Mock Día 1 — auto-borrado en Día 2."
+  },
+  "errorPage": {
+    "title": "Algo salió mal",
+    "message": "La página encontró un problema. Tu mascota está en ello.",
+    "tryAgain": "Intentar de nuevo",
+    "home": "Inicio",
+    "errorId": "ID de error"
   }
 }
