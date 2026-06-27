@@ -119,7 +119,7 @@ export const SharedJournalDemo: FC<SharedJournalDemoProps> = () => {
             transition={{ stiffness: 400, damping: 17, type: 'spring' }}
             onClick={handleWrite}
             disabled={!content.trim()}
-            className="w-full h-11 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-sm font-semibold shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+            className="w-full h-11 rounded-xl bg-linear-to-r from-emerald-500 to-teal-600 text-white text-sm font-semibold shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
           >
             {t('writeEntry')}
           </motion.button>
@@ -127,7 +127,7 @@ export const SharedJournalDemo: FC<SharedJournalDemoProps> = () => {
 
         {/* Right: Timeline */}
         <div className="rounded-2xl border border-white/40 bg-white/50 backdrop-blur-xl p-5 dark:border-purple-800/30 dark:bg-purple-950/30 shadow-sm">
-          <div className="relative pl-6 before:absolute before:left-[11px] before:top-0 before:bottom-0 before:w-[2px] before:bg-gradient-to-b before:from-emerald-400 before:to-teal-500 before:opacity-30 space-y-4">
+          <div className="relative pl-6 before:absolute before:left-[11px] before:top-0 before:bottom-0 before:w-[2px] before:bg-linear-to-b before:from-emerald-400 before:to-teal-500 before:opacity-30 space-y-4">
             {entries.map((entry) => {
               const isExpanded = expandedId === entry.id;
               const isYou = entry.author === 'you';

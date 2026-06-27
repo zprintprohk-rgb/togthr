@@ -38,7 +38,7 @@ export default function NotFoundPage() {
         aria-hidden="true"
       >
         {/* Soft glow ring behind */}
-        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-rose-300/20 via-amber-300/20 to-purple-400/20 blur-2xl" />
+        <div className="absolute inset-0 rounded-full bg-linear-to-br from-rose-300/20 via-amber-300/20 to-purple-400/20 blur-2xl" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/pets/expression-thinking.png"
@@ -60,7 +60,7 @@ export default function NotFoundPage() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="mb-2 font-mono text-7xl font-black tracking-tighter sm:text-8xl bg-gradient-to-r from-rose-500 via-amber-500 to-purple-600 bg-clip-text text-transparent"
+        className="mb-2 font-mono text-7xl font-black tracking-tighter sm:text-8xl bg-linear-to-r from-rose-500 via-amber-500 to-purple-600 bg-clip-text text-transparent"
       >
         404
       </motion.h1>
@@ -92,7 +92,7 @@ export default function NotFoundPage() {
       >
         <Link
           href="/"
-          className="inline-flex h-10 items-center rounded-full bg-gradient-to-r from-rose-500 to-purple-600 px-5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50"
+          className="inline-flex h-10 items-center rounded-full bg-linear-to-r from-rose-500 to-purple-600 px-5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50"
         >
           🏠 {t('backHome')}
         </Link>

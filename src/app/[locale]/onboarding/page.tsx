@@ -92,7 +92,7 @@ export default function OnboardingPage() {
   }
 
   return (
-    <div className="relative mx-auto flex min-h-[90vh] max-w-2xl flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#1a0b2e] via-[#0f0524] to-[#0a0118] px-4 py-10 text-zinc-100">
+    <div className="relative mx-auto flex min-h-[90vh] max-w-2xl flex-col items-center justify-center overflow-hidden bg-linear-to-b from-[#0B0B1A] via-[#110A20] to-[#06030F] px-4 py-10 text-zinc-100">
       {/* ── Cinematic atmosphere ── */}
       <div className="pointer-events-none absolute inset-0">
         {Array.from({ length: 30 }).map((_, i) => (
@@ -131,7 +131,7 @@ export default function OnboardingPage() {
               key={i}
               className={`h-2 w-8 rounded-full transition-all ${
                 i === step
-                  ? 'w-12 bg-gradient-to-r from-rose-500 to-purple-600'
+                  ? 'w-12 bg-linear-to-r from-rose-500 to-purple-600'
                   : i < step
                     ? 'bg-rose-300 dark:bg-purple-700'
                     : 'bg-zinc-200 dark:bg-zinc-700'
@@ -164,7 +164,7 @@ export default function OnboardingPage() {
                 className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(251,191,36,0.35)]"
               />
             </motion.div>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl bg-gradient-to-r from-amber-500 via-rose-500 to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl bg-linear-to-r from-amber-500 via-rose-500 to-purple-600 bg-clip-text text-transparent">
               {t('welcome.title')}
             </h1>
             <p className="mt-4 text-base text-zinc-600 dark:text-zinc-300">
@@ -172,7 +172,7 @@ export default function OnboardingPage() {
             </p>
             <button
               onClick={next}
-              className="mt-8 rounded-full bg-gradient-to-r from-rose-500 to-purple-600 px-8 py-3 text-base font-semibold text-white shadow-lg hover:shadow-purple-500/50"
+              className="mt-8 rounded-full bg-linear-to-r from-rose-500 to-purple-600 px-8 py-3 text-base font-semibold text-white shadow-lg hover:shadow-purple-500/50"
             >
               {t('welcome.cta')} →
             </button>
@@ -217,7 +217,7 @@ export default function OnboardingPage() {
               <button
                 onClick={next}
                 disabled={!petName.trim()}
-                className="rounded-full bg-gradient-to-r from-rose-500 to-purple-600 px-6 py-2.5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50 disabled:opacity-50"
+                className="rounded-full bg-linear-to-r from-rose-500 to-purple-600 px-6 py-2.5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50 disabled:opacity-50"
               >
                 {t('next')} →
               </button>
@@ -289,7 +289,7 @@ export default function OnboardingPage() {
               <button
                 onClick={finish}
                 disabled={!mode}
-                className="rounded-full bg-gradient-to-r from-rose-500 to-purple-600 px-6 py-2.5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50 disabled:opacity-50"
+                className="rounded-full bg-linear-to-r from-rose-500 to-purple-600 px-6 py-2.5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50 disabled:opacity-50"
               >
                 {t('finish')} 🎉
               </button>
@@ -307,7 +307,7 @@ export default function OnboardingPage() {
             className="text-center"
           >
             <div className="text-7xl mb-4">🎉</div>
-            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold sm:text-4xl bg-linear-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">
               {t('done.title', { name: petName || 'Togthr' })}
             </h2>
             <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-400">
@@ -317,7 +317,7 @@ export default function OnboardingPage() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
               <Link
                 href="/daily"
-                className="rounded-full bg-gradient-to-r from-rose-500 to-purple-600 px-6 py-2.5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50"
+                className="rounded-full bg-linear-to-r from-rose-500 to-purple-600 px-6 py-2.5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50"
               >
                 🐾 {t('done.feedPet')}
               </Link>
@@ -352,10 +352,10 @@ export default function OnboardingPage() {
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
           className="relative h-20 w-20"
         >
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
+          <div className="absolute inset-0 rounded-full bg-linear-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/pets/robot-base.png" alt="" className="relative h-full w-full object-contain drop-shadow-[0_4px_12px_rgba(251,191,36,0.4)]" />
-          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#0a0118] bg-emerald-400 animate-pulse" />
+          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#06030F] bg-emerald-400 animate-pulse" />
         </motion.div>
       </motion.div>
     </div>

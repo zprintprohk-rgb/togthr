@@ -300,7 +300,7 @@ export function PricingTheater({
             transition={{ duration: 0.6, delay: 0.05 }}
             className="mt-3 text-3xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
           >
-            <span className="bg-gradient-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-transparent">
               {copy.headline}
             </span>
           </motion.h1>
@@ -351,7 +351,7 @@ export function PricingTheater({
                 className={cn(
                   'rounded-full px-3 py-1.5 text-xs font-semibold transition-all sm:text-sm',
                   period === p
-                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md'
+                    ? 'bg-linear-to-r from-purple-500 to-pink-500 text-white shadow-md'
                     : 'text-zinc-400 hover:text-zinc-100',
                 )}
               >

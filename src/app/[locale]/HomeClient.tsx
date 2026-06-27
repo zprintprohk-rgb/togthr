@@ -57,7 +57,7 @@ function detectHolidaySkin(): HolidaySkin {
 
 /* ── Cinematic background palette (保留) ── */
 const SCENE_BG: Record<HolidaySkin, string> = {
-  default: 'from-[#1a0b2e] via-[#0f0524] to-[#0a0118]',
+  default: 'from-[#0B0B1A] via-[#110A20] to-[#06030F]',
   christmas: 'from-[#1a0a1a] via-[#0f0a1a] to-[#0a0518]',
   valentine: 'from-[#1a0b1f] via-[#0f0820] to-[#0a0418]',
   halloween: 'from-[#1a0f0a] via-[#0f0a05] to-[#0a0501]',
@@ -235,7 +235,7 @@ export function HomeClient({
 
   return (
     <div
-      className={`relative min-h-screen overflow-hidden bg-gradient-to-b ${SCENE_BG[skin]} text-zinc-100`}
+      className={`relative min-h-screen overflow-hidden bg-linear-to-b ${SCENE_BG[skin]} text-zinc-100`}
     >
       {/* ════════════════ Hero — Always Here 沉浸式首屏 ════════════════ */}
       {/* isolation: isolate — 创建独立 stacking context，防止 EmotionParticles 的 Canvas 监听整页 mouse + 避免 motion 节点被推到外面 */}
@@ -330,7 +330,7 @@ export function HomeClient({
           >
             <Typewriter
               text={heroTitle}
-              className="bg-gradient-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-transparent"
+              className="bg-linear-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-transparent"
               startDelay={900}
             />
           </motion.h1>
@@ -359,7 +359,7 @@ export function HomeClient({
             >
               <Link
                 href={`/${locale}/onboarding`}
-                className="group relative inline-flex h-12 items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-rose-500 via-purple-500 to-indigo-500 px-7 text-sm font-semibold text-white shadow-[0_0_36px_rgba(168,85,247,0.4)] transition-shadow hover:shadow-[0_0_52px_rgba(168,85,247,0.6)] sm:text-base"
+                className="group relative inline-flex h-12 items-center gap-2 overflow-hidden rounded-full bg-linear-to-r from-rose-500 via-purple-500 to-indigo-500 px-7 text-sm font-semibold text-white shadow-[0_0_36px_rgba(168,85,247,0.4)] transition-shadow hover:shadow-[0_0_52px_rgba(168,85,247,0.6)] sm:text-base"
               >
                 <span className="relative z-10">{heroCta}</span>
                 <span className="relative z-10 transition-transform group-hover:translate-x-1">→</span>
@@ -452,7 +452,7 @@ export function HomeClient({
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-amber-200/80">
             ✦ 04 Moments ✦
           </p>
-          <h2 className="bg-gradient-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
+          <h2 className="bg-linear-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
             {tCompanions('title')}
           </h2>
           <p className="mt-3 text-sm text-zinc-400">{tCompanions('subtitle')}</p>
@@ -582,7 +582,7 @@ export function HomeClient({
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-amber-200/80">
             ✦ 8 Expressions ✦
           </p>
-          <h2 className="bg-gradient-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
+          <h2 className="bg-linear-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
             {tCompanions('title')}
           </h2>
           <p className="mt-3 text-sm text-zinc-400">{tCompanions('subtitle')}</p>
@@ -683,12 +683,12 @@ function BentoCard({
     >
       <Link
         href={href}
-        className={`group relative flex h-full min-h-[180px] flex-col justify-between overflow-hidden rounded-3xl border bg-gradient-to-br p-6 backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${HUE_STYLES[hue]}`}
+        className={`group relative flex h-full min-h-[180px] flex-col justify-between overflow-hidden rounded-3xl border bg-linear-to-br p-6 backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${HUE_STYLES[hue]}`}
       >
         {visual}
         <div className="relative z-10 flex items-start justify-between">
           <div
-            className={`flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br ${HUE_STYLES[hue]
+            className={`flex h-10 w-10 items-center justify-center rounded-2xl bg-linear-to-br ${HUE_STYLES[hue]
               .split(' ')
               .filter((c) => c.startsWith('from-') || c.startsWith('via-') || c.startsWith('to-'))
               .join(' ')} text-white shadow-lg`}
@@ -713,7 +713,7 @@ function BentoCard({
             {description}
           </p>
         </div>
-        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-amber-300/0 via-rose-300/0 to-purple-400/0 transition-opacity group-hover:from-amber-300/10 group-hover:via-rose-300/10 group-hover:to-purple-400/10" />
+        <div className="absolute inset-0 -z-10 bg-linear-to-br from-amber-300/0 via-rose-300/0 to-purple-400/0 transition-opacity group-hover:from-amber-300/10 group-hover:via-rose-300/10 group-hover:to-purple-400/10" />
       </Link>
     </motion.div>
   )

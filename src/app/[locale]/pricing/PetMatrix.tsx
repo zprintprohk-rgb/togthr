@@ -221,7 +221,7 @@ function PlusGrid({
             {/* shimmer overlay */}
             <span
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-transparent"
+              className="pointer-events-none absolute inset-0 bg-linear-to-br from-white/20 via-transparent to-transparent"
             />
           </motion.div>
         ))}
@@ -273,7 +273,7 @@ function EternalGrid({
             {/* golden shimmer overlay */}
             <span
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-amber-200/40 via-amber-100/10 to-transparent"
+              className="pointer-events-none absolute inset-0 bg-linear-to-tr from-amber-200/40 via-amber-100/10 to-transparent"
             />
             {/* breath halo on hover/active */}
             <span

@@ -71,7 +71,7 @@ export function StoreBuyButton({ country, currency, price, label }: Props) {
         type="button"
         onClick={handleClick}
         disabled={loading}
-        className="w-full rounded-full bg-gradient-to-r from-rose-500 to-purple-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-purple-500/30 transition-all hover:from-rose-600 hover:to-purple-700 hover:shadow-purple-500/50 disabled:cursor-wait disabled:opacity-70"
+        className="w-full rounded-full bg-linear-to-r from-rose-500 to-purple-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-purple-500/30 transition-all hover:from-rose-600 hover:to-purple-700 hover:shadow-purple-500/50 disabled:cursor-wait disabled:opacity-70"
       >
         {loading ? '⏳ Connecting to PayPal...' : `🛒 ${label}`}
       </button>

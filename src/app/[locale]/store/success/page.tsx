@@ -50,7 +50,7 @@ export default async function StoreSuccessPage({
       {/* Confetti animation */}
       <div className="text-8xl mb-6 animate-bounce">🎉</div>
 
-      <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent sm:text-4xl">
+      <h1 className="text-3xl font-bold tracking-tight bg-linear-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent sm:text-4xl">
         {t('store.successTitle')}
       </h1>
 
@@ -76,7 +76,7 @@ export default async function StoreSuccessPage({
         </Link>
         <Link
           href={`/${locale}`}
-          className="rounded-full bg-gradient-to-r from-rose-500 to-purple-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50"
+          className="rounded-full bg-linear-to-r from-rose-500 to-purple-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50"
         >
           🏠 {t('nav.home')}
         </Link>

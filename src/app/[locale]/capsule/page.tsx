@@ -97,7 +97,7 @@ export default function CapsulePage() {
   const col = petCell % 3
 
   return (
-    <div className="relative mx-auto max-w-2xl overflow-hidden bg-gradient-to-b from-[#1a0b2e] via-[#0f0524] to-[#0a0118] px-4 py-10 text-zinc-100">
+    <div className="relative mx-auto max-w-2xl overflow-hidden bg-linear-to-b from-[#0B0B1A] via-[#110A20] to-[#06030F] px-4 py-10 text-zinc-100">
       {/* ── Cinematic atmosphere ── */}
       <div className="pointer-events-none absolute inset-0">
         {Array.from({ length: 30 }).map((_, i) => (
@@ -129,7 +129,7 @@ export default function CapsulePage() {
       </div>
       {/* Header */}
       <div className="mb-6 text-center">
-        <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent sm:text-4xl">
+        <h1 className="text-3xl font-bold tracking-tight bg-linear-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent sm:text-4xl">
           ⛏️ {t('title')}
         </h1>
         <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
@@ -146,7 +146,7 @@ export default function CapsulePage() {
       </div>
 
       {/* 3x3 Grid Map */}
-      <div className="relative mx-auto aspect-square w-full max-w-md rounded-3xl bg-gradient-to-br from-amber-50 to-orange-50 p-4 shadow-inner dark:from-amber-950/30 dark:to-orange-950/30">
+      <div className="relative mx-auto aspect-square w-full max-w-md rounded-3xl bg-linear-to-br from-amber-50 to-orange-50 p-4 shadow-inner dark:from-amber-950/30 dark:to-orange-950/30">
         <div className="grid h-full grid-cols-3 grid-rows-3 gap-3">
           {Array.from({ length: 9 }).map((_, i) => {
             const cap = capsules.find(c => c.cell === i)
@@ -229,7 +229,7 @@ export default function CapsulePage() {
                 animate={{ scale: 1, rotate: 0 }}
                 exit={{ scale: 0, rotate: 180 }}
                 transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-                className="relative w-full max-w-sm rounded-3xl border-4 border-amber-400 bg-gradient-to-br from-amber-50 to-yellow-50 p-8 text-center shadow-2xl dark:from-amber-950/60 dark:to-yellow-950/60"
+                className="relative w-full max-w-sm rounded-3xl border-4 border-amber-400 bg-linear-to-br from-amber-50 to-yellow-50 p-8 text-center shadow-2xl dark:from-amber-950/60 dark:to-yellow-950/60"
                 onClick={e => e.stopPropagation()}
               >
                 <div className="text-6xl mb-3">{cap.emoji}</div>
@@ -302,10 +302,10 @@ export default function CapsulePage() {
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
           className="relative h-20 w-20"
         >
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
+          <div className="absolute inset-0 rounded-full bg-linear-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/pets/robot-base.png" alt="" className="relative h-full w-full object-contain drop-shadow-[0_4px_12px_rgba(251,191,36,0.4)]" />
-          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#0a0118] bg-emerald-400 animate-pulse" />
+          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#06030F] bg-emerald-400 animate-pulse" />
         </motion.div>
       </motion.div>
     </div>

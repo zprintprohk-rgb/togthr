@@ -191,25 +191,25 @@ export function FeatureCard({
         {/* ── Top gradient light bar ── */}
         {theme && (
           <div
-            className={`h-[2px] w-full bg-gradient-to-r ${theme.barFrom} ${theme.barVia} ${theme.barTo} opacity-40 transition-opacity duration-500 group-hover:opacity-100 group-focus-visible:opacity-100`}
+            className={`h-[2px] w-full bg-linear-to-r ${theme.barFrom} ${theme.barVia} ${theme.barTo} opacity-40 transition-opacity duration-500 group-hover:opacity-100 group-focus-visible:opacity-100`}
           />
         )}
 
         {/* ── Background glow orb (hover reveal) ── */}
         {theme && (
           <div
-            className={`pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-gradient-to-br ${theme.glowFrom} ${theme.glowTo} blur-3xl opacity-0 transition-opacity duration-700 group-hover:opacity-20 group-focus-visible:opacity-20`}
+            className={`pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-linear-to-br ${theme.glowFrom} ${theme.glowTo} blur-3xl opacity-0 transition-opacity duration-700 group-hover:opacity-20 group-focus-visible:opacity-20`}
           />
         )}
 
         {/* ── Bottom gradient reflection (glass thickness) ── */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[30%] rounded-b-2xl bg-gradient-to-t from-white/20 to-transparent dark:from-purple-400/5" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[30%] rounded-b-2xl bg-linear-to-t from-white/20 to-transparent dark:from-purple-400/5" />
 
         {/* ── Card content ── */}
         <div className="relative p-7 text-left">
           {/* Icon container with gradient — w-14 h-14 */}
           <motion.div
-            className={`flex h-14 w-14 items-center justify-center rounded-xl shadow-sm ${theme ? `bg-gradient-to-br ${theme.iconFrom} ${theme.iconTo}` : 'bg-gradient-to-br from-pink-500 to-rose-400'}`}
+            className={`flex h-14 w-14 items-center justify-center rounded-xl shadow-sm ${theme ? `bg-linear-to-br ${theme.iconFrom} ${theme.iconTo}` : 'bg-linear-to-br from-pink-500 to-rose-400'}`}
             whileHover={
               prefersReduced
                 ? undefined
@@ -224,7 +224,7 @@ export function FeatureCard({
           </motion.div>
 
           {/* Title — gradient on hover */}
-          <h3 className="mt-4 font-semibold text-base text-zinc-900 transition-colors duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-600 group-hover:bg-clip-text group-hover:text-transparent dark:text-zinc-100 dark:group-hover:from-zinc-100 dark:group-hover:to-zinc-400">
+          <h3 className="mt-4 font-semibold text-base text-zinc-900 transition-colors duration-300 group-hover:bg-linear-to-r group-hover:from-gray-900 group-hover:to-gray-600 group-hover:bg-clip-text group-hover:text-transparent dark:text-zinc-100 dark:group-hover:from-zinc-100 dark:group-hover:to-zinc-400">
             {feature.title}
           </h3>
 

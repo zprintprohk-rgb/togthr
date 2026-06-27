@@ -75,14 +75,14 @@ export function PetCard({ pet, isSelected, onClick }: Props) {
           {pet.rarity === 'epic' && (
             <>
               <span className="pointer-events-none absolute -inset-2 rounded-3xl bg-purple-500/20 blur-xl" />
-              <span className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-400/15 via-fuchsia-400/10 to-purple-500/15" />
+              <span className="pointer-events-none absolute inset-0 rounded-2xl bg-linear-to-br from-purple-400/15 via-fuchsia-400/10 to-purple-500/15" />
             </>
           )}
           {/* legendary: 金光 + 呼吸 + 星星环绕 */}
           {pet.rarity === 'legendary' && (
             <>
               <span className="pointer-events-none absolute -inset-3 rounded-3xl bg-amber-400/25 blur-2xl animate-breath" />
-              <span className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-amber-300/20 via-rose-300/15 to-amber-200/20 animate-shimmer" style={{ backgroundSize: '200% 100%' }} />
+              <span className="pointer-events-none absolute inset-0 rounded-2xl bg-linear-to-br from-amber-300/20 via-rose-300/15 to-amber-200/20 animate-shimmer" style={{ backgroundSize: '200% 100%' }} />
               <LegendaryStars />
             </>
           )}

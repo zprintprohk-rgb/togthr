@@ -85,7 +85,7 @@ export default function JournalNestPage() {
   const decorations = MOOD_DECOR[dominantMood].slice(0, decorCount)
 
   return (
-    <div className="relative mx-auto max-w-2xl overflow-hidden bg-gradient-to-b from-[#1a0b2e] via-[#0f0524] to-[#0a0118] px-4 py-10 text-zinc-100">
+    <div className="relative mx-auto max-w-2xl overflow-hidden bg-linear-to-b from-[#0B0B1A] via-[#110A20] to-[#06030F] px-4 py-10 text-zinc-100">
       {/* ── Cinematic atmosphere ── */}
       <div className="pointer-events-none absolute inset-0">
         {Array.from({ length: 30 }).map((_, i) => (
@@ -117,7 +117,7 @@ export default function JournalNestPage() {
       </div>
       {/* Header */}
       <div className="mb-6 text-center">
-        <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent sm:text-4xl">
+        <h1 className="text-3xl font-bold tracking-tight bg-linear-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent sm:text-4xl">
           🪺 {t('title')}
         </h1>
         <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
@@ -126,7 +126,7 @@ export default function JournalNestPage() {
       </div>
 
       {/* Nest Visual */}
-      <div className="relative mx-auto mb-8 h-64 w-full max-w-md overflow-hidden rounded-3xl border-2 border-emerald-200 bg-gradient-to-b from-sky-100 via-emerald-50 to-amber-50 dark:border-emerald-800 dark:from-sky-950/40 dark:via-emerald-950/40 dark:to-amber-950/40">
+      <div className="relative mx-auto mb-8 h-64 w-full max-w-md overflow-hidden rounded-3xl border-2 border-emerald-200 bg-linear-to-b from-sky-100 via-emerald-50 to-amber-50 dark:border-emerald-800 dark:from-sky-950/40 dark:via-emerald-950/40 dark:to-amber-950/40">
         {/* Sky → ground gradient is the base */}
 
         {/* Decorations on the ground */}
@@ -184,7 +184,7 @@ export default function JournalNestPage() {
         </div>
         <div className="mt-2 h-2 overflow-hidden rounded-full bg-emerald-100 dark:bg-emerald-900/40">
           <motion.div
-            className="h-full rounded-full bg-gradient-to-r from-emerald-400 to-teal-500"
+            className="h-full rounded-full bg-linear-to-r from-emerald-400 to-teal-500"
             initial={{ width: 0 }}
             animate={{ width: `${progress}%` }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -223,7 +223,7 @@ export default function JournalNestPage() {
           <button
             onClick={addEntry}
             disabled={!draft.trim()}
-            className="rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 px-5 py-2 text-sm font-semibold text-white shadow hover:shadow-emerald-500/50 disabled:opacity-50"
+            className="rounded-full bg-linear-to-r from-emerald-500 to-teal-600 px-5 py-2 text-sm font-semibold text-white shadow hover:shadow-emerald-500/50 disabled:opacity-50"
           >
             🌱 {t('save')}
           </button>
@@ -267,10 +267,10 @@ export default function JournalNestPage() {
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
           className="relative h-20 w-20"
         >
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
+          <div className="absolute inset-0 rounded-full bg-linear-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/pets/robot-base.png" alt="" className="relative h-full w-full object-contain drop-shadow-[0_4px_12px_rgba(251,191,36,0.4)]" />
-          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#0a0118] bg-emerald-400 animate-pulse" />
+          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#06030F] bg-emerald-400 animate-pulse" />
         </motion.div>
       </motion.div>
     </div>

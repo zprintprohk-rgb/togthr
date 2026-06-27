@@ -138,7 +138,7 @@ export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
                 onClick={() => setType(opt.value)}
                 className={`w-11 h-11 rounded-xl text-lg flex items-center justify-center transition-all ${
                   type === opt.value
-                    ? 'bg-gradient-to-br from-purple-400 to-violet-500 text-white shadow-md shadow-purple-500/25 scale-110'
+                    ? 'bg-linear-to-br from-purple-400 to-violet-500 text-white shadow-md shadow-purple-500/25 scale-110'
                     : 'bg-white/30 backdrop-blur-md border border-white/40 text-zinc-500 hover:bg-white/40'
                 }`}
               >
@@ -153,7 +153,7 @@ export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
           transition={{ stiffness: 400, damping: 17, type: 'spring' }}
           onClick={handleCreate}
           disabled={!title.trim() || !unlockDate}
-          className="w-full h-11 rounded-xl bg-gradient-to-r from-purple-500 to-violet-600 text-white text-sm font-semibold shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+          className="w-full h-11 rounded-xl bg-linear-to-r from-purple-500 to-violet-600 text-white text-sm font-semibold shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
         >
           {t('lockCapsule')}
         </motion.button>

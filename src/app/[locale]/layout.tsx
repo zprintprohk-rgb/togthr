@@ -28,10 +28,10 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     const meta = marketMeta[locale]
 
     return {
-      metadataBase: new URL('https://Togthr.com'),
+      metadataBase: new URL('https://togthr.life'),
       title: {
         template: `%s | ${t('siteName') || 'Togthr'}`,
-        default: `${t('siteName') || 'Togthr'} 鈥?${t('tagline')}`,
+        default: `${t('siteName') || 'Togthr'} — ${t('tagline')}`,
       },
       description: t('description'),
       keywords: t('keywords'),
@@ -53,7 +53,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   } catch (error) {
     console.error('[layout] generateMetadata failed:', error)
     return {
-      metadataBase: new URL('https://Togthr.com'),
+      metadataBase: new URL('https://togthr.life'),
       title: 'Togthr',
       description: 'Togthr - Grow Together, Love Deeper',
     }
@@ -119,7 +119,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <div className="flex items-center gap-6">
               <Link
                 href={`/${locale}`}
-                className="text-xl font-bold tracking-tight bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent"
+                className="text-xl font-bold tracking-tight bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent"
               >
                 Togthr
               </Link>

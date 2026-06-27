@@ -175,8 +175,8 @@ export function TierCard({
           className={cn(
             'absolute -top-3 left-1/2 -translate-x-1/2 rounded-full px-3 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white shadow-md',
             tier === 'plus'
-              ? 'bg-gradient-to-r from-fuchsia-500 via-purple-500 to-indigo-500'
-              : 'bg-gradient-to-r from-amber-400 via-rose-400 to-purple-500',
+              ? 'bg-linear-to-r from-fuchsia-500 via-purple-500 to-indigo-500'
+              : 'bg-linear-to-r from-amber-400 via-rose-400 to-purple-500',
           )}
         >
           {badge}
@@ -276,8 +276,8 @@ export function TierCard({
           tier === 'free'
             ? 'border border-white/15 bg-white/5 text-zinc-100 hover:bg-white/10'
             : tier === 'plus'
-              ? 'bg-gradient-to-r from-fuchsia-500 via-purple-500 to-indigo-500 text-white shadow-lg shadow-fuchsia-500/30 hover:shadow-fuchsia-500/50'
-              : 'bg-gradient-to-r from-amber-300 via-rose-400 to-purple-500 text-zinc-900 shadow-lg shadow-amber-400/40 hover:shadow-amber-400/60',
+              ? 'bg-linear-to-r from-fuchsia-500 via-purple-500 to-indigo-500 text-white shadow-lg shadow-fuchsia-500/30 hover:shadow-fuchsia-500/50'
+              : 'bg-linear-to-r from-amber-300 via-rose-400 to-purple-500 text-zinc-900 shadow-lg shadow-amber-400/40 hover:shadow-amber-400/60',
         )}
       >
         {tier === 'free' ? (

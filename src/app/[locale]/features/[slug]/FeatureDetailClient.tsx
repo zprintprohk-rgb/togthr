@@ -43,7 +43,7 @@ function renderDemo(demoType: string, _theme: FeatureMeta['theme'], locale: stri
   }
 }
 
-const SCENE_BG = 'from-[#1a0b2e] via-[#0f0524] to-[#0a0118]'
+const SCENE_BG = 'from-[#0B0B1A] via-[#110A20] to-[#06030F]'
 
 const constellation = Array.from({ length: 40 }, (_, i) => ({
   id: i,
@@ -77,10 +77,10 @@ function FloatingMascot() {
         transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         className="relative h-20 w-20"
       >
-        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
+        <div className="absolute inset-0 rounded-full bg-linear-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/pets/robot-base.png" alt="" className="relative h-full w-full object-contain drop-shadow-[0_4px_12px_rgba(251,191,36,0.4)]" />
-        <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#0a0118] bg-emerald-400 animate-pulse" />
+        <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#06030F] bg-emerald-400 animate-pulse" />
       </motion.div>
     </motion.div>
   )
@@ -109,7 +109,7 @@ export function FeatureDetailClient({
   const Icon = ICON_MAP[feature.lucideIcon] ?? Sparkles
 
   return (
-    <div className={`relative min-h-screen overflow-hidden bg-gradient-to-b ${SCENE_BG} text-zinc-100`}>
+    <div className={`relative min-h-screen overflow-hidden bg-linear-to-b ${SCENE_BG} text-zinc-100`}>
       {/* Stars */}
       <div className="pointer-events-none absolute inset-0">
         {constellation.map(p => (
@@ -169,10 +169,10 @@ export function FeatureDetailClient({
             <motion.div
               animate={prefersReduced ? {} : { scale: [1, 1.15, 1], opacity: [0.4, 0.7, 0.4] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute inset-0 rounded-3xl bg-gradient-to-br from-amber-300/40 via-rose-300/30 to-purple-400/40 blur-2xl"
+              className="absolute inset-0 rounded-3xl bg-linear-to-br from-amber-300/40 via-rose-300/30 to-purple-400/40 blur-2xl"
             />
             <motion.div
-              className={`relative flex h-full w-full items-center justify-center rounded-3xl bg-gradient-to-br ${theme.iconFrom} ${theme.iconTo} shadow-2xl`}
+              className={`relative flex h-full w-full items-center justify-center rounded-3xl bg-linear-to-br ${theme.iconFrom} ${theme.iconTo} shadow-2xl`}
               whileHover={prefersReduced ? undefined : { scale: 1.08, rotate: [0, -5, 5, 0] }}
               animate={prefersReduced ? {} : { y: [0, -4, 0] }}
             >
@@ -180,7 +180,7 @@ export function FeatureDetailClient({
             </motion.div>
           </div>
 
-          <h1 className="mt-6 bg-gradient-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
+          <h1 className="mt-6 bg-linear-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
             {title}
           </h1>
           <p className="mx-auto mt-3 max-w-xl text-base text-zinc-300/90 leading-relaxed">
@@ -212,8 +212,8 @@ export function FeatureDetailClient({
                 className="group flex items-center gap-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl transition-colors hover:border-amber-300/30 hover:bg-white/10"
               >
                 <div className="relative flex h-12 w-12 flex-shrink-0 items-center justify-center">
-                  <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${theme.iconFrom} ${theme.iconTo} opacity-30 blur-md`} />
-                  <div className={`relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br ${theme.iconFrom} ${theme.iconTo} text-lg font-bold text-white shadow-lg`}>
+                  <div className={`absolute inset-0 rounded-2xl bg-linear-to-br ${theme.iconFrom} ${theme.iconTo} opacity-30 blur-md`} />
+                  <div className={`relative flex h-12 w-12 items-center justify-center rounded-2xl bg-linear-to-br ${theme.iconFrom} ${theme.iconTo} text-lg font-bold text-white shadow-lg`}>
                     {i + 1}
                   </div>
                 </div>
@@ -251,7 +251,7 @@ export function FeatureDetailClient({
         >
           <Link
             href={`/${locale}/pricing`}
-            className="group relative inline-flex h-14 items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-rose-500 via-purple-500 to-indigo-500 px-8 text-base font-semibold text-white shadow-[0_0_40px_rgba(168,85,247,0.4)] transition-shadow hover:shadow-[0_0_60px_rgba(168,85,247,0.6)]"
+            className="group relative inline-flex h-14 items-center gap-2 overflow-hidden rounded-full bg-linear-to-r from-rose-500 via-purple-500 to-indigo-500 px-8 text-base font-semibold text-white shadow-[0_0_40px_rgba(168,85,247,0.4)] transition-shadow hover:shadow-[0_0_60px_rgba(168,85,247,0.6)]"
           >
             <span className="relative z-10">{tCommon('home.hero.cta')}</span>
             <span className="relative z-10 transition-transform group-hover:translate-x-1">→</span>

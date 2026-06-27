@@ -24,10 +24,10 @@ export default async function LegalPage({ page }: { page: LegalPageKey }) {
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center bg-gradient-to-b from-rose-50 via-pink-50 to-white px-4 py-16 dark:from-rose-950/40 dark:via-purple-950/30 dark:to-zinc-950">
+    <div className="flex min-h-screen flex-col items-center bg-linear-to-b from-rose-50 via-pink-50 to-white px-4 py-16 dark:from-rose-950/40 dark:via-purple-950/30 dark:to-zinc-950">
       <article className="w-full max-w-3xl">
         <header className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl bg-gradient-to-r from-rose-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl bg-linear-to-r from-rose-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
             {t('title')}
           </h1>
           <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-300">

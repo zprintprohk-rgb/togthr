@@ -80,7 +80,7 @@ export default async function FaqPage({
         ) }}
       />
 
-      <div className="relative mx-auto max-w-3xl overflow-hidden bg-gradient-to-b from-[#1a0b2e] via-[#0f0524] to-[#0a0118] px-4 py-16 text-zinc-100 sm:py-24">
+      <div className="relative mx-auto max-w-3xl overflow-hidden bg-linear-to-b from-[#0B0B1A] via-[#110A20] to-[#06030F] px-4 py-16 text-zinc-100 sm:py-24">
         {/* ── Cinematic atmosphere ── */}
         <div className="pointer-events-none absolute inset-0">
           {Array.from({ length: 30 }).map((_, i) => (
@@ -116,7 +116,7 @@ export default async function FaqPage({
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-200/80 sm:text-sm">
             ✦ {t('nav.faq')} ✦
           </p>
-          <h1 className="bg-gradient-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
+          <h1 className="bg-linear-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
             {t('faq.title')}
           </h1>
           <p className="text-lg text-zinc-300/90">
@@ -171,10 +171,10 @@ export default async function FaqPage({
         {/* Floating mascot (CSS-only on server component) */}
         <div className="pointer-events-none fixed bottom-6 right-6 z-40 hidden md:block">
           <div className="relative h-20 w-20">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
+            <div className="absolute inset-0 rounded-full bg-linear-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/pets/robot-base.png" alt="" className="relative h-full w-full object-contain drop-shadow-[0_4px_12px_rgba(251,191,36,0.4)]" />
-            <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#0a0118] bg-emerald-400 animate-pulse" />
+            <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#06030F] bg-emerald-400 animate-pulse" />
           </div>
         </div>
       </div>

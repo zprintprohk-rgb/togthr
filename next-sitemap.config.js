@@ -1,18 +1,20 @@
 /** @type {import('next-sitemap').IConfig} */
+const SITE_URL = 'https://togthr.life'
+
 module.exports = {
-  siteUrl: 'https://we2.com',
+  siteUrl: SITE_URL,
   generateRobotsTxt: false,
   exclude: ['/api/*', '/server-sitemap.xml'],
   alternateRefs: [
-    { href: 'https://we2.com/', hreflang: 'en' },
-    { href: 'https://we2.com/zh-cn', hreflang: 'zh-cn' },
-    { href: 'https://we2.com/zh-tw', hreflang: 'zh-tw' },
-    { href: 'https://we2.com/ja', hreflang: 'ja' },
-    { href: 'https://we2.com/ko', hreflang: 'ko' },
-    { href: 'https://we2.com/de', hreflang: 'de' },
-    { href: 'https://we2.com/fr', hreflang: 'fr' },
-    { href: 'https://we2.com/es', hreflang: 'es' },
-    { href: 'https://we2.com/', hreflang: 'x-default' },
+    { href: `${SITE_URL}/`, hreflang: 'en' },
+    { href: `${SITE_URL}/zh-cn`, hreflang: 'zh-cn' },
+    { href: `${SITE_URL}/zh-tw`, hreflang: 'zh-tw' },
+    { href: `${SITE_URL}/ja`, hreflang: 'ja' },
+    { href: `${SITE_URL}/ko`, hreflang: 'ko' },
+    { href: `${SITE_URL}/de`, hreflang: 'de' },
+    { href: `${SITE_URL}/fr`, hreflang: 'fr' },
+    { href: `${SITE_URL}/es`, hreflang: 'es' },
+    { href: `${SITE_URL}/`, hreflang: 'x-default' },
   ],
   additionalPaths: async (config) => {
     const paths = []

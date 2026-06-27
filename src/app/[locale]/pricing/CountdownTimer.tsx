@@ -78,7 +78,7 @@ export function CountdownTimer({
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className={cn(
         'inline-flex items-center gap-3 rounded-full border border-amber-300/30',
-        'bg-gradient-to-r from-amber-300/10 via-rose-300/10 to-purple-300/10',
+        'bg-linear-to-r from-amber-300/10 via-rose-300/10 to-purple-300/10',
         'px-3 py-1.5 backdrop-blur',
       )}
       role="timer"

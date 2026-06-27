@@ -102,7 +102,7 @@ export default async function GuidePage({
       <div className="mx-auto max-w-4xl px-4 py-16 sm:py-24">
         {/* Hero */}
         <div className="text-center space-y-4">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             {guide.title}
           </h1>
           <p className="text-lg text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto">
@@ -121,7 +121,7 @@ export default async function GuidePage({
               {/* Section number badge */}
               <div className="flex items-start gap-4">
                 <div
-                  className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${sectionAccent[i % sectionAccent.length]} text-white text-sm font-bold shadow`}
+                  className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-linear-to-br ${sectionAccent[i % sectionAccent.length]} text-white text-sm font-bold shadow`}
                 >
                   {i + 1}
                 </div>
@@ -145,7 +145,7 @@ export default async function GuidePage({
         <div className="mt-16 text-center">
           <Link
             href="/register"
-            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-3 text-sm font-semibold text-white shadow-lg hover:from-purple-500 hover:to-pink-500 transition-all hover:shadow-xl"
+            className="inline-flex items-center justify-center rounded-full bg-linear-to-r from-purple-600 to-pink-600 px-8 py-3 text-sm font-semibold text-white shadow-lg hover:from-purple-500 hover:to-pink-500 transition-all hover:shadow-xl"
           >
             {guide.cta}
           </Link>

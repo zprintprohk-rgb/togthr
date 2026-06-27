@@ -135,7 +135,7 @@ export default function CommunityPage() {
   }
 
   return (
-    <div className="relative mx-auto max-w-2xl overflow-hidden bg-gradient-to-b from-[#1a0b2e] via-[#0f0524] to-[#0a0118] px-4 py-10 text-zinc-100">
+    <div className="relative mx-auto max-w-2xl overflow-hidden bg-linear-to-b from-[#0B0B1A] via-[#110A20] to-[#06030F] px-4 py-10 text-zinc-100">
       {/* ── Cinematic atmosphere ── */}
       <div className="pointer-events-none absolute inset-0">
         {Array.from({ length: 30 }).map((_, i) => (
@@ -168,7 +168,7 @@ export default function CommunityPage() {
 
       {/* Header */}
       <div className="mb-6 text-center">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
           🕳️ {t('title')}
         </h1>
         <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
@@ -217,7 +217,7 @@ export default function CommunityPage() {
             <button
               onClick={publish}
               disabled={!draft.trim()}
-              className="rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-4 py-1.5 text-xs font-semibold text-white shadow hover:shadow-purple-500/50 disabled:opacity-50"
+              className="rounded-full bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 px-4 py-1.5 text-xs font-semibold text-white shadow hover:shadow-purple-500/50 disabled:opacity-50"
             >
               🌱 {t('composer.send')}
             </button>
@@ -304,10 +304,10 @@ export default function CommunityPage() {
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
           className="relative h-20 w-20"
         >
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
+          <div className="absolute inset-0 rounded-full bg-linear-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/pets/robot-base.png" alt="" className="relative h-full w-full object-contain drop-shadow-[0_4px_12px_rgba(251,191,36,0.4)]" />
-          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#0a0118] bg-emerald-400 animate-pulse" />
+          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#06030F] bg-emerald-400 animate-pulse" />
         </motion.div>
       </motion.div>
     </div>

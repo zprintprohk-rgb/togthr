@@ -5,20 +5,25 @@ compatibility_date = "2026-05-29"
 compatibility_flags = ["nodejs_compat"]
 
 # ─── Non-sensitive env vars (production defaults) ────────────────────────
-# Sensitive vars (SUPABASE_SERVICE_ROLE_KEY, PAYPAL_CLIENT_SECRET, etc.)
+# Sensitive vars (SUPABASE_SERVICE_ROLE_KEY, PAYPAL_CLIENT_SECRET, ALIPAY_*_KEY, etc.)
 # are set via CLI: npx wrangler secret put <KEY>
+# Source of truth: .env.production (not committed; do NOT commit anon key)
 [vars]
 NEXT_PUBLIC_SITE_URL = "https://togthr.life"
 NEXTJS_ENV = "production"
 PAYPAL_MODE = "live"
-# ⚠️ Below must be set before deploy — either fill here or via wrangler secret
-NEXT_PUBLIC_SUPABASE_URL = ""
-NEXT_PUBLIC_SUPABASE_ANON_KEY = ""
+# Public Supabase (anon key is safe to inline into client bundle)
+NEXT_PUBLIC_SUPABASE_URL = "https://pcgwvqpzyqijrvikfawd.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable_aDkUMB90QwGQAlcWAGT5Eg_Wf9o_Z69"
+# Public R2 CDN (safe to inline)
+NEXT_PUBLIC_CDN_URL = "https://we2-storage.r2.dev"
+# PayPal client ID is technically public (used in browser SDK), kept here for convenience
 PAYPAL_CLIENT_ID = ""
 ALIPAY_APP_ID = ""
-ALIPAY_PUBLIC_KEY = ""
+# VAPID public key is public (browser push subscription needs it)
 VAPID_PUBLIC_KEY = ""
-CRON_SECRET = ""  # protects /api/cron/* endpoints
+# CRON_SECRET — protects /api/cron/* endpoints. Set via: npx wrangler secret put CRON_SECRET
+CRON_SECRET = ""
 
 # Cron trigger: daily UTC 0:00 to check expired subscriptions
 [triggers]

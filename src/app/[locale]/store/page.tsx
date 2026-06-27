@@ -74,7 +74,7 @@ export default async function StorePage({
   const regularPrice = 399
 
   return (
-    <div className="relative mx-auto max-w-6xl overflow-hidden bg-gradient-to-b from-[#1a0b2e] via-[#0f0524] to-[#0a0118] px-4 py-12 text-zinc-100 sm:py-20">
+    <div className="relative mx-auto max-w-6xl overflow-hidden bg-linear-to-b from-[#0B0B1A] via-[#110A20] to-[#06030F] px-4 py-12 text-zinc-100 sm:py-20">
       {/* ── Cinematic atmosphere ── */}
       <div className="pointer-events-none absolute inset-0">
         {Array.from({ length: 30 }).map((_, i) => (
@@ -110,7 +110,7 @@ export default async function StorePage({
         <p className="text-sm font-semibold uppercase tracking-wider text-rose-500 dark:text-rose-400">
           ✨ {t('store.firstOrder')} {getDisplayPrice(firstOrderPrice, cur)} · {t('store.save')}
         </p>
-        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl bg-gradient-to-r from-rose-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl bg-linear-to-r from-rose-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
           {t('store.blindboxTitle')}
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-zinc-600 dark:text-zinc-300">
@@ -127,7 +127,7 @@ export default async function StorePage({
               key={skin.id}
               className={`group relative aspect-square overflow-hidden rounded-2xl border-2 transition-transform duration-300 hover:scale-105 ${
                 isHidden
-                  ? 'border-amber-300 bg-gradient-to-br from-amber-50 to-yellow-100 dark:border-amber-600 dark:from-amber-950/40 dark:to-yellow-950/40'
+                  ? 'border-amber-300 bg-linear-to-br from-amber-50 to-yellow-100 dark:border-amber-600 dark:from-amber-950/40 dark:to-yellow-950/40'
                   : 'border-rose-100 bg-white dark:border-purple-800 dark:bg-purple-950/30'
               }`}
             >
@@ -146,7 +146,7 @@ export default async function StorePage({
                 loading="lazy"
               />
               {isHidden && (
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-amber-500/90 to-transparent p-3 text-center text-xs font-bold text-amber-50">
+                <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-amber-500/90 to-transparent p-3 text-center text-xs font-bold text-amber-50">
                   🌟 Golden 🌟
                 </div>
               )}
@@ -214,10 +214,10 @@ export default async function StorePage({
       {/* Floating mascot (CSS-only on server component) */}
       <div className="pointer-events-none fixed bottom-6 right-6 z-40 hidden md:block">
         <div className="relative h-20 w-20">
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
+          <div className="absolute inset-0 rounded-full bg-linear-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/pets/robot-base.png" alt="" className="relative h-full w-full object-contain drop-shadow-[0_4px_12px_rgba(251,191,36,0.4)]" />
-          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#0a0118] bg-emerald-400 animate-pulse" />
+          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#06030F] bg-emerald-400 animate-pulse" />
         </div>
       </div>
     </div>

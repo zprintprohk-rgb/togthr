@@ -113,8 +113,8 @@ export function PetSelectionModal({ open, onClose, currentPetId, onConfirm }: Pr
         >
           {/* ── 召唤阵光效背景 ── */}
           <div className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="absolute left-1/2 top-1/2 h-[80vh] w-[80vh] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-purple-500/15 via-fuchsia-500/10 to-amber-500/10 blur-3xl" />
-            <div className="absolute left-1/2 top-1/2 h-[60vh] w-[60vh] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-tr from-cyan-500/8 to-pink-500/8 blur-3xl animate-arc-drift" />
+            <div className="absolute left-1/2 top-1/2 h-[80vh] w-[80vh] -translate-x-1/2 -translate-y-1/2 rounded-full bg-linear-to-br from-purple-500/15 via-fuchsia-500/10 to-amber-500/10 blur-3xl" />
+            <div className="absolute left-1/2 top-1/2 h-[60vh] w-[60vh] -translate-x-1/2 -translate-y-1/2 rounded-full bg-linear-to-tr from-cyan-500/8 to-pink-500/8 blur-3xl animate-arc-drift" />
           </div>
 
           {/* ── 召唤仪式跃出动画 ── */}
@@ -211,7 +211,7 @@ export function PetSelectionModal({ open, onClose, currentPetId, onConfirm }: Pr
                     className={cn(
                       'relative flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all',
                       isActive
-                        ? 'bg-gradient-to-r from-amber-400/30 via-rose-400/25 to-purple-400/30 text-zinc-50 shadow-lg ring-1 ring-amber-300/40'
+                        ? 'bg-linear-to-r from-amber-400/30 via-rose-400/25 to-purple-400/30 text-zinc-50 shadow-lg ring-1 ring-amber-300/40'
                         : 'glass-card-emph text-zinc-300 hover:bg-white/10',
                     )}
                   >
@@ -303,7 +303,7 @@ export function PetSelectionModal({ open, onClose, currentPetId, onConfirm }: Pr
                     className={cn(
                       'shrink-0 rounded-full px-4 py-2 text-sm font-semibold transition-all sm:px-6 sm:text-base',
                       previewPet.unlocked && previewPet.id !== currentPetId
-                        ? 'bg-gradient-to-r from-amber-400 via-rose-400 to-purple-500 text-zinc-950 shadow-lg hover:scale-105'
+                        ? 'bg-linear-to-r from-amber-400 via-rose-400 to-purple-500 text-zinc-950 shadow-lg hover:scale-105'
                         : 'cursor-not-allowed bg-white/10 text-zinc-500',
                     )}
                   >

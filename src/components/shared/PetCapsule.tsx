@@ -129,17 +129,17 @@ export function PetCapsule({
       {/* ── 外层光晕（4 层叠加） ── */}
       {glow && (
         <>
-          <div className="absolute -inset-12 rounded-full bg-gradient-to-br from-pink-300/20 via-purple-300/15 to-blue-300/20 blur-3xl animate-arc-drift" />
-          <div className="absolute -inset-6 rounded-full bg-gradient-to-br from-amber-200/15 via-rose-200/15 to-purple-300/15 blur-2xl animate-breath" />
+          <div className="absolute -inset-12 rounded-full bg-linear-to-br from-pink-300/20 via-purple-300/15 to-blue-300/20 blur-3xl animate-arc-drift" />
+          <div className="absolute -inset-6 rounded-full bg-linear-to-br from-amber-200/15 via-rose-200/15 to-purple-300/15 blur-2xl animate-breath" />
         </>
       )}
 
       {/* ── 玻璃拟态舱体 ── */}
       <div className="relative h-full w-full overflow-hidden rounded-[28px] glass-card shadow-2xl ring-1 ring-white/10">
         {/* 内部高光（顶部） */}
-        <div className="pointer-events-none absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-4 top-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
         {/* 内部底色渐变（防止透明导致的视觉空洞） */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] via-transparent to-black/20" />
+        <div className="absolute inset-0 bg-linear-to-b from-white/[0.03] via-transparent to-black/20" />
 
         {/* 宠物本体 */}
         <div className="absolute inset-0 flex items-center justify-center">

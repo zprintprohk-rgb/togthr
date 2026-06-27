@@ -191,7 +191,7 @@ export default function ChatClient() {
       <div className="relative z-10 flex h-full flex-col">
         {/* ── Header ── */}
         <header className="flex items-center gap-3 border-b border-white/10 bg-black/20 px-3 py-3 backdrop-blur-md sm:px-4">
-          <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full bg-gradient-to-br from-rose-300/40 to-purple-400/40 p-0.5">
+          <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full bg-linear-to-br from-rose-300/40 to-purple-400/40 p-0.5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/pets/robot-base.png" alt="Soulmate" className="h-full w-full rounded-full object-contain" />
             <span

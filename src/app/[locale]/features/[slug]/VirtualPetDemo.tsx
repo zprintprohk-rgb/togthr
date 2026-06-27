@@ -254,7 +254,7 @@ function StatBar({ label, value, color, icon }: { label: string; value: number; 
       </div>
       <div className="h-2.5 rounded-full bg-zinc-200/60 dark:bg-zinc-800/60 overflow-hidden">
         <motion.div
-          className={`h-full rounded-full bg-gradient-to-r ${color}`}
+          className={`h-full rounded-full bg-linear-to-r ${color}`}
           initial={prefersReduced ? { width: `${value}%` } : { width: 0 }}
           animate={{ width: `${value}%` }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -396,7 +396,7 @@ export const VirtualPetDemo: FC<{ locale: string }> = () => {
         {t('title')}
       </h3>
 
-      <div className="relative overflow-hidden rounded-2xl border border-white/40 bg-gradient-to-br from-white/70 via-purple-50/40 to-pink-50/40 p-6 backdrop-blur dark:border-purple-800/30 dark:from-purple-950/40 dark:via-zinc-900/30 dark:to-rose-950/30 shadow-lg">
+      <div className="relative overflow-hidden rounded-2xl border border-white/40 bg-linear-to-br from-white/70 via-purple-50/40 to-pink-50/40 p-6 backdrop-blur dark:border-purple-800/30 dark:from-purple-950/40 dark:via-zinc-900/30 dark:to-rose-950/30 shadow-lg">
         {/* Mood background tint */}
         <div
           className="pointer-events-none absolute inset-0 opacity-20 transition-colors"
@@ -446,7 +446,7 @@ export const VirtualPetDemo: FC<{ locale: string }> = () => {
             </div>
             <div className="h-1.5 rounded-full bg-zinc-200/60 dark:bg-zinc-800/60 overflow-hidden">
               <motion.div
-                className="h-full rounded-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-rose-500"
+                className="h-full rounded-full bg-linear-to-r from-violet-500 via-fuchsia-500 to-rose-500"
                 initial={false}
                 animate={{ width: `${xpProgress}%` }}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -556,7 +556,7 @@ function ActionButton({
       transition={{ type: 'spring', stiffness: 400, damping: 17 }}
       onClick={onClick}
       aria-label={label}
-      className={`group relative w-14 h-14 rounded-2xl bg-gradient-to-br ${color} shadow-lg ${shadow} flex items-center justify-center hover:shadow-xl transition-shadow`}
+      className={`group relative w-14 h-14 rounded-2xl bg-linear-to-br ${color} shadow-lg ${shadow} flex items-center justify-center hover:shadow-xl transition-shadow`}
     >
       {icon}
       <span className="pointer-events-none absolute -bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-zinc-900/90 px-2 py-0.5 text-[10px] font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity">

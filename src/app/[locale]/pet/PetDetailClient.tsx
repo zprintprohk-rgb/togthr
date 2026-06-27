@@ -289,7 +289,7 @@ export default function PetDetailClient() {
         <button
           type="button"
           onClick={() => setAltarOpen(true)}
-          className="group relative w-full overflow-hidden rounded-2xl bg-gradient-to-r from-amber-400 via-rose-400 to-purple-500 p-[2px] shadow-lg transition-transform hover:scale-[1.01]"
+          className="group relative w-full overflow-hidden rounded-2xl bg-linear-to-r from-amber-400 via-rose-400 to-purple-500 p-[2px] shadow-lg transition-transform hover:scale-[1.01]"
         >
           <span className="flex items-center justify-center gap-2 rounded-2xl bg-[var(--bg-cosmic)] px-6 py-3.5 text-sm font-semibold text-zinc-50 sm:text-base">
             <Sparkles className="h-4 w-4 text-amber-300" aria-hidden="true" />

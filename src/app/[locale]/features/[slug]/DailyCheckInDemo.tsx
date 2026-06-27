@@ -113,7 +113,7 @@ export const DailyCheckInDemo: FC<DailyCheckInDemoProps> = () => {
                 transition={{ duration: 0.15 }}
                 onClick={handleSave}
                 disabled={!answer.trim()}
-                className="px-6 py-3 rounded-xl bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold shadow-lg shadow-pink-500/25 hover:from-rose-600 hover:to-pink-700 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200"
+                className="px-6 py-3 rounded-xl bg-linear-to-r from-rose-500 to-pink-600 text-white font-semibold shadow-lg shadow-pink-500/25 hover:from-rose-600 hover:to-pink-700 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200"
               >
                 {t('save')}
               </motion.button>

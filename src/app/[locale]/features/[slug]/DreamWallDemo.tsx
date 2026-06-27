@@ -122,7 +122,7 @@ export const DreamWallDemo: FC<DreamWallDemoProps> = () => {
             transition={{ stiffness: 400, damping: 17, type: 'spring' }}
             onClick={handlePin}
             disabled={!text.trim()}
-            className="h-11 px-5 rounded-xl bg-gradient-to-r from-yellow-400 to-amber-500 text-white text-sm font-semibold shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 disabled:opacity-40 disabled:cursor-not-allowed transition-all inline-flex items-center gap-1.5"
+            className="h-11 px-5 rounded-xl bg-linear-to-r from-yellow-400 to-amber-500 text-white text-sm font-semibold shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 disabled:opacity-40 disabled:cursor-not-allowed transition-all inline-flex items-center gap-1.5"
           >
             <Plus className="h-4 w-4" />
             {t('pin')}

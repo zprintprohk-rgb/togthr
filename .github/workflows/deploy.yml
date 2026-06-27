@@ -148,8 +148,8 @@ jobs:
         # the same trap that hid wrangler's true failure for 9 runs.
         run: |
           set -euo pipefail
-          echo "==== wrangler deployments list we2-v3 (latest 5) ===="
-          npx wrangler deployments list we2-v3 2>&1 | tee wrangler-deployments.log | head -60 || echo "wrangler deployments list command failed"
+          echo "==== wrangler deployments list togthr-life (latest 5) ===="
+          npx wrangler deployments list togthr-life 2>&1 | tee wrangler-deployments.log | head -60 || echo "wrangler deployments list command failed"
           echo ""
           echo "==== Direct Cloudflare REST API query ===="
           # Get account ID via wrangler whoami (|| true on each grep so a
@@ -157,7 +157,7 @@ jobs:
           ACCOUNT_ID=$( (npx wrangler whoami 2>&1 || true) | grep -oE 'Account ID:[[:space:]]*[a-f0-9]+' | grep -oE '[a-f0-9]{32}' | head -1 || true)
           echo "Account ID: ${ACCOUNT_ID:-<not detected>}"
           if [ -n "${ACCOUNT_ID:-}" ]; then
-            HTTP_CODE=$(curl -sS "https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/workers/scripts/we2-v3/deployments?per_page=5" \
+            HTTP_CODE=$(curl -sS "https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/workers/scripts/togthr-life/deployments?per_page=5" \
               -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
               -H "Content-Type: application/json" \
               -o cloudflare-api-deployments.json -w "%{http_code}" || echo "curl_failed")

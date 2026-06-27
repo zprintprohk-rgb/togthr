@@ -24,7 +24,7 @@ type Props = {
   features: Feature[]
 }
 
-const SCENE_BG = 'from-[#1a0b2e] via-[#0f0524] to-[#0a0118]'
+const SCENE_BG = 'from-[#0B0B1A] via-[#110A20] to-[#06030F]'
 
 const constellation = Array.from({ length: 50 }, (_, i) => ({
   id: i,
@@ -87,10 +87,10 @@ function FloatingMascot() {
         transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         className="relative h-20 w-20"
       >
-        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
+        <div className="absolute inset-0 rounded-full bg-linear-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/pets/robot-base.png" alt="" className="relative h-full w-full object-contain drop-shadow-[0_4px_12px_rgba(251,191,36,0.4)]" />
-        <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#0a0118] bg-emerald-400 animate-pulse" />
+        <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#06030F] bg-emerald-400 animate-pulse" />
       </motion.div>
     </motion.div>
   )
@@ -112,7 +112,7 @@ export function FeaturesClient({ locale, title, subtitle, features }: Props) {
   const t = useTranslations('home.companions')
 
   return (
-    <div className={`relative min-h-screen overflow-hidden bg-gradient-to-b ${SCENE_BG} text-zinc-100`}>
+    <div className={`relative min-h-screen overflow-hidden bg-linear-to-b ${SCENE_BG} text-zinc-100`}>
       {/* ── Layer 1: Stars ── */}
       <div className="pointer-events-none absolute inset-0">
         {constellation.map(p => (
@@ -168,7 +168,7 @@ export function FeaturesClient({ locale, title, subtitle, features }: Props) {
             ✦ 6 Functions ✦
           </motion.p>
           <h1
-            className="bg-gradient-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl lg:text-6xl"
+            className="bg-linear-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl lg:text-6xl"
             style={{ transform: `translate(${mouse.x * -3}px, ${mouse.y * -3}px)` }}
           >
             {title}
@@ -211,7 +211,7 @@ export function FeaturesClient({ locale, title, subtitle, features }: Props) {
                                        feature.key === 'petAdoption' ? 'journal' :
                                        feature.key === 'dailyGratitude' ? 'community' :
                                        'store'}`}
-                  className={`group relative flex h-full min-h-[180px] flex-col justify-between overflow-hidden rounded-3xl border bg-gradient-to-br p-6 backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${HUE_STYLES[meta.hue]}`}
+                  className={`group relative flex h-full min-h-[180px] flex-col justify-between overflow-hidden rounded-3xl border bg-linear-to-br p-6 backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${HUE_STYLES[meta.hue]}`}
                 >
                   {/* Visual layer (right side or center if big) */}
                   <div className={`absolute ${meta.size === 'big' ? 'inset-0 flex items-center justify-center opacity-90' : 'right-4 top-4 opacity-90'}`}>
@@ -219,7 +219,7 @@ export function FeaturesClient({ locale, title, subtitle, features }: Props) {
                   </div>
                   {/* Icon top-left */}
                   <div className="relative z-10 flex items-start justify-between">
-                    <div className={`flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br ${ICON_BG[meta.hue]} text-white shadow-lg`}>
+                    <div className={`flex h-10 w-10 items-center justify-center rounded-2xl bg-linear-to-br ${ICON_BG[meta.hue]} text-white shadow-lg`}>
                       {meta.icon}
                     </div>
                   </div>
@@ -233,7 +233,7 @@ export function FeaturesClient({ locale, title, subtitle, features }: Props) {
                     </p>
                   </div>
                   {/* Hover glow */}
-                  <div className="absolute inset-0 -z-10 bg-gradient-to-br from-amber-300/0 via-rose-300/0 to-purple-400/0 transition-opacity group-hover:from-amber-300/10 group-hover:via-rose-300/10 group-hover:to-purple-400/10" />
+                  <div className="absolute inset-0 -z-10 bg-linear-to-br from-amber-300/0 via-rose-300/0 to-purple-400/0 transition-opacity group-hover:from-amber-300/10 group-hover:via-rose-300/10 group-hover:to-purple-400/10" />
                 </a>
               </motion.div>
             )

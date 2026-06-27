@@ -66,7 +66,7 @@ export default function DailyFeedingPage() {
   }
 
   return (
-    <div className="relative mx-auto flex min-h-[80vh] max-w-3xl flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#1a0b2e] via-[#0f0524] to-[#0a0118] px-4 py-8 text-zinc-100">
+    <div className="relative mx-auto flex min-h-[80vh] max-w-3xl flex-col items-center justify-center overflow-hidden bg-linear-to-b from-[#0B0B1A] via-[#110A20] to-[#06030F] px-4 py-8 text-zinc-100">
       {/* ── Atmospheric layers ── */}
       <div className="pointer-events-none absolute inset-0">
         {Array.from({ length: 35 }).map((_, i) => (
@@ -185,7 +185,7 @@ export default function DailyFeedingPage() {
         </div>
         <div className="h-3 overflow-hidden rounded-full bg-zinc-200 dark:bg-zinc-700">
           <motion.div
-            className="h-full rounded-full bg-gradient-to-r from-rose-400 via-pink-400 to-purple-500"
+            className="h-full rounded-full bg-linear-to-r from-rose-400 via-pink-400 to-purple-500"
             initial={{ width: 0 }}
             animate={{ width: `${hunger}%` }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -234,7 +234,7 @@ export default function DailyFeedingPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             onClick={reset}
-            className="rounded-full bg-gradient-to-r from-rose-500 to-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50"
+            className="rounded-full bg-linear-to-r from-rose-500 to-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50"
           >
             {t('again')}
           </motion.button>
@@ -254,10 +254,10 @@ export default function DailyFeedingPage() {
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
           className="relative h-20 w-20"
         >
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
+          <div className="absolute inset-0 rounded-full bg-linear-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/pets/robot-base.png" alt="" className="relative h-full w-full object-contain drop-shadow-[0_4px_12px_rgba(251,191,36,0.4)]" />
-          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#0a0118] bg-emerald-400 animate-pulse" />
+          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#06030F] bg-emerald-400 animate-pulse" />
         </motion.div>
       </motion.div>
     </div>

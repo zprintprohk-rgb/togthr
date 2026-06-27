@@ -117,7 +117,7 @@ export const PrivateCommunityDemo: FC<PrivateCommunityDemoProps> = () => {
             >
               {/* Anonymous avatar */}
               <div
-                className={`h-9 w-9 rounded-full bg-gradient-to-br ${post.authorColor} flex-shrink-0 flex items-center justify-center text-white text-sm font-bold shadow-md`}
+                className={`h-9 w-9 rounded-full bg-linear-to-br ${post.authorColor} flex-shrink-0 flex items-center justify-center text-white text-sm font-bold shadow-md`}
               >
                 {post.authorInitial}
               </div>
