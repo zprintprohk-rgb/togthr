@@ -19,7 +19,7 @@
  */
 
 import { useState } from 'react'
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion, useReducedMotion, AnimatePresence } from 'framer-motion'
 import { TierCard, type TierCardData } from './TierCard'
 import { CountdownTimer } from './CountdownTimer'
 import { EmotionParticles } from '@/components/shared/EmotionParticles'
@@ -371,16 +371,19 @@ export function PricingTheater({
             {...freeCard}
             burstTrigger={0}
             onBurst={fireBurst}
+            period={period}
           />
           <TierCard
             {...plusCard}
             burstTrigger={burstTriggers.plus}
             onBurst={fireBurst}
+            period={period}
           />
           <TierCard
             {...eternalCard}
             burstTrigger={burstTriggers.eternal}
             onBurst={fireBurst}
+            period={period}
           />
         </div>
 

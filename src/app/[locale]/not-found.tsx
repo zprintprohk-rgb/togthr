@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { Link } from '@/i18n/routing'
+import { SafeImage } from '@/components/shared/SafeImage'
 
 /**
  * 404 page (PRD §8 P1 - friendly not-found state).
@@ -39,11 +40,13 @@ export default function NotFoundPage() {
       >
         {/* Soft glow ring behind */}
         <div className="absolute inset-0 rounded-full bg-linear-to-br from-rose-300/20 via-amber-300/20 to-purple-400/20 blur-2xl" />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        {/* P2-2: Use SafeImage with fallback */}
+        <SafeImage
           src="/pets/expression-thinking.png"
-          alt=""
+          alt="Togthr companion looking confused"
+          fallback="🤔"
           className="relative h-full w-full object-contain drop-shadow-[0_4px_16px_rgba(251,191,36,0.2)]"
+          fallbackClassName="flex items-center justify-center text-4xl"
         />
         {/* Question mark bubble */}
         <motion.div

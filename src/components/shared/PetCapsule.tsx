@@ -26,6 +26,7 @@
  */
 
 import { useEffect, useRef, useState } from 'react'
+import { motion, useReducedMotion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
 export type PetCapsuleSize = 'sm' | 'md' | 'lg' | 'xl' | 'fill'
@@ -80,6 +81,7 @@ export function PetCapsule({
   const [tilt, setTilt] = useState({ x: 0, y: 0 })
   const [breath, setBreath] = useState(1)
   const [isHovering, setIsHovering] = useState(false)
+  const prefersReduced = useReducedMotion()
 
   // ── 3D 视差 ──
   useEffect(() => {
@@ -105,7 +107,7 @@ export function PetCapsule({
   }, [size])
 
   return (
-    <div
+    <motion.div
       ref={wrapRef}
       className={cn(
         'group relative shrink-0',
@@ -117,6 +119,12 @@ export function PetCapsule({
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       onClick={onClick}
+      // ── P1-2: Spring 弹性动画 ──
+      whileHover={
+        prefersReduced ? undefined : { scale: 1.06, rotate: size === 'xl' ? -1.5 : 0 }
+      }
+      whileTap={prefersReduced ? undefined : { scale: 0.94 }}
+      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       style={
         parallax
           ? {
@@ -190,22 +198,29 @@ export function PetCapsule({
       </div>
 
       {/* ── 状态气泡 ── */}
-      {status && (
-        <div
-          className={cn(
-            'absolute -top-2 -right-2 z-10 flex items-center gap-1 rounded-full glass-card-emph px-3 py-1.5 text-xs font-medium text-white shadow-lg',
-            'animate-pulse-glow',
-          )}
-        >
-          <span aria-hidden="true">{STATUS_BUBBLE[status]}</span>
-          {statusText && <span className="max-w-[8rem] truncate">{statusText}</span>}
-        </div>
-      )}
+      <AnimatePresence mode="wait">
+        {status && (
+          <motion.div
+            key={status}
+            initial={{ opacity: 0, scale: 0.7, y: 8 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.7, y: -8 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 22 }}
+            className={cn(
+              'absolute -top-2 -right-2 z-10 flex items-center gap-1 rounded-full glass-card-emph px-3 py-1.5 text-xs font-medium text-white shadow-lg',
+              'animate-pulse-glow',
+            )}
+          >
+            <span aria-hidden="true">{STATUS_BUBBLE[status]}</span>
+            {statusText && <span className="max-w-[8rem] truncate">{statusText}</span>}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* ── Hover 增强 ── */}
       {isHovering && glow && (
         <div className="pointer-events-none absolute -inset-2 rounded-[32px] ring-1 ring-pink-300/30 transition-opacity" />
       )}
-    </div>
+    </motion.div>
   )
 }

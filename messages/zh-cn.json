@@ -591,6 +591,9 @@
     "secureNotice": "支付由 PayPal 保障，我们不会看到你的银行卡信息。"
   },
   "daily": {
+    "streakDays": "连续 {n} 天打卡",
+    "treasureTitle": "宝箱出现！🎁",
+    "treasureDesc": "连续 7 天打卡，宠物为你挖出一个神秘宝箱~",
     "title": "每日喂食",
     "q": "今天，TA 在你身边吗？",
     "withBtn": "💕 在一起",
@@ -810,5 +813,10 @@
     "tryAgain": "重试",
     "home": "首页",
     "errorId": "错误 ID"
+  },
+  "paywallHint": {
+    "title": "你的小伙伴想换上新衣服啦 ✨",
+    "cta": "去看看",
+    "dismiss": "继续用免费的"
   }
 }

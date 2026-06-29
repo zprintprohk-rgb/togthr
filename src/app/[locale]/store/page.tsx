@@ -8,6 +8,18 @@ import type { CountryCode, CurrencyCode } from '@/lib/types'
 import { getDisplayPrice } from '@/lib/pricing'
 import { StoreBuyButton } from './StoreBuyButton'
 
+/* ── P2-5: Seasonal badge detection ── */
+function getSeasonalBadge(): { emoji: string; label: string } | null {
+  const m = new Date().getMonth() + 1
+  const d = new Date().getDate()
+  // Monthly seasonal: Valentine (Feb), Halloween (Oct), Christmas (Dec)
+  if (m === 2 && d >= 10 && d <= 16) return { emoji: '💕', label: '情人节限定' }
+  if (m === 10 && d >= 25 && d <= 31) return { emoji: '🎃', label: '万圣节限定' }
+  if (m === 12 && d >= 15 && d <= 26) return { emoji: '🎄', label: '圣诞限定' }
+  if (m === 1 && d <= 7) return { emoji: '🎆', label: '新年限定' }
+  return null
+}
+
 // ─── Static params ────────────────────────────────────────────────────────
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -72,6 +84,7 @@ export default async function StorePage({
 
   const firstOrderPrice = 199   // CNY — first order 5折 of ¥399
   const regularPrice = 399
+  const seasonalBadge = getSeasonalBadge()
 
   return (
     <div className="relative mx-auto max-w-6xl overflow-hidden bg-linear-to-b from-[#0B0B1A] via-[#110A20] to-[#06030F] px-4 py-12 text-zinc-100 sm:py-20">
@@ -108,6 +121,7 @@ export default async function StorePage({
       {/* ── Hero ── */}
       <div className="text-center space-y-4">
         <p className="text-sm font-semibold uppercase tracking-wider text-rose-500 dark:text-rose-400">
+          {seasonalBadge && <span className="mr-2">{seasonalBadge.emoji} {seasonalBadge.label}</span>}
           ✨ {t('store.firstOrder')} {getDisplayPrice(firstOrderPrice, cur)} · {t('store.save')}
         </p>
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl bg-linear-to-r from-rose-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">

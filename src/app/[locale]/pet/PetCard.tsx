@@ -20,8 +20,10 @@
 import { motion } from 'framer-motion'
 import { Lock, Sparkles } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { useState } from 'react'
 import { RARITY_STYLES, type Rarity } from '@/lib/design-tokens'
 import { cn } from '@/lib/utils'
+import { PaywallHint } from '@/components/shared/PaywallHint'
 import type { Pet } from './pet-data'
 
 interface Props {
@@ -32,17 +34,27 @@ interface Props {
 
 export function PetCard({ pet, isSelected, onClick }: Props) {
   const t = useTranslations('pet.card')
+  const tPaywall = useTranslations('paywallHint')
   const r = RARITY_STYLES[pet.rarity]
+  const [showPaywall, setShowPaywall] = useState(false)
 
   /** 4 稀有度 → Tailwind className 映射（保持简单，inline style 处理颜色） */
   const ringClass = getRarityRingClass(pet.rarity)
   const glowClass = getRarityGlowClass(pet.rarity)
   const animate = getRarityAnimation(pet.rarity)
 
+  const handleClick = () => {
+    if (!pet.unlocked) {
+      setShowPaywall(true)
+      return
+    }
+    onClick()
+  }
+
   return (
     <motion.button
       type="button"
-      onClick={onClick}
+      onClick={handleClick}
       whileHover={pet.unlocked ? { scale: 1.05, y: -4 } : { scale: 1.02 }}
       whileTap={pet.unlocked ? { scale: 0.97 } : {}}
       transition={{ type: 'spring', stiffness: 320, damping: 18 }}
@@ -132,6 +144,19 @@ export function PetCard({ pet, isSelected, onClick }: Props) {
           <Sparkles className="h-3 w-3" aria-hidden="true" />
         </motion.div>
       )}
+
+      {/* ── 付费提示气泡 (P1-1) ── */}
+      <PaywallHint
+        show={showPaywall}
+        onClose={() => setShowPaywall(false)}
+        copy={{
+          title: tPaywall('title'),
+          cta: tPaywall('cta'),
+          dismiss: tPaywall('dismiss'),
+        }}
+        href="/pricing"
+        className="absolute -top-2 left-1/2 -translate-x-1/2"
+      />
     </motion.button>
   )
 }

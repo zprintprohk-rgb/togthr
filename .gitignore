@@ -96,3 +96,30 @@ dev-bg*.out
 # Window-generated text files (Chinese names)
 新建文本文档/
 新建文本文档.*
+
+# ── Local agent runtime data (never commit) ──
+# hermes (C:\Users\Administrator\.hermes\) + mavis + autoclaw + opencode
+# all run locally and write their own state dirs into the workspace
+.hermes/
+.mavis/
+.openclaw/
+.opencode/
+.openclaw-attachments/
+
+# ── Agent identity / memory docs (project handover lives outside repo) ──
+HEARTBEAT.md
+IDENTITY.md
+SOUL.md
+TOOLS.md
+USER.md
+
+# ── Handover dir (.harness/handover/ is project memory, transient) ──
+.harness/handover/
+
+# ── Transient scripts / decision artifacts (one-off, never part of product) ──
+count-we2.cjs
+fix-we2-brand.cjs
+decision-i18n-7-locales.json
+P新建文件夹/
+docs/fusion-v3/opc-workflows/
+docs/legacy-planning/

@@ -23,6 +23,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
+import { SafeImage } from '@/components/shared/SafeImage'
 
 export type PetState =
   | 'idle'
@@ -114,10 +115,12 @@ export function PetPresence({ state, nightMode, onInteract, className }: Props) 
         whileTap={{ scale: 0.92 }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <SafeImage
           src={SPRITE[state]}
-          alt=""
+          alt="Companion"
+          fallback="🐣"
           className="h-10 w-10 object-contain drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
+          fallbackClassName="flex items-center justify-center"
           draggable={false}
         />
         {/* State label badge */}
@@ -161,6 +164,130 @@ export function PetPresence({ state, nightMode, onInteract, className }: Props) 
           </motion.div>
         )}
       </AnimatePresence>
+    </div>
+  )
+}
+
+/* ── P2-4: DualPetPresence — 情侣配对同框 ── */
+
+interface DualPetPresenceProps {
+  /** 当前用户宠物状态 */
+  self: { state: PetState; sprite?: string; name?: string }
+  /** 配对伴侣宠物状态 */
+  partner: { state: PetState; sprite?: string; name?: string }
+  /** 配对码 (6 位，用于分享) */
+  pairCode?: string
+  /** 是否已配对 */
+  paired: boolean
+  className?: string
+}
+
+/**
+ * 双宠物同框 — 情侣配对成功后显示
+ *
+ * 布局: 两只宠物面对面，心形粒子从中间上升
+ * 配对码: 6 位数字，可复制分享
+ *
+ * P2-4 框架 — 80% 完整度
+ */
+export function DualPetPresence({
+  self,
+  partner,
+  pairCode,
+  paired,
+  className,
+}: DualPetPresenceProps) {
+  const [copied, setCopied] = useState(false)
+
+  const copyCode = async () => {
+    if (!pairCode) return
+    try {
+      await navigator.clipboard.writeText(pairCode)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch { /* noop */ }
+  }
+
+  if (!paired) {
+    // 未配对状态: 显示配对码入口
+    return (
+      <div
+        className={cn(
+          'flex flex-col items-center gap-3 rounded-2xl glass-card-emph p-4',
+          className,
+        )}
+      >
+        <p className="text-sm text-zinc-300">邀请你的伴侣一起养宠物</p>
+        {pairCode ? (
+          <button
+            type="button"
+            onClick={copyCode}
+            className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-mono text-zinc-100 hover:bg-white/15"
+          >
+            <span>{pairCode}</span>
+            <span className="text-xs text-zinc-400">
+              {copied ? '✓ 已复制' : '复制'}
+            </span>
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="rounded-full bg-linear-to-r from-fuchsia-500 to-purple-500 px-4 py-2 text-sm font-semibold text-white"
+          >
+            💕 生成配对码
+          </button>
+        )}
+      </div>
+    )
+  }
+
+  // 已配对: 双宠物同框
+  return (
+    <div
+      className={cn(
+        'flex items-end gap-1',
+        className,
+      )}
+    >
+      {/* Self pet */}
+      <motion.div
+        animate={{ y: [0, -4, 0] }}
+        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+        className="relative h-12 w-12"
+      >
+        <SafeImage
+          src={self.sprite || SPRITE[self.state]}
+          alt={self.name || 'Your companion'}
+          fallback="🐥"
+          className="h-full w-full object-contain"
+          fallbackClassName="flex items-center justify-center text-xl"
+        />
+      </motion.div>
+
+      {/* Heart connector */}
+      <motion.div
+        animate={{ scale: [1, 1.2, 1], opacity: [0.6, 1, 0.6] }}
+        transition={{ duration: 1.5, repeat: Infinity }}
+        className="flex items-center text-lg"
+        aria-hidden="true"
+      >
+        💕
+      </motion.div>
+
+      {/* Partner pet */}
+      <motion.div
+        animate={{ y: [0, -4, 0] }}
+        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+        className="relative h-12 w-12"
+      >
+        <SafeImage
+          src={partner.sprite || SPRITE[partner.state]}
+          alt={partner.name || 'Partner companion'}
+          fallback="🐣"
+          className="h-full w-full object-contain scale-x-[-1]"
+          fallbackClassName="flex items-center justify-center text-xl"
+        />
+      </motion.div>
     </div>
   )
 }

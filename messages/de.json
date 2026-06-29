@@ -604,7 +604,10 @@
     "bubbleFull": "Ich bin satt!",
     "bubbleMore": "Mehr bitte~",
     "again": "Nochmal",
-    "dragHint": "Zum Haustier ziehen"
+    "dragHint": "Zum Haustier ziehen",
+    "streakDays": "{n} Tage in Folge",
+    "treasureTitle": "Schatztruhe! 🎁",
+    "treasureDesc": "7-Tage-Serie! Dein Haustier hat eine Schatztruhe ausgegraben~"
   },
   "capsule": {
     "title": "Zeitkapsel · Schatzsuche",
@@ -810,5 +813,10 @@
     "tryAgain": "Erneut versuchen",
     "home": "Startseite",
     "errorId": "Fehler-ID"
+  },
+  "paywallHint": {
+    "title": "Dein Kumpel möchte ein neues Outfit! ✨",
+    "cta": "Anschauen",
+    "dismiss": "Kostenlos weiternutzen"
   }
 }

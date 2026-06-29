@@ -46,12 +46,17 @@ export function CountdownTimer({
   secLabel,
   targetMs,
 }: CountdownTimerProps) {
+  // ── Hydration-safe: mounted flag prevents useReducedMotion SSR/CSR drift ──
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
+
   // ── Hydration-safe: target is computed once on the client, NOT during SSR.
   // The initial paint always shows the default offset value, so server and
   // client first render match. We recompute the real `remaining` in an
   // effect on mount.
   const [remaining, setRemaining] = useState<number>(DEFAULT_TARGET_OFFSET)
-  const prefersReduced = useReducedMotion()
+  const prefersReducedRaw = useReducedMotion()
+  const prefersReduced = mounted ? !!prefersReducedRaw : false
 
   useEffect(() => {
     // Compute real target on mount (client only) — must run after SSR to

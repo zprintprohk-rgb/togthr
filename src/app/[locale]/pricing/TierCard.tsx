@@ -17,8 +17,8 @@
  * All copy is pre-translated strings passed in by the Server Component.
  */
 
-import { useState } from 'react'
-import { motion, useReducedMotion } from 'framer-motion'
+import { useState, useEffect } from 'react'
+import { motion, useReducedMotion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { Sparkles, Lock, ChevronRight } from 'lucide-react'
 import { PetMatrix } from './PetMatrix'
@@ -61,6 +61,8 @@ interface TierCardProps extends TierCardData {
   burstTrigger: number
   /** Called when the user clicks the subscribe CTA */
   onBurst: (tier: PricingTier) => void
+  /** Current billing period for animation key */
+  period: 'monthly' | 'quarterly' | 'yearly'
 }
 
 const TIER_BORDER = {
@@ -105,6 +107,7 @@ export function TierCard({
   checkoutHref,
   burstTrigger,
   onBurst,
+  period,
 }: TierCardProps) {
   const [isHovered, setIsHovered] = useState(false)
   const prefersReduced = useReducedMotion()
@@ -121,6 +124,7 @@ export function TierCard({
 
   return (
     <motion.div
+      layout
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       initial={prefersReduced ? false : { opacity: 0, y: 24 }}
@@ -212,14 +216,21 @@ export function TierCard({
 
       {/* Price block */}
       <div className="mt-5 flex items-end gap-1.5">
-        <span
-          className={cn(
-            'text-4xl font-extrabold tracking-tight sm:text-5xl',
-            tier === 'free' ? 'text-zinc-100' : TIER_HEADING[tier],
-          )}
-        >
-          {price}
-        </span>
+        <AnimatePresence mode="wait">
+          <motion.span
+            key={`${tier}-${price}-${period}`}
+            initial={prefersReduced ? false : { opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={prefersReduced ? undefined : { opacity: 0, y: -8 }}
+            transition={{ duration: 0.2, ease: 'easeOut' }}
+            className={cn(
+              'text-4xl font-extrabold tracking-tight sm:text-5xl',
+              tier === 'free' ? 'text-zinc-100' : TIER_HEADING[tier],
+            )}
+          >
+            {price}
+          </motion.span>
+        </AnimatePresence>
         {priceSub && (
           <span className="mb-1.5 text-sm text-zinc-400">{priceSub}</span>
         )}

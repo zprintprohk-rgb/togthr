@@ -610,7 +610,10 @@
     "bubbleFull": "I am full!",
     "bubbleMore": "More please~",
     "again": "Do it again",
-    "dragHint": "Drag to the pet"
+    "dragHint": "Drag to the pet",
+    "streakDays": "{n} day streak",
+    "treasureTitle": "Treasure Chest! 🎁",
+    "treasureDesc": "7-day streak! Your pet dug up a mystery chest~"
   },
   "capsule": {
     "title": "Treasure Hunt",
@@ -816,5 +819,10 @@
     "tryAgain": "Try again",
     "home": "Home",
     "errorId": "Error ID"
+  },
+  "paywallHint": {
+    "title": "Your buddy wants a new outfit! ✨",
+    "cta": "Take a look",
+    "dismiss": "Keep using free"
   }
 }

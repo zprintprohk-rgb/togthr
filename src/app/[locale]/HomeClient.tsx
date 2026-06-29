@@ -37,6 +37,7 @@ import type { Feature } from '@/components/FeatureCard'
 import { PetCapsule } from '@/components/shared/PetCapsule'
 import { RelationModeSelector } from '@/components/shared/RelationModeSelector'
 import { EmotionParticles } from '@/components/shared/EmotionParticles'
+import { SafeImage } from '@/components/shared/SafeImage'
 import {
   RELATION_MODES,
   isNightMode,
@@ -55,12 +56,15 @@ function detectHolidaySkin(): HolidaySkin {
   return 'default'
 }
 
-/* ── Cinematic background palette (保留) ── */
-const SCENE_BG: Record<HolidaySkin, string> = {
-  default: 'from-[#0B0B1A] via-[#110A20] to-[#06030F]',
-  christmas: 'from-[#1a0a1a] via-[#0f0a1a] to-[#0a0518]',
-  valentine: 'from-[#1a0b1f] via-[#0f0820] to-[#0a0418]',
-  halloween: 'from-[#1a0f0a] via-[#0f0a05] to-[#0a0501]',
+/* ── Cinematic background palette ──
+ * Default gradient is hardcoded in JSX to avoid SSR flash.
+ * Holiday overrides are applied via CSS class on the root div
+ * (set on mount from detectHolidaySkin()), never via template literal. */
+const SCENE_BG_OVERRIDE: Record<HolidaySkin, string> = {
+  default: '',
+  christmas: 'scene-christmas',
+  valentine: 'scene-valentine',
+  halloween: 'scene-halloween',
 }
 
 const STICKERS: Array<{ src: string; label: string }> = [
@@ -183,6 +187,7 @@ export function HomeClient({
   const prefersReduced = useReducedMotion()
   const tCompanions = useTranslations('home.companions')
   const skin = detectHolidaySkin()
+  const sceneOverride = SCENE_BG_OVERRIDE[skin]
 
   /* ── 关系模式 ── */
   const [mode, setMode] = useState<RelationMode>('couple')
@@ -235,7 +240,10 @@ export function HomeClient({
 
   return (
     <div
-      className={`relative min-h-screen overflow-hidden bg-linear-to-b ${SCENE_BG[skin]} text-zinc-100`}
+      className={[
+        'relative min-h-screen overflow-hidden bg-linear-to-b from-[#0B0B1A] via-[#110A20] to-[#06030F] text-zinc-100',
+        sceneOverride,
+      ].filter(Boolean).join(' ')}
     >
       {/* ════════════════ Hero — Always Here 沉浸式首屏 ════════════════ */}
       {/* isolation: isolate — 创建独立 stacking context，防止 EmotionParticles 的 Canvas 监听整页 mouse + 避免 motion 节点被推到外面 */}
@@ -603,11 +611,12 @@ export function HomeClient({
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
               className="group relative aspect-square overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-xl backdrop-blur-xl transition-colors hover:border-amber-300/30"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <SafeImage
                 src={s.src}
                 alt={s.label}
+                fallback={s.label}
                 className="h-full w-full object-contain p-2 transition-transform duration-300 group-hover:scale-110"
+                fallbackClassName="aspect-square rounded-2xl border border-white/10 bg-white/5"
                 loading="lazy"
               />
               <span className="pointer-events-none absolute bottom-1 right-1 text-xs opacity-60">

@@ -604,7 +604,10 @@
     "bubbleFull": "배불러!",
     "bubbleMore": "더 줘~",
     "again": "다시 하기",
-    "dragHint": "펫에게 드래그"
+    "dragHint": "펫에게 드래그",
+    "streakDays": "{n}일 연속",
+    "treasureTitle": "보물상자 등장! 🎁",
+    "treasureDesc": "7일 연속! 펫이 보물상자를 찾았어요~"
   },
   "capsule": {
     "title": "타임캡슐 · 보물찾기",
@@ -810,5 +813,10 @@
     "tryAgain": "다시 시도",
     "home": "홈",
     "errorId": "오류 ID"
+  },
+  "paywallHint": {
+    "title": "네 친구가 새 옷을 입고 싶어해 ✨",
+    "cta": "보러 가기",
+    "dismiss": "무료로 계속하기"
   }
 }

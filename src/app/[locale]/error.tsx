@@ -12,6 +12,7 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
+import { SafeImage } from '@/components/shared/SafeImage'
 
 export default function GlobalError({
   error,
@@ -34,8 +35,16 @@ export default function GlobalError({
 
   return (
     <div className="mx-auto flex min-h-[60vh] max-w-2xl flex-col items-center justify-center px-4 py-16 text-center">
-      {/* Pixel art mascot for visual continuity */}
-      <div className="mb-4 animate-pulse-slow text-7xl">🐾</div>
+      {/* P2-2: Branded error pet — angry expression */}
+      <div className="mb-4">
+        <SafeImage
+          src="/pets/expression-angry.png"
+          alt="Togthr companion looking frustrated"
+          fallback="😾"
+          className="h-24 w-24 animate-bounce object-contain"
+          fallbackClassName="h-24 w-24 flex items-center justify-center text-4xl"
+        />
+      </div>
 
       <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
         {t('title')}

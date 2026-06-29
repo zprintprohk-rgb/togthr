@@ -604,7 +604,10 @@
     "bubbleFull": "吃飽啦！",
     "bubbleMore": "嗯嗯~ 還想要！",
     "again": "再來一次",
-    "dragHint": "拖到寵物嘴邊"
+    "dragHint": "拖到寵物嘴邊",
+    "streakDays": "連續 {n} 天打卡",
+    "treasureTitle": "寶箱出現！🎁",
+    "treasureDesc": "連續 7 天打卡，寵物為你挖出一個神秘寶箱~"
   },
   "capsule": {
     "title": "時光膠囊 · 挖寶",
@@ -810,5 +813,10 @@
     "tryAgain": "重試",
     "home": "首頁",
     "errorId": "錯誤 ID"
+  },
+  "paywallHint": {
+    "title": "你的小夥伴想換上新衣服啦 ✨",
+    "cta": "去看看",
+    "dismiss": "繼續用免費的"
   }
 }

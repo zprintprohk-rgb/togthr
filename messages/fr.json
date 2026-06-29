@@ -604,7 +604,10 @@
     "bubbleFull": "J'ai assez mangé !",
     "bubbleMore": "Encore~",
     "again": "Refaire",
-    "dragHint": "Glisse vers le compagnon"
+    "dragHint": "Glisse vers le compagnon",
+    "streakDays": "{n} jours de suite",
+    "treasureTitle": "Coffre au trésor ! 🎁",
+    "treasureDesc": "Série de 7 jours ! Ton animal a déterré un coffre mystère~"
   },
   "capsule": {
     "title": "Capsule temporelle · Chasse au trésor",
@@ -810,5 +813,10 @@
     "tryAgain": "Réessayer",
     "home": "Accueil",
     "errorId": "ID d'erreur"
+  },
+  "paywallHint": {
+    "title": "Ton pote veut une nouvelle tenue ! ✨",
+    "cta": "Voir",
+    "dismiss": "Continuer gratuitement"
   }
 }

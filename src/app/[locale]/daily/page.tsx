@@ -16,7 +16,7 @@
 
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -34,6 +34,21 @@ export default function DailyFeedingPage() {
   const [hunger, setHunger] = useState(0)
   const [streak, setStreak] = useState(0)
   const [bubble, setBubble] = useState<string>(t('bubbleIdle'))
+  const [showTreasure, setShowTreasure] = useState(false)
+
+  // P2-5: Load persisted streak on mount
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem('togthr.daily.streak')
+      if (!raw) return
+      const data = JSON.parse(raw)
+      const today = new Date().toDateString()
+      const yesterday = new Date(Date.now() - 86400000).toDateString()
+      if (data.date === today || data.date === yesterday) {
+        setStreak(data.count)
+      }
+    } catch { /* noop */ }
+  }, [])
 
   function startFeeding(ans: 'with' | 'apart') {
     setAnswer(ans)
@@ -56,6 +71,18 @@ export default function DailyFeedingPage() {
     const newStreak = streak + 1
     setHunger(newHunger)
     setStreak(newStreak)
+    // Persist streak in localStorage
+    try {
+      localStorage.setItem('togthr.daily.streak', JSON.stringify({
+        date: new Date().toDateString(),
+        count: newStreak,
+      }))
+    } catch { /* noop */ }
+    // P2-5: 7-day treasure chest milestone
+    if (newStreak === 7) {
+      setShowTreasure(true)
+      setTimeout(() => setShowTreasure(false), 4000)
+    }
     setBubble(newHunger >= 100 ? t('bubbleFull') : t('bubbleMore'))
   }
 
@@ -211,6 +238,12 @@ export default function DailyFeedingPage() {
             <p className="text-center text-lg font-medium text-zinc-700 dark:text-zinc-300">
               {t('q')}
             </p>
+            {/* P2-5: Streak display below question */}
+            {streak > 0 && (
+              <p className="text-center text-xs text-amber-400">
+                🔥 {t('streakDays', { n: streak })}
+              </p>
+            )}
             <div className="grid grid-cols-2 gap-3">
               <button
                 onClick={() => startFeeding('with')}
@@ -238,6 +271,36 @@ export default function DailyFeedingPage() {
           >
             {t('again')}
           </motion.button>
+        )}
+      </AnimatePresence>
+
+      {/* ── P2-5: Treasure Chest (7-day milestone overlay) ── */}
+      <AnimatePresence>
+        {showTreasure && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0, y: 40 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.5, y: -20 }}
+              transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+              className="flex flex-col items-center gap-4 rounded-3xl bg-linear-to-br from-amber-300/20 via-amber-200/10 to-yellow-400/20 p-8 backdrop-blur-xl border border-amber-300/30"
+            >
+              <motion.span
+                className="text-7xl"
+                animate={{ rotate: [0, -10, 10, 0], scale: [1, 1.15, 1] }}
+                transition={{ duration: 1, repeat: Infinity }}
+              >
+                🎁
+              </motion.span>
+              <p className="text-xl font-bold text-amber-200">{t('treasureTitle')}</p>
+              <p className="text-sm text-zinc-300">{t('treasureDesc')}</p>
+            </motion.div>
+          </motion.div>
         )}
       </AnimatePresence>
 

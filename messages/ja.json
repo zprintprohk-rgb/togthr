@@ -604,7 +604,10 @@
     "bubbleFull": "満腹！",
     "bubbleMore": "もっとちょうだい~",
     "again": "もう一度",
-    "dragHint": "ペットにドラッグ"
+    "dragHint": "ペットにドラッグ",
+    "streakDays": "{n}日連続",
+    "treasureTitle": "宝箱が現れた！🎁",
+    "treasureDesc": "7日連続！ペットが宝箱を掘り出したよ~"
   },
   "capsule": {
     "title": "タイムカプセル · 宝探し",
@@ -810,5 +813,10 @@
     "tryAgain": "再試行",
     "home": "ホーム",
     "errorId": "エラー ID"
+  },
+  "paywallHint": {
+    "title": "相棒が新しい服を着たがってるよ ✨",
+    "cta": "見に行く",
+    "dismiss": "無料で続ける"
   }
 }

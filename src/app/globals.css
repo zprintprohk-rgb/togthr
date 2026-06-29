@@ -164,3 +164,14 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ── Holiday skin overrides (applied on mount, no SSR flash) ────────────── */
+.scene-christmas {
+  background-image: linear-gradient(to bottom, #1a0a1a, #0f0a1a, #0a0518) !important;
+}
+.scene-valentine {
+  background-image: linear-gradient(to bottom, #1a0b1f, #0f0820, #0a0418) !important;
+}
+.scene-halloween {
+  background-image: linear-gradient(to bottom, #1a0f0a, #0f0a05, #0a0501) !important;
+}

@@ -604,7 +604,10 @@
     "bubbleFull": "¡Estoy lleno!",
     "bubbleMore": "Quiero más~",
     "again": "Otra vez",
-    "dragHint": "Arrastra a la mascota"
+    "dragHint": "Arrastra a la mascota",
+    "streakDays": "{n} días seguidos",
+    "treasureTitle": "¡Cofre del tesoro! 🎁",
+    "treasureDesc": "¡Racha de 7 días! Tu mascota desenterró un cofre misterioso~"
   },
   "capsule": {
     "title": "Cápsula del tiempo · Búsqueda del tesoro",
@@ -810,5 +813,10 @@
     "tryAgain": "Intentar de nuevo",
     "home": "Inicio",
     "errorId": "ID de error"
+  },
+  "paywallHint": {
+    "title": "¡Tu compa quiere un nuevo atuendo! ✨",
+    "cta": "Echar un vistazo",
+    "dismiss": "Seguir gratis"
   }
 }

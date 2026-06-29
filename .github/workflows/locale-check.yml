@@ -70,6 +70,12 @@ jobs:
         continue-on-error: false
         run: node scripts/check-locale-placeholders.js
 
+      # ── P1-5: Locale Prefix Pollution ──
+      - name: P1-5 — No Locale Prefix in Values
+        id: prefix
+        continue-on-error: false
+        run: node scripts/check-no-locale-prefix.js "$PWD/messages"
+
       # ── PR comment on failure (only for pull_request events) ──
       - name: PR comment on failure
         if: failure() && github.event_name == 'pull_request'
@@ -81,6 +87,7 @@ jobs:
               pollution: '${{ steps.pollution.outcome }}',
               completeness: '${{ steps.completeness.outcome }}',
               placeholder: '${{ steps.placeholder.outcome }}',
+              prefix:    '${{ steps.prefix.outcome }}',
             };
 
             const statusIcon = (v) => v === 'success' ? '✅' : v === 'failure' ? '🔴' : '⚪';
