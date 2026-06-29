@@ -115,6 +115,7 @@ USER.md
 
 # ── Handover dir (.harness/handover/ is project memory, transient) ──
 .harness/handover/
+.harness/.tmp/
 
 # ── Transient scripts / decision artifacts (one-off, never part of product) ──
 count-we2.cjs

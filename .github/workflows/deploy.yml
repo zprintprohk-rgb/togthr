@@ -132,6 +132,39 @@ jobs:
       # wrangler never pushed to Cloudflare; without this artifact we
       # had no way to see why. Path is narrowed to just the log files
       # (not .next/ or .open-next/) to keep artifact size < 100MB.
+      - name: Purge edge cache (force first HTML to re-render with new cache headers)
+        # 2026-06-30 fix: previous deploys shipped HTML with default
+        # s-maxage=31536000, so even after a successful wrangler deploy,
+        # the OLD HTML kept being served from CF edge for up to 1 year
+        # — making Home/Pricing/Pet/Chat show the old "white" layout
+        # while user reported "still broken after 10+ deploys".
+        # The new src/middleware.ts sets Cache-Control: no-store on HTML,
+        # but it does NOT evict the existing 1-year edge cache for URLs
+        # already cached. This step purges the entire zone cache right
+        # after deploy, so the first request after deploy always re-renders.
+        if: success()
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          ZONE_ID: d18ea5da0a98b31276c132308071b6ec   # togthr.life
+        run: |
+          set -euo pipefail
+          echo "==== Purging CF edge cache for zone ${ZONE_ID} (purge_everything) ===="
+          HTTP_CODE=$(curl -sS -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${ZONE_ID}/purge_cache" \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -o purge-result.json -w "%{http_code}" \
+            --data '{"purge_everything":true}')
+          echo "purge_cache HTTP: ${HTTP_CODE}"
+          if command -v jq >/dev/null 2>&1; then
+            jq . purge-result.json
+          else
+            cat purge-result.json
+          fi
+          if [ "${HTTP_CODE}" != "200" ]; then
+            echo "::warning::purge_cache returned ${HTTP_CODE} — deploy succeeded but stale edge HTML may still serve briefly. User should hard refresh (Ctrl+Shift+R)."
+          fi
+
       - name: Post-deploy (CF API verification)
         # This is the DEFINITIVE check. If wrangler deploy reported
         # success but the API says the latest deployment is still
