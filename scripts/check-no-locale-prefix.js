@@ -1,24 +1,32 @@
 /**
- * Gate 5 — Locale Prefix Pollution Check
+ * Gate 5 — Locale Prefix Pollution Check (revised 2026-06-30)
  *
- * Scans all message JSON files for keys that retain [locale] path-segment
- * prefixes (e.g. "en", "zh-cn", "zh-tw", "ja", "ko", "de", "fr", "es")
- * used as key names or embedded in hardcoded locale references inside
- * translation values.
+ * Detects REAL pollution patterns only:
+ *   (a) value starts with `[lang] ` prefix
+ *       (e.g. "[en] Hello", "[zh-cn] 你好")
+ *   (b) top-level JSON wrapper keys that are bare locale codes
+ *       (e.g. { "en": {...}, "de": {...} } — anti-pattern from pre-flatten era)
+ *
+ * Does NOT match language-words that naturally appear inside translated text
+ * (German "es" = "it", Spanish "en" = "in", French "de" = "of" must NOT trigger).
  *
  * Usage: node scripts/check-no-locale-prefix.js [messagesDir]
  * Default messagesDir: ./messages
- *
- * Exit code: 0 = clean, 1 = prefix pollution found
+ * Exit code: 0 = clean, 1 = pollution found
  */
 
 import { readFileSync, readdirSync, existsSync } from 'fs'
 import { resolve } from 'path'
 
 const messagesDir = resolve(process.argv[2] || './messages')
-const localePrefixes = new Set([
-  'en', 'zh-cn', 'zh-tw', 'ja', 'ko', 'de', 'fr', 'es',
-])
+const localeCodes = ['en', 'zh-cn', 'zh-tw', 'ja', 'ko', 'de', 'fr', 'es']
+const localeAlt = localeCodes.join('|')
+
+// (a) value-prefix pollution:    [lang]  at value start (after optional whitespace)
+const VALUE_PREFIX_RE = new RegExp(`^\\s*\\[(${localeAlt})\\]\\s`)
+
+// (b) top-level-key pollution:    bare locale code or [lang] at JSON root
+const TOPLOCALE_KEY_RE = new RegExp(`^\\[?(${localeAlt})\\]?$`)
 
 if (!existsSync(messagesDir)) {
   console.error(`[check-no-locale-prefix] messages dir not found: ${messagesDir}`)
@@ -26,14 +34,14 @@ if (!existsSync(messagesDir)) {
 }
 
 const files = readdirSync(messagesDir).filter(
-  (f) => f.endsWith('.json') && !f.startsWith('_') && !f.includes('.bak.'),
+  (f) => f.endsWith('.json') && !f.startsWith('_') && !f.includes('.bak.')
 )
 
 let errors = 0
 const violations = []
 
 for (const file of files) {
-  // Skip sub-namespace files (faq.*, guide.*) — only check main locale files
+  // Skip sub-namespace files (faq.*, guide.*) — only check top-level locale files
   if (file.includes('.') && !file.match(/^[a-z]{2}(-[a-z]{2})?\.json$/)) continue
 
   const raw = readFileSync(resolve(messagesDir, file), 'utf-8')
@@ -46,28 +54,41 @@ for (const file of files) {
     continue
   }
 
-  // Walk all keys and string values
-  const walk = (obj, prefix = '') => {
+  const walk = (obj, prefix = '', depth = 0) => {
     if (obj === null || obj === undefined) return
+
+    // (a) string value: only flag if it STARTS with [lang] prefix
     if (typeof obj === 'string') {
-      // Check if value contains any locale code as a standalone token
-      // (e.g. "Visit /zh-cn/pricing" is bad)
-      const tokens = obj.split(/\s+|\/|\\|"|'/)
-      for (const token of tokens) {
-        if (localePrefixes.has(token)) {
-          violations.push({
-            file,
-            path: prefix,
-            value: obj.length > 80 ? obj.slice(0, 77) + '...' : obj,
-            token,
-          })
-          errors++
-          return
+      const m = obj.match(VALUE_PREFIX_RE)
+      if (m) {
+        violations.push({
+          file,
+          path: prefix,
+          value: obj.length > 80 ? obj.slice(0, 77) + '...' : obj,
+          match: m[0].trim(),
+        })
+        errors++
+      }
+      return
+    }
+
+    // (b) object: at depth 0 check for bare-locale top-level keys; then recurse
+    if (typeof obj === 'object') {
+      if (depth === 0) {
+        for (const k of Object.keys(obj)) {
+          if (TOPLOCALE_KEY_RE.test(k)) {
+            violations.push({
+              file,
+              path: k,
+              value: '<top-level locale wrapper>',
+              match: k,
+            })
+            errors++
+          }
         }
       }
-    } else if (typeof obj === 'object') {
       for (const [k, v] of Object.entries(obj)) {
-        walk(v, prefix ? `${prefix}.${k}` : k)
+        walk(v, prefix ? `${prefix}.${k}` : k, depth + 1)
       }
     }
   }
@@ -75,9 +96,11 @@ for (const file of files) {
 }
 
 if (violations.length > 0) {
-  console.error(`\n[check-no-locale-prefix] Found ${violations.length} locale prefix pollution(s):\n`)
+  console.error(
+    `\n[check-no-locale-prefix] Found ${violations.length} locale prefix pollution(s):\n`
+  )
   for (const v of violations) {
-    console.error(`  ${v.file}:${v.path} — contains "${v.token}" in "${v.value}"`)
+    console.error(`  ${v.file}:${v.path} — "${v.match}" in "${v.value}"`)
   }
   console.error('')
   process.exit(1)
