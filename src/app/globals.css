@@ -165,6 +165,31 @@ body {
   }
 }
 
+/* ── A11y: Keyboard focus ring (TK-009) ────────────────────────────────── */
+*:focus-visible {
+  outline: 2px solid rgba(251, 191, 36, 0.6);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── A11y: Skip to content (for screen readers) ─────────────────────────── */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: #FBBF24;
+  color: #0B0B1A;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: top 0.2s;
+}
+.skip-to-content:focus {
+  top: 0.75rem;
+}
+
 /* ── Holiday skin overrides (applied on mount, no SSR flash) ────────────── */
 .scene-christmas {
   background-image: linear-gradient(to bottom, #1a0a1a, #0f0a1a, #0a0518) !important;

@@ -106,6 +106,32 @@ export default async function LocaleLayout({ children, params }: Props) {
           />
         )}
 
+        {/* PostHog analytics (TK-002) — self-host or cloud, zero-review */}
+        {process.env.NEXT_PUBLIC_POSTHOG_KEY && (
+          <>
+            <script
+              crossOrigin="anonymous"
+              src={
+                process.env.NEXT_PUBLIC_POSTHOG_HOST
+                  ? `${process.env.NEXT_PUBLIC_POSTHOG_HOST}/static/array.js`
+                  : 'https://us-assets.i.posthog.com/static/array.js'
+              }
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setAutocaptureProperties setGroupPropertiesForFlags optInCapture optOutCapture hasOptedInCapture hasOptedOutCapture disableCompression debug getPageViewId captureException".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+                  posthog.init('${process.env.NEXT_PUBLIC_POSTHOG_KEY}', {
+                    api_host: '${process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com'}',
+                    person_profiles: 'identified_only',
+                    loaded: function(p) { if (p.get_config('api_host') === 'https://us.i.posthog.com') { /* cloud */ } },
+                  });
+                `,
+              }}
+            />
+          </>
+        )}
+
         {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
@@ -211,7 +237,10 @@ export default async function LocaleLayout({ children, params }: Props) {
           <div className="mx-auto max-w-6xl px-4 py-8">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                漏 {new Date().getFullYear()} Togthr. All rights reserved.
+                © {new Date().getFullYear()} Togthr. All rights reserved.
+              </p>
+              <p className="text-xs text-zinc-500/60 dark:text-zinc-500/60">
+                Payments processed securely via PayPal.
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-500 dark:text-zinc-400">
                 <Link
