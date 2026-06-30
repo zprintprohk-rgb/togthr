@@ -733,6 +733,11 @@
       "sprout": "芽",
       "tree": "木",
       "full-nest": "巣完成"
+    },
+    "seedEntries": {
+      "e1": { "text": "今日はいい天気。散歩に出かけた。", "mood": "warm" },
+      "e2": { "text": "雪が降ってきた！南国の人は大興奮。", "mood": "cool" },
+      "e3": { "text": "初めてのクリスマスを一緒に 🎄", "mood": "festive" }
     }
   },
   "chat": {

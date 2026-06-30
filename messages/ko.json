@@ -733,6 +733,11 @@
       "sprout": "새싹",
       "tree": "나무",
       "full-nest": "둥지 완성"
+    },
+    "seedEntries": {
+      "e1": { "text": "오늘 날씨 좋아서 산책 다녀왔어요.", "mood": "warm" },
+      "e2": { "text": "눈이 왔어요! 남쪽 사람이 신났어요.", "mood": "cool" },
+      "e3": { "text": "처음 함께한 크리스마스 🎄", "mood": "festive" }
     }
   },
   "chat": {

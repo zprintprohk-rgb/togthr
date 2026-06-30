@@ -12,7 +12,7 @@
 
 'use client'
 
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -39,10 +39,11 @@ const MOOD_DECOR: Record<Mood, string[]> = {
   festive: ['🎄', '🎃', '💝', '🎁', '🎉', '🎀'],
 }
 
-const SEED_ENTRIES: Entry[] = [
-  { id: 'e1', text: '今天天气很好，出去走了走。', mood: 'warm',    ts: Date.now() - 86400e3 * 5 },
-  { id: 'e2', text: '下雪了！南方人激动坏了。',   mood: 'cool',    ts: Date.now() - 86400e3 * 3 },
-  { id: 'e3', text: '第一次一起过圣诞 🎄',         mood: 'festive', ts: Date.now() - 86400e3 * 1 },
+type SeedKey = 'e1' | 'e2' | 'e3'
+const SEED_KEYS: { key: SeedKey; mood: Mood; daysAgo: number }[] = [
+  { key: 'e1', mood: 'warm',    daysAgo: 5 },
+  { key: 'e2', mood: 'cool',    daysAgo: 3 },
+  { key: 'e3', mood: 'festive', daysAgo: 1 },
 ]
 
 function getStage(count: number): typeof STAGES[number] {
@@ -53,7 +54,20 @@ function getStage(count: number): typeof STAGES[number] {
 
 export default function JournalNestPage() {
   const t = useTranslations('journal')
-  const [entries, setEntries] = useState<Entry[]>(SEED_ENTRIES)
+
+  // Locale-aware seed entries — independent of user's typed history.
+  // Constructed once per mount; Date.now is fine because entries only show stage, not dates.
+  const seedEntries = useMemo<Entry[]>(
+    () => SEED_KEYS.map(({ key, mood, daysAgo }) => ({
+      id: key,
+      text: t(`seedEntries.${key}.text`),
+      mood,
+      ts: Date.now() - 86400e3 * daysAgo,
+    })),
+    [t],
+  )
+
+  const [entries, setEntries] = useState<Entry[]>(seedEntries)
   const [draft, setDraft] = useState('')
   const [mood, setMood] = useState<Mood>('warm')
 

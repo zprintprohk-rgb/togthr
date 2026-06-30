@@ -733,6 +733,11 @@
       "sprout": "嫩芽",
       "tree": "小树",
       "full-nest": "满巢"
+    },
+    "seedEntries": {
+      "e1": { "text": "今天天气很好，出去走了走。", "mood": "warm" },
+      "e2": { "text": "下雪了！南方人激动坏了。", "mood": "cool" },
+      "e3": { "text": "第一次一起过圣诞 🎄", "mood": "festive" }
     }
   },
   "chat": {

@@ -733,6 +733,11 @@
       "sprout": "Brote",
       "tree": "Árbol",
       "full-nest": "Nido lleno"
+    },
+    "seedEntries": {
+      "e1": { "text": "Buen tiempo hoy, salimos a caminar un rato.", "mood": "warm" },
+      "e2": { "text": "¡Por fin nieve! Estamos emocionados.", "mood": "cool" },
+      "e3": { "text": "Nuestra primera Navidad juntos 🎄", "mood": "festive" }
     }
   },
   "chat": {

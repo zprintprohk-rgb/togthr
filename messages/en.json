@@ -739,6 +739,11 @@
       "sprout": "Sprout",
       "tree": "Tree",
       "full-nest": "Full nest"
+    },
+    "seedEntries": {
+      "e1": { "text": "Beautiful day today. Went out for a long walk.", "mood": "warm" },
+      "e2": { "text": "Snowfall at last! Cozy season is here.", "mood": "cool" },
+      "e3": { "text": "Our first Christmas together 🎄", "mood": "festive" }
     }
   },
   "chat": {

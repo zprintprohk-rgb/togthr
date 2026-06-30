@@ -733,6 +733,11 @@
       "sprout": "Spross",
       "tree": "Baum",
       "full-nest": "Volles Nest"
+    },
+    "seedEntries": {
+      "e1": { "text": "Schönes Wetter heute, wir waren spazieren.", "mood": "warm" },
+      "e2": { "text": "Schnee endlich! Wir sind ganz aufgeregt.", "mood": "cool" },
+      "e3": { "text": "Unser erstes Weihnachten zusammen 🎄", "mood": "festive" }
     }
   },
   "chat": {
