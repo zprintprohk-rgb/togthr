@@ -218,7 +218,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               <LanguageSwitcher currentLocale={locale as Locale} />
               <Link
                 href={`/${locale}/login`}
-                className="inline-flex h-9 items-center rounded-full bg-zinc-900 px-4 text-sm font-medium text-white hover:bg-zinc-800 dark:bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-900 dark:hover:bg-zinc-200"
+                className="inline-flex h-9 items-center rounded-full bg-zinc-900 px-4 text-sm font-medium text-white hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
               >
                 {nav.login}
               </Link>
