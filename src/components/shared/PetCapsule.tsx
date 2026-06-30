@@ -28,6 +28,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useReducedMotion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
+import { SafeImage } from './SafeImage'
 
 export type PetCapsuleSize = 'sm' | 'md' | 'lg' | 'xl' | 'fill'
 export type PetCapsuleStatus = 'hello' | 'miss' | 'sleepy' | null
@@ -155,12 +156,15 @@ export function PetCapsule({
             className="relative h-[80%] w-[80%] animate-breath"
             style={{ transformStyle: 'preserve-3d' }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <SafeImage
               src={src}
               alt={alt}
               className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)]"
               loading="lazy"
+              bgStyle={{
+                backgroundImage:
+                  'radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.15) 0%, rgba(139, 92, 246, 0.06) 45%, transparent 75%)',
+              }}
             />
             {/* 眼睛跟随（仅 lg/xl 显示） */}
             {(size === 'lg' || size === 'xl' || size === 'fill') && parallax && (
