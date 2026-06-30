@@ -125,7 +125,7 @@ export function PetPresence({ state, nightMode, onInteract, className }: Props) 
         />
         {/* State label badge */}
         <span
-          className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-amber-400/90 text-[8px] font-bold text-zinc-900 shadow"
+          className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-amber-400/90 text-[8px] font-bold text-zinc-900 dark:text-zinc-100 shadow"
           aria-hidden="true"
         >
           {STATE_LABEL[state]}

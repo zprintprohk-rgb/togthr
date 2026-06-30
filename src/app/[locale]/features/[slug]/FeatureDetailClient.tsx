@@ -115,7 +115,7 @@ export function FeatureDetailClient({
         {constellation.map(p => (
           <motion.span
             key={p.id}
-            className="absolute rounded-full bg-zinc-200"
+            className="absolute rounded-full bg-zinc-200 dark:bg-zinc-800"
             style={{ top: p.top, left: p.left, width: p.size, height: p.size }}
             animate={prefersReduced ? {} : { opacity: [0.2, 0.8, 0.2] }}
             transition={{ duration: p.duration, delay: p.delay, repeat: Infinity, ease: 'easeInOut' }}

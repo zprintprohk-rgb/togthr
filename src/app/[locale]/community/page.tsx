@@ -141,7 +141,7 @@ export default function CommunityPage() {
         {Array.from({ length: 30 }).map((_, i) => (
           <span
             key={i}
-            className="absolute rounded-full bg-zinc-200"
+            className="absolute rounded-full bg-zinc-200 dark:bg-zinc-800"
             style={{
               top: `${(i * 47) % 100}%`,
               left: `${(i * 79) % 100}%`,
@@ -267,7 +267,7 @@ export default function CommunityPage() {
                   className={`inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs transition-all ${
                     post.hugged
                       ? 'scale-105 bg-rose-100 font-semibold text-rose-700 dark:bg-rose-900/40 dark:text-rose-300'
-                      : 'bg-zinc-100 text-zinc-600 hover:scale-105 hover:bg-rose-50 hover:text-rose-600 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-rose-900/30'
+                      : 'bg-zinc-100 dark:bg-zinc-900 text-zinc-600 hover:scale-105 hover:bg-rose-50 hover:text-rose-600 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-rose-900/30'
                   }`}
                 >
                   🤗 {t('hug')} · {post.hugs}

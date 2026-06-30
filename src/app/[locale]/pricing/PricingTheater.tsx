@@ -261,7 +261,7 @@ export function PricingTheater({
           <span
             key={`star-${i}`}
             aria-hidden="true"
-            className="absolute rounded-full bg-zinc-200"
+            className="absolute rounded-full bg-zinc-200 dark:bg-zinc-800"
             style={{
               top: `${(i * 37) % 100}%`,
               left: `${(i * 71) % 100}%`,

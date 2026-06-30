@@ -44,7 +44,7 @@ export default function PricingError({
           <summary className="cursor-pointer text-xs text-zinc-500 dark:text-zinc-400 hover:underline">
             Technical details
           </summary>
-          <pre className="mt-2 overflow-auto rounded-lg bg-zinc-100 p-3 text-xs text-zinc-700 dark:bg-zinc-900 dark:text-zinc-300">
+          <pre className="mt-2 overflow-auto rounded-lg bg-zinc-100 dark:bg-zinc-900 p-3 text-xs text-zinc-700 dark:bg-zinc-900 dark:text-zinc-300">
             {error.message}
             {error.digest ? `\nDigest: ${error.digest}` : ''}
           </pre>
@@ -60,7 +60,7 @@ export default function PricingError({
         </button>
         <a
           href="/"
-          className="rounded-full border border-zinc-300 bg-white px-5 py-2 text-sm font-semibold text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
+          className="rounded-full border border-zinc-300 bg-white px-5 py-2 text-sm font-semibold text-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
         >
           Back to home
         </a>

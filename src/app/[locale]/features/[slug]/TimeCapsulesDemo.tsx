@@ -107,7 +107,7 @@ export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           placeholder={t('titlePlaceholder')}
-          className="w-full h-11 rounded-xl bg-white/30 backdrop-blur-md border border-white/40 px-4 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-purple-400/60 dark:focus:border-purple-400/60 transition-colors"
+          className="w-full h-11 rounded-xl bg-white/30 dark:bg-zinc-900/30 backdrop-blur-md border border-white/40 px-4 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-purple-400/60 dark:focus:border-purple-400/60 transition-colors"
         />
 
         <textarea
@@ -115,12 +115,12 @@ export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
           onChange={(e) => setContent(e.target.value)}
           placeholder={t('contentPlaceholder')}
           rows={3}
-          className="w-full rounded-xl bg-white/30 backdrop-blur-md border border-white/40 px-4 py-3 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-purple-400/60 dark:focus:border-purple-400/60 transition-colors resize-none"
+          className="w-full rounded-xl bg-white/30 dark:bg-zinc-900/30 backdrop-blur-md border border-white/40 px-4 py-3 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-purple-400/60 dark:focus:border-purple-400/60 transition-colors resize-none"
         />
 
         <div className="flex gap-3 items-center">
           {/* Unlock date */}
-          <div className="flex-1 h-11 rounded-xl bg-white/30 backdrop-blur-md border border-white/40 px-4 flex items-center">
+          <div className="flex-1 h-11 rounded-xl bg-white/30 dark:bg-zinc-900/30 backdrop-blur-md border border-white/40 px-4 flex items-center">
             <input
               type="date"
               value={unlockDate}
@@ -139,7 +139,7 @@ export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
                 className={`w-11 h-11 rounded-xl text-lg flex items-center justify-center transition-all ${
                   type === opt.value
                     ? 'bg-linear-to-br from-purple-400 to-violet-500 text-white shadow-md shadow-purple-500/25 scale-110'
-                    : 'bg-white/30 backdrop-blur-md border border-white/40 text-zinc-500 hover:bg-white/40'
+                    : 'bg-white/30 dark:bg-zinc-900/30 backdrop-blur-md border border-white/40 text-zinc-500 hover:bg-white/40 dark:bg-zinc-900/40'
                 }`}
               >
                 {opt.label}

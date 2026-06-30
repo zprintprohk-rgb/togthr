@@ -30,7 +30,7 @@ export function LanguageSwitcher({ currentLocale }: Props) {
     <select
       value={currentLocale}
       onChange={handleChange}
-      className="h-9 rounded-full border border-zinc-200 bg-transparent px-3 text-sm font-medium text-zinc-700 hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-purple-500/30 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800"
+      className="h-9 rounded-full border border-zinc-200 bg-transparent px-3 text-sm font-medium text-zinc-700 hover:bg-zinc-100 dark:bg-zinc-900 dark:hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-purple-500/30 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800"
     >
       {routing.locales.map((locale) => (
         <option key={locale} value={locale}>

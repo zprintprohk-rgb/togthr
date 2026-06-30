@@ -98,7 +98,7 @@ export const DreamWallDemo: FC<DreamWallDemoProps> = () => {
               className={`h-11 rounded-xl text-2xl flex items-center justify-center transition-all ${
                 selectedEmoji === emoji
                   ? 'bg-yellow-300/30 border-2 border-yellow-400 scale-110 shadow-md shadow-yellow-400/30'
-                  : 'bg-white/30 backdrop-blur-md border border-white/40 hover:bg-white/50'
+                  : 'bg-white/30 dark:bg-zinc-900/30 backdrop-blur-md border border-white/40 hover:bg-white/50'
               }`}
             >
               {emoji}
@@ -114,7 +114,7 @@ export const DreamWallDemo: FC<DreamWallDemoProps> = () => {
             onChange={(e) => setText(e.target.value)}
             placeholder={t('placeholder')}
             onKeyDown={(e) => e.key === 'Enter' && handlePin()}
-            className="flex-1 h-11 rounded-xl bg-white/30 backdrop-blur-md border border-white/40 px-4 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-yellow-400/60 dark:focus:border-yellow-400/60 transition-colors"
+            className="flex-1 h-11 rounded-xl bg-white/30 dark:bg-zinc-900/30 backdrop-blur-md border border-white/40 px-4 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-yellow-400/60 dark:focus:border-yellow-400/60 transition-colors"
           />
 
           <motion.button

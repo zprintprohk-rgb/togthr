@@ -218,7 +218,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               <LanguageSwitcher currentLocale={locale as Locale} />
               <Link
                 href={`/${locale}/login`}
-                className="inline-flex h-9 items-center rounded-full bg-zinc-900 px-4 text-sm font-medium text-white hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+                className="inline-flex h-9 items-center rounded-full bg-zinc-900 px-4 text-sm font-medium text-white hover:bg-zinc-800 dark:bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-900 dark:hover:bg-zinc-200"
               >
                 {nav.login}
               </Link>
@@ -245,31 +245,31 @@ export default async function LocaleLayout({ children, params }: Props) {
               <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-500 dark:text-zinc-400">
                 <Link
                   href={`/${locale}/privacy`}
-                  className="hover:text-zinc-900 dark:hover:text-zinc-100"
+                  className="hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-100"
                 >
                   {footer.privacy}
                 </Link>
                 <Link
                   href={`/${locale}/terms`}
-                  className="hover:text-zinc-900 dark:hover:text-zinc-100"
+                  className="hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-100"
                 >
                   {footer.terms}
                 </Link>
                 <Link
                   href={`/${locale}/cookies`}
-                  className="hover:text-zinc-900 dark:hover:text-zinc-100"
+                  className="hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-100"
                 >
                   {footer.cookie}
                 </Link>
                 <Link
                   href={`/${locale}/help`}
-                  className="hover:text-zinc-900 dark:hover:text-zinc-100"
+                  className="hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-100"
                 >
                   {footer.help}
                 </Link>
                 <Link
                   href={`/${locale}/contact`}
-                  className="hover:text-zinc-900 dark:hover:text-zinc-100"
+                  className="hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-100"
                 >
                   {footer.contact}
                 </Link>

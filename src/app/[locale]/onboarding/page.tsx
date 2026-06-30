@@ -98,7 +98,7 @@ export default function OnboardingPage() {
         {Array.from({ length: 30 }).map((_, i) => (
           <span
             key={i}
-            className="absolute rounded-full bg-zinc-200"
+            className="absolute rounded-full bg-zinc-200 dark:bg-zinc-800"
             style={{
               top: `${(i * 47) % 100}%`,
               left: `${(i * 79) % 100}%`,
@@ -210,7 +210,7 @@ export default function OnboardingPage() {
             <div className="mt-8 flex items-center justify-center gap-3">
               <button
                 onClick={back}
-                className="rounded-full border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+                className="rounded-full border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
               >
                 ← {t('back')}
               </button>
@@ -282,7 +282,7 @@ export default function OnboardingPage() {
             <div className="mt-8 flex items-center justify-center gap-3">
               <button
                 onClick={back}
-                className="rounded-full border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+                className="rounded-full border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
               >
                 ← {t('back')}
               </button>
@@ -323,7 +323,7 @@ export default function OnboardingPage() {
               </Link>
               <Link
                 href="/chat"
-                className="rounded-full border border-zinc-300 bg-white px-6 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+                className="rounded-full border border-zinc-300 bg-white px-6 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
               >
                 💬 {t('done.sayHi')}
               </Link>
@@ -331,7 +331,7 @@ export default function OnboardingPage() {
 
             <button
               onClick={reset}
-              className="mt-8 text-xs text-zinc-400 underline underline-offset-2 hover:text-zinc-600"
+              className="mt-8 text-xs text-zinc-400 underline underline-offset-2 hover:text-zinc-600 dark:text-zinc-400"
             >
               {t('done.startOver')}
             </button>

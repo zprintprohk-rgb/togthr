@@ -111,7 +111,7 @@ export const SharedJournalDemo: FC<SharedJournalDemoProps> = () => {
             onChange={(e) => setContent(e.target.value)}
             placeholder={t('placeholder')}
             rows={5}
-            className="w-full rounded-xl bg-white/30 backdrop-blur-md border border-white/40 px-4 py-3 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-emerald-400/60 dark:focus:border-emerald-400/60 transition-colors resize-none"
+            className="w-full rounded-xl bg-white/30 dark:bg-zinc-900/30 backdrop-blur-md border border-white/40 px-4 py-3 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-emerald-400/60 dark:focus:border-emerald-400/60 transition-colors resize-none"
           />
 
           <motion.button

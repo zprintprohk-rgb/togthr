@@ -120,7 +120,7 @@ export default function PetDetailClient() {
         {Array.from({ length: 40 }).map((_, i) => (
           <span
             key={i}
-            className="absolute rounded-full bg-zinc-200"
+            className="absolute rounded-full bg-zinc-200 dark:bg-zinc-800"
             style={{
               top: `${(i * 47) % 100}%`,
               left: `${(i * 79) % 100}%`,

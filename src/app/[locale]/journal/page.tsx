@@ -91,7 +91,7 @@ export default function JournalNestPage() {
         {Array.from({ length: 30 }).map((_, i) => (
           <span
             key={i}
-            className="absolute rounded-full bg-zinc-200"
+            className="absolute rounded-full bg-zinc-200 dark:bg-zinc-800"
             style={{
               top: `${(i * 47) % 100}%`,
               left: `${(i * 79) % 100}%`,

@@ -77,7 +77,7 @@ export function EmotionBackground({ mood, className }: Props) {
         {Array.from({ length: 40 }).map((_, i) => (
           <span
             key={i}
-            className="absolute rounded-full bg-white"
+            className="absolute rounded-full bg-white dark:bg-zinc-900"
             style={{
               top: `${(i * 37) % 100}%`,
               left: `${(i * 71) % 100}%`,

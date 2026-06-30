@@ -99,7 +99,7 @@ export default function DailyFeedingPage() {
         {Array.from({ length: 35 }).map((_, i) => (
           <span
             key={i}
-            className="absolute rounded-full bg-zinc-200"
+            className="absolute rounded-full bg-zinc-200 dark:bg-zinc-800"
             style={{
               top: `${(i * 47) % 100}%`,
               left: `${(i * 79) % 100}%`,
@@ -253,7 +253,7 @@ export default function DailyFeedingPage() {
               </button>
               <button
                 onClick={() => startFeeding('apart')}
-                className="rounded-2xl border-2 border-zinc-200 bg-white px-4 py-4 text-sm font-semibold text-zinc-600 transition-all hover:scale-105 hover:border-zinc-400 hover:bg-zinc-50 hover:shadow-lg dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700"
+                className="rounded-2xl border-2 border-zinc-200 bg-white px-4 py-4 text-sm font-semibold text-zinc-600 transition-all hover:scale-105 hover:border-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 hover:shadow-lg dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700"
               >
                 {t('apartBtn')}
               </button>
