@@ -9,6 +9,15 @@
 
 @import "tailwindcss";
 
+/* ── Dark mode strategy: use `.dark` class (NOT prefers-color-scheme) ─────
+ * Tailwind v4 默认 `dark:` 变体走 `@media (prefers-color-scheme:dark)`。
+ * 但 layout.tsx 在 <html> 上静态加 `dark` class,且 SSR/CSR 必须一致,
+ * 用户系统若不是深色,默认策略下所有 `dark:*` utility 完全不生效 → light mode 渲染。
+ * 显式覆盖为 class 策略:`dark:` 只在 `.dark` 或其后代上生效。
+ * 代价:用户切换系统深色模式不会再自动跟随(本项目本来就是永久深色设计,
+ * body 背景就是深空紫黑 `--bg-cosmic`,不需要 system-driven 切换)。 */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* ── Core palette ───────────────────────────────────────────────────────── */
 :root {
   /* 基底色 — 深空紫黑，方案要求 #0B0B1A（不要纯黑） */
