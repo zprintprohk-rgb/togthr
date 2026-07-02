@@ -16,7 +16,10 @@ PAYPAL_MODE = "live"
 NEXT_PUBLIC_SUPABASE_URL = "https://pcgwvqpzyqijrvikfawd.supabase.co"
 NEXT_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable_aDkUMB90QwGQAlcWAGT5Eg_Wf9o_Z69"
 # Public R2 CDN (safe to inline)
-NEXT_PUBLIC_CDN_URL = "https://we2-storage.r2.dev"
+# NOTE: If R2 public subdomain is enabled, use:
+# NEXT_PUBLIC_CDN_URL = "https://togthr-images.32c174efaa22353f357c0fdff9d61b86.r2.dev"
+# Falls back to NEXT_PUBLIC_SITE_URL in lib/r2.ts — safe to leave unset
+NEXT_PUBLIC_CDN_URL = ""
 # PayPal client ID is technically public (used in browser SDK), kept here for convenience
 PAYPAL_CLIENT_ID = ""
 ALIPAY_APP_ID = ""

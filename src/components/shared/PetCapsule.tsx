@@ -147,8 +147,8 @@ export function PetCapsule({
       <div className="relative h-full w-full overflow-hidden rounded-[28px] glass-card shadow-2xl ring-1 ring-white/10">
         {/* 内部高光（顶部） */}
         <div className="pointer-events-none absolute inset-x-4 top-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
-        {/* 内部底色渐变（防止透明导致的视觉空洞） */}
-        <div className="absolute inset-0 bg-linear-to-b from-white/[0.03] via-transparent to-black/20" />
+        {/* 内部底色渐变（防止透明导致的视觉空洞 + 柔化白底图片边缘） */}
+        <div className="absolute inset-0 bg-linear-to-b from-purple-900/20 via-transparent to-black/40" />
 
         {/* 宠物本体 */}
         <div className="absolute inset-0 flex items-center justify-center">

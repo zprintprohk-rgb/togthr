@@ -56,13 +56,27 @@
   --section-min:      min-h-screen;
 }
 
-/* ── Default body — 永远深色（私密、避风港感） ──────────────────────────── */
-body {
-  background: var(--bg-cosmic);
-  color: var(--text-primary);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+/* ── Default html + body — 永远深色（私密、避风港感） ──────────────────── */
+@layer base {
+  html {
+    background: var(--bg-cosmic);
+  }
+
+  body {
+    background: var(--bg-cosmic);
+    color: var(--text-primary);
+    font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* 确保 main 标签也继承深色背景，防止页面内容不足时露白 */
+@layer base {
+  main {
+    background: var(--bg-cosmic);
+    flex: 1;
+  }
 }
 
 /* ── 共享 keyframes（情感粒子/呼吸/光标闪烁） ─────────────────────────── */
