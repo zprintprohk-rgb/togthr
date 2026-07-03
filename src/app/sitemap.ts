@@ -41,7 +41,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 : `${base}/${l}${page.path}`,
             ]),
           ),
-          canonical: url,
         },
       })
     }
