@@ -5,6 +5,7 @@
   "scripts": {
     "prebuild": "npm run sync-messages",
     "build": "next build --no-lint && npx next-sitemap",
+    "postbuild": "node scripts/ping-indexnow.cjs",
     "dev": "next dev",
     "cf-build": "npm run build && npx @opennextjs/cloudflare build --skipNextBuild",
     "start": "next start",

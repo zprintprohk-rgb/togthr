@@ -1,4 +1,7 @@
-﻿import type { MetadataRoute } from 'next'
+﻿// src/app/robots.ts — Next.js MetadataRoute robots
+// IMPORTANT: Use siteConfig.url (togthr.life) — do NOT hardcode Togthr.com
+import type { MetadataRoute } from 'next'
+import { siteConfig } from '@/lib/seo'
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -13,6 +16,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/',
       },
     ],
-    sitemap: 'https://Togthr.com/sitemap.xml',
+    sitemap: `${siteConfig.url}/sitemap.xml`,
+    host: siteConfig.url,
   }
 }
