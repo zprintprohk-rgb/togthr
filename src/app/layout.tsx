@@ -50,7 +50,10 @@ export default function RootLayout({
             after we own documentElement. */}
         <script dangerouslySetInnerHTML={{ __html: FORCE_DARK_SCRIPT }} />
       </head>
-      <body className="min-h-full flex flex-col bg-zinc-950 text-zinc-100">{children}</body>
+      <body 
+        className="min-h-full flex flex-col bg-zinc-950 text-zinc-100"
+        style={{ backgroundColor: '#0B0B1A', margin: 0 }}
+      >{children}</body>
     </html>
   );
 }

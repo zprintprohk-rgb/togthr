@@ -227,7 +227,10 @@ export default async function LocaleLayout({ children, params }: Props) {
         </header>
 
         {/* ---------- Main Content ---------- */}
-        <main className="bg-[#0B0B1A]">{children}</main>
+        <main 
+          className="bg-[#0B0B1A]"
+          style={{ background: '#0B0B1A', minHeight: '100vh' }}
+        >{children}</main>
 
         {/* 桌面宠物 — 全站悬浮 */}
         <DesktopPet />
