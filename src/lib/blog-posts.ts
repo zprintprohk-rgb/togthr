@@ -136,7 +136,107 @@ const launchPosts: BlogPost[] = [
   },
 ];
 
-export const blogPosts: BlogPost[] = launchPosts;
+// ──────────────────────────────────────────────────────────────────────
+// Daily evolution: 2026-07-04 — long-distance rituals
+// 8 locales × 1 post (gives cron a target to extend)
+// ──────────────────────────────────────────────────────────────────────
+
+const DAILY_DATE = '2026-07-04';
+const DAILY_SLUG = 'three-small-rituals-for-couples-who-live-apart';
+const DAILY_TAGS = ['long-distance', 'relationship-rituals', 'companion-app', 'couples', 'togthr-tips'];
+
+const dailyPosts: BlogPost[] = [
+  {
+    slug: DAILY_SLUG,
+    locale: 'en',
+    title: 'Three Small Rituals for Couples Who Live Apart',
+    description:
+      'Long-distance love runs on tiny rituals, not grand gestures. Three quiet practices — and how Togthr helps each one feel close.',
+    date: DAILY_DATE,
+    cover: `/blog-covers/${DAILY_SLUG}-en.png`,
+    tags: DAILY_TAGS,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG,
+    locale: 'zh-cn',
+    title: '异地恋的三件小事:让距离不再稀释关系',
+    description:
+      '异地恋靠的不是轰轰烈烈,而是三件安静的小事。Togthr 把每件小事都变得更近一步。',
+    date: DAILY_DATE,
+    cover: `/blog-covers/${DAILY_SLUG}-zh-cn.png`,
+    tags: DAILY_TAGS,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG,
+    locale: 'zh-tw',
+    title: '遠距離戀愛的三件小事:讓距離不再稀釋關係',
+    description:
+      '遠距離戀愛靠的不是轟轟烈烈,而是三件安靜的小事。Togthr 把每件小事都拉得更近一步。',
+    date: DAILY_DATE,
+    cover: `/blog-covers/${DAILY_SLUG}-zh-tw.png`,
+    tags: DAILY_TAGS,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG,
+    locale: 'ja',
+    title: '遠距離恋愛の小さな儀式 3 つ:距離に薄まらない関係のために',
+    description:
+      '遠距離恋愛は、劇的な出来事ではなく 3 つの静かな儀式で続きます。Togthr がそれぞれをもう少し近くします。',
+    date: DAILY_DATE,
+    cover: `/blog-covers/${DAILY_SLUG}-ja.png`,
+    tags: DAILY_TAGS,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG,
+    locale: 'ko',
+    title: '장거리 연애를 지키는 작은 의식 세 가지',
+    description:
+      '장거리 연애는 큰 사건이 아니라 작은 의식 세 가지로 유지됩니다. Togthr가 각각을 조금 더 가깝게 만들어 줍니다.',
+    date: DAILY_DATE,
+    cover: `/blog-covers/${DAILY_SLUG}-ko.png`,
+    tags: DAILY_TAGS,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG,
+    locale: 'de',
+    title: 'Drei kleine Rituale für Paare, die getrennt wohnen',
+    description:
+      'Fernbeziehungen leben nicht von großen Gesten, sondern von drei leisen Ritualen. So macht Togthr jedes davon etwas näher.',
+    date: DAILY_DATE,
+    cover: `/blog-covers/${DAILY_SLUG}-de.png`,
+    tags: DAILY_TAGS,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG,
+    locale: 'fr',
+    title: 'Trois petits rituels pour les couples qui vivent séparés',
+    description:
+      "L'amour à distance ne tient pas aux grands gestes, mais à trois rituels discrets. Voici comment Togthr rend chacun un peu plus proche.",
+    date: DAILY_DATE,
+    cover: `/blog-covers/${DAILY_SLUG}-fr.png`,
+    tags: DAILY_TAGS,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG,
+    locale: 'es',
+    title: 'Tres pequeños rituales para parejas que viven lejos',
+    description:
+      'El amor a distancia no sobrevive por grandes gestos, sino por tres rituales discretos. Así es como Togthr acerca cada uno.',
+    date: DAILY_DATE,
+    cover: `/blog-covers/${DAILY_SLUG}-es.png`,
+    tags: DAILY_TAGS,
+    readingMinutes: 4,
+  },
+];
+
+export const blogPosts: BlogPost[] = [...launchPosts, ...dailyPosts];
 
 // ──────────────────────────────────────────────────────────────────────
 // Helpers
