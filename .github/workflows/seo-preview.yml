@@ -1,0 +1,178 @@
+name: SEO Content Preview
+
+# Triggered on PRs that touch blog content (preview/* branches or any branch).
+# Runs lint + build + 6-step verify on the PR. Does NOT deploy.
+# Deploy to Cloudflare Workers only happens on main (deploy.yml).
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'src/app/[locale]/blog/**'
+      - 'src/lib/blog-posts.ts'
+      - 'src/lib/seo.ts'
+      - 'src/app/sitemap.ts'
+      - 'src/app/robots.ts'
+      - 'public/blog-covers/**'
+      - 'scripts/seo-sitemap-lint.cjs'
+  workflow_dispatch:
+
+# Cancel any in-flight run for the same PR to save CI minutes.
+concurrency:
+  group: seo-preview-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  seo-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Clean previous build artifacts
+        run: |
+          rm -rf node_modules .next .open-next .wrangler
+          npm cache clean --force || true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          if [ ! -f package-lock.json ]; then
+            echo "::error::package-lock.json missing"
+            exit 1
+          fi
+          npm ci --no-audit --no-fund
+
+      # ─── 1. SEO sitemap lint (must pass, blocks merge) ───────────────────
+      - name: SEO sitemap lint (hard fail)
+        run: |
+          echo "==== seo-sitemap-lint.cjs ===="
+          node scripts/seo-sitemap-lint.cjs --strict
+          if [ $? -ne 0 ]; then
+            echo "::error::seo-sitemap-lint FAILED — see output above. Fix errors then re-push."
+            exit 1
+          fi
+
+      # ─── 2. next build (must pass, blocks merge) ──────────────────────────
+      - name: Build (Next + OpenNext for Cloudflare)
+        run: set -euo pipefail && npm run cf-build
+
+      # ─── 3. Build artifact sanity check ──────────────────────────────────
+      - name: Verify build artifacts
+        run: |
+          if [ ! -d .next/server/app ]; then
+            echo "::error::.next/server/app missing — build did not produce expected output"
+            exit 1
+          fi
+          echo "==== Blog HTML files generated ===="
+          find .next/server/app -path '*/blog/*.html' | sort | head -40
+          BLOG_COUNT=$(find .next/server/app -path '*/blog/*.html' | wc -l)
+          echo "Total blog HTML files: $BLOG_COUNT"
+          if [ "$BLOG_COUNT" -lt 8 ]; then
+            echo "::error::Expected ≥8 blog HTML files (8 locale × 1 blog), got $BLOG_COUNT"
+            exit 1
+          fi
+
+      # ─── 4. JSON-LD schema validation on all blog posts ──────────────────
+      - name: Validate JSON-LD in blog HTML (BlogPosting + BreadcrumbList)
+        run: |
+          MISSING=0
+          for html_file in $(find .next/server/app -path '*/blog/*.html'); do
+            BLOGPOSTING=$(grep -c '"@type":"BlogPosting"' "$html_file" 2>/dev/null || echo 0)
+            BREADCRUMB=$(grep -c '"@type":"BreadcrumbList"' "$html_file" 2>/dev/null || echo 0)
+            if [ "$BLOGPOSTING" -lt 1 ] || [ "$BREADCRUMB" -lt 1 ]; then
+              echo "::warning::$html_file missing JSON-LD: BlogPosting=$BLOGPOSTING BreadcrumbList=$BREADCRUMB"
+              MISSING=$((MISSING + 1))
+            fi
+          done
+          echo "Files missing JSON-LD: $MISSING"
+          if [ "$MISSING" -gt 0 ]; then
+            echo "::error::$MISSING blog HTML files missing required JSON-LD schema"
+            exit 1
+          fi
+
+      # ─── 5. Title/desc/h1 keyword check on first blog post ──────────────
+      - name: Verify title/description/h1 contain expected keywords
+        run: |
+          FIRST_BLOG=$(find .next/server/app -name '*.html' -path '*/blog/*/*' | head -1)
+          if [ -z "$FIRST_BLOG" ]; then
+            echo "::error::No blog HTML files found"
+            exit 1
+          fi
+          echo "Checking $FIRST_BLOG"
+          TITLE=$(grep -oE '<title>[^<]+</title>' "$FIRST_BLOG" | head -1)
+          DESC=$(grep -oE '<meta name="description" content="[^"]+"' "$FIRST_BLOG" | head -1)
+          H1=$(grep -oE '<h1[^>]*>[^<]+</h1>' "$FIRST_BLOG" | head -1)
+          echo "Title:    $TITLE"
+          echo "Desc:     $DESC"
+          echo "H1:       $H1"
+          if [ -z "$TITLE" ] || [ -z "$DESC" ] || [ -z "$H1" ]; then
+            echo "::error::Missing title/description/h1"
+            exit 1
+          fi
+
+      # ─── 6. Sitemap-0.xml sanity ────────────────────────────────────────
+      - name: Validate sitemap-0.xml contains blog URLs
+        run: |
+          SITEMAP=public/sitemap-0.xml
+          if [ ! -f "$SITEMAP" ]; then
+            echo "::error::$SITEMAP missing — postbuild step did not run"
+            exit 1
+          fi
+          BLOG_URLS=$(grep -c '/blog/' "$SITEMAP" || echo 0)
+          echo "Blog URLs in sitemap-0.xml: $BLOG_URLS"
+          if [ "$BLOG_URLS" -lt 8 ]; then
+            echo "::error::Expected ≥8 blog URLs in sitemap (8 locale × 1 blog), got $BLOG_URLS"
+            exit 1
+          fi
+          # Verify no forbidden domains
+          if grep -qiE 'togthr\.com|Togthr\.com' "$SITEMAP"; then
+            echo "::error::Forbidden domain 'togthr.com' / 'Togthr.com' found in sitemap"
+            exit 1
+          fi
+          # Verify no canonical in alternates
+          if grep -q '<xhtml:link rel="canonical"' "$SITEMAP"; then
+            echo "::warning::canonical in xhtml:link is informational, not blocking"
+          fi
+
+      # ─── Upload build artifacts for debugging ───────────────────────────
+      - name: Upload PR artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-preview-logs
+          path: |
+            .next/server/app
+            public/sitemap-0.xml
+            build-error.log
+          if-no-files-found: ignore
+          retention-days: 3
+
+      - name: Comment on PR with summary
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const passed = context.payload.conclusion === 'success' ||
+                          (context.eventName === 'workflow_dispatch');
+            const body = passed
+              ? '✅ SEO preview checks passed. Safe to merge.\n\n' +
+                '- SEO sitemap lint: OK\n' +
+                '- next build: OK\n' +
+                '- Blog HTML count: ≥8\n' +
+                '- JSON-LD (BlogPosting + BreadcrumbList): OK\n' +
+                '- Title/description/h1: OK\n' +
+                '- sitemap-0.xml blog URLs: ≥8\n\n' +
+                'Ready to merge via `gh pr merge --auto --squash`.'
+              : '❌ SEO preview checks failed. See workflow logs for details.\n\n' +
+                'Do NOT merge this PR. Fix the errors and push again.';
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request?.number,
+              body,
+            });

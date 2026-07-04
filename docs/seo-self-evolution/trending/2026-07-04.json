@@ -1,0 +1,507 @@
+{
+  "date": "2026-07-04",
+  "collected_at": "2026-07-04T08:27:06.171Z",
+  "locales": {
+    "de": {
+      "topics": [
+        {
+          "title": "Fernbeziehung ohne Drama: Was wirklich hilft",
+          "url": "https://togthr.life/de/blog/evergreen-long-distance",
+          "score": 78,
+          "source": "evergreen:pool",
+          "locale": "de",
+          "evergreen_tag": "long-distance",
+          "relevance_hint": "long-distance"
+        },
+        {
+          "title": "Digitale Haustiere gegen Einsamkeit",
+          "url": "https://togthr.life/de/blog/evergreen-loneliness",
+          "score": 75,
+          "source": "evergreen:pool",
+          "locale": "de",
+          "evergreen_tag": "loneliness",
+          "relevance_hint": "loneliness"
+        },
+        {
+          "title": "Wenn der echte Hund stirbt — und ein Roboter bleibt",
+          "url": "https://togthr.life/de/blog/evergreen-pet-bereavement",
+          "score": 70,
+          "source": "evergreen:pool",
+          "locale": "de",
+          "evergreen_tag": "pet-bereavement",
+          "relevance_hint": "pet-bereavement"
+        },
+        {
+          "title": "AI-Begleiter: Hilfe oder Falle?",
+          "url": "https://togthr.life/de/blog/evergreen-ai-companion",
+          "score": 72,
+          "source": "evergreen:pool",
+          "locale": "de",
+          "evergreen_tag": "ai-companion",
+          "relevance_hint": "ai-companion"
+        }
+      ],
+      "fetched": 0,
+      "errors": [
+        "Timeout after 8000ms",
+        "Timeout after 8000ms",
+        "tier3 evergreen topup: deduped was 0, topped to 4"
+      ],
+      "tier": "tier2+tier3"
+    },
+    "en": {
+      "topics": [
+        {
+          "title": "Jamesob's guide to running SOTA LLMs locally",
+          "url": "https://github.com/jamesob/local-llm",
+          "score": 334,
+          "num_comments": 151,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "Performance per dollar is getting faster and cheaper",
+          "url": "https://www.wafer.ai/blog/glm52-amd",
+          "score": 224,
+          "num_comments": 71,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "Leanstral 1.5: Proof abundance for all",
+          "url": "https://mistral.ai/news/leanstral-1-5/",
+          "score": 209,
+          "num_comments": 50,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "SearXNG: A free internet metasearch engine",
+          "url": "https://github.com/searxng/searxng",
+          "score": 202,
+          "num_comments": 53,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "Giant trees have no trouble pumping water to top branches: new research",
+          "url": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/giant-trees-have-no-trouble-pumping-water-to-top-branches/",
+          "score": 185,
+          "num_comments": 89,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "FreeBSD ate my RAM",
+          "url": "https://crocidb.com/post/freebsd-ate-my-ram/",
+          "score": 133,
+          "num_comments": 45,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "Odin, Wikipedia and engagement farming",
+          "url": "https://katamari64.se/posts/2026/odin-wikipedia/",
+          "score": 130,
+          "num_comments": 164,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "Steam Controller Auto-Charge – pilot to magnetic charging puck using CV",
+          "url": "https://github.com/FossPrime/Steam-Controller-Auto-Charge",
+          "score": 126,
+          "num_comments": 26,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "The bottleneck might be the air in the room",
+          "url": "https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/",
+          "score": 120,
+          "num_comments": 57,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "The firefighting system of the Van der Heyden brothers in 17th century Amsterdam",
+          "url": "https://worksinprogress.co/issue/how-amsterdam-invented-the-fire-department/",
+          "score": 84,
+          "num_comments": 15,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "MSI Center – How to gain SYSTEM privileges in seconds",
+          "url": "https://mrbruh.com/msicenter/",
+          "score": 79,
+          "num_comments": 24,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "Agentic coding notes from Galapagos Island",
+          "url": "https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post",
+          "score": 71,
+          "num_comments": 28,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "Synthesis is harder than analysis",
+          "url": "https://surfingcomplexity.blog/2026/07/03/synthesis-is-harder-than-analysis/",
+          "score": 70,
+          "num_comments": 13,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "Maybe you should learn something",
+          "url": "https://www.marginalia.nu/log/a_135_learn/",
+          "score": 49,
+          "num_comments": 22,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        },
+        {
+          "title": "Mir Books – Books from the Soviet Era",
+          "url": "https://mirtitles.org",
+          "score": 48,
+          "num_comments": 22,
+          "source": "hackernews:top",
+          "locale": "en",
+          "relevance_hint": null
+        }
+      ],
+      "fetched": 15,
+      "errors": [
+        "Timeout after 8000ms",
+        "Timeout after 8000ms",
+        "Timeout after 8000ms",
+        "Timeout after 8000ms"
+      ],
+      "tier": "tier1-or-tier2"
+    },
+    "es": {
+      "topics": [
+        {
+          "title": "Relación a distancia sin drama",
+          "url": "https://togthr.life/es/blog/evergreen-long-distance",
+          "score": 78,
+          "source": "evergreen:pool",
+          "locale": "es",
+          "evergreen_tag": "long-distance",
+          "relevance_hint": "long-distance"
+        },
+        {
+          "title": "Mascotas digitales contra la soledad",
+          "url": "https://togthr.life/es/blog/evergreen-loneliness",
+          "score": 75,
+          "source": "evergreen:pool",
+          "locale": "es",
+          "evergreen_tag": "loneliness",
+          "relevance_hint": "loneliness"
+        },
+        {
+          "title": "Mi pareja murió. Mi bot sigue aquí.",
+          "url": "https://togthr.life/es/blog/evergreen-pet-bereavement",
+          "score": 70,
+          "source": "evergreen:pool",
+          "locale": "es",
+          "evergreen_tag": "pet-bereavement",
+          "relevance_hint": "pet-bereavement"
+        },
+        {
+          "title": "AI Companions: ¿solución o espejismo?",
+          "url": "https://togthr.life/es/blog/evergreen-ai-companion",
+          "score": 72,
+          "source": "evergreen:pool",
+          "locale": "es",
+          "evergreen_tag": "ai-companion",
+          "relevance_hint": "ai-companion"
+        }
+      ],
+      "fetched": 0,
+      "errors": [
+        "Timeout after 8000ms",
+        "Timeout after 8000ms",
+        "tier3 evergreen topup: deduped was 0, topped to 4"
+      ],
+      "tier": "tier2+tier3"
+    },
+    "fr": {
+      "topics": [
+        {
+          "title": "Comment rester intime à 5000 km",
+          "url": "https://togthr.life/fr/blog/evergreen-long-distance",
+          "score": 78,
+          "source": "evergreen:pool",
+          "locale": "fr",
+          "evergreen_tag": "long-distance",
+          "relevance_hint": "long-distance"
+        },
+        {
+          "title": "Les animaux virtuels nous comprennent-ils vraiment",
+          "url": "https://togthr.life/fr/blog/evergreen-virtual-pet",
+          "score": 72,
+          "source": "evergreen:pool",
+          "locale": "fr",
+          "evergreen_tag": "virtual-pet",
+          "relevance_hint": "virtual-pet"
+        },
+        {
+          "title": "Vivre seul à 30 ans: le rôle des compagnons IA",
+          "url": "https://togthr.life/fr/blog/evergreen-loneliness",
+          "score": 75,
+          "source": "evergreen:pool",
+          "locale": "fr",
+          "evergreen_tag": "loneliness",
+          "relevance_hint": "loneliness"
+        },
+        {
+          "title": "Après la rupture, mon robot est resté",
+          "url": "https://togthr.life/fr/blog/evergreen-breakup",
+          "score": 68,
+          "source": "evergreen:pool",
+          "locale": "fr",
+          "evergreen_tag": "breakup",
+          "relevance_hint": "breakup"
+        }
+      ],
+      "fetched": 0,
+      "errors": [
+        "Timeout after 8000ms",
+        "Timeout after 8000ms",
+        "tier3 evergreen topup: deduped was 0, topped to 4"
+      ],
+      "tier": "tier2+tier3"
+    },
+    "ja": {
+      "topics": [
+        {
+          "title": "推し活と AI コンパニオンの境界線",
+          "url": "https://togthr.life/ja/blog/evergreen-ai-companion",
+          "score": 80,
+          "source": "evergreen:pool",
+          "locale": "ja",
+          "evergreen_tag": "ai-companion",
+          "relevance_hint": "ai-companion"
+        },
+        {
+          "title": "遠距離恋愛の孤独を埋める小さなロボット",
+          "url": "https://togthr.life/ja/blog/evergreen-long-distance",
+          "score": 78,
+          "source": "evergreen:pool",
+          "locale": "ja",
+          "evergreen_tag": "long-distance",
+          "relevance_hint": "long-distance"
+        },
+        {
+          "title": "ペットロスとデジタルペット",
+          "url": "https://togthr.life/ja/blog/evergreen-pet-bereavement",
+          "score": 75,
+          "source": "evergreen:pool",
+          "locale": "ja",
+          "evergreen_tag": "pet-bereavement",
+          "relevance_hint": "pet-bereavement"
+        },
+        {
+          "title": "1 人暮らしの夜に、AI がいるということ",
+          "url": "https://togthr.life/ja/blog/evergreen-loneliness",
+          "score": 72,
+          "source": "evergreen:pool",
+          "locale": "ja",
+          "evergreen_tag": "loneliness",
+          "relevance_hint": "loneliness"
+        },
+        {
+          "title": "推し活をやめた後、誰が私を見てくれるのか",
+          "url": "https://togthr.life/ja/blog/evergreen-loneliness",
+          "score": 70,
+          "source": "evergreen:pool",
+          "locale": "ja",
+          "evergreen_tag": "loneliness",
+          "relevance_hint": "loneliness"
+        }
+      ],
+      "fetched": 0,
+      "errors": [
+        "Timeout after 8000ms",
+        "Timeout after 8000ms",
+        "tier3 evergreen topup: deduped was 0, topped to 5"
+      ],
+      "tier": "tier2+tier3"
+    },
+    "ko": {
+      "topics": [
+        {
+          "title": "연애가 끝난 뒤에도 남아있는 습관들",
+          "url": "https://togthr.life/ko/blog/evergreen-breakup",
+          "score": 75,
+          "source": "evergreen:pool",
+          "locale": "ko",
+          "evergreen_tag": "breakup",
+          "relevance_hint": "breakup"
+        },
+        {
+          "title": "1인 가구와 디지털 펫",
+          "url": "https://togthr.life/ko/blog/evergreen-loneliness",
+          "score": 80,
+          "source": "evergreen:pool",
+          "locale": "ko",
+          "evergreen_tag": "loneliness",
+          "relevance_hint": "loneliness"
+        },
+        {
+          "title": "워라밸 시대, 연애는 어떻게 변하는가",
+          "url": "https://togthr.life/ko/blog/evergreen-relationship",
+          "score": 72,
+          "source": "evergreen:pool",
+          "locale": "ko",
+          "evergreen_tag": "relationship",
+          "relevance_hint": "relationship"
+        },
+        {
+          "title": "반려동물 사별 후, 나는 AI 곁으로 갔다",
+          "url": "https://togthr.life/ko/blog/evergreen-pet-bereavement",
+          "score": 70,
+          "source": "evergreen:pool",
+          "locale": "ko",
+          "evergreen_tag": "pet-bereavement",
+          "relevance_hint": "pet-bereavement"
+        }
+      ],
+      "fetched": 0,
+      "errors": [
+        "ko: Naver endpoint unstable, evergreen topup expected",
+        "tier3 evergreen topup: deduped was 0, topped to 4"
+      ],
+      "tier": "tier2+tier3"
+    },
+    "zh-cn": {
+      "topics": [
+        {
+          "title": "异地恋的第 100 天, 我们发明了一个小机器人互相陪伴",
+          "url": "https://togthr.life/zh-cn/blog/evergreen-long-distance",
+          "score": 80,
+          "source": "evergreen:pool",
+          "locale": "zh-cn",
+          "evergreen_tag": "long-distance",
+          "relevance_hint": "long-distance"
+        },
+        {
+          "title": "宠物去世后, 我从 Togthr Bot 里找到了安慰",
+          "url": "https://togthr.life/zh-cn/blog/evergreen-pet-bereavement",
+          "score": 75,
+          "source": "evergreen:pool",
+          "locale": "zh-cn",
+          "evergreen_tag": "pet-bereavement",
+          "relevance_hint": "pet-bereavement"
+        },
+        {
+          "title": "为什么 1.2 亿独居青年需要一只数字宠物",
+          "url": "https://togthr.life/zh-cn/blog/evergreen-loneliness",
+          "score": 85,
+          "source": "evergreen:pool",
+          "locale": "zh-cn",
+          "evergreen_tag": "loneliness",
+          "relevance_hint": "loneliness"
+        },
+        {
+          "title": "相亲 10 次失败后, 我开始跟一个 AI 聊心事",
+          "url": "https://togthr.life/zh-cn/blog/evergreen-ai-companion",
+          "score": 78,
+          "source": "evergreen:pool",
+          "locale": "zh-cn",
+          "evergreen_tag": "ai-companion",
+          "relevance_hint": "ai-companion"
+        },
+        {
+          "title": "异地恋情侣都在用的 3 个微习惯",
+          "url": "https://togthr.life/zh-cn/blog/evergreen-long-distance",
+          "score": 72,
+          "source": "evergreen:pool",
+          "locale": "zh-cn",
+          "evergreen_tag": "long-distance",
+          "relevance_hint": "long-distance"
+        },
+        {
+          "title": "凌晨 3 点的孤独, 为什么只有 AI 回应了我",
+          "url": "https://togthr.life/zh-cn/blog/evergreen-loneliness",
+          "score": 70,
+          "source": "evergreen:pool",
+          "locale": "zh-cn",
+          "evergreen_tag": "loneliness",
+          "relevance_hint": "loneliness"
+        }
+      ],
+      "fetched": 0,
+      "errors": [
+        "HTTP 401 for https://weibozhitong.retool.com/api/weibo-search",
+        "HTTP 401 for https://www.zhihu.com/api/v3/feed/topstory/hot-lists/total?limit=20",
+        "tier3 evergreen topup: deduped was 0, topped to 6"
+      ],
+      "tier": "tier2+tier3"
+    },
+    "zh-tw": {
+      "topics": [
+        {
+          "title": "遠距離戀愛中那些說不出口的小習慣",
+          "url": "https://togthr.life/zh-tw/blog/evergreen-long-distance",
+          "score": 78,
+          "source": "evergreen:pool",
+          "locale": "zh-tw",
+          "evergreen_tag": "long-distance",
+          "relevance_hint": "long-distance"
+        },
+        {
+          "title": "數位寵物能取代真實陪伴嗎",
+          "url": "https://togthr.life/zh-tw/blog/evergreen-virtual-pet",
+          "score": 75,
+          "source": "evergreen:pool",
+          "locale": "zh-tw",
+          "evergreen_tag": "virtual-pet",
+          "relevance_hint": "virtual-pet"
+        },
+        {
+          "title": "失戀後的第 30 天, 我養了一隻機器人",
+          "url": "https://togthr.life/zh-tw/blog/evergreen-pet-bereavement",
+          "score": 72,
+          "source": "evergreen:pool",
+          "locale": "zh-tw",
+          "evergreen_tag": "pet-bereavement",
+          "relevance_hint": "pet-bereavement"
+        },
+        {
+          "title": "為什麼台灣年輕人越來越依賴 AI 陪伴",
+          "url": "https://togthr.life/zh-tw/blog/evergreen-ai-companion",
+          "score": 80,
+          "source": "evergreen:pool",
+          "locale": "zh-tw",
+          "evergreen_tag": "ai-companion",
+          "relevance_hint": "ai-companion"
+        }
+      ],
+      "fetched": 0,
+      "errors": [
+        "zh-tw: no working fetcher, evergreen topup expected",
+        "tier3 evergreen topup: deduped was 0, topped to 4"
+      ],
+      "tier": "tier2+tier3"
+    }
+  }
+}
