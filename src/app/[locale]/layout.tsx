@@ -176,7 +176,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                   FAQ
                 </Link>
                 <Link
-                  href={locale === 'en' ? '/blog' : `/${locale}/blog`}
+                  href={`/${locale}/blog`}
                   className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
                 >
                   {nav.blog}

@@ -22,7 +22,6 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params
   const loc = locale as Locale
-  const isEn = loc === 'en'
   const titles: Record<Locale, string> = {
     en: 'Blog — Togthr',
     'zh-cn': '博客 — Togthr',
@@ -47,9 +46,7 @@ export async function generateMetadata({
     title: titles[loc] ?? titles.en,
     description: descriptions[loc] ?? descriptions.en,
     alternates: {
-      canonical: isEn
-        ? 'https://togthr.life/blog'
-        : `https://togthr.life/${loc}/blog`,
+      canonical: `https://togthr.life/${loc}/blog`,
     },
   }
 }
@@ -64,8 +61,7 @@ export default async function BlogIndexPage({
   setRequestLocale(loc)
 
   const posts = getBlogPostsByLocale(loc)
-  const isEn = loc === 'en'
-  const homeHref = isEn ? '/' : `/${loc}`
+  const homeHref = `/${loc}`
 
   const eyebrow: Record<Locale, string> = {
     en: 'Stories & Rituals',
@@ -128,7 +124,7 @@ export default async function BlogIndexPage({
             '@context': 'https://schema.org',
             '@type': 'Blog',
             name: 'Togthr Blog',
-            url: isEn ? 'https://togthr.life/blog' : `https://togthr.life/${loc}/blog`,
+            url: `https://togthr.life/${loc}/blog`,
             inLanguage: loc.replace('-', '_'),
             blogPost: posts.map((p) => ({
               '@type': 'BlogPosting',
@@ -165,14 +161,10 @@ export default async function BlogIndexPage({
         ) : (
           posts.map((p) => (
             <li key={p.slug}>
-              <Link
-                href={
-                  isEn
-                    ? `/blog/${p.slug}`
-                    : `/${loc}/blog/${p.slug}`
-                }
-                className="group block rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 transition hover:border-pink-500/60 hover:bg-zinc-900/70"
-              >
+<Link
+              href={`/${loc}/blog/${p.slug}`}
+              className="group block rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 transition hover:border-pink-500/60 hover:bg-zinc-900/70"
+            >
                 <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">
                   <time dateTime={p.date}>{p.date}</time>
                   {p.readingMinutes ? (

@@ -362,7 +362,8 @@ export function getAllSlugs(): string[] {
 }
 
 export function getBlogUrl(post: BlogPost): string {
-  return post.locale === 'en'
-    ? `${SITE_URL}/blog/${post.slug}`
-    : `${SITE_URL}/${post.locale}/blog/${post.slug}`;
+  // Always include locale prefix to match Next.js `[locale]` segment routing
+  // (the EN locale uses `/en/blog/...` despite localePrefix: 'as-needed',
+  // because blog routes are statically generated under `[locale]` segment).
+  return `${SITE_URL}/${post.locale}/blog/${post.slug}`;
 }
