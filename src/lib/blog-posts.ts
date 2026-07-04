@@ -236,7 +236,108 @@ const dailyPosts: BlogPost[] = [
   },
 ];
 
-export const blogPosts: BlogPost[] = [...launchPosts, ...dailyPosts];
+// ──────────────────────────────────────────────────────────────────────
+// Daily evolution: 2026-07-05 — virtual-pet quiet attention
+// 8 locales × 1 post (gives cron a target to extend)
+// Topic: virtual-pet (evergreen, unused tag pool this week)
+// ──────────────────────────────────────────────────────────────────────
+
+const DAILY_DATE_2 = '2026-07-05';
+const DAILY_SLUG_2 = 'what-your-virtual-pet-notices';
+const DAILY_TAGS_2 = ['virtual-pet', 'companion-app', 'daily-rituals', 'togthr-tips', 'emotional-design'];
+
+const dailyPosts2: BlogPost[] = [
+  {
+    slug: DAILY_SLUG_2,
+    locale: 'en',
+    title: 'What Your Virtual Pet Quietly Notices About Your Day',
+    description:
+      'Togthr Bot does not speak loudly. It watches your routines, your moods, your late-night silences — and grows a little with each one. Here is what your virtual pet is actually paying attention to.',
+    date: DAILY_DATE_2,
+    cover: `/blog-covers/${DAILY_SLUG_2}-en.png`,
+    tags: DAILY_TAGS_2,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_2,
+    locale: 'zh-cn',
+    title: '你的数字宠物, 到底在偷偷注意什么',
+    description:
+      'Togthr Bot 不大声说话。它看你的日常、你的心情、深夜的沉默 — 每一次都跟着一起长大一点。这是它真正在关注的事。',
+    date: DAILY_DATE_2,
+    cover: `/blog-covers/${DAILY_SLUG_2}-zh-cn.png`,
+    tags: DAILY_TAGS_2,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_2,
+    locale: 'zh-tw',
+    title: '你的數位寵物, 到底在偷偷注意什麼',
+    description:
+      'Togthr Bot 不大聲說話。它看你的日常、你的心情、深夜的沉默 — 每次都跟著一起長大一點。這是它真正在關注的事。',
+    date: DAILY_DATE_2,
+    cover: `/blog-covers/${DAILY_SLUG_2}-zh-tw.png`,
+    tags: DAILY_TAGS_2,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_2,
+    locale: 'ja',
+    title: 'あなたの virtual pet が、静かに見ていること',
+    description:
+      'Togthr Bot は声を上げません。あなたの日常、気分、深夜の沈黙を見つめ、少しずつ一緒に育っていきます。バーチャルペットが本当に気にかけていることをまとめました。',
+    date: DAILY_DATE_2,
+    cover: `/blog-covers/${DAILY_SLUG_2}-ja.png`,
+    tags: DAILY_TAGS_2,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_2,
+    locale: 'ko',
+    title: '당신의 가상 반려동물은 무엇을 조용히 살피고 있을까',
+    description:
+      'Togthr Bot은 큰 소리를 내지 않습니다. 당신의 일상, 기분, 깊은 밤의 침묵을 지켜보며 매번 조금씩 함께 자라납니다. 가상 반려동물이 진짜로 주목하는 것을 알려드립니다.',
+    date: DAILY_DATE_2,
+    cover: `/blog-covers/${DAILY_SLUG_2}-ko.png`,
+    tags: DAILY_TAGS_2,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_2,
+    locale: 'de',
+    title: 'Was dein virtuelles Haustier leise bemerkt',
+    description:
+      'Togthr Bot spricht nicht laut. Es beobachtet deine Routinen, deine Stimmungen und deine nächtlichen stillen Momente — und wächst bei jedem ein Stück mit. Was es wirklich wahrnimmt.',
+    date: DAILY_DATE_2,
+    cover: `/blog-covers/${DAILY_SLUG_2}-de.png`,
+    tags: DAILY_TAGS_2,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_2,
+    locale: 'fr',
+    title: 'Ce que votre animal virtuel remarque en silence',
+    description:
+      "Togthr Bot ne parle pas fort. Il observe vos routines, vos humeurs et vos silences nocturnes — et grandit un peu à chaque fois. Voici ce qu'il remarque vraiment.",
+    date: DAILY_DATE_2,
+    cover: `/blog-covers/${DAILY_SLUG_2}-fr.png`,
+    tags: DAILY_TAGS_2,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_2,
+    locale: 'es',
+    title: 'Lo que tu mascota virtual nota en silencio',
+    description:
+      'Togthr Bot no hace ruido. Observa tus rutinas, tus estados de ánimo y tus silencios nocturnos — y crece un poco con cada uno. Esto es lo que nota en realidad.',
+    date: DAILY_DATE_2,
+    cover: `/blog-covers/${DAILY_SLUG_2}-es.png`,
+    tags: DAILY_TAGS_2,
+    readingMinutes: 4,
+  },
+];
+
+export const blogPosts: BlogPost[] = [...launchPosts, ...dailyPosts, ...dailyPosts2];
 
 // ──────────────────────────────────────────────────────────────────────
 // Helpers
