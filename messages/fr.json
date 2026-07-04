@@ -14,7 +14,8 @@
     "journal": "Nid",
     "store": "Boutique",
     "chat": "Chat",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "blog": "Blog"
   },
   "seo": {
     "siteName": "Togthr",

@@ -14,7 +14,8 @@
     "journal": "둥지",
     "store": "상점",
     "chat": "채팅",
-    "faq": "자주 묻는 질문"
+    "faq": "자주 묻는 질문",
+    "blog": "블로그"
   },
   "seo": {
     "siteName": "Togthr",

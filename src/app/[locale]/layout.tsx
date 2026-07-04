@@ -79,6 +79,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       features: t('nav.features'),
       pricing: t('nav.pricing'),
       community: t('nav.community'),
+      blog: t('nav.blog'),
       login: t('nav.login'),
       daily: t('nav.daily'),
       capsule: t('nav.capsule'),
@@ -173,6 +174,12 @@ export default async function LocaleLayout({ children, params }: Props) {
                   className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
                 >
                   FAQ
+                </Link>
+                <Link
+                  href={locale === 'en' ? '/blog' : `/${locale}/blog`}
+                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                >
+                  {nav.blog}
                 </Link>
                 <Link
                   href={`/${locale}/daily`}
