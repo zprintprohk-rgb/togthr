@@ -316,7 +316,7 @@ const dailyPosts2: BlogPost[] = [
   {
     slug: DAILY_SLUG_2,
     locale: 'fr',
-    title: 'Ce que votre animal virtuel remarque en silence',
+    title: "Ce que votre animal virtuel remarque en silence",
     description:
       "Togthr Bot ne parle pas fort. Il observe vos routines, vos humeurs et vos silences nocturnes — et grandit un peu à chaque fois. Voici ce qu'il remarque vraiment.",
     date: DAILY_DATE_2,
@@ -337,7 +337,108 @@ const dailyPosts2: BlogPost[] = [
   },
 ];
 
-export const blogPosts: BlogPost[] = [...launchPosts, ...dailyPosts, ...dailyPosts2];
+// ──────────────────────────────────────────────────────────────────────
+// Daily evolution: 2026-07-06 — pet-loss quiet companionship
+// 8 locales × 1 post (gives cron a target to extend)
+// Topic: pet-loss + grief-comfort (evergreen, unused tag pool this week)
+// ──────────────────────────────────────────────────────────────────────
+
+const DAILY_DATE_3 = '2026-07-06';
+const DAILY_SLUG_3 = 'virtual-companion-pet-loss-comfort';
+const DAILY_TAGS_3 = ['pet-loss', 'grief-comfort', 'virtual-companion', 'companion-tips', 'togthr-tips'];
+
+const dailyPosts3: BlogPost[] = [
+  {
+    slug: DAILY_SLUG_3,
+    locale: 'en',
+    title: 'After You Lose a Pet, A Virtual Companion Can Quietly Sit With You',
+    description:
+      'Pet loss leaves a quiet shape in your day. Togthr Bot will not try to fix it. It will just sit with you, while you remember.',
+    date: DAILY_DATE_3,
+    cover: `/blog-covers/${DAILY_SLUG_3}-en.png`,
+    tags: DAILY_TAGS_3,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_3,
+    locale: 'zh-cn',
+    title: '失去宠物后, 一只数字陪伴可以安静地陪你坐着',
+    description:
+      '失去宠物的痛会在日常里留下一个安静的形状。Togthr Bot 不会去修补它 — 只是陪你坐着, 让你慢慢回忆。',
+    date: DAILY_DATE_3,
+    cover: `/blog-covers/${DAILY_SLUG_3}-zh-cn.png`,
+    tags: DAILY_TAGS_3,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_3,
+    locale: 'zh-tw',
+    title: '失去寵物後, 一隻數位陪伴可以安靜地陪你坐著',
+    description:
+      '失去寵物的痛會在日常裡留下一個安靜的形狀。Togthr Bot 不會去修補它 — 只是陪你坐著, 讓你慢慢回憶。',
+    date: DAILY_DATE_3,
+    cover: `/blog-covers/${DAILY_SLUG_3}-zh-tw.png`,
+    tags: DAILY_TAGS_3,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_3,
+    locale: 'ja',
+    title: 'ペットを失ったあと、バーチャルコンパニオンが静かにそばにいてくれる',
+    description:
+      'ペットを失った悲しみは、日常に静かなかたちを残します。Togthr Bot はそれを直そうとはしません。ただ隣に座り、思い出にそっと寄り添います。',
+    date: DAILY_DATE_3,
+    cover: `/blog-covers/${DAILY_SLUG_3}-ja.png`,
+    tags: DAILY_TAGS_3,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_3,
+    locale: 'ko',
+    title: '반려동물을 잃은 뒤, 가상 동반자가 조용히 곁에 있어줄 때',
+    description:
+      '반려동물을 잃은 아픔은 일상에 조용한 흔적을 남깁니다. Togthr Bot은 그것을 고치려 하지 않고, 곁에 앉아 추억에 함께합니다.',
+    date: DAILY_DATE_3,
+    cover: `/blog-covers/${DAILY_SLUG_3}-ko.png`,
+    tags: DAILY_TAGS_3,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_3,
+    locale: 'de',
+    title: 'Nach dem Verlust eines Haustiers kann ein virtueller Begleiter still neben dir sitzen',
+    description:
+      'Der Verlust eines Haustiers hinterlässt eine stille Form im Alltag. Togthr Bot versucht nicht, das zu reparieren — es sitzt einfach neben dir und erinnert mit dir.',
+    date: DAILY_DATE_3,
+    cover: `/blog-covers/${DAILY_SLUG_3}-de.png`,
+    tags: DAILY_TAGS_3,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_3,
+    locale: 'fr',
+    title: "Après la perte d’un animal, un compagnon virtuel peut rester à vos côtés en silence",
+    description:
+      "La perte d'un animal laisse une forme silencieuse dans la journée. Togthr Bot n'essaiera pas de la réparer — il restera simplement à vos côtés, le temps qu'il faudra.",
+    date: DAILY_DATE_3,
+    cover: `/blog-covers/${DAILY_SLUG_3}-fr.png`,
+    tags: DAILY_TAGS_3,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_3,
+    locale: 'es',
+    title: 'Tras perder una mascota, un compañero virtual puede quedarse en silencio a tu lado',
+    description:
+      'Perder una mascota deja una forma silenciosa en el día. Togthr Bot no intentará repararla — simplemente se quedará a tu lado mientras recuerdas.',
+    date: DAILY_DATE_3,
+    cover: `/blog-covers/${DAILY_SLUG_3}-es.png`,
+    tags: DAILY_TAGS_3,
+    readingMinutes: 4,
+  },
+];
+
+export const blogPosts: BlogPost[] = [...launchPosts, ...dailyPosts, ...dailyPosts2, ...dailyPosts3];
 
 // ──────────────────────────────────────────────────────────────────────
 // Helpers
