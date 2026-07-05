@@ -14,7 +14,7 @@ import {
   getBlogPostsBySlug,
   getBlogUrl,
 } from '@/lib/blog-posts'
-import { getCanonicalUrl, generateAlternateLinks, siteConfig } from '@/lib/seo'
+import { getCanonicalUrl, siteConfig } from '@/lib/seo'
 
 export function generateStaticParams() {
   const out: { locale: string; slug: string }[] = []
@@ -44,7 +44,18 @@ export async function generateMetadata({
     keywords: post.tags.join(', '),
     alternates: {
       canonical: url,
-      languages: generateAlternateLinks(`/blog/${slug}`),
+      // Blog posts always include the locale prefix in the URL (every locale
+      // lives under `/[locale]/blog/...`), so we can't use generateAlternateLinks
+      // here — that helper assumes as-needed mode and would emit e.g. /blog/foo
+      // for the default locale, which 404s. Build the language map explicitly.
+      languages: (() => {
+        const map: Record<string, string> = {}
+        for (const loc of routing.locales) {
+          map[loc] = `${siteConfig.url}/${loc}/blog/${slug}`
+        }
+        map['x-default'] = `${siteConfig.url}/en/blog/${slug}`
+        return map
+      })(),
     },
     openGraph: {
       type: 'article',
@@ -128,7 +139,7 @@ export default async function BlogPostPage({
         '@type': 'ListItem',
         position: 2,
         name: 'Blog',
-        item: `${siteConfig.url}/${localeTyped === 'en' ? '' : `${localeTyped}/`}blog`,
+        item: `${siteConfig.url}/${localeTyped}/blog`,
       },
       {
         '@type': 'ListItem',
@@ -156,7 +167,7 @@ export default async function BlogPostPage({
         </Link>
         <span className="mx-2">/</span>
         <Link
-          href={`/${localeTyped === 'en' ? '' : `${localeTyped}/`}blog`}
+          href={`/${localeTyped}/blog`}
           className="hover:text-pink-400"
         >
           Blog
@@ -226,7 +237,7 @@ export default async function BlogPostPage({
             {otherLocalePosts.map((p) => (
               <li key={p.locale}>
                 <Link
-                  href={`/${p.locale === 'en' ? '' : `${p.locale}/`}blog/${p.slug}`}
+                  href={`/${p.locale}/blog/${p.slug}`}
                   className="rounded-full bg-zinc-800 px-3 py-1 text-sm text-zinc-300 hover:bg-pink-500/20 hover:text-pink-300"
                 >
                   {p.locale.toUpperCase()} — {p.title.slice(0, 32)}…
@@ -246,7 +257,7 @@ export default async function BlogPostPage({
             {morePosts.map((p) => (
               <li key={p.slug}>
                 <Link
-                  href={`/${localeTyped === 'en' ? '' : `${localeTyped}/`}blog/${p.slug}`}
+                  href={`/${localeTyped}/blog/${p.slug}`}
                   className="block text-pink-400 hover:underline"
                 >
                   {p.title}
