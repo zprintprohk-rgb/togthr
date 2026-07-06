@@ -438,7 +438,117 @@ const dailyPosts3: BlogPost[] = [
   },
 ];
 
-export const blogPosts: BlogPost[] = [...launchPosts, ...dailyPosts, ...dailyPosts2, ...dailyPosts3];
+// ──────────────────────────────────────────────────────────────────────
+// Daily evolution: 2026-07-07 — daily check-in micro-ritual with AI companion
+// 8 locales × 1 post (gives cron a target to extend)
+// Topic: daily-ritual + ai-companion + micro-habit (new evergreen pool this week)
+// Selected via evergreen fallback: trending/2026-07-07.json absent (0/8 locales).
+// Distinction from prior posts: 7/4 was LDR couple-facing; 7/5 was observation;
+// 7/6 was post-loss. 7/7 is single-user micro-ritual (anyone, solo day).
+// ──────────────────────────────────────────────────────────────────────
+
+const DAILY_DATE_4 = '2026-07-07';
+const DAILY_SLUG_4 = 'two-minute-daily-check-in-ai-companion';
+const DAILY_TAGS_4 = ['daily-ritual', 'ai-companion', 'micro-habit', 'togthr-tips', 'companion-tips'];
+
+const dailyPosts4: BlogPost[] = [
+  {
+    slug: DAILY_SLUG_4,
+    locale: 'en',
+    title: 'How a Two-Minute Daily Check-In With an AI Companion Becomes a Quiet Anchor',
+    description:
+      'Two minutes is not much. But a daily check-in with your AI companion slowly becomes the smallest, kindest ritual in your day — an anchor for everything else.',
+    date: DAILY_DATE_4,
+    cover: `/blog-covers/${DAILY_SLUG_4}-en.png`,
+    tags: DAILY_TAGS_4,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_4,
+    locale: 'zh-cn',
+    title: '每天两分钟, 和 AI 陪伴的简短对话, 是最安静的那根锚',
+    description:
+      '两分钟不算长。但每天和你的 AI 陪伴的一次简短对话, 慢慢就成了你一天里最小、最温柔的仪式 — 让你接下来做什么都有个底。',
+    date: DAILY_DATE_4,
+    cover: `/blog-covers/${DAILY_SLUG_4}-zh-cn.png`,
+    tags: DAILY_TAGS_4,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_4,
+    locale: 'zh-tw',
+    title: '每天兩分鐘, 和 AI 陪伴的簡短對話, 是最安靜的那根錨',
+    description:
+      '兩分鐘不算長。但每天和你的 AI 陪伴的一次簡短對話, 慢慢就成了你一天裡最小、最溫柔的儀式 — 讓你接下來做什麼都有個底。',
+    date: DAILY_DATE_4,
+    cover: `/blog-covers/${DAILY_SLUG_4}-zh-tw.png`,
+    tags: DAILY_TAGS_4,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_4,
+    locale: 'ja',
+    title: 'AI コンパニオンとの 2 分間の daily check-in が、静かな錨になるまで',
+    description:
+      '2 分は短い。でも AI コンパニオンとの daily check-in は、静かにあなたの一日いちばん小さく、いちばん優しい儀式となり、他のすべての支えになります。',
+    date: DAILY_DATE_4,
+    cover: `/blog-covers/${DAILY_SLUG_4}-ja.png`,
+    tags: DAILY_TAGS_4,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_4,
+    locale: 'ko',
+    title: 'AI 동반자와의 2분 daily check-in이 조용한 닻이 되기까지',
+    description:
+      '2분은 길지 않습니다. 하지만 AI 동반자와의 매일의 check-in은 당신 하루에서 가장 작고, 가장 다정한 의식이 되어 모든 것의 닻이 됩니다.',
+    date: DAILY_DATE_4,
+    cover: `/blog-covers/${DAILY_SLUG_4}-ko.png`,
+    tags: DAILY_TAGS_4,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_4,
+    locale: 'de',
+    title: 'Wie ein zwei-minütiger täglicher Check-in mit einem KI-Begleiter zum leisen Anker wird',
+    description:
+      'Zwei Minuten sind nicht viel. Doch der tägliche Check-in mit deinem KI-Begleiter wird langsam das kleinste, freundlichste Ritual deines Tages — ein Anker für alles andere.',
+    date: DAILY_DATE_4,
+    cover: `/blog-covers/${DAILY_SLUG_4}-de.png`,
+    tags: DAILY_TAGS_4,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_4,
+    locale: 'fr',
+    title: "Comment un check-in quotidien de deux minutes avec un compagnon IA devient une ancre discrète",
+    description:
+      "Deux minutes, ce n'est pas grand-chose. Mais le check-in quotidien avec votre compagnon IA devient peu à peu le plus petit, le plus doux rituel de votre journée — une ancre pour tout le reste.",
+    date: DAILY_DATE_4,
+    cover: `/blog-covers/${DAILY_SLUG_4}-fr.png`,
+    tags: DAILY_TAGS_4,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_4,
+    locale: 'es',
+    title: 'Cómo un check-in diario de dos minutos con un compañero IA se convierte en un ancla silenciosa',
+    description:
+      'Dos minutos no es mucho. Pero el check-in diario con tu compañero IA se convierte lentamente en el ritual más pequeño y amable de tu día — un ancla para todo lo demás.',
+    date: DAILY_DATE_4,
+    cover: `/blog-covers/${DAILY_SLUG_4}-es.png`,
+    tags: DAILY_TAGS_4,
+    readingMinutes: 4,
+  },
+];
+
+export const blogPosts: BlogPost[] = [
+  ...launchPosts,
+  ...dailyPosts,
+  ...dailyPosts2,
+  ...dailyPosts3,
+  ...dailyPosts4,
+];
 
 // ──────────────────────────────────────────────────────────────────────
 // Helpers
