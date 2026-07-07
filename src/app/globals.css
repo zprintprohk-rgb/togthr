@@ -9,6 +9,10 @@
 
 @import "tailwindcss";
 
+/* Tailwind v4 content scan: explicit @source for arbitrary value utilities
+ * like bg-[#0B0B1A] and from-[#0B0B1A] that get missed in OpenNext build */
+@source "../src/**/*.{ts,tsx}";
+
 /* ── Dark mode strategy: use `.dark` class (NOT prefers-color-scheme) ─────
  * Tailwind v4 默认 `dark:` 变体走 `@media (prefers-color-scheme:dark)`。
  * 但 layout.tsx 在 <html> 上静态加 `dark` class,且 SSR/CSR 必须一致,
@@ -16,7 +20,7 @@
  * 显式覆盖为 class 策略:`dark:` 只在 `.dark` 或其后代上生效。
  * 代价:用户切换系统深色模式不会再自动跟随(本项目本来就是永久深色设计,
  * body 背景就是深空紫黑 `--bg-cosmic`,不需要 system-driven 切换)。 */
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:is(.dark, .dark *));
 
 /* ── Core palette ───────────────────────────────────────────────────────── */
 :root {
@@ -56,28 +60,22 @@
   --section-min:      min-h-screen;
 }
 
-/* ── Default html + body — 永远深色（私密、避风港感） ──────────────────── */
-@layer base {
-  html {
-    background: var(--bg-cosmic);
-  }
-
-  body {
-    background: var(--bg-cosmic);
-    color: var(--text-primary);
-    font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
+/* ── Default html + body — 永远深色（私密、避风港感） ────────────────────
+ * !important: Next.js React hydration 可能短暂移除 inline style,
+ * Edge InPrivate 可能延迟 inline script 执行。!important 确保深色背景
+ * 在任何情况下都不被覆盖。
+ */
+html { background: #0B0B1A !important; }
+body {
+  background: #0B0B1A !important;
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* 确保 main 标签也继承深色背景，防止页面内容不足时露白 */
-@layer base {
-  main {
-    background: var(--bg-cosmic);
-    flex: 1;
-  }
-}
+main { background: #0B0B1A !important; flex: 1; }
 
 /* ── 共享 keyframes（情感粒子/呼吸/光标闪烁） ─────────────────────────── */
 @keyframes breath {
