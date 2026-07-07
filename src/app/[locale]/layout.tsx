@@ -140,7 +140,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         />
 
         {/* ---------- Navigation ---------- */}
-        <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/80">
+        <header className="sticky top-0 z-50 border-b border-zinc-700/30 bg-[#0B0B1A]/80 backdrop-blur-xl">
           <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
             {/* Left: Logo + Links */}
             <div className="flex items-center gap-6">
@@ -153,67 +153,67 @@ export default async function LocaleLayout({ children, params }: Props) {
               <div className="hidden sm:flex items-center gap-4">
                 <Link
                   href={`/${locale}`}
-                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
                   {nav.home}
                 </Link>
                 <Link
                   href={`/${locale}/features`}
-                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
                   {nav.features}
                 </Link>
                 <Link
                   href={`/${locale}/pricing`}
-                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
                   {nav.pricing}
                 </Link>
                 <Link
                   href={`/${locale}/faq`}
-                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
                   FAQ
                 </Link>
                 <Link
                   href={`/${locale}/blog`}
-                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
                   {nav.blog}
                 </Link>
                 <Link
                   href={`/${locale}/daily`}
-                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
                   {nav.daily}
                 </Link>
                 <Link
                   href={`/${locale}/capsule`}
-                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
                   {nav.capsule}
                 </Link>
                 <Link
                   href={`/${locale}/pet`}
-                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
                   {nav.pet}
                 </Link>
                 <Link
                   href={`/${locale}/journal`}
-                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
                   {nav.journal}
                 </Link>
                 <Link
                   href={`/${locale}/store`}
-                  className="text-sm font-semibold text-rose-500 hover:text-rose-600 dark:text-rose-400 dark:hover:text-rose-300"
+                  className="text-sm font-semibold text-rose-400 hover:text-rose-300"
                 >
                   🛒 {nav.store}
                 </Link>
                 <Link
                   href={`/${locale}/chat`}
-                  className="text-sm font-semibold text-purple-500 hover:text-purple-600 dark:text-purple-400 dark:hover:text-purple-300"
+                  className="text-sm font-semibold text-purple-400 hover:text-purple-300"
                 >
                   💬 {nav.chat}
                 </Link>
@@ -225,7 +225,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               <LanguageSwitcher currentLocale={locale as Locale} />
               <Link
                 href={`/${locale}/login`}
-                className="inline-flex h-9 items-center rounded-full bg-zinc-900 px-4 text-sm font-medium text-white hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+                className="inline-flex h-9 items-center rounded-full bg-gradient-to-r from-pink-500 to-purple-500 px-4 text-sm font-medium text-white hover:from-pink-400 hover:to-purple-400"
               >
                 {nav.login}
               </Link>
@@ -243,43 +243,43 @@ export default async function LocaleLayout({ children, params }: Props) {
         <DesktopPet />
 
         {/* ---------- Footer ---------- */}
-        <footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
+        <footer className="border-t border-zinc-700/30 bg-[#0B0B1A]/80 backdrop-blur-xl">
           <div className="mx-auto max-w-6xl px-4 py-8">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <p className="text-sm text-zinc-500 dark:text-zinc-400">
+              <p className="text-sm text-zinc-400">
                 © {new Date().getFullYear()} Togthr. All rights reserved.
               </p>
-              <p className="text-xs text-zinc-500/60 dark:text-zinc-500/60">
+              <p className="text-xs text-zinc-500">
                 Payments processed securely via PayPal.
               </p>
-              <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-500 dark:text-zinc-400">
+              <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-400">
                 <Link
                   href={`/${locale}/privacy`}
-                  className="hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-100"
+                  className="hover:text-zinc-100"
                 >
                   {footer.privacy}
                 </Link>
                 <Link
                   href={`/${locale}/terms`}
-                  className="hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-100"
+                  className="hover:text-zinc-100"
                 >
                   {footer.terms}
                 </Link>
                 <Link
                   href={`/${locale}/cookies`}
-                  className="hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-100"
+                  className="hover:text-zinc-100"
                 >
                   {footer.cookie}
                 </Link>
                 <Link
                   href={`/${locale}/help`}
-                  className="hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-100"
+                  className="hover:text-zinc-100"
                 >
                   {footer.help}
                 </Link>
                 <Link
                   href={`/${locale}/contact`}
-                  className="hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-100"
+                  className="hover:text-zinc-100"
                 >
                   {footer.contact}
                 </Link>
