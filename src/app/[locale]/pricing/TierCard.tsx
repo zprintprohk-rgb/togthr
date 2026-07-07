@@ -65,6 +65,16 @@ interface TierCardProps extends TierCardData {
   period: 'monthly' | 'quarterly' | 'yearly'
 }
 
+const TIER_CARD_BASE = 'rounded-3xl border p-8 shadow-xl ' +
+ 'bg-[#1A1326]/60 backdrop-blur-xl border-white/10 ' +
+ 'dark:bg-[#1A1326]/80 dark:border-purple-700/30'
+
+const TIER_BADGE: Record<PricingTier, string> = {
+ free: 'bg-zinc-700/60 text-zinc-300',
+ plus: 'bg-gradient-to-r from-pink-500 to-purple-500 text-white',
+ eternal: 'bg-gradient-to-r from-amber-400 to-pink-400 text-zinc-900',
+}
+
 const TIER_BORDER = {
   free: 'border-white/10',
   plus: 'border-transparent',
@@ -154,7 +164,10 @@ export function TierCard({
                 backgroundClip: 'padding-box, border-box',
                 border: '1.5px solid transparent',
               }
-            : undefined
+            : {
+                backgroundImage: 'linear-gradient(#1A1326, #1A1326)',
+                border: '1px solid rgba(255,255,255,0.08)',
+              }
       }
     >
       {/* Eternal: extra breath ring */}
