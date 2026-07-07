@@ -159,7 +159,7 @@ export function PetCapsule({
             <SafeImage
               src={src}
               alt={alt}
-              className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)]"
+              className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)] [mix-blend-mode:multiply]"
               loading="lazy"
               bgStyle={{
                 backgroundImage:
