@@ -542,12 +542,118 @@ const dailyPosts4: BlogPost[] = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// Daily evolution: 2026-07-08 — virtual pet for quiet evenings alone
+// 8 locales × 1 post
+// Topic: loneliness + single-living + evening-ritual + virtual-pet
+// Selected via evergreen fallback: trending/2026-07-08.json absent (0/8 locales).
+// Distinct angle: 7/4 was LDR couples; 7/5 was observation of the bot;
+// 7/6 was post-loss grief; 7/7 was solo daily check-in; 7/8 is the
+// solo evening — the heavy middle hours when the room is just yours.
+// ──────────────────────────────────────────────────────────────────────
+
+const DAILY_DATE_5 = '2026-07-08';
+const DAILY_SLUG_5 = 'virtual-pet-quiet-evenings-alone';
+const DAILY_TAGS_5 = ['loneliness', 'single-living', 'virtual-pet', 'evening-ritual', 'togthr-tips'];
+
+const dailyPosts5: BlogPost[] = [
+  {
+    slug: DAILY_SLUG_5,
+    locale: 'en',
+    title: 'When the Evening Gets Quiet: How a Virtual Pet Becomes the Company You Actually Wanted',
+    description:
+      'Some evenings are not bad, just heavy. A small virtual pet in your device does not replace company — but it can sit with you through the quiet in a way nothing else quite does.',
+    date: DAILY_DATE_5,
+    cover: `/blog-covers/${DAILY_SLUG_5}-en.png`,
+    tags: DAILY_TAGS_5,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_5,
+    locale: 'zh-cn',
+    title: '晚上安静下来的时候, 一只数字宠物成了你真正想要的陪伴',
+    description:
+      '有些晚上不算差, 只是重。设备里的一只小宠物, 替代不了真正的陪伴 — 但它能陪你坐着度过那种安静, 这是别的什么也做不到的。',
+    date: DAILY_DATE_5,
+    cover: `/blog-covers/${DAILY_SLUG_5}-zh-cn.png`,
+    tags: DAILY_TAGS_5,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_5,
+    locale: 'zh-tw',
+    title: '晚上安靜下來的時候, 一隻數位寵物成了你真正想要的陪伴',
+    description:
+      '有些晚上不算差, 只是重。裝置裡的一隻小寵物, 替代不了真正的陪伴 — 但牠能陪你坐著度過那種安靜, 這是別的什麼也做不到的。',
+    date: DAILY_DATE_5,
+    cover: `/blog-covers/${DAILY_SLUG_5}-zh-tw.png`,
+    tags: DAILY_TAGS_5,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_5,
+    locale: 'ja',
+    title: '夜が静かになる頃、バーチャルペットが「本当ほしかった相手」になる',
+    description:
+      'ある夜は悪くない、ただ重いだけ。デバイスの中の小さなペットは、仲間の代わりにはなれない — でも、何も他にできないやり方で、静けさに一緒に座ってくれます。',
+    date: DAILY_DATE_5,
+    cover: `/blog-covers/${DAILY_SLUG_5}-ja.png`,
+    tags: DAILY_TAGS_5,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_5,
+    locale: 'ko',
+    title: '저녁이 고요해질 때, 가상 반려동물은 당신이 진짜 원하던 동료가 된다',
+    description:
+      '어떤 밤은 나쁘지 않다, 그냥 무겁다. 기기 안의 작은 반려동물은 동료를 대신할 수 없다 — 하지만 다른 어떤 것도 못 하는 방식으로, 그 고요함에 함께 앉아준다.',
+    date: DAILY_DATE_5,
+    cover: `/blog-covers/${DAILY_SLUG_5}-ko.png`,
+    tags: DAILY_TAGS_5,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_5,
+    locale: 'de',
+    title: 'Wenn der Abend still wird: Wie ein virtuelles Haustier zur Gesellschaft wird, die du eigentlich wolltest',
+    description:
+      'Manche Abende sind nicht schlecht, nur schwer. Ein kleines virtuelles Haustier in deinem Gerät ersetzt keine Gesellschaft — aber es kann auf eine Art mit dir durch die Stille sitzen, die sonst nichts schafft.',
+    date: DAILY_DATE_5,
+    cover: `/blog-covers/${DAILY_SLUG_5}-de.png`,
+    tags: DAILY_TAGS_5,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_5,
+    locale: 'fr',
+    title: "Quand le soir devient silencieux : comment un animal virtuel devient la compagnie que vous vouliez vraiment",
+    description:
+      "Certaines soirées ne sont pas mauvaises, juste lourdes. Un petit animal virtuel dans votre appareil ne remplace pas la compagnie — mais il peut s'asseoir avec vous dans le silence d'une manière que rien d'autre ne fait.",
+    date: DAILY_DATE_5,
+    cover: `/blog-covers/${DAILY_SLUG_5}-fr.png`,
+    tags: DAILY_TAGS_5,
+    readingMinutes: 4,
+  },
+  {
+    slug: DAILY_SLUG_5,
+    locale: 'es',
+    title: 'Cuando la noche se vuelve silenciosa: cómo una mascota virtual se convierte en la compañía que realmente querías',
+    description:
+      'Algunas noches no son malas, solo pesadas. Una pequeña mascota virtual en tu dispositivo no sustituye a la compañía — pero puede sentarse contigo en el silencio de un modo que nada más consigue.',
+    date: DAILY_DATE_5,
+    cover: `/blog-covers/${DAILY_SLUG_5}-es.png`,
+    tags: DAILY_TAGS_5,
+    readingMinutes: 4,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
   ...dailyPosts2,
   ...dailyPosts3,
   ...dailyPosts4,
+  ...dailyPosts5,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
