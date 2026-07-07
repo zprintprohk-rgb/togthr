@@ -166,6 +166,18 @@ export function PetCapsule({
                   'radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.25) 0%, rgba(139, 92, 246, 0.10) 45%, transparent 75%)',
               }}
             />
+            {/* cosmic-multiplier overlay — removes white-frame from white-bg PNGs:
+                multiply blend forces the white pixels to drop, cosmic purple shows through */}
+            <div
+              className="pointer-events-none absolute inset-0 bg-cosmic-deep mix-blend-multiply"
+              style={{ mixBlendMode: 'multiply' }}
+            />
+            <div
+              className="pointer-events-none absolute inset-0"
+              style={{
+                background: 'radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.06) 0%, transparent 60%)',
+              }}
+            />
             {/* 眼睛跟随（仅 lg/xl 显示） */}
             {(size === 'lg' || size === 'xl' || size === 'fill') && parallax && (
               <div
