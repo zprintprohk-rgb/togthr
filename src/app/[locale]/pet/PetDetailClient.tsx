@@ -252,7 +252,7 @@ export default function PetDetailClient() {
                   'flex flex-col items-center gap-1 rounded-2xl border-2 p-3 transition-all sm:p-4',
                   isActive
                     ? 'scale-105 border-rose-400 bg-rose-500/15 shadow-lg ring-1 ring-rose-300/40'
-                    : 'border-white/10 glass-card-emph hover:scale-105 hover:border-rose-300/40',
+                    : 'border-white/10 bg-zinc-900/60 backdrop-blur border border-white/10 hover:scale-105 hover:border-rose-300/40',
                 )}
                 aria-pressed={isActive}
               >
