@@ -143,12 +143,12 @@ export function PetCapsule({
         </>
       )}
 
-      {/* ── 玻璃拟态舱体 ── */}
-      <div className="relative h-full w-full overflow-hidden rounded-[28px] bg-[#0B0B1A]/60 backdrop-blur-xl border border-white/10 shadow-2xl ring-1 ring-white/10">
-        {/* 内部高光（顶部） */}
+      {/* ── 玻璃拟态舱体(深色宇宙底,不再用半透明白) ── */}
+      <div className="relative h-full w-full overflow-hidden rounded-[28px] bg-cosmic-deep backdrop-blur-xl border border-purple-500/30 shadow-2xl ring-1 ring-purple-500/20">
+        {/* 内部高光(顶部) */}
         <div className="pointer-events-none absolute inset-x-4 top-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
-        {/* 内部底色渐变（防止透明导致的视觉空洞 + 柔化白底图片边缘） */}
-        <div className="absolute inset-0 bg-linear-to-b from-purple-900/20 via-transparent to-black/40" />
+        {/* 内部底色渐变 — 用 cosmic 紫黑过渡(不再透出白色) */}
+        <div className="absolute inset-0 bg-linear-to-b from-purple-900/30 via-[#0B0B1A]/40 to-black/60" />
 
         {/* 宠物本体 */}
         <div className="absolute inset-0 flex items-center justify-center">
@@ -159,11 +159,11 @@ export function PetCapsule({
             <SafeImage
               src={src}
               alt={alt}
-              className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)] [mix-blend-mode:multiply]"
+              className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.65)]"
               loading="lazy"
               bgStyle={{
                 backgroundImage:
-                  'radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.15) 0%, rgba(139, 92, 246, 0.06) 45%, transparent 75%)',
+                  'radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.25) 0%, rgba(139, 92, 246, 0.10) 45%, transparent 75%)',
               }}
             />
             {/* 眼睛跟随（仅 lg/xl 显示） */}
