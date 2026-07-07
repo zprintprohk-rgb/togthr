@@ -379,7 +379,7 @@ export function HomeClient({
             >
               <Link
                 href={`/${locale}/features`}
-                className="group inline-flex h-12 items-center gap-2 rounded-full border border-zinc-700/50 bg-white/5 px-5 text-sm font-medium text-zinc-200 backdrop-blur-xl transition-colors hover:bg-white/10 hover:border-amber-300/30"
+                className="group inline-flex h-12 items-center gap-2 rounded-full border border-zinc-700/50 bg-zinc-800/50 px-5 text-sm font-medium text-zinc-200 backdrop-blur-xl transition-colors hover:bg-zinc-700 hover:border-amber-300/30"
               >
                 <span>{heroSecondary}</span>
                 <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -697,7 +697,7 @@ function BentoCard({
         {visual}
         <div className="relative z-10 flex items-start justify-between">
           <div
-            className={`flex h-10 w-10 items-center justify-center rounded-2xl bg-linear-to-br ${HUE_STYLES[hue]
+            className={`flex h-10 w-10 items-center justify-center rounded-2xl bg-zinc-800/60 ring-1 ${HUE_STYLES[hue]
               .split(' ')
               .filter((c) => c.startsWith('from-') || c.startsWith('via-') || c.startsWith('to-'))
               .join(' ')} text-white shadow-lg`}
