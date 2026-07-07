@@ -144,7 +144,7 @@ export function PetCapsule({
       )}
 
       {/* ── 玻璃拟态舱体 ── */}
-      <div className="relative h-full w-full overflow-hidden rounded-[28px] glass-card shadow-2xl ring-1 ring-white/10">
+      <div className="relative h-full w-full overflow-hidden rounded-[28px] bg-[#0B0B1A]/60 backdrop-blur-xl border border-white/10 shadow-2xl ring-1 ring-white/10">
         {/* 内部高光（顶部） */}
         <div className="pointer-events-none absolute inset-x-4 top-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
         {/* 内部底色渐变（防止透明导致的视觉空洞 + 柔化白底图片边缘） */}

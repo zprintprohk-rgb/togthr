@@ -12,13 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Next.js 15 requires colorScheme + themeColor in viewport export, not metadata.
 export const viewport: Viewport = {
-  // Force browser UA UI (scrollbar, form inputs, etc.) to dark scheme, AND
-  // discourage Chrome/Edge "Auto Apply Dark Mode to light-themed websites"
-  // from running on top of our explicit .dark class. Without this, Edge
-  // InPrivate + some UA dark themes have been observed silently stripping
-  // the dark className from <html>, leaving a white page in spite of SSR.
   colorScheme: 'dark',
   themeColor: '#0B0B1A',
 };
@@ -28,31 +22,21 @@ export const metadata: Metadata = {
   description: "Your private space, built for two",
 };
 
-const FORCE_DARK_SCRIPT = `(function(){try{var d=document.documentElement;d.classList.add('dark');var s=d.style;s.colorScheme='dark';s.backgroundColor='#0B0B1A';}catch(e){}})();`;
+const FORCE_DARK_SCRIPT = `(function(){try{var d=document.documentElement;d.className=(d.className||'')+' dark';var s=d.style;s.colorScheme='dark';s.backgroundColor='#0B0B1A';d.setAttribute('data-theme','dark');}catch(e){var st=document.createElement('style');st.textContent='html,body{background:#0B0B1A!important;color-scheme:dark;}';if(document.head){document.head.appendChild(st);}else{document.addEventListener('DOMContentLoaded',function(){document.head.appendChild(st);});}}})();`;
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-      // suppressHydrationWarning: <html> is modified by FORCE_DARK_SCRIPT
-      // (above-the-fold inline) and Tailwind v4 dark variant CSS — className
-      // mismatch between SSR and CSR is expected, not a real error.
-      suppressHydrationWarning
-    >
+    <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Belt + suspenders: re-assert dark on every page load BEFORE first paint.
-            Runs synchronously in <head> so any layout/theme-detection in body comes
-            after we own documentElement. */}
         <script dangerouslySetInnerHTML={{ __html: FORCE_DARK_SCRIPT }} />
+        <meta name="color-scheme" content="dark" />
+        <meta name="theme-color" content="#0B0B1A" />
       </head>
-      <body 
-        className="min-h-full flex flex-col bg-zinc-950 text-zinc-100"
-        style={{ backgroundColor: '#0B0B1A', margin: 0 }}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} min-h-full flex flex-col text-zinc-100`}
+        style={{ backgroundColor: '#0B0B1A', minHeight: '100vh', margin: 0 }}
       >{children}</body>
     </html>
   );
