@@ -556,6 +556,10 @@ const DAILY_DATE_5 = '2026-07-08';
 const DAILY_SLUG_5 = 'virtual-pet-quiet-evenings-alone';
 const DAILY_TAGS_5 = ['loneliness', 'single-living', 'virtual-pet', 'evening-ritual', 'togthr-tips'];
 
+const DAILY_DATE_6 = '2026-07-09';
+const DAILY_SLUG_6 = 'first-week-living-together-after-long-distance';
+const DAILY_TAGS_6 = ['moving-in', 'long-distance', 'cohabitation', 'first-week', 'togthr-tips'];
+
 const dailyPosts5: BlogPost[] = [
   {
     slug: DAILY_SLUG_5,
@@ -647,6 +651,103 @@ const dailyPosts5: BlogPost[] = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// DAILY 6 (2026-07-09): first-week-living-together-after-long-distance
+// Replaces the [slug] fallback wrapper for a post that ships real body
+// content via src/app/[locale]/blog/first-week-living-together-after-long-distance/page.tsx
+// ──────────────────────────────────────────────────────────────────────
+
+const dailyPosts6: BlogPost[] = [
+  {
+    slug: DAILY_SLUG_6,
+    locale: 'en',
+    title: 'The First Week of Living Together After Long Distance: A Quiet Field Guide',
+    description:
+      'Moving in is supposed to feel like an ending. The reality is mostly small frictions and quiet joys — and a relationship that just keeps going, only closer. A gentle first-week guide for couples who finally closed the distance.',
+    date: DAILY_DATE_6,
+    cover: `/blog-covers/${DAILY_SLUG_6}-en.png`,
+    tags: DAILY_TAGS_6,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_6,
+    locale: 'zh-cn',
+    title: '异地之后,真正住到一起的第一周:一份安静的小指南',
+    description:
+      '搬进同一个家,本来应该像某个阶段的结束。现实大部分时候只是些小摩擦,和一些安静的小确幸 — 而这段关系不会自己变成新的样子,它只是更近了一点,然后继续走下去。一份给"终于结束了异地"的你们的第一周指南。',
+    date: DAILY_DATE_6,
+    cover: `/blog-covers/${DAILY_SLUG_6}-zh-cn.png`,
+    tags: DAILY_TAGS_6,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_6,
+    locale: 'zh-tw',
+    title: '遠距離之後,真正住在一起的第一週:一份安靜的小指南',
+    description:
+      '搬進同一個家,本來應該像某個階段的結束。現實大部分時候只是些小摩擦,和一些安靜的小確幸 — 而這段關係不會自己變成新的樣子,它只是更近了一點,然後繼續走下去。一份給「終於結束了遠距離」的你們的第一週指南。',
+    date: DAILY_DATE_6,
+    cover: `/blog-covers/${DAILY_SLUG_6}-zh-tw.png`,
+    tags: DAILY_TAGS_6,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_6,
+    locale: 'ja',
+    title: '遠距離恋愛のあと、初めて一緒に住み始めた最初の 1 週間:やさしい現場ガイド',
+    description:
+      '同じ部屋への引っ越しは、何かの「終わり」に見えるはずです。現実にあるのは小さな摩擦と静かな喜び — そして関係は新しい形に変わらず、ただ少し近づいて続いていくだけ。距離をようやく閉じた二人のための、最初の一週間のやさしいガイドです。',
+    date: DAILY_DATE_6,
+    cover: `/blog-covers/${DAILY_SLUG_6}-ja.png`,
+    tags: DAILY_TAGS_6,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_6,
+    locale: 'ko',
+    title: '장거리 연애 끝, 처음 같이 살게 된 첫 주: 조용한 현장 가이드',
+    description:
+      '이사 오는 날은 어떤 것의 ‘끝’처럼 느껴져야 합니다. 실제는 대부분 작은 마찰과 조용한 기쁨으로 이루어져 있고, 관계는 척 하고 바뀌지 않습니다. 조금 더 가까워진 채로 그냥 계속 갈 뿐. 거리를ようやく 닫은 두 사람을 위한 첫 주 가이드입니다.',
+    date: DAILY_DATE_6,
+    cover: `/blog-covers/${DAILY_SLUG_6}-ko.png`,
+    tags: DAILY_TAGS_6,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_6,
+    locale: 'de',
+    title: 'Nach der Fernbeziehung: Die erste Woche des Zusammenwohnens — ein leiser Wegweiser',
+    description:
+      'Der Einzugstag fühlt sich wie ein Ende an. In Wirklichkeit besteht er aus kleinen Reibungen und leisen Freuden — und einer Beziehung, die einfach weitergeht, nur näher. Ein sanfter Wegweiser für die erste Woche, für Paare, die die Distanz endlich geschlossen haben.',
+    date: DAILY_DATE_6,
+    cover: `/blog-covers/${DAILY_SLUG_6}-de.png`,
+    tags: DAILY_TAGS_6,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_6,
+    locale: 'fr',
+    title: "Après la relation à distance : la première semaine de vie commune — un guide discret",
+    description:
+      "L'emménagement est censé ressembler à une fin. En réalité, il est surtout fait de petits frottements et de joies silencieuses — et d'une relation qui continue, tout simplement, un peu plus près. Un guide doux pour la première semaine, pour les couples qui ont enfin refermé la distance.",
+    date: DAILY_DATE_6,
+    cover: `/blog-covers/${DAILY_SLUG_6}-fr.png`,
+    tags: DAILY_TAGS_6,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_6,
+    locale: 'es',
+    title: 'Después de la relación a distancia: la primera semana viviendo juntos — una guía serena',
+    description:
+      'La mudanza se supone que se siente como un final. La realidad es, sobre todo, pequeñas fricciones y alegrías silenciosas — y una relación que simplemente sigue, un poco más cerca. Una guía suave para la primera semana, para parejas que por fin cerraron la distancia.',
+    date: DAILY_DATE_6,
+    cover: `/blog-covers/${DAILY_SLUG_6}-es.png`,
+    tags: DAILY_TAGS_6,
+    readingMinutes: 5,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -654,6 +755,7 @@ export const blogPosts: BlogPost[] = [
   ...dailyPosts3,
   ...dailyPosts4,
   ...dailyPosts5,
+  ...dailyPosts6,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
