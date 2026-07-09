@@ -748,6 +748,110 @@ const dailyPosts6: BlogPost[] = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// DAILY 7 (2026-07-10): after-breakup-a-virtual-pet-stays
+// Topic: post-breakup rebuild + virtual pet as the small daily presence
+//        that survives the end of a relationship (distinct from 7/6
+//        pet-loss grief — there the companion animal died; here the
+//        human relationship ended). 8 locales, per-slug real content
+//        pages, ≥600 words per locale, FAQ × 4, internal links × 5.
+// ──────────────────────────────────────────────────────────────────────
+
+const DAILY_DATE_7 = '2026-07-10';
+const DAILY_SLUG_7 = 'after-breakup-a-virtual-pet-stays';
+const DAILY_TAGS_7 = ['breakup', 'virtual-pet', 'solo-recovery', 'emotional-support', 'togthr-tips'];
+
+const dailyPosts7: BlogPost[] = [
+  {
+    slug: DAILY_SLUG_7,
+    locale: 'en',
+    title: 'After a Breakup, a Virtual Pet Quietly Stays: Why the Small Rituals Matter Most',
+    description:
+      'After a breakup, the day you used to plan around another person becomes a long list of things to do alone. A small virtual pet is not a rebound — but it can stay, quietly, and grow with the new shape of your days.',
+    date: DAILY_DATE_7,
+    cover: `/blog-covers/${DAILY_SLUG_7}-en.png`,
+    tags: DAILY_TAGS_7,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_7,
+    locale: 'zh-cn',
+    title: '分手之后, 一只数字宠物安静地陪你: 为什么小仪式比大道理更重要',
+    description:
+      '分手后,你曾经围着另一个人过的那一天,变成了一张"一个人做完"的清单。一只小数字宠物,不是替补,不是替代品 — 但它可以留下来,安静地陪你,跟着你的日子一起长成新的样子。',
+    date: DAILY_DATE_7,
+    cover: `/blog-covers/${DAILY_SLUG_7}-zh-cn.png`,
+    tags: DAILY_TAGS_7,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_7,
+    locale: 'zh-tw',
+    title: '分手之後, 一隻數位寵物安靜地陪你: 為什麼小儀式比大道理更重要',
+    description:
+      '分手後,你曾經繞著另一個人過的那一天,變成了一張「一個人做完」的清單。一隻小數位寵物,不是替補,不是替代品 — 但牠可以留下來,安靜地陪你,跟著你的日子一起長成新的樣子。',
+    date: DAILY_DATE_7,
+    cover: `/blog-covers/${DAILY_SLUG_7}-zh-tw.png`,
+    tags: DAILY_TAGS_7,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_7,
+    locale: 'ja',
+    title: '別れたあと、バーチャルペットが静かに残る: 小さな儀式がいちばん大事な理由',
+    description:
+      '別れたあと、誰かを中心にして回していた一日が「一人で片づけるリスト」になります。小さなバーチャルペットは代わりの恋人ではありません — けれど静かに残り、あなたの日の新しい形と一緒に育っていくことができます。',
+    date: DAILY_DATE_7,
+    cover: `/blog-covers/${DAILY_SLUG_7}-ja.png`,
+    tags: DAILY_TAGS_7,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_7,
+    locale: 'ko',
+    title: '이별한 뒤, 가상 반려동물이 조용히 남는 이유: 작은 의식이 가장 중요한 까닭',
+    description:
+      '이별한 뒤, 누군가를 중심으로 굴러가던 하루가 ‘혼자 끝내야 하는 할 일 목록’이 됩니다. 작은 가상 반려동물은 대체가 아닙니다 — 하지만 조용히 남아, 당신 하루의 새로운 모양과 함께 자라날 수 있습니다.',
+    date: DAILY_DATE_7,
+    cover: `/blog-covers/${DAILY_SLUG_7}-ko.png`,
+    tags: DAILY_TAGS_7,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_7,
+    locale: 'de',
+    title: 'Nach einer Trennung bleibt ein virtuelles Haustier leise da: Warum kleine Rituale am meisten zählen',
+    description:
+      'Nach einer Trennung wird der Tag, den du um eine andere Person herum geplant hast, zu einer langen Liste von Dingen, die du allein erledigen musst. Ein kleines virtuelles Haustier ist kein Ersatz — aber es kann leise da bleiben und mit der neuen Form deiner Tage wachsen.',
+    date: DAILY_DATE_7,
+    cover: `/blog-covers/${DAILY_SLUG_7}-de.png`,
+    tags: DAILY_TAGS_7,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_7,
+    locale: 'fr',
+    title: "Après une rupture, un animal virtuel reste en silence : pourquoi les petits rituels comptent le plus",
+    description:
+      "Après une rupture, la journée que vous organisiez autrefois autour d'une autre personne devient une longue liste de choses à faire seul. Un petit animal virtuel n'est pas un remplaçant — mais il peut rester, en silence, et grandir avec la nouvelle forme de vos journées.",
+    date: DAILY_DATE_7,
+    cover: `/blog-covers/${DAILY_SLUG_7}-fr.png`,
+    tags: DAILY_TAGS_7,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_7,
+    locale: 'es',
+    title: 'Después de una ruptura, una mascota virtual se queda en silencio: por qué los pequeños rituales importan más',
+    description:
+      'Después de una ruptura, el día que antes organizabas alrededor de otra persona se vuelve una larga lista de cosas que hacer solo. Una pequeña mascota virtual no es un sustituto — pero puede quedarse, en silencio, y crecer con la nueva forma de tus días.',
+    date: DAILY_DATE_7,
+    cover: `/blog-covers/${DAILY_SLUG_7}-es.png`,
+    tags: DAILY_TAGS_7,
+    readingMinutes: 5,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -756,6 +860,7 @@ export const blogPosts: BlogPost[] = [
   ...dailyPosts4,
   ...dailyPosts5,
   ...dailyPosts6,
+  ...dailyPosts7,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
