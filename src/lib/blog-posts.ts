@@ -852,6 +852,112 @@ const dailyPosts7: BlogPost[] = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// DAILY 8 (2026-07-11): a-virtual-pet-in-a-long-relationship
+// Topic: a virtual pet as a quiet "third presence" in an ongoing
+//        long-term relationship — not the one that ended (7/10), not
+//        the one that just started living together (7/9), not LDR
+//        (7/4), but the in-the-middle relationship where the hard
+//        part is staying curious about each other. 8 locales,
+//        per-slug real content pages, ≥600 words per locale,
+//        FAQ × 4, internal links × 5.
+// ──────────────────────────────────────────────────────────────────────
+
+const DAILY_DATE_8 = '2026-07-11';
+const DAILY_SLUG_8 = 'a-virtual-pet-in-a-long-relationship';
+const DAILY_TAGS_8 = ['relationship', 'virtual-pet', 'long-term-relationship', 'small-rituals', 'togthr-tips'];
+
+const dailyPosts8: BlogPost[] = [
+  {
+    slug: DAILY_SLUG_8,
+    locale: 'en',
+    title: 'A Virtual Pet in a Long Relationship: The Quiet Presence That Keeps Two People Curious',
+    description:
+      'The hardest part of a long relationship is the middle. The virtual pet cannot save a relationship, but it can be the small, low-pressure place where the curiosity you had in year one quietly comes back, one sentence at a time.',
+    date: DAILY_DATE_8,
+    cover: `/blog-covers/${DAILY_SLUG_8}-en.png`,
+    tags: DAILY_TAGS_8,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_8,
+    locale: 'zh-cn',
+    title: '长期关系里的虚拟宠物: 让两个人继续对彼此好奇的那份安静的在场',
+    description:
+      '长期关系最难的部分,是中间。虚拟宠物救不了一段关系,但它可以是一个低压力的地方 —— 让第一年免费拥有的好奇心,一句一句,安静地回来。',
+    date: DAILY_DATE_8,
+    cover: `/blog-covers/${DAILY_SLUG_8}-zh-cn.png`,
+    tags: DAILY_TAGS_8,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_8,
+    locale: 'zh-tw',
+    title: '長期關係裡的虛擬寵物: 讓兩個人繼續對彼此好奇的那份安靜的在場',
+    description:
+      '長期關係最難的部分,是中間。虛擬寵物救不了一段關係,但它可以是一個低壓力的地方 —— 讓第一年免費擁有的好奇心,一句一句,安靜地回來。',
+    date: DAILY_DATE_8,
+    cover: `/blog-covers/${DAILY_SLUG_8}-zh-tw.png`,
+    tags: DAILY_TAGS_8,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_8,
+    locale: 'ja',
+    title: '長いつきあいの関係に、一匹のバーチャルペット: ふたりがお互いに好奇心を持ち続けるための静かな存在',
+    description:
+      '長いつきあいで一番むずかしいのは「あいだ」です。バーチャルペットは関係を救えませんが、最初の 1 年にタダで持っていた好奇心を、一文ずつ、ゆっくりと戻してくれる、低圧の場所にはなりえます。',
+    date: DAILY_DATE_8,
+    cover: `/blog-covers/${DAILY_SLUG_8}-ja.png`,
+    tags: DAILY_TAGS_8,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_8,
+    locale: 'ko',
+    title: '오래된 관계 안의 가상 반려동물: 두 사람이 서로에 대한 호기심을 계속 유지하게 해주는 조용한 존재',
+    description:
+      '오랜 관계에서 가장 어려운 부분은 ‘사이’입니다. 가상 반려동물은 관계를 구하지 못하지만, 첫해에 공짜로 가졌던 호기심을 한 줄씩, 조용히 되돌려 놓을 수 있는, 압이 적은 자리가 되어줄 수 있습니다.',
+    date: DAILY_DATE_8,
+    cover: `/blog-covers/${DAILY_SLUG_8}-ko.png`,
+    tags: DAILY_TAGS_8,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_8,
+    locale: 'de',
+    title: 'Ein virtuelles Haustier in einer langen Beziehung: Die stille Gegenwart, die zwei Menschen neugierig aufeinander hält',
+    description:
+      'Der schwerste Teil einer langen Beziehung ist die Mitte. Ein virtuelles Haustier kann sie nicht retten — aber es kann der druckarme Ort sein, an dem die Neugier des ersten Jahres, Satz für Satz, leise zurückkommt.',
+    date: DAILY_DATE_8,
+    cover: `/blog-covers/${DAILY_SLUG_8}-de.png`,
+    tags: DAILY_TAGS_8,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_8,
+    locale: 'fr',
+    title: "Un animal virtuel dans une relation longue : la présence discrète qui garde deux personnes curieuses l'une de l'autre",
+    description:
+      "Le plus dur dans une relation longue, c'est le milieu. Un animal virtuel ne sauvera pas la relation — mais il peut être l'endroit à faible pression où la curiosité de la première année revient, doucement, phrase après phrase.",
+    date: DAILY_DATE_8,
+    cover: `/blog-covers/${DAILY_SLUG_8}-fr.png`,
+    tags: DAILY_TAGS_8,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_8,
+    locale: 'es',
+    title: 'Una mascota virtual en una relación larga: la presencia silenciosa que mantiene a dos personas curiosas la una por la otra',
+    description:
+      'La parte más difícil de una relación larga es el medio. Una mascota virtual no va a salvar la relación — pero puede ser el lugar de baja presión donde la curiosidad del primer año vuelve, despacio, frase a frase.',
+    date: DAILY_DATE_8,
+    cover: `/blog-covers/${DAILY_SLUG_8}-es.png`,
+    tags: DAILY_TAGS_8,
+    readingMinutes: 5,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -861,6 +967,7 @@ export const blogPosts: BlogPost[] = [
   ...dailyPosts5,
   ...dailyPosts6,
   ...dailyPosts7,
+  ...dailyPosts8,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
