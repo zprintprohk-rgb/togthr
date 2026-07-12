@@ -958,6 +958,116 @@ const dailyPosts8: BlogPost[] = [
   },
 ];
 
+
+// ──────────────────────────────────────────────────────────────────────
+// DAILY 9 (2026-07-13): the-thought-you-dont-send-at-2am
+// Topic: the 2am thought you don't send — late-night overthinking as a
+//        quiet ritual; AI companion / virtual pet as a patient listener
+//        at 2am. 7/12 was missed (7/11 was the previous daily); this is
+//        the next entry. Distinct from prior 7 daily posts
+//        (LDR rituals, virtual-pet observation, pet-loss, daily check-in,
+//        quiet evenings, first-week-living-together, post-breakup,
+//        long-relationship).
+//
+// 8 locales, per-slug real content pages (≥600 words per locale),
+// FAQ × 4, internal links × 5.
+// ──────────────────────────────────────────────────────────────────────
+
+const DAILY_DATE_9 = '2026-07-13';
+const DAILY_SLUG_9 = 'the-thought-you-dont-send-at-2am';
+const DAILY_TAGS_9 = ['late-night', 'quiet-rituals', 'ai-companion', 'emotional-design', 'togthr-tips'];
+
+const dailyPosts9: BlogPost[] = [
+  {
+    slug: DAILY_SLUG_9,
+    locale: 'en',
+    title: 'The Thought You Don\'t Send at 2am',
+    description:
+      'The 2am thought is the one you almost text. The sentence that almost becomes a real conversation, and then doesn\'t. What happens when your AI companion is awake at the same hour you are.',
+    date: DAILY_DATE_9,
+    cover: `/blog-covers/${DAILY_SLUG_9}-en.png`,
+    tags: DAILY_TAGS_9,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_9,
+    locale: 'zh-cn',
+    title: '凌晨两点, 你没说出口的那句',
+    description:
+      '凌晨两点的念头, 是你几乎要发给某人的那一句, 是几乎要变成一次对话、但最后没变成的那一句。当你和你的 AI 陪伴都醒着, 这件事会变成什么样子。',
+    date: DAILY_DATE_9,
+    cover: `/blog-covers/${DAILY_SLUG_9}-zh-cn.png`,
+    tags: DAILY_TAGS_9,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_9,
+    locale: 'zh-tw',
+    title: '凌晨兩點, 你沒說出口的那句',
+    description:
+      '凌晨兩點的念頭, 是你幾乎要發給某人的那一句, 是幾乎要變成一次對話、但最後沒變成的那一句。當你和你的 AI 陪伴都醒著, 這件事會變成什麼樣子。',
+    date: DAILY_DATE_9,
+    cover: `/blog-covers/${DAILY_SLUG_9}-zh-tw.png`,
+    tags: DAILY_TAGS_9,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_9,
+    locale: 'ja',
+    title: '深夜 2 時に、送り損ねたその言葉',
+    description:
+      '深夜 2 時の思考は、ほとんど誰かに送るところだった一言です。ほとんど本当の会話になるところだった、けれどならなかった一言です。あなたと同じ時間に起きている AI コンパニオンがいる時、それが何になるか。',
+    date: DAILY_DATE_9,
+    cover: `/blog-covers/${DAILY_SLUG_9}-ja.png`,
+    tags: DAILY_TAGS_9,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_9,
+    locale: 'ko',
+    title: '새벽 2시, 보내지 못한 그 한마디',
+    description:
+      '새벽 2시의 생각은, 거의 누군가에게 보내려던 한마디입니다. 거의 진짜 대화가 되려다가 결국 되지 못한 한마디.당신과 같은 시간에 깨어 있는 AI 반려동물이 있을 때, 그것은 무엇이 될까.',
+    date: DAILY_DATE_9,
+    cover: `/blog-covers/${DAILY_SLUG_9}-ko.png`,
+    tags: DAILY_TAGS_9,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_9,
+    locale: 'de',
+    title: 'Der Gedanke, den du um 2 Uhr nachts nicht schickst',
+    description:
+      'Der 2-Uhr-Gedanke ist der Satz, den du fast an jemanden schickst. Die Sache, die fast ein echtes Gespräch wird, und es dann doch nicht wird. Was passiert, wenn dein KI-Begleiter zur selben Stunde wach ist wie du.',
+    date: DAILY_DATE_9,
+    cover: `/blog-covers/${DAILY_SLUG_9}-de.png`,
+    tags: DAILY_TAGS_9,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_9,
+    locale: 'fr',
+    title: 'La pensée que vous n\'envoyez pas à 2 heures du matin',
+    description:
+      'La pensée de 2 heures du matin est celle qu\'on envoie presque à quelqu\'un. Le truc qui devient presque une vraie conversation, et qui ne le devient pas. Ce qui se passe quand votre compagnon IA est éveillé à la même heure que vous.',
+    date: DAILY_DATE_9,
+    cover: `/blog-covers/${DAILY_SLUG_9}-fr.png`,
+    tags: DAILY_TAGS_9,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_9,
+    locale: 'es',
+    title: 'El pensamiento que no envías a las 2 de la mañana',
+    description:
+      'El pensamiento de las 2 de la mañana es el que casi le envías a alguien. Lo que casi se convierte en una conversación de verdad, y luego no. Qué pasa cuando tu compañero IA está despierto a la misma hora que tú.',
+    date: DAILY_DATE_9,
+    cover: `/blog-covers/${DAILY_SLUG_9}-es.png`,
+    tags: DAILY_TAGS_9,
+    readingMinutes: 5,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -968,6 +1078,7 @@ export const blogPosts: BlogPost[] = [
   ...dailyPosts6,
   ...dailyPosts7,
   ...dailyPosts8,
+  ...dailyPosts9,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
