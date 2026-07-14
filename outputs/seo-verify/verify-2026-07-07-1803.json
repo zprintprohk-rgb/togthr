@@ -1,0 +1,410 @@
+{
+  "timestamp": "2026-07-07T18:03:26.163064",
+  "base": "https://togthr.life",
+  "total": 40,
+  "passed": 32,
+  "failed": 8,
+  "results": [
+    {
+      "url": "https://togthr.life/en/blog/why-we-built-a-pet-that-grows-with-you",
+      "slug": "why-we-built-a-pet-that-grows-with-you",
+      "locale": "en",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 80,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/zh-cn/blog/why-we-built-a-pet-that-grows-with-you",
+      "slug": "why-we-built-a-pet-that-grows-with-you",
+      "locale": "zh-cn",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 62,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/zh-tw/blog/why-we-built-a-pet-that-grows-with-you",
+      "slug": "why-we-built-a-pet-that-grows-with-you",
+      "locale": "zh-tw",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 62,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/ja/blog/why-we-built-a-pet-that-grows-with-you",
+      "slug": "why-we-built-a-pet-that-grows-with-you",
+      "locale": "ja",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 62,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/ko/blog/why-we-built-a-pet-that-grows-with-you",
+      "slug": "why-we-built-a-pet-that-grows-with-you",
+      "locale": "ko",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 62,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/de/blog/why-we-built-a-pet-that-grows-with-you",
+      "slug": "why-we-built-a-pet-that-grows-with-you",
+      "locale": "de",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 62,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/fr/blog/why-we-built-a-pet-that-grows-with-you",
+      "slug": "why-we-built-a-pet-that-grows-with-you",
+      "locale": "fr",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 62,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/es/blog/why-we-built-a-pet-that-grows-with-you",
+      "slug": "why-we-built-a-pet-that-grows-with-you",
+      "locale": "es",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 62,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/en/blog/three-small-rituals-for-couples-who-live-apart",
+      "slug": "three-small-rituals-for-couples-who-live-apart",
+      "locale": "en",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 180,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/zh-cn/blog/three-small-rituals-for-couples-who-live-apart",
+      "slug": "three-small-rituals-for-couples-who-live-apart",
+      "locale": "zh-cn",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 160,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/zh-tw/blog/three-small-rituals-for-couples-who-live-apart",
+      "slug": "three-small-rituals-for-couples-who-live-apart",
+      "locale": "zh-tw",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 160,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/ja/blog/three-small-rituals-for-couples-who-live-apart",
+      "slug": "three-small-rituals-for-couples-who-live-apart",
+      "locale": "ja",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 162,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/ko/blog/three-small-rituals-for-couples-who-live-apart",
+      "slug": "three-small-rituals-for-couples-who-live-apart",
+      "locale": "ko",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 160,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/de/blog/three-small-rituals-for-couples-who-live-apart",
+      "slug": "three-small-rituals-for-couples-who-live-apart",
+      "locale": "de",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 164,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/fr/blog/three-small-rituals-for-couples-who-live-apart",
+      "slug": "three-small-rituals-for-couples-who-live-apart",
+      "locale": "fr",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 163,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/es/blog/three-small-rituals-for-couples-who-live-apart",
+      "slug": "three-small-rituals-for-couples-who-live-apart",
+      "locale": "es",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 188,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/en/blog/what-your-virtual-pet-notices",
+      "slug": "what-your-virtual-pet-notices",
+      "locale": "en",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 34,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/zh-cn/blog/what-your-virtual-pet-notices",
+      "slug": "what-your-virtual-pet-notices",
+      "locale": "zh-cn",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 17,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/zh-tw/blog/what-your-virtual-pet-notices",
+      "slug": "what-your-virtual-pet-notices",
+      "locale": "zh-tw",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 17,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/ja/blog/what-your-virtual-pet-notices",
+      "slug": "what-your-virtual-pet-notices",
+      "locale": "ja",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 29,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/ko/blog/what-your-virtual-pet-notices",
+      "slug": "what-your-virtual-pet-notices",
+      "locale": "ko",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 17,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/de/blog/what-your-virtual-pet-notices",
+      "slug": "what-your-virtual-pet-notices",
+      "locale": "de",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 17,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/fr/blog/what-your-virtual-pet-notices",
+      "slug": "what-your-virtual-pet-notices",
+      "locale": "fr",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 17,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/es/blog/what-your-virtual-pet-notices",
+      "slug": "what-your-virtual-pet-notices",
+      "locale": "es",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 17,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/en/blog/virtual-companion-pet-loss-comfort",
+      "slug": "virtual-companion-pet-loss-comfort",
+      "locale": "en",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 24,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/zh-cn/blog/virtual-companion-pet-loss-comfort",
+      "slug": "virtual-companion-pet-loss-comfort",
+      "locale": "zh-cn",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 24,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/zh-tw/blog/virtual-companion-pet-loss-comfort",
+      "slug": "virtual-companion-pet-loss-comfort",
+      "locale": "zh-tw",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 24,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/ja/blog/virtual-companion-pet-loss-comfort",
+      "slug": "virtual-companion-pet-loss-comfort",
+      "locale": "ja",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 24,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/ko/blog/virtual-companion-pet-loss-comfort",
+      "slug": "virtual-companion-pet-loss-comfort",
+      "locale": "ko",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 24,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/de/blog/virtual-companion-pet-loss-comfort",
+      "slug": "virtual-companion-pet-loss-comfort",
+      "locale": "de",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 24,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/fr/blog/virtual-companion-pet-loss-comfort",
+      "slug": "virtual-companion-pet-loss-comfort",
+      "locale": "fr",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 24,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/es/blog/virtual-companion-pet-loss-comfort",
+      "slug": "virtual-companion-pet-loss-comfort",
+      "locale": "es",
+      "status": 200,
+      "fallback_hits": 0,
+      "body_keyword_hits": 24,
+      "verdict": "PASS",
+      "reason": "ok"
+    },
+    {
+      "url": "https://togthr.life/en/blog/two-minute-daily-check-in-ai-companion",
+      "slug": "two-minute-daily-check-in-ai-companion",
+      "locale": "en",
+      "status": 200,
+      "fallback_hits": 2,
+      "body_keyword_hits": 91,
+      "verdict": "FAIL",
+      "reason": "fallback_hits=2"
+    },
+    {
+      "url": "https://togthr.life/zh-cn/blog/two-minute-daily-check-in-ai-companion",
+      "slug": "two-minute-daily-check-in-ai-companion",
+      "locale": "zh-cn",
+      "status": 200,
+      "fallback_hits": 2,
+      "body_keyword_hits": 61,
+      "verdict": "FAIL",
+      "reason": "fallback_hits=2"
+    },
+    {
+      "url": "https://togthr.life/zh-tw/blog/two-minute-daily-check-in-ai-companion",
+      "slug": "two-minute-daily-check-in-ai-companion",
+      "locale": "zh-tw",
+      "status": 200,
+      "fallback_hits": 2,
+      "body_keyword_hits": 61,
+      "verdict": "FAIL",
+      "reason": "fallback_hits=2"
+    },
+    {
+      "url": "https://togthr.life/ja/blog/two-minute-daily-check-in-ai-companion",
+      "slug": "two-minute-daily-check-in-ai-companion",
+      "locale": "ja",
+      "status": 200,
+      "fallback_hits": 2,
+      "body_keyword_hits": 85,
+      "verdict": "FAIL",
+      "reason": "fallback_hits=2"
+    },
+    {
+      "url": "https://togthr.life/ko/blog/two-minute-daily-check-in-ai-companion",
+      "slug": "two-minute-daily-check-in-ai-companion",
+      "locale": "ko",
+      "status": 200,
+      "fallback_hits": 2,
+      "body_keyword_hits": 85,
+      "verdict": "FAIL",
+      "reason": "fallback_hits=2"
+    },
+    {
+      "url": "https://togthr.life/de/blog/two-minute-daily-check-in-ai-companion",
+      "slug": "two-minute-daily-check-in-ai-companion",
+      "locale": "de",
+      "status": 200,
+      "fallback_hits": 2,
+      "body_keyword_hits": 61,
+      "verdict": "FAIL",
+      "reason": "fallback_hits=2"
+    },
+    {
+      "url": "https://togthr.life/fr/blog/two-minute-daily-check-in-ai-companion",
+      "slug": "two-minute-daily-check-in-ai-companion",
+      "locale": "fr",
+      "status": 200,
+      "fallback_hits": 2,
+      "body_keyword_hits": 93,
+      "verdict": "FAIL",
+      "reason": "fallback_hits=2"
+    },
+    {
+      "url": "https://togthr.life/es/blog/two-minute-daily-check-in-ai-companion",
+      "slug": "two-minute-daily-check-in-ai-companion",
+      "locale": "es",
+      "status": 200,
+      "fallback_hits": 2,
+      "body_keyword_hits": 89,
+      "verdict": "FAIL",
+      "reason": "fallback_hits=2"
+    }
+  ],
+  "errors": []
+}
