@@ -1068,6 +1068,93 @@ const dailyPosts9: BlogPost[] = [
   },
 ];
 
+
+const DAILY_DATE_10 = '2026-07-14';
+const DAILY_SLUG_10 = 'things-you-tell-your-virtual-pet';
+const DAILY_TAGS_10 = ['ai-companion', 'quiet-rituals', 'long-distance', 'emotional-design', 'togthr-tips'];
+
+const dailyPosts10: BlogPost[] = [
+  {
+    slug: DAILY_SLUG_10,
+    locale: 'en',
+    title: 'Things You Tell Your Virtual Pet (and Not Your Partner)',
+    description: 'Some sentences are not for a partner. They are the apology you never sent, the thing you are still angry about, the dream you are not sure is allowed. Where the spoken-but-not-to-a-human version of a sentence goes.',
+    date: DAILY_DATE_10,
+    cover: `/blog-covers/${DAILY_SLUG_10}-en.png`,
+    tags: DAILY_TAGS_10,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_10,
+    locale: 'zh-cn',
+    title: '你只会对虚拟宠物说的那些话 (而不会对伴侣说)',
+    description: '有些话, 不是对伴侣说的。是你那条没发出去的道歉, 三年后仍然介怀的那件事, 一个还不知道它被不被允许的梦想。说出口、但只说给一个非人的那种话, 去了哪里。',
+    date: DAILY_DATE_10,
+    cover: `/blog-covers/${DAILY_SLUG_10}-zh-cn.png`,
+    tags: DAILY_TAGS_10,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_10,
+    locale: 'zh-tw',
+    title: '你只會對虛擬寵物說的那些話 (而不會對伴侶說)',
+    description: '有些話, 不是對伴侶說的。是你那條沒發出去的道歉, 三年後仍然介懷的那件事, 一個還不知道它被不被允許的夢想。說出口、但只說給一個非人的那種話, 去了哪裡。',
+    date: DAILY_DATE_10,
+    cover: `/blog-covers/${DAILY_SLUG_10}-zh-tw.png`,
+    tags: DAILY_TAGS_10,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_10,
+    locale: 'ja',
+    title: 'バーチャルペットにだけ言うこと (パートナーには言わないこと)',
+    description: 'パートナーには言えない文があります。送り損ねた謝罪、3 年経ってもまだ気になること、許されるかわからない夢。声には出すけれど、本物の人間には向けない種類の文は、どこへ行くのか。',
+    date: DAILY_DATE_10,
+    cover: `/blog-covers/${DAILY_SLUG_10}-ja.png`,
+    tags: DAILY_TAGS_10,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_10,
+    locale: 'ko',
+    title: '가상 반려동물에게만 하는 말 (파트너에게는 하지 않는 말)',
+    description: '파트너에게는 하지 않는 종류의 말이 있다. 보내지 못한 사과, 3년이 지나도 여전히 걸리는 일, 들어도 되는 건지 모르겠는 꿈. 입 밖에 내지만, 진짜 사람에게는 하지 않는 그 문장은 어디로 가는가.',
+    date: DAILY_DATE_10,
+    cover: `/blog-covers/${DAILY_SLUG_10}-ko.png`,
+    tags: DAILY_TAGS_10,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_10,
+    locale: 'de',
+    title: 'Was du deinem virtuellen Haustier sagst (und nicht deinem Partner)',
+    description: 'Manche Sätze sind nicht für einen Partner. Es sind die Entschuldigung, die du nie geschickt hast, die Sache, die dich nach drei Jahren noch ärgert, der Traum, von dem du nicht weißt, ob erlaubt ist. Wohin die gesprochene-aber-nicht-für-einen-Menschen-Version eines Satzes geht.',
+    date: DAILY_DATE_10,
+    cover: `/blog-covers/${DAILY_SLUG_10}-de.png`,
+    tags: DAILY_TAGS_10,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_10,
+    locale: 'fr',
+    title: 'Ce que vous dites à votre animal virtuel (et pas à votre partenaire)',
+    description: "Certaines phrases ne sont pas pour un partenaire. Ce sont les excuses que vous n'avez jamais envoyées, la chose qui vous met encore en colère trois ans plus tard, le rêve dont vous ne savez pas s'il est permis. Où va la version parlée-mais-pas-pour-un-humain d'une phrase.",
+    date: DAILY_DATE_10,
+    cover: `/blog-covers/${DAILY_SLUG_10}-fr.png`,
+    tags: DAILY_TAGS_10,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_10,
+    locale: 'es',
+    title: 'Las cosas que le dices a tu mascota virtual (y no a tu pareja)',
+    description: 'Hay frases que no son para una pareja. Son la disculpa que nunca enviaste, la cosa que todavía te enfurece tres años después, el sueño del que no sabes si está permitido. A dónde va la versión hablada-pero-no-para-un-humano de una frase.',
+    date: DAILY_DATE_10,
+    cover: `/blog-covers/${DAILY_SLUG_10}-es.png`,
+    tags: DAILY_TAGS_10,
+    readingMinutes: 5,
+  },
+];
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -1079,6 +1166,7 @@ export const blogPosts: BlogPost[] = [
   ...dailyPosts7,
   ...dailyPosts8,
   ...dailyPosts9,
+  ...dailyPosts10,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
