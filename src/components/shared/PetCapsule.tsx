@@ -166,12 +166,8 @@ export function PetCapsule({
                   'radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.25) 0%, rgba(139, 92, 246, 0.10) 45%, transparent 75%)',
               }}
             />
-            {/* cosmic-multiplier overlay — removes white-frame from white-bg PNGs:
-                multiply blend forces the white pixels to drop, cosmic purple shows through */}
-            <div
-              className="pointer-events-none absolute inset-0 bg-cosmic-deep mix-blend-multiply"
-              style={{ mixBlendMode: 'multiply' }}
-            />
+            {/* 柔和紫色聚光高光 — 不压暗图片主体（已移除激进的 mix-blend-multiply 遮罩，
+                它会把整张白底 PNG 压成黑色，导致中央宠物不可见） */}
             <div
               className="pointer-events-none absolute inset-0"
               style={{
