@@ -7,6 +7,11 @@
  *
  * IMPORTANT: This is a Client Component (must be for error boundaries).
  * Keep it dependency-free so the bundle stays tiny.
+ *
+ * Dark-mode native: Togthr is permanently dark. No light-mode defaults —
+ * using `text-zinc-900 dark:text-zinc-100` causes a white flash on SSR /
+ * first paint because the `dark` class is applied by an inline script
+ * that runs after initial HTML render.
  */
 
 import { useEffect } from 'react'
@@ -46,15 +51,15 @@ export default function GlobalError({
         />
       </div>
 
-      <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+      <h1 className="text-2xl font-bold tracking-tight text-zinc-100">
         {t('title')}
       </h1>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+      <p className="mt-2 text-sm text-zinc-400">
         {t('message')}
       </p>
 
       {error.digest && (
-        <p className="mt-4 rounded-md bg-zinc-100 px-3 py-1 font-mono text-xs text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+        <p className="mt-4 rounded-md bg-zinc-800 px-3 py-1 font-mono text-xs text-zinc-400">
           {t('errorId')}: {error.digest}
         </p>
       )}
@@ -68,7 +73,7 @@ export default function GlobalError({
         </button>
         <button
           onClick={() => router.push('/')}
-          className="rounded-full border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700"
+          className="rounded-full border border-zinc-700 bg-zinc-800 px-5 py-2.5 text-sm font-medium text-zinc-200 hover:bg-zinc-700"
         >
           🏠 {t('home')}
         </button>

@@ -3,7 +3,13 @@
 /* ── Pricing Page ErrorBoundary ─────────────────────────────────────────────
  * Catches runtime errors thrown by the server component (e.g. a missing
  * i18n key, a CF-IPCountry header issue, or a malformed t.raw() return).
- * Shows a friendly recovery UI instead of the generic "Application error". */
+ * Shows a friendly recovery UI instead of the generic "Application error".
+ *
+ * Dark-mode native: Togthr is permanently dark. No light-mode defaults —
+ * the `dark` class is applied by an inline script after first paint,
+ * so `text-zinc-900 dark:text-zinc-100` / `bg-white dark:bg-zinc-900`
+ * would flash white on SSR / first render.
+ */
 
 export default function PricingError({
   error,
@@ -14,7 +20,7 @@ export default function PricingError({
 }) {
   return (
     <div className="mx-auto max-w-2xl px-4 py-16 text-center">
-      <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-rose-100 text-rose-600 dark:bg-rose-950/50 dark:text-rose-400">
+      <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-rose-950/50 text-rose-400">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -32,19 +38,19 @@ export default function PricingError({
         </svg>
       </div>
 
-      <h2 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+      <h2 className="text-2xl font-bold tracking-tight text-zinc-100">
         Pricing is taking a quick breather
       </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+      <p className="mt-2 text-sm text-zinc-400">
         We hit a hiccup rendering the plans. Everything else is still up.
       </p>
 
       {error.message ? (
         <details className="mt-4 text-left">
-          <summary className="cursor-pointer text-xs text-zinc-500 dark:text-zinc-400 hover:underline">
+          <summary className="cursor-pointer text-xs text-zinc-400 hover:underline">
             Technical details
           </summary>
-          <pre className="mt-2 overflow-auto rounded-lg bg-zinc-100 p-3 text-xs text-zinc-700 dark:bg-zinc-900 dark:text-zinc-300">
+          <pre className="mt-2 overflow-auto rounded-lg bg-zinc-900 p-3 text-xs text-zinc-300">
             {error.message}
             {error.digest ? `\nDigest: ${error.digest}` : ''}
           </pre>
@@ -60,7 +66,7 @@ export default function PricingError({
         </button>
         <a
           href="/"
-          className="rounded-full border border-zinc-300 bg-white px-5 py-2 text-sm font-semibold text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
+          className="rounded-full border border-zinc-700 bg-zinc-900 px-5 py-2 text-sm font-semibold text-zinc-200 hover:bg-zinc-800"
         >
           Back to home
         </a>

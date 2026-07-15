@@ -12,7 +12,10 @@ import { SafeImage } from '@/components/shared/SafeImage'
  * 3 CTAs: Home, Daily, Chat — gives the user a way forward without
  * the dead-end of a single 'go back' button.
  *
- * Dark-mode native, since the whole site is dark-first.
+ * Dark-mode native: Togthr is permanently dark. No light-mode defaults —
+ * the `dark` class is applied by an inline script after first paint,
+ * so `text-zinc-900 dark:text-zinc-100` / `bg-white dark:bg-zinc-800`
+ * would flash white on SSR / first render.
  */
 
 export default function NotFoundPage() {
@@ -72,7 +75,7 @@ export default function NotFoundPage() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.5 }}
-        className="mb-2 text-xl font-bold text-zinc-900 dark:text-zinc-100"
+        className="mb-2 text-xl font-bold text-zinc-100"
       >
         {t('title')}
       </motion.h2>
@@ -81,7 +84,7 @@ export default function NotFoundPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.5 }}
-        className="mb-8 max-w-md text-sm text-zinc-500 dark:text-zinc-400"
+        className="mb-8 max-w-md text-sm text-zinc-400"
       >
         {t('description')}
       </motion.p>
@@ -101,13 +104,13 @@ export default function NotFoundPage() {
         </Link>
         <Link
           href="/daily"
-          className="inline-flex h-10 items-center rounded-full border border-zinc-300 bg-white px-5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700"
+          className="inline-flex h-10 items-center rounded-full border border-zinc-700 bg-zinc-800 px-5 text-sm font-medium text-zinc-200 hover:bg-zinc-700"
         >
           🐾 {t('feedPet')}
         </Link>
         <Link
           href="/chat"
-          className="inline-flex h-10 items-center rounded-full border border-zinc-300 bg-white px-5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700"
+          className="inline-flex h-10 items-center rounded-full border border-zinc-700 bg-zinc-800 px-5 text-sm font-medium text-zinc-200 hover:bg-zinc-700"
         >
           💬 {t('sayHi')}
         </Link>

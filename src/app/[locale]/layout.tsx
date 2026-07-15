@@ -292,10 +292,10 @@ export default async function LocaleLayout({ children, params }: Props) {
   } catch (error) {
     console.error('[layout] render failed:', error)
     return (
-      <div className="mx-auto max-w-4xl px-4 py-16">
-        <h1 className="text-2xl font-bold text-red-600 mb-4">Layout Error</h1>
-        <div className="bg-gray-100 rounded-lg p-4 overflow-auto">
-          <pre className="text-sm text-red-800 whitespace-pre-wrap">
+      <div className="mx-auto max-w-4xl px-4 py-16 min-h-screen bg-[#0B0B1A] text-zinc-100">
+        <h1 className="text-2xl font-bold text-rose-400 mb-4">Layout Error</h1>
+        <div className="bg-zinc-800/60 border border-zinc-700/50 rounded-lg p-4 overflow-auto backdrop-blur-xl">
+          <pre className="text-sm text-rose-300 whitespace-pre-wrap">
             {JSON.stringify(
               {
                 message: (error as Error).message,
@@ -307,7 +307,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             )}
           </pre>
         </div>
-        <p className="mt-4 text-sm text-gray-500">Digest: 521802265 鈥?real error from layout try/catch</p>
+        <p className="mt-4 text-sm text-zinc-500">Digest: 521802265 — real error from layout try/catch</p>
       </div>
     )
   }
