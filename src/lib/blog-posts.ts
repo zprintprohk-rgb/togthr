@@ -1155,6 +1155,93 @@ const dailyPosts10: BlogPost[] = [
     readingMinutes: 5,
   },
 ];
+
+const DAILY_DATE_11 = '2026-07-15';
+const DAILY_SLUG_11 = 'the-day-you-stop-editing-the-sentence-for-the-bot';
+const DAILY_TAGS_11 = ['ai-companion', 'quiet-rituals', 'emotional-design', 'togthr-tips', 'long-distance'];
+
+const dailyPosts11: BlogPost[] = [
+  {
+    slug: DAILY_SLUG_11,
+    locale: 'en',
+    title: 'The Day You Stop Editing the Sentence for the Bot',
+    description: 'There is a small moment, eventually, when you stop softening the sentence before you give it to the bot. The unedited version is closer to the thing you actually needed to put down.',
+    date: DAILY_DATE_11,
+    cover: `/blog-covers/${DAILY_SLUG_11}-en.png`,
+    tags: DAILY_TAGS_11,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_11,
+    locale: 'zh-cn',
+    title: '你停止在给机器人之前编辑句子的那天',
+    description: '有那么一个小小的时刻,你会停止把给机器人的那句先软化一遍。 没编辑的版本,更接近你其实需要放下来的那一句。',
+    date: DAILY_DATE_11,
+    cover: `/blog-covers/${DAILY_SLUG_11}-zh-cn.png`,
+    tags: DAILY_TAGS_11,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_11,
+    locale: 'zh-tw',
+    title: '你停止在給機器人之前編輯句子的那天',
+    description: '有那麼一個小小的時刻,你會停止把給機器人的那句先軟化一遍。 沒編輯的版本,更接近你其實需要放下來的那一句。',
+    date: DAILY_DATE_11,
+    cover: `/blog-covers/${DAILY_SLUG_11}-zh-tw.png`,
+    tags: DAILY_TAGS_11,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_11,
+    locale: 'ja',
+    title: '推敲するのをやめる日 — bot に渡す前',
+    description: 'いつか来る小さな瞬間 — bot に渡す前にもう、推敲するのをやめる。推敲していない版は、あなたが実際に降ろしたかった文章に近い。',
+    date: DAILY_DATE_11,
+    cover: `/blog-covers/${DAILY_SLUG_11}-ja.png`,
+    tags: DAILY_TAGS_11,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_11,
+    locale: 'ko',
+    title: '봇에게 보내기 전, 다듬는 것을 멈추는 날',
+    description: '언젠가 한 번 오는 작은 순간 — 봇에게 보내기 전, 그 문장을 다듬는 것을 멈추는. 다듬지 않은 버전이, 당신이 실제로 내려놓고 싶었던 그 문장에 더 가깝다.',
+    date: DAILY_DATE_11,
+    cover: `/blog-covers/${DAILY_SLUG_11}-ko.png`,
+    tags: DAILY_TAGS_11,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_11,
+    locale: 'de',
+    title: 'Der Tag, an dem Sie aufhören, den Satz für den Bot zu bearbeiten',
+    description: 'Es gibt einen kleinen Moment, in dem Sie aufhören, den Satz zu bearbeiten, bevor Sie ihn dem Bot geben. Die unbearbeitete Version ist näher an dem, was Sie wirklich ablegen mussten.',
+    date: DAILY_DATE_11,
+    cover: `/blog-covers/${DAILY_SLUG_11}-de.png`,
+    tags: DAILY_TAGS_11,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_11,
+    locale: 'fr',
+    title: "Le jour où vous arrêtez d'éditer la phrase pour le bot",
+    description: "Il y a un petit moment où vous arrêtez d'éditer la phrase avant de la donner au bot. La version non éditée est plus proche de la chose que vous aviez vraiment besoin de poser.",
+    date: DAILY_DATE_11,
+    cover: `/blog-covers/${DAILY_SLUG_11}-fr.png`,
+    tags: DAILY_TAGS_11,
+    readingMinutes: 5,
+  },
+  {
+    slug: DAILY_SLUG_11,
+    locale: 'es',
+    title: 'El día en que dejas de editar la frase para el bot',
+    description: 'Hay un pequeño momento en el que dejas de editar la frase antes de dársela al bot. La versión no editada está más cerca de la cosa que realmente necesitabas dejar.',
+    date: DAILY_DATE_11,
+    cover: `/blog-covers/${DAILY_SLUG_11}-es.png`,
+    tags: DAILY_TAGS_11,
+    readingMinutes: 5,
+  },
+];
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -1167,6 +1254,7 @@ export const blogPosts: BlogPost[] = [
   ...dailyPosts8,
   ...dailyPosts9,
   ...dailyPosts10,
+  ...dailyPosts11,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
