@@ -71,7 +71,16 @@
     "companions": {
       "title": "Compañeros Togthr",
       "subtitle": "Envía stickers adorables con 1 toque",
-      "cta": "Próximamente en el chat"
+      "cta": "Próximamente en el chat",
+      "cards": {
+        "feeding": { "title": "Hora de comer", "desc": "Envía un corazón y míralo brillar de satisfacción" },
+        "capsule": { "title": "Cápsula del tiempo · Excavar", "desc": "Entierra una, tu mascota la desenterrará" },
+        "symbiosis": { "title": "Simbiosis", "desc": "Una pequeña vida que refleja vuestro vínculo" },
+        "blindbox": { "title": "Caja sorpresa 6+1", "desc": "Oferta primer pedido", "badge": "Nuevo" },
+        "nest": { "title": "Construir el nido", "desc": "Cada entrada del diario suma un ladrillo a vuestro hogar" },
+        "soulmate": { "title": "IA alma gemela", "desc": "Habla cuando quieras — te escucha de verdad" },
+        "treehole": { "title": "Agujero del árbol", "desc": "Notas anónimas, desaparecen en 24 h" }
+      }
     }
   },
   "pricing": {

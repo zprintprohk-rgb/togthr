@@ -71,7 +71,16 @@
     "companions": {
       "title": "Togthr コンパニオン",
       "subtitle": "タップ1つでかわいいスタンプを送信",
-      "cta": "チャットに近日登場"
+      "cta": "チャットに近日登場",
+      "cards": {
+        "feeding": { "title": "おやつタイム", "desc": "ハートを送って、満足そうな姿を見守ろう" },
+        "capsule": { "title": "タイムカプセル・発掘", "desc": "埋めておくと、ペットが掘り出してくれる" },
+        "symbiosis": { "title": "共生フォーム", "desc": "ふたりの関係を映す小さな命" },
+        "blindbox": { "title": "6+1 ブラインドボックス", "desc": "初回限定オファー", "badge": "新着" },
+        "nest": { "title": "巣づくり", "desc": "日記を書くたび、ふたりの巣が育つ" },
+        "soulmate": { "title": "ソウルメイト AI", "desc": "いつでも話しかけて、聞いてくれる" },
+        "treehole": { "title": "木のうろ", "desc": "匿名メッセージ、24時間で消える" }
+      }
     }
   },
   "pricing": {

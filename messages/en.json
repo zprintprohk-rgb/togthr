@@ -71,7 +71,16 @@
     "companions": {
       "title": "Togthr Companions",
       "subtitle": "Send cute Togthr stickers to your love, in 1 tap",
-      "cta": "Coming soon to chat"
+      "cta": "Coming soon to chat",
+      "cards": {
+        "feeding": { "title": "Feeding Time", "desc": "Send a heart, watch it glow with contentment" },
+        "capsule": { "title": "Time Capsule · Dig", "desc": "Bury one today, your pet digs it up later" },
+        "symbiosis": { "title": "Symbiosis", "desc": "A little life that mirrors your bond" },
+        "blindbox": { "title": "6+1 Blind Box", "desc": "First order special", "badge": "New" },
+        "nest": { "title": "Nest Building", "desc": "Every journal entry adds a brick to your shared home" },
+        "soulmate": { "title": "Soulmate AI", "desc": "Talk anytime — it truly listens" },
+        "treehole": { "title": "Tree Hole", "desc": "Anonymous notes, gone in 24h" }
+      }
     }
   },
   "pricing": {

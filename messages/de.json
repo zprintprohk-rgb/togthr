@@ -71,7 +71,16 @@
     "companions": {
       "title": "Togthr Begleiter",
       "subtitle": "Süße Sticker mit einem Tipp an deine Liebe",
-      "cta": "Demnächst im Chat"
+      "cta": "Demnächst im Chat",
+      "cards": {
+        "feeding": { "title": "Fütterungszeit", "desc": "Schenke ein Herz und sieh zu, wie es zufrieden leuchtet" },
+        "capsule": { "title": "Zeitkapsel · Schatzsuche", "desc": "Vergrabe eine – dein Pet gräbt sie wieder aus" },
+        "symbiosis": { "title": "Symbiose", "desc": "Ein kleines Leben, das eure Bindung spiegelt" },
+        "blindbox": { "title": "6+1 Blindbox", "desc": "Erstbestellungs-Angebot", "badge": "Neu" },
+        "nest": { "title": "Nestbau", "desc": "Jeder Tagebucheintrag baut euer gemeinsames Nest weiter" },
+        "soulmate": { "title": "Seelenpartner-KI", "desc": "Rede jederzeit – es hört wirklich zu" },
+        "treehole": { "title": "Baumhöhle", "desc": "Anonyme Nachrichten, nach 24 Std. gelöscht" }
+      }
     }
   },
   "pricing": {

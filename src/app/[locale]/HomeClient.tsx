@@ -474,8 +474,8 @@ export function HomeClient({
             hue="rose"
             delay={0}
             icon={<Heart className="h-6 w-6" />}
-            title="喂食时间"
-            description="给 TA 一颗心，看它满足的样子"
+            title={tCompanions('cards.feeding.title')}
+            description={tCompanions('cards.feeding.desc')}
             visual={
               <div className="absolute inset-0 flex items-center justify-center opacity-90">
                 <motion.div
@@ -495,8 +495,8 @@ export function HomeClient({
             hue="amber"
             delay={0.1}
             icon={<Camera className="h-6 w-6" />}
-            title="时光胶囊 · 挖宝"
-            description="埋下一个，宠物帮你挖出来"
+            title={tCompanions('cards.capsule.title')}
+            description={tCompanions('cards.capsule.desc')}
             visual={
               <div className="absolute right-6 top-1/2 -translate-y-1/2 flex gap-2 opacity-80">
                 {['🌱', '🌿', '🌳', '🌻'].map((e, i) => (
@@ -517,8 +517,8 @@ export function HomeClient({
             hue="purple"
             delay={0.2}
             icon={<Sparkles className="h-6 w-6" />}
-            title="共生形态"
-            description="会反映你们关系的小生命"
+            title={tCompanions('cards.symbiosis.title')}
+            description={tCompanions('cards.symbiosis.desc')}
             visual={
               <div className="absolute right-3 top-3 text-5xl opacity-90">✨</div>
             }
@@ -528,9 +528,9 @@ export function HomeClient({
             hue="indigo"
             delay={0.3}
             icon={<ShoppingBag className="h-5 w-5" />}
-            title="6+1 盲盒"
-            description="¥199 首单"
-            badge="新"
+            title={tCompanions('cards.blindbox.title')}
+            description={tCompanions('cards.blindbox.desc')}
+            badge={tCompanions('cards.blindbox.badge')}
             visual={
               <div className="absolute right-3 top-3 text-3xl">🛒</div>
             }
@@ -541,8 +541,8 @@ export function HomeClient({
             hue="emerald"
             delay={0.4}
             icon={<MessageCircle className="h-6 w-6" />}
-            title="筑巢"
-            description="每条日记，都给你们的共同小窝添砖加瓦"
+            title={tCompanions('cards.nest.title')}
+            description={tCompanions('cards.nest.desc')}
             visual={
               <div className="absolute right-6 top-1/2 -translate-y-1/2 flex gap-2 opacity-80">
                 {['🌱', '🪺', '🏡'].map((e, i) => (
@@ -558,8 +558,8 @@ export function HomeClient({
             hue="violet"
             delay={0.5}
             icon={<MessageCircle className="h-5 w-5" />}
-            title="灵魂伴侣 AI"
-            description="聊聊天，听你说话"
+            title={tCompanions('cards.soulmate.title')}
+            description={tCompanions('cards.soulmate.desc')}
             visual={
               <div className="absolute right-3 top-3 text-3xl">💬</div>
             }
@@ -569,8 +569,8 @@ export function HomeClient({
             hue="slate"
             delay={0.6}
             icon={<Lock className="h-5 w-5" />}
-            title="树洞"
-            description="匿名留言，24h 自动消失"
+            title={tCompanions('cards.treehole.title')}
+            description={tCompanions('cards.treehole.desc')}
             visual={
               <div className="absolute right-3 top-3 text-3xl">🕳️</div>
             }
