@@ -1,0 +1,39 @@
+# Togthr
+
+> Togthr is a pixel-art virtual companion app for couples and individuals: a small robot pet (Togthr Bot) that lives on your desktop and phone, grows with your relationship, and witnesses your shared memories. Dark-mode first, glassmorphism + 16-bit pixel aesthetic, gentle and judgment-free.
+
+Core positioning: "A small robot on your desktop that cheers you on while you work." Universal audience — no restrictions by age, gender, nationality, or relationship status.
+
+## Key facts
+
+- Product: virtual companion pet + relationship journal + community platform
+- IP: Togthr Bot — round-headed pixel robot, pastel purple-pink palette, 16-bit style
+- Companion states: idle / working / thinking / success; expressions: happy, angry, sleeping, charging, thinking, success
+- Growth: 5 stages (baby → toddler → teen → adult → legend); hidden profession skins (programmer, doctor, astronaut, chef, police, firefighter, diver, driver, soldier)
+- Features: daily check-in rituals, time capsules, memory journal, AI soulmate chat, anonymous tree-hole messages, nest building, couple co-parenting
+- Pricing: free tier + Plus subscription; localized pricing in 13 countries (CNY, HKD, TWD, USD, GBP, AUD, CAD, SGD, EUR, JPY, KRW); PayPal and Alipay accepted
+- Languages: English, Simplified Chinese, Traditional Chinese, Japanese, Korean, German, French, Spanish
+- Company: CloudDreamer (Shenzhen)
+
+## Main pages
+
+- Homepage (EN): https://togthr.life/
+- Pricing: https://togthr.life/en/pricing
+- Features: https://togthr.life/en/features
+- Blog: https://togthr.life/en/blog
+- FAQ: https://togthr.life/en/faq
+- Privacy: https://togthr.life/en/privacy
+
+## Locale entry points
+
+- 简体中文: https://togthr.life/zh-cn
+- 繁體中文: https://togthr.life/zh-tw
+- 日本語: https://togthr.life/ja
+- 한국어: https://togthr.life/ko
+- Deutsch: https://togthr.life/de
+- Français: https://togthr.life/fr
+- Español: https://togthr.life/es
+
+## Contact
+
+- Website: https://togthr.life

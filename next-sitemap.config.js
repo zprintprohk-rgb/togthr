@@ -4,7 +4,17 @@ const SITE_URL = 'https://togthr.life'
 module.exports = {
   siteUrl: SITE_URL,
   generateRobotsTxt: false,
-  exclude: ['/api/*', '/server-sitemap.xml'],
+  exclude: [
+    '/api/*',
+    '/server-sitemap.xml',
+    '/robots.txt',
+    '/sitemap.xml',
+    '/sitemap-0.xml',
+    '/manifest.webmanifest',
+    '/icon.png',
+    '/favicon.ico',
+    '/*/payment/*',
+  ],
   // ⚠️ No alternateRefs — the locale layout already generates `<link rel="alternate">`
   // hreflang tags via Next.js metadata.out.alternates. Adding alternateRefs here
   // causes doubled locale prefixes (e.g., /zh-cn/de/faq) because next-sitemap
