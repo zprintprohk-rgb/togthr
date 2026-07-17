@@ -15,6 +15,7 @@ import { Link } from '@/i18n/routing'
 import type { Metadata } from 'next'
 import { routing, type Locale } from '@/i18n/routing'
 import { generateAlternateLinks, getCanonicalUrl } from '@/lib/seo'
+import { PurchaseSuccessTracker } from '@/components/shared/PurchaseSuccessTracker'
 
 export function generateStaticParams() {
   return routing.locales.map(locale => ({ locale }))
@@ -47,6 +48,9 @@ export default async function StoreSuccessPage({
 
   return (
     <div className="relative mx-auto flex min-h-[70vh] max-w-2xl flex-col items-center justify-center px-4 py-16 text-center">
+      {/* Analytics: PayPal store purchase completed (return URL) */}
+      <PurchaseSuccessTracker provider="paypal" sku="blindbox_6plus1" />
+
       {/* Confetti animation */}
       <div className="text-8xl mb-6 animate-bounce">🎉</div>
 

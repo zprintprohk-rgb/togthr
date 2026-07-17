@@ -16,6 +16,7 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
+import { track } from '@/lib/analytics'
 import Link from 'next/link'
 
 interface PaywallHintProps {
@@ -32,6 +33,8 @@ interface PaywallHintProps {
   /** 跳转链接 */
   href: string
   className?: string
+  /** 稳定宠物标识（analytics 用，可选） */
+  petId?: string
 }
 
 const DAILY_LIMIT = 2
@@ -67,15 +70,21 @@ export function PaywallHint({
   copy,
   href,
   className,
+  petId,
 }: PaywallHintProps) {
   const [canShow, setCanShow] = useState(true)
 
   useEffect(() => {
     if (show) {
       const count = incrementDailyCount()
-      if (count > DAILY_LIMIT) setCanShow(false)
+      if (count > DAILY_LIMIT) {
+        setCanShow(false)
+      } else {
+        // Funnel: hint is actually displayed (within daily limit)
+        track('paywall_hint_shown', { pet_id: petId ?? 'unknown' })
+      }
     }
-  }, [show])
+  }, [show, petId])
 
   if (!canShow) return null
 

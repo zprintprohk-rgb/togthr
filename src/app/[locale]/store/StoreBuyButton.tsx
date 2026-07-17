@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import type { CountryCode, CurrencyCode } from '@/lib/types'
+import { track } from '@/lib/analytics'
 
 /**
  * StoreBuyButton — MVP Day 2 of skin-store.
@@ -30,6 +31,7 @@ export function StoreBuyButton({ country, currency, price, label }: Props) {
     setLoading(true)
     setError(null)
     setHint(null)
+    track('store_checkout_start', { sku: 'blindbox_6plus1', price, currency })
     try {
       const res = await fetch('/api/store/checkout', {
         method: 'POST',

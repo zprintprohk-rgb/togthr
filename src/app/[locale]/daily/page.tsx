@@ -19,6 +19,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
+import { track } from '@/lib/analytics'
 
 type Mood = 'idle' | 'asking' | 'highfive' | 'feeding' | 'happy' | 'thinking'
 type Answer = 'with' | 'apart' | null
@@ -71,6 +72,7 @@ export default function DailyFeedingPage() {
     const newStreak = streak + 1
     setHunger(newHunger)
     setStreak(newStreak)
+    track('daily_checkin', { streak: newStreak })
     // Persist streak in localStorage
     try {
       localStorage.setItem('togthr.daily.streak', JSON.stringify({

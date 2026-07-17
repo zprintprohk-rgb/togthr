@@ -1,4 +1,4 @@
-﻿import { NextIntlClientProvider } from 'next-intl'
+import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { hasLocale } from 'next-intl'
@@ -6,6 +6,7 @@ import { routing, type Locale } from '@/i18n/routing'
 import { generateAlternateLinks, getCanonicalUrl, websiteSchema, marketMeta } from '@/lib/seo'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import { DesktopPet } from '@/components/DesktopPet'
+import { AuthEventTracker } from '@/components/shared/AuthEventTracker'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
@@ -241,6 +242,9 @@ export default async function LocaleLayout({ children, params }: Props) {
 
         {/* 桌面宠物 — 全站悬浮 */}
         <DesktopPet />
+
+        {/* Analytics: detects ?login=success marker → login_success event */}
+        <AuthEventTracker />
 
         {/* ---------- Footer ---------- */}
         <footer className="border-t border-zinc-700/30 bg-[#0B0B1A]/80 backdrop-blur-xl">

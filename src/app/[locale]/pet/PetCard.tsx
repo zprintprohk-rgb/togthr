@@ -155,6 +155,7 @@ export function PetCard({ pet, isSelected, onClick }: Props) {
           dismiss: tPaywall('dismiss'),
         }}
         href="/pricing"
+        petId={pet.id}
         className="absolute -top-2 left-1/2 -translate-x-1/2"
       />
     </motion.button>

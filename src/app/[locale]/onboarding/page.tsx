@@ -19,6 +19,7 @@ import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from '@/i18n/routing'
+import { track } from '@/lib/analytics'
 
 type Mode = 'solo' | 'together' | null
 type Step = 0 | 1 | 2 | 3 // 0 = welcome, 1 = name, 2 = mode, 3 = done
@@ -36,6 +37,7 @@ export default function OnboardingPage() {
   // Hydrate from localStorage (Day 1: client-only persistence)
   useEffect(() => {
     setMounted(true)
+    track('onboarding_start')
     try {
       const stored = localStorage.getItem(STORAGE_KEY)
       if (stored) {
@@ -59,6 +61,7 @@ export default function OnboardingPage() {
 
   function finish() {
     if (!petName.trim() || !mode) return
+    track('onboarding_complete', { mode })
     try {
       localStorage.setItem(
         STORAGE_KEY,
