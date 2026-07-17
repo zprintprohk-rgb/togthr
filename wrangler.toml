@@ -11,7 +11,7 @@ compatibility_flags = ["nodejs_compat"]
 [vars]
 NEXT_PUBLIC_SITE_URL = "https://togthr.life"
 NEXTJS_ENV = "production"
-PAYPAL_MODE = "live"
+PAYPAL_MODE = "sandbox"
 # Public Supabase (anon key is safe to inline into client bundle)
 NEXT_PUBLIC_SUPABASE_URL = "https://pcgwvqpzyqijrvikfawd.supabase.co"
 NEXT_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable_aDkUMB90QwGQAlcWAGT5Eg_Wf9o_Z69"
@@ -21,7 +21,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable_aDkUMB90QwGQAlcWAGT5Eg_Wf9o_Z69"
 # Falls back to NEXT_PUBLIC_SITE_URL in lib/r2.ts — safe to leave unset
 NEXT_PUBLIC_CDN_URL = ""
 # PayPal client ID is technically public (used in browser SDK), kept here for convenience
-PAYPAL_CLIENT_ID = ""
+PAYPAL_CLIENT_ID = "BAAbewP1Eq2__waR1iMzrkxVUPbHme8_sx5hYHs9QXfA4yL6AFkGkyeI6s-lc_sXDnfQGmiF-6qHHpvsQI"
 ALIPAY_APP_ID = ""
 # VAPID public key is public (browser push subscription needs it)
 VAPID_PUBLIC_KEY = ""
