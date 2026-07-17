@@ -51,8 +51,15 @@ export async function GET(
   const rawLocale = q.get("locale") ?? "en"
   const locale = LOCALES.has(rawLocale) ? rawLocale : "en"
 
-  const checkoutFailed = () =>
-    NextResponse.redirect(`${origin}/${locale}/pricing?error=checkout_failed`, 303)
+  const sanitize = (s: string) =>
+    s.replace(/[^a-zA-Z0-9_.:-]+/g, "_").slice(0, 80)
+  const checkoutFailed = (reason = "unknown", detail = "") =>
+    NextResponse.redirect(
+      `${origin}/${locale}/pricing?error=checkout_failed&reason=${reason}${
+        detail ? `&detail=${sanitize(detail)}` : ""
+      }`,
+      303,
+    )
 
   try {
     /* 0. whitelist validation */
@@ -60,7 +67,7 @@ export async function GET(
     const tier = q.get("tier") ?? ""
     const period = q.get("period") ?? ""
     if (!GATEWAYS.has(gateway) || !TIERS.has(tier) || !PERIODS.has(period)) {
-      return checkoutFailed()
+      return checkoutFailed("whitelist")
     }
 
     /* 1. auth — checkout requires a logged-in user */
@@ -85,24 +92,30 @@ export async function GET(
       const plan = tiers[tier]
       const amount = plan?.[period as Period]
       if (!plan || !amount || amount <= 0) {
-        return checkoutFailed()
+        return checkoutFailed("pricing")
       }
       const currency = pricing.currency
 
       /* 3a. create the PayPal order */
-      const order = await createPayPalOrder(
-        PAYPAL_CLIENT_ID,
-        PAYPAL_CLIENT_SECRET,
-        PAYPAL_MODE,
-        {
-          amount: amount.toFixed(2),
-          currency,
-          description: `CloudDreamer ${tier} (${period})`,
-          customId: user.id,
-          returnUrl: `${origin}/api/payments/paypal/return?locale=${locale}`,
-          cancelUrl: `${origin}/${locale}/pricing?cancelled=1`,
-        },
-      )
+      let order: Awaited<ReturnType<typeof createPayPalOrder>>
+      try {
+        order = await createPayPalOrder(
+          PAYPAL_CLIENT_ID,
+          PAYPAL_CLIENT_SECRET,
+          PAYPAL_MODE,
+          {
+            amount: amount.toFixed(2),
+            currency,
+            description: `CloudDreamer ${tier} (${period})`,
+            customId: user.id,
+            returnUrl: `${origin}/api/payments/paypal/return?locale=${locale}`,
+            cancelUrl: `${origin}/${locale}/pricing?cancelled=1`,
+          },
+        )
+      } catch (e) {
+        console.error("[payments/create] createPayPalOrder failed:", (e as Error).message)
+        return checkoutFailed("paypal_create", (e as Error).message)
+      }
 
       /* 4a. pending order row (mirrors alipay create-order insert shape) */
       const service = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
@@ -123,14 +136,14 @@ export async function GET(
       })
       if (dbErr) {
         console.error("[payments/create] pending order insert failed:", dbErr.message)
-        return checkoutFailed()
+        return checkoutFailed("db_insert", `${dbErr.code ?? ""}:${dbErr.message}`)
       }
 
       /* 5a. send the user to PayPal approval */
       const approveUrl = order.links?.find((l) => l.rel === "approve")?.href
       if (!approveUrl) {
         console.error("[payments/create] PayPal order missing approve link")
-        return checkoutFailed()
+        return checkoutFailed("no_approve_link")
       }
       return NextResponse.redirect(approveUrl, 303)
     }
@@ -154,17 +167,20 @@ export async function GET(
     })
     if (!alipayRes.ok) {
       console.error("[payments/create] alipay create-order status:", alipayRes.status)
-      return checkoutFailed()
+      return checkoutFailed("alipay_http", String(alipayRes.status))
     }
     const alipayData = (await alipayRes.json()) as { payUrl?: string }
     if (!alipayData.payUrl) {
       console.error("[payments/create] alipay create-order returned no payUrl")
-      return checkoutFailed()
+      return checkoutFailed("alipay_no_url")
     }
     return NextResponse.redirect(alipayData.payUrl, 303)
   } catch (err) {
     // never log env/secrets — message only
     console.error("[payments/create]", err instanceof Error ? err.message : "unknown")
-    return checkoutFailed()
+    return checkoutFailed(
+      "exception",
+      err instanceof Error ? err.message : "unknown",
+    )
   }
 }
