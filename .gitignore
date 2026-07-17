@@ -124,3 +124,9 @@ decision-i18n-7-locales.json
 P新建文件夹/
 docs/fusion-v3/opc-workflows/
 docs/legacy-planning/
+
+# ── Kimi Work 调试产物与运营产出 (never commit) ──
+.debug-*
+.tmp-*
+ops/
+marketing/
