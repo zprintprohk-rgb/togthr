@@ -53,7 +53,7 @@ CREATE TABLE "likes" (
 	"post_id" uuid NOT NULL,
 	"user_id" uuid NOT NULL,
 	"created_at" timestamp DEFAULT now() NOT NULL,
-	CONSTRAINT "likes_post_id_user_id_pk" PRIMARY KEY("post_id","user_id")
+	CONSTRAINT "likes_post_id_user_id_unique" UNIQUE("post_id","user_id")
 );
 --> statement-breakpoint
 CREATE TABLE "memberships" (

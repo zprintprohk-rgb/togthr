@@ -7,6 +7,7 @@ import {
   integer,
   jsonb,
   primaryKey,
+  unique,
   index,
 } from "drizzle-orm/pg-core"
 
@@ -111,7 +112,7 @@ export const likes = pgTable(
     created_at: timestamp("created_at").defaultNow().notNull(),
   },
   (table) => ({
-    uniq: primaryKey({ columns: [table.post_id, table.user_id] }),
+    uniq: unique("likes_post_id_user_id_unique").on(table.post_id, table.user_id),
   }),
 )
 
