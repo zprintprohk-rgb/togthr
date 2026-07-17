@@ -34,11 +34,18 @@ export async function signUp(formData: FormData) {
   redirect(`/${locale}/register?success=check-email`)
 }
 
+/** 开放重定向防护：仅允许站内相对路径（拒绝 // 协议相对与绝对 URL） */
+function safeNextPath(next: string | null | undefined): string | null {
+  if (next && next.startsWith("/") && !next.startsWith("//")) return next
+  return null
+}
+
 // ─── Sign In ───
 export async function signIn(formData: FormData) {
   const email = formData.get("email") as string
   const password = formData.get("password") as string
   const locale = (formData.get("locale") as string) || "en"
+  const next = safeNextPath(formData.get("next") as string | null)
 
   const supabase = await createServerClient()
 
@@ -48,21 +55,29 @@ export async function signIn(formData: FormData) {
   })
 
   if (error) {
-    redirect(`/${locale}/login?error=${encodeURIComponent(error.message)}`)
+    const nextQuery = next ? `&next=${encodeURIComponent(next)}` : ""
+    redirect(`/${locale}/login?error=${encodeURIComponent(error.message)}${nextQuery}`)
   }
 
   revalidatePath(`/${locale}/login`)
-  redirect(`/${locale}/dashboard`)
+  // 有 next（如收银台 /api/payments/...）→ 直接回跳；
+  // 无 next → 回首页并带 ?login=success 供 AuthEventTracker 触发 login_success
+  redirect(next ?? `/${locale}?login=success`)
 }
 
 // ─── Sign In with OAuth (Google / GitHub) ───
-export async function signInWithOAuth(provider: "google" | "github", locale: string) {
+export async function signInWithOAuth(
+  provider: "google" | "github",
+  locale: string,
+  next?: string | null,
+) {
   const supabase = await createServerClient()
+  const safeNext = safeNextPath(next) ?? `/${locale}`
 
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider,
     options: {
-      redirectTo: `${process.env.NEXT_PUBLIC_SITE_URL}/api/auth/callback?next=/${locale}/dashboard`,
+      redirectTo: `${process.env.NEXT_PUBLIC_SITE_URL}/api/auth/callback?next=${encodeURIComponent(safeNext)}`,
     },
   })
 

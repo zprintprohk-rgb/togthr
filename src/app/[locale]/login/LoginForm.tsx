@@ -11,6 +11,7 @@ export function LoginForm({ locale }: { locale: string }) {
   const searchParams = useSearchParams()
   const error = searchParams.get("error")
   const message = searchParams.get("message")
+  const next = searchParams.get("next")
 
   return (
     <div className="space-y-4">
@@ -29,6 +30,7 @@ export function LoginForm({ locale }: { locale: string }) {
       {/* Email / Password Form */}
       <form action={signIn} className="space-y-4">
         <input type="hidden" name="locale" value={locale} />
+        {next && <input type="hidden" name="next" value={next} />}
 
         <div>
           <label
@@ -97,7 +99,7 @@ export function LoginForm({ locale }: { locale: string }) {
 
       <div className="flex gap-3">
         <form
-          action={signInWithOAuth.bind(null, "google", locale)}
+          action={signInWithOAuth.bind(null, "google", locale, next)}
           className="flex-1"
         >
           <button
@@ -108,7 +110,7 @@ export function LoginForm({ locale }: { locale: string }) {
           </button>
         </form>
         <form
-          action={signInWithOAuth.bind(null, "github", locale)}
+          action={signInWithOAuth.bind(null, "github", locale, next)}
           className="flex-1"
         >
           <button

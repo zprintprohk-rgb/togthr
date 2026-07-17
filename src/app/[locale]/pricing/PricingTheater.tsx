@@ -26,6 +26,7 @@ import { EmotionParticles } from '@/components/shared/EmotionParticles'
 import { Lock, ShieldCheck, Globe2 } from 'lucide-react'
 import type { CurrencyCode, PaymentGateway, CountryCode } from '@/lib/types'
 import { cn } from '@/lib/utils'
+import { track } from '@/lib/analytics'
 import type { PricingTier } from './pet-data'
 
 interface TierPriceData {
@@ -129,6 +130,16 @@ export function PricingTheater({
   const fireBurst = (tier: PricingTier) => {
     if (tier === 'free') return
     setBurstTriggers((prev) => ({ ...prev, [tier]: prev[tier] + 1 }))
+    // Funnel: paid-tier CTA click → TierCard navigates to the order-creation
+    // endpoint right after this, so this is the checkout_start point.
+    track('checkout_start', {
+      tier: tier === 'eternal' ? 'soulmate' : tier,
+      period,
+      amount:
+        tier === 'eternal' ? formatted.soulmate[period] : formatted.plus[period],
+      currency,
+      provider: gateway === 'paypal' ? 'paypal' : 'alipay',
+    })
   }
 
   // Build display values for each tier based on period
@@ -180,7 +191,7 @@ export function PricingTheater({
     period === 'monthly' ? null : formatted.soulmate.originalYearlyFmt
 
   const buildCheckoutHref = (tier: 'plus' | 'soulmate') =>
-    `/api/payments/${gateway}/create?country=${country}&tier=${tier}&period=${period}`
+    `/api/payments/${gateway}/create?country=${country}&tier=${tier}&period=${period}&locale=${locale}`
 
   // Build the three TierCard payloads
   const freeCard: TierCardData = {

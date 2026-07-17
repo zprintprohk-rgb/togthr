@@ -3,6 +3,7 @@ import { createClient } from "@supabase/supabase-js"
 import { getPricing } from "@/lib/pricing"
 import { getCountryFromRequest } from "@/lib/pricing"
 import { getDisplayPrice } from "@/lib/pricing"
+import { routing } from "@/i18n/routing"
 
 /* ─── env ─── */
 const ALIPAY_APP_ID = process.env.ALIPAY_APP_ID!
@@ -68,8 +69,9 @@ export async function POST(req: NextRequest) {
       period?: "monthly" | "quarterly" | "yearly"
       userId: string
       userEmail?: string
+      locale?: string
     }
-    const { tier, period = "monthly", userId, userEmail } = body
+    const { tier, period = "monthly", userId, userEmail, locale } = body
 
     if (!tier || !["monthly", "quarterly", "yearly"].includes(period) || !userId) {
       return NextResponse.json(
@@ -100,7 +102,13 @@ export async function POST(req: NextRequest) {
     /* 2. params */
     const outTradeNo = `CD_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`.toUpperCase()
     const notifyUrl = `${req.nextUrl.origin}/api/alipay/notify`
-    const returnUrl = `${req.nextUrl.origin}/payment/success`
+    // Locale-aware return page when provided (e.g. by the unified
+    // /api/payments/[gateway]/create route); legacy path otherwise.
+    const safeLocale =
+      locale && (routing.locales as readonly string[]).includes(locale) ? locale : null
+    const returnUrl = safeLocale
+      ? `${req.nextUrl.origin}/${safeLocale}/payment/success?provider=alipay&tier=${tier}&period=${period}`
+      : `${req.nextUrl.origin}/payment/success`
 
     const bizContent = JSON.stringify({
       out_trade_no: outTradeNo,

@@ -1,9 +1,12 @@
 "use client"
 
+import { useEffect } from "react"
 import { useTranslations } from "next-intl"
 import { useSearchParams } from "next/navigation"
 import Link from "next/link"
 import { signUp, signInWithOAuth } from "@/lib/auth-actions"
+import { createBrowserClient } from "@supabase/ssr"
+import { identifyUser, track } from "@/lib/analytics"
 import { AlertCircle, CheckCircle2 } from "lucide-react"
 
 export function RegisterForm({ locale }: { locale: string }) {
@@ -11,6 +14,28 @@ export function RegisterForm({ locale }: { locale: string }) {
   const searchParams = useSearchParams()
   const error = searchParams.get("error")
   const success = searchParams.get("success")
+
+  // Funnel: registration succeeded (server action redirected back with
+  // ?success=check-email). Identify the user when a session already exists
+  // (email-confirmation flow usually has none yet — then identify is skipped).
+  // NOTE: uses @supabase/ssr directly — @/lib/supabase imports next/headers
+  // and therefore cannot be pulled into a client bundle.
+  useEffect(() => {
+    if (success !== "check-email") return
+    ;(async () => {
+      try {
+        const supabase = createBrowserClient(
+          process.env.NEXT_PUBLIC_SUPABASE_URL!,
+          process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+        )
+        const { data } = await supabase.auth.getUser()
+        if (data.user?.id) identifyUser(data.user.id)
+      } catch {
+        // no client session available — skip identify, still record success
+      }
+      track("register_success")
+    })()
+  }, [success])
 
   return (
     <div className="space-y-4">
@@ -27,7 +52,11 @@ export function RegisterForm({ locale }: { locale: string }) {
         </div>
       )}
 
-      <form action={signUp} className="space-y-4">
+      <form
+        action={signUp}
+        className="space-y-4"
+        onSubmit={() => track("register_start")}
+      >
         <input type="hidden" name="locale" value={locale} />
 
         <div>
@@ -106,22 +135,28 @@ export function RegisterForm({ locale }: { locale: string }) {
 
       <div className="flex gap-3">
         <form
-          action={signInWithOAuth.bind(null, "google", locale)}
+          action={async () => {
+            await signInWithOAuth("google", locale)
+          }}
           className="flex-1"
         >
           <button
             type="submit"
+            onClick={() => track("register_oauth_click", { provider: "google" })}
             className="w-full rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
           >
             {t("google")}
           </button>
         </form>
         <form
-          action={signInWithOAuth.bind(null, "github", locale)}
+          action={async () => {
+            await signInWithOAuth("github", locale)
+          }}
           className="flex-1"
         >
           <button
             type="submit"
+            onClick={() => track("register_oauth_click", { provider: "github" })}
             className="w-full rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
           >
             {t("github")}
