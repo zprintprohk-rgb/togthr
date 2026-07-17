@@ -125,7 +125,7 @@ export async function GET(req: NextRequest) {
         amount,
         currency,
         status: "completed",
-        payment_method: "paypal",
+        gateway: "paypal",
         payment_id: captureId ?? token,
         tier,
         period,

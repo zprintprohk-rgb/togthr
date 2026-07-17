@@ -126,7 +126,7 @@ export async function POST(req: NextRequest) {
         amount,
         currency,
         status: "completed",
-        payment_method: "paypal",
+        gateway: "paypal",
         payment_id: paypalOrderId,
         tier,
         period,

@@ -144,7 +144,7 @@ export async function POST(req: NextRequest) {
       amount,
       currency: pricing.currency,
       status: "pending",
-      payment_method: "alipay_cn",
+      gateway: "alipay_cn",
       tier,
       period,
       gateway_raw: common,

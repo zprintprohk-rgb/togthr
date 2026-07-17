@@ -115,7 +115,7 @@ export async function GET(
         amount,
         currency,
         status: "pending",
-        payment_method: "paypal",
+        gateway: "paypal",
         tier,
         period,
         gateway_raw: order,
