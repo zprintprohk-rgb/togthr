@@ -5,6 +5,7 @@ import { hasLocale } from 'next-intl'
 import { routing, type Locale } from '@/i18n/routing'
 import { generateAlternateLinks, getCanonicalUrl, websiteSchema, marketMeta } from '@/lib/seo'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
+import { MobileNav } from '@/components/MobileNav'
 import { DesktopPet } from '@/components/DesktopPet'
 import { AuthEventTracker } from '@/components/shared/AuthEventTracker'
 import type { Metadata } from 'next'
@@ -221,7 +222,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               </div>
             </div>
 
-            {/* Right: Language Switcher + Login */}
+            {/* Right: Language Switcher + Login + Mobile menu */}
             <div className="flex items-center gap-3">
               <LanguageSwitcher currentLocale={locale as Locale} />
               <Link
@@ -230,6 +231,22 @@ export default async function LocaleLayout({ children, params }: Props) {
               >
                 {nav.login}
               </Link>
+              <MobileNav
+                locale={locale}
+                labels={{
+                  home: nav.home,
+                  features: nav.features,
+                  pricing: nav.pricing,
+                  faq: 'FAQ',
+                  blog: nav.blog,
+                  daily: nav.daily,
+                  capsule: nav.capsule,
+                  pet: nav.pet,
+                  journal: nav.journal,
+                  store: nav.store,
+                  chat: nav.chat,
+                }}
+              />
             </div>
           </nav>
         </header>
