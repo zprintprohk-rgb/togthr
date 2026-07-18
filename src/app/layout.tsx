@@ -20,6 +20,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Togthr",
   description: "Your private space, built for two",
+  other: {
+    // Replace this placeholder with the real code copied from Bing Webmaster Tools
+    // -> Add site → HTML meta tag
+    'msvalidate.01': 'BING_CODE_PLACEHOLDER',
+  },
 };
 
 const FORCE_DARK_SCRIPT = `(function(){try{var d=document.documentElement;d.className=(d.className||'')+' dark';var s=d.style;s.colorScheme='dark';s.backgroundColor='#0B0B1A';d.setAttribute('data-theme','dark');var b=document.body;if(b){b.setAttribute('bgcolor','#0B0B1A');b.setAttribute('text','#F4F4F5');b.setAttribute('link','#F472B6');b.setAttribute('vlink','#A78BFA');}}catch(e){var st=document.createElement('style');st.textContent='html,body{background:#0B0B1A!important;color-scheme:dark;}';if(document.head){document.head.appendChild(st);}else{document.addEventListener('DOMContentLoaded',function(){document.head.appendChild(st);});}}})();`;

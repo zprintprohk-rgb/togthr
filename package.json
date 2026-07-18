@@ -6,6 +6,8 @@
     "prebuild": "npm run sync-messages",
     "build": "next build --no-lint && npx next-sitemap",
     "postbuild": "node scripts/ping-indexnow.cjs",
+    "indexnow": "python scripts/indexnow-submit.py",
+    "indexnow:new": "python scripts/indexnow-submit.py --new-only",
     "dev": "next dev",
     "cf-build": "npm run build && npx @opennextjs/cloudflare build --skipNextBuild",
     "start": "next start",
