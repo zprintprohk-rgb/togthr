@@ -245,6 +245,8 @@ export function HomeClient({
         'relative min-h-screen overflow-hidden bg-linear-to-b from-[#0B0B1A] via-[#110A20] to-[#06030F] text-zinc-100',
         sceneOverride,
       ].filter(Boolean).join(' ')}
+      style={{ backgroundColor: '#0B0B1A' }}
+      data-dark-root
     >
       {/* ════════════════ Hero — Always Here 沉浸式首屏 ════════════════ */}
       {/* isolation: isolate — 创建独立 stacking context，防止 EmotionParticles 的 Canvas 监听整页 mouse + 避免 motion 节点被推到外面 */}

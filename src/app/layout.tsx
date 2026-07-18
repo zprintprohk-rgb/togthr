@@ -86,6 +86,18 @@ function enforce(){
         if(!hits)mark('css','hero');
       }
     }
+    /* 国产浏览器（QQ/UC/夸克等）"网页着色/护眼"会重写容器背景为白但不改文字色，
+       导致浅色文字消失在白底上。带 data-dark-root 的关键容器一旦被改浅立即夺回。 */
+    var roots=document.querySelectorAll('[data-dark-root]');
+    for(var k=0;k<roots.length;k++){
+      var rk=roots[k];
+      var Lk=lum(getComputedStyle(rk).backgroundColor);
+      if(Lk!==null&&Lk>200){
+        rk.style.setProperty('background-color',DARK,'important');
+        rk.style.setProperty('background-image','none','important');
+        mark('css','dark-root');
+      }
+    }
   }catch(e){}
 }
 function start(){

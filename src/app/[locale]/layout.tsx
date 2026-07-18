@@ -143,7 +143,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         />
 
         {/* ---------- Navigation ---------- */}
-        <header className="sticky top-0 z-50 border-b border-zinc-700/30 bg-[#0B0B1A]/80 backdrop-blur-xl">
+        <header className="sticky top-0 z-50 border-b border-zinc-700/30 bg-[#0B0B1A]/80 backdrop-blur-xl" style={{ backgroundColor: 'rgba(11,11,26,0.85)' }} data-dark-root>
           <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
             {/* Left: Logo + Links */}
             <div className="flex items-center gap-6">
@@ -272,7 +272,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <AuthEventTracker />
 
         {/* ---------- Footer ---------- */}
-        <footer className="border-t border-zinc-700/30 bg-[#0B0B1A]/80 backdrop-blur-xl">
+        <footer className="border-t border-zinc-700/30 bg-[#0B0B1A]/80 backdrop-blur-xl" style={{ backgroundColor: 'rgba(11,11,26,0.85)' }} data-dark-root>
           <div className="mx-auto max-w-6xl px-4 py-8">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <p className="text-sm text-zinc-400">

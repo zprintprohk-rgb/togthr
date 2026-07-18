@@ -245,6 +245,8 @@ export function PricingTheater({
   return (
     <section
       className="relative isolate min-h-screen overflow-hidden bg-cosmic"
+      style={{ backgroundColor: '#0B0B1A' }}
+      data-dark-root
       aria-label="Pricing"
     >
       {/* Atmospheric layers — Spotlight + faint stars */}

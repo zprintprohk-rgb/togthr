@@ -144,7 +144,7 @@ export function PetCapsule({
       )}
 
       {/* ── 玻璃拟态舱体(深色宇宙底,不再用半透明白) ── */}
-      <div className="relative h-full w-full overflow-hidden rounded-[28px] bg-cosmic-deep backdrop-blur-xl border border-purple-500/30 shadow-2xl ring-1 ring-purple-500/20">
+      <div className="relative h-full w-full overflow-hidden rounded-[28px] bg-cosmic-deep backdrop-blur-xl border border-purple-500/30 shadow-2xl ring-1 ring-purple-500/20" style={{ backgroundColor: '#06030F' }} data-dark-root>
         {/* 内部高光(顶部) */}
         <div className="pointer-events-none absolute inset-x-4 top-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
         {/* 内部底色渐变 — 用 cosmic 紫黑过渡(不再透出白色) */}

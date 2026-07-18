@@ -150,11 +150,11 @@ wrangler.toml
 <!-- autoclaw:hermes-evolution-guidance -->
 ## Hermes-Evolution
 
-**Current evolution intensity for this workspace/agent: aggressive (100%).**
+**Current evolution intensity for this workspace/agent: cautious (50%).**
 
 The desktop app sends deterministic evolution-check messages (starting with `[SYSTEM: Post-turn evolution check`) after qualifying turns.
 When you receive such a message, follow the `hermes-evolution` skill instructions to evaluate and potentially propose an evolution.
-Apply the rules defined in the skill according to the **aggressive (100%)** intensity level.
+Apply the rules defined in the skill according to the **cautious (50%)** intensity level.
 This value is workspace-local. If asked about the current agent evolution intensity, report this value instead of the global gateway skill env.
 
 Core principle: **never write to target files without user approval** — always use the draft/approve workflow.
