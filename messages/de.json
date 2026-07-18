@@ -15,7 +15,8 @@
     "store": "Shop",
     "chat": "Chat",
     "faq": "FAQ",
-    "blog": "Blog"
+    "blog": "Blog",
+    "focus": "Fokus"
   },
   "seo": {
     "siteName": "Togthr",
@@ -79,7 +80,8 @@
         "blindbox": { "title": "6+1 Blindbox", "desc": "Erstbestellungs-Angebot", "badge": "Neu" },
         "nest": { "title": "Nestbau", "desc": "Jeder Tagebucheintrag baut euer gemeinsames Nest weiter" },
         "soulmate": { "title": "Seelenpartner-KI", "desc": "Rede jederzeit – es hört wirklich zu" },
-        "treehole": { "title": "Baumhöhle", "desc": "Anonyme Nachrichten, nach 24 Std. gelöscht" }
+        "treehole": { "title": "Baumhöhle", "desc": "Anonyme Nachrichten, nach 24 Std. gelöscht" },
+        "focus": {"title": "Fokus-Modus", "desc": "Dein Pet lernt und arbeitet neben dir"}
       }
     }
   },
@@ -833,5 +835,25 @@
     "title": "Dein Kumpel möchte ein neues Outfit! ✨",
     "cta": "Anschauen",
     "dismiss": "Kostenlos weiternutzen"
+  },
+  "focus": {
+    "title": "Fokus-Modus",
+    "subtitle": "Ein kleiner Roboter begleitet dich bei der Arbeit.",
+    "chooseDuration": "Wie lange wollen wir uns gemeinsam konzentrieren?",
+    "minutes": "{minutes} Min.",
+    "start": "Fokus starten",
+    "giveUp": "Session beenden",
+    "awayNotice": "Ich warte auf dich…",
+    "welcomeBack": "Willkommen zurück — weiter geht's!",
+    "completeTitle": "Geschafft!",
+    "completeDesc": "{minutes} Minuten sanfter Fokus, gemeinsam.",
+    "streak": "{days} Tage in Folge",
+    "again": "Noch eine Runde",
+    "lockedPlus": "🔒 Längere Sessions mit Plus freischalten",
+    "interruptedNote": "Diese Session hat kurz pausiert — kein Problem, wir fangen neu an.",
+    "phrase1": "Ich bin hier bei dir.",
+    "phrase2": "Ein kleiner Schritt nach dem anderen.",
+    "phrase3": "Du schaffst das.",
+    "phrase4": "Lass uns leise zusammen wachsen."
   }
 }

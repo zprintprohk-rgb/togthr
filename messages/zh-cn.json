@@ -15,7 +15,8 @@
     "store": "商店",
     "chat": "聊天",
     "faq": "常见问题",
-    "blog": "博客"
+    "blog": "博客",
+    "focus": "专注"
   },
   "seo": {
     "siteName": "Togthr",
@@ -79,7 +80,8 @@
         "blindbox": { "title": "6+1 盲盒", "desc": "¥199 首单", "badge": "新" },
         "nest": { "title": "筑巢", "desc": "每条日记，都给你们的共同小窝添砖加瓦" },
         "soulmate": { "title": "灵魂伴侣 AI", "desc": "聊聊天，听你说话" },
-        "treehole": { "title": "树洞", "desc": "匿名留言，24h 自动消失" }
+        "treehole": { "title": "树洞", "desc": "匿名留言，24h 自动消失" },
+        "focus": {"title": "专注模式", "desc": "公仔陪你一起学习工作"}
       }
     }
   },
@@ -833,5 +835,25 @@
     "title": "你的小伙伴想换上新衣服啦 ✨",
     "cta": "去看看",
     "dismiss": "继续用免费的"
+  },
+  "focus": {
+    "title": "专注模式",
+    "subtitle": "有一只小机器人，陪你一起工作学习。",
+    "chooseDuration": "想一起专注多久？",
+    "minutes": "{minutes} 分钟",
+    "start": "开始专注",
+    "giveUp": "结束本次",
+    "awayNotice": "我等你回来…",
+    "welcomeBack": "欢迎回来，继续加油！",
+    "completeTitle": "完成啦！",
+    "completeDesc": "一起温柔地专注了 {minutes} 分钟。",
+    "streak": "连续专注 {days} 天",
+    "again": "再来一轮",
+    "lockedPlus": "🔒 Plus 解锁更长专注",
+    "interruptedNote": "本次专注中途暂停了一会儿——没关系，我们重新开始。",
+    "phrase1": "我就在这里陪你。",
+    "phrase2": "一小步一小步来。",
+    "phrase3": "你可以的。",
+    "phrase4": "一起安静地成长。"
   }
 }

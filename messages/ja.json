@@ -15,7 +15,8 @@
     "store": "ショップ",
     "chat": "チャット",
     "faq": "よくある質問",
-    "blog": "ブログ"
+    "blog": "ブログ",
+    "focus": "集中"
   },
   "seo": {
     "siteName": "Togthr",
@@ -79,7 +80,8 @@
         "blindbox": { "title": "6+1 ブラインドボックス", "desc": "初回限定オファー", "badge": "新着" },
         "nest": { "title": "巣づくり", "desc": "日記を書くたび、ふたりの巣が育つ" },
         "soulmate": { "title": "ソウルメイト AI", "desc": "いつでも話しかけて、聞いてくれる" },
-        "treehole": { "title": "木のうろ", "desc": "匿名メッセージ、24時間で消える" }
+        "treehole": { "title": "木のうろ", "desc": "匿名メッセージ、24時間で消える" },
+        "focus": {"title": "フォーカスモード", "desc": "ペットがそばで一緒に勉強・仕事"}
       }
     }
   },
@@ -833,5 +835,25 @@
     "title": "相棒が新しい服を着たがってるよ ✨",
     "cta": "見に行く",
     "dismiss": "無料で続ける"
+  },
+  "focus": {
+    "title": "フォーカスモード",
+    "subtitle": "小さなロボットが、お仕事や勉強に寄り添います。",
+    "chooseDuration": "一緒にどのくらい集中しよう？",
+    "minutes": "{minutes} 分",
+    "start": "集中をはじめる",
+    "giveUp": "今回はここまで",
+    "awayNotice": "待ってるよ…",
+    "welcomeBack": "おかえり！がんばろう！",
+    "completeTitle": "やったね！",
+    "completeDesc": "一緒にやさしく {minutes} 分集中できたよ。",
+    "streak": "{days} 日連続",
+    "again": "もう一回",
+    "lockedPlus": "🔒 Plusでもっと長く集中",
+    "interruptedNote": "途中で少しおやすみしたけど、大丈夫。また一緒に始めよう。",
+    "phrase1": "そばにいるよ。",
+    "phrase2": "一歩ずつ進もう。",
+    "phrase3": "きみならできる。",
+    "phrase4": "静かに一緒に育とう。"
   }
 }

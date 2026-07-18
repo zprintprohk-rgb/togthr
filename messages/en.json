@@ -15,7 +15,8 @@
     "pet": "Pet",
     "journal": "Nest",
     "store": "Store",
-    "chat": "Chat"
+    "chat": "Chat",
+    "focus": "Focus"
   },
   "seo": {
     "siteName": "Togthr",
@@ -79,7 +80,8 @@
         "blindbox": { "title": "6+1 Blind Box", "desc": "First order special", "badge": "New" },
         "nest": { "title": "Nest Building", "desc": "Every journal entry adds a brick to your shared home" },
         "soulmate": { "title": "Soulmate AI", "desc": "Talk anytime — it truly listens" },
-        "treehole": { "title": "Tree Hole", "desc": "Anonymous notes, gone in 24h" }
+        "treehole": { "title": "Tree Hole", "desc": "Anonymous notes, gone in 24h" },
+        "focus": {"title": "Focus Mode", "desc": "Your pet studies & works beside you"}
       }
     }
   },
@@ -839,5 +841,25 @@
     "title": "Your buddy wants a new outfit! ✨",
     "cta": "Take a look",
     "dismiss": "Keep using free"
+  },
+  "focus": {
+    "title": "Focus Mode",
+    "subtitle": "A tiny robot keeps you company while you work.",
+    "chooseDuration": "How long shall we focus together?",
+    "minutes": "{minutes} min",
+    "start": "Start focusing",
+    "giveUp": "End this session",
+    "awayNotice": "I'm waiting for you…",
+    "welcomeBack": "Welcome back — let's keep going!",
+    "completeTitle": "You did it!",
+    "completeDesc": "{minutes} minutes of gentle focus, together.",
+    "streak": "{days}-day streak",
+    "again": "One more round",
+    "lockedPlus": "🔒 Unlock longer sessions with Plus",
+    "interruptedNote": "This session paused for a while — no worries, we'll start fresh.",
+    "phrase1": "I'm right here with you.",
+    "phrase2": "One tiny step at a time.",
+    "phrase3": "You've got this.",
+    "phrase4": "Let's grow together, quietly."
   }
 }

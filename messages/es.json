@@ -15,7 +15,8 @@
     "store": "Tienda",
     "chat": "Chat",
     "faq": "Preguntas",
-    "blog": "Blog"
+    "blog": "Blog",
+    "focus": "Enfoque"
   },
   "seo": {
     "siteName": "Togthr",
@@ -79,7 +80,8 @@
         "blindbox": { "title": "Caja sorpresa 6+1", "desc": "Oferta primer pedido", "badge": "Nuevo" },
         "nest": { "title": "Construir el nido", "desc": "Cada entrada del diario suma un ladrillo a vuestro hogar" },
         "soulmate": { "title": "IA alma gemela", "desc": "Habla cuando quieras — te escucha de verdad" },
-        "treehole": { "title": "Agujero del árbol", "desc": "Notas anónimas, desaparecen en 24 h" }
+        "treehole": { "title": "Agujero del árbol", "desc": "Notas anónimas, desaparecen en 24 h" },
+        "focus": {"title": "Modo Enfoque", "desc": "Tu mascota estudia y trabaja a tu lado"}
       }
     }
   },
@@ -833,5 +835,25 @@
     "title": "¡Tu compa quiere un nuevo atuendo! ✨",
     "cta": "Echar un vistazo",
     "dismiss": "Seguir gratis"
+  },
+  "focus": {
+    "title": "Modo Enfoque",
+    "subtitle": "Un pequeño robot te acompaña mientras trabajas.",
+    "chooseDuration": "¿Cuánto tiempo nos concentramos juntos?",
+    "minutes": "{minutes} min",
+    "start": "Empezar a enfocar",
+    "giveUp": "Terminar esta sesión",
+    "awayNotice": "Te estoy esperando…",
+    "welcomeBack": "¡Bienvenido de nuevo — sigamos!",
+    "completeTitle": "¡Lo lograste!",
+    "completeDesc": "{minutes} minutos de enfoque tranquilo, juntos.",
+    "streak": "{days} días seguidos",
+    "again": "Otra ronda",
+    "lockedPlus": "🔒 Desbloquea sesiones más largas con Plus",
+    "interruptedNote": "Esta sesión hizo una pequeña pausa — no pasa nada, empezamos de nuevo.",
+    "phrase1": "Estoy aquí contigo.",
+    "phrase2": "Un pequeño paso cada vez.",
+    "phrase3": "Tú puedes.",
+    "phrase4": "Crezcamos juntos, en calma."
   }
 }

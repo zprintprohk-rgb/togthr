@@ -16,6 +16,7 @@ export interface MobileNavLabels {
   journal: string
   store: string
   chat: string
+  focus: string
 }
 
 /**
@@ -32,10 +33,11 @@ export function MobileNav({ locale, labels }: { locale: string; labels: MobileNa
     setOpen(false)
   }, [pathname])
 
-  const items: Array<{ href: string; label: string; strong?: 'rose' | 'purple' }> = [
+  const items: Array<{ href: string; label: string; strong?: 'rose' | 'purple' | 'amber' }> = [
     { href: `/${locale}`, label: labels.home },
     { href: `/${locale}/features`, label: labels.features },
     { href: `/${locale}/pricing`, label: labels.pricing },
+    { href: `/${locale}/focus`, label: `🎯 ${labels.focus}`, strong: 'amber' },
     { href: `/${locale}/faq`, label: labels.faq },
     { href: `/${locale}/blog`, label: labels.blog },
     { href: `/${locale}/daily`, label: labels.daily },
@@ -78,7 +80,9 @@ export function MobileNav({ locale, labels }: { locale: string; labels: MobileNa
                     ? 'rounded-lg px-3 py-2.5 text-sm font-semibold text-rose-400'
                     : it.strong === 'purple'
                       ? 'rounded-lg px-3 py-2.5 text-sm font-semibold text-purple-400'
-                      : 'rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-300 hover:bg-white/5 hover:text-zinc-100'
+                      : it.strong === 'amber'
+                        ? 'rounded-lg px-3 py-2.5 text-sm font-semibold text-amber-400'
+                        : 'rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-300 hover:bg-white/5 hover:text-zinc-100'
                 }
               >
                 {it.label}

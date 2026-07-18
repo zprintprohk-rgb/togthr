@@ -15,7 +15,8 @@
     "store": "商店",
     "chat": "聊天",
     "faq": "常見問題",
-    "blog": "部落格"
+    "blog": "部落格",
+    "focus": "專注"
   },
   "seo": {
     "siteName": "Togthr",
@@ -79,7 +80,8 @@
         "blindbox": { "title": "6+1 盲盒", "desc": "首單特價", "badge": "新" },
         "nest": { "title": "築巢", "desc": "每條日記，都給你們的共同小窩添磚加瓦" },
         "soulmate": { "title": "靈魂伴侶 AI", "desc": "聊聊天，聽你說話" },
-        "treehole": { "title": "樹洞", "desc": "匿名留言，24h 自動消失" }
+        "treehole": { "title": "樹洞", "desc": "匿名留言，24h 自動消失" },
+        "focus": {"title": "專注模式", "desc": "公仔陪你一起學習工作"}
       }
     }
   },
@@ -833,5 +835,25 @@
     "title": "你的小夥伴想換上新衣服啦 ✨",
     "cta": "去看看",
     "dismiss": "繼續用免費的"
+  },
+  "focus": {
+    "title": "專注模式",
+    "subtitle": "有一隻小機器人，陪你一起工作學習。",
+    "chooseDuration": "想一起專注多久？",
+    "minutes": "{minutes} 分鐘",
+    "start": "開始專注",
+    "giveUp": "結束本次",
+    "awayNotice": "我等你回來…",
+    "welcomeBack": "歡迎回來，繼續加油！",
+    "completeTitle": "完成啦！",
+    "completeDesc": "一起溫柔地專注了 {minutes} 分鐘。",
+    "streak": "連續專注 {days} 天",
+    "again": "再來一輪",
+    "lockedPlus": "🔒 Plus 解鎖更長專注",
+    "interruptedNote": "本次專注中途暫停了一會兒——沒關係，我們重新開始。",
+    "phrase1": "我就在這裡陪你。",
+    "phrase2": "一小步一小步來。",
+    "phrase3": "你可以的。",
+    "phrase4": "一起安靜地成長。"
   }
 }

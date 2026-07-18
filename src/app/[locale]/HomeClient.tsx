@@ -32,6 +32,7 @@ import {
   ShoppingBag,
   Heart,
   Lock,
+  Target,
 } from 'lucide-react'
 import type { Feature } from '@/components/FeatureCard'
 import { PetCapsule } from '@/components/shared/PetCapsule'
@@ -573,6 +574,17 @@ export function HomeClient({
             description={tCompanions('cards.treehole.desc')}
             visual={
               <div className="absolute right-3 top-3 text-3xl">🕳️</div>
+            }
+          />
+          <BentoCard
+            href={`/${locale}/focus`}
+            hue="amber"
+            delay={0.7}
+            icon={<Target className="h-5 w-5" />}
+            title={tCompanions('cards.focus.title')}
+            description={tCompanions('cards.focus.desc')}
+            visual={
+              <div className="absolute right-3 top-3 text-3xl">🎯</div>
             }
           />
         </div>

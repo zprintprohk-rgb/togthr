@@ -89,6 +89,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       journal: t('nav.journal'),
       store: t('nav.store'),
       chat: t('nav.chat'),
+      focus: t('nav.focus'),
     }
     const footer = {
       privacy: t('footer.privacy'),
@@ -214,6 +215,12 @@ export default async function LocaleLayout({ children, params }: Props) {
                   🛒 {nav.store}
                 </Link>
                 <Link
+                  href={`/${locale}/focus`}
+                  className="text-sm font-semibold text-amber-400 hover:text-amber-300"
+                >
+                  🎯 {nav.focus}
+                </Link>
+                <Link
                   href={`/${locale}/chat`}
                   className="text-sm font-semibold text-purple-400 hover:text-purple-300"
                 >
@@ -245,6 +252,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                   journal: nav.journal,
                   store: nav.store,
                   chat: nav.chat,
+                  focus: nav.focus,
                 }}
               />
             </div>

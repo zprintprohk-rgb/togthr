@@ -1,0 +1,73 @@
+/* ============================================
+   Focus Mode - 公仔 sprite 帧动画 + 完成彩带
+   雪碧图: /pet-sprite.png 512x64 (8 帧 × 64x64)
+   帧映射（同 DesktopPet/styles.module.css）:
+     0-1   idle      2-3   working
+     4-5   thinking  6-7   success
+   页面内公仔放大 4 倍（64 → 256px），保持像素颗粒感
+   ============================================ */
+
+.sprite {
+  width: 64px;
+  height: 64px;
+  background-image: url('/pet-sprite.png');
+  background-repeat: no-repeat;
+  background-size: 512px 64px;
+  background-position: 0 0;
+  image-rendering: pixelated;
+  transform: scale(4);
+  transform-origin: center;
+}
+
+.idle    { animation: focus-idle 1.2s steps(2) infinite; }
+.working { animation: focus-working 0.4s steps(2) infinite; }
+.thinking { animation: focus-thinking 0.8s steps(2) infinite; }
+.success { animation: focus-success 0.6s steps(2) infinite; }
+
+@keyframes focus-idle {
+  from { background-position: 0 0; }
+  to   { background-position: -128px 0; }
+}
+@keyframes focus-working {
+  from { background-position: -128px 0; }
+  to   { background-position: -256px 0; }
+}
+@keyframes focus-thinking {
+  from { background-position: -256px 0; }
+  to   { background-position: -384px 0; }
+}
+@keyframes focus-success {
+  from { background-position: -384px 0; }
+  to   { background-position: -512px 0; }
+}
+
+/* ===== 呼吸光环 ===== */
+.glow {
+  animation: focus-glow 3.2s ease-in-out infinite;
+}
+
+@keyframes focus-glow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50%      { opacity: 0.55; transform: scale(1.1); }
+}
+
+/* ===== 完成彩带 ===== */
+.confetti {
+  position: absolute;
+  top: -12px;
+  border-radius: 2px;
+  pointer-events: none;
+  animation: focus-confetti-fall var(--dur, 2.4s) ease-in forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes focus-confetti-fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(75vh) rotate(720deg);
+    opacity: 0;
+  }
+}

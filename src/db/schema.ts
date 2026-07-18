@@ -3,6 +3,7 @@ import {
   uuid,
   text,
   timestamp,
+  date,
   boolean,
   integer,
   jsonb,
@@ -211,6 +212,36 @@ export const tickets = pgTable("tickets", {
   created_at: timestamp("created_at").defaultNow().notNull(),
 })
 
+// ─── Focus Mode 专注会话（无外键，user_id 直接存 auth.users.id） ───
+export const focusSessions = pgTable(
+  "focus_sessions",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    user_id: uuid("user_id").notNull(),
+    planned_minutes: integer("planned_minutes").notNull(), // 15/25/45/60
+    actual_seconds: integer("actual_seconds").default(0).notNull(),
+    status: text("status").default("active").notNull(), // active | completed | interrupted
+    interruptions: integer("interruptions").default(0).notNull(), // 切走次数（仅统计）
+    started_at: timestamp("started_at", { withTimezone: true }).defaultNow().notNull(),
+    ended_at: timestamp("ended_at", { withTimezone: true }),
+    created_at: timestamp("created_at", { withTimezone: true }).defaultNow().notNull(),
+  },
+  (table) => ({
+    idx_user_id: index("focus_sessions_user_id_idx").on(table.user_id),
+    idx_status: index("focus_sessions_status_idx").on(table.status),
+  }),
+)
+
+// ─── Focus Mode 连续专注（每用户一行） ───
+export const focusStreaks = pgTable("focus_streaks", {
+  user_id: uuid("user_id").primaryKey(),
+  current_streak: integer("current_streak").default(0).notNull(),
+  longest_streak: integer("longest_streak").default(0).notNull(),
+  last_completed_date: date("last_completed_date"), // 用户本地日
+  total_minutes: integer("total_minutes").default(0).notNull(),
+  total_beans: integer("total_beans").default(0).notNull(), // 能量豆余额
+})
+
 // ─── 引用 ───
 export const referrals = pgTable("referrals", {
   id: uuid("id").defaultRandom().primaryKey(),
@@ -247,3 +278,6 @@ export type NewOrder = typeof orders.$inferInsert
 export type Membership = typeof memberships.$inferSelect
 export type Ticket = typeof tickets.$inferSelect
 export type Referral = typeof referrals.$inferSelect
+export type FocusSession = typeof focusSessions.$inferSelect
+export type NewFocusSession = typeof focusSessions.$inferInsert
+export type FocusStreak = typeof focusStreaks.$inferSelect
