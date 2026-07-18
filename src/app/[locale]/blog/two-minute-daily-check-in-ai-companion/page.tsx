@@ -268,6 +268,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       publishedTime: post.date,
       authors: ['Togthr'],
       tags: post.tags,
+      images: [
+        {
+          url: `${siteConfig.url}${post.cover}`,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      images: [`${siteConfig.url}${post.cover}`],
     },
   }
 }
@@ -286,6 +300,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
+    image: `${siteConfig.url}${post.cover}`,
     datePublished: post.date,
     dateModified: post.date,
     inLanguage: loc.replace('-', '_'),
