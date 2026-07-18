@@ -1329,6 +1329,298 @@ const dailyPosts12: BlogPost[] = [
     readingMinutes: 5,
   },
 ];
+
+// ──────────────────────────────────────────────────────────────────────
+// M1 batch 1 (2026-07-18): 3 EN-led SEO posts × 8 locales
+//   A: tamagotchi-app-2026                          (cluster A, nostalgia)
+//   B: things-to-do-with-long-distance-boyfriend    (cluster B, highest traffic)
+//   C: best-virtual-pet-apps-2026                   (cluster C, GEO listicle)
+// ──────────────────────────────────────────────────────────────────────
+
+const M1_DATE = '2026-07-18';
+
+const M1_SLUG_A = 'tamagotchi-app-2026';
+const M1_TAGS_A = ['tamagotchi', 'virtual-pet', 'pixel-pet', 'nostalgia', 'companion-app'];
+
+const m1PostsA: BlogPost[] = [
+  {
+    slug: M1_SLUG_A,
+    locale: 'en',
+    title: 'The Tamagotchi App in 2026: The 90s Egg Grew Up and Moved Into Your Relationship',
+    description:
+      'The keychain pet that taught a generation to care is back as a real software category. What a tamagotchi app looks like in 2026 — and the twist the 90s never imagined: a pixel pet that belongs to two people at once.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_A}-en.png`,
+    tags: M1_TAGS_A,
+    readingMinutes: 6,
+  },
+  {
+    slug: M1_SLUG_A,
+    locale: 'zh-cn',
+    title: '2026 年的电子宠物 App:90 年代那颗蛋长大了,搬进了你们的关系里',
+    description:
+      '教会一代人"照顾"的钥匙扣宠物,如今作为一个真正的软件品类回来了。2026 年的电子宠物 App 长什么样 —— 以及 90 年代想不到的转折:一只同时属于两个人的像素宠物。',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_A}-zh-cn.png`,
+    tags: M1_TAGS_A,
+    readingMinutes: 6,
+  },
+  {
+    slug: M1_SLUG_A,
+    locale: 'zh-tw',
+    title: '2026 年的電子寵物 App:90 年代那顆蛋長大了,搬進了你們的關係裡',
+    description:
+      '教會一代人「照顧」的鑰匙圈寵物,如今作為一個真正的軟體品類回來了。2026 年的電子寵物 App 長什麼樣 —— 以及 90 年代想不到的轉折:一隻同時屬於兩個人的像素寵物。',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_A}-zh-tw.png`,
+    tags: M1_TAGS_A,
+    readingMinutes: 6,
+  },
+  {
+    slug: M1_SLUG_A,
+    locale: 'ja',
+    title: '2026 年のたまごっちアプリ:90 年代のたまごは育って、二人の関係に引っ越してきた',
+    description:
+      '一世代に「世話」を教えたキーホルダーペットが、れっきとしたソフトウェアのジャンルとして帰ってきた。2026 年のたまごっちアプリの姿 — そして 90 年代には想像できなかったひねり:同時に二人のものになれるドットのペット。',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_A}-ja.png`,
+    tags: M1_TAGS_A,
+    readingMinutes: 6,
+  },
+  {
+    slug: M1_SLUG_A,
+    locale: 'ko',
+    title: '2026년의 다마고치 앱: 90년대의 알은 자라서 두 사람의 관계로 이사 왔다',
+    description:
+      '한 세대에게 "돌봄"을 가르친 키체인 펫이 진짜 소프트웨어 카테고리로 돌아왔다. 2026년 다마고치 앱의 모습 — 그리고 90년대가 상상하지 못한 반전: 동시에 두 사람의 것이 되는 픽셀 펫.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_A}-ko.png`,
+    tags: M1_TAGS_A,
+    readingMinutes: 6,
+  },
+  {
+    slug: M1_SLUG_A,
+    locale: 'de',
+    title: 'Die Tamagotchi-App 2026: Das 90er-Ei ist erwachsen geworden und in eure Beziehung gezogen',
+    description:
+      'Das Schlüsselanhänger-Haustier, das einer Generation Fürsorge beibrachte, ist als echte Software-Kategorie zurück. Wie eine Tamagotchi-App 2026 aussieht — und die Wendung, die die 90er nie kannten: ein Pixel-Haustier, das zwei Menschen gleichzeitig gehört.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_A}-de.png`,
+    tags: M1_TAGS_A,
+    readingMinutes: 6,
+  },
+  {
+    slug: M1_SLUG_A,
+    locale: 'fr',
+    title: "L'application tamagotchi en 2026 : l'œuf des années 90 a grandi et a emménagé dans votre relation",
+    description:
+      "Le porte-clés qui a appris à une génération ce que prendre soin veut dire est de retour comme vraie catégorie logicielle. À quoi ressemble une app tamagotchi en 2026 — et le rebondissement que les 90s n'imaginaient pas : un animal pixel qui appartient à deux personnes à la fois.",
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_A}-fr.png`,
+    tags: M1_TAGS_A,
+    readingMinutes: 6,
+  },
+  {
+    slug: M1_SLUG_A,
+    locale: 'es',
+    title: 'La app tamagotchi en 2026: el huevo de los 90 creció y se mudó a tu relación',
+    description:
+      'El llavero que le enseñó a una generación lo que es cuidar vuelve como una categoría de software real. Cómo es una app tamagotchi en 2026 — y el giro que los 90 no imaginaron: una mascota pixel que pertenece a dos personas a la vez.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_A}-es.png`,
+    tags: M1_TAGS_A,
+    readingMinutes: 6,
+  },
+];
+
+const M1_SLUG_B = 'things-to-do-with-long-distance-boyfriend';
+const M1_TAGS_B = ['long-distance', 'relationship', 'couple-activities', 'virtual-pet', 'togthr-tips'];
+
+const m1PostsB: BlogPost[] = [
+  {
+    slug: M1_SLUG_B,
+    locale: 'en',
+    title: '15 Things to Do With Your Long-Distance Boyfriend That Are Not "Watch a Movie Together"',
+    description:
+      'Real long-distance life is mostly Tuesdays: async, unglamorous, quiet. Fifteen small things built for that — including raising a shared pixel pet that grows as your relationship does.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_B}-en.png`,
+    tags: M1_TAGS_B,
+    readingMinutes: 8,
+  },
+  {
+    slug: M1_SLUG_B,
+    locale: 'zh-cn',
+    title: '和异地恋男友可以做的 15 件小事(不是"一起看电影"那种清单)',
+    description:
+      '真实的异地恋,大部分是星期二:异步、不浪漫、安静。15 件为这种日子准备的小事 —— 包括一起养一只会跟着你们关系长大的共享像素宠物。',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_B}-zh-cn.png`,
+    tags: M1_TAGS_B,
+    readingMinutes: 8,
+  },
+  {
+    slug: M1_SLUG_B,
+    locale: 'zh-tw',
+    title: '和遠距離男友可以做的 15 件小事(不是「一起看電影」那種清單)',
+    description:
+      '真實的遠距離,大部分是星期二:非同步、不浪漫、安靜。15 件為這種日子準備的小事 —— 包括一起養一隻會跟著你們關係長大的共享像素寵物。',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_B}-zh-tw.png`,
+    tags: M1_TAGS_B,
+    readingMinutes: 8,
+  },
+  {
+    slug: M1_SLUG_B,
+    locale: 'ja',
+    title: '遠距離の彼氏とできる 15 のこと(「一緒に映画を観る」じゃないリスト)',
+    description:
+      '実際の遠距離はほとんどが火曜日:非同期で、地味で、静か。そんな日々のための 15 の小さなこと — 関係と一緒に育つ共有ドットペットを育てることを含めて。',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_B}-ja.png`,
+    tags: M1_TAGS_B,
+    readingMinutes: 8,
+  },
+  {
+    slug: M1_SLUG_B,
+    locale: 'ko',
+    title: '장거리 남자친구와 할 수 있는 15가지("같이 영화 보기" 말고)',
+    description:
+      '실제 장거리는 대부분 화요일: 비동기적이고, 화려하지 않고, 조용하다. 그런 날들을 위한 15가지 작은 것들 — 관계와 함께 자라는 공유 픽셀 펫 키우기 포함.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_B}-ko.png`,
+    tags: M1_TAGS_B,
+    readingMinutes: 8,
+  },
+  {
+    slug: M1_SLUG_B,
+    locale: 'de',
+    title: '15 Dinge, die ihr mit eurem Fernbeziehungs-Freund tun könnt (nicht "zusammen einen Film schauen")',
+    description:
+      'Das echte Fernbeziehungsleben besteht hauptsächlich aus Dienstagen: asynchron, unglamourös, leise. Fünfzehn kleine Dinge dafür — darunter ein geteiltes Pixel-Haustier, das mit eurer Beziehung wächst.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_B}-de.png`,
+    tags: M1_TAGS_B,
+    readingMinutes: 8,
+  },
+  {
+    slug: M1_SLUG_B,
+    locale: 'fr',
+    title: '15 choses à faire avec votre copain à distance (pas "regarder un film ensemble")',
+    description:
+      "La vraie vie à distance, c'est surtout des mardis : asynchrone, pas glamour, silencieuse. Quinze petites choses pour ça — dont élever un animal pixel partagé qui grandit avec votre relation.",
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_B}-fr.png`,
+    tags: M1_TAGS_B,
+    readingMinutes: 8,
+  },
+  {
+    slug: M1_SLUG_B,
+    locale: 'es',
+    title: '15 cosas para hacer con tu novio a distancia (que no sean "ver una película juntos")',
+    description:
+      'La vida real a distancia son sobre todo martes: asincrónica, poco glamurosa, silenciosa. Quince cosas pequeñas para eso — incluyendo criar una mascota pixel compartida que crece con la relación.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_B}-es.png`,
+    tags: M1_TAGS_B,
+    readingMinutes: 8,
+  },
+];
+
+const M1_SLUG_C = 'best-virtual-pet-apps-2026';
+const M1_TAGS_C = ['virtual-pet', 'best-apps', 'tamagotchi', 'companion-app', 'couples'];
+
+const m1PostsC: BlogPost[] = [
+  {
+    slug: M1_SLUG_C,
+    locale: 'en',
+    title: 'The Best Virtual Pet Apps of 2026, Honestly Compared (We Make One of Them)',
+    description:
+      'Tamagotchi Corner, Finch, Shimeji desktop pets, widget pets, AR creatures, and Togthr — an honest field guide to six genuinely different species of virtual pet, and who should pick which.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_C}-en.png`,
+    tags: M1_TAGS_C,
+    readingMinutes: 7,
+  },
+  {
+    slug: M1_SLUG_C,
+    locale: 'zh-cn',
+    title: '2026 最佳虚拟宠物 App 诚实横评(其中一个是我们做的)',
+    description:
+      'Tamagotchi Corner、Finch、Shimeji 桌面宠物、小组件宠物、AR 宠物和 Togthr —— 一份诚实的野外指南:六种真正不同的虚拟宠物,以及谁该选哪一个。',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_C}-zh-cn.png`,
+    tags: M1_TAGS_C,
+    readingMinutes: 7,
+  },
+  {
+    slug: M1_SLUG_C,
+    locale: 'zh-tw',
+    title: '2026 最佳虛擬寵物 App 誠實橫評(其中一個是我們做的)',
+    description:
+      'Tamagotchi Corner、Finch、Shimeji 桌面寵物、小工具寵物、AR 寵物和 Togthr —— 一份誠實的野外指南:六種真正不同的虛擬寵物,以及誰該選哪一個。',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_C}-zh-tw.png`,
+    tags: M1_TAGS_C,
+    readingMinutes: 7,
+  },
+  {
+    slug: M1_SLUG_C,
+    locale: 'ja',
+    title: '2026 年ベスト・バーチャルペットアプリ、正直な比較(一つは私たちが作りました)',
+    description:
+      'たまごっちコーナー、Finch、Shimeji 系デスクトップペット、ウィジェットペット、AR ペット、そして Togthr — 6 つの本当に違う「種」の正直なフィールドガイド。誰がどれを選ぶべきか。',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_C}-ja.png`,
+    tags: M1_TAGS_C,
+    readingMinutes: 7,
+  },
+  {
+    slug: M1_SLUG_C,
+    locale: 'ko',
+    title: '2026년 최고의 가상 펫 앱, 솔직한 비교(하나는 우리가 만들었습니다)',
+    description:
+      '다마고치 코너, Finch, Shimeji 계열 데스크톱 펫, 위젯 펫, AR 펫, 그리고 Togthr — 여섯 가지의 진짜로 다른 종에 대한 솔직한 필드 가이드. 누가 무엇을 골라야 하는지.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_C}-ko.png`,
+    tags: M1_TAGS_C,
+    readingMinutes: 7,
+  },
+  {
+    slug: M1_SLUG_C,
+    locale: 'de',
+    title: 'Die besten virtuellen Haustier-Apps 2026, ehrlich verglichen (eine davon haben wir gebaut)',
+    description:
+      'Tamagotchi Corner, Finch, Shimeji-Desktop-Pets, Widget-Haustiere, AR-Kreaturen und Togthr — ein ehrlicher Feldguide zu sechs wirklich verschiedenen Arten, und wer welche wählen sollte.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_C}-de.png`,
+    tags: M1_TAGS_C,
+    readingMinutes: 7,
+  },
+  {
+    slug: M1_SLUG_C,
+    locale: 'fr',
+    title: "Les meilleures applications d'animaux virtuels de 2026, comparées honnêtement (l'une d'elles est de nous)",
+    description:
+      "Tamagotchi Corner, Finch, les animaux de bureau façon Shimeji, les animaux-widgets, les créatures AR et Togthr — un guide honnête de six espèces vraiment différentes, et qui devrait choisir quoi.",
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_C}-fr.png`,
+    tags: M1_TAGS_C,
+    readingMinutes: 7,
+  },
+  {
+    slug: M1_SLUG_C,
+    locale: 'es',
+    title: 'Las mejores apps de mascotas virtuales de 2026, comparadas con honestidad (una de ellas es nuestra)',
+    description:
+      'Tamagotchi Corner, Finch, mascotas de escritorio estilo Shimeji, mascotas-widget, criaturas RA y Togthr — una guía de campo honesta sobre seis especies realmente distintas, y quién debería elegir cuál.',
+    date: M1_DATE,
+    cover: `/blog-covers/${M1_SLUG_C}-es.png`,
+    tags: M1_TAGS_C,
+    readingMinutes: 7,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -1343,6 +1635,9 @@ export const blogPosts: BlogPost[] = [
   ...dailyPosts10,
   ...dailyPosts11,
   ...dailyPosts12,
+  ...m1PostsA,
+  ...m1PostsB,
+  ...m1PostsC,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
