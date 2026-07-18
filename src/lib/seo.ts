@@ -5,7 +5,7 @@ export const siteConfig = {
   name: 'Togthr',
   taglineKey: 'seo.tagline',
   url: 'https://togthr.life',
-  ogImage: '/og-image.png',
+  ogImage: '/pets/character-sheet.png',
   twitterHandle: '@Togthrapp',
 } as const
 

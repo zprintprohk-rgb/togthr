@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { routing, type Locale } from '@/i18n/routing'
-import { getCanonicalUrl } from '@/lib/seo'
+import { getCanonicalUrl, siteConfig } from '@/lib/seo'
 import { FEATURES, VALID_SLUGS, SLUG_TO_KEY, type FeatureSlug } from '@/data/features'
 import { FeatureDetailClient } from './FeatureDetailClient'
 
@@ -37,10 +37,46 @@ export async function generateMetadata({
     longDesc = t(`home.features.${titleKey}.desc`)
   }
 
+  const url = getCanonicalUrl(locale as Locale, `/features/${slug}`)
+  const ogLocale = locale.replace('-', '_')
+  // Features share the root OG fallback until per-feature covers are created.
+
   return {
     title: `${title} — ${t('siteName')}`,
     description: longDesc,
-    alternates: { canonical: getCanonicalUrl(locale as Locale, `/features/${slug}`) },
+    alternates: {
+      canonical: url,
+      languages: (() => {
+        const map: Record<string, string> = {}
+        for (const loc of routing.locales) {
+          map[loc] = `${siteConfig.url}/${loc}/features/${slug}`
+        }
+        map['x-default'] = `${siteConfig.url}/en/features/${slug}`
+        return map
+      })(),
+    },
+    openGraph: {
+      type: 'article',
+      title: `${title} — ${t('siteName')}`,
+      description: longDesc,
+      url,
+      siteName: siteConfig.name,
+      locale: ogLocale,
+      images: [
+        {
+          url: `${siteConfig.url}${siteConfig.ogImage}`,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${title} — ${t('siteName')}`,
+      description: longDesc,
+      images: [`${siteConfig.url}${siteConfig.ogImage}`],
+    },
   }
 }
 

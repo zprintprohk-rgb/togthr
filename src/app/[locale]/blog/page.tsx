@@ -48,6 +48,28 @@ export async function generateMetadata({
     alternates: {
       canonical: `https://togthr.life/${loc}/blog`,
     },
+    openGraph: {
+      type: 'website',
+      title: titles[loc] ?? titles.en,
+      description: descriptions[loc] ?? descriptions.en,
+      url: `https://togthr.life/${loc}/blog`,
+      siteName: 'Togthr',
+      locale: loc.replace('-', '_'),
+      images: [
+        {
+          url: 'https://togthr.life/pets/character-sheet.png',
+          width: 1200,
+          height: 630,
+          alt: 'Togthr Blog',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: titles[loc] ?? titles.en,
+      description: descriptions[loc] ?? descriptions.en,
+      images: ['https://togthr.life/pets/character-sheet.png'],
+    },
   }
 }
 

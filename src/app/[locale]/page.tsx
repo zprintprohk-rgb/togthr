@@ -38,11 +38,20 @@ export async function generateMetadata({
       siteName: t('seo.siteName'),
       locale: locale.replace('-', '_'),
       type: 'website',
+      images: [
+        {
+          url: `${siteConfig.url}${siteConfig.ogImage}`,
+          width: 1200,
+          height: 630,
+          alt: t('seo.siteName'),
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${t('seo.siteName')} — ${t('seo.tagline')}`,
       description: t('seo.description'),
+      images: [`${siteConfig.url}${siteConfig.ogImage}`],
     },
   }
 }

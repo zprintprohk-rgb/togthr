@@ -19,7 +19,7 @@ import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { headers } from 'next/headers'
 import { routing } from '@/i18n/routing'
-import { generateAlternateLinks, getCanonicalUrl } from '@/lib/seo'
+import { generateAlternateLinks, getCanonicalUrl, siteConfig } from '@/lib/seo'
 import type { Locale } from '@/i18n/routing'
 import {
   getPricing,
@@ -57,6 +57,23 @@ export async function generateMetadata({
       openGraph: {
         title: t('pricing.title'),
         description: t('pricing.subtitle'),
+        url: getCanonicalUrl(locale as Locale, '/pricing'),
+        siteName: siteConfig.name,
+        locale: locale.replace('-', '_'),
+        images: [
+          {
+            url: `${siteConfig.url}${siteConfig.ogImage}`,
+            width: 1200,
+            height: 630,
+            alt: t('pricing.title'),
+          },
+        ],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: t('pricing.title'),
+        description: t('pricing.subtitle'),
+        images: [`${siteConfig.url}${siteConfig.ogImage}`],
       },
     }
   } catch (error) {
