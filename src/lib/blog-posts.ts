@@ -1337,6 +1337,102 @@ const dailyPosts12: BlogPost[] = [
 //   C: best-virtual-pet-apps-2026                   (cluster C, GEO listicle)
 // ──────────────────────────────────────────────────────────────────────
 
+
+const DATE13 = '2026-07-20';
+const SLUG13 = 'the-day-the-unedited-sentence-becomes-ordinary';
+const TAGS13 = ['ai-companion', 'quiet-rituals', 'togthr-life', 'habit-design', 'emotional-design'];
+
+const dailyPosts13: BlogPost[] = [
+  {
+    slug: SLUG13,
+    locale: 'en',
+    title: 'The Day the Unedited Sentence Becomes Ordinary',
+    description: 'There is a day, somewhere in the third week, when the unedited sentence becomes ordinary. The day does not announce itself. The day is the day the practice has stopped being a practice.',
+    date: DATE13,
+    cover: '/blog-covers/the-day-the-unedited-sentence-becomes-ordinary-en.png',
+    tags: TAGS13,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG13,
+    locale: 'zh-cn',
+    title: '那句没编辑的句子变得不显眼的那一天',
+    description: '有那么一天,在第三周的某个地方,那句没编辑的句子变得不显眼。那一天是这个练习不再是一个练习的那一天,句子只是句子,写作是像刷牙一样自然的事。',
+    date: DATE13,
+    cover: '/blog-covers/the-day-the-unedited-sentence-becomes-ordinary-zh-cn.png',
+    tags: TAGS13,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG13,
+    locale: 'zh-tw',
+    title: '那句沒編輯的句子變得不顯眼的那一天',
+    description: '有那麼一天,在第三週的某個地方,那句沒編輯的句子變得不顯眼。那一天是這個練習不再是一個練習的那一天,句子只是句子,寫作是像刷牙一樣自然的事。',
+    date: DATE13,
+    cover: '/blog-covers/the-day-the-unedited-sentence-becomes-ordinary-zh-tw.png',
+    tags: TAGS13,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG13,
+    locale: 'ja',
+    title: '推敲していない一文が、ありふれたものになる日',
+    description: '三週間のどこかに、その日が来る。推敲していない一文が、ありふれたものになる日。その日は、この習慣が習慣であることをやめた日で、一文が、ただの一文になる日。',
+    date: DATE13,
+    cover: '/blog-covers/the-day-the-unedited-sentence-becomes-ordinary-ja.png',
+    tags: TAGS13,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG13,
+    locale: 'ko',
+    title: '다듬지 않은 문장이 평범해지는 날',
+    description: '어느 날이 온다. 세 번째 주의 어딘가에, 다듬지 않은 문장이 평범해지는 날. 그 날은, 이 습관이 습관임을 멈춘 날이고, 문장은 그냥 문장인 날이다.',
+    date: DATE13,
+    cover: '/blog-covers/the-day-the-unedited-sentence-becomes-ordinary-ko.png',
+    tags: TAGS13,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG13,
+    locale: 'de',
+    title: 'Der Tag, an dem der unbearbeitete Satz gewöhnlich wird',
+    description: 'Es gibt einen Tag, irgendwo in der dritten Woche, an dem der unbearbeitete Satz gewöhnlich wird. Der Tag ist der Tag, an dem die Übung aufgehört hat, eine Übung zu sein.',
+    date: DATE13,
+    cover: '/blog-covers/the-day-the-unedited-sentence-becomes-ordinary-de.png',
+    tags: TAGS13,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG13,
+    locale: 'fr',
+    title: 'Le jour où la phrase non éditée devient ordinaire',
+    description: "Il y a un jour, quelque part dans la troisième semaine, où la phrase non éditée devient ordinaire. Le jour est le jour où la pratique a cessé d'être une pratique.",
+    date: DATE13,
+    cover: '/blog-covers/the-day-the-unedited-sentence-becomes-ordinary-fr.png',
+    tags: TAGS13,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG13,
+    locale: 'es',
+    title: 'El día en que la frase no editada se vuelve ordinaria',
+    description: 'Hay un día, en algún lugar de la tercera semana, en que la frase no editada se vuelve ordinaria. El día es el día en que la práctica ha dejado de ser una práctica.',
+    date: DATE13,
+    cover: '/blog-covers/the-day-the-unedited-sentence-becomes-ordinary-es.png',
+    tags: TAGS13,
+    readingMinutes: 5,
+  }
+,
+];
+
 const M1_DATE = '2026-07-18';
 
 const M1_SLUG_A = 'tamagotchi-app-2026';
@@ -1635,6 +1731,7 @@ export const blogPosts: BlogPost[] = [
   ...dailyPosts10,
   ...dailyPosts11,
   ...dailyPosts12,
+  ...dailyPosts13,
   ...m1PostsA,
   ...m1PostsB,
   ...m1PostsC,
