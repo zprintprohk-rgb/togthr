@@ -21,9 +21,13 @@ export const metadata: Metadata = {
   title: "Togthr",
   description: "Your private space, built for two",
   other: {
-    // Replace this placeholder with the real code copied from Bing Webmaster Tools
-    // -> Add site → HTML meta tag
-    'msvalidate.01': 'BING_CODE_PLACEHOLDER',
+    // Bing Webmaster Tools verification — 2026-07-20 轮换 IndexNow key 时
+    // 临时用 f1cdc8fa87d9aca90c4bfa3eee2ebe1d 占位 (跟 IndexNow key 同步)。
+    // 正式 code 在 https://www.bing.com/webmasters → Add site → HTML meta tag
+    // 拿到后替换为 msvalidate.01=<32-char code>。
+    // ⚠️ 验证失败排查: (1) 用户是否在 Bing WMT 注册了此 code
+    //                 (2) 是否 24-48h 还没传播 (Bing 验证有延迟)
+    'msvalidate.01': 'f1cdc8fa87d9aca90c4bfa3eee2ebe1d',
   },
 };
 

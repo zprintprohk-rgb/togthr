@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = BASE_DIR / "public"
 SITEMAP_PATH = PUBLIC_DIR / "sitemap-0.xml"
 BLOG_POSTS_PATH = BASE_DIR / "src/lib/blog-posts.ts"
-KEY_FILE = PUBLIC_DIR / "23ad45092db75000f1d68241f2ac769b.txt"
+KEY_FILE = PUBLIC_DIR / "f1cdc8fa87d9aca90c4bfa3eee2ebe1d.txt"
 LOCALES = ["en", "zh-cn", "zh-tw", "ja", "ko", "de", "fr", "es"]
 
 

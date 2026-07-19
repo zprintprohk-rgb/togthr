@@ -146,6 +146,46 @@ wrangler.toml
 - `wrangler.toml` 中 `[[r2_buckets]]` 配置
 - `src/components/DesktopPet/` (IP 核心组件)
 
+## 13. 固定发布流程（每篇新博客必走）
+
+### 13.1 代码/内容改完
+1. 验证 4 i18n 闸门全绿:
+   ```bash
+   node scripts/check-locale-syntax.js
+   node scripts/check-locale-pollution.js
+   node scripts/check-translation-completeness.js
+   node scripts/check-locale-placeholders.js
+   ```
+2. 验证 build（本地可能因 SWC SIGBUS 失败，可跳过，CI 会重跑）: `npm run cf-build`
+3. `git add -A && git commit -m "<type>(<scope>): <subject>"` — **不 push**
+4. 通知 user review diff
+5. User 确认后 user 自己 push
+
+### 13.2 Push 后部署
+- GH Actions `.github/workflows/deploy.yml` 自动 build + wrangler deploy + 缓存 purge
+- 大约 5-10 分钟
+
+### 13.3 部署后索引提交
+1. **Bing/IndexNow 提交**（postbuild hook `scripts/ping-indexnow.cjs` 只覆盖今天的 sitemap URL；新博客的 8 locale URL 必须手动跑）:
+   ```bash
+   npm run indexnow:new
+   ```
+   → 提交最近 7 天新博客的 8 locale URL（24-72 个 URL/批）→ 24 小时内被 Bing + Copilot + DuckDuckGo + Yahoo 收录
+2. **GSC 提交**: 自动由 postbuild hook 触发（如配置 GSC API env）；或手动在 search.google.com 提交 sitemap
+3. **失败处理**: `indexnow:new` 报错看 `scripts/indexnow-submit.py` 输出。常见：key 文件被覆盖（重新 commit 修正）；URL 超 10000（分批）
+
+### 13.4 IndexNow key 管理
+- 当前 key: `f1cdc8fa87d9aca90c4bfa3eee2ebe1d` (32 hex, 2026-07-20 轮换)
+- key 文件: `public/f1cdc8fa87d9aca90c4bfa3eee2ebe1d.txt`（**永远不要改文件名或内容**，IndexNow 跟 URL 验证）
+- 生产验证 URL: `https://togthr.life/f1cdc8fa87d9aca90c4bfa3eee2ebe1d.txt`（301 跳到 www）
+- `scripts/indexnow-submit.py` 第 32 行 `KEY_FILE` 必须指上面那个文件
+- **轮换 protocol**: (1) 用 `node -e "console.log(require('crypto').randomBytes(16).toString('hex'))"` 生成新 key → (2) 写 `public/{newkey}.txt` → (3) 更新 `indexnow-submit.py` 的 `KEY_FILE` 路径 → (4) 删旧 key 文件 → (5) commit + push + 部署 → (6) 跑 `npm run indexnow:new` 验证新 key 生效
+
+### 13.5 Bing Webmaster Tools 验证
+- Meta tag 在 `src/app/layout.tsx` 的 `metadata.other.msvalidate.01`
+- 拿到真 code 后从 bing.com/webmasters → Add site → HTML meta tag 复制 content 值替换
+- 验证失败排查: (1) 用户是否在 Bing WMT 注册了此 code；(2) Bing 验证有 24-48h 延迟
+
 
 <!-- autoclaw:hermes-evolution-guidance -->
 ## Hermes-Evolution
