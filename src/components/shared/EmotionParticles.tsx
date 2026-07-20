@@ -70,14 +70,24 @@ export function EmotionParticles({
     if (!ctx) return
 
     // ── Resize handling（DPR-aware）──
+    // 白底顽疾根治（2026-07-21）：CSS 未加载的窗口期 canvas 无 inset-0 约束，
+    // 布局尺寸 = width 属性；本函数把 width 设为 clientWidth*dpr 后布局再变，
+    // ResizeObserver 再次触发 → 尺寸指数爆炸（实测 3050 万像素），超出 GPU
+    // 纹理上限（16384）导致整个 isolate 层光栅化失败 → 页面区域渲染成白色。
+    // 防御：1) JSX 内联 style 保证无 CSS 时也有尺寸约束  2) 尺寸硬钳制
+    //       3) setTransform 重置变换（scale 会复合叠加）
+    const MAX_DIM = 4096
     const resize = () => {
       // Re-narrow 闭包变量（同 frame 的原因）
       if (!canvas || !ctx) return
       const dpr = Math.min(window.devicePixelRatio || 1, 2)
       const { clientWidth, clientHeight } = canvas
-      canvas.width = clientWidth * dpr
-      canvas.height = clientHeight * dpr
-      ctx.scale(dpr, dpr)
+      // 布局尺寸异常（0 或超钳制值）时跳过，不写入 width/height，切断正反馈
+      if (clientWidth < 10 || clientHeight < 10) return
+      if (clientWidth * dpr > MAX_DIM || clientHeight * dpr > MAX_DIM) return
+      canvas.width = Math.round(clientWidth * dpr)
+      canvas.height = Math.round(clientHeight * dpr)
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
     }
     resize()
     const ro = new ResizeObserver(resize)
@@ -253,6 +263,7 @@ export function EmotionParticles({
     <canvas
       ref={canvasRef}
       className={className}
+      style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}
       aria-hidden={decorative ? 'true' : undefined}
       data-testid="emotion-particles"
     />
