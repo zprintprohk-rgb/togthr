@@ -11,7 +11,8 @@ compatibility_flags = ["nodejs_compat"]
 [vars]
 NEXT_PUBLIC_SITE_URL = "https://togthr.life"
 NEXTJS_ENV = "production"
-PAYPAL_MODE = "sandbox"
+PAYPAL_MODE = "live"
+PAYPAL_INVOICE_PREFIX = "TOG"
 # Public Supabase (anon key is safe to inline into client bundle)
 NEXT_PUBLIC_SUPABASE_URL = "https://pcgwvqpzyqijrvikfawd.supabase.co"
 NEXT_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable_aDkUMB90QwGQAlcWAGT5Eg_Wf9o_Z69"
