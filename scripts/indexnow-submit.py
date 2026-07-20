@@ -4,6 +4,7 @@ import argparse
 import datetime as dt
 import json
 import re
+import ssl
 import sys
 from pathlib import Path
 from typing import Iterable
@@ -11,7 +12,7 @@ from urllib import error, request
 import xml.etree.ElementTree as ET
 
 HOST = "togthr.life"
-INDEXNOW_URL = "https://api.indexnow.org/indexnow"
+INDEXNOW_URL = "http://api.indexnow.org/indexnow"
 BASE_DIR = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = BASE_DIR / "public"
 SITEMAP_PATH = PUBLIC_DIR / "sitemap-0.xml"
@@ -41,12 +42,74 @@ def parse_sitemap_urls() -> list[str]:
     return urls
 
 
+def _parse_blog_consts(text: str) -> dict[str, str]:
+    """Extract all `const FOO = 'bar'` assignments from blog-posts.ts."""
+    return dict(re.findall(r"^\s*const\s+([A-Z][A-Z0-9_]*)\s*=\s*'([^']*)'", text, re.M))
+
+
+def _within_object(text: str, pos: int, obj_start: int, obj_end: int) -> bool:
+    """Return True if pos is within [obj_start, obj_end]."""
+    return obj_start <= pos <= obj_end
+
+
 def parse_recent_blog_urls() -> list[str]:
     if not BLOG_POSTS_PATH.exists():
         raise FileNotFoundError(f"Blog posts file not found: {BLOG_POSTS_PATH}")
 
-    text = BLOG_POSTS_PATH.read_text(encoding="utf-8")
-    slug_date_pairs = re.findall(r"slug:\s*'([^']+)'[\s\S]{0,120}?date:\s*'([^']+)'", text)
+    raw = BLOG_POSTS_PATH.read_text(encoding="utf-8")
+    consts = _parse_blog_consts(raw)
+
+    # Find each blog post object by scanning for "slug:" fields, then walk to the
+    # nearest enclosing {...} block. Extract slug + date from that block.
+    slug_date_pairs: list[tuple[str, str]] = []
+
+    slug_positions = [m.start() for m in re.finditer(r"^\s*slug:\s*", raw, re.M)]
+    for slug_pos in slug_positions:
+        # Walk backward to find the opening {
+        brace_count = 0
+        obj_start = slug_pos
+        for i in range(slug_pos, -1, -1):
+            if raw[i] == '}':
+                brace_count += 1
+            elif raw[i] == '{':
+                if brace_count == 0:
+                    obj_start = i
+                    break
+                brace_count -= 1
+
+        # Walk forward to find the closing } at same depth
+        brace_count = 0
+        obj_end = len(raw)
+        for i in range(obj_start, len(raw)):
+            if raw[i] == '{':
+                brace_count += 1
+            elif raw[i] == '}':
+                brace_count -= 1
+                if brace_count == 0:
+                    obj_end = i
+                    break
+
+        block = raw[obj_start:obj_end]
+
+        # Extract slug value — handles both 'literal' and CONST_REF (no quotes)
+        # e.g. "slug: M1_SLUG_A," or "slug: 'tamagotchi-app-2026',"
+        slug_m = re.search(r"slug:\s*(?:'([^']*)'|([A-Z][A-Z0-9_]*))", block)
+        date_m = re.search(r"date:\s*(?:'([^']*)'|([A-Z][A-Z0-9_]*))", block)
+
+        if not slug_m or not date_m:
+            continue
+
+        # group(1)=quoted value, group(2)=const ref
+        raw_slug = (slug_m.group(1) or slug_m.group(2) or "").strip()
+        raw_date = (date_m.group(1) or date_m.group(2) or "").strip()
+        if not raw_slug or not raw_date:
+            continue
+
+        # Resolve const references; if quoted literal, use as-is
+        slug_val = consts.get(raw_slug, slug_m.group(1) or raw_slug)
+        date_val = consts.get(raw_date, date_m.group(1) or raw_date)
+
+        slug_date_pairs.append((slug_val, date_val))
     recent_slugs: set[str] = set()
     today = dt.date.today()
     seven_days_ago = today - dt.timedelta(days=7)
@@ -87,15 +150,24 @@ def submit_urls(urls: list[str], key: str) -> tuple[int, str]:
         },
     )
 
-    try:
-        with request.urlopen(req, timeout=20) as resp:
-            body = resp.read().decode("utf-8", errors="replace")
-            return resp.status, body
-    except error.HTTPError as exc:
-        body = exc.read().decode("utf-8", errors="replace")
-        return exc.code, body
-    except Exception as exc:
-        return 0, str(exc)
+    # Try default SSL first, fall back to unverified for servers with TLS config issues
+    ssl_ctx = ssl.create_default_context()
+    ctx2 = ssl._create_unverified_context()  # type: ignore[attr-defined]
+
+    for attempt, ctx in enumerate([ssl_ctx, ctx2], 1):
+        try:
+            with request.urlopen(req, timeout=20, context=ctx) as resp:
+                body = resp.read().decode("utf-8", errors="replace")
+                return resp.status, body
+        except error.HTTPError as exc:
+            body = exc.read().decode("utf-8", errors="replace")
+            return exc.code, body
+        except Exception as exc:
+            err_str = str(exc)
+            if attempt == 1 and ("SSL" in err_str or "UNEXPECTED_EOF" in err_str or "ConnectionReset" in err_str):
+                continue  # try unverified context
+            return 0, err_str
+    return 0, "unreachable"
 
 
 def build_parser() -> argparse.ArgumentParser:
