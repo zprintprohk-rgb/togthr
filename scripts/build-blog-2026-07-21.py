@@ -464,8 +464,15 @@ def build_page_tsx() -> str:
     bodies_json = json.dumps(BODIES, ensure_ascii=False, indent=2)
     # Escape backticks for template substitution
     bodies_json = bodies_json.replace("\\", "\\\\")  # backslashes
+    # 2026-07-21 事故修复：TEMPLATE 是纯字符串（非 f-string），作者按 f-string
+    # 习惯把 TSX 花括号写成 {{ }}，导致输出文件全文 brace 翻倍、构建失败。
+    # 先折叠模板自身的翻倍括号（{{{{ → {{ → {，}}}} → }} → }），再替换占位符，
+    # 避免误伤正文 JSON 内容。
+    tpl = TEMPLATE.replace("{{{{", "\x00\x00").replace("{{", "\x00")
+    tpl = tpl.replace("}}}}", "\x01\x01").replace("}}", "\x01")
+    tpl = tpl.replace("\x00", "{").replace("\x01", "}")
     out = (
-        TEMPLATE
+        tpl
         .replace("{slug}", SLUG)
         .replace("{date}", DATE)
         .replace("{bodies}", bodies_json)
