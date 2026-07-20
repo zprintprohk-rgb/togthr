@@ -123,6 +123,38 @@ export async function POST(req: NextRequest) {
       if (upsertError) throw upsertError
     }
 
+    // 4) Best-effort: 喂食宠物 (Focus ≥15min completed = 喂 +5 幸福, 中断不计)
+    //    失败完全静默 — 不影响 focus 主落库
+    if (status === 'completed' && plannedMinutes >= 15) {
+      try {
+        const feedSb = createEdgeClient()
+        const { data: couple } = await feedSb
+          .from('couples')
+          .select('id')
+          .or(`user1_id.eq.${userId},user2_id.eq.${userId}`)
+          .limit(1)
+          .maybeSingle()
+        if (couple?.id) {
+          const { data: pet } = await feedSb
+            .from('pets')
+            .select('id, happiness')
+            .eq('couple_id', couple.id)
+            .limit(1)
+            .maybeSingle()
+          if (pet?.id) {
+            const newHappiness = Math.min(100, (pet.happiness ?? 70) + 5)
+            await feedSb
+              .from('pets')
+              .update({ happiness: newHappiness })
+              .eq('id', pet.id)
+          }
+        }
+      } catch (feedErr) {
+        // 静默 — pet 表可能还没建 / 用户无 couple
+        console.warn('[focus/complete] pet feed skipped:', feedErr)
+      }
+    }
+
     return NextResponse.json({ ok: true, persisted: true }, { status: 200 })
   } catch (err) {
     // 表还没建 / RLS / 网络问题 — 返回 200 + persisted:false，前端继续用 localStorage

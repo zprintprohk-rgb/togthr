@@ -1819,6 +1819,485 @@ const m1PostsC: BlogPost[] = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// M2-02 batch (2026-07-22): 5 buying-guide / cluster-B posts × 8 locales
+// ──────────────────────────────────────────────────────────────────────
+
+const M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_DATE = '2026-07-22';
+const M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_SLUG = 'daily-check-in-app-for-couples';
+const M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_TAGS = ['couples', 'daily-ritual', 'long-distance', 'check-in', 'habit-design'];
+
+const m2Posts_daily_check_in_app_for_couples: BlogPost[] = [
+  {
+    slug: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_SLUG,
+    locale: 'en',
+    title: 'Daily Check-In Apps for Couples: Why Most of Them Fail (and the One Thing That Actually Sticks)',
+    description:
+      'We tried eleven daily check-in apps for couples. Eleven of them gave up by week three. The reason is not the prompt, not the streak, not the streak-broken-gracefully animation. The reason is that a check-in is a tiny ritual, and most apps try to scale rituals the way SaaS scales everything else.',
+    date: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/daily-check-in-app-for-couples-en.png`,
+    tags: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_SLUG,
+    locale: 'zh-cn',
+    title: '情侣每日打卡 App:为什么大部分都失败了,以及真正能坚持的那一件事',
+    description:
+      '我们试过 11 款情侣每日打卡 App。11 款都在第三周弃用。原因不是打卡提示,不是连续打卡天数,不是「断签也温柔」的动画。原因在于:打卡是一种微小的仪式,而大多数 App 用 SaaS 思维去「放大」仪式 —— 这正是仪式最不该被对待的方式。',
+    date: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/daily-check-in-app-for-couples-zh-cn.png`,
+    tags: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_SLUG,
+    locale: 'zh-tw',
+    title: '情侶每日打卡 App:為什麼大部分都失敗了,以及真正能堅持的那一件事',
+    description:
+      '我們試過 11 款情侶每日打卡 App。11 款都在第三週棄用。原因不是打卡提示,不是連續打卡天數,不是「斷簽也溫柔」的動畫。原因在於:打卡是一種微小的儀式,而大多數 App 用 SaaS 思維去「放大」儀式 —— 這正是儀式最不該被對待的方式。',
+    date: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/daily-check-in-app-for-couples-zh-tw.png`,
+    tags: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_SLUG,
+    locale: 'ja',
+    title: 'カップル向け毎日チェックインアプリ:なぜ大半が失敗するのか、そして実際に続くたった一つのこと',
+    description:
+      'カップル向けの毎日チェックインアプリ、11個試しました。11個とも3週目までに使わなくなりました。理由はプロンプトでも、連続記録でも、「記録が途切れても大丈夫」アニメーションでもありません。理由は、チェックインとは小さな儀式であり、大半のアプリはそれをSaaS的に「スケール」しようとする —— 儀式に対して一番やってはいけないやり方です。',
+    date: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/daily-check-in-app-for-couples-ja.png`,
+    tags: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_SLUG,
+    locale: 'ko',
+    title: '커플 매일 체크인 앱:대부분이 실패하는 이유, 그리고 진짜 이어지는 한 가지',
+    description:
+      '커플용 매일 체크인 앱 11개를 써봤습니다. 11개 모두 3주차에 포기했습니다. 이유는 프롬프트도 아니고, 연속 기록도 아니고, 「끊겨도 괜찮아요」 애니메이션도 아닙니다. 체크인은 작은 의식인데, 대부분의 앱이 SaaS처럼 그것을 「스케일」하려 들기 때문입니다 — 의식에 가장 해서는 안 되는 일입니다.',
+    date: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/daily-check-in-app-for-couples-ko.png`,
+    tags: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_SLUG,
+    locale: 'de',
+    title: 'Tägliche Check-in-Apps für Paare: Warum die meisten scheitern — und das eine, das wirklich bleibt',
+    description:
+      'Wir haben elf tägliche Check-in-Apps für Paare ausprobiert. Elf davon wurden in Woche drei wieder gelöscht. Der Grund ist weder die Frage, noch die Streak, noch die „Streak-unterbrochen-sanft«-Animation. Der Grund: Ein Check-in ist ein winziges Ritual, und die meisten Apps versuchen, Rituale so zu skalieren, wie SaaS alles andere skaliert.',
+    date: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/daily-check-in-app-for-couples-de.png`,
+    tags: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_SLUG,
+    locale: 'fr',
+    title: 'Applications de check-in quotidien pour couples : pourquoi la plupart échouent (et la seule chose qui tient)',
+    description:
+      'On a essayé onze applications de check-in quotidien pour couples. Onze abandonnées à la troisième semaine. La raison n\'est ni la question, ni la série, ni l\'animation « série-coupée-en-douceur ». La raison, c\'est qu\'un check-in est un petit rituel — et que la plupart des apps essaient de faire passer un rituel à l\'échelle SaaS.',
+    date: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/daily-check-in-app-for-couples-fr.png`,
+    tags: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_SLUG,
+    locale: 'es',
+    title: 'Apps de check-in diario para parejas: por qué casi todas fallan (y lo único que de verdad se queda)',
+    description:
+      'Probamos once apps de check-in diario para parejas. Once se quedaron en la estantería a la tercera semana. La razón no es la pregunta, ni la racha, ni la animación de «racha-rota-pero-con-cariño». La razón es que un check-in es un ritual pequeño, y la mayoría de las apps intentan escalar los rituales como SaaS escala todo lo demás.',
+    date: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/daily-check-in-app-for-couples-es.png`,
+    tags: M2_02_DAILY_CHECK_IN_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 7,
+  },
+];
+
+const M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE = '2026-07-22';
+const M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG = 'virtual-pet-app-for-couples';
+const M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS = ['virtual-pet', 'couples', 'tamagotchi', 'long-distance', 'ritual'];
+
+const m2Posts_virtual_pet_app_for_couples: BlogPost[] = [
+  {
+    slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
+    locale: 'en',
+    title: 'A Virtual Pet App for Couples: Why a Shared Pixel Pet Is the New Long-Distance Teddy Bear',
+    description:
+      'Couples in 2026 do not need another chat app. They need a tiny, shared, low-stakes object they can both poke at. Here is why the virtual pet app for couples is quietly becoming the new long-distance teddy bear — and the design mistakes the category keeps making.',
+    date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/virtual-pet-app-for-couples-en.png`,
+    tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
+    locale: 'zh-cn',
+    title: '情侣虚拟宠物 App:为什么一只共享的像素宠物,正在成为新的异地泰迪熊',
+    description:
+      '2026 年的情侣不需要再多一个聊天 App。他们需要的是一个小小的、共享的、低风险的东西 —— 两个人都能随手戳一下。这就是为什么「情侣虚拟宠物 App」正在悄悄变成新的异地泰迪熊 —— 以及这个品类一直在犯的设计错误。',
+    date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/virtual-pet-app-for-couples-zh-cn.png`,
+    tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
+    locale: 'zh-tw',
+    title: '情侶虛擬寵物 App:為什麼一隻共享的像素寵物,正在成為新的遠距離泰迪熊',
+    description:
+      '2026 年的情侶不需要再多一個聊天 App。他們需要的是一個小小的、共用的、低風險的東西 —— 兩個人都能隨手戳一下。這就是為什麼「情侶虛擬寵物 App」正在悄悄變成新的遠距離泰迪熊 —— 以及這個品類一直在犯的設計錯誤。',
+    date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/virtual-pet-app-for-couples-zh-tw.png`,
+    tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
+    locale: 'ja',
+    title: 'カップル向けバーチャルペットアプリ:なぜ共有のピクセルペットが新しい遠距離テディベアになっているのか',
+    description:
+      '2026年のカップルに、もう一つチャットアプリは必要ありません。必要なのは、小さくて共有できて、リスクが低く、二人でつつけるものです。カップル向けバーチャルペットアプリがなぜ静かに新しい遠距離テディベアになりつつあるのか、そしてこのカテゴリが何度も繰り返す設計ミスについて。',
+    date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/virtual-pet-app-for-couples-ja.png`,
+    tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
+    locale: 'ko',
+    title: '커플용 가상 펫 앱:왜 공유 픽셀 펫이 새로운 장거리 테디베어가 되고 있는가',
+    description:
+      '2026년 커플에게 채팅 앱은 한 개 더 필요 없습니다. 필요한 건 작고, 공유되고, 부담이 적고, 둘 다 가볍게 건드릴 수 있는 무언가입니다. 커플용 가상 펫 앱이 어떻게 조용히 새로운 장거리 테디베어가 되어가고 있는지, 그리고 이 카테고리가 계속 범하는 디자인 실수들을 정리합니다.',
+    date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/virtual-pet-app-for-couples-ko.png`,
+    tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
+    locale: 'de',
+    title: 'Virtuelle Haustier-App für Paare: Warum ein geteiltes Pixel-Haustier der neue Teddybär für Fernbeziehungen wird',
+    description:
+      'Paare im Jahr 2026 brauchen keine weitere Chat-App. Sie brauchen ein kleines, geteiltes, unverbindliches Objekt, an dem beide herumstupsen können. Hier ist, warum die virtuelle Haustier-App für Paare still und leise der neue Fernbeziehungs-Teddybär wird — und welche Designfehler die Kategorie ständig wiederholt.',
+    date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/virtual-pet-app-for-couples-de.png`,
+    tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
+    locale: 'fr',
+    title: 'Application d\'animal virtuel pour couples : pourquoi un animal pixel partagé devient le nouveau nounours de la relation à distance',
+    description:
+      'Les couples en 2026 n\'ont pas besoin d\'une app de discussion de plus. Ils ont besoin d\'un petit objet partagé, à faible enjeu, sur lequel on peut tous les deux appuyer. Voici pourquoi l\'animal virtuel pour couples devient discrètement le nouveau nounours de la relation à distance — et les erreurs de design que la catégorie n\'arrête pas de refaire.',
+    date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/virtual-pet-app-for-couples-fr.png`,
+    tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
+    locale: 'es',
+    title: 'App de mascota virtual para parejas: por qué una mascota pixel compartida es el nuevo peluche de la relación a distancia',
+    description:
+      'Las parejas de 2026 no necesitan otra app de chat. Necesitan un objeto pequeño, compartido, de bajo riesgo, en el que ambas puedan tocar. Aquí va por qué la app de mascota virtual para parejas se está convirtiendo silenciosamente en el nuevo peluche de la relación a distancia — y los errores de diseño que la categoría sigue repitiendo.',
+    date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
+    cover: `/blog-covers/virtual-pet-app-for-couples-es.png`,
+    tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
+    readingMinutes: 6,
+  },
+];
+
+const M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_DATE = '2026-07-22';
+const M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_SLUG = 'how-to-feel-close-in-a-long-distance-relationship';
+const M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_TAGS = ['long-distance', 'LDR', 'emotional-closeness', 'rituals', 'communication'];
+
+const m2Posts_how_to_feel_close_in_a_long_distance_relationship: BlogPost[] = [
+  {
+    slug: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_SLUG,
+    locale: 'en',
+    title: 'How to Feel Close in a Long-Distance Relationship: 7 Quiet Habits That Survive a Time-Zone Gap',
+    description:
+      'You can be in a long-distance relationship and still feel close. The seven habits that actually work are not the loud ones — not the surprise visits, not the seven-hour video calls. They are the quiet, low-stakes, repeatable ones. Here are the seven.',
+    date: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_DATE,
+    cover: `/blog-covers/how-to-feel-close-in-a-long-distance-relationship-en.png`,
+    tags: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_SLUG,
+    locale: 'zh-cn',
+    title: '异地恋怎么保持亲密:穿越时差的 7 个安静习惯',
+    description:
+      '异地恋也可以很亲密。真正起作用的 7 个习惯,不是那些高调的 —— 不是惊喜探访,不是 7 小时视频通话。它们是安静的、低风险的、可重复的。下面是这 7 个。',
+    date: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_DATE,
+    cover: `/blog-covers/how-to-feel-close-in-a-long-distance-relationship-zh-cn.png`,
+    tags: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_SLUG,
+    locale: 'zh-tw',
+    title: '遠距離戀愛怎麼保持親密:穿越時差的 7 個安靜習慣',
+    description:
+      '遠距離戀愛也可以很親密。真正起作用的 7 個習慣,不是那些高調的 —— 不是驚喜探訪,不是 7 小時視訊通話。它們是安靜的、低風險的、可重複的。下面是這 7 個。',
+    date: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_DATE,
+    cover: `/blog-covers/how-to-feel-close-in-a-long-distance-relationship-zh-tw.png`,
+    tags: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_SLUG,
+    locale: 'ja',
+    title: '遠距離恋愛で親密さを保つ方法:時差を超える7つの静かな習慣',
+    description:
+      '遠距離恋愛でも、近くにいる感覚はつくれます。効く7つの習慣は派手ではありません —— 突然の訪問でも、7時間のビデオ通話でもありません。静かで、リスクが低く、くり返せる習慣です。7つ、ご紹介します。',
+    date: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_DATE,
+    cover: `/blog-covers/how-to-feel-close-in-a-long-distance-relationship-ja.png`,
+    tags: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_SLUG,
+    locale: 'ko',
+    title: '장거리 연애에서 가까움을 느끼는 법:시간 차를 넘는 조용한 7가지 습관',
+    description:
+      '장거리 연애도 가까울 수 있습니다. 진짜 통하는 7가지 습관은 화려한 것들이 아닙니다 — 깜짝 방문도 아니고, 7시간 영상통화도 아닙니다. 조용하고, 부담이 적고, 반복 가능한 것들입니다. 7가지를 정리합니다.',
+    date: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_DATE,
+    cover: `/blog-covers/how-to-feel-close-in-a-long-distance-relationship-ko.png`,
+    tags: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_SLUG,
+    locale: 'de',
+    title: 'Nähe in einer Fernbeziehung spüren: 7 leise Gewohnheiten, die eine Zeitzone überleben',
+    description:
+      'Man kann in einer Fernbeziehung sein und sich trotzdem nah fühlen. Die sieben Gewohnheiten, die wirklich wirken, sind nicht die lauten — keine Überraschungsbesuche, keine siebenstündigen Videoanrufe. Es sind die leisen, unverbindlichen, wiederholbaren. Hier sind sie.',
+    date: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_DATE,
+    cover: `/blog-covers/how-to-feel-close-in-a-long-distance-relationship-de.png`,
+    tags: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_SLUG,
+    locale: 'fr',
+    title: 'Se sentir proche dans une relation à distance : 7 habitudes discrètes qui survivent au décalage horaire',
+    description:
+      'On peut être en relation à distance et se sentir proche. Les sept habitudes qui marchent vraiment ne sont pas les plus bruyantes — pas de visites surprises, pas d\'appels vidéo de sept heures. Ce sont les habitudes discrètes, à faible enjeu, répétables. Les voici.',
+    date: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_DATE,
+    cover: `/blog-covers/how-to-feel-close-in-a-long-distance-relationship-fr.png`,
+    tags: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_SLUG,
+    locale: 'es',
+    title: 'Sentirse cerca en una relación a distancia: 7 hábitos discretos que sobreviven a la diferencia horaria',
+    description:
+      'Se puede estar en una relación a distancia y sentirse cerca. Los siete hábitos que de verdad funcionan no son los ruidosos — ni visitas sorpresa, ni videollamadas de siete horas. Son los discretos, de bajo riesgo, repetibles. Aquí están los siete.',
+    date: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_DATE,
+    cover: `/blog-covers/how-to-feel-close-in-a-long-distance-relationship-es.png`,
+    tags: M2_02_HOW_TO_FEEL_CLOSE_IN_A_LONG_DISTANCE_RELATIONSHIP_TAGS,
+    readingMinutes: 8,
+  },
+];
+
+const M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE = '2026-07-22';
+const M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG = 'pixel-pet-widget-desktop';
+const M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS = ['pixel-pet', 'desktop-widget', 'tamagotchi', 'productivity', 'ambient-companion'];
+
+const m2Posts_pixel_pet_widget_desktop: BlogPost[] = [
+  {
+    slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
+    locale: 'en',
+    title: 'The Pixel Pet Widget Is Back: Why a Tiny Desktop Pet Is the Productivity Hack Nobody Talks About',
+    description:
+      'A pixel pet widget on your desktop does not do anything. It does not schedule, not remind, not optimize. And that is exactly why it works. Here is the case for a tiny ambient companion on your taskbar, and why 2026 is the year it comes back.',
+    date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
+    cover: `/blog-covers/pixel-pet-widget-desktop-en.png`,
+    tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
+    locale: 'zh-cn',
+    title: '像素宠物桌面挂件又回来了:为什么任务栏上的一只小宠物,是没人提的生产力外挂',
+    description:
+      '桌面上的像素宠物挂件什么也不做。它不安排日程、不提醒、不优化。但这就是它起作用的原因。这里是任务栏上一个小型「环境式陪伴」的回归故事,以及为什么 2026 年是它重新走红的一年。',
+    date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
+    cover: `/blog-covers/pixel-pet-widget-desktop-zh-cn.png`,
+    tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
+    locale: 'zh-tw',
+    title: '像素寵物桌面小工具又回來了:為什麼工作列上的一隻小寵物,是沒人提的生產力外掛',
+    description:
+      '桌面上的像素寵物小工具什麼也不做。它不安排行程、不提醒、不優化。但這就是它起作用的原因。這裡是工作列上一個小型「環境式陪伴」的回歸故事,以及為什麼 2026 年是它重新走紅的一年。',
+    date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
+    cover: `/blog-covers/pixel-pet-widget-desktop-zh-tw.png`,
+    tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
+    locale: 'ja',
+    title: 'ピクセルペットのデスクトップウィジェットが戻ってきた:タスクバーの小さなペットが、誰も語らない生産性ハックである理由',
+    description:
+      'デスクトップのピクセルペットウィジェットは何もしません。スケジュールも組まないし、リマインドもしないし、最適化もしません。それこそが効果がある理由です。タスクバーに置かれた小さなアンビエントコンパニオンが、2026年に戻ってくる理由を書きます。',
+    date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
+    cover: `/blog-covers/pixel-pet-widget-desktop-ja.png`,
+    tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
+    locale: 'ko',
+    title: '픽셀 펫 데스크톱 위젯이 다시 돌아왔다:작업 표시줄의 작은 펫이 아무도 말하지 않는 생산성 핵인 이유',
+    description:
+      '데스크톱의 픽셀 펫 위젯은 아무것도 하지 않습니다. 일정도 잡지 않고, 알림도 주지 않고, 최적화하지도 않습니다. 바로 그 점이 효과를 내는 이유입니다. 작업 표시줄의 작은 환경형 동반자가 2026년에 다시 돌아오는 이유를 정리합니다.',
+    date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
+    cover: `/blog-covers/pixel-pet-widget-desktop-ko.png`,
+    tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
+    locale: 'de',
+    title: 'Das Pixel-Haustier-Widget ist zurück: Warum ein winziges Desktop-Haustier der Produktivitäts-Hack ist, über den niemand spricht',
+    description:
+      'Ein Pixel-Haustier-Widget auf dem Desktop kann nichts. Es plant nicht, erinnert nicht, optimiert nicht. Und genau deshalb funktioniert es. Hier ist das Plädoyer für einen winzigen ambienten Begleiter in der Taskleiste — und warum 2026 sein Jahr der Rückkehr ist.',
+    date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
+    cover: `/blog-covers/pixel-pet-widget-desktop-de.png`,
+    tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
+    locale: 'fr',
+    title: 'Le widget d\'animal pixel est de retour : pourquoi un minuscule animal sur le bureau est le hack de productivité dont personne ne parle',
+    description:
+      'Un widget d\'animal pixel sur votre bureau ne fait rien. Il ne planifie pas, ne rappelle pas, n\'optimise pas. Et c\'est exactement pour ça qu\'il marche. Voici le plaidoyer pour un petit compagnon ambient dans la barre des tâches — et pourquoi 2026 est son année de retour.',
+    date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
+    cover: `/blog-covers/pixel-pet-widget-desktop-fr.png`,
+    tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
+    locale: 'es',
+    title: 'El widget de mascota pixel ha vuelto: por qué una mascota minúscula en el escritorio es el truco de productividad del que nadie habla',
+    description:
+      'Un widget de mascota pixel en tu escritorio no hace nada. No agenda, no recuerda, no optimiza. Y por eso precisamente funciona. Aquí va el alegato por un pequeño compañero ambient en la barra de tareas — y por qué 2026 es su año de regreso.',
+    date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
+    cover: `/blog-covers/pixel-pet-widget-desktop-es.png`,
+    tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+];
+
+const M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_DATE = '2026-07-22';
+const M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_SLUG = 'ai-companion-for-relationship-not-replacement';
+const M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_TAGS = ['ai-companion', 'relationships', 'long-distance', 'emotional-design', 'ethics'];
+
+const m2Posts_ai_companion_for_relationship_not_replacement: BlogPost[] = [
+  {
+    slug: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_SLUG,
+    locale: 'en',
+    title: 'An AI Companion for Your Relationship, Not a Replacement for It: Where the Line Should Be',
+    description:
+      'An AI companion in a relationship is not a stand-in for a partner, a therapist, or a long phone call. Used right, it is the small, reliable thing that holds the daily thread between two people. Used wrong, it quietly makes the relationship skippable. Here is where the line is, and how to stay on the right side of it.',
+    date: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_DATE,
+    cover: `/blog-covers/ai-companion-for-relationship-not-replacement-en.png`,
+    tags: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_SLUG,
+    locale: 'zh-cn',
+    title: 'AI 陪伴用于关系,而不是替代关系:那条线应该划在哪里',
+    description:
+      '关系里的 AI 陪伴,不是伴侣的替身、不是心理咨询师、也不是一通长电话的替代品。用对了,它是那个小小的、可靠的东西,撑住两个人之间的日常线索。用错了,它会悄悄让关系变得「可跳过」。那条线在哪里,以及如何站对一边,这里讲。',
+    date: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_DATE,
+    cover: `/blog-covers/ai-companion-for-relationship-not-replacement-zh-cn.png`,
+    tags: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_SLUG,
+    locale: 'zh-tw',
+    title: 'AI 陪伴用於關係,而不是替代關係:那條線應該劃在哪裡',
+    description:
+      '關係裡的 AI 陪伴,不是伴侶的替身、不是心理諮商師、也不是一通長電話的替代品。用對了,它是那個小小的、可靠的東西,撐住兩個人之間的日常線索。用錯了,它會悄悄讓關係變得「可跳過」。那條線在哪裡,以及如何站對一邊,這裡講。',
+    date: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_DATE,
+    cover: `/blog-covers/ai-companion-for-relationship-not-replacement-zh-tw.png`,
+    tags: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_SLUG,
+    locale: 'ja',
+    title: '関係を補うAIコンパニオン、関係を置き換えるものではない:線を引くべき場所',
+    description:
+      '関係の中のAIコンパニオンは、パートナーの代役でも、カウンセラーでも、長い電話の代用品でもありません。うまく使えば、二人の間の日常の糸をそっと支える小さな存在になります。使い方を誤れば、関係はそっと「スキップ可能」になります。その線はどこか、そして正しい側にいるための話をします。',
+    date: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_DATE,
+    cover: `/blog-covers/ai-companion-for-relationship-not-replacement-ja.png`,
+    tags: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_SLUG,
+    locale: 'ko',
+    title: '관계를 위한 AI 동반자, 관계를 대체하는 것이 아닌:선은 어디에 있어야 하는가',
+    description:
+      '관계 안의 AI 동반자는 파트너의 대역도, 상담사도, 긴 전화의 대체품도 아닙니다. 잘 쓰면, 두 사람 사이의 일상을 가만히 잡아주는 작고 안정적인 존재가 됩니다. 잘못 쓰면, 관계를 조용히 「건너뛸 수 있는 것」으로 만듭니다. 그 선은 어디인지, 그리고 어디에 서 있어야 하는지 정리합니다.',
+    date: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_DATE,
+    cover: `/blog-covers/ai-companion-for-relationship-not-replacement-ko.png`,
+    tags: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_SLUG,
+    locale: 'de',
+    title: 'KI-Begleiter für die Beziehung, nicht als Ersatz: Wo die Linie verlaufen sollte',
+    description:
+      'Ein KI-Begleiter in einer Beziehung ist kein Ersatz für den Partner, kein Therapeut und kein Ersatz für ein langes Telefonat. Richtig eingesetzt, ist er das kleine, verlässliche Ding, das den Alltagsfaden zwischen zwei Menschen hält. Falsch eingesetzt, macht er die Beziehung stillschweigend überspringbar. Wo die Linie ist — und wie man auf der richtigen Seite bleibt.',
+    date: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_DATE,
+    cover: `/blog-covers/ai-companion-for-relationship-not-replacement-de.png`,
+    tags: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_SLUG,
+    locale: 'fr',
+    title: 'Compagnon IA pour la relation, et non à sa place : où la ligne doit être tracée',
+    description:
+      'Un compagnon IA dans une relation n\'est ni un substitut du partenaire, ni un thérapeute, ni un remplacement d\'un long appel. Bien utilisé, c\'est la petite chose fiable qui tient le fil du quotidien entre deux personnes. Mal utilisé, il rend la relation tranquillement contournable. Où se trouve la ligne — et comment rester du bon côté.',
+    date: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_DATE,
+    cover: `/blog-covers/ai-companion-for-relationship-not-replacement-fr.png`,
+    tags: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_SLUG,
+    locale: 'es',
+    title: 'Compañero IA para la relación, no en lugar de ella: dónde debería estar la línea',
+    description:
+      'Un compañero IA en una relación no es un sustituto de la pareja, ni un terapeuta, ni el reemplazo de una llamada larga. Bien usado, es la cosa pequeña y fiable que sostiene el hilo del día a día entre dos personas. Mal usado, vuelve la relación silenciosamente saltable. Dónde está la línea — y cómo quedarse en el lado correcto.',
+    date: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_DATE,
+    cover: `/blog-covers/ai-companion-for-relationship-not-replacement-es.png`,
+    tags: M2_02_AI_COMPANION_FOR_RELATIONSHIP_NOT_REPLACEMENT_TAGS,
+    readingMinutes: 7,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -1838,6 +2317,11 @@ export const blogPosts: BlogPost[] = [
   ...m1PostsA,
   ...m1PostsB,
   ...m1PostsC,
+  ...m2Posts_daily_check_in_app_for_couples,
+  ...m2Posts_virtual_pet_app_for_couples,
+  ...m2Posts_how_to_feel_close_in_a_long_distance_relationship,
+  ...m2Posts_pixel_pet_widget_desktop,
+  ...m2Posts_ai_companion_for_relationship_not_replacement,
 ];
 
 // ──────────────────────────────────────────────────────────────────────

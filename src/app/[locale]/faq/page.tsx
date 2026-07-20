@@ -56,7 +56,7 @@ export default async function FaqPage({
 }) {
   const { locale } = await params
   const t = await getTranslations({ locale })
-  const items = t.raw('faq.items') as FaqItem[]
+  const items = t.raw('faq.questions') as FaqItem[]
 
   const faqTitle = t('faq.title')
   const faqUrl = getCanonicalUrl(locale as Locale, '/faq')

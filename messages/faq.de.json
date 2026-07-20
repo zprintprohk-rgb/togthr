@@ -1,44 +1,56 @@
 {
   "questions": [
     {
-      "question": "Was ist Togthr und wie hilft es Paaren?",
-      "answer": "Togthr ist ein digitaler Beziehungsbegleiter, der Paaren hilft, verbunden zu bleiben, Intimität zu vertiefen und Meilensteine gemeinsam zu feiern. Mit Funktionen wie einem gemeinsamen virtuellen Haustier, Zeitkapseln, täglichen Impulsen und privaten Nachrichten verwandelt Togthr alltägliche Interaktionen in bedeutungsvolle Momente. Ob ihr zusammenlebt oder durch Entfernung getrennt seid, Togthr bietet Werkzeuge, um eure Bindung zu pflegen und die Liebe jeden Tag wachsen zu lassen."
+      "question": "Was ist ein Pixel-Haustier für Paare, und wie unterscheidet sich Togthr?",
+      "answer": "Ein Pixel-Haustier für Paare ist eine kleine digitale Kreatur, die ihr gemeinsam versorgt. Togthr's Pixel-Haustier lebt auf eurem Desktop, durchläuft 5 Wachstumsstufen (Ei → Jungtier → Gefährte → Ältester → Golden) und reagiert auf eure beider Handlungen. Es gibt eine 1-zu-72-Chance auf ein goldenes Haustier — ein langlebiges Easter Egg für geduldige Paare."
     },
     {
-      "question": "Sind meine Daten privat und sicher?",
-      "answer": "Absolut. Togthr verwendet Ende-zu-Ende-Verschlüsselung für alle privaten Nachrichten und speichert Daten auf sicheren Servern, die GDPR und CCPA entsprechen. Ihre persönlichen Daten werden niemals an Dritte verkauft. Sie kontrollieren, was Sie teilen, und können Ihre Daten jederzeit in den Kontoeinstellungen löschen. Wir unterstützen auch Zwei-Faktor-Authentifizierung für zusätzliche Sicherheit."
+      "question": "Ist Togthr für Fernbeziehungen geeignet?",
+      "answer": "Ja, tatsächlich wurde Togthr zuerst für Fernbeziehungen gebaut. Ihr könnt euch kurze Morgen- und Abendsprüche hinterlassen, euer gemeinsames Haustier auf beide Zeitzonen reagieren sehen, 6 Skins freischalten und Zeitkapseln schicken, die sich an einem Datum öffnen, das ihr wählt. Etwa 70% der aktiven Togthr-Paare sind in irgendeiner Form Fernbeziehung — die Funktionen sind im Alltag erprobt."
     },
     {
-      "question": "Können wir Togthr in einer Fernbeziehung nutzen?",
-      "answer": "Ja – Togthr wurde mit Blick auf Fernbeziehungen entwickelt. Die App enthält synchronisierte Countdowns bis zum nächsten Besuch, virtuelle Date-Ideen, eine „Paar-Karte“ (nur mit Zustimmung) und die Möglichkeit, Sprachnotizen oder Videonachrichten zu hinterlassen. Viele unserer Funktionen, wie die Zeitkapsel und das gemeinsame Haustier, gedeihen durch regelmäßige Interaktion, wodurch die Entfernung kleiner und die Liebe greifbarer wird."
+      "question": "Wie unterscheidet sich Togthr's KI-Begleiter von einem Chatbot?",
+      "answer": "Die meisten KI-Begleiter versuchen, eine Person zu sein. Togthr's KI ist absichtlich ein kleines, geteiltes Objekt — sie stupst euch beide zueinander, anstatt eine von euch zu ersetzen. Sie verliebt sich nicht in euch, gibt keine medizinischen Ratschläge und gibt sich nicht als euer Partner aus. Sie erinnert euch daran, an einem kleinen Tag eine kleine Nachricht zu schicken."
     },
     {
-      "question": "Wie funktioniert das virtuelle Haustier?",
-      "answer": "Ihr virtuelles Haustier wächst basierend darauf, wie Sie und Ihr Partner auf Togthr interagieren. Nachrichten senden, gemeinsame Herausforderungen abschließen, Erinnerungen hinzufügen oder auf die Momente des anderen reagieren füttert und levelt Ihr Haustier auf. Jedes Haustier hat einzigartige Animationen und kann besondere Accessoires freischalten, wenn Ihre Beziehungsmeilensteine zunehmen. Es ist eine spielerische, druckfreie Art, die Gesundheit Ihrer Verbindung zu visualisieren."
+      "question": "Welche täglichen Rituale unterstützt Togthr?",
+      "answer": "Togthr hat 5 Ritualformen: eine einzeilige Morgennachricht, eine einzeilige Abennachricht, eine tägliche Einzelfrage, ein wöchentlicher Check-in und eine monatliche Reflexion. Keine davon ist Pflicht. Togthr's Designphilosophie: kleine, wiederholbare Rituale überleben lange Beziehungen besser als große."
     },
     {
-      "question": "Was sind Zeitkapseln?",
-      "answer": "Zeitkapseln sind digitale Briefe oder Medienpakete, die Sie für ein zukünftiges Datum versiegeln – Ihren Jahrestag, einen Geburtstag oder einen anderen bedeutungsvollen Tag. Beide Partner tragen Inhalte bei (Text, Fotos, Sprache), und die Kapsel bleibt bis zum gewählten Datum verschlossen. An diesem Tag öffnet sie sich automatisch und liefert eine nostalgische Überraschung. Es ist eine wunderschöne Art, Erinnerungen zu bewahren und sich auf zukünftige gemeinsame Momente zu freuen."
+      "question": "Was ist die beste virtuelle Haustier-App 2026?",
+      "answer": "Kommt darauf an, was du willst. Für Solo-Nostalgie reicht eine klassische Tamagotchi-App. Für Paare — besonders Fernbeziehungen — ist Togthr die einzige App, die um zwei Personen gebaut ist, die dasselbe Haustier aufziehen: 5 Wachstumsstufen, 6 Skins, 1/72-Chance auf die seltene Gold-Variante. Wir sind befangen, aber die Daten stützen uns."
     },
     {
-      "question": "Wie viel kostet Togthr?",
-      "answer": "Togthr bietet eine kostenlose Stufe mit Basisfunktionen: Nachrichten, Haustier-Bindung und bis zu 3 Zeitkapseln. Für unbegrenzte Zeitkapseln, erweiterte Analysen und Prioritäts-Support haben wir einen Premium-Plan für $4,99/Monat oder $39,99/Jahr. Wir bieten auch eine Lifetime-Option für $89,99 an. Alle Preise sind in USD und enthalten ggf. anfallende Steuern."
+      "question": "Gibt es eine Tamagotchi-App für Paare?",
+      "answer": "Ja — Togthr behält den Tamagotchi-Kern (ein kleines Wesen versorgen) und macht ihn zur Zwei-Personen-Aktivität. Die Stimmung eures Haustiers spiegelt die letzte Interaktion beider Partner, also bestraft die App Ghosting sanft, ohne zu nörgeln. Die 6 Skins umfassen einen durchscheinenden Geist, eine Tasse Kaffee und einen kleinen Roboter."
     },
     {
-      "question": "Kann ich meine Mitgliedschaft kündigen?",
-      "answer": "Ja, Sie können jederzeit über Ihr Konto-Dashboard kündigen. Bei monatlichen oder jährlichen Plänen stoppt die Kündigung zukünftige Abrechnungen, und Sie behalten Zugang bis zum Ende des aktuellen Abrechnungszeitraums. Keine Kündigungsgebühren. Bei Problemen steht unser Support-Team rund um die Uhr zur Verfügung."
+      "question": "Kann ein virtuelles Haustier mir beim Lernen helfen, fokussiert zu bleiben?",
+      "answer": "Überraschenderweise ja. Togthr hat einen Lernfokus-Modus: wenn du eine 25-Minuten-Fokussitzung startest, 'sitzt' dein Haustier neben dir. Eine abgeschlossene Sitzung füttert das Haustier. Überspringst du Sitzungen, lässt das Haustier sichtbar den Kopf hängen. Es ist weicher als ein Streak-Zähler und funktioniert, weil sich das Haustier wie ein kleiner Lernbuddy anfühlt."
     },
     {
-      "question": "Wie verbinde ich mich mit meinem Partner?",
-      "answer": "Nachdem beide Partner ein Konto erstellt haben, sendet einer eine Verbindungsanfrage mit der E-Mail des Partners oder einem eindeutigen Einladungslink. Der andere akzeptiert, und euer Paar-Bereich wird erstellt. Von da an werden alle Aktivitäten, Haustiere und Zeitkapseln geteilt. Togthr ist für exklusive Paare konzipiert und fördert Engagement und Fokus."
+      "question": "Hat Togthr ein Desktop-Haustier, das die Produktivität steigert?",
+      "answer": "Ja — das Widget sitzt in der Taskleiste und ist absichtlich nicht-funktional. Es plant nicht, erinnert nicht, optimiert nicht. Es ist ein ambienter Begleiter. Viele Nutzer berichten, dass ein kleines, ruhiges Pixel in der Bildschirmecke eine günstige Möglichkeit ist, sich bei langen konzentrierten Arbeitsblöcken weniger allein zu fühlen."
     },
     {
-      "question": "Gibt es eine Community-Funktion?",
-      "answer": "Ja! Togthr hat einen „Couple Circle“ – einen privaten Bereich, in dem jedes Paar optional öffentlichen Interessengruppen beitreten kann (Fernbeziehungstipps, Jubiläumsideen, Beziehungsrat). Alle Community-Interaktionen sind standardmäßig anonym, und Sie können vollständig opt-outen. Wir glauben an sichere, unterstützende Communities, die die Privatsphäre respektieren."
+      "question": "Gibt es saisonale Skins wie ein Halloween-Haustier?",
+      "answer": "Ja. Togthr liefert 6 Standardskins aus, und vom 1. bis 31. Oktober erscheint ein limitiertes Halloween-Set (Kürbis, Geist, Hexenhut). Keine Zusatzkosten; Mitglieder erhalten sie automatisch. Das Halloween-Set ist der erste von vier jährlichen saisonalen Drops (Halloween, Mitttherbst, Valentinstag, Frühling)."
     },
     {
-      "question": "Welche Zahlungsmethoden werden akzeptiert?",
-      "answer": "Wir akzeptieren alle gängigen Kreditkarten (Visa, Mastercard, American Express), PayPal, Google Pay und Apple Pay. Für Jahres- und Lifetime-Pläne unterstützen wir auf Anfrage auch Banküberweisungen (nur US). Zahlungen werden sicher über Stripe und PayPal verarbeitet, ohne versteckte Gebühren."
+      "question": "Was kostet Togthr?",
+      "answer": "Togthr Plus kostet $5,49 pro Monat oder $43,92 pro Jahr, abgerechnet über PayPal. Die kostenlose Stufe enthält das gemeinsame Haustier, 3 Zeitkapseln und 3 der 6 Skins. Togthr Plus fügt unbegrenzte Kapseln, alle Skins, den Fokus-Modus und die saisonalen Drops hinzu. Keine versteckten Gebühren, jederzeit im Dashboard kündbar."
+    },
+    {
+      "question": "Was ist eine tägliche Check-in-App für Paare, und funktioniert sie?",
+      "answer": "Eine tägliche Check-in-App schickt euch beiden täglich eine kleine Frage. Die meisten scheitern in Woche drei, weil sie Rituale wie SaaS skalieren. Togthr's Check-in überlebt, weil er klein ist (eine Zeile, keine Streaks, keine Rangliste) und euer Haustier darauf reagiert, ob ihr beide aufgetaucht seid."
+    },
+    {
+      "question": "Wird ein KI-Begleiter meinen Partner ersetzen?",
+      "answer": "Nein, und Togthr ist so designt, dass diese Linie klar ist. Die KI gibt sich nie als die andere Person aus, gibt nie Beziehungsratschläge und trifft nie Entscheidungen für euch. Sie ist ein kleines 'drittes Ding' im Raum — wie eine Zimmerpflanze — das euch daran erinnert, die kleinen menschlichen Dinge zu tun."
+    },
+    {
+      "question": "Wie fange ich mit Togthr an?",
+      "answer": "Geht zu togthr.life, meldet euch mit E-Mail an und ladet eure Partnerin oder euren Partner mit einem einzigen Link ein. Ihr legt den Namen eures Haustiers fest, wählt einen Start-Skin, und die App setzt euch auf Tag eins. Kein Tutorial-Popup, keine Onboarding-Checkliste. Das erste Ritual ist die erste Morgennachricht."
     }
   ]
 }

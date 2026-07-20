@@ -11,20 +11,20 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { setRequestLocale } from 'next-intl/server'
-import {{ routing, type Locale }} from '@/i18n/routing'
-import {{ getBlogPost, getBlogPostsByLocale }} from '@/lib/blog-posts'
-import {{ siteConfig }} from '@/lib/seo'
+import { routing, type Locale } from '@/i18n/routing'
+import { getBlogPost, getBlogPostsByLocale } from '@/lib/blog-posts'
+import { siteConfig } from '@/lib/seo'
 
 const SLUG = `the-first-time-you-read-the-first-sentence-again`
 const POST_DATE = `2026-07-21`
 
-type Body = {{
+type Body = {
   intro: string
-  sections: {{ h: string; p: string }}[]
+  sections: { h: string; p: string }[]
   cta: string
-  faqs: {{ q: string; a: string }}[]
-  links: {{ href: string; label: string }}[]
-}}
+  faqs: { q: string; a: string }[]
+  links: { href: string; label: string }[]
+}
 
 const BODIES: Record<Locale, Body> = {
   "en": {
@@ -501,31 +501,31 @@ const BODIES: Record<Locale, Body> = {
   }
 }
 
-export async function generateMetadata({{
+export async function generateMetadata({
   params,
-}}: {{
-  params: Promise<{{ locale: string; slug: string }}>
-}}): Promise<Metadata> {{
-  const {{ locale, slug }} = await params
+}: {
+  params: Promise<{ locale: string; slug: string }>
+}): Promise<Metadata> {
+  const { locale, slug } = await params
   const post = getBlogPost(slug, locale as Locale)
-  if (!post) return {{}}
-  const url = `${{siteConfig.url}}/${{locale}}/blog/${the-first-time-you-read-the-first-sentence-again}`
-  return {{
+  if (!post) return {}
+  const url = `${siteConfig.url}/${locale}/blog/the-first-time-you-read-the-first-sentence-again`
+  return {
     title: post.title,
     description: post.description,
     keywords: post.tags.join(', '),
-    alternates: {{
+    alternates: {
       canonical: url,
-      languages: (() => {{
-        const map: Record<string, string> = {{}}
-        for (const loc of routing.locales) {{
-          map[loc] = `${{siteConfig.url}}/${{loc}}/blog/${the-first-time-you-read-the-first-sentence-again}`
-        }}
-        map['x-default'] = `${{siteConfig.url}}/en/blog/${the-first-time-you-read-the-first-sentence-again}`
+      languages: (() => {
+        const map: Record<string, string> = {}
+        for (const loc of routing.locales) {
+          map[loc] = `${siteConfig.url}/${loc}/blog/the-first-time-you-read-the-first-sentence-again`
+        }
+        map['x-default'] = `${siteConfig.url}/en/blog/the-first-time-you-read-the-first-sentence-again`
         return map
-      }})(),
-    }},
-    openGraph: {{
+      })(),
+    },
+    openGraph: {
       type: 'article',
       title: post.title,
       description: post.description,
@@ -535,163 +535,163 @@ export async function generateMetadata({{
       publishedTime: post.date,
       authors: [post.author || 'Togthr'],
       tags: post.tags,
-      images: [{{
-        url: `${{siteConfig.url}}${{post.cover}}`,
+      images: [{
+        url: `${siteConfig.url}${post.cover}`,
         width: 1200,
         height: 630,
         alt: post.title,
-      }}],
-    }},
-    twitter: {{
+      }],
+    },
+    twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: [`${{siteConfig.url}}${{post.cover}}`],
-    }},
-  }}
-}}
+      images: [`${siteConfig.url}${post.cover}`],
+    },
+  }
+}
 
-export default async function BlogPostPage({{
+export default async function BlogPostPage({
   params,
-}}: {{
-  params: Promise<{{ locale: string; slug: string }}>
-}}) {{
-  const {{ locale, slug }} = await params
+}: {
+  params: Promise<{ locale: string; slug: string }>
+}) {
+  const { locale, slug } = await params
   const localeTyped = locale as Locale
   setRequestLocale(localeTyped)
   const post = getBlogPost(slug, localeTyped)
   if (!post) notFound()
 
   const body = BODIES[localeTyped] ?? BODIES.en
-  const url = `${{siteConfig.url}}/${{localeTyped}}/blog/${the-first-time-you-read-the-first-sentence-again}`
+  const url = `${siteConfig.url}/${localeTyped}/blog/the-first-time-you-read-the-first-sentence-again`
   const morePosts = getBlogPostsByLocale(localeTyped)
     .filter((p) => p.slug !== slug)
     .slice(0, 3)
 
   // FAQ schema
-  const faqLd = {{
+  const faqLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: body.faqs.map((f) => ({{
+    mainEntity: body.faqs.map((f) => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: {{ '@type': 'Answer', text: f.a }},
-    }})),
-  }}
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  }
 
-  const blogPostingLd = {{
+  const blogPostingLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
-    image: `${{siteConfig.url}}${{post.cover}}`,
+    image: `${siteConfig.url}${post.cover}`,
     datePublished: post.date,
     dateModified: post.date,
-    author: {{ '@type': 'Organization', name: post.author || 'Togthr', url: siteConfig.url }},
-    publisher: {{
+    author: { '@type': 'Organization', name: post.author || 'Togthr', url: siteConfig.url },
+    publisher: {
       '@type': 'Organization',
       name: siteConfig.name,
-      logo: {{ '@type': 'ImageObject', url: `${{siteConfig.url}}/logo.png` }},
-    }},
-    mainEntityOfPage: {{ '@type': 'WebPage', '@id': url }},
+      logo: { '@type': 'ImageObject', url: `${siteConfig.url}/logo.png` },
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     inLanguage: locale.replace('-', '_'),
     keywords: post.tags.join(', '),
-  }}
+  }
 
-  const breadcrumbLd = {{
+  const breadcrumbLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      {{ '@type': 'ListItem', position: 1, name: siteConfig.name, item: siteConfig.url }},
-      {{ '@type': 'ListItem', position: 2, name: 'Blog', item: `${{siteConfig.url}}/${{localeTyped}}/blog` }},
-      {{ '@type': 'ListItem', position: 3, name: post.title, item: url }},
+      { '@type': 'ListItem', position: 1, name: siteConfig.name, item: siteConfig.url },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteConfig.url}/${localeTyped}/blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: url },
     ],
-  }}
+  }
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 text-zinc-100">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{{{ __html: JSON.stringify(blogPostingLd) }}}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{{{ __html: JSON.stringify(breadcrumbLd) }}}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{{{ __html: JSON.stringify(faqLd) }}}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
 
       <nav className="mb-6 text-sm text-zinc-500">
-        <Link href={{`/${{localeTyped === 'en' ? '' : localeTyped + '/'}}`}} className="hover:text-pink-400">Home</Link>
+        <Link href={`/${localeTyped === 'en' ? '' : localeTyped + '/'}`} className="hover:text-pink-400">Home</Link>
         <span className="mx-2">/</span>
-        <Link href={{`/${{localeTyped}}/blog`}} className="hover:text-pink-400">Blog</Link>
+        <Link href={`/${localeTyped}/blog`} className="hover:text-pink-400">Blog</Link>
       </nav>
 
       <header className="mb-8">
         <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">
-          <time dateTime={{post.date}}>{{post.date}}</time>
-          {{post.readingMinutes ? <span>· {{post.readingMinutes}} min read</span> : null}}
+          <time dateTime={post.date}>{post.date}</time>
+          {post.readingMinutes ? <span>· {post.readingMinutes} min read</span> : null}
         </div>
-        <h1 className="mt-2 text-4xl font-bold md:text-5xl">{{post.title}}</h1>
-        <p className="mt-3 text-lg text-zinc-400">{{post.description}}</p>
+        <h1 className="mt-2 text-4xl font-bold md:text-5xl">{post.title}</h1>
+        <p className="mt-3 text-lg text-zinc-400">{post.description}</p>
         <div className="mt-4 flex flex-wrap gap-2">
-          {{post.tags.map((tag) => (
-            <span key={{tag}} className="rounded-full bg-zinc-800 px-3 py-1 text-xs text-zinc-300">#{{tag}}</span>
-          ))}}
+          {post.tags.map((tag) => (
+            <span key={tag} className="rounded-full bg-zinc-800 px-3 py-1 text-xs text-zinc-300">#{tag}</span>
+          ))}
         </div>
       </header>
 
       <img
-        src={{post.cover}}
-        alt={{post.title}}
+        src={post.cover}
+        alt={post.title}
         className="mb-8 w-full rounded-2xl border border-zinc-800"
         loading="lazy"
         decoding="async"
       />
 
       <div className="prose prose-invert max-w-none">
-        <p className="text-lg leading-relaxed text-zinc-200">{{body.intro}}</p>
+        <p className="text-lg leading-relaxed text-zinc-200">{body.intro}</p>
 
-        {{body.sections.map((s) => (
-          <section key={{s.h}} className="mt-10">
-            <h2 className="text-2xl font-semibold text-zinc-100">{{s.h}}</h2>
-            <p className="mt-3 leading-relaxed text-zinc-300">{{s.p}}</p>
+        {body.sections.map((s) => (
+          <section key={s.h} className="mt-10">
+            <h2 className="text-2xl font-semibold text-zinc-100">{s.h}</h2>
+            <p className="mt-3 leading-relaxed text-zinc-300">{s.p}</p>
           </section>
         ))}
 
-        <p className="mt-10 text-lg leading-relaxed text-pink-300">{{body.cta}}</p>
+        <p className="mt-10 text-lg leading-relaxed text-pink-300">{body.cta}</p>
       </div>
 
       <section className="mt-12">
         <h2 className="text-2xl font-semibold text-zinc-100">FAQ</h2>
         <div className="mt-4 space-y-4">
-          {{body.faqs.map((f, i) => (
-            <details key={{i}} className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
-              <summary className="cursor-pointer text-base font-medium text-zinc-100">{{f.q}}</summary>
-              <p className="mt-2 leading-relaxed text-zinc-300">{{f.a}}</p>
+          {body.faqs.map((f, i) => (
+            <details key={i} className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
+              <summary className="cursor-pointer text-base font-medium text-zinc-100">{f.q}</summary>
+              <p className="mt-2 leading-relaxed text-zinc-300">{f.a}</p>
             </details>
-          ))}}
+          ))}
         </div>
       </section>
 
       <section className="mt-12 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6">
         <h2 className="text-sm font-semibold uppercase tracking-wider text-zinc-500">Continue reading</h2>
         <ul className="mt-3 space-y-2">
-          {{body.links.map((l) => (
-            <li key={{l.href}}>
-              <Link href={{l.href}} className="text-pink-400 hover:underline">{{l.label}} →</Link>
+          {body.links.map((l) => (
+            <li key={l.href}>
+              <Link href={l.href} className="text-pink-400 hover:underline">{l.label} →</Link>
             </li>
-          ))}}
+          ))}
         </ul>
       </section>
 
-      {{morePosts.length > 0 ? (
+      {morePosts.length > 0 ? (
         <section className="mt-12">
           <h2 className="text-sm font-semibold uppercase tracking-wider text-zinc-500">More from the blog</h2>
           <ul className="mt-3 space-y-3">
-            {{morePosts.map((p) => (
-              <li key={{p.slug}}>
-                <Link href={{`/${{localeTyped}}/blog/${{p.slug}}`}} className="block text-pink-400 hover:underline">
-                  {{p.title}}
+            {morePosts.map((p) => (
+              <li key={p.slug}>
+                <Link href={`/${localeTyped}/blog/${p.slug}`} className="block text-pink-400 hover:underline">
+                  {p.title}
                 </Link>
               </li>
-            ))}}
+            ))}
           </ul>
         </section>
-      ) : null}}
+      ) : null}
     </article>
   )
-}}
+}

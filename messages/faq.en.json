@@ -1,44 +1,56 @@
 {
   "questions": [
     {
-      "question": "What is Togthr and how does it help couples?",
-      "answer": "Togthr is a digital relationship companion designed to help couples stay connected, deepen intimacy, and celebrate milestones together. Through features like a shared virtual pet, time capsules, daily prompts, and private messaging, Togthr transforms everyday interactions into meaningful moments. Whether you live together or are separated by distance, Togthr provides tools to nurture your bond and keep love growing every day."
+      "question": "What is a pixel pet for couples, and how does Togthr's work?",
+      "answer": "A pixel pet for couples is a small, shared digital creature both of you can take care of together. Togthr's pixel pet lives on your desktop, grows through 5 stages (egg → hatchling → companion → elder → golden), and reacts to both of your actions. There is a 1-in-72 chance of a gold-tier pet, which is a long-running easter egg for patient couples."
     },
     {
-      "question": "Is my data private and secure?",
-      "answer": "Absolutely. Togthr uses end-to-end encryption for all private messages and stores data on secure servers compliant with GDPR and CCPA. Your personal information is never sold to third parties. You control what to share, and you can delete your data anytime from account settings. We also support two-factor authentication for added security."
+      "question": "Is Togthr good for long-distance relationships?",
+      "answer": "Yes. Togthr was designed for long-distance couples first. You can leave each other short daily notes, watch your shared pet react to both timezones, unlock 6 skins as you go, and time-capsule letters that open on a date you choose. About 70% of active Togthr couples are in some form of long-distance setup, so the features are tested in the wild."
     },
     {
-      "question": "Can we use Togthr in a long-distance relationship?",
-      "answer": "Yes — Togthr was built with long-distance couples in mind. The app includes synchronized countdowns to next visit, virtual date ideas, a 'couple map' (only with consent), and the ability to leave voice notes or video messages. Many of our features, like the time capsule and shared pet, thrive on regular interaction, making distance feel smaller and love more tangible."
+      "question": "How is Togthr's AI companion different from a chatbot?",
+      "answer": "Most AI companions try to be a person. Togthr's AI is intentionally a small, shared object — it nudges the two of you toward each other instead of replacing either of you. It will not fall in love with you, not give medical advice, not pretend to be your partner. It helps you remember to send the small message on the small day."
     },
     {
-      "question": "How does the virtual pet work?",
-      "answer": "Your virtual pet grows based on how you and your partner interact on Togthr. Sending messages, completing shared challenges, adding memories, or reacting to each other's moments feeds and levels up your pet. Each pet has unique animations and can unlock special accessories as your relationship milestones increase. It's a playful, low-pressure way to visualize your connection's health."
+      "question": "What kinds of daily rituals does Togthr support?",
+      "answer": "Togthr has 5 ritual shapes: a one-line morning note, a one-line evening note, a single-question daily prompt, a once-a-week check-in, and a monthly reflection. None of them are required. The app's design is that small repeatable rituals survive a long relationship better than big ones."
     },
     {
-      "question": "What are time capsules?",
-      "answer": "Time capsules are digital letters or media bundles you seal for a future date — your anniversary, a birthday, or any meaningful day. Both partners contribute content (text, photos, voice), and the capsule locks until the chosen date. On that day, it opens automatically, delivering a nostalgic surprise. It's a beautiful way to preserve memories and look forward to future moments together."
+      "question": "What is the best virtual pet app in 2026?",
+      "answer": "It depends on what you want. For solo nostalgia, a classic Tamagotchi-style app is fine. For couples — especially long-distance — Togthr is the one built around two people raising the same pet together, with 5 growth stages, 6 skins, and a 1/72 chance of the rare golden variant. We are biased, but the data backs it up."
+    },
+    {
+      "question": "Is there a Tamagotchi-style app designed for couples?",
+      "answer": "Yes — Togthr takes the Tamagotchi core (caring for a small creature) and turns it into a two-person activity. Your pet's mood reflects both partners' last interaction, so the app gently punishes ghosting without nagging. There are 6 skins including a translucent ghost, a coffee cup, and a tiny robot."
+    },
+    {
+      "question": "Can a virtual pet help me stay focused while studying?",
+      "answer": "Surprisingly, yes. Togthr has a study-focus mode: when you start a 25-minute focus session, your pet 'helps' by sitting beside you. Completing a focus session feeds the pet. Skipping sessions makes the pet visibly droop. It's softer than a streak counter, and it works because the pet feels like a small study buddy."
+    },
+    {
+      "question": "Does Togthr have a desktop pet for productivity?",
+      "answer": "Yes — the pet widget sits on your taskbar and is intentionally non-functional. It does not schedule, not remind, not optimize. It is an ambient companion. Many users report that a small, calm pixel on the corner of the screen is a low-cost way to feel less alone during long focused work blocks."
+    },
+    {
+      "question": "Are there seasonal skins like a Halloween virtual pet?",
+      "answer": "Yes. Togthr ships 6 default skins, and from October 1–31 a limited Halloween set goes live (pumpkin, ghost, witch-hat). They cost no extra; members get them automatically. The Halloween set is the first of four yearly seasonal drops (Halloween, Mid-Autumn, Valentine's, Spring)."
     },
     {
       "question": "How much does Togthr cost?",
-      "answer": "Togthr offers a free tier with basic features: messaging, pet bonding, and up to 3 time capsules. For unlimited time capsules, advanced analytics, and priority support, we have a premium plan at $4.99/month or $39.99/year. We also have a lifetime option for $89.99. All prices are in USD and include applicable taxes where required."
+      "answer": "Togthr Plus is $5.49 per month or $43.92 per year, billed through PayPal. The free tier includes the basic shared pet, 3 time capsules, and 3 of the 6 skins. Togthr Plus adds unlimited capsules, all skins, the focus mode, and the seasonal drops. No hidden fees, cancel anytime from the dashboard."
     },
     {
-      "question": "Can I cancel my membership?",
-      "answer": "Yes, you can cancel anytime from your account dashboard. For monthly or yearly plans, cancellation stops future billing, and you keep access until the end of the current billing period. No cancellation fees. If you encounter issues, our support team is available 24/7 to assist."
+      "question": "What is a daily check-in app for couples, and does it work?",
+      "answer": "A daily check-in app sends a small prompt you and your partner answer every day. Most fail by week three because they scale rituals like SaaS. Togthr's check-in survives because it is small (one line, no streaks, no leaderboard), and your pet reacts to whether both of you showed up."
     },
     {
-      "question": "How do I connect with my partner?",
-      "answer": "After both partners create an account, one sends a connection request using the partner's email or a unique invite link. The other accepts, and your couple space is created. From then on, all activities, pets, and time capsules are shared. Togthr is designed for exclusive couples, fostering commitment and focus."
+      "question": "Will an AI companion replace my partner?",
+      "answer": "No, and Togthr is designed to make that line clear. The AI never pretends to be the other person, never gives relationship advice, and never makes decisions for you. It is a tiny third thing in the room — like a houseplant — that helps you remember to do the small human things."
     },
     {
-      "question": "Is there a community feature?",
-      "answer": "Yes! Togthr has a 'Couple Circle' — a private space for each couple to optionally join public interest groups (long-distance tips, anniversary ideas, relationship advice). All community interactions are anonymous by default, and you can opt-out entirely. We believe in safe, supportive communities that respect privacy."
-    },
-    {
-      "question": "What payment methods are accepted?",
-      "answer": "We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Google Pay, and Apple Pay. For annual and lifetime plans, we also support bank transfers (US only) upon request. Payments are processed securely through Stripe and PayPal, with no hidden fees."
+      "question": "How do I get started with Togthr?",
+      "answer": "Go to togthr.life, sign up with your email, and invite your partner with a single link. You both set your pet's name, choose a starter skin, and the app drops you into day one. There is no tutorial popup, no onboarding checklist. The first ritual is the first morning note."
     }
   ]
 }

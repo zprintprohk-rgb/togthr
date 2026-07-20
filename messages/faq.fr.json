@@ -1,44 +1,56 @@
 {
   "questions": [
     {
-      "question": "Qu'est-ce que Togthr et comment aide-t-il les couples ?",
-      "answer": "Togthr est un compagnon de relation numérique conçu pour aider les couples à rester connectés, approfondir leur intimité et célébrer ensemble les étapes importantes. Grâce à des fonctionnalités comme un animal de compagnie virtuel partagé, des capsules temporelles, des invitations quotidiennes et une messagerie privée, Togthr transforme les interactions quotidiennes en moments significatifs. Que vous viviez ensemble ou soyez séparés par la distance, Togthr fournit des outils pour nourrir votre lien et faire grandir l'amour chaque jour."
+      "question": "Qu'est-ce qu'un animal pixel pour couples, et en quoi Togthr se distingue?",
+      "answer": "Un animal pixel pour couples est une petite créature numérique dont vous vous occupez à deux. L'animal pixel de Togthr vit sur votre bureau, passe par 5 stades de croissance (œuf → petit → compagnon → ancien → doré) et réagit à vos deux actions. Il y a 1 chance sur 72 d'obtenir un animal doré — un easter egg de longue haleine pour les couples patients."
     },
     {
-      "question": "Mes données sont-elles privées et sécurisées ?",
-      "answer": "Absolument. Togthr utilise un chiffrement de bout en bout pour tous les messages privés et stocke les données sur des serveurs sécurisés conformes au RGPD et au CCPA. Vos informations personnelles ne sont jamais vendues à des tiers. Vous contrôlez ce que vous partagez et pouvez supprimer vos données à tout moment depuis les paramètres du compte. Nous prenons également en charge l'authentification à deux facteurs pour une sécurité renforcée."
+      "question": "Togthr est-il adapté aux relations à distance?",
+      "answer": "Oui. Togthr a d'abord été conçu pour les couples à distance. Vous pouvez laisser de courtes notes matin et soir, voir votre animal partagé réagir aux deux fuseaux horaires, débloquer 6 skins, et envoyer des capsules temporelles qui s'ouvrent à une date que vous choisissez. Environ 70% des couples Togthr actifs sont dans une forme ou une autre de relation à distance — les fonctionnalités sont éprouvées sur le terrain."
     },
     {
-      "question": "Peut-on utiliser Togthr dans une relation à distance ?",
-      "answer": "Oui, Togthr a été conçu pour les couples à distance. L'application comprend des comptes à rebours synchronisés jusqu'à la prochaine visite, des idées de rendez-vous virtuels, une « carte de couple » (uniquement avec consentement) et la possibilité de laisser des notes vocales ou des messages vidéo. Beaucoup de nos fonctionnalités, comme la capsule temporelle et l'animal partagé, prospèrent grâce à une interaction régulière, rendant la distance plus petite et l'amour plus tangible."
+      "question": "En quoi le compagnon IA de Togthr diffère-t-il d'un chatbot?",
+      "answer": "La plupart des compagnons IA essaient d'être une personne. L'IA de Togthr est volontairement un petit objet partagé — elle vous pousse l'un vers l'autre au lieu de remplacer qui que ce soit. Elle ne tombera pas amoureuse de vous, ne donnera pas de conseils médicaux, ne prétendra pas être votre partenaire. Elle vous aide à vous souvenir d'envoyer le petit message au petit jour."
     },
     {
-      "question": "Comment fonctionne l'animal virtuel ?",
-      "answer": "Votre animal virtuel grandit en fonction de la façon dont vous et votre partenaire interagissez sur Togthr. Envoyer des messages, relever des défis partagés, ajouter des souvenirs ou réagir aux moments de l'autre nourrit et fait progresser votre animal. Chaque animal a des animations uniques et peut débloquer des accessoires spéciaux à mesure que vos jalons relationnels augmentent. C'est une façon ludique et sans pression de visualiser la santé de votre connexion."
+      "question": "Quels rituels quotidiens Togthr prend-il en charge?",
+      "answer": "Togthr propose 5 formes de rituels : une note matinale d'une ligne, une note du soir d'une ligne, une question quotidienne unique, un check-in hebdomadaire et une réflexion mensuelle. Aucune n'est obligatoire. La philosophie de Togthr : les petits rituels répétables survivent mieux aux longues relations que les grands."
     },
     {
-      "question": "Que sont les capsules temporelles ?",
-      "answer": "Les capsules temporelles sont des lettres numériques ou des lots de médias que vous scellez pour une date future : votre anniversaire de couple, un anniversaire ou tout jour significatif. Les deux partenaires contribuent au contenu (texte, photos, voix) et la capsule reste verrouillée jusqu'à la date choisie. Ce jour-là, elle s'ouvre automatiquement, livrant une surprise nostalgique. C'est une belle façon de préserver des souvenirs et d'attendre avec impatience les moments futurs ensemble."
+      "question": "Quelle est la meilleure application d'animal virtuel en 2026?",
+      "answer": "Ça dépend de ce que vous voulez. Pour la nostalgie en solo, une appli style Tamagotchi classique suffit. Pour les couples — surtout à distance — Togthr est la seule conçue autour de deux personnes qui élèvent le même animal : 5 stades de croissance, 6 skins, 1/72 de chance d'obtenir la rare variante dorée. Nous sommes partials, mais les données nous soutiennent."
     },
     {
-      "question": "Combien coûte Togthr ?",
-      "answer": "Togthr propose un niveau gratuit avec des fonctionnalités de base : messagerie, lien avec l'animal et jusqu'à 3 capsules temporelles. Pour des capsules illimitées, des analyses avancées et un support prioritaire, nous avons un plan premium à 4,99 $/mois ou 39,99 $/an. Nous proposons également une option à vie à 89,99 $. Tous les prix sont en USD et incluent les taxes applicables."
+      "question": "Existe-t-il une appli style Tamagotchi conçue pour les couples?",
+      "answer": "Oui — Togthr conserve le cœur du Tamagotchi (s'occuper d'une petite créature) et en fait une activité à deux. L'humeur de votre animal reflète la dernière interaction des deux partenaires, donc l'appli punit doucement le ghosting sans houspiller. Les 6 skins incluent un fantôme translucide, une tasse de café et un petit robot."
     },
     {
-      "question": "Puis-je annuler mon abonnement ?",
-      "answer": "Oui, vous pouvez annuler à tout moment depuis votre tableau de bord. Pour les plans mensuels ou annuels, l'annulation arrête la facturation future et vous conservez l'accès jusqu'à la fin de la période de facturation en cours. Aucun frais d'annulation. Si vous rencontrez des problèmes, notre équipe d'assistance est disponible 24h/24 et 7j/7."
+      "question": "Un animal virtuel peut-il m'aider à rester concentré quand j'étudie?",
+      "answer": "Étonnamment, oui. Togthr a un mode focus d'étude : quand vous lancez une session de 25 minutes, votre animal « s'assoit » à côté de vous. Terminer une session nourrit l'animal. Sauter des sessions le rend visiblement penaud. C'est plus doux qu'un compteur de série, et ça marche parce que l'animal ressemble à un petit binôme d'étude."
     },
     {
-      "question": "Comment me connecter avec mon partenaire ?",
-      "answer": "Une fois que les deux partenaires ont créé un compte, l'un envoie une demande de connexion en utilisant l'e-mail du partenaire ou un lien d'invitation unique. L'autre accepte et votre espace couple est créé. Dès lors, toutes les activités, les animaux et les capsules temporelles sont partagés. Togthr est conçu pour les couples exclusifs, favorisant l'engagement et la concentration."
+      "question": "Togthr a-t-il un animal de bureau, et augmente-t-il la productivité?",
+      "answer": "Oui — le widget vit dans la barre des tâches et est volontairement non-fonctionnel. Il ne planifie pas, ne rappelle pas, n'optimise pas. C'est un compagnon ambient. Beaucoup d'utilisateurs rapportent qu'un petit pixel calme au coin de l'écran est un moyen peu coûteux de se sentir moins seul pendant de longs blocs de travail concentré."
     },
     {
-      "question": "Y a-t-il une fonctionnalité communautaire ?",
-      "answer": "Oui ! Togthr dispose d'un « Cercle de couples » : un espace privé où chaque couple peut optionnellement rejoindre des groupes d'intérêt publics (conseils pour les relations à distance, idées d'anniversaire, conseils relationnels). Toutes les interactions communautaires sont anonymes par défaut et vous pouvez vous désinscrire complètement. Nous croyons en des communautés sûres et bienveillantes qui respectent la vie privée."
+      "question": "Y a-t-il des skins saisonniers comme un animal virtuel d'Halloween?",
+      "answer": "Oui. Togthr livre 6 skins par défaut, et du 1er au 31 octobre un set Halloween limité apparaît (citrouille, fantôme, chapeau de sorcière). Aucun coût supplémentaire ; les membres les reçoivent automatiquement. Le set Halloween est le premier de quatre drops saisonniers annuels (Halloween, Mi-Automne, Saint-Valentin, Printemps)."
     },
     {
-      "question": "Quels modes de paiement sont acceptés ?",
-      "answer": "Nous acceptons toutes les principales cartes de crédit (Visa, Mastercard, American Express), PayPal, Google Pay et Apple Pay. Pour les plans annuels et à vie, nous prenons également en charge les virements bancaires (États-Unis uniquement) sur demande. Les paiements sont traités en toute sécurité via Stripe et PayPal, sans frais cachés."
+      "question": "Combien coûte Togthr?",
+      "answer": "Togthr Plus coûte $5,49 par mois ou $43,92 par an, facturés via PayPal. Le niveau gratuit inclut l'animal partagé de base, 3 capsules temporelles, et 3 des 6 skins. Togthr Plus ajoute des capsules illimitées, tous les skins, le mode focus, et les drops saisonniers. Pas de frais cachés, annulation possible à tout moment depuis le tableau de bord."
+    },
+    {
+      "question": "Qu'est-ce qu'une appli de check-in quotidien pour couples, et ça marche?",
+      "answer": "Une appli de check-in quotidien envoie chaque jour une petite question à vous et votre partenaire. La plupart échouent à la troisième semaine parce qu'elles mettent les rituels à l'échelle SaaS. Le check-in de Togthr survit parce qu'il est petit (une ligne, pas de série, pas de classement) et que votre animal réagit à votre présence à tous les deux."
+    },
+    {
+      "question": "Un compagnon IA va-t-il remplacer mon partenaire?",
+      "answer": "Non, et Togthr est conçu pour que cette ligne soit claire. L'IA ne prétend jamais être l'autre personne, ne donne jamais de conseils relationnels et ne prend jamais de décisions à votre place. C'est un petit « troisième objet » dans la pièce — comme une plante verte — qui vous aide à vous souvenir des petites choses humaines."
+    },
+    {
+      "question": "Comment commencer avec Togthr?",
+      "answer": "Allez sur togthr.life, inscrivez-vous avec votre email, et invitez votre partenaire avec un simple lien. Vous fixez ensemble le nom de l'animal, choisissez un skin de départ, et l'appli vous place au jour un. Pas de popup tutoriel, pas de checklist d'onboarding. Le premier rituel est la première note du matin."
     }
   ]
 }
