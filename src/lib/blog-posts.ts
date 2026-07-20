@@ -1433,6 +1433,108 @@ const dailyPosts13: BlogPost[] = [
 ,
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// Daily post 14 (2026-07-21): the first time you read the very first
+// sentence again — the past tense of the practice meeting the present
+// tense. Continues 7/13→7/14→7/15→7/16→7/20 arc; 7/20 was the ordinary
+// middle, 7/21 is the day you scroll back to the very first sentence.
+// ──────────────────────────────────────────────────────────────────────
+
+const DATE14 = '2026-07-21';
+const SLUG14 = 'the-first-time-you-read-the-first-sentence-again';
+const TAGS14 = ['ai-companion', 'quiet-rituals', 'togthr-life', 'habit-design', 'emotional-design'];
+
+const dailyPosts14: BlogPost[] = [
+  {
+    slug: SLUG14,
+    locale: 'en',
+    title: 'The First Time You Read the First Sentence Again',
+    description: 'There is a day, somewhere in the fourth or fifth week, when you scroll back to the very first sentence. The first sentence is a small sentence at the top of a small box. The first sentence is, on the day you read it again, a small stranger — and a small piece of proof the practice happened.',
+    date: DATE14,
+    cover: '/blog-covers/the-first-time-you-read-the-first-sentence-again-en.png',
+    tags: TAGS14,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG14,
+    locale: 'zh-cn',
+    title: '你第一次重新读那句最初的那一句',
+    description: '有那么一天,在第四、第五周的某个地方,你往回翻,翻到了最初的那一句。最初的那一句,是你在练习还是练习之前写下的一句,是你已经几周没读过的一句。最初的那一句,就在你重新读它的那一天,是一个小小的陌生人 —— 也是练习发生过的一小片证据。',
+    date: DATE14,
+    cover: '/blog-covers/the-first-time-you-read-the-first-sentence-again-zh-cn.png',
+    tags: TAGS14,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG14,
+    locale: 'zh-tw',
+    title: '你第一次重新讀那句最初的那一句',
+    description: '有那麼一天,在第四、第五週的某個地方,你往回翻,翻到了最初的那一句。最初的那一句,是你在練習還是練習之前寫下的一句,是你已經幾週沒讀過的一句。最初的那一句,就在你重新讀它的那一天,是一個小小的陌生人 —— 也是練習發生過的一小片證據。',
+    date: DATE14,
+    cover: '/blog-covers/the-first-time-you-read-the-first-sentence-again-zh-tw.png',
+    tags: TAGS14,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG14,
+    locale: 'ja',
+    title: '一番最初の一文を、もういちど読んだ日',
+    description: 'そんな日がある。第四週か第五週のどこかに、あなたがずっとスクロールして戻っていって、一番最初の一文にたどり着く日。最初の一文は、ちいさな箱のいちばん上にある一文。もういちど読んだ日、最初の一文は、ちいさな見知らぬ人になる —— そして、この習慣が起こったちいさな証拠でもある。',
+    date: DATE14,
+    cover: '/blog-covers/the-first-time-you-read-the-first-sentence-again-ja.png',
+    tags: TAGS14,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG14,
+    locale: 'ko',
+    title: '맨 처음에 쓴 한 문장을, 다시 읽는 날',
+    description: '그런 날이 있다. 네 번째 주, 아니 다섯 번째 주의 어딘가에서, 당신이 끝까지 스크롤을 거슬러 올라가서 가장 처음에 쓴 한 문장에 도달하는 날. 가장 처음의 한 문장은, 작은 상자 맨 위에 있는 한 문장. 다시 읽는 그날, 가장 처음의 한 문장은, 작은 낯선 사람이 된다 —— 그리고 이 습관이 일어났다는 작은 증거이기도 하다.',
+    date: DATE14,
+    cover: '/blog-covers/the-first-time-you-read-the-first-sentence-again-ko.png',
+    tags: TAGS14,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG14,
+    locale: 'de',
+    title: 'Das erste Mal, dass du den allerersten Satz wiederliest',
+    description: 'Es gibt einen Tag, irgendwo in der vierten oder fünften Woche, an dem du nach oben scrollst und die allererste Zeile wiederfindest. Die erste Zeile ist eine kleine Zeile ganz oben in einer kleinen Box. Die erste Zeile ist, an dem Tag, an dem du sie wiederliest, ein kleiner Fremder — und ein kleiner Beweis, dass die Übung stattgefunden hat.',
+    date: DATE14,
+    cover: '/blog-covers/the-first-time-you-read-the-first-sentence-again-de.png',
+    tags: TAGS14,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG14,
+    locale: 'fr',
+    title: 'La première fois où tu relis la toute première phrase',
+    description: "Il y a un jour, quelque part dans la quatrième ou la cinquième semaine, où tu remontes tout en haut et tu retrouves la toute première phrase. La première phrase est une petite phrase tout en haut d'une petite boîte. La première phrase est, le jour où tu la relis, un petit étranger — et un petit morceau de preuve que la pratique a eu lieu.",
+    date: DATE14,
+    cover: '/blog-covers/the-first-time-you-read-the-first-sentence-again-fr.png',
+    tags: TAGS14,
+    readingMinutes: 5,
+  }
+,
+  {
+    slug: SLUG14,
+    locale: 'es',
+    title: 'La primera vez que vuelves a leer la primera frase',
+    description: 'Hay un día, en algún lugar de la cuarta o quinta semana, en que haces scroll hacia arriba y encuentras la primera frase. La primera frase es una pequeña frase en lo alto de una pequeña caja. La primera frase es, el día en que la relees, un pequeño extraño — y un pequeño trozo de prueba de que la práctica ocurrió.',
+    date: DATE14,
+    cover: '/blog-covers/the-first-time-you-read-the-first-sentence-again-es.png',
+    tags: TAGS14,
+    readingMinutes: 5,
+  }
+,
+];
+
 const M1_DATE = '2026-07-18';
 
 const M1_SLUG_A = 'tamagotchi-app-2026';
@@ -1732,6 +1834,7 @@ export const blogPosts: BlogPost[] = [
   ...dailyPosts11,
   ...dailyPosts12,
   ...dailyPosts13,
+  ...dailyPosts14,
   ...m1PostsA,
   ...m1PostsB,
   ...m1PostsC,
