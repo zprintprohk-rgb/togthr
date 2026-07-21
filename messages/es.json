@@ -177,7 +177,13 @@
       "eternal": {
         "name": "Togthr Eternal",
         "tagline": "Todo incluido + exclusivo",
-        "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
+        "features": [
+          "Todo de Plus",
+          "Todos los 50+ skins desbloqueados",
+          "Mascotas legendarias doradas",
+          "Soporte prioritario",
+          "Acceso anticipado a nuevas funciones"
+        ]
       }
     },
     "cta": "Comenzar ahora",

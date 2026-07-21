@@ -177,7 +177,13 @@
       "eternal": {
         "name": "Togthr Eternal",
         "tagline": "Voller Zugang + exklusiv",
-        "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
+        "features": [
+          "Alles in Plus",
+          "Alle 50+ Haustier-Suits freigeschaltet",
+          "Goldene legendäre Haustiere",
+          "Prioritäts-Support",
+          "Früher Zugriff auf neue Funktionen"
+        ]
       }
     },
     "cta": "Jetzt starten",

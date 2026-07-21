@@ -177,7 +177,13 @@
       "eternal": {
         "name": "Togthr 이터널",
         "tagline": "전부 잠금해제 + 독점",
-        "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
+        "features": [
+          "Plus 전 기능",
+          "전체 50+ 펫 슈트 해제",
+          "골든 레전드 펫",
+          "우선 지원",
+          "신기능 선행 체험"
+        ]
       }
     },
     "cta": "지금 시작하기",

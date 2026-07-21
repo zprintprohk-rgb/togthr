@@ -177,7 +177,13 @@
       "eternal": {
         "name": "Togthr エターナル",
         "tagline": "すべて解禁 + 限定",
-        "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
+        "features": [
+          "Plus 全機能",
+          "50+ ペットスーツ全解放",
+          "金色レジェンダリーペット",
+          "優先サポート",
+          "新機能先行体験"
+        ]
       }
     },
     "cta": "今すぐはじめる",

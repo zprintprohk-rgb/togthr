@@ -177,7 +177,13 @@
       "eternal": {
         "name": "Togthr 至尊",
         "tagline": "全权限 + 独家",
-        "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
+        "features": [
+          "Plus 全部功能",
+          "解锁全部 50+ 套装",
+          "金色传说宠物",
+          "优先客服",
+          "抢先体验新功能"
+        ]
       }
     },
     "cta": "立即加入",
