@@ -501,6 +501,10 @@ const BODIES: Record<Locale, Body> = {
   }
 }
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }))
+}
+
 export async function generateMetadata({
   params,
 }: {
