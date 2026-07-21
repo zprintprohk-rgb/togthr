@@ -2298,6 +2298,580 @@ const m2Posts_ai_companion_for_relationship_not_replacement: BlogPost[] = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// M3-03 batch (2026-08-15): 6 cluster-A/B posts × 8 locales (follow-up to M2-02)
+// ──────────────────────────────────────────────────────────────────────
+
+const M3_03_COUPLES_APP_COMPARISON_DATE = '2026-08-15';
+const M3_03_COUPLES_APP_COMPARISON_SLUG = 'couples-app-comparison';
+const M3_03_COUPLES_APP_COMPARISON_TAGS = ['couples', 'comparison', 'best-of', 'long-distance', 'review'];
+
+const m3Posts_couples_app_comparison: BlogPost[] = [
+  {
+    slug: M3_03_COUPLES_APP_COMPARISON_SLUG,
+    locale: 'en',
+    title: 'Couples Apps in 2026: A Quiet, Honest Comparison of the Six That Survive Month Three',
+    description:
+      'We compared six couples apps that still have active users in 2026. Most die by month three. Here is a quiet, honest comparison of the six that survive — what each is good at, what each is bad at, and which one to pick if you only have time to try one.',
+    date: M3_03_COUPLES_APP_COMPARISON_DATE,
+    cover: `/blog-covers/couples-app-comparison-en.png`,
+    tags: M3_03_COUPLES_APP_COMPARISON_TAGS,
+    readingMinutes: 9,
+  },
+  {
+    slug: M3_03_COUPLES_APP_COMPARISON_SLUG,
+    locale: 'zh-cn',
+    title: '2026 年的情侣 App:6 款活过第三个月的,一份安静而诚实的对比',
+    description:
+      '我们对比了 6 款 2026 年仍有活跃用户的情侣 App。大部分在第三个月就死了。这是一份安静而诚实的对比:每款擅长什么、差什么、如果你只有时间试一款该选谁。',
+    date: M3_03_COUPLES_APP_COMPARISON_DATE,
+    cover: `/blog-covers/couples-app-comparison-zh-cn.png`,
+    tags: M3_03_COUPLES_APP_COMPARISON_TAGS,
+    readingMinutes: 9,
+  },
+  {
+    slug: M3_03_COUPLES_APP_COMPARISON_SLUG,
+    locale: 'zh-tw',
+    title: '2026 年的情侶 App:6 款活過第三個月的,一份安靜而誠實的對比',
+    description:
+      '我們對比了 6 款 2026 年仍有活躍用戶的情侶 App。大部分在第三個月就死了。這是一份安靜而誠實的對比:每款擅長什麼、差什麼、如果你只有時間試一款該選誰。',
+    date: M3_03_COUPLES_APP_COMPARISON_DATE,
+    cover: `/blog-covers/couples-app-comparison-zh-tw.png`,
+    tags: M3_03_COUPLES_APP_COMPARISON_TAGS,
+    readingMinutes: 9,
+  },
+  {
+    slug: M3_03_COUPLES_APP_COMPARISON_SLUG,
+    locale: 'ja',
+    title: '2026年のカップルアプリ:3ヶ月目を生き延びた6つを、静かで正直に比較する',
+    description:
+      '2026年でもアクティブなユーザーを持つカップルアプリ6つを比較しました。多くは3ヶ月目で消えます。静かで正直な比較をお届けします:それぞれの得意、不得意、ひとつだけ試すならどれか。',
+    date: M3_03_COUPLES_APP_COMPARISON_DATE,
+    cover: `/blog-covers/couples-app-comparison-ja.png`,
+    tags: M3_03_COUPLES_APP_COMPARISON_TAGS,
+    readingMinutes: 9,
+  },
+  {
+    slug: M3_03_COUPLES_APP_COMPARISON_SLUG,
+    locale: 'ko',
+    title: '2026년 커플 앱:3개월을 버틴 6개를 조용하고 정직하게 비교합니다',
+    description:
+      '2026년에도 여전히活跃한 사용자를 보유한 커플 앱 6개를 비교했습니다. 대부분은 3개월 차에 사라집니다. 조용하고 정직한 비교: 각 앱의 강점, 약점, 단 하나만 시도한다면 어떤 앱을 골라야 할지.',
+    date: M3_03_COUPLES_APP_COMPARISON_DATE,
+    cover: `/blog-covers/couples-app-comparison-ko.png`,
+    tags: M3_03_COUPLES_APP_COMPARISON_TAGS,
+    readingMinutes: 9,
+  },
+  {
+    slug: M3_03_COUPLES_APP_COMPARISON_SLUG,
+    locale: 'de',
+    title: 'Paar-Apps 2026: Ein leiser, ehrlicher Vergleich der sechs, die Monat drei überleben',
+    description:
+      'Wir haben sechs Paar-Apps verglichen, die 2026 noch aktive Nutzer haben. Die meisten sterben in Monat drei. Hier ist ein leiser, ehrlicher Vergleich — was jede gut kann, was jede schlecht kann, und welche man wählt, wenn man nur Zeit hat, eine zu testen.',
+    date: M3_03_COUPLES_APP_COMPARISON_DATE,
+    cover: `/blog-covers/couples-app-comparison-de.png`,
+    tags: M3_03_COUPLES_APP_COMPARISON_TAGS,
+    readingMinutes: 9,
+  },
+  {
+    slug: M3_03_COUPLES_APP_COMPARISON_SLUG,
+    locale: 'fr',
+    title: 'Applications pour couples en 2026 : une comparaison discrète et honnête des six qui survivent au troisième mois',
+    description:
+      'On a comparé six apps pour couples qui ont encore des utilisateurs actifs en 2026. La plupart meurent au troisième mois. Voici une comparaison discrète et honnête — ce que chacune fait bien, ce que chacune fait mal, et laquelle essayer si vous n\'avez le temps que d\'une.',
+    date: M3_03_COUPLES_APP_COMPARISON_DATE,
+    cover: `/blog-covers/couples-app-comparison-fr.png`,
+    tags: M3_03_COUPLES_APP_COMPARISON_TAGS,
+    readingMinutes: 9,
+  },
+  {
+    slug: M3_03_COUPLES_APP_COMPARISON_SLUG,
+    locale: 'es',
+    title: 'Apps para parejas en 2026: una comparación discreta y honesta de las seis que sobreviven al tercer mes',
+    description:
+      'Comparamos seis apps para parejas que aún tienen usuarios activos en 2026. La mayoría muere en el tercer mes. Aquí va una comparación discreta y honesta: en qué destaca cada una, en qué falla, y cuál elegir si solo tienes tiempo de probar una.',
+    date: M3_03_COUPLES_APP_COMPARISON_DATE,
+    cover: `/blog-covers/couples-app-comparison-es.png`,
+    tags: M3_03_COUPLES_APP_COMPARISON_TAGS,
+    readingMinutes: 9,
+  },
+];
+
+const M3_03_STUDY_FOCUS_PET_APP_DATE = '2026-08-15';
+const M3_03_STUDY_FOCUS_PET_APP_SLUG = 'study-focus-pet-app';
+const M3_03_STUDY_FOCUS_PET_APP_TAGS = ['focus', 'study', 'productivity', 'pomodoro', 'student'];
+
+const m3Posts_study_focus_pet_app: BlogPost[] = [
+  {
+    slug: M3_03_STUDY_FOCUS_PET_APP_SLUG,
+    locale: 'en',
+    title: 'A Study Focus Pet: Why a Small Virtual Creature Beats Streak Counters for Students',
+    description:
+      'Streak counters feel like homework. A study focus pet feels like a tiny friend sitting next to you. Here is why a virtual pet is the most underrated study app of 2026, and the three design choices that make it work without becoming another productivity tax.',
+    date: M3_03_STUDY_FOCUS_PET_APP_DATE,
+    cover: `/blog-covers/study-focus-pet-app-en.png`,
+    tags: M3_03_STUDY_FOCUS_PET_APP_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_STUDY_FOCUS_PET_APP_SLUG,
+    locale: 'zh-cn',
+    title: '学习专注宠物:为什么一只小虚拟生物比连续打卡更管用',
+    description:
+      '连续打卡像写作业。一只学习专注宠物像坐在你旁边的小朋友。这就是为什么虚拟宠物是 2026 年最被低估的学习 App —— 以及让它能用、又不变成另一种生产力税的 3 个设计选择。',
+    date: M3_03_STUDY_FOCUS_PET_APP_DATE,
+    cover: `/blog-covers/study-focus-pet-app-zh-cn.png`,
+    tags: M3_03_STUDY_FOCUS_PET_APP_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_STUDY_FOCUS_PET_APP_SLUG,
+    locale: 'zh-tw',
+    title: '學習專注寵物:為什麼一隻小虛擬生物比連續打卡更管用',
+    description:
+      '連續打卡像寫作業。一隻學習專注寵物像坐在你旁邊的小朋友。這就是為什麼虛擬寵物是 2026 年最被低估的學習 App —— 以及讓它能用、又不成為另一種生產力稅的 3 個設計選擇。',
+    date: M3_03_STUDY_FOCUS_PET_APP_DATE,
+    cover: `/blog-covers/study-focus-pet-app-zh-tw.png`,
+    tags: M3_03_STUDY_FOCUS_PET_APP_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_STUDY_FOCUS_PET_APP_SLUG,
+    locale: 'ja',
+    title: '勉強フォーカスペット:小さなバーチャル生物が連続記録カウンターより効く理由',
+    description:
+      '連続記録カウンターは宿題みたいに感じる。勉強フォーカスペットは隣に座る小さな友達みたいに感じる。2026年の最も過小評価されている勉強アプリがなぜバーチャルペットなのか、そして生産性の新たな税にならない 3 つの設計判断。',
+    date: M3_03_STUDY_FOCUS_PET_APP_DATE,
+    cover: `/blog-covers/study-focus-pet-app-ja.png`,
+    tags: M3_03_STUDY_FOCUS_PET_APP_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_STUDY_FOCUS_PET_APP_SLUG,
+    locale: 'ko',
+    title: '공부 집중 펫 앱:작은 가상 생물이 연속 기록 카운터보다 학생에게 효과적인 이유',
+    description:
+      '연속 기록 카운터는 숙제 같고, 공부 집중 펫은 옆에 앉아 있는 작은 친구 같습니다. 2026년 가장 과소평가된 공부 앱이 가상 펫인 이유, 그리고 또 다른 생산성 세금이 되지 않게 만드는 3가지 디자인 선택을 정리합니다.',
+    date: M3_03_STUDY_FOCUS_PET_APP_DATE,
+    cover: `/blog-covers/study-focus-pet-app-ko.png`,
+    tags: M3_03_STUDY_FOCUS_PET_APP_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_STUDY_FOCUS_PET_APP_SLUG,
+    locale: 'de',
+    title: 'Lern-Fokus-Haustier: Warum eine kleine virtuelle Kreatur Streak-Zähler für Studenten schlägt',
+    description:
+      'Streak-Zähler fühlen sich wie Hausaufgaben an. Ein Lern-Fokus-Haustier fühlt sich wie ein kleiner Freund neben dir an. Hier ist, warum ein virtuelles Haustier die am meisten unterschätzte Lern-App 2026 ist — und die drei Designentscheidungen, die es funktionieren lassen, ohne eine weitere Produktivitätssteuer zu werden.',
+    date: M3_03_STUDY_FOCUS_PET_APP_DATE,
+    cover: `/blog-covers/study-focus-pet-app-de.png`,
+    tags: M3_03_STUDY_FOCUS_PET_APP_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_STUDY_FOCUS_PET_APP_SLUG,
+    locale: 'fr',
+    title: 'Animal de concentration d\'étude : pourquoi une petite créature virtuelle bat les compteurs de série pour les étudiants',
+    description:
+      'Les compteurs de série donnent l\'impression de devoir faire ses devoirs. Un animal de concentration d\'étude donne l\'impression d\'un petit ami assis à côté de vous. Voici pourquoi un animal virtuel est l\'app d\'étude la plus sous-estimée de 2026, et les trois choix de design qui la font fonctionner sans devenir une autre taxe à la productivité.',
+    date: M3_03_STUDY_FOCUS_PET_APP_DATE,
+    cover: `/blog-covers/study-focus-pet-app-fr.png`,
+    tags: M3_03_STUDY_FOCUS_PET_APP_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_STUDY_FOCUS_PET_APP_SLUG,
+    locale: 'es',
+    title: 'Mascota de concentración de estudio: por qué una pequeña criatura virtual supera a los contadores de rachas para estudiantes',
+    description:
+      'Los contadores de rachas se sienten como tarea. Una mascota de concentración de estudio se siente como un pequeño amigo sentado a tu lado. Aquí va por qué una mascota virtual es la app de estudio más subestimada de 2026, y las tres decisiones de diseño que la hacen funcionar sin convertirse en otro impuesto a la productividad.',
+    date: M3_03_STUDY_FOCUS_PET_APP_DATE,
+    cover: `/blog-covers/study-focus-pet-app-es.png`,
+    tags: M3_03_STUDY_FOCUS_PET_APP_TAGS,
+    readingMinutes: 7,
+  },
+];
+
+const M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE = '2026-08-15';
+const M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG = 'desktop-pet-productivity-2026';
+const M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS = ['desktop-pet', 'productivity', 'ambient-companion', 'work-from-home', 'loneliness'];
+
+const m3Posts_desktop_pet_productivity_2026: BlogPost[] = [
+  {
+    slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
+    locale: 'en',
+    title: 'Desktop Pet for Productivity in 2026: Why a Tiny Pixel on Your Taskbar Beats a Productivity App',
+    description:
+      'A desktop pet does not schedule, not remind, not optimize. It is, by every measure, useless. And that is exactly why it works. Here is the case for a tiny pixel on your taskbar as the productivity tool of 2026.',
+    date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
+    cover: `/blog-covers/desktop-pet-productivity-2026-en.png`,
+    tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
+    locale: 'zh-cn',
+    title: '2026 年的桌面宠物与生产力:为什么任务栏上的一个小像素比生产力 App 更香',
+    description:
+      '桌面宠物不安排日程、不提醒、不优化。按任何指标看,它都「没用」。这正是它起作用的原因。这是任务栏上的一个小像素成为 2026 年生产力工具的理由。',
+    date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
+    cover: `/blog-covers/desktop-pet-productivity-2026-zh-cn.png`,
+    tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
+    locale: 'zh-tw',
+    title: '2026 年的桌面寵物與生產力:為什麼工作列上的一個小像素比生產力 App 更香',
+    description:
+      '桌面寵物不安排行程、不提醒、不優化。按任何指標看,它都「沒用」。這正是它起作用的原因。這是工作列上的一個小像素成為 2026 年生產力工具的理由。',
+    date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
+    cover: `/blog-covers/desktop-pet-productivity-2026-zh-tw.png`,
+    tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
+    locale: 'ja',
+    title: '2026年のデスクトップペットと生産性:タスクバーの小さなピクセルが生産性アプリに勝つ理由',
+    description:
+      'デスクトップペットはスケジュールを組まないし、リマインドもしない、最適化もしません。あらゆる指標で「無用」です。それこそが効く理由です。2026年の生産性ツールとして、タスクバーの小さなピクセルがなぜ意味を持つのかを語ります。',
+    date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
+    cover: `/blog-covers/desktop-pet-productivity-2026-ja.png`,
+    tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
+    locale: 'ko',
+    title: '2026년 데스크톱 펫과 생산성:작업 표시줄의 작은 픽셀이 생산성 앱을 이기는 이유',
+    description:
+      '데스크톱 펫은 일정을 잡지 않고, 알림을 주지 않으며, 최적화하지도 않습니다. 모든 지표에서 \'쓸모없습니다\'. 바로 그 점이 효과를 내는 이유입니다. 2026년 생산성 도구로서 작업 표시줄의 작은 픽셀이 왜 의미 있는지 정리합니다.',
+    date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
+    cover: `/blog-covers/desktop-pet-productivity-2026-ko.png`,
+    tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
+    locale: 'de',
+    title: 'Desktop-Haustier und Produktivität 2026: Warum ein winziges Pixel in der Taskleiste eine Produktivitäts-App schlägt',
+    description:
+      'Ein Desktop-Haustier plant nicht, erinnert nicht, optimiert nicht. Es ist nach jedem Maßstab nutzlos. Und genau deshalb funktioniert es. Hier ist das Plädoyer für ein winziges Pixel in der Taskleiste als Produktivitäts-Tool des Jahres 2026.',
+    date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
+    cover: `/blog-covers/desktop-pet-productivity-2026-de.png`,
+    tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
+    locale: 'fr',
+    title: 'Animal de bureau et productivité en 2026 : pourquoi un petit pixel dans la barre des tâches bat une app de productivité',
+    description:
+      'Un animal de bureau ne planifie pas, ne rappelle pas, n\'optimise pas. Il est, à toute mesure, inutile. Et c\'est exactement pour ça qu\'il marche. Voici le plaidoyer pour un petit pixel dans la barre des tâches comme outil de productivité de 2026.',
+    date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
+    cover: `/blog-covers/desktop-pet-productivity-2026-fr.png`,
+    tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
+    locale: 'es',
+    title: 'Mascota de escritorio y productividad en 2026: por qué un pequeño píxel en la barra de tareas le gana a una app de productividad',
+    description:
+      'Una mascota de escritorio no agenda, no recuerda, no optimiza. Es, por toda medida, inútil. Y por eso precisamente funciona. Aquí va el alegato por un pequeño píxel en la barra de tareas como la herramienta de productividad de 2026.',
+    date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
+    cover: `/blog-covers/desktop-pet-productivity-2026-es.png`,
+    tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
+    readingMinutes: 6,
+  },
+];
+
+const M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE = '2026-08-15';
+const M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG = 'halloween-virtual-pet-guide';
+const M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS = ['halloween', 'seasonal', 'virtual-pet', 'skins', 'limited-edition'];
+
+const m3Posts_halloween_virtual_pet_guide: BlogPost[] = [
+  {
+    slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
+    locale: 'en',
+    title: 'Halloween Virtual Pet: The 2026 Guide to Seasonal Skins, Limited Drops, and What to Skip',
+    description:
+      'Halloween is the biggest seasonal drop in the virtual pet category. Here is the 2026 guide — which apps are doing seasonal drops well, which ones are doing them as cash-grab FOMO, and what to look for before you spend.',
+    date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
+    cover: `/blog-covers/halloween-virtual-pet-guide-en.png`,
+    tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
+    locale: 'zh-cn',
+    title: '万圣节虚拟宠物:2026 季节皮肤、限定更新与避坑指南',
+    description:
+      '万圣节是虚拟宠物品类最大的季节节点。这是 2026 指南 —— 哪些 App 真的在做季节更新、哪些是 FOMO 抢钱套路,以及付费前该看什么。',
+    date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
+    cover: `/blog-covers/halloween-virtual-pet-guide-zh-cn.png`,
+    tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
+    locale: 'zh-tw',
+    title: '萬聖節虛擬寵物:2026 季節皮膚、限定更新與避坑指南',
+    description:
+      '萬聖節是虛擬寵物品類最大的季節節點。這是 2026 指南 —— 哪些 App 真的在做季節更新、哪些是 FOMO 搶錢套路,以及付費前該看什麼。',
+    date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
+    cover: `/blog-covers/halloween-virtual-pet-guide-zh-tw.png`,
+    tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
+    locale: 'ja',
+    title: 'ハロウィン・バーチャルペット:2026年版 季節限定スキン・限定ドロップ・スキップすべきもののガイド',
+    description:
+      'ハロウィンはバーチャルペットカテゴリ最大の季節イベントです。2026年版のガイドをお届けします — 本当に季節ドロップを頑張っているアプリ、FOMO商法のアプリ、そして課金前にチェックすべきポイント。',
+    date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
+    cover: `/blog-covers/halloween-virtual-pet-guide-ja.png`,
+    tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
+    locale: 'ko',
+    title: '할로윈 가상 펫:2026 시즌 스킨, 한정 드롭, 건너뛰어야 할 것 가이드',
+    description:
+      '할로윈은 가상 펫 카테고리에서 가장 큰 시즌 이벤트입니다. 2026 가이드: 진짜 시즌 드롭을 잘하는 앱, FOMO 수작을 쓰는 앱, 결제 전 확인해야 할 포인트들을 정리합니다.',
+    date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
+    cover: `/blog-covers/halloween-virtual-pet-guide-ko.png`,
+    tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
+    locale: 'de',
+    title: 'Halloween-Virtual-Pet: Der 2026-Guide zu saisonalen Skins, limitierten Drops und worauf man verzichten sollte',
+    description:
+      'Halloween ist der größte saisonale Drop in der Kategorie der virtuellen Haustiere. Hier ist der 2026-Guide — welche Apps saisonale Drops gut machen, welche sie als FOMO-Abzocke betreiben, und worauf man achten sollte, bevor man zahlt.',
+    date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
+    cover: `/blog-covers/halloween-virtual-pet-guide-de.png`,
+    tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
+    locale: 'fr',
+    title: 'Animal virtuel d\'Halloween : le guide 2026 des skins saisonniers, drops limités et ce qu\'il faut éviter',
+    description:
+      'Halloween est le plus gros drop saisonnier de la catégorie des animaux virtuels. Voici le guide 2026 — quelles apps font bien les drops saisonniers, lesquelles en font un cash-grab FOMO, et ce qu\'il faut regarder avant de payer.',
+    date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
+    cover: `/blog-covers/halloween-virtual-pet-guide-fr.png`,
+    tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
+    locale: 'es',
+    title: 'Mascota virtual de Halloween: la guía 2026 de skins de temporada, drops limitados y qué saltarse',
+    description:
+      'Halloween es el drop estacional más grande de la categoría de mascotas virtuales. Aquí va la guía 2026 — qué apps hacen bien los drops de temporada, cuáles lo hacen como cash-grab de FOMO, y en qué fijarse antes de pagar.',
+    date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
+    cover: `/blog-covers/halloween-virtual-pet-guide-es.png`,
+    tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
+    readingMinutes: 6,
+  },
+];
+
+const M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_DATE = '2026-08-15';
+const M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_SLUG = 'long-distance-anniversary-ideas';
+const M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_TAGS = ['long-distance', 'LDR', 'anniversary', 'ideas', 'rituals'];
+
+const m3Posts_long_distance_anniversary_ideas: BlogPost[] = [
+  {
+    slug: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_SLUG,
+    locale: 'en',
+    title: 'Long Distance Anniversary Ideas That Don\'t Cost $500 in Airfare: 11 Quiet, Realistic Options',
+    description:
+      'Most \'long distance anniversary\' lists are written for couples with unlimited travel budgets. Here are 11 quieter, realistic options for couples who want to mark the day without a $500 flight. Some are digital, some are analog, all of them survive a time-zone gap.',
+    date: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_DATE,
+    cover: `/blog-covers/long-distance-anniversary-ideas-en.png`,
+    tags: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_SLUG,
+    locale: 'zh-cn',
+    title: '不用 $500 机票的异地周年纪念:11 个安静又现实的方案',
+    description:
+      '大部分「异地周年纪念」清单都是给预算无限的 CP 写的。这里有 11 个更安静、更现实的方案,给那些想标记这一天、又不想花 500 美元机票的 CP。有的是数字方式、有的是模拟方式,都能扛过时差。',
+    date: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_DATE,
+    cover: `/blog-covers/long-distance-anniversary-ideas-zh-cn.png`,
+    tags: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_SLUG,
+    locale: 'zh-tw',
+    title: '不用 $500 機票的遠距離週年紀念:11 個安靜又現實的方案',
+    description:
+      '大部分「遠距離週年紀念」清單都是給預算無限的 CP 寫的。這裡有 11 個更安靜、更現實的方案,給那些想標記這一天、又不想花 500 美元機票的 CP。有的是數位方式、有的是類比方式,都能扛過時差。',
+    date: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_DATE,
+    cover: `/blog-covers/long-distance-anniversary-ideas-zh-tw.png`,
+    tags: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_SLUG,
+    locale: 'ja',
+    title: '500ドルの飛行機代なしで済む、遠距離記念日のアイデア:静かで現実的な11案',
+    description:
+      'ほとんどの「遠距離記念日」リストは、無制限の旅行予算があるカップル向けに書かれています。500ドルのフライトなしで一日を祝いたいカップルのために、より静かで現実的な11案を紹介します。デジタルなものもアナログなものも、どちらも時差に耐えます。',
+    date: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_DATE,
+    cover: `/blog-covers/long-distance-anniversary-ideas-ja.png`,
+    tags: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_SLUG,
+    locale: 'ko',
+    title: '500달러 항공권 없이 보내는 장거리 연애 기념일:조용하고 현실적인 11가지',
+    description:
+      '대부분의 \'장거리 연애 기념일\' 리스트는 여행 예산이 무제한인 커플을 위해 쓰여 있습니다. 500달러짜리 비행기표 없이 하루를 기념하고 싶은 커플을 위한, 더 조용하고 현실적인 11가지 아이디어를 정리합니다. 디지털도, 아날로그도, 둘 다 시간 차를 견딥니다.',
+    date: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_DATE,
+    cover: `/blog-covers/long-distance-anniversary-ideas-ko.png`,
+    tags: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_SLUG,
+    locale: 'de',
+    title: 'Fernbeziehungs-Jahrestag-Ideen ohne 500-Dollar-Flug: 11 leise, realistische Optionen',
+    description:
+      'Die meisten „Fernbeziehungs-Jahrestag"-Listen sind für Paare mit unbegrenztem Reisebudget. Hier sind 11 leisere, realistischere Optionen für Paare, die den Tag markieren wollen, ohne einen 500-Dollar-Flug. Manche sind digital, manche analog, alle überleben eine Zeitzone.',
+    date: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_DATE,
+    cover: `/blog-covers/long-distance-anniversary-ideas-de.png`,
+    tags: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_SLUG,
+    locale: 'fr',
+    title: 'Idées d\'anniversaire de relation à distance sans 500 $ de billet d\'avion : 11 options discrètes et réalistes',
+    description:
+      'La plupart des listes « d\'anniversaire à distance » sont écrites pour les couples au budget de voyage illimité. Voici 11 options plus discrètes et réalistes, pour les couples qui veulent marquer le jour sans un vol à 500 $. Certaines sont numériques, d\'autres analogiques, et toutes survivent au décalage horaire.',
+    date: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_DATE,
+    cover: `/blog-covers/long-distance-anniversary-ideas-fr.png`,
+    tags: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_TAGS,
+    readingMinutes: 8,
+  },
+  {
+    slug: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_SLUG,
+    locale: 'es',
+    title: 'Ideas de aniversario a distancia sin vuelo de 500$: 11 opciones discretas y realistas',
+    description:
+      'La mayoría de las listas de \'aniversario a distancia\' están escritas para parejas con presupuesto ilimitado de viaje. Aquí van 11 opciones más discretas y realistas, para parejas que quieren marcar el día sin un vuelo de 500$. Algunas son digitales, otras analógicas, y todas sobreviven a la diferencia horaria.',
+    date: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_DATE,
+    cover: `/blog-covers/long-distance-anniversary-ideas-es.png`,
+    tags: M3_03_LONG_DISTANCE_ANNIVERSARY_IDEAS_TAGS,
+    readingMinutes: 8,
+  },
+];
+
+const M3_03_DIGITAL_PET_NOSTALGIA_2026_DATE = '2026-08-15';
+const M3_03_DIGITAL_PET_NOSTALGIA_2026_SLUG = 'digital-pet-nostalgia-2026';
+const M3_03_DIGITAL_PET_NOSTALGIA_2026_TAGS = ['nostalgia', 'tamagotchi', 'neopets', 'digital-pet', 'millennial'];
+
+const m3Posts_digital_pet_nostalgia_2026: BlogPost[] = [
+  {
+    slug: M3_03_DIGITAL_PET_NOSTALGIA_2026_SLUG,
+    locale: 'en',
+    title: 'Digital Pet Nostalgia in 2026: Why Millennials Are Quietly Returning to the Pets of Their Childhood',
+    description:
+      'There is a quiet return to digital pets among millennials in 2026. Not a fad, not a wave — a return. Here is why the pets of 1996–2006 are coming back, and what the new generation of digital pet apps is getting right that the old ones could not.',
+    date: M3_03_DIGITAL_PET_NOSTALGIA_2026_DATE,
+    cover: `/blog-covers/digital-pet-nostalgia-2026-en.png`,
+    tags: M3_03_DIGITAL_PET_NOSTALGIA_2026_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_DIGITAL_PET_NOSTALGIA_2026_SLUG,
+    locale: 'zh-cn',
+    title: '2026 年的数字宠物怀旧潮:为什么千禧一代在悄悄回到童年的宠物',
+    description:
+      '2026 年,千禧一代中间出现一股对数字宠物的悄悄回归。不是一阵风、不是一波潮流 —— 是一次回归。这里讲为什么 1996–2006 年的宠物们正在回来,新一代数字宠物 App 做到了什么当年的 App 做不到的事。',
+    date: M3_03_DIGITAL_PET_NOSTALGIA_2026_DATE,
+    cover: `/blog-covers/digital-pet-nostalgia-2026-zh-cn.png`,
+    tags: M3_03_DIGITAL_PET_NOSTALGIA_2026_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_DIGITAL_PET_NOSTALGIA_2026_SLUG,
+    locale: 'zh-tw',
+    title: '2026 年的數位寵物懷舊潮:為什麼千禧世代在悄悄回到童年的寵物',
+    description:
+      '2026 年,千禧世代中間出現一股對數位寵物的悄悄回歸。不是一陣風、不是一波潮流 —— 是一次回歸。這裡講為什麼 1996–2006 年的寵物們正在回來,新一代數位寵物 App 做到了什麼當年的 App 做不到的事。',
+    date: M3_03_DIGITAL_PET_NOSTALGIA_2026_DATE,
+    cover: `/blog-covers/digital-pet-nostalgia-2026-zh-tw.png`,
+    tags: M3_03_DIGITAL_PET_NOSTALGIA_2026_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_DIGITAL_PET_NOSTALGIA_2026_SLUG,
+    locale: 'ja',
+    title: '2026年のデジタルペット・ノスタルジア:なぜミレニアル世代は静かに童年のペットに戻りつつあるのか',
+    description:
+      '2026年、ミレニアル世代の間でデジタルペットへの静かな回帰が起きています。ブームでも流行でもなく、回帰です。1996〜2006年のペットたちがなぜ戻ってきているのか、そして新しい世代のデジタルペットアプリが昔のアプリにはできなかった何を実現しているのかを語ります。',
+    date: M3_03_DIGITAL_PET_NOSTALGIA_2026_DATE,
+    cover: `/blog-covers/digital-pet-nostalgia-2026-ja.png`,
+    tags: M3_03_DIGITAL_PET_NOSTALGIA_2026_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_DIGITAL_PET_NOSTALGIA_2026_SLUG,
+    locale: 'ko',
+    title: '2026년 디지털 펫 노스탤지어:밀레니얼 세대가 조용히 어린 시절 펫으로 돌아가는 이유',
+    description:
+      '2026년, 밀레니얼 세대 사이에서 디지털 펫으로의 조용한 귀환이 일어나고 있습니다. 유행도, 파도도 아닌 귀환입니다. 1996-2006년 펫들이 왜 돌아오고 있는지, 그리고 새로운 세대 디지털 펫 앱이 과거에는 불가능했던 무엇을 해내고 있는지 정리합니다.',
+    date: M3_03_DIGITAL_PET_NOSTALGIA_2026_DATE,
+    cover: `/blog-covers/digital-pet-nostalgia-2026-ko.png`,
+    tags: M3_03_DIGITAL_PET_NOSTALGIA_2026_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_DIGITAL_PET_NOSTALGIA_2026_SLUG,
+    locale: 'de',
+    title: 'Digital-Haustier-Nostalgie 2026: Warum Millennials leise zu den Haustieren ihrer Kindheit zurückkehren',
+    description:
+      '2026 gibt es unter Millennials eine leise Rückkehr zu digitalen Haustieren. Kein Hype, keine Welle — eine Rückkehr. Hier ist, warum die Haustiere von 1996–2006 zurückkommen, und was die neue Generation von Digital-Haustier-Apps richtig macht, was die alten nicht konnten.',
+    date: M3_03_DIGITAL_PET_NOSTALGIA_2026_DATE,
+    cover: `/blog-covers/digital-pet-nostalgia-2026-de.png`,
+    tags: M3_03_DIGITAL_PET_NOSTALGIA_2026_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_DIGITAL_PET_NOSTALGIA_2026_SLUG,
+    locale: 'fr',
+    title: 'Nostalgie des animaux numériques en 2026 : pourquoi les millennials reviennent discrètement aux animaux de leur enfance',
+    description:
+      'Il y a en 2026 un retour discret aux animaux numériques chez les millennials. Pas un effet de mode, pas une vague — un retour. Voici pourquoi les animaux de 1996–2006 reviennent, et ce que la nouvelle génération d\'apps d\'animaux numériques réussit que les anciennes ne pouvaient pas.',
+    date: M3_03_DIGITAL_PET_NOSTALGIA_2026_DATE,
+    cover: `/blog-covers/digital-pet-nostalgia-2026-fr.png`,
+    tags: M3_03_DIGITAL_PET_NOSTALGIA_2026_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: M3_03_DIGITAL_PET_NOSTALGIA_2026_SLUG,
+    locale: 'es',
+    title: 'Nostalgia de mascotas digitales en 2026: por qué los millennials están volviendo en silencio a las mascotas de su infancia',
+    description:
+      'Hay en 2026 un regreso silencioso a las mascotas digitales entre los millennials. No es una moda, no es una ola — es un regreso. Aquí va por qué vuelven las mascotas de 1996–2006, y qué está logrando la nueva generación de apps de mascotas digitales que las antiguas no podían.',
+    date: M3_03_DIGITAL_PET_NOSTALGIA_2026_DATE,
+    cover: `/blog-covers/digital-pet-nostalgia-2026-es.png`,
+    tags: M3_03_DIGITAL_PET_NOSTALGIA_2026_TAGS,
+    readingMinutes: 7,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -2322,6 +2896,12 @@ export const blogPosts: BlogPost[] = [
   ...m2Posts_how_to_feel_close_in_a_long_distance_relationship,
   ...m2Posts_pixel_pet_widget_desktop,
   ...m2Posts_ai_companion_for_relationship_not_replacement,
+  ...m3Posts_couples_app_comparison,
+  ...m3Posts_study_focus_pet_app,
+  ...m3Posts_desktop_pet_productivity_2026,
+  ...m3Posts_halloween_virtual_pet_guide,
+  ...m3Posts_long_distance_anniversary_ideas,
+  ...m3Posts_digital_pet_nostalgia_2026,
 ];
 
 // ──────────────────────────────────────────────────────────────────────

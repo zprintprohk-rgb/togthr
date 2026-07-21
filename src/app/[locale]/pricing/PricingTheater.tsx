@@ -298,6 +298,17 @@ export function PricingTheater({
       <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-12 sm:py-16">
         {/* Hero */}
         <header className="mx-auto max-w-3xl text-center">
+          {/* 🎃 Halloween Limited-Time Drop — 10/1 → 10/31 */}
+          <motion.div
+            initial={prefersReduced ? false : { opacity: 0, y: -6 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-4 inline-flex items-center gap-2 rounded-full border border-orange-400/40 bg-orange-500/15 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.25em] text-orange-200 shadow-[0_0_24px_rgba(251,146,60,0.25)]"
+          >
+            <span aria-hidden="true">🎃</span>
+            <span>Halloween Limited · 10/1 → 10/31</span>
+            <span aria-hidden="true">👻</span>
+          </motion.div>
           <motion.p
             initial={prefersReduced ? false : { opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
