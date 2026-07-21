@@ -74,14 +74,39 @@
       "subtitle": "Envía stickers adorables con 1 toque",
       "cta": "Próximamente en el chat",
       "cards": {
-        "feeding": { "title": "Hora de comer", "desc": "Envía un corazón y míralo brillar de satisfacción" },
-        "capsule": { "title": "Cápsula del tiempo · Excavar", "desc": "Entierra una, tu mascota la desenterrará" },
-        "symbiosis": { "title": "Simbiosis", "desc": "Una pequeña vida que refleja vuestro vínculo" },
-        "blindbox": { "title": "Caja sorpresa 6+1", "desc": "Oferta primer pedido", "badge": "Nuevo" },
-        "nest": { "title": "Construir el nido", "desc": "Cada entrada del diario suma un ladrillo a vuestro hogar" },
-        "soulmate": { "title": "IA alma gemela", "desc": "Habla cuando quieras — te escucha de verdad" },
-        "treehole": { "title": "Agujero del árbol", "desc": "Notas anónimas, desaparecen en 24 h" },
-        "focus": {"title": "Modo Enfoque", "desc": "Tu mascota estudia y trabaja a tu lado"}
+        "feeding": {
+          "title": "Hora de comer",
+          "desc": "Envía un corazón y míralo brillar de satisfacción"
+        },
+        "capsule": {
+          "title": "Cápsula del tiempo · Excavar",
+          "desc": "Entierra una, tu mascota la desenterrará"
+        },
+        "symbiosis": {
+          "title": "Simbiosis",
+          "desc": "Una pequeña vida que refleja vuestro vínculo"
+        },
+        "blindbox": {
+          "title": "Caja sorpresa 6+1",
+          "desc": "Oferta primer pedido",
+          "badge": "Nuevo"
+        },
+        "nest": {
+          "title": "Construir el nido",
+          "desc": "Cada entrada del diario suma un ladrillo a vuestro hogar"
+        },
+        "soulmate": {
+          "title": "IA alma gemela",
+          "desc": "Habla cuando quieras — te escucha de verdad"
+        },
+        "treehole": {
+          "title": "Agujero del árbol",
+          "desc": "Notas anónimas, desaparecen en 24 h"
+        },
+        "focus": {
+          "title": "Modo Enfoque",
+          "desc": "Tu mascota estudia y trabaja a tu lado"
+        }
       }
     }
   },
@@ -218,7 +243,7 @@
       "hint": "Drop aleatorio de la caja Eternal"
     },
     "countdown": {
-      "label": "Edición Festival de Primavera",
+      "label": "Edición Halloween · Acceso anticipado",
       "endsIn": "Termina en",
       "days": "d",
       "hours": "h",
@@ -747,9 +772,18 @@
       "full-nest": "Nido lleno"
     },
     "seedEntries": {
-      "e1": { "text": "Buen tiempo hoy, salimos a caminar un rato.", "mood": "warm" },
-      "e2": { "text": "¡Por fin nieve! Estamos emocionados.", "mood": "cool" },
-      "e3": { "text": "Nuestra primera Navidad juntos 🎄", "mood": "festive" }
+      "e1": {
+        "text": "Buen tiempo hoy, salimos a caminar un rato.",
+        "mood": "warm"
+      },
+      "e2": {
+        "text": "¡Por fin nieve! Estamos emocionados.",
+        "mood": "cool"
+      },
+      "e3": {
+        "text": "Nuestra primera Navidad juntos 🎄",
+        "mood": "festive"
+      }
     }
   },
   "chat": {

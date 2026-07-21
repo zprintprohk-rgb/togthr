@@ -347,6 +347,7 @@ export function PricingTheater({
               hourLabel={copy.countdown.hourLabel}
               minLabel={copy.countdown.minLabel}
               secLabel={copy.countdown.secLabel}
+              targetMs={Date.UTC(2026, 9, 31, 23, 59, 59)}
             />
 
             {/* Region badge */}

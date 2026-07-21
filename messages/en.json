@@ -74,14 +74,39 @@
       "subtitle": "Send cute Togthr stickers to your love, in 1 tap",
       "cta": "Coming soon to chat",
       "cards": {
-        "feeding": { "title": "Feeding Time", "desc": "Send a heart, watch it glow with contentment" },
-        "capsule": { "title": "Time Capsule · Dig", "desc": "Bury one today, your pet digs it up later" },
-        "symbiosis": { "title": "Symbiosis", "desc": "A little life that mirrors your bond" },
-        "blindbox": { "title": "6+1 Blind Box", "desc": "First order special", "badge": "New" },
-        "nest": { "title": "Nest Building", "desc": "Every journal entry adds a brick to your shared home" },
-        "soulmate": { "title": "Soulmate AI", "desc": "Talk anytime — it truly listens" },
-        "treehole": { "title": "Tree Hole", "desc": "Anonymous notes, gone in 24h" },
-        "focus": {"title": "Focus Mode", "desc": "Your pet studies & works beside you"}
+        "feeding": {
+          "title": "Feeding Time",
+          "desc": "Send a heart, watch it glow with contentment"
+        },
+        "capsule": {
+          "title": "Time Capsule · Dig",
+          "desc": "Bury one today, your pet digs it up later"
+        },
+        "symbiosis": {
+          "title": "Symbiosis",
+          "desc": "A little life that mirrors your bond"
+        },
+        "blindbox": {
+          "title": "6+1 Blind Box",
+          "desc": "First order special",
+          "badge": "New"
+        },
+        "nest": {
+          "title": "Nest Building",
+          "desc": "Every journal entry adds a brick to your shared home"
+        },
+        "soulmate": {
+          "title": "Soulmate AI",
+          "desc": "Talk anytime — it truly listens"
+        },
+        "treehole": {
+          "title": "Tree Hole",
+          "desc": "Anonymous notes, gone in 24h"
+        },
+        "focus": {
+          "title": "Focus Mode",
+          "desc": "Your pet studies & works beside you"
+        }
       }
     }
   },
@@ -224,7 +249,7 @@
       "hint": "Random drop from Eternal box"
     },
     "countdown": {
-      "label": "Spring Festival Limited",
+      "label": "Halloween Limited · Early Access",
       "endsIn": "Ends in",
       "days": "d",
       "hours": "h",
@@ -753,9 +778,18 @@
       "full-nest": "Full nest"
     },
     "seedEntries": {
-      "e1": { "text": "Beautiful day today. Went out for a long walk.", "mood": "warm" },
-      "e2": { "text": "Snowfall at last! Cozy season is here.", "mood": "cool" },
-      "e3": { "text": "Our first Christmas together 🎄", "mood": "festive" }
+      "e1": {
+        "text": "Beautiful day today. Went out for a long walk.",
+        "mood": "warm"
+      },
+      "e2": {
+        "text": "Snowfall at last! Cozy season is here.",
+        "mood": "cool"
+      },
+      "e3": {
+        "text": "Our first Christmas together 🎄",
+        "mood": "festive"
+      }
     }
   },
   "chat": {

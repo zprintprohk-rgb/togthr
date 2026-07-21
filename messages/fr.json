@@ -74,14 +74,39 @@
       "subtitle": "Envoie des stickers adorables en 1 clic",
       "cta": "Bientôt dans le chat",
       "cards": {
-        "feeding": { "title": "L'heure du repas", "desc": "Offre un cœur et regarde-le rayonner de bonheur" },
-        "capsule": { "title": "Capsule temporelle · Fouille", "desc": "Enterre-en une, ton compagnon la déterrera" },
-        "symbiosis": { "title": "Symbiose", "desc": "Une petite vie qui reflète votre lien" },
-        "blindbox": { "title": "Blind Box 6+1", "desc": "Offre première commande", "badge": "Nouveau" },
-        "nest": { "title": "Construction du nid", "desc": "Chaque entrée de journal ajoute une brique à votre nid" },
-        "soulmate": { "title": "IA âme sœur", "desc": "Parle quand tu veux — il écoute vraiment" },
-        "treehole": { "title": "Trou d'arbre", "desc": "Messages anonymes, supprimés en 24 h" },
-        "focus": {"title": "Mode Focus", "desc": "Ton compagnon étudie et travaille à tes côtés"}
+        "feeding": {
+          "title": "L'heure du repas",
+          "desc": "Offre un cœur et regarde-le rayonner de bonheur"
+        },
+        "capsule": {
+          "title": "Capsule temporelle · Fouille",
+          "desc": "Enterre-en une, ton compagnon la déterrera"
+        },
+        "symbiosis": {
+          "title": "Symbiose",
+          "desc": "Une petite vie qui reflète votre lien"
+        },
+        "blindbox": {
+          "title": "Blind Box 6+1",
+          "desc": "Offre première commande",
+          "badge": "Nouveau"
+        },
+        "nest": {
+          "title": "Construction du nid",
+          "desc": "Chaque entrée de journal ajoute une brique à votre nid"
+        },
+        "soulmate": {
+          "title": "IA âme sœur",
+          "desc": "Parle quand tu veux — il écoute vraiment"
+        },
+        "treehole": {
+          "title": "Trou d'arbre",
+          "desc": "Messages anonymes, supprimés en 24 h"
+        },
+        "focus": {
+          "title": "Mode Focus",
+          "desc": "Ton compagnon étudie et travaille à tes côtés"
+        }
       }
     }
   },
@@ -218,7 +243,7 @@
       "hint": "Drop aléatoire depuis la boîte Eternal"
     },
     "countdown": {
-      "label": "Édition Nouvel An lunaire",
+      "label": "Édition Halloween · Accès anticipé",
       "endsIn": "Se termine dans",
       "days": "j",
       "hours": "h",
@@ -747,9 +772,18 @@
       "full-nest": "Nid plein"
     },
     "seedEntries": {
-      "e1": { "text": "Beau temps aujourd'hui, on est sortis marcher.", "mood": "warm" },
-      "e2": { "text": "De la neige enfin ! On est tout excités.", "mood": "cool" },
-      "e3": { "text": "Notre premier Noël ensemble 🎄", "mood": "festive" }
+      "e1": {
+        "text": "Beau temps aujourd'hui, on est sortis marcher.",
+        "mood": "warm"
+      },
+      "e2": {
+        "text": "De la neige enfin ! On est tout excités.",
+        "mood": "cool"
+      },
+      "e3": {
+        "text": "Notre premier Noël ensemble 🎄",
+        "mood": "festive"
+      }
     }
   },
   "chat": {

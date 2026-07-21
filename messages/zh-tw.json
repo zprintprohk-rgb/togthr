@@ -74,14 +74,39 @@
       "subtitle": "一鍵發送萌系表情給 TA",
       "cta": "即將上線到聊天",
       "cards": {
-        "feeding": { "title": "餵食時間", "desc": "給 TA 一顆心，看牠滿足的樣子" },
-        "capsule": { "title": "時光膠囊 · 挖寶", "desc": "埋下一個，寵物幫你挖出來" },
-        "symbiosis": { "title": "共生形態", "desc": "會反映你們關係的小生命" },
-        "blindbox": { "title": "6+1 盲盒", "desc": "首單特價", "badge": "新" },
-        "nest": { "title": "築巢", "desc": "每條日記，都給你們的共同小窩添磚加瓦" },
-        "soulmate": { "title": "靈魂伴侶 AI", "desc": "聊聊天，聽你說話" },
-        "treehole": { "title": "樹洞", "desc": "匿名留言，24h 自動消失" },
-        "focus": {"title": "專注模式", "desc": "公仔陪你一起學習工作"}
+        "feeding": {
+          "title": "餵食時間",
+          "desc": "給 TA 一顆心，看牠滿足的樣子"
+        },
+        "capsule": {
+          "title": "時光膠囊 · 挖寶",
+          "desc": "埋下一個，寵物幫你挖出來"
+        },
+        "symbiosis": {
+          "title": "共生形態",
+          "desc": "會反映你們關係的小生命"
+        },
+        "blindbox": {
+          "title": "6+1 盲盒",
+          "desc": "首單特價",
+          "badge": "新"
+        },
+        "nest": {
+          "title": "築巢",
+          "desc": "每條日記，都給你們的共同小窩添磚加瓦"
+        },
+        "soulmate": {
+          "title": "靈魂伴侶 AI",
+          "desc": "聊聊天，聽你說話"
+        },
+        "treehole": {
+          "title": "樹洞",
+          "desc": "匿名留言，24h 自動消失"
+        },
+        "focus": {
+          "title": "專注模式",
+          "desc": "公仔陪你一起學習工作"
+        }
       }
     }
   },
@@ -218,7 +243,7 @@
       "hint": "由至尊盲盒隨機掉落"
     },
     "countdown": {
-      "label": "農曆新年限定",
+      "label": "萬聖節限定 · 搶先解鎖",
       "endsIn": "倒數",
       "days": "日",
       "hours": "時",
@@ -747,9 +772,18 @@
       "full-nest": "滿巢"
     },
     "seedEntries": {
-      "e1": { "text": "今天天氣很好，出去走了走。", "mood": "warm" },
-      "e2": { "text": "下雪了！南方人激動壞了。", "mood": "cool" },
-      "e3": { "text": "第一次一起過聖誕 🎄", "mood": "festive" }
+      "e1": {
+        "text": "今天天氣很好，出去走了走。",
+        "mood": "warm"
+      },
+      "e2": {
+        "text": "下雪了！南方人激動壞了。",
+        "mood": "cool"
+      },
+      "e3": {
+        "text": "第一次一起過聖誕 🎄",
+        "mood": "festive"
+      }
     }
   },
   "chat": {

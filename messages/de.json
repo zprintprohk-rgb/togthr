@@ -74,14 +74,39 @@
       "subtitle": "Süße Sticker mit einem Tipp an deine Liebe",
       "cta": "Demnächst im Chat",
       "cards": {
-        "feeding": { "title": "Fütterungszeit", "desc": "Schenke ein Herz und sieh zu, wie es zufrieden leuchtet" },
-        "capsule": { "title": "Zeitkapsel · Schatzsuche", "desc": "Vergrabe eine – dein Pet gräbt sie wieder aus" },
-        "symbiosis": { "title": "Symbiose", "desc": "Ein kleines Leben, das eure Bindung spiegelt" },
-        "blindbox": { "title": "6+1 Blindbox", "desc": "Erstbestellungs-Angebot", "badge": "Neu" },
-        "nest": { "title": "Nestbau", "desc": "Jeder Tagebucheintrag baut euer gemeinsames Nest weiter" },
-        "soulmate": { "title": "Seelenpartner-KI", "desc": "Rede jederzeit – es hört wirklich zu" },
-        "treehole": { "title": "Baumhöhle", "desc": "Anonyme Nachrichten, nach 24 Std. gelöscht" },
-        "focus": {"title": "Fokus-Modus", "desc": "Dein Pet lernt und arbeitet neben dir"}
+        "feeding": {
+          "title": "Fütterungszeit",
+          "desc": "Schenke ein Herz und sieh zu, wie es zufrieden leuchtet"
+        },
+        "capsule": {
+          "title": "Zeitkapsel · Schatzsuche",
+          "desc": "Vergrabe eine – dein Pet gräbt sie wieder aus"
+        },
+        "symbiosis": {
+          "title": "Symbiose",
+          "desc": "Ein kleines Leben, das eure Bindung spiegelt"
+        },
+        "blindbox": {
+          "title": "6+1 Blindbox",
+          "desc": "Erstbestellungs-Angebot",
+          "badge": "Neu"
+        },
+        "nest": {
+          "title": "Nestbau",
+          "desc": "Jeder Tagebucheintrag baut euer gemeinsames Nest weiter"
+        },
+        "soulmate": {
+          "title": "Seelenpartner-KI",
+          "desc": "Rede jederzeit – es hört wirklich zu"
+        },
+        "treehole": {
+          "title": "Baumhöhle",
+          "desc": "Anonyme Nachrichten, nach 24 Std. gelöscht"
+        },
+        "focus": {
+          "title": "Fokus-Modus",
+          "desc": "Dein Pet lernt und arbeitet neben dir"
+        }
       }
     }
   },
@@ -218,7 +243,7 @@
       "hint": "Zufalls-Drop aus der Eternal-Box"
     },
     "countdown": {
-      "label": "Frühlingsfest-Edition",
+      "label": "Halloween-Edition · Early Access",
       "endsIn": "Endet in",
       "days": "T",
       "hours": "Std",
@@ -747,9 +772,18 @@
       "full-nest": "Volles Nest"
     },
     "seedEntries": {
-      "e1": { "text": "Schönes Wetter heute, wir waren spazieren.", "mood": "warm" },
-      "e2": { "text": "Schnee endlich! Wir sind ganz aufgeregt.", "mood": "cool" },
-      "e3": { "text": "Unser erstes Weihnachten zusammen 🎄", "mood": "festive" }
+      "e1": {
+        "text": "Schönes Wetter heute, wir waren spazieren.",
+        "mood": "warm"
+      },
+      "e2": {
+        "text": "Schnee endlich! Wir sind ganz aufgeregt.",
+        "mood": "cool"
+      },
+      "e3": {
+        "text": "Unser erstes Weihnachten zusammen 🎄",
+        "mood": "festive"
+      }
     }
   },
   "chat": {
