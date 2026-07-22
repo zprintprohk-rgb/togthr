@@ -2872,6 +2872,363 @@ const m3Posts_digital_pet_nostalgia_2026: BlogPost[] = [
   },
 ];
 
+
+// ─── TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP (Phase 1) ───────────────────────────────────────
+const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_DATE = '2026-07-22';
+const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_SLUG = 'tamagotchi-30th-anniversary-from-pocket-to-desktop';
+const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS = ["tamagotchi", "30th-anniversary", "virtual-pet", "nostalgia", "desktop-pet"];
+
+const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP: BlogPost[] = [
+  {
+    slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
+    locale: 'en',
+    title: "From Pocket to Desktop: 30 Years of Electronic Pets, and Where They Live Now",
+    description: "Tamagotchi turns 30 in 2026. The keychain creature that taught a generation to care has grown up, moved out of the keychain, and onto the browser tab. Here is the short history of the small pixel pet, and where it lives now.",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-en.png`,
+    tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
+    locale: 'zh-cn',
+    title: "从钥匙扣到桌面:电子宠物的 30 年,以及它们现在住在哪里",
+    description: "2026 年是 Tamagotchi 30 周年。那只教会一代人\"照顾\"的钥匙扣小宠物,长大了,搬出了钥匙扣,搬到了浏览器标签里。这是这只小像素宠物的简史,以及它现在住在哪里。",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-zh-cn.png`,
+    tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
+    locale: 'zh-tw',
+    title: "從鑰匙圈到桌面:電子寵物的 30 年,以及它們現在住在哪裡",
+    description: "2026 年是 Tamagotchi 30 週年。那隻教會一代人「照顧」的鑰匙圈小寵物,長大了,搬出了鑰匙圈,搬到了瀏覽器分頁裡。這是這隻小像素寵物的簡史,以及它現在住在哪裡。",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-zh-tw.png`,
+    tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
+    locale: 'ja',
+    title: "キーホルダーからデスクトップへ:30 年の電子ペット、そして今どこにいるのか",
+    description: "2026 年にタマゴッチは 30 周年を迎える。世代に「世話をする」を教えてくれたキーホルダーの生き物が、大人になり、キーホルダーを出て、ブラウザのタブに引っ越した。この小さなピクセルペットの短い歴史と、今の居場所。",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-ja.png`,
+    tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
+    locale: 'ko',
+    title: "열쇠고리에서 데스크톱으로:30 년의 전자 애완동물, 그리고 지금 어디에 사는지",
+    description: "2026 년에 다마고치가 30 주년을 맞는다. 한 세대에 \"돌봄\"을 가르쳐준 열쇠고리 생물이 다 자라서 열쇠고리를 벗어나 브라우저 탭으로 이사했다. 이 작은 픽셀 펫의 짧은 역사와 지금의 거처.",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-ko.png`,
+    tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
+    locale: 'de',
+    title: "Vom Schlüsselanhänger auf den Desktop: 30 Jahre digitale Haustiere und wo sie heute leben",
+    description: "Tamagotchi wird 30 im Jahr 2026. Das Schlüsselanhänger-Wesen, das einer Generation beibrachte, sich zu kümmern, ist erwachsen geworden, hat den Schlüsselanhänger verlassen und ist in den Browser-Tab gezogen. Eine kurze Geschichte des kleinen Pixel-Haustiers, und wo es heute lebt.",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-de.png`,
+    tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
+    locale: 'fr',
+    title: "Du porte-clés au bureau : 30 ans d'animaux électroniques, et où ils vivent aujourd'hui",
+    description: "Tamagotchi fête ses 30 ans en 2026. La créature de porte-clés qui a appris à toute une génération à prendre soin est devenue adulte, a quitté le porte-clés et a déménagé dans l'onglet du navigateur. Voici la courte histoire de ce petit animal en pixels, et où il vit maintenant.",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-fr.png`,
+    tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
+    locale: 'es',
+    title: "Del llavero al escritorio: 30 años de mascotas electrónicas y dónde viven ahora",
+    description: "Tamagotchi cumple 30 años en 2026. La criatura del llavero que enseñó a una generación entera a cuidar ha crecido, ha salido del llavero y se ha mudado a la pestaña del navegador. Esta es la corta historia de la pequeña mascota en píxeles, y dónde vive ahora.",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-es.png`,
+    tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
+    readingMinutes: 6,
+  }
+
+];
+
+// ─── TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS (Phase 1) ───────────────────────────────────────
+const TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS_DATE = '2026-07-22';
+const TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS_SLUG = 'tamagotchi-alternative-for-adults';
+const TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS_TAGS = ["tamagotchi", "alternative", "adult", "virtual-pet", "desktop-pet"];
+
+const TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS: BlogPost[] = [
+  {
+    slug: 'tamagotchi-alternative-for-adults',
+    locale: 'en',
+    title: "A Tamagotchi Alternative for Adults That Does Not Punish You for a Quiet Week",
+    description: "The original Tamagotchi was a keychain, and keychains have weight. A modern Tamagotchi alternative for adults lives in your browser, never dies if you forget it for a weekend, and grows through 5 stages as you keep showing up. No keychain, no death, no noise.",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-alternative-for-adults-en.png`,
+    tags: TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: 'tamagotchi-alternative-for-adults',
+    locale: 'zh-cn',
+    title: "给成年人的电子宠物替代:不会因为你安静的一周而惩罚你",
+    description: "最初的 Tamagotchi 是钥匙扣,钥匙扣是有重量的。一个给成年人的现代电子宠物替代,住在你的浏览器里,周末忘了也不会死,你坚持打卡它就 5 阶段长大。没有钥匙扣,没有死亡,没有噪音。",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-alternative-for-adults-zh-cn.png`,
+    tags: TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: 'tamagotchi-alternative-for-adults',
+    locale: 'zh-tw',
+    title: "給成年人的電子寵物替代:不會因為你安靜的一週而懲罰你",
+    description: "最初的 Tamagotchi 是鑰匙圈,鑰匙圈是有重量的。一個給成年人的現代電子寵物替代,住在你的瀏覽器裡,週末忘了也不會死,你堅持打卡它就 5 階段長大。沒有鑰匙圈,沒有死亡,沒有噪音。",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-alternative-for-adults-zh-tw.png`,
+    tags: TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: 'tamagotchi-alternative-for-adults',
+    locale: 'ja',
+    title: "大人のためのタマゴッチ代替:静かな 1 週間を罰しない",
+    description: "元祖タマゴッチはキーホルダーでした。キーホルダーには重みがあります。大人のための現代のタマゴッチ代替は、ブラウザに住んで、週末忘れたからって死なず、5 段階のステージで育っていく。キーホルダーなし、死なし、ノイズなし。",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-alternative-for-adults-ja.png`,
+    tags: TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: 'tamagotchi-alternative-for-adults',
+    locale: 'ko',
+    title: "어른을 위한 다마고치 대안:조용한 일주일 때문에 벌을 주지 않는",
+    description: "오리지널 다마고치는 열쇠고리였고, 열쇠고리에는 무게가 있다. 어른을 위한 현대식 다마고치 대안은 브라우저에 살며, 주말에 잊어도 죽지 않고, 꾸준히 체크인하면 5 단계로 자란다. 열쇠고리도, 죽음도, 소음도 없다.",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-alternative-for-adults-ko.png`,
+    tags: TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: 'tamagotchi-alternative-for-adults',
+    locale: 'de',
+    title: "Eine Tamagotchi-Alternative für Erwachsene, die Sie nicht für eine ruhige Woche bestraft",
+    description: "Das ursprüngliche Tamagotchi war ein Schlüsselanhänger, und Schlüsselanhänger haben Gewicht. Eine moderne Tamagotchi-Alternative für Erwachsene lebt in Ihrem Browser, stirbt nicht, wenn Sie es am Wochenende vergessen, und wächst in 5 Stufen, während Sie weiter auftauchen. Kein Schlüsselanhänger, kein Tod, kein Lärm.",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-alternative-for-adults-de.png`,
+    tags: TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: 'tamagotchi-alternative-for-adults',
+    locale: 'fr',
+    title: "Une alternative au Tamagotchi pour adultes qui ne vous punit pas pour une semaine calme",
+    description: "Le Tamagotchi original était un porte-clés, et les porte-clés ont du poids. Une alternative moderne au Tamagotchi pour adultes vit dans votre navigateur, ne meurt pas si vous l'oubliez un week-end, et grandit en 5 étapes au fur et à mesure que vous revenez. Pas de porte-clés, pas de mort, pas de bruit.",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-alternative-for-adults-fr.png`,
+    tags: TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: 'tamagotchi-alternative-for-adults',
+    locale: 'es',
+    title: "Una alternativa al Tamagotchi para adultos que no te castiga por una semana tranquila",
+    description: "El Tamagotchi original era un llavero, y los llaveros tienen peso. Una alternativa moderna al Tamagotchi para adultos vive en tu navegador, no muere si te olvidas de él un fin de semana, y crece en 5 etapas a medida que sigues apareciendo. Sin llavero, sin muerte, sin ruido.",
+    date: '2026-07-22',
+    cover: `/blog-covers/tamagotchi-alternative-for-adults-es.png`,
+    tags: TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS_TAGS,
+    readingMinutes: 5,
+  }
+
+];
+
+// ─── TOGTHR_VS_WIDGETABLE (Phase 1) ───────────────────────────────────────
+const TOGTHR_VS_WIDGETABLE_DATE = '2026-07-22';
+const TOGTHR_VS_WIDGETABLE_SLUG = 'togthr-vs-widgetable';
+const TOGTHR_VS_WIDGETABLE_TAGS = ["comparison", "widgetable", "togthr", "virtual-pet", "couples"];
+
+const TOGTHR_VS_WIDGETABLE: BlogPost[] = [
+  {
+    slug: 'togthr-vs-widgetable',
+    locale: 'en',
+    title: "Togthr vs Widgetable: Lock-Screen Wallpaper vs a Creature That Grows",
+    description: "Widgetable is the most popular couples-widget app on Android. Togthr is a small pixel pet that lives in your browser and grows through 5 stages. The difference is the difference between a wallpaper and a life.",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-widgetable-en.png`,
+    tags: TOGTHR_VS_WIDGETABLE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-widgetable',
+    locale: 'zh-cn',
+    title: "Togthr vs Widgetable:锁屏壁纸,还是一只会长大的生命",
+    description: "Widgetable 是 Android 上最受欢迎的情侣 widget App。Togthr 是一只住在浏览器里的小像素宠物,5 阶段长大。两者的区别,是壁纸和生命的区别。",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-widgetable-zh-cn.png`,
+    tags: TOGTHR_VS_WIDGETABLE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-widgetable',
+    locale: 'zh-tw',
+    title: "Togthr vs Widgetable:鎖屏桌布,還是一隻會長大的生命",
+    description: "Widgetable 是 Android 上最受歡迎的情侶 widget App。Togthr 是一隻住在瀏覽器裡的小像素寵物,5 階段長大。兩者的區別,是桌布和生命的區別。",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-widgetable-zh-tw.png`,
+    tags: TOGTHR_VS_WIDGETABLE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-widgetable',
+    locale: 'ja',
+    title: "Togthr vs Widgetable:ロック画面の壁紙と、成長する命",
+    description: "Widgetable は Android で最も人気のあるカップル向けウィジェットアプリ。Togthr はブラウザに住む 5 段階で成長する小さなピクセルペット。壁紙と命の違いが、2 つのアプリの違い。",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-widgetable-ja.png`,
+    tags: TOGTHR_VS_WIDGETABLE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-widgetable',
+    locale: 'ko',
+    title: "Togthr vs Widgetable:잠금화면 배경화면, 그리고 자라는 생명",
+    description: "Widgetable 은 Android 에서 가장 인기 있는 커플 위젯 앱이다. Togthr 는 브라우저에 사는 5 단계로 자라는 작은 픽셀 펫이다. 배경화면과生命의 차이가 두 앱의 차이다.",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-widgetable-ko.png`,
+    tags: TOGTHR_VS_WIDGETABLE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-widgetable',
+    locale: 'de',
+    title: "Togthr vs Widgetable: Sperrbildschirm-Hintergrundbild gegen ein wachsendes Lebewesen",
+    description: "Widgetable ist die beliebteste Couples-Widget-App auf Android. Togthr ist ein kleines Pixel-Haustier, das in Ihrem Browser lebt und in 5 Stufen wächst. Der Unterschied ist der Unterschied zwischen einem Hintergrundbild und einem Leben.",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-widgetable-de.png`,
+    tags: TOGTHR_VS_WIDGETABLE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-widgetable',
+    locale: 'fr',
+    title: "Togthr vs Widgetable : fond d'écran de verrou contre créature qui grandit",
+    description: "Widgetable est l'application de widget pour couples la plus populaire sur Android. Togthr est un petit animal en pixels qui vit dans votre navigateur et grandit en 5 étapes. La différence est la différence entre un fond d'écran et une vie.",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-widgetable-fr.png`,
+    tags: TOGTHR_VS_WIDGETABLE_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-widgetable',
+    locale: 'es',
+    title: "Togthr vs Widgetable: fondo de pantalla de bloqueo contra una criatura que crece",
+    description: "Widgetable es la app de widget para parejas más popular en Android. Togthr es una pequeña mascota en píxeles que vive en tu navegador y crece en 5 etapas. La diferencia es la diferencia entre un fondo de pantalla y una vida.",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-widgetable-es.png`,
+    tags: TOGTHR_VS_WIDGETABLE_TAGS,
+    readingMinutes: 6,
+  }
+
+];
+
+// ─── TOGTHR_VS_REPLIKA (Phase 1) ───────────────────────────────────────
+const TOGTHR_VS_REPLIKA_DATE = '2026-07-22';
+const TOGTHR_VS_REPLIKA_SLUG = 'togthr-vs-replika';
+const TOGTHR_VS_REPLIKA_TAGS = ["comparison", "replika", "togthr", "ai-companion", "quiet"];
+
+const TOGTHR_VS_REPLIKA: BlogPost[] = [
+  {
+    slug: 'togthr-vs-replika',
+    locale: 'en',
+    title: "Togthr vs Replika: Tired of Endless Chatting? Try Quiet Companionship",
+    description: "Replika is an AI companion you text with. Togthr is a small pixel pet that lives in your browser and grows through 5 stages. The two apps are not for the same problem. Replika is for talking; Togthr is for being quiet together.",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-replika-en.png`,
+    tags: TOGTHR_VS_REPLIKA_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-replika',
+    locale: 'zh-cn',
+    title: "Togthr vs Replika:厌倦无止境的聊天?试试安静的陪伴",
+    description: "Replika 是一个你可以打字聊的 AI 伴侣。Togthr 是一只住在浏览器里 5 阶段长大的小像素宠物。两个 App 不是为同一个问题而生。Replika 是为了说话,Togthr 是为了安静地在一起。",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-replika-zh-cn.png`,
+    tags: TOGTHR_VS_REPLIKA_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-replika',
+    locale: 'zh-tw',
+    title: "Togthr vs Replika:厭倦無止境的聊天?試試安靜的陪伴",
+    description: "Replika 是一個你可以打字聊的 AI 伴侶。Togthr 是一隻住在瀏覽器裡 5 階段長大的小像素寵物。兩個 App 不是為同一個問題而生。Replika 是為了說話,Togthr 是為了安靜地在一起。",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-replika-zh-tw.png`,
+    tags: TOGTHR_VS_REPLIKA_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-replika',
+    locale: 'ja',
+    title: "Togthr vs Replika:終わりのないチャットに疲れたら?静かな companionship を",
+    description: "Replika はテキストで会話する AI コンパニオン。Togthr はブラウザに住む 5 段階で成長する小さなピクセルペット。2 つのアプリは同じ問題のためではない。Replika は話すため、Togthr は静かに一緒になるため。",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-replika-ja.png`,
+    tags: TOGTHR_VS_REPLIKA_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-replika',
+    locale: 'ko',
+    title: "Togthr vs Replika:끝없는 채팅에 지치셨나요?조용한 동반자 관계를 시도해보세요",
+    description: "Replika 는 텍스트로 대화하는 AI 동반자다. Togthr 는 브라우저에 사는 5 단계로 자라는 작은 픽셀 펫이다. 두 앱은 같은 문제를 위한 것이 아니다. Replika 는 말하기 위한 것이고, Togthr 는 조용히 함께 있기 위한 것이다.",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-replika-ko.png`,
+    tags: TOGTHR_VS_REPLIKA_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-replika',
+    locale: 'de',
+    title: "Togthr vs Replika: Müde vom endlosen Chatten? Probieren Sie stille Begleitung",
+    description: "Replika ist ein KI-Begleiter, mit dem Sie texten. Togthr ist ein kleines Pixel-Haustier, das in Ihrem Browser lebt und in 5 Stufen wächst. Die beiden Apps sind nicht für dasselbe Problem. Replika ist zum Reden, Togthr ist zum leise Zusammensein.",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-replika-de.png`,
+    tags: TOGTHR_VS_REPLIKA_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-replika',
+    locale: 'fr',
+    title: "Togthr vs Replika : fatigué des discussions sans fin ? Essayez la compagnie silencieuse",
+    description: "Replika est un compagnon IA avec qui vous discutez par texto. Togthr est un petit animal en pixels qui vit dans votre navigateur et grandit en 5 étapes. Les deux apps ne sont pas faites pour le même problème. Replika est pour parler, Togthr est pour être tranquillement ensemble.",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-replika-fr.png`,
+    tags: TOGTHR_VS_REPLIKA_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: 'togthr-vs-replika',
+    locale: 'es',
+    title: "Togthr vs Replika: ¿cansado de chatear sin fin? Prueba la compañía silenciosa",
+    description: "Replika es un compañero de IA con el que conversas por texto. Togthr es una pequeña mascota en píxeles que vive en tu navegador y crece en 5 etapas. Las dos apps no son para el mismo problema. Replika es para hablar, Togthr es para estar juntos en silencio.",
+    date: '2026-07-22',
+    cover: `/blog-covers/togthr-vs-replika-es.png`,
+    tags: TOGTHR_VS_REPLIKA_TAGS,
+    readingMinutes: 6,
+  }
+
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -2902,6 +3259,10 @@ export const blogPosts: BlogPost[] = [
   ...m3Posts_halloween_virtual_pet_guide,
   ...m3Posts_long_distance_anniversary_ideas,
   ...m3Posts_digital_pet_nostalgia_2026,
+  ...TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP,
+  ...TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS,
+  ...TOGTHR_VS_WIDGETABLE,
+  ...TOGTHR_VS_REPLIKA,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
