@@ -25,39 +25,39 @@
 ## 一、AutoClaw 定时任务矩阵（7 个 cron job）
 
 > 每个 job 给出：触发时间 / 任务 / 输入引用 / 逻辑验证 / 失败熔断。可直接配置进 AutoClaw。
-> 时间均为 Asia/Shanghai，避开整点/半点（防任务拥堵）。
+> 时间均为 Asia/Shanghai，全部放在 18:00 后（智谱算力低谷时段，省钱且稳定），分钟数避开整点/半点。
 
-### Job 1｜日更博客 cron（每日 06:17）
+### Job 1｜日更博客 cron（每日 18:17，智谱算力低谷）
 - **任务**：按既有日更流程生成 1 篇博客（单文件 8 locale 静态覆盖页模式），选题优先级：① tamagotchi 30 周年相关 ② 组4 怀旧词 ③ 组2 孤独陪伴词（选题池见 `docs/stage-1-m3-instructions.md` 任务 A）
 - **逻辑验证**：本地 `next build --no-lint` 通过 + 4 道 i18n 闸门全过 → 才允许 push；brace 检查（生成文件不得含 `import {{` 或 `type {{`）
 - **熔断**：连续 2 天 build 失败 → 停止该 job，报告里标注"等 K3 诊断"，禁止第 3 次试错
 - **push 纪律**：本 job 每天最多 1 push
 
-### Job 2｜pSEO 落地页铺设（每周一/四 07:23，至 32 页完成）
+### Job 2｜pSEO 落地页铺设（每周一/四 18:43，至 32 页完成）
 - **任务**：按 `docs/stage-1-m3-instructions.md` 任务 A，每次生成 4 页（一组），8 次跑完 32 页
 - **逻辑验证**：同 Job 1 + 页面不得含 "Download for Windows/Mac"、"买断"、未上线功能描述；`/p/` 页 CTA 只指向 PayPal 定价
 - **完成后**：更新 `src/lib/landing-pages.ts` 注册表 → push → 跑 `npm run indexnow:new`
 - **熔断**：同 Job 1
 
-### Job 3｜IndexNow 提交（每周二 08:11）
+### Job 3｜IndexNow 提交（每周二 19:11）
 - **任务**：`npm run indexnow:new`
 - **逻辑验证**：响应 200/202 且提交数 >0；若 4xx 打印响应体并停止（不重试轰炸）
 
-### Job 4｜线上健康 smoke（每周三 09:13）
+### Job 4｜线上健康 smoke（每周三 19:37）
 - **任务**：跑 `scripts/smoke-prod.py`（N1 卡产出，若 M3 未交付则先用简易版：首页+定价+3 篇博客 200 断言 + zh-cn 定价无英文泄漏断言 + HTML 含 data-dark-root）
 - **逻辑验证**：报告写 `docs/prod-smoke/latest.md`；任一 FAIL → 标记异常进周报，不自动修
 
-### Job 5｜竞品监控（每周五 10:07，轻量）
+### Job 5｜竞品监控（每周五 20:07，轻量）
 - **任务**：抓 Widgetable/AIdorable 版本号、评分、评论高频抱怨词（App Store RSS/公开页），追加写入 `docs/competitor-watch.md`
 - **逻辑验证**：数据行数比上周多才写入；抓不到就记录"本周无更新"，不编造
 - **预警**：竞品上线"宠物成长阶段"或"桌面端"功能 → 立即标记高优异常（直接威胁我们楔子）
 
-### Job 6｜周一经营例会自动生成（每周一 08:03）
+### Job 6｜周一经营例会自动生成（每周一 20:23）
 - **任务**：复制 `docs/weekly-review/template.md` 为当周文件，自动填入能取到的数据（Supabase 注册数、sitemap URL 数、smoke 结果、IndexNow 状态），取不到的标"待人工"
 - **逻辑验证**：文件生成即可，**不编造任何数据**；K3 周一人工补 GSC/异常/决策
 - **产出**：@唐总 每周一只有 1 个人工触点（花 5 分钟看周报 + 补 GSC 截图）
 
-### Job 7｜月度 GEO 自检（8/1、8/24 09:41）
+### Job 7｜月度 GEO 自检（8/1、8/24 21:11）
 - **任务**：输出 10 个目标问题清单（`scripts/geo-check.md` 已定义），提醒唐总真人去 ChatGPT/Perplexity/Kimi 问一遍（AI 搜索引用无法自动测，这是合法人工触点）
 - **产出**：结果填 `docs/geo-monthly-check.md`
 
@@ -67,7 +67,7 @@
 
 | 频次 | 动作 | 时长 |
 |---|---|---|
-| 每周一 | 看自动周报 + 补 GSC 数据 | 5-10 分钟 |
+| 每周一晚（或周二早） | 看前一晚自动生成的周报 + 补 GSC 数据 | 5-10 分钟 |
 | 每周三 | 看 smoke 报告（有 FAIL 才需要看） | 2 分钟 |
 | 每周 1 次 | Reddit 养号评论（真人手感，5 条以内，持续到 8/4 满 2 周） | 15 分钟 |
 | 8/1 + 8/24 | GEO 手测 10 问 | 10 分钟 |
