@@ -6,6 +6,7 @@ import type { MetadataRoute } from 'next'
 import { routing, type Locale } from '@/i18n/routing'
 import { siteConfig } from '@/lib/seo'
 import { blogPosts } from '@/lib/blog-posts'
+import { ALL_SLUGS, getLandingUrl } from '@/lib/landing-pages'
 
 const staticPages = [
   { path: '', changefreq: 'weekly' as const, priority: 1.0 },
@@ -67,6 +68,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ),
       },
     })
+  }
+
+  // Phase 1 programmatic SEO landing pages (32 slugs × 8 locales)
+  for (const slug of ALL_SLUGS) {
+    for (const locale of routing.locales) {
+      const url = getLandingUrl(slug, locale)
+      entries.push({
+        url,
+        lastModified: new Date('2026-07-22'),
+        changeFrequency: 'monthly',
+        priority: 0.6,
+        alternates: {
+          languages: Object.fromEntries(
+            routing.locales.map((l) => [l, getLandingUrl(slug, l)]),
+          ),
+        },
+      })
+    }
   }
 
   return entries

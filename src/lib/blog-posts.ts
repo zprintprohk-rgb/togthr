@@ -1550,7 +1550,7 @@ const m1PostsA: BlogPost[] = [
     date: M1_DATE,
     cover: `/blog-covers/${M1_SLUG_A}-en.png`,
     tags: M1_TAGS_A,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M1_SLUG_A,
@@ -1561,7 +1561,7 @@ const m1PostsA: BlogPost[] = [
     date: M1_DATE,
     cover: `/blog-covers/${M1_SLUG_A}-zh-cn.png`,
     tags: M1_TAGS_A,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M1_SLUG_A,
@@ -1572,7 +1572,7 @@ const m1PostsA: BlogPost[] = [
     date: M1_DATE,
     cover: `/blog-covers/${M1_SLUG_A}-zh-tw.png`,
     tags: M1_TAGS_A,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M1_SLUG_A,
@@ -1583,7 +1583,7 @@ const m1PostsA: BlogPost[] = [
     date: M1_DATE,
     cover: `/blog-covers/${M1_SLUG_A}-ja.png`,
     tags: M1_TAGS_A,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M1_SLUG_A,
@@ -1594,7 +1594,7 @@ const m1PostsA: BlogPost[] = [
     date: M1_DATE,
     cover: `/blog-covers/${M1_SLUG_A}-ko.png`,
     tags: M1_TAGS_A,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M1_SLUG_A,
@@ -1605,7 +1605,7 @@ const m1PostsA: BlogPost[] = [
     date: M1_DATE,
     cover: `/blog-covers/${M1_SLUG_A}-de.png`,
     tags: M1_TAGS_A,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M1_SLUG_A,
@@ -1616,7 +1616,7 @@ const m1PostsA: BlogPost[] = [
     date: M1_DATE,
     cover: `/blog-covers/${M1_SLUG_A}-fr.png`,
     tags: M1_TAGS_A,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M1_SLUG_A,
@@ -1627,7 +1627,7 @@ const m1PostsA: BlogPost[] = [
     date: M1_DATE,
     cover: `/blog-covers/${M1_SLUG_A}-es.png`,
     tags: M1_TAGS_A,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
 ];
 
@@ -1932,7 +1932,7 @@ const m2Posts_virtual_pet_app_for_couples: BlogPost[] = [
     date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
     cover: `/blog-covers/virtual-pet-app-for-couples-en.png`,
     tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
@@ -1943,7 +1943,7 @@ const m2Posts_virtual_pet_app_for_couples: BlogPost[] = [
     date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
     cover: `/blog-covers/virtual-pet-app-for-couples-zh-cn.png`,
     tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
@@ -1954,7 +1954,7 @@ const m2Posts_virtual_pet_app_for_couples: BlogPost[] = [
     date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
     cover: `/blog-covers/virtual-pet-app-for-couples-zh-tw.png`,
     tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
@@ -1965,7 +1965,7 @@ const m2Posts_virtual_pet_app_for_couples: BlogPost[] = [
     date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
     cover: `/blog-covers/virtual-pet-app-for-couples-ja.png`,
     tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
@@ -1976,7 +1976,7 @@ const m2Posts_virtual_pet_app_for_couples: BlogPost[] = [
     date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
     cover: `/blog-covers/virtual-pet-app-for-couples-ko.png`,
     tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
@@ -1987,7 +1987,7 @@ const m2Posts_virtual_pet_app_for_couples: BlogPost[] = [
     date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
     cover: `/blog-covers/virtual-pet-app-for-couples-de.png`,
     tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
@@ -1998,7 +1998,7 @@ const m2Posts_virtual_pet_app_for_couples: BlogPost[] = [
     date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
     cover: `/blog-covers/virtual-pet-app-for-couples-fr.png`,
     tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_SLUG,
@@ -2009,7 +2009,7 @@ const m2Posts_virtual_pet_app_for_couples: BlogPost[] = [
     date: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_DATE,
     cover: `/blog-covers/virtual-pet-app-for-couples-es.png`,
     tags: M2_02_VIRTUAL_PET_APP_FOR_COUPLES_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
 ];
 
@@ -2122,7 +2122,7 @@ const m2Posts_pixel_pet_widget_desktop: BlogPost[] = [
     date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
     cover: `/blog-covers/pixel-pet-widget-desktop-en.png`,
     tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
@@ -2133,7 +2133,7 @@ const m2Posts_pixel_pet_widget_desktop: BlogPost[] = [
     date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
     cover: `/blog-covers/pixel-pet-widget-desktop-zh-cn.png`,
     tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
@@ -2144,7 +2144,7 @@ const m2Posts_pixel_pet_widget_desktop: BlogPost[] = [
     date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
     cover: `/blog-covers/pixel-pet-widget-desktop-zh-tw.png`,
     tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
@@ -2155,7 +2155,7 @@ const m2Posts_pixel_pet_widget_desktop: BlogPost[] = [
     date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
     cover: `/blog-covers/pixel-pet-widget-desktop-ja.png`,
     tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
@@ -2166,7 +2166,7 @@ const m2Posts_pixel_pet_widget_desktop: BlogPost[] = [
     date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
     cover: `/blog-covers/pixel-pet-widget-desktop-ko.png`,
     tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
@@ -2177,7 +2177,7 @@ const m2Posts_pixel_pet_widget_desktop: BlogPost[] = [
     date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
     cover: `/blog-covers/pixel-pet-widget-desktop-de.png`,
     tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
@@ -2188,7 +2188,7 @@ const m2Posts_pixel_pet_widget_desktop: BlogPost[] = [
     date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
     cover: `/blog-covers/pixel-pet-widget-desktop-fr.png`,
     tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M2_02_PIXEL_PET_WIDGET_DESKTOP_SLUG,
@@ -2199,7 +2199,7 @@ const m2Posts_pixel_pet_widget_desktop: BlogPost[] = [
     date: M2_02_PIXEL_PET_WIDGET_DESKTOP_DATE,
     cover: `/blog-covers/pixel-pet-widget-desktop-es.png`,
     tags: M2_02_PIXEL_PET_WIDGET_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
 ];
 
@@ -2506,7 +2506,7 @@ const m3Posts_desktop_pet_productivity_2026: BlogPost[] = [
     date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
     cover: `/blog-covers/desktop-pet-productivity-2026-en.png`,
     tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
@@ -2517,7 +2517,7 @@ const m3Posts_desktop_pet_productivity_2026: BlogPost[] = [
     date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
     cover: `/blog-covers/desktop-pet-productivity-2026-zh-cn.png`,
     tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
@@ -2528,7 +2528,7 @@ const m3Posts_desktop_pet_productivity_2026: BlogPost[] = [
     date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
     cover: `/blog-covers/desktop-pet-productivity-2026-zh-tw.png`,
     tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
@@ -2539,7 +2539,7 @@ const m3Posts_desktop_pet_productivity_2026: BlogPost[] = [
     date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
     cover: `/blog-covers/desktop-pet-productivity-2026-ja.png`,
     tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
@@ -2550,7 +2550,7 @@ const m3Posts_desktop_pet_productivity_2026: BlogPost[] = [
     date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
     cover: `/blog-covers/desktop-pet-productivity-2026-ko.png`,
     tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
@@ -2561,7 +2561,7 @@ const m3Posts_desktop_pet_productivity_2026: BlogPost[] = [
     date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
     cover: `/blog-covers/desktop-pet-productivity-2026-de.png`,
     tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
@@ -2572,7 +2572,7 @@ const m3Posts_desktop_pet_productivity_2026: BlogPost[] = [
     date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
     cover: `/blog-covers/desktop-pet-productivity-2026-fr.png`,
     tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_SLUG,
@@ -2583,7 +2583,7 @@ const m3Posts_desktop_pet_productivity_2026: BlogPost[] = [
     date: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_DATE,
     cover: `/blog-covers/desktop-pet-productivity-2026-es.png`,
     tags: M3_03_DESKTOP_PET_PRODUCTIVITY_2026_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
 ];
 
@@ -2601,7 +2601,7 @@ const m3Posts_halloween_virtual_pet_guide: BlogPost[] = [
     date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
     cover: `/blog-covers/halloween-virtual-pet-guide-en.png`,
     tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
@@ -2612,7 +2612,7 @@ const m3Posts_halloween_virtual_pet_guide: BlogPost[] = [
     date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
     cover: `/blog-covers/halloween-virtual-pet-guide-zh-cn.png`,
     tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
@@ -2623,7 +2623,7 @@ const m3Posts_halloween_virtual_pet_guide: BlogPost[] = [
     date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
     cover: `/blog-covers/halloween-virtual-pet-guide-zh-tw.png`,
     tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
@@ -2634,7 +2634,7 @@ const m3Posts_halloween_virtual_pet_guide: BlogPost[] = [
     date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
     cover: `/blog-covers/halloween-virtual-pet-guide-ja.png`,
     tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
@@ -2645,7 +2645,7 @@ const m3Posts_halloween_virtual_pet_guide: BlogPost[] = [
     date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
     cover: `/blog-covers/halloween-virtual-pet-guide-ko.png`,
     tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
@@ -2656,7 +2656,7 @@ const m3Posts_halloween_virtual_pet_guide: BlogPost[] = [
     date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
     cover: `/blog-covers/halloween-virtual-pet-guide-de.png`,
     tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
@@ -2667,7 +2667,7 @@ const m3Posts_halloween_virtual_pet_guide: BlogPost[] = [
     date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
     cover: `/blog-covers/halloween-virtual-pet-guide-fr.png`,
     tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_SLUG,
@@ -2678,7 +2678,7 @@ const m3Posts_halloween_virtual_pet_guide: BlogPost[] = [
     date: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_DATE,
     cover: `/blog-covers/halloween-virtual-pet-guide-es.png`,
     tags: M3_03_HALLOWEEN_VIRTUAL_PET_GUIDE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
 ];
 
@@ -2887,7 +2887,7 @@ const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-en.png`,
     tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
@@ -2897,7 +2897,7 @@ const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-zh-cn.png`,
     tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
@@ -2907,7 +2907,7 @@ const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-zh-tw.png`,
     tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
@@ -2917,7 +2917,7 @@ const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-ja.png`,
     tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
@@ -2927,7 +2927,7 @@ const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-ko.png`,
     tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
@@ -2937,7 +2937,7 @@ const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-de.png`,
     tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
@@ -2947,7 +2947,7 @@ const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-fr.png`,
     tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'tamagotchi-30th-anniversary-from-pocket-to-desktop',
@@ -2957,7 +2957,7 @@ const TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/tamagotchi-30th-anniversary-from-pocket-to-desktop-es.png`,
     tags: TAMAGOTCHI_30TH_ANNIVERSARY_FROM_POCKET_TO_DESKTOP_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   }
 
 ];
@@ -3065,7 +3065,7 @@ const TOGTHR_VS_WIDGETABLE: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-widgetable-en.png`,
     tags: TOGTHR_VS_WIDGETABLE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-widgetable',
@@ -3075,7 +3075,7 @@ const TOGTHR_VS_WIDGETABLE: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-widgetable-zh-cn.png`,
     tags: TOGTHR_VS_WIDGETABLE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-widgetable',
@@ -3085,7 +3085,7 @@ const TOGTHR_VS_WIDGETABLE: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-widgetable-zh-tw.png`,
     tags: TOGTHR_VS_WIDGETABLE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-widgetable',
@@ -3095,7 +3095,7 @@ const TOGTHR_VS_WIDGETABLE: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-widgetable-ja.png`,
     tags: TOGTHR_VS_WIDGETABLE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-widgetable',
@@ -3105,7 +3105,7 @@ const TOGTHR_VS_WIDGETABLE: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-widgetable-ko.png`,
     tags: TOGTHR_VS_WIDGETABLE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-widgetable',
@@ -3115,7 +3115,7 @@ const TOGTHR_VS_WIDGETABLE: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-widgetable-de.png`,
     tags: TOGTHR_VS_WIDGETABLE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-widgetable',
@@ -3125,7 +3125,7 @@ const TOGTHR_VS_WIDGETABLE: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-widgetable-fr.png`,
     tags: TOGTHR_VS_WIDGETABLE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-widgetable',
@@ -3135,7 +3135,7 @@ const TOGTHR_VS_WIDGETABLE: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-widgetable-es.png`,
     tags: TOGTHR_VS_WIDGETABLE_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   }
 
 ];
@@ -3154,7 +3154,7 @@ const TOGTHR_VS_REPLIKA: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-replika-en.png`,
     tags: TOGTHR_VS_REPLIKA_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-replika',
@@ -3164,7 +3164,7 @@ const TOGTHR_VS_REPLIKA: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-replika-zh-cn.png`,
     tags: TOGTHR_VS_REPLIKA_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-replika',
@@ -3174,7 +3174,7 @@ const TOGTHR_VS_REPLIKA: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-replika-zh-tw.png`,
     tags: TOGTHR_VS_REPLIKA_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-replika',
@@ -3184,7 +3184,7 @@ const TOGTHR_VS_REPLIKA: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-replika-ja.png`,
     tags: TOGTHR_VS_REPLIKA_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-replika',
@@ -3194,7 +3194,7 @@ const TOGTHR_VS_REPLIKA: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-replika-ko.png`,
     tags: TOGTHR_VS_REPLIKA_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-replika',
@@ -3204,7 +3204,7 @@ const TOGTHR_VS_REPLIKA: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-replika-de.png`,
     tags: TOGTHR_VS_REPLIKA_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-replika',
@@ -3214,7 +3214,7 @@ const TOGTHR_VS_REPLIKA: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-replika-fr.png`,
     tags: TOGTHR_VS_REPLIKA_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   },
   {
     slug: 'togthr-vs-replika',
@@ -3224,9 +3224,110 @@ const TOGTHR_VS_REPLIKA: BlogPost[] = [
     date: '2026-07-22',
     cover: `/blog-covers/togthr-vs-replika-es.png`,
     tags: TOGTHR_VS_REPLIKA_TAGS,
-    readingMinutes: 6,
+    readingMinutes: 5,
   }
 
+];
+
+// ──────────────────────────────────────────────────────────────────────
+// Daily post: 2026-07-24 — desk pet for coders
+// 8 locales × 1 post
+// Topic: desk-pet + coding + programmer-companion + pixel-pet
+// ──────────────────────────────────────────────────────────────────────
+
+const DESK_PET_FOR_CODERS_DATE = '2026-07-24';
+const DESK_PET_FOR_CODERS_SLUG = 'desk-pet-for-coders';
+const DESK_PET_FOR_CODERS_TAGS = ['desk-pet', 'coders', 'focus-mode', 'pixel-pet', 'productivity'];
+
+const deskPetForCodersPosts: BlogPost[] = [
+  {
+    slug: DESK_PET_FOR_CODERS_SLUG,
+    locale: 'en',
+    title: 'Desk Pet for Coders: The Pixel Companion That Ships With Your Build',
+    description:
+      'A desk pet for coders is not a productivity tool. It is the small patient presence on your taskbar that stays awake at 2am when the build breaks, celebrates quietly when the tests pass, and asks nothing in return. Here is why programmers are putting a pixel pet on their desktop.',
+    date: DESK_PET_FOR_CODERS_DATE,
+    cover: `/blog-covers/${DESK_PET_FOR_CODERS_SLUG}-en.png`,
+    tags: DESK_PET_FOR_CODERS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: DESK_PET_FOR_CODERS_SLUG,
+    locale: 'zh-cn',
+    title: '给程序员的桌面宠物:一只在你发布代码时为你加油的小机器人',
+    description:
+      '写代码的孤独,是一种很具体的孤独。桌面上的一只像素小机器人,不会替你写 PR——但它会陪你熬过每一次编译、每一次部署、每一个深夜的 debug,用温柔的 pastel 紫色,安安静静地给你加油。',
+    date: DESK_PET_FOR_CODERS_DATE,
+    cover: `/blog-covers/${DESK_PET_FOR_CODERS_SLUG}-zh-cn.png`,
+    tags: DESK_PET_FOR_CODERS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: DESK_PET_FOR_CODERS_SLUG,
+    locale: 'zh-tw',
+    title: '給工程師的桌面寵物:一隻在你發布程式碼時為你加油的小機器人',
+    description:
+      '寫程式的孤獨,是一種很具體的孤獨。桌面上的一隻像素小機器人,不會替你寫 PR——但牠會陪你熬過每一次編譯、每一次部署、每一個深夜的 debug,用溫柔的 pastel 紫色,安安靜靜地替你加油。',
+    date: DESK_PET_FOR_CODERS_DATE,
+    cover: `/blog-covers/${DESK_PET_FOR_CODERS_SLUG}-zh-tw.png`,
+    tags: DESK_PET_FOR_CODERS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: DESK_PET_FOR_CODERS_SLUG,
+    locale: 'ja',
+    title: 'コーダーのためのデスクペット:あなたがリリースするとき、静かに応援する小さなロボット',
+    description:
+      'コードを書く孤独は、とても具体的な孤独です。デスクトップの小さなドット絵ロボットが、あなたのプルリクエストを代わりに書いてはくれません——でも、すべてのコンパイル、すべてのデプロイ、すべての深夜のデバッグに一緒に座り、パステル紫で静かに応援します。',
+    date: DESK_PET_FOR_CODERS_DATE,
+    cover: `/blog-covers/${DESK_PET_FOR_CODERS_SLUG}-ja.png`,
+    tags: DESK_PET_FOR_CODERS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: DESK_PET_FOR_CODERS_SLUG,
+    locale: 'ko',
+    title: '코더를 위한 데스크 펫: 당신이 배포할 때 조용히 응원하는 작은 로봇',
+    description:
+      '코딩의 외로움은 아주 구체적인 종류의 외로움입니다. 데스크톱 위의 작은 픽셀 로봇이 당신의 PR을 대신 써주지 않습니다——하지만 모든 컴파일, 모든 배포, 모든 늦은 밤의 디버깅에 함께 앉아, 파스텔 보라색으로 조용히 응원합니다.',
+    date: DESK_PET_FOR_CODERS_DATE,
+    cover: `/blog-covers/${DESK_PET_FOR_CODERS_SLUG}-ko.png`,
+    tags: DESK_PET_FOR_CODERS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: DESK_PET_FOR_CODERS_SLUG,
+    locale: 'de',
+    title: 'Ein Desk-Pet für Programmierer: Der kleine Roboter, der jubelt, während du shippst',
+    description:
+      'Programmieren ist auf eine ganz bestimmte Weise einsam. Ein kleiner Pixel-Roboter auf deinem Desktop wird deinen Pull Request nicht für dich schreiben — aber er wird jeden Compile, jedes Deployment und jede nächtliche Debug-Session mit dir durchsitzen und leise in Pastell-Lila jubeln.',
+    date: DESK_PET_FOR_CODERS_DATE,
+    cover: `/blog-covers/${DESK_PET_FOR_CODERS_SLUG}-de.png`,
+    tags: DESK_PET_FOR_CODERS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: DESK_PET_FOR_CODERS_SLUG,
+    locale: 'fr',
+    title: 'Un animal de bureau pour les codeurs : le petit robot qui vous encourage pendant que vous livrez',
+    description:
+      "Coder est une solitude très particulière. Un petit robot pixel sur votre bureau n'écrira pas votre pull request à votre place — mais il restera assis à vos côtés pendant chaque compilation, chaque déploiement, chaque session de débogage nocturne, vous encourageant silencieusement en violet pastel.",
+    date: DESK_PET_FOR_CODERS_DATE,
+    cover: `/blog-covers/${DESK_PET_FOR_CODERS_SLUG}-fr.png`,
+    tags: DESK_PET_FOR_CODERS_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: DESK_PET_FOR_CODERS_SLUG,
+    locale: 'es',
+    title: 'Una mascota de escritorio para programadores: el pequeño robot que te anima mientras entregas código',
+    description:
+      'Programar es solitario de una forma muy concreta. Un pequeño robot pixelado en tu escritorio no va a escribir tu pull request por ti — pero se sentará contigo durante cada compilación, cada despliegue y cada sesión de depuración nocturna, animándote en silencio en violeta pastel.',
+    date: DESK_PET_FOR_CODERS_DATE,
+    cover: `/blog-covers/${DESK_PET_FOR_CODERS_SLUG}-es.png`,
+    tags: DESK_PET_FOR_CODERS_TAGS,
+    readingMinutes: 5,
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
@@ -3263,6 +3364,7 @@ export const blogPosts: BlogPost[] = [
   ...TAMAGOTCHI_ALTERNATIVE_FOR_ADULTS,
   ...TOGTHR_VS_WIDGETABLE,
   ...TOGTHR_VS_REPLIKA,
+  ...deskPetForCodersPosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
