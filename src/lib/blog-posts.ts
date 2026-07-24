@@ -3330,6 +3330,107 @@ const deskPetForCodersPosts: BlogPost[] = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// Daily post: 2026-07-25 — pixel pet like tamagotchi
+// 8 locales × 1 post
+// Topic: pixel-pet-like-tamagotchi — 组4怀旧词
+// ──────────────────────────────────────────────────────────────────────
+
+const PIXEL_PET_LIKE_TAMAGOTCHI_DATE = '2026-07-25';
+const PIXEL_PET_LIKE_TAMAGOTCHI_SLUG = 'pixel-pet-like-tamagotchi';
+const PIXEL_PET_LIKE_TAMAGOTCHI_TAGS = ['pixel-pet', 'tamagotchi', 'desktop-companion', 'virtual-pet', 'nostalgia'];
+
+const pixelPetLikeTamagotchiPosts: BlogPost[] = [
+  {
+    slug: PIXEL_PET_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'en',
+    title: 'Pixel Pet Like Tamagotchi: The 90s Loop That Grew Up and Lives on Your Desktop',
+    description:
+      'You are an adult searching for a pixel pet like Tamagotchi. The same honest loop — feed, care, watch it grow — now lives on your work desktop, grows across weeks, and does not die when you forget it for a weekend. Here is what the formula became.',
+    date: PIXEL_PET_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${PIXEL_PET_LIKE_TAMAGOTCHI_SLUG}-en.png`,
+    tags: PIXEL_PET_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: PIXEL_PET_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'zh-cn',
+    title: '像电子宠物一样的像素宠物：那个90年代的循环长大后住进了你的桌面',
+    description:
+      '你是一个成年人，却在搜索"像素宠物电子宠物"。那个诚实的循环——喂食、关心、看着它长大——现在坐在你的工作桌面上，不计较地慢慢长大，忘了一个周末也不会死。这是那个公式长大后的样子。',
+    date: PIXEL_PET_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${PIXEL_PET_LIKE_TAMAGOTCHI_SLUG}-zh-cn.png`,
+    tags: PIXEL_PET_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: PIXEL_PET_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'zh-tw',
+    title: '像塔麻歌子一樣的像素寵物：那個90年代的循環長大後住進了你的桌面',
+    description:
+      '你是一個成年人，卻在搜尋「像素寵物電子寵物」。那個誠實的循環——餵食、關心、看著牠長大——現在坐在你的工作桌面上，不計較地慢慢長大，忘了一個週末也不會死。這是那個公式長大後的樣子。',
+    date: PIXEL_PET_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${PIXEL_PET_LIKE_TAMAGOTCHI_SLUG}-zh-tw.png`,
+    tags: PIXEL_PET_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: PIXEL_PET_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'ja',
+    title: 'たまごっちみたいなピクセルペット：90年代のあのループが大人になり、あなたのデスクトップに住んでいる',
+    description:
+      'あなたは大人なのに「ピクセルペット たまごっちみたいな」と検索している。あの正直なループ——エサをやり、世話をし、育つのを見守る——が今、仕事のデスクトップに座り、週末忘れても死なず、数週間かけて育つ。あのフォーミュラがどうなったかをお見せします。',
+    date: PIXEL_PET_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${PIXEL_PET_LIKE_TAMAGOTCHI_SLUG}-ja.png`,
+    tags: PIXEL_PET_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: PIXEL_PET_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'ko',
+    title: '다마고치 같은 픽셀 펫: 90년대 그 루프가 어른이 되어 당신의 데스크톱에 살고 있다',
+    description:
+      '당신은 어른인데도 "다마고치 같은 픽셀 펫"을 검색하고 있습니다. 그 정직한 루프——먹이고, 돌보고, 자라는 걸 지켜보는——가 이제 업무용 데스크톱에 앉아, 주말에 잊어도 죽지 않고 몇 주에 걸쳐 자랍니다. 그 공식이 어떻게 되었는지 보여드립니다.',
+    date: PIXEL_PET_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${PIXEL_PET_LIKE_TAMAGOTCHI_SLUG}-ko.png`,
+    tags: PIXEL_PET_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: PIXEL_PET_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'de',
+    title: 'Pixel-Pet wie Tamagotchi: Die 90er-Schleife ist erwachsen geworden und lebt auf deinem Desktop',
+    description:
+      'Du bist erwachsen und suchst nach einem Pixel-Pet wie Tamagotchi. Dieselbe ehrliche Schleife — füttern, pflegen, wachsen sehen — lebt jetzt auf deinem Arbeitsdesktop, wächst über Wochen und stirbt nicht, wenn du sie ein Wochenende vergisst. So sieht die Formel heute aus.',
+    date: PIXEL_PET_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${PIXEL_PET_LIKE_TAMAGOTCHI_SLUG}-de.png`,
+    tags: PIXEL_PET_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: PIXEL_PET_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'fr',
+    title: 'Animal pixel comme Tamagotchi : la boucle des années 90 a grandi et vit sur votre bureau',
+    description:
+      "Vous êtes adulte et vous cherchez un animal pixel comme Tamagotchi. La même boucle honnête — nourrir, prendre soin, regarder grandir — vit maintenant sur votre bureau, grandit sur des semaines et ne meurt pas si vous l'oubliez un week-end. Voici ce qu'est devenue la formule.",
+    date: PIXEL_PET_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${PIXEL_PET_LIKE_TAMAGOTCHI_SLUG}-fr.png`,
+    tags: PIXEL_PET_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: PIXEL_PET_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'es',
+    title: 'Mascota pixel como Tamagotchi: el bucle de los 90 creció y ahora vive en tu escritorio',
+    description:
+      'Eres adulto y estás buscando una mascota pixel como Tamagotchi. El mismo bucle honesto — alimentar, cuidar, ver crecer — ahora vive en tu escritorio de trabajo, crece a lo largo de semanas y no muere si lo olvidas un fin de semana. Así es como se ve la fórmula hoy.',
+    date: PIXEL_PET_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${PIXEL_PET_LIKE_TAMAGOTCHI_SLUG}-es.png`,
+    tags: PIXEL_PET_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -3365,6 +3466,7 @@ export const blogPosts: BlogPost[] = [
   ...TOGTHR_VS_WIDGETABLE,
   ...TOGTHR_VS_REPLIKA,
   ...deskPetForCodersPosts,
+  ...pixelPetLikeTamagotchiPosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
