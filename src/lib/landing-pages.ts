@@ -26,7 +26,7 @@
 
 import type { Locale } from '@/i18n/routing'
 
-export type LandingGroup = 'couple' | 'self' | 'bff' | 'tmg'
+export type LandingGroup = 'couple' | 'self' | 'bff' | 'tmg' | 'rituals' | 'discovery'
 
 export type LandingEntry = {
   slug: string
@@ -39,7 +39,7 @@ export type LandingEntry = {
   description: string
 }
 
-// ─── All 32 slugs, in shipping order ────────────────────────────────────────
+// ─── All 48 slugs (Phase 1 32 + Round 2 16), in shipping order ────────────
 // Group 1 — couple / long-distance
 const coupleSlugs = [
   'couple-desktop-pet-app',
@@ -88,12 +88,38 @@ const tmgSlugs = [
   'tamagotchi-for-work-computer',
 ]
 
+// Group 5 — rituals / relationship tooling (Round 2)
+const ritualsSlugs = [
+  'shared-journal-app-for-couples',
+  'time-capsule-app-for-two',
+  'couple-mood-tracker-app',
+  'anniversary-countdown-app-couples',
+  'daily-questions-for-couples-app',
+  'couple-goals-tracker-app',
+  'private-journal-for-couples-app',
+  'couple-bedtime-routine-app',
+]
+
+// Group 6 — discovery / comparison (Round 2)
+const discoverySlugs = [
+  'best-app-for-couples-in-long-distance',
+  'best-virtual-pet-app-for-couples-2026',
+  'free-couple-app-with-ai-companion',
+  'the-quietest-couple-app',
+  'virtual-pet-for-emotional-support',
+  'a-pixel-pet-that-notices-you',
+  'couple-app-without-social-pressure',
+  'small-daily-ritual-app-for-two',
+]
+
 // Hero image per group. We deliberately pick from /public/pets so no new assets.
 const GROUP_HERO: Record<LandingGroup, string> = {
   couple: '/pets/scene-progress.png',
   self: '/pets/scene-rainy.png',
   bff: '/pets/scene-birthday.png',
   tmg: '/pets/anim-idle-1.png',
+  rituals: '/pets/scene-rainy.png',
+  discovery: '/pets/character-sheet.png',
 }
 
 // ─── Title / description per slug (EN — other locales reuse) ───────────────
@@ -137,6 +163,24 @@ const TITLES: Record<string, string> = {
   'tamagotchi-30th-anniversary-app': 'A Tamagotchi 30th-Anniversary Companion — Togthr',
   'virtual-pet-that-grows-up-like-tamagotchi': 'A Virtual Pet That Grows Up Like Tamagotchi',
   'tamagotchi-for-work-computer': 'A Tamagotchi for Your Work Computer — Togthr',
+  // rituals (Round 2)
+  'shared-journal-app-for-couples': 'A Shared Journal App for Couples — Togthr',
+  'time-capsule-app-for-two': 'A Time Capsule App for Two — Togthr',
+  'couple-mood-tracker-app': 'A Couple Mood Tracker App — Togthr',
+  'anniversary-countdown-app-couples': 'An Anniversary Countdown App for Couples',
+  'daily-questions-for-couples-app': 'Daily Questions for Couples — A Gentle App',
+  'couple-goals-tracker-app': 'A Couple Goals Tracker App — Togthr',
+  'private-journal-for-couples-app': 'A Private Journal for Couples — Togthr',
+  'couple-bedtime-routine-app': 'A Couple Bedtime Routine App — Togthr',
+  // discovery (Round 2)
+  'best-app-for-couples-in-long-distance': 'Best App for Couples in Long Distance',
+  'best-virtual-pet-app-for-couples-2026': 'Best Virtual Pet App for Couples 2026',
+  'free-couple-app-with-ai-companion': 'A Free Couple App With an AI Companion',
+  'the-quietest-couple-app': 'The Quietest Couple App on the Internet',
+  'virtual-pet-for-emotional-support': 'A Virtual Pet for Emotional Support — Togthr',
+  'a-pixel-pet-that-notices-you': 'A Pixel Pet That Notices You — Togthr',
+  'couple-app-without-social-pressure': 'A Couple App Without Social Pressure',
+  'small-daily-ritual-app-for-two': 'A Small Daily Ritual App for Two — Togthr',
 }
 
 const DESCRIPTIONS: Record<string, string> = {

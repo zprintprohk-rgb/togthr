@@ -3431,6 +3431,107 @@ const pixelPetLikeTamagotchiPosts: BlogPost[] = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// Daily post: 2026-07-26 — tamagotchi for work computer
+// 8 locales × 1 post
+// Topic: tamagotchi-for-work-computer — 组4怀旧词
+// ──────────────────────────────────────────────────────────────────────
+
+const TAMAGOTCHI_FOR_WORK_COMPUTER_DATE = '2026-07-26';
+const TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG = 'tamagotchi-for-work-computer';
+const TAMAGOTCHI_FOR_WORK_COMPUTER_TAGS = ['tamagotchi', 'desktop-pet', 'focus-mode', 'work-companion', 'virtual-pet'];
+
+const tamagotchiForWorkComputerPosts: BlogPost[] = [
+  {
+    slug: TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG,
+    locale: 'en',
+    title: 'Tamagotchi for Work Computer: The Tiny Pixel Companion on Your Taskbar That Makes 8 Hours of Solo Focus Feel Less Empty',
+    description:
+      'Your work computer is the loneliest screen you own. A tiny tamagotchi-style pixel pet on your taskbar changes that—no notifications, no demands, just a small presence that grows with you through every compile, every meeting, and every late-night bug fix.',
+    date: TAMAGOTCHI_FOR_WORK_COMPUTER_DATE,
+    cover: `/blog-covers/${TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG}-en.png`,
+    tags: TAMAGOTCHI_FOR_WORK_COMPUTER_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG,
+    locale: 'zh-cn',
+    title: '办公电脑用的电子宠物：任务栏上的像素小伙伴，让八小时的独自专注不再那么空',
+    description:
+      '你的工作电脑可能是你最孤独的一块屏幕。一只小小的像素宠物待在任务栏上，改变了这一切——不弹通知、不提要求，只是一小团在你每次编译、每次会议、每次深夜修 bug 时陪你一起长大的温暖。',
+    date: TAMAGOTCHI_FOR_WORK_COMPUTER_DATE,
+    cover: `/blog-covers/${TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG}-zh-cn.png`,
+    tags: TAMAGOTCHI_FOR_WORK_COMPUTER_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG,
+    locale: 'zh-tw',
+    title: '辦公電腦用的塔麻歌子：工作列上的像素小夥伴，讓八小時的獨自專注不那麼空',
+    description:
+      '你的工作電腦可能是你最孤獨的一塊螢幕。一隻小小的像素寵物待在工作列上，改變了這一切——不彈通知、不提要求，只是一小團在你每次編譯、每次會議、每次深夜修 bug 時陪你一起長大的溫暖。',
+    date: TAMAGOTCHI_FOR_WORK_COMPUTER_DATE,
+    cover: `/blog-covers/${TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG}-zh-tw.png`,
+    tags: TAMAGOTCHI_FOR_WORK_COMPUTER_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG,
+    locale: 'ja',
+    title: '仕事用パソコンのたまごっち：タスクバーの小さなピクセルコンパニオンが、8時間の孤独な集中を少しだけ満たしてくれる',
+    description:
+      'あなたの仕事用パソコンは、あなたの持つスクリーンの中で一番孤独です。タスクバーの上の小さなたまごっち風ピクセルペットがそれを変えます——通知も要求もなく、ただの小さな存在が、すべてのコンパイル、すべての会議、すべての深夜のバグ修正とともに育ちます。',
+    date: TAMAGOTCHI_FOR_WORK_COMPUTER_DATE,
+    cover: `/blog-covers/${TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG}-ja.png`,
+    tags: TAMAGOTCHI_FOR_WORK_COMPUTER_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG,
+    locale: 'ko',
+    title: '업무용 컴퓨터 다마고치: 작업 표시줄의 작은 픽셀 동반자가 8시간의 혼자 집중을 조금 덜 텅 비게 만듭니다',
+    description:
+      '당신의 업무용 컴퓨터는 당신이 가진 화면 중 가장 외롭습니다. 작업 표시줄 위의 작은 다마고치 스타일 픽셀 펫이 그것을 바꿉니다——알림도, 요구도 없이, 모든 컴파일, 모든 회의, 모든 늦은 밤 버그 수정과 함께 자라는 작은 존재.',
+    date: TAMAGOTCHI_FOR_WORK_COMPUTER_DATE,
+    cover: `/blog-covers/${TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG}-ko.png`,
+    tags: TAMAGOTCHI_FOR_WORK_COMPUTER_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG,
+    locale: 'de',
+    title: 'Tamagotchi für den Arbeitscomputer: Der winzige Pixel-Begleiter in deiner Taskleiste, der 8 Stunden Solo-Fokus weniger leer macht',
+    description:
+      'Dein Arbeitscomputer ist der einsamste Bildschirm, den du besitzt. Ein winziges Tamagotchi-artiges Pixel-Haustier in deiner Taskleiste ändert das — keine Benachrichtigungen, keine Forderungen, nur eine kleine Präsenz, die mit jedem Kompilieren, jedem Meeting und jeder nächtlichen Bug-Behebung wächst.',
+    date: TAMAGOTCHI_FOR_WORK_COMPUTER_DATE,
+    cover: `/blog-covers/${TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG}-de.png`,
+    tags: TAMAGOTCHI_FOR_WORK_COMPUTER_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG,
+    locale: 'fr',
+    title: 'Tamagotchi pour ordinateur de travail : le minuscule compagnon pixel dans votre barre des tâches qui rend 8 heures de concentration solo moins vides',
+    description:
+      "Votre ordinateur de travail est l'écran le plus solitaire que vous possédiez. Un minuscule animal pixel façon tamagotchi dans votre barre des tâches change cela — pas de notifications, pas d'exigences, juste une petite présence qui grandit avec chaque compilation, chaque réunion et chaque correction de bug nocturne.",
+    date: TAMAGOTCHI_FOR_WORK_COMPUTER_DATE,
+    cover: `/blog-covers/${TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG}-fr.png`,
+    tags: TAMAGOTCHI_FOR_WORK_COMPUTER_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG,
+    locale: 'es',
+    title: 'Tamagotchi para ordenador de trabajo: el diminuto compañero pixel en tu barra de tareas que hace que 8 horas de concentración en solitario se sientan menos vacías',
+    description:
+      'Tu ordenador de trabajo es la pantalla más solitaria que tienes. Una diminuta mascota pixel estilo tamagotchi en tu barra de tareas lo cambia — sin notificaciones, sin exigencias, solo una pequeña presencia que crece contigo en cada compilación, cada reunión y cada arreglo de bugs nocturno.',
+    date: TAMAGOTCHI_FOR_WORK_COMPUTER_DATE,
+    cover: `/blog-covers/${TAMAGOTCHI_FOR_WORK_COMPUTER_SLUG}-es.png`,
+    tags: TAMAGOTCHI_FOR_WORK_COMPUTER_TAGS,
+    readingMinutes: 6,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -3467,6 +3568,7 @@ export const blogPosts: BlogPost[] = [
   ...TOGTHR_VS_REPLIKA,
   ...deskPetForCodersPosts,
   ...pixelPetLikeTamagotchiPosts,
+  ...tamagotchiForWorkComputerPosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
