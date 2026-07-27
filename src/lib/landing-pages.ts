@@ -284,10 +284,6 @@ export function getLandingEntries(): LandingEntry[] {
   return ALL_SLUGS.map((slug) => getLandingEntry(slug)!).filter(Boolean)
 }
 
-// Always include the locale prefix (including EN) so the canonical + hreflang
-// URLs match the actual route that CF Pages' OpenNext dispatch serves. The
-// as-needed EN URL (e.g. /p/{slug} without /en/) is not currently dispatched
-// on the OpenNext worker, so we route everything through /{locale}/p/{slug}.
 export function getLandingUrl(slug: string, locale: Locale): string {
-  return `${SITE_URL}/${locale}/p/${slug}`
+  return locale === 'en' ? `${SITE_URL}/p/${slug}` : `${SITE_URL}/${locale}/p/${slug}`
 }
