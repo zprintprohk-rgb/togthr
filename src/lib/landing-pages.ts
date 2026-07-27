@@ -220,6 +220,24 @@ const DESCRIPTIONS: Record<string, string> = {
   'tamagotchi-30th-anniversary-app': 'A Tamagotchi 30th-anniversary companion: the care-and-grow loop, but in your browser, with 5 growth stages and a 1-in-72 golden edition.',
   'virtual-pet-that-grows-up-like-tamagotchi': 'A virtual pet that grows up like Tamagotchi, baby to legend, in 5 stages. Lives in your browser, never punishes, never dies. Free to start.',
   'tamagotchi-for-work-computer': 'A Tamagotchi for your work computer: a small pixel pet that sits beside you through the day and grows as you keep showing up. No install required.',
+  // rituals (Round 2)
+  'shared-journal-app-for-couples': 'A shared journal app for couples built around a pixel pet that grows as you write. No ads, no feed, no streaks. Free to start in your browser.',
+  'time-capsule-app-for-two': 'A time capsule app for two: write a sentence today, lock it, and open it together on a future date. The pet guards the capsule until then.',
+  'couple-mood-tracker-app': 'A couple mood tracker app with a pixel pet that changes its mood alongside yours. No typing required — just tap how you feel.',
+  'anniversary-countdown-app-couples': 'An anniversary countdown app for couples with a pet that grows toward the date alongside you. The countdown is the ritual, the pet is the reward.',
+  'daily-questions-for-couples-app': 'Daily questions for couples, answered in one sentence each, held by a small pixel pet that grows with every answer. No chat, no feed.',
+  'couple-goals-tracker-app': 'A couple goals tracker app where a small pet grows with each shared goal you reach. The pet remembers the wins, including the small ones.',
+  'private-journal-for-couples-app': 'A private journal for couples that lives in your browser. One sentence a day each, a pet that grows, and no-one else reading.',
+  'couple-bedtime-routine-app': 'A couple bedtime routine app: one quiet sentence before sleep, one pixel pet that grows, one small ritual that keeps the distance from growing.',
+  // discovery (Round 2)
+  'best-app-for-couples-in-long-distance': 'Looking for the best app for couples in long distance? Togthr is a pixel pet that grows as you two keep showing up, with no pressure.',
+  'best-virtual-pet-app-for-couples-2026': 'The best virtual pet app for couples in 2026. A small pixel pet, shared between two, growing through 5 stages. No ads, free to start.',
+  'free-couple-app-with-ai-companion': 'A free couple app with an AI companion that does not chat. A small pixel pet that grows, remembers, and keeps the relationship visible.',
+  'the-quietest-couple-app': 'The quietest couple app on the internet: a small pixel pet, one sentence a day, no chat, no feed, no streaks. Try it free in your browser.',
+  'virtual-pet-for-emotional-support': 'A virtual pet for emotional support that asks nothing of you. Lives in your browser, grows through 5 stages, waits when you are tired.',
+  'a-pixel-pet-that-notices-you': 'A pixel pet that notices you: it grows when you show up, pauses when you rest, and the small creature in the corner remembers the month you just had.',
+  'couple-app-without-social-pressure': 'A couple app without social pressure: a small pixel pet, one sentence a day, no friends list, no like count, no feed. Just two people and a pet.',
+  'small-daily-ritual-app-for-two': 'A small daily ritual app for two: one sentence each, one growing pixel pet, one quiet thread that keeps the friendship from drifting.',
 }
 
 // ─── Slug → group map (derived) ─────────────────────────────────────────────
@@ -230,12 +248,14 @@ const GROUP_OF: Record<string, LandingGroup> = (() => {
   for (const s of selfSlugs) m[s] = 'self'
   for (const s of bffSlugs) m[s] = 'bff'
   for (const s of tmgSlugs) m[s] = 'tmg'
+  for (const s of ritualsSlugs) m[s] = 'rituals'
+  for (const s of discoverySlugs) m[s] = 'discovery'
   return m
 })()
 
 // ─── Public lookup helpers ──────────────────────────────────────────────────
 
-export const ALL_SLUGS: string[] = [...coupleSlugs, ...selfSlugs, ...bffSlugs, ...tmgSlugs]
+export const ALL_SLUGS: string[] = [...coupleSlugs, ...selfSlugs, ...bffSlugs, ...tmgSlugs, ...ritualsSlugs, ...discoverySlugs]
 
 export const SITE_URL = 'https://togthr.life'
 

@@ -1,102 +1,4 @@
-// scripts/gen-pseo-pages.mjs
-//
-// One-shot generator: creates 32 page.tsx files under
-// src/app/[locale]/p/{slug}/page.tsx using the bodies in
-// src/lib/landing-pages-bodies.ts and the meta in src/lib/landing-pages.ts.
-//
-// Run: node scripts/gen-pseo-pages.mjs
-
-import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'node:fs'
-import { join, dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
-
-const __dirname = dirname(fileURLToPath(import.meta.url))
-const REPO = join(__dirname, '..')
-
-const landingSrc = readFileSync(join(REPO, 'src/lib/landing-pages.ts'), 'utf8')
-
-function arr(name) {
-  const re = new RegExp(`const ${name} = \\[([^\\]]+)\\]`, 'm')
-  const m = landingSrc.match(re)
-  if (!m) throw new Error(`could not locate ${name} in landing-pages.ts`)
-  return m[1]
-    .split(',')
-    .map((s) => s.trim().replace(/^['"]|['"]$/g, ''))
-    .filter(Boolean)
-}
-function obj(name) {
-  const re = new RegExp(`const ${name}: Record<string, string> = ({[\\s\\S]*?\\n})`)
-  const m = landingSrc.match(re)
-  if (!m) throw new Error(`could not locate ${name}`)
-  return m[1]
-}
-
-const coupleSlugs = arr('coupleSlugs')
-const selfSlugs = arr('selfSlugs')
-const bffSlugs = arr('bffSlugs')
-const tmgSlugs = arr('tmgSlugs')
-const ritualsSlugs = arr('ritualsSlugs')
-const discoverySlugs = arr('discoverySlugs')
-
-function parseMap(block) {
-  const m = {}
-  const re = /'([a-z0-9-]+)':\s*'((?:\\'|[^'])*)'/g
-  let mm
-  while ((mm = re.exec(block)) !== null) {
-    m[mm[1]] = mm[2].replace(/\\'/g, "'")
-  }
-  return m
-}
-const titlesBlock = obj('TITLES')
-const descsBlock = obj('DESCRIPTIONS')
-const TITLES = parseMap(titlesBlock)
-const DESCS = parseMap(descsBlock)
-
-const ALL_SLUGS = [
-  ...coupleSlugs,
-  ...selfSlugs,
-  ...bffSlugs,
-  ...tmgSlugs,
-  ...ritualsSlugs,
-  ...discoverySlugs,
-]
-
-const GROUP_HERO = {
-  couple: '/pets/scene-progress.png',
-  self: '/pets/scene-rainy.png',
-  bff: '/pets/scene-birthday.png',
-  tmg: '/pets/anim-idle-1.png',
-  rituals: '/pets/scene-rainy.png',
-  discovery: '/pets/character-sheet.png',
-}
-function heroFor(slug) {
-  if (coupleSlugs.includes(slug)) return GROUP_HERO.couple
-  if (selfSlugs.includes(slug)) return GROUP_HERO.self
-  if (bffSlugs.includes(slug)) return GROUP_HERO.bff
-  if (tmgSlugs.includes(slug)) return GROUP_HERO.tmg
-  if (ritualsSlugs.includes(slug)) return GROUP_HERO.rituals
-  return GROUP_HERO.discovery
-}
-
-function escapeForTemplate(s) {
-  return s
-    .replace(/\\/g, '\\\\')
-    .replace(/`/g, '\\`')
-    .replace(/\$\{/g, '\\${')
-}
-
-function slugPhase(slug) {
-  if (ritualsSlugs.includes(slug) || discoverySlugs.includes(slug)) return 'round2'
-  return 'phase1'
-}
-
-function buildPage(slug) {
-  const title = TITLES[slug] ?? slug
-  const desc = DESCS[slug] ?? ''
-  const hero = heroFor(slug)
-  const dateStr = slugPhase(slug) === 'phase1' ? "'2026-07-22'" : "'2026-07-27'"
-
-  return `// src/app/[locale]/p/${slug}/page.tsx
+// src/app/[locale]/p/free-couple-app-with-ai-companion/page.tsx
 //
 // Phase 1 pSEO — programmatic landing page.
 // Single-file 8-locale page (single Body used for all locales per task brief:
@@ -112,15 +14,15 @@ import { getLandingBody } from '@/lib/landing-pages-bodies'
 import { getLandingEntry, getLandingGroup, getLandingHero, getLandingUrl, SITE_URL } from '@/lib/landing-pages'
 import { siteConfig } from '@/lib/seo'
 
-const SLUG = \`${slug}\`
-const HERO_IMG = \`${hero}\`
-const META_TITLE = \`${escapeForTemplate(title)}\`
-const META_DESC = \`${escapeForTemplate(desc)}\`
+const SLUG = `free-couple-app-with-ai-companion`
+const HERO_IMG = `/pets/character-sheet.png`
+const META_TITLE = `A Free Couple App With an AI Companion`
+const META_DESC = `A free couple app with an AI companion that does not chat. A small pixel pet that grows, remembers, and keeps the relationship visible.`
 
 // Reused for all 8 locales (EN content only this batch). hreflang points
 // each locale at itself.
 const EN_BODY = getLandingBody(SLUG)
-if (!EN_BODY) throw new Error(\`missing body for \${SLUG}\`)
+if (!EN_BODY) throw new Error(`missing body for ${SLUG}`)
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -155,7 +57,7 @@ export async function generateMetadata({
       locale: loc.replace('-', '_'),
       images: [
         {
-          url: \`\${siteConfig.url}\${siteConfig.ogImage}\`,
+          url: `${siteConfig.url}${siteConfig.ogImage}`,
           width: 1200,
           height: 630,
           alt: META_TITLE,
@@ -166,7 +68,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: META_TITLE,
       description: META_DESC,
-      images: [\`\${siteConfig.url}\${siteConfig.ogImage}\`],
+      images: [`${siteConfig.url}${siteConfig.ogImage}`],
     },
   }
 }
@@ -182,26 +84,26 @@ export default async function Page({
 
   const body = EN_BODY!
   const url = getLandingUrl(SLUG, loc)
-  const homeHref = loc === 'en' ? \`/\` : \`/\${loc}/\`
+  const homeHref = loc === 'en' ? `/` : `/${loc}/`
 
   const articleLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: body.h1,
     description: META_DESC,
-    image: \`\${siteConfig.url}\${siteConfig.ogImage}\`,
+    image: `${siteConfig.url}${siteConfig.ogImage}`,
     inLanguage: loc.replace('-', '_'),
     author: { '@type': 'Organization', name: siteConfig.name, url: siteConfig.url },
-    publisher: { '@type': 'Organization', name: siteConfig.name, logo: { '@type': 'ImageObject', url: \`\${siteConfig.url}/logo.png\` } },
+    publisher: { '@type': 'Organization', name: siteConfig.name, logo: { '@type': 'ImageObject', url: `${siteConfig.url}/logo.png` } },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-    datePublished: ${dateStr},
-    dateModified: ${dateStr},
+    datePublished: '2026-07-27',
+    dateModified: '2026-07-27',
   }
   const breadcrumbLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: loc === 'en' ? siteConfig.url : \`\${siteConfig.url}/\${loc}\` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: loc === 'en' ? siteConfig.url : `${siteConfig.url}/${loc}` },
       { '@type': 'ListItem', position: 2, name: META_TITLE, item: url },
     ],
   }
@@ -262,14 +164,3 @@ export default async function Page({
     </article>
   )
 }
-`
-}
-
-let written = 0
-for (const slug of ALL_SLUGS) {
-  const dir = join(REPO, 'src/app/[locale]/p', slug)
-  if (!existsSync(dir)) mkdirSync(dir, { recursive: true })
-  writeFileSync(join(dir, 'page.tsx'), buildPage(slug), 'utf8')
-  written++
-}
-console.log(`Wrote ${written} page.tsx files under src/app/[locale]/p/`)
