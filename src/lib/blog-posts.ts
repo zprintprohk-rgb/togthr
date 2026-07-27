@@ -3532,6 +3532,107 @@ const tamagotchiForWorkComputerPosts: BlogPost[] = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// Daily post: 2026-07-27 — quiet companion app no chat
+// 8 locales × 1 post
+// Topic: quiet-companion-app-no-chat — 组2孤独陪伴词
+// ──────────────────────────────────────────────────────────────────────
+
+const QUIET_COMPANION_APP_NO_CHAT_DATE = '2026-07-27';
+const QUIET_COMPANION_APP_NO_CHAT_SLUG = 'quiet-companion-app-no-chat';
+const QUIET_COMPANION_APP_NO_CHAT_TAGS = ['quiet-companion', 'no-chat', 'silent-presence', 'virtual-pet', 'focus-mode'];
+
+const quietCompanionAppNoChatPosts: BlogPost[] = [
+  {
+    slug: QUIET_COMPANION_APP_NO_CHAT_SLUG,
+    locale: 'en',
+    title: 'Quiet Companion App No Chat: A Silent Pixel Pet That Asks Nothing and Gives You Presence Without Performance',
+    description:
+      'You are tired of apps that want you to talk. This is a companion that does not need conversation — a small pixel creature that lives at the edge of your screen, changes state with your activity, and never asks how your day was.',
+    date: QUIET_COMPANION_APP_NO_CHAT_DATE,
+    cover: `/blog-covers/${QUIET_COMPANION_APP_NO_CHAT_SLUG}-en.png`,
+    tags: QUIET_COMPANION_APP_NO_CHAT_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: QUIET_COMPANION_APP_NO_CHAT_SLUG,
+    locale: 'zh-cn',
+    title: '不需要聊天的安静陪伴应用：一只不问、不说、只在屏幕边缘默默陪你的像素宠物',
+    description:
+      '你厌倦了那些需要你说话的 App。这是一只不需要对话的陪伴——一只住在你屏幕边缘的像素小家伙，随着你的活动改变状态，从不问你「今天过得怎么样」。',
+    date: QUIET_COMPANION_APP_NO_CHAT_DATE,
+    cover: `/blog-covers/${QUIET_COMPANION_APP_NO_CHAT_SLUG}-zh-cn.png`,
+    tags: QUIET_COMPANION_APP_NO_CHAT_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: QUIET_COMPANION_APP_NO_CHAT_SLUG,
+    locale: 'zh-tw',
+    title: '不需要聊天的安靜陪伴應用：一隻不問、不說、只在螢幕邊緣默默陪你的像素寵物',
+    description:
+      '你厭倦了那些需要你說話的 App。這是一隻不需要對話的陪伴——一隻住在你螢幕邊緣的像素小傢伙，隨著你的活動改變狀態，從不問你「今天過得怎麼樣」。',
+    date: QUIET_COMPANION_APP_NO_CHAT_DATE,
+    cover: `/blog-covers/${QUIET_COMPANION_APP_NO_CHAT_SLUG}-zh-tw.png`,
+    tags: QUIET_COMPANION_APP_NO_CHAT_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: QUIET_COMPANION_APP_NO_CHAT_SLUG,
+    locale: 'ja',
+    title: 'チャット不要の静かなコンパニオンアプリ：何も求めず、ただ画面の端であなたを見守るピクセルペット',
+    description:
+      'あなたは話しかけてくるアプリに疲れている。これは会話を必要としないコンパニオン——画面の端に住み、あなたの活動に合わせて状態を変え、決して「今日はどうだった？」と聞かない小さなピクセルの生き物。',
+    date: QUIET_COMPANION_APP_NO_CHAT_DATE,
+    cover: `/blog-covers/${QUIET_COMPANION_APP_NO_CHAT_SLUG}-ja.png`,
+    tags: QUIET_COMPANION_APP_NO_CHAT_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: QUIET_COMPANION_APP_NO_CHAT_SLUG,
+    locale: 'ko',
+    title: '채팅 없는 조용한 컴패니언 앱: 아무것도 요구하지 않고 화면 가장자리에서 당신을 지켜보는 픽셀 펫',
+    description:
+      '당신은 말을 걸어오는 앱에 지쳤다. 이것은 대화가 필요 없는 컴패니언——화면 가장자리에 살며, 당신의 활동에 따라 상태를 바꾸고, 절대 "오늘 어땠어?"라고 묻지 않는 작은 픽셀 생명체.',
+    date: QUIET_COMPANION_APP_NO_CHAT_DATE,
+    cover: `/blog-covers/${QUIET_COMPANION_APP_NO_CHAT_SLUG}-ko.png`,
+    tags: QUIET_COMPANION_APP_NO_CHAT_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: QUIET_COMPANION_APP_NO_CHAT_SLUG,
+    locale: 'de',
+    title: 'Ruhige Begleiter-App ohne Chat: Ein stilles Pixel-Haustier, das nichts verlangt und dir Präsenz ohne Performance schenkt',
+    description:
+      'Du hast genug von Apps, die wollen, dass du redest. Dies ist ein Begleiter, der keine Konversation braucht — ein kleines Pixel-Wesen, das am Rand deines Bildschirms lebt, seinen Zustand mit deiner Aktivität ändert und nie fragt, wie dein Tag war.',
+    date: QUIET_COMPANION_APP_NO_CHAT_DATE,
+    cover: `/blog-covers/${QUIET_COMPANION_APP_NO_CHAT_SLUG}-de.png`,
+    tags: QUIET_COMPANION_APP_NO_CHAT_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: QUIET_COMPANION_APP_NO_CHAT_SLUG,
+    locale: 'fr',
+    title: 'Application compagnon silencieux sans chat : un animal pixel discret qui ne demande rien et vous offre une présence sans performance',
+    description:
+      'Vous en avez assez des applications qui veulent que vous parliez. Voici un compagnon qui n\'a pas besoin de conversation — une petite créature pixel qui vit au bord de votre écran, change d\'état avec votre activité et ne demande jamais comment s\'est passée votre journée.',
+    date: QUIET_COMPANION_APP_NO_CHAT_DATE,
+    cover: `/blog-covers/${QUIET_COMPANION_APP_NO_CHAT_SLUG}-fr.png`,
+    tags: QUIET_COMPANION_APP_NO_CHAT_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: QUIET_COMPANION_APP_NO_CHAT_SLUG,
+    locale: 'es',
+    title: 'Aplicación de compañía silenciosa sin chat: una mascota pixel callada que no pide nada y te da presencia sin actuación',
+    description:
+      'Estás cansado de las aplicaciones que quieren que hables. Esta es una compañera que no necesita conversación — una pequeña criatura pixel que vive en el borde de tu pantalla, cambia de estado con tu actividad y nunca te pregunta cómo te fue el día.',
+    date: QUIET_COMPANION_APP_NO_CHAT_DATE,
+    cover: `/blog-covers/${QUIET_COMPANION_APP_NO_CHAT_SLUG}-es.png`,
+    tags: QUIET_COMPANION_APP_NO_CHAT_TAGS,
+    readingMinutes: 6,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -3569,6 +3670,7 @@ export const blogPosts: BlogPost[] = [
   ...deskPetForCodersPosts,
   ...pixelPetLikeTamagotchiPosts,
   ...tamagotchiForWorkComputerPosts,
+  ...quietCompanionAppNoChatPosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
