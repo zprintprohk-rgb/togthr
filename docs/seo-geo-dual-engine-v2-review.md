@@ -14,7 +14,7 @@
 | 项目路径 | `apps/web/src/...` | 项目根即 `F:\CloudDreamerApp\togthr\src\...`，无 monorepo | ❌ 全文路径需替换 |
 | 对比文/借势文是否已上线 | GEO-01 假设已存在 | ✅ 已上线且 200：`/en/blog/togthr-vs-widgetable`、`/en/blog/togthr-vs-replika`、`/en/blog/tamagotchi-30th-anniversary-from-pocket-to-desktop`、`/en/p/tamagotchi-for-desktop` | ✅ GEO-01 前置已满足，可直接执行 |
 | pSEO 页数 | 48 slug | ✅ 实测 `/p/` 目录 48 个 slug 文件夹全部存在（附件数字正确，注册表注释写 32 为旧注释） | ✅ 以 48 为准 |
-| sitemap URL 数 | 384 / 416 / 713 | ✅ `public/sitemap-0.xml` 实测 **713 条** `<url>`。384/416 两个数来源不明 | ⚠️ 统一以 713 为准，IndexNow 提交清单需重新生成 |
+| sitemap URL 数 | 384 / 416 / 713 | ✅ `public/sitemap-0.xml` 实测 **713 条** `<url>`。但权威基准应为 **Bing WMT "URLs discovered"**：7/27 实测 **857 URL（0 错误）**。384/416 两个数来源不明 | ⚠️ 统一以 Bing WMT 857 为准。此后不再硬编码数字，IndexNow 验证逻辑改为 ±5% Bing WMT 基准 |
 | Worker 健康（SEO-FIX-01 前提） | 假设掉线需自愈 | ✅ 线上 200，最近 3 次部署（7/27 02:13 / 02:38 / 18:47）全 success | ❌ SEO-FIX-01 作废，已有 AutoClaw Job 4 smoke 覆盖 |
 | TL;DR 段落 | 待加 | 实测全站 0 处 | ✅ GEO-01 未开始，正常排期 |
 | SoftwareApplication JSON-LD | 待加 | 实测全站 0 处 | ✅ GEO-03 未开始，正常排期 |
@@ -27,7 +27,7 @@
 | 卡 | 裁定 | 修正要点 |
 |---|---|---|
 | SEO-FIX-01 Worker 自愈 | **作废** | 线上健康、CI 全绿。监控已由 AutoClaw Job 4（周三 19:37 smoke）覆盖，不重复建设 |
-| SEO-FIX-02 IndexNow 全量重提交 | **采纳（修正）** | 提交清单按 713 条重新生成，用现有 `npm run indexnow`；删 384/416 旧数字 |
+| SEO-FIX-02 IndexNow 全量重提交 | **采纳（修正）✅ 完成（Bing 侧）** | 权威基准为 Bing WMT "URLs discovered"（7/27 实测 857，0 错误）。提交清单以 Bing WMT 为准。验证逻辑：增量 PASS = HTTP 200/202 且 ≥1；全量 PASS = 提交数 ≈ Bing WMT ±5%。GSC 侧等唐总截图 |
 | SEO-FIX-03 GSC sitemap 重提交 | **采纳（改真人执行）** | GSC 后台操作只能唐总做，列入唐总清单，附步骤 |
 | PAY-LIVE-01 支付上线 | **重写** | ① M2-01 代码层据报已完成（commit cbda082），剩余真任务是**唐总真实首单验证**（他本人已决定"有流量后再做"，尊重此决策，降级为 P2 待命）② 环境变量只改 wrangler.toml ③ M3 只做代码层核验：确认 live/sandbox 开关逻辑正确、 webhook URL 指向 live |
 | GEO-01 TL;DR × 5 页 | **采纳** | 前置已满足（4 页实测 200）。第 5 页若指 vs-replika 外的页面需 M3 自核清单。文案可用，事实点已核（$5.49/$37.99/5 阶段/6 皮肤/1/72/8 语言/无广告/宠物不死） |

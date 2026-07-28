@@ -26,6 +26,8 @@ PAYPAL_CLIENT_ID = "BAAbewP1Eq2__waR1iMzrkxVUPbHme8_sx5hYHs9QXfA4yL6AFkGkyeI6s-l
 ALIPAY_APP_ID = ""
 # VAPID public key is public (browser push subscription needs it)
 VAPID_PUBLIC_KEY = ""
+# Google Analytics 4 — Measurement ID (7/28 唐总已创建)
+NEXT_PUBLIC_GA4_ID = "G-TNKXQ7V351"
 # CRON_SECRET — protects /api/cron/* endpoints. Set via: npx wrangler secret put CRON_SECRET
 CRON_SECRET = ""
 
