@@ -895,5 +895,15 @@
     "phrase2": "One tiny step at a time.",
     "phrase3": "You've got this.",
     "phrase4": "Let's grow together, quietly."
+  },
+  "paymentSuccess": {
+    "title": "Payment successful 🎉",
+    "subtitle": "Your companion felt that. Membership is now active.",
+    "noteTitle": "What happens next",
+    "noteBody": "Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "hint": "If anything looks missing, give it a moment and refresh the pet page.",
+    "ctaPet": "🐾 Meet your pet",
+    "ctaPricing": "← Back to pricing",
+    "secureNotice": "Payments processed securely."
   }
 }

@@ -23,7 +23,7 @@ const PAYPAL_API_BASE =
   process.env.PAYPAL_MODE === 'live'
     ? 'https://api-m.paypal.com'
     : 'https://api-m.sandbox.paypal.com'
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://togthr.life'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.togthr.life'
 
 // ─── access-token cache (per-isolate lifetime) ───
 let _token: string | null = null

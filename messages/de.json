@@ -895,5 +895,15 @@
     "phrase2": "Ein kleiner Schritt nach dem anderen.",
     "phrase3": "Du schaffst das.",
     "phrase4": "Lass uns leise zusammen wachsen."
+  },
+  "paymentSuccess": {
+    "title": "[de] Payment successful 🎉",
+    "subtitle": "[de] Your companion felt that. Membership is now active.",
+    "noteTitle": "[de] What happens next",
+    "noteBody": "[de] Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "hint": "[de] If anything looks missing, give it a moment and refresh the pet page.",
+    "ctaPet": "[de] 🐾 Meet your pet",
+    "ctaPricing": "[de] ← Back to pricing",
+    "secureNotice": "[de] Payments processed securely."
   }
 }

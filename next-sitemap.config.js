@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
-const SITE_URL = 'https://togthr.life'
+const SITE_URL = 'https://www.togthr.life'
 
 module.exports = {
   siteUrl: SITE_URL,

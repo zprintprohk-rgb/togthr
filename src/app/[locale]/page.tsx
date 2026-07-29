@@ -97,6 +97,23 @@ export default async function HomePage({
             'https://github.com/Togthrapp',
           ],
         }}
+        software={{
+          name: 'Togthr',
+          url: 'https://togthr.life',
+          description:
+            'A pixel-art desktop companion pet that lives in your browser, grows through 5 stages (baby to legend), and supports 8 languages. No ads, no chat, no streak pressure.',
+          operatingSystem: 'Web',
+          offers: {
+            price: '5.49',
+            priceCurrency: 'USD',
+            description: 'Monthly subscription',
+          },
+          author: {
+            '@type': 'Organization',
+            name: 'CloudDreamer',
+            url: 'https://togthr.life',
+          },
+        }}
       />
 
       <HomeClient

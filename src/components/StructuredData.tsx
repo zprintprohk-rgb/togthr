@@ -33,17 +33,26 @@ export const FAQPageJsonLd: FC<FAQPageJsonLdProps> = ({ questions }) => {
 }
 
 // ---------- SoftwareApplication ------------------------------------
+interface SoftwareOffer {
+  price: string
+  priceCurrency: string
+  description?: string
+}
+
 interface SoftwareApplicationJsonLdProps {
   name: string
   url: string
   description: string
-  offers: {
-    price: string
-    priceCurrency: string
-  }
+  operatingSystem?: string
+  offers: SoftwareOffer | SoftwareOffer[]
   aggregateRating?: {
     ratingValue: string
     ratingCount: string
+  }
+  author?: {
+    '@type': string
+    name: string
+    url: string
   }
   inLanguage?: string
 }
@@ -52,23 +61,35 @@ export const SoftwareApplicationJsonLd: FC<SoftwareApplicationJsonLdProps> = ({
   name,
   url,
   description,
+  operatingSystem = 'Web',
   offers,
   aggregateRating,
+  author,
   inLanguage,
 }) => {
+  const offersArray = Array.isArray(offers) ? offers : [offers]
+
   const json: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name,
     url,
     applicationCategory: 'LifestyleApplication',
-    operatingSystem: 'Any',
+    operatingSystem,
     description,
-    offers: {
-      '@type': 'Offer',
-      price: offers.price,
-      priceCurrency: offers.priceCurrency,
-    },
+    offers: offersArray.length === 1
+      ? {
+          '@type': 'Offer',
+          price: offersArray[0].price,
+          priceCurrency: offersArray[0].priceCurrency,
+          ...(offersArray[0].description ? { description: offersArray[0].description } : {}),
+        }
+      : offersArray.map((o) => ({
+          '@type': 'Offer',
+          price: o.price,
+          priceCurrency: o.priceCurrency,
+          ...(o.description ? { description: o.description } : {}),
+        })),
   }
 
   if (aggregateRating) {
@@ -77,6 +98,10 @@ export const SoftwareApplicationJsonLd: FC<SoftwareApplicationJsonLdProps> = ({
       ratingValue: aggregateRating.ratingValue,
       ratingCount: aggregateRating.ratingCount,
     }
+  }
+
+  if (author) {
+    json.author = author
   }
 
   if (inLanguage) {
@@ -205,8 +230,12 @@ interface StructuredDataWrapperProps {
     name: string
     url: string
     description: string
-    offers: { price: string; priceCurrency: string }
+    operatingSystem?: string
+    offers:
+      | { price: string; priceCurrency: string; description?: string }
+      | { price: string; priceCurrency: string; description?: string }[]
     aggregateRating?: { ratingValue: string; ratingCount: string }
+    author?: { '@type': string; name: string; url: string }
     inLanguage?: string
   }
   organization?: {

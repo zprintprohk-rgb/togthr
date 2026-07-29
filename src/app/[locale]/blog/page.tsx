@@ -46,18 +46,18 @@ export async function generateMetadata({
     title: titles[loc] ?? titles.en,
     description: descriptions[loc] ?? descriptions.en,
     alternates: {
-      canonical: `https://togthr.life/${loc}/blog`,
+      canonical: `https://www.togthr.life/${loc}/blog`,
     },
     openGraph: {
       type: 'website',
       title: titles[loc] ?? titles.en,
       description: descriptions[loc] ?? descriptions.en,
-      url: `https://togthr.life/${loc}/blog`,
+      url: `https://www.togthr.life/${loc}/blog`,
       siteName: 'Togthr',
       locale: loc.replace('-', '_'),
       images: [
         {
-          url: 'https://togthr.life/pets/character-sheet.png',
+          url: 'https://www.togthr.life/pets/character-sheet.png',
           width: 1200,
           height: 630,
           alt: 'Togthr Blog',
@@ -68,7 +68,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: titles[loc] ?? titles.en,
       description: descriptions[loc] ?? descriptions.en,
-      images: ['https://togthr.life/pets/character-sheet.png'],
+      images: ['https://www.togthr.life/pets/character-sheet.png'],
     },
   }
 }
@@ -146,7 +146,7 @@ export default async function BlogIndexPage({
             '@context': 'https://schema.org',
             '@type': 'Blog',
             name: 'Togthr Blog',
-            url: `https://togthr.life/${loc}/blog`,
+            url: `https://www.togthr.life/${loc}/blog`,
             inLanguage: loc.replace('-', '_'),
             blogPost: posts.map((p) => ({
               '@type': 'BlogPosting',

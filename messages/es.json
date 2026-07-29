@@ -895,5 +895,15 @@
     "phrase2": "Un pequeño paso cada vez.",
     "phrase3": "Tú puedes.",
     "phrase4": "Crezcamos juntos, en calma."
+  },
+  "paymentSuccess": {
+    "title": "[es] Payment successful 🎉",
+    "subtitle": "[es] Your companion felt that. Membership is now active.",
+    "noteTitle": "[es] What happens next",
+    "noteBody": "[es] Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "hint": "[es] If anything looks missing, give it a moment and refresh the pet page.",
+    "ctaPet": "[es] 🐾 Meet your pet",
+    "ctaPricing": "[es] ← Back to pricing",
+    "secureNotice": "[es] Payments processed securely."
   }
 }

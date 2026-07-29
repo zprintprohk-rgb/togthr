@@ -895,5 +895,15 @@
     "phrase2": "一歩ずつ進もう。",
     "phrase3": "きみならできる。",
     "phrase4": "静かに一緒に育とう。"
+  },
+  "paymentSuccess": {
+    "title": "[ja] Payment successful 🎉",
+    "subtitle": "[ja] Your companion felt that. Membership is now active.",
+    "noteTitle": "[ja] What happens next",
+    "noteBody": "[ja] Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "hint": "[ja] If anything looks missing, give it a moment and refresh the pet page.",
+    "ctaPet": "[ja] 🐾 Meet your pet",
+    "ctaPricing": "[ja] ← Back to pricing",
+    "secureNotice": "[ja] Payments processed securely."
   }
 }

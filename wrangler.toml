@@ -9,7 +9,7 @@ compatibility_flags = ["nodejs_compat"]
 # are set via CLI: npx wrangler secret put <KEY>
 # Source of truth: .env.production (not committed; do NOT commit anon key)
 [vars]
-NEXT_PUBLIC_SITE_URL = "https://togthr.life"
+NEXT_PUBLIC_SITE_URL = "https://www.togthr.life"
 NEXTJS_ENV = "production"
 PAYPAL_MODE = "live"
 PAYPAL_INVOICE_PREFIX = "TOG"

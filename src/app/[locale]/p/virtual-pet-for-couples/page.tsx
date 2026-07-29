@@ -132,6 +132,12 @@ export default async function Page({
         <p className="mt-4 text-lg text-zinc-300">{body.intro}</p>
       </header>
 
+      <section aria-label="Summary" className="mt-4 rounded-xl border border-pink-500/20 bg-pink-500/5 px-5 py-4">
+        <p className="text-sm leading-relaxed text-zinc-400">
+          Togthr is a virtual pet for couples — a shared pixel creature that lives in both partners' browsers and grows through 5 stages as each person writes one sentence per day. It costs $5.49/month or $37.99/year with no ads and no chat.
+        </p>
+      </section>
+
       <figure className="mb-10 overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/40">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={HERO_IMG} alt={META_TITLE} className="w-full" loading="lazy" decoding="async" />

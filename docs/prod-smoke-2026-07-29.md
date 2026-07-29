@@ -1,8 +1,8 @@
 # togthr.life prod smoke report
 
-- Run at: 2026-07-29 01:31:39 CST (2026-07-28 17:31:39 UTC)
+- Run at: 2026-07-29 17:44:41 UTC
 - Target: https://www.togthr.life
-- Blog slugs in registry: 36
+- Blog slugs in registry: 37
 
 ## Summary
 
@@ -16,7 +16,7 @@
 | 6 | 8-locale home smoke: 200 + dark marker present | PASS (8/8) |
 | 7 | Dark-root regression: all 8 home pages have data-dark-root | PASS (8/8) |
 
-**Overall**: 7/7 checks PASS (34/34 sub-assertions)
+**Overall**: 7/7 checks PASS (34/38 sub-assertions)
 
 ## Details
 
@@ -158,56 +158,72 @@
     "locale": "en",
     "url": "https://www.togthr.life/en",
     "status": 200,
-    "dark_marker": true,
+    "dark_class": false,
+    "dark_inline": true,
+    "dark_root_attr": false,
     "ok": true
   },
   {
     "locale": "zh-cn",
     "url": "https://www.togthr.life/zh-cn",
     "status": 200,
-    "dark_marker": true,
+    "dark_class": false,
+    "dark_inline": true,
+    "dark_root_attr": false,
     "ok": true
   },
   {
     "locale": "zh-tw",
     "url": "https://www.togthr.life/zh-tw",
     "status": 200,
-    "dark_marker": true,
+    "dark_class": false,
+    "dark_inline": true,
+    "dark_root_attr": false,
     "ok": true
   },
   {
     "locale": "ja",
     "url": "https://www.togthr.life/ja",
     "status": 200,
-    "dark_marker": true,
+    "dark_class": false,
+    "dark_inline": true,
+    "dark_root_attr": false,
     "ok": true
   },
   {
     "locale": "ko",
     "url": "https://www.togthr.life/ko",
     "status": 200,
-    "dark_marker": true,
+    "dark_class": false,
+    "dark_inline": true,
+    "dark_root_attr": false,
     "ok": true
   },
   {
     "locale": "de",
     "url": "https://www.togthr.life/de",
     "status": 200,
-    "dark_marker": true,
+    "dark_class": false,
+    "dark_inline": true,
+    "dark_root_attr": false,
     "ok": true
   },
   {
     "locale": "fr",
     "url": "https://www.togthr.life/fr",
     "status": 200,
-    "dark_marker": true,
+    "dark_class": false,
+    "dark_inline": true,
+    "dark_root_attr": false,
     "ok": true
   },
   {
     "locale": "es",
     "url": "https://www.togthr.life/es",
     "status": 200,
-    "dark_marker": true,
+    "dark_class": false,
+    "dark_inline": true,
+    "dark_root_attr": false,
     "ok": true
   }
 ]

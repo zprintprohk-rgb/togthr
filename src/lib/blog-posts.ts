@@ -35,7 +35,7 @@ export interface BlogPost {
   readingMinutes?: number;
 }
 
-export const SITE_URL = 'https://togthr.life';
+export const SITE_URL = 'https://www.togthr.life';
 
 // ──────────────────────────────────────────────────────────────────────
 // Initial seed: 1 launch post × 8 locales (gives cron a target to extend)

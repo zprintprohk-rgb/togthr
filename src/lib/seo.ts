@@ -4,28 +4,24 @@
 export const siteConfig = {
   name: 'Togthr',
   taglineKey: 'seo.tagline',
-  url: 'https://togthr.life',
+  url: 'https://www.togthr.life',
   ogImage: '/pets/character-sheet.png',
   twitterHandle: '@Togthrapp',
 } as const
 
 // --- Canonical & alternate links --------------------------------------------
-// as-needed 模式：默认语言(en)不显示前缀，其他语言显示 /zh-cn 等
+// hreflang + canonical 统一用 www.togthr.life；en 也带 /en/ 前缀避免 redirect chain
 export function generateAlternateLinks(path: string = ''): Record<string, string> {
   const links: Record<string, string> = {}
   for (const locale of routing.locales) {
-    links[locale] = locale === routing.defaultLocale
-      ? `${siteConfig.url}${path}`          // en → /
-      : `${siteConfig.url}/${locale}${path}` // zh-cn → /zh-cn
+    links[locale] = `${siteConfig.url}/${locale}${path}`
   }
-  links['x-default'] = `${siteConfig.url}${path}`  // x-default 指向根路径
+  links['x-default'] = `${siteConfig.url}/en${path}`
   return links
 }
 
 export function getCanonicalUrl(locale: Locale, path: string = ''): string {
-  return locale === routing.defaultLocale
-    ? `${siteConfig.url}${path}`
-    : `${siteConfig.url}/${locale}${path}`
+  return `${siteConfig.url}/${locale}${path}`
 }
 
 // --- Structured data (JSON-LD) ----------------------------------------------

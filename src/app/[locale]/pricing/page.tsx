@@ -30,6 +30,7 @@ import {
 } from '@/lib/pricing'
 import type { CountryCode } from '@/lib/types'
 import { ts, ta } from '@/lib/safe-t'
+import { StructuredData } from '@/components/StructuredData'
 import { PricingTheater } from './PricingTheater'
 
 // ─── Static params ────────────────────────────────────────────────────────
@@ -256,14 +257,43 @@ export default async function PricingPage({
     }
 
     return (
-      <PricingTheater
-        locale={locale}
-        country={country}
-        currency={currency}
-        gateway={gateway}
-        copy={copy}
-        formatted={formatted}
-      />
+      <>
+        <StructuredData
+          software={{
+            name: 'Togthr',
+            url: 'https://togthr.life',
+            description:
+              'A pixel-art desktop companion pet with 5 growth stages, 6 hidden profession skins, and a 1-in-72 chance golden edition. No ads, no chat, no streak pressure.',
+            operatingSystem: 'Web',
+            offers: [
+              {
+                price: '5.49',
+                priceCurrency: 'USD',
+                description: 'Monthly subscription',
+              },
+              {
+                price: '37.99',
+                priceCurrency: 'USD',
+                description: 'Annual subscription',
+              },
+            ],
+            author: {
+              '@type': 'Organization',
+              name: 'CloudDreamer',
+              url: 'https://togthr.life',
+            },
+          }}
+        />
+
+        <PricingTheater
+          locale={locale}
+          country={country}
+          currency={currency}
+          gateway={gateway}
+          copy={copy}
+          formatted={formatted}
+        />
+      </>
     )
   } catch (error) {
     // The error.tsx boundary will catch this on the client side.

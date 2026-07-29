@@ -10,6 +10,7 @@ import { DesktopPet } from '@/components/DesktopPet'
 import { AuthEventTracker } from '@/components/shared/AuthEventTracker'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Script from 'next/script'
 
 // Cloudflare Web Analytics token
 // 鐣欑┖琛ㄧず鏆備笉鍚敤 Analytics锛涘悗缁湪 Cloudflare Dashboard 鎷垮埌鐪熷疄 token 鍚庡～鍏?
@@ -30,7 +31,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     const meta = marketMeta[locale]
 
     return {
-      metadataBase: new URL('https://togthr.life'),
+      metadataBase: new URL('https://www.togthr.life'),
       title: {
         template: `%s | ${t('siteName') || 'Togthr'}`,
         default: `${t('siteName') || 'Togthr'} — ${t('tagline')}`,
@@ -55,7 +56,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   } catch (error) {
     console.error('[layout] generateMetadata failed:', error)
     return {
-      metadataBase: new URL('https://togthr.life'),
+      metadataBase: new URL('https://www.togthr.life'),
       title: 'Togthr',
       description: 'Togthr - Grow Together, Love Deeper',
     }
@@ -133,6 +134,22 @@ export default async function LocaleLayout({ children, params }: Props) {
                 `,
               }}
             />
+          </>
+        )}
+
+        {/* Google Analytics 4 (GA4) */}
+        {process.env.NEXT_PUBLIC_GA4_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA4_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="gtag-init" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GA4_ID}');`}
+            </Script>
           </>
         )}
 

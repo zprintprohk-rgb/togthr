@@ -7,13 +7,20 @@ import { probe, makeCheck, Sub, LOCALES, loadPseoSlugs } from "../lib";
 const round = Math.floor(Date.now() / 1000 / 3600);
 
 // ─── 解析工具 ───
-function parseHreflangs(html: string): string[] {
+// 大小写不敏感：React 19 可能渲染成 hrefLang（驼峰），HTML 规范接受两种形式
+function parseHreflangLinks(html: string): { lang: string; href: string }[] {
   return [
-    ...html.matchAll(/<link[^>]+rel="alternate"[^>]+hreflang="([^"]+)"/g),
-  ]
-    .map((m) => m[1])
+    ...html.matchAll(/<link[^>]+rel="alternate"[^>]+href[lL]ang="([^"]+)"[^>]+href="([^"]+)"/gi),
+  ].map((m) => ({ lang: m[1], href: m[2] }));
+}
+
+function parseHreflangs(html: string): string[] {
+  return parseHreflangLinks(html)
+    .map((h) => h.lang)
     .filter((h) => h !== "x-default");
 }
+
+const WWW_BASE = "https://www.togthr.life";
 
 function parseCanonical(html: string): string | null {
   const m = html.match(
@@ -68,8 +75,9 @@ export async function check10() {
       const r = await probe(path);
       subs.push({ name: `${tag} 200`, ok: r.status === 200, detail: { status: r.status } });
 
-      // hreflang 检查
-      const langs = parseHreflangs(r.body);
+      // hreflang 检查（大小写不敏感 + 解析 full href）
+      const links = parseHreflangLinks(r.body);
+      const langs = links.map((h) => h.lang).filter((h) => h !== "x-default");
       const setOk =
         langs.length === 8 &&
         LOCALES.every((l) => langs.includes(l)) &&
@@ -80,6 +88,28 @@ export async function check10() {
         detail: { found: langs.length, expected: 8, langs },
       });
 
+      // hreflang href 必须含 www.togthr.life（不能是裸域）
+      const allHaveWww = links.every((hl) => hl.href.startsWith(WWW_BASE));
+      const bareUrls = links.filter((hl) => !hl.href.startsWith(WWW_BASE)).map((hl) => hl.href);
+      subs.push({
+        name: `${tag} hreflang href starts with www.togthr.life`,
+        ok: allHaveWww,
+        detail: { bareUrls: bareUrls.length > 0 ? bareUrls : undefined },
+      });
+
+      // hreflang href 必须含对应 locale 路径段（x-default 除外，它走 en）
+      const localeHrefsOk = links
+        .filter((hl) => hl.lang !== "x-default")
+        .every((hl) => hl.href.includes(`/${hl.lang}/`));
+      const wrongLocaleUrls = links
+        .filter((hl) => hl.lang !== "x-default" && !hl.href.includes(`/${hl.lang}/`))
+        .map((hl) => ({ lang: hl.lang, href: hl.href }));
+      subs.push({
+        name: `${tag} hreflang href contains /{locale}/ path`,
+        ok: localeHrefsOk,
+        detail: { wrongLocaleUrls: wrongLocaleUrls.length > 0 ? wrongLocaleUrls : undefined },
+      });
+
       // 自指检查
       subs.push({
         name: `${tag} hreflang self-ref (${loc})`,
@@ -88,17 +118,12 @@ export async function check10() {
       });
 
       // canonical 检查
-      // en 是默认 locale，canonical 可能是 /p/xxx（无前缀）或 /en/p/xxx，两种都合法
-      // 其他 locale 必须含 /{locale}/ 前缀
       const canon = parseCanonical(r.body);
-      const noLocalePrefix = /\/p\//.test(canon ?? ""); // canonical 直接 /p/xxx 无 locale 前缀
-      const canonOk = !!canon && (
-        loc === "en"
-          ? (canon.includes(`/${loc}/`) || noLocalePrefix)
-          : canon.includes(`/${loc}/`)
-      );
+      const canonOk = !!canon &&
+        canon.startsWith(WWW_BASE) &&
+        canon.includes(`/${loc}/`);
       subs.push({
-        name: `${tag} canonical self-locale`,
+        name: `${tag} canonical self-locale + www`,
         ok: canonOk,
         detail: { canon },
       });

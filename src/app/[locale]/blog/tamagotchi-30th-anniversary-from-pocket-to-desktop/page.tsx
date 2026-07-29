@@ -1,7 +1,7 @@
 // src/app/[locale]/blog/tamagotchi-30th-anniversary-from-pocket-to-desktop/page.tsx
 //
 // Phase 1 (Task B) - programmatic blog post for the
-// togthr.life /Togthr "small pixel pet" wedge. Single-file 8-locale
+// www.togthr.life /Togthr "small pixel pet" wedge. Single-file 8-locale
 // static overlay page (pSEO pattern, EN body reused across all 8
 // locales to respect the Phase 1 token cap; per-locale translation
 // deferred to the next wave after this batch validates).
@@ -271,6 +271,11 @@ export default async function BlogPostPage({
             From Pocket to Desktop: 30 Years of Electronic Pets, and Where They Live Now
           </h1>
         </header>
+        <section aria-label="Summary" className="mt-6 rounded-xl border border-pink-500/20 bg-pink-500/5 px-5 py-4">
+          <p className="text-sm leading-relaxed text-zinc-400">
+            This article traces 30 years of electronic pets from the original Tamagotchi keychain (released November 1996) to browser-based desktop companions. Togthr, costing $5.49/month or $37.99/year, represents the current generation: a pixel pet that grows through 5 stages in your browser tab over months.
+          </p>
+        </section>
         <div className="prose prose-invert mt-8 max-w-none">
           <p className="text-lg leading-relaxed text-zinc-200">{body.intro}</p>
           {body.sections.map((sec) => (

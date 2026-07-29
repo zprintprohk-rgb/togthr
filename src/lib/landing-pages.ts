@@ -257,7 +257,7 @@ const GROUP_OF: Record<string, LandingGroup> = (() => {
 
 export const ALL_SLUGS: string[] = [...coupleSlugs, ...selfSlugs, ...bffSlugs, ...tmgSlugs, ...ritualsSlugs, ...discoverySlugs]
 
-export const SITE_URL = 'https://togthr.life'
+export const SITE_URL = 'https://www.togthr.life'
 
 export function getLandingGroup(slug: string): LandingGroup {
   return GROUP_OF[slug] ?? 'self'
@@ -285,5 +285,5 @@ export function getLandingEntries(): LandingEntry[] {
 }
 
 export function getLandingUrl(slug: string, locale: Locale): string {
-  return locale === 'en' ? `${SITE_URL}/p/${slug}` : `${SITE_URL}/${locale}/p/${slug}`
+  return `${SITE_URL}/${locale}/p/${slug}`
 }

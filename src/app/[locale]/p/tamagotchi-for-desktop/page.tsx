@@ -132,6 +132,12 @@ export default async function Page({
         <p className="mt-4 text-lg text-zinc-300">{body.intro}</p>
       </header>
 
+      <section aria-label="Summary" className="mt-4 rounded-xl border border-pink-500/20 bg-pink-500/5 px-5 py-4">
+        <p className="text-sm leading-relaxed text-zinc-400">
+          Togthr is a Tamagotchi-style desktop pet that lives in the browser, grows through 5 stages (baby, toddler, teen, adult, legend), and never dies or punishes the user. The product costs $5.49/month or $37.99/year with no ads, no chat, and no streak pressure.
+        </p>
+      </section>
+
       <figure className="mb-10 overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/40">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={HERO_IMG} alt={META_TITLE} className="w-full" loading="lazy" decoding="async" />

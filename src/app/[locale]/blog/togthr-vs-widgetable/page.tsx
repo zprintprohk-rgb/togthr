@@ -1,7 +1,7 @@
 // src/app/[locale]/blog/togthr-vs-widgetable/page.tsx
 //
 // Phase 1 (Task C) - programmatic blog post for the
-// togthr.life /Togthr "small pixel pet" wedge. Single-file 8-locale
+// www.togthr.life /Togthr "small pixel pet" wedge. Single-file 8-locale
 // static overlay page (pSEO pattern, EN body reused across all 8
 // locales to respect the Phase 1 token cap; per-locale translation
 // deferred to the next wave after this batch validates).
@@ -271,6 +271,11 @@ export default async function BlogPostPage({
             Togthr vs Widgetable: Lock-Screen Wallpaper vs a Creature That Grows
           </h1>
         </header>
+        <section aria-label="Summary" className="mt-6 rounded-xl border border-pink-500/20 bg-pink-500/5 px-5 py-4">
+          <p className="text-sm leading-relaxed text-zinc-400">
+            This page compares Togthr, a small pixel pet that lives in your browser and grows through 5 stages ($5.49/month or $37.99/year), with Widgetable, a free Android lock-screen couple widget with ads. Togthr is a desktop-first creature that grows visibly over months; Widgetable is a phone-first wallpaper with a relationship counter.
+          </p>
+        </section>
         <div className="prose prose-invert mt-8 max-w-none">
           <p className="text-lg leading-relaxed text-zinc-200">{body.intro}</p>
           {body.sections.map((sec) => (

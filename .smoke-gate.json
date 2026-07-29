@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-28T17:56:07.451Z",
+  "ts": "2026-07-29T18:56:11.501Z",
   "gateOpen": false,
   "failed": [
     10
@@ -21,10 +21,10 @@
     },
     {
       "id": 10,
-      "title": "pSEO structured (round 495905: slug=desktop-pet-for-work-from-home, locales=en+de)",
+      "title": "pSEO structured (round 495930: slug=the-quietest-couple-app, locales=en+zh-tw)",
       "pass": false,
-      "subPass": 6,
-      "subTotal": 10
+      "subPass": 8,
+      "subTotal": 14
     },
     {
       "id": 11,

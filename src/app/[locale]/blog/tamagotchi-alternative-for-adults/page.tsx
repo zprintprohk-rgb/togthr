@@ -1,7 +1,7 @@
 // src/app/[locale]/blog/tamagotchi-alternative-for-adults/page.tsx
 //
 // Phase 1 (Task B) - programmatic blog post for the
-// togthr.life /Togthr "small pixel pet" wedge. Single-file 8-locale
+// www.togthr.life /Togthr "small pixel pet" wedge. Single-file 8-locale
 // static overlay page (pSEO pattern, EN body reused across all 8
 // locales to respect the Phase 1 token cap; per-locale translation
 // deferred to the next wave after this batch validates).

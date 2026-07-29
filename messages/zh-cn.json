@@ -895,5 +895,15 @@
     "phrase2": "一小步一小步来。",
     "phrase3": "你可以的。",
     "phrase4": "一起安静地成长。"
+  },
+  "paymentSuccess": {
+    "title": "[zh-cn] Payment successful 🎉",
+    "subtitle": "[zh-cn] Your companion felt that. Membership is now active.",
+    "noteTitle": "[zh-cn] What happens next",
+    "noteBody": "[zh-cn] Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "hint": "[zh-cn] If anything looks missing, give it a moment and refresh the pet page.",
+    "ctaPet": "[zh-cn] 🐾 Meet your pet",
+    "ctaPricing": "[zh-cn] ← Back to pricing",
+    "secureNotice": "[zh-cn] Payments processed securely."
   }
 }
