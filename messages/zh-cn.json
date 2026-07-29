@@ -897,13 +897,13 @@
     "phrase4": "一起安静地成长。"
   },
   "paymentSuccess": {
-    "title": "[zh-cn] Payment successful 🎉",
-    "subtitle": "[zh-cn] Your companion felt that. Membership is now active.",
-    "noteTitle": "[zh-cn] What happens next",
-    "noteBody": "[zh-cn] Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
-    "hint": "[zh-cn] If anything looks missing, give it a moment and refresh the pet page.",
-    "ctaPet": "[zh-cn] 🐾 Meet your pet",
-    "ctaPricing": "[zh-cn] ← Back to pricing",
-    "secureNotice": "[zh-cn] Payments processed securely."
+    "title": "Payment successful 🎉",
+    "subtitle": "Your companion felt that. Membership is now active.",
+    "noteTitle": "What happens next",
+    "noteBody": "Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "hint": "If anything looks missing, give it a moment and refresh the pet page.",
+    "ctaPet": "🐾 Meet your pet",
+    "ctaPricing": "← Back to pricing",
+    "secureNotice": "Payments processed securely."
   }
 }
