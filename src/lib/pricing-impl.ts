@@ -23,16 +23,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 45,
-        quarterly: 112,
-        yearly: 326,
-        quarterlyDiscount: 0.15,  // (132-112)/132
-        yearlyDiscount: 0.38,     // (528-326)/528
-      },
-      soulmate: {
         monthly: 35,
         quarterly: 89,
         yearly: 259,
+        quarterlyDiscount: 0.15,  // (132-112)/132
+        yearlyDiscount: 0.38,     // (528-326)/528
+      },
+        soulmate: {
+        monthly: 45,
+        quarterly: 112,
+        yearly: 326,
         quarterlyDiscount: 0.15,  // (105-89)/105
         yearlyDiscount: 0.38,     // (420-259)/420
       },
@@ -48,16 +48,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 55,
-        quarterly: 135,
-        yearly: 392,
-        quarterlyDiscount: 0.15,
-        yearlyDiscount: 0.38,
-      },
-      soulmate: {
         monthly: 44,
         quarterly: 112,
         yearly: 326,
+        quarterlyDiscount: 0.15,
+        yearlyDiscount: 0.38,
+      },
+        soulmate: {
+        monthly: 55,
+        quarterly: 135,
+        yearly: 392,
         quarterlyDiscount: 0.15,
         yearlyDiscount: 0.38,
       },
@@ -73,16 +73,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 209,
-        quarterly: 525,
-        yearly: 1530,
-        quarterlyDiscount: 0.15,
-        yearlyDiscount: 0.38,
-      },
-      soulmate: {
         monthly: 170,
         quarterly: 434,
         yearly: 1265,
+        quarterlyDiscount: 0.15,
+        yearlyDiscount: 0.38,
+      },
+        soulmate: {
+        monthly: 209,
+        quarterly: 525,
+        yearly: 1530,
         quarterlyDiscount: 0.15,
         yearlyDiscount: 0.38,
       },
@@ -98,16 +98,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 7.19,
-        quarterly: 17.99,
-        yearly: 53.39,
+        monthly: 5.19,
+        quarterly: 13.99,
+        yearly: 39.39,
         quarterlyDiscount: 0.17,  // (21.57-17.99)/21.57
         yearlyDiscount: 0.38,     // (86.28-53.39)/86.28
       },
-      soulmate: {
-        monthly: 5.39,
-        quarterly: 13.49,
-        yearly: 39.99,
+        soulmate: {
+        monthly: 7.39,
+        quarterly: 17.49,
+        yearly: 53.99,
         quarterlyDiscount: 0.17,
         yearlyDiscount: 0.38,
       },
@@ -123,16 +123,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 5.39,
-        quarterly: 13.49,
-        yearly: 39.99,
+        monthly: 4.39,
+        quarterly: 10.49,
+        yearly: 29.99,
         quarterlyDiscount: 0.17,
         yearlyDiscount: 0.38,
       },
-      soulmate: {
-        monthly: 4.04,
-        quarterly: 10.49,
-        yearly: 29.99,
+        soulmate: {
+        monthly: 5.04,
+        quarterly: 13.49,
+        yearly: 39.99,
         quarterlyDiscount: 0.13,
         yearlyDiscount: 0.38,
       },
@@ -148,16 +148,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 10.79,
-        quarterly: 26.99,
-        yearly: 80.39,
+        monthly: 8.79,
+        quarterly: 20.99,
+        yearly: 59.39,
         quarterlyDiscount: 0.17,
         yearlyDiscount: 0.38,
       },
-      soulmate: {
-        monthly: 8.09,
-        quarterly: 20.49,
-        yearly: 59.99,
+        soulmate: {
+        monthly: 10.09,
+        quarterly: 26.49,
+        yearly: 80.99,
         quarterlyDiscount: 0.16,
         yearlyDiscount: 0.38,
       },
@@ -173,16 +173,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 8.99,
-        quarterly: 22.49,
-        yearly: 65.99,
+        monthly: 6.99,
+        quarterly: 16.49,
+        yearly: 47.99,
         quarterlyDiscount: 0.17,
         yearlyDiscount: 0.39,
       },
-      soulmate: {
-        monthly: 6.47,
-        quarterly: 16.49,
-        yearly: 47.99,
+        soulmate: {
+        monthly: 8.47,
+        quarterly: 22.49,
+        yearly: 65.99,
         quarterlyDiscount: 0.15,
         yearlyDiscount: 0.38,
       },
@@ -198,16 +198,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 10.79,
-        quarterly: 26.99,
-        yearly: 80.39,
+        monthly: 8.79,
+        quarterly: 20.99,
+        yearly: 59.39,
         quarterlyDiscount: 0.17,
         yearlyDiscount: 0.38,
       },
-      soulmate: {
-        monthly: 8.09,
-        quarterly: 20.49,
-        yearly: 59.99,
+        soulmate: {
+        monthly: 10.09,
+        quarterly: 26.49,
+        yearly: 80.99,
         quarterlyDiscount: 0.16,
         yearlyDiscount: 0.38,
       },
@@ -223,16 +223,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 6.29,
-        quarterly: 15.99,
-        yearly: 46.79,
+        monthly: 4.29,
+        quarterly: 12.99,
+        yearly: 36.79,
         quarterlyDiscount: 0.15,
         yearlyDiscount: 0.38,
       },
-      soulmate: {
-        monthly: 4.94,
-        quarterly: 12.49,
-        yearly: 36.49,
+        soulmate: {
+        monthly: 6.94,
+        quarterly: 15.49,
+        yearly: 46.49,
         quarterlyDiscount: 0.16,
         yearlyDiscount: 0.38,
       },
@@ -248,16 +248,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 6.29,
-        quarterly: 15.99,
-        yearly: 46.79,
+        monthly: 4.29,
+        quarterly: 12.99,
+        yearly: 36.79,
         quarterlyDiscount: 0.15,
         yearlyDiscount: 0.38,
       },
-      soulmate: {
-        monthly: 4.94,
-        quarterly: 12.49,
-        yearly: 36.49,
+        soulmate: {
+        monthly: 6.94,
+        quarterly: 15.49,
+        yearly: 46.49,
         quarterlyDiscount: 0.16,
         yearlyDiscount: 0.38,
       },
@@ -273,16 +273,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 6.29,
-        quarterly: 15.99,
-        yearly: 46.79,
+        monthly: 4.29,
+        quarterly: 12.99,
+        yearly: 36.79,
         quarterlyDiscount: 0.15,
         yearlyDiscount: 0.38,
       },
-      soulmate: {
-        monthly: 4.94,
-        quarterly: 12.49,
-        yearly: 36.49,
+        soulmate: {
+        monthly: 6.94,
+        quarterly: 15.49,
+        yearly: 46.49,
         quarterlyDiscount: 0.16,
         yearlyDiscount: 0.38,
       },
@@ -298,16 +298,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 889,
-        quarterly: 2249,
-        yearly: 6560,
-        quarterlyDiscount: 0.15,
-        yearlyDiscount: 0.38,
-      },
-      soulmate: {
         monthly: 702,
         quarterly: 1790,
         yearly: 5220,
+        quarterlyDiscount: 0.15,
+        yearlyDiscount: 0.38,
+      },
+        soulmate: {
+        monthly: 889,
+        quarterly: 2249,
+        yearly: 6560,
         quarterlyDiscount: 0.15,
         yearlyDiscount: 0.38,
       },
@@ -323,16 +323,16 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 8999,
-        quarterly: 22720,
-        yearly: 66290,
-        quarterlyDiscount: 0.15,
-        yearlyDiscount: 0.38,
-      },
-      soulmate: {
         monthly: 7110,
         quarterly: 18130,
         yearly: 52890,
+        quarterlyDiscount: 0.15,
+        yearlyDiscount: 0.38,
+      },
+        soulmate: {
+        monthly: 8999,
+        quarterly: 22720,
+        yearly: 66290,
         quarterlyDiscount: 0.15,
         yearlyDiscount: 0.38,
       },
