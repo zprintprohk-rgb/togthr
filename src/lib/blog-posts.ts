@@ -3633,6 +3633,211 @@ const quietCompanionAppNoChatPosts: BlogPost[] = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// Daily post: 2026-07-28 — the smallest ritual you will actually keep
+// 8 locales × 1 post
+// Topic: micro-rituals + shared-pet + habit-design — the 5-second
+//        daily act of feeding a shared virtual pet as the couple habit
+//        that actually survives the second week.
+// ──────────────────────────────────────────────────────────────────────
+
+const SMALLEST_RITUAL_DATE = '2026-07-28';
+const SMALLEST_RITUAL_SLUG = 'the-smallest-ritual-you-will-actually-keep';
+const SMALLEST_RITUAL_TAGS = ['micro-rituals', 'shared-pet', 'couples', 'habit-design', 'togthr-tips'];
+
+const smallestRitualPosts: BlogPost[] = [
+  {
+    slug: SMALLEST_RITUAL_SLUG,
+    locale: 'en',
+    title: 'The Smallest Ritual You Will Actually Keep: Why a 5-Second Daily Feed Beats Every Grand Gesture',
+    description:
+      'Couples who try big romantic rituals together quit by the second week. The one that lasts is almost invisible: a five-second shared feed of a pixel pet. Here is the quiet design principle behind it — and why the smallest habit is the one you never have to decide to keep.',
+    date: SMALLEST_RITUAL_DATE,
+    cover: `/blog-covers/${SMALLEST_RITUAL_SLUG}-en.png`,
+    tags: SMALLEST_RITUAL_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: SMALLEST_RITUAL_SLUG,
+    locale: 'zh-cn',
+    title: '你会真正坚持下来的最小仪式:为什么每天花5秒钟合喂一只宠物,比任何大浪漫都管用',
+    description:
+      '一起尝试那些大浪漫仪式的情侣,到第二周就放弃。反而是那个几乎看不见的东西能活下去:每天花5秒钟,一起喂一只像素宠物。这就是它背后安静的设计原理 —— 以及为什么最微小的习惯,是你从来不需要"决定"去坚持的那个。',
+    date: SMALLEST_RITUAL_DATE,
+    cover: `/blog-covers/${SMALLEST_RITUAL_SLUG}-zh-cn.png`,
+    tags: SMALLEST_RITUAL_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: SMALLEST_RITUAL_SLUG,
+    locale: 'zh-tw',
+    title: '你會真正堅持下來的最小儀式:為什麼每天花5秒鐘合餵一隻寵物,比任何大浪漫都管用',
+    description:
+      '一起嘗試那些大浪漫儀式的情侶,到第二週就放棄了。反而是那個幾乎看不見的東西能活下去:每天花5秒鐘,一起餵一隻像素寵物。這就是它背後安靜的設計原理 —— 以及為什麼最微小的習慣,是你從來不需要「決定」去堅持的那個。',
+    date: SMALLEST_RITUAL_DATE,
+    cover: `/blog-covers/${SMALLEST_RITUAL_SLUG}-zh-tw.png`,
+    tags: SMALLEST_RITUAL_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: SMALLEST_RITUAL_SLUG,
+    locale: 'ja',
+    title: 'あなたが本当に続けられる一番小さな儀式:5秒のエサやりが、どんな大きなサプライズより強い理由',
+    description:
+      '大きなロマンチックな儀式を一緒に試したカップルは、2週間でやめてしまいます。生き残るのはほとんど目に見えないもの:ドットペットに5秒だけエサをあげる日々の行為です。その背後にある静かなデザインの原則 — そして、一番小さな習慣こそが「続けよう」と決意しなくても勝手に続くものである理由。',
+    date: SMALLEST_RITUAL_DATE,
+    cover: `/blog-covers/${SMALLEST_RITUAL_SLUG}-ja.png`,
+    tags: SMALLEST_RITUAL_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: SMALLEST_RITUAL_SLUG,
+    locale: 'ko',
+    title: '당신이 진짜로 계속할 수 있는 가장 작은 의식: 5초짜리 먹이 주기가 어떤 그랜드 제스처보다 강한 이유',
+    description:
+      '큰 로맨틱한 의식을 함께 시도한 커플은 2주차에 포기합니다. 살아남는 것은 거의 보이지 않는 것입니다: 픽셀 펫에게 5초 동안 먹이를 주는 매일의 행위. 그 뒤에 숨은 조용한 디자인 원리 — 그리고 가장 작은 습관이야말로 "계속해야지"라고 결심하지 않아도 되는 유일한 것임을.',
+    date: SMALLEST_RITUAL_DATE,
+    cover: `/blog-covers/${SMALLEST_RITUAL_SLUG}-ko.png`,
+    tags: SMALLEST_RITUAL_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: SMALLEST_RITUAL_SLUG,
+    locale: 'de',
+    title: 'Das kleinste Ritual, das du wirklich durchhältst: Warum eine 5-Sekunden-Fütterung am Tag jede große Geste schlägt',
+    description:
+      'Paare, die gemeinsam große romantische Rituale ausprobieren, hören in Woche zwei wieder auf. Was bleibt, ist fast unsichtbar: das tägliche fünfsekündige Füttern eines Pixel-Haustiers. Das stille Design-Prinzip dahinter — und warum die kleinste Gewohnheit diejenige ist, die du nie bewusst durchhalten musst, weil sie einfach passiert.',
+    date: SMALLEST_RITUAL_DATE,
+    cover: `/blog-covers/${SMALLEST_RITUAL_SLUG}-de.png`,
+    tags: SMALLEST_RITUAL_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: SMALLEST_RITUAL_SLUG,
+    locale: 'fr',
+    title: 'Le plus petit rituel que vous tiendrez vraiment : pourquoi nourrir un animal pixel 5 secondes par jour bat tous les grands gestes',
+    description:
+      "Les couples qui essaient ensemble de grands rituels romantiques abandonnent à la deuxième semaine. Celui qui survit est presque invisible : un nourrissage partagé de cinq secondes d\'un animal pixel. Voici le principe de design discret derrière — et pourquoi la plus petite habitude est celle que vous n\'avez jamais à \"décider\" de garder.",
+    date: SMALLEST_RITUAL_DATE,
+    cover: `/blog-covers/${SMALLEST_RITUAL_SLUG}-fr.png`,
+    tags: SMALLEST_RITUAL_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: SMALLEST_RITUAL_SLUG,
+    locale: 'es',
+    title: 'El ritual más pequeño que realmente mantendrás: por qué alimentar a una mascota pixel 5 segundos al día supera a cualquier gran gesto',
+    description:
+      'Las parejas que intentan grandes rituales románticos juntos abandonan a la segunda semana. El que sobrevive es casi invisible: alimentar juntos durante cinco segundos a una mascota pixel. Aquí el principio de diseño silencioso detrás de esto — y por qué el hábito más pequeño es el que nunca tienes que "decidir" mantener.',
+    date: SMALLEST_RITUAL_DATE,
+    cover: `/blog-covers/${SMALLEST_RITUAL_SLUG}-es.png`,
+    tags: SMALLEST_RITUAL_TAGS,
+    readingMinutes: 6,
+  },
+];
+
+// ──────────────────────────────────────────────────────────────────────
+// Daily post: 2026-07-29 — desktop tamagotchi windows
+// 8 locales × 1 post
+// Topic: desktop tamagotchi + windows + taskbar — the return of the
+//        tamagotchi as a Windows desktop companion.
+// ──────────────────────────────────────────────────────────────────────
+
+const DESKTOP_TAMAGOTCHI_DATE = '2026-07-29';
+const DESKTOP_TAMAGOTCHI_SLUG = 'desktop-tamagotchi-windows';
+const DESKTOP_TAMAGOTCHI_TAGS = ['desktop-tamagotchi', 'windows', 'virtual-pet', 'tamagotchi-30th', 'taskbar'];
+
+const desktopTwinPosts: BlogPost[] = [
+  {
+    slug: DESKTOP_TAMAGOTCHI_SLUG,
+    locale: 'en',
+    title: 'The Desktop Tamagotchi for Windows: The Plastic Egg Grew Up and Moved Into Your Taskbar',
+    description:
+      'In 1997, you clipped it to your backpack. In 2026, it lives on your Windows taskbar. Here is why the tamagotchi belongs on the desktop — and what a modern desktop tamagotchi actually does during your workday.',
+    date: DESKTOP_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${DESKTOP_TAMAGOTCHI_SLUG}-en.png`,
+    tags: DESKTOP_TAMAGOTCHI_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: DESKTOP_TAMAGOTCHI_SLUG,
+    locale: 'zh-cn',
+    title: 'Windows 桌面拓麻歌子:那颗塑料蛋长大了,搬进了你的任务栏',
+    description:
+      '1997 年,你把它挂在书包上。2026 年,它住在你的 Windows 任务栏上。这就是为什么拓麻歌子应该待在桌面上——以及一只现代桌面拓麻歌子在工作日里到底在做什么。',
+    date: DESKTOP_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${DESKTOP_TAMAGOTCHI_SLUG}-zh-cn.png`,
+    tags: DESKTOP_TAMAGOTCHI_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: DESKTOP_TAMAGOTCHI_SLUG,
+    locale: 'zh-tw',
+    title: 'Windows 桌面塔麻歌子:那顆塑膠蛋長大了,搬進了你的工作列',
+    description:
+      '1997 年,你把它掛在書包上。2026 年,它住在你的 Windows 工作列上。這就是為什麼塔麻歌子應該待在桌面上——以及一隻現代桌面塔麻歌子在工作日裡到底在做什麼。',
+    date: DESKTOP_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${DESKTOP_TAMAGOTCHI_SLUG}-zh-tw.png`,
+    tags: DESKTOP_TAMAGOTCHI_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: DESKTOP_TAMAGOTCHI_SLUG,
+    locale: 'ja',
+    title: 'Windows版デスクトップたまごっち: あのプラスチックの卵が育って、タスクバーに引っ越してきた',
+    description:
+      '1997年、リュックにクリップで留めていた。2026年、それはWindowsのタスクバーに住んでいる。たまごっちがデスクトップにふさわしい理由——そして現代のデスクトップたまごっちが仕事中に実際に何をしているのか。',
+    date: DESKTOP_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${DESKTOP_TAMAGOTCHI_SLUG}-ja.png`,
+    tags: DESKTOP_TAMAGOTCHI_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: DESKTOP_TAMAGOTCHI_SLUG,
+    locale: 'ko',
+    title: 'Windows 데스크톱 다마고치: 그 플라스틱 알이 자라서 작업 표시줄로 이사 왔다',
+    description:
+      '1997년, 책가방에 달고 다녔다. 2026년, Windows 작업 표시줄에 살고 있다. 다마고치가 데스크톱에 있어야 하는 이유——그리고 현대 데스크톱 다마고치가 근무 시간 동안 실제로 무엇을 하는지.',
+    date: DESKTOP_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${DESKTOP_TAMAGOTCHI_SLUG}-ko.png`,
+    tags: DESKTOP_TAMAGOTCHI_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: DESKTOP_TAMAGOTCHI_SLUG,
+    locale: 'de',
+    title: 'Das Desktop-Tamagotchi für Windows: Das Plastik-Ei ist erwachsen geworden und in deine Taskleiste gezogen',
+    description:
+      '1997 hast du es an den Rucksack geklemmt. 2026 lebt es in deiner Windows-Taskleiste. Warum das Tamagotchi auf den Desktop gehört — und was ein modernes Desktop-Tamagotchi während deines Arbeitstags tatsächlich tut.',
+    date: DESKTOP_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${DESKTOP_TAMAGOTCHI_SLUG}-de.png`,
+    tags: DESKTOP_TAMAGOTCHI_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: DESKTOP_TAMAGOTCHI_SLUG,
+    locale: 'fr',
+    title: "Le tamagotchi de bureau pour Windows : l'œuf en plastique a grandi et a emménagé dans votre barre des tâches",
+    description:
+      "En 1997, vous l'accrochiez à votre sac à dos. En 2026, il vit dans votre barre des tâches Windows. Pourquoi le tamagotchi appartient au bureau — et ce que fait vraiment un tamagotchi de bureau moderne pendant votre journée de travail.",
+    date: DESKTOP_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${DESKTOP_TAMAGOTCHI_SLUG}-fr.png`,
+    tags: DESKTOP_TAMAGOTCHI_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: DESKTOP_TAMAGOTCHI_SLUG,
+    locale: 'es',
+    title: 'El tamagotchi de escritorio para Windows: el huevo de plástico creció y se mudó a tu barra de tareas',
+    description:
+      'En 1997 lo enganchabas a la mochila. En 2026 vive en tu barra de tareas de Windows. Por qué el tamagotchi pertenece al escritorio — y qué hace realmente un tamagotchi de escritorio moderno durante tu jornada laboral.',
+    date: DESKTOP_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/${DESKTOP_TAMAGOTCHI_SLUG}-es.png`,
+    tags: DESKTOP_TAMAGOTCHI_TAGS,
+    readingMinutes: 6,
+  },
+];
+
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -3671,6 +3876,8 @@ export const blogPosts: BlogPost[] = [
   ...pixelPetLikeTamagotchiPosts,
   ...tamagotchiForWorkComputerPosts,
   ...quietCompanionAppNoChatPosts,
+  ...smallestRitualPosts,
+  ...desktopTwinPosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
