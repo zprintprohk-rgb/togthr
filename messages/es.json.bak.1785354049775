@@ -1,0 +1,909 @@
+{
+  "siteName": "Togthr",
+  "tagline": "Siempre aquí",
+  "nav": {
+    "home": "Inicio",
+    "features": "Funciones",
+    "pricing": "Precios",
+    "community": "Comunidad",
+    "login": "Iniciar sesión",
+    "dashboard": "Panel",
+    "daily": "Diario",
+    "capsule": "Cápsula",
+    "pet": "Mascota",
+    "journal": "Nido",
+    "store": "Tienda",
+    "chat": "Chat",
+    "faq": "Preguntas",
+    "blog": "Blog",
+    "focus": "Enfoque"
+  },
+  "seo": {
+    "siteName": "Togthr",
+    "description": "Un pequeño robot en tu dispositivo, que te acompaña y representa al otro. Construye rituales diarios, guarda recuerdos y cultiva un compañero virtual.",
+    "keywords": "compañero mascota virtual recuerdos cápsula del tiempo ritual diario apoyo emocional alma gemela larga distancia mascota pixel compañero IA",
+    "tagline": "Siempre aquí"
+  },
+  "home": {
+    "hero": {
+      "title": "Siempre aquí",
+      "subtitle": "Un pequeño robot en tu dispositivo, que te acompaña y representa al otro.",
+      "cta": "Empezar gratis",
+      "secondary": "Ver cómo funciona",
+      "socialProof": "Más de 10 000 usuarios en todo el mundo",
+      "eyebrow": "Siempre aquí · Siempre atento",
+      "welcomeFirst": "¡Hola! Acabo de despertar. Estaré aquí, siempre.",
+      "welcomeBack": "¡Volviste! Te estaba esperando.",
+      "sleepyGreeting": "Shhh… es tarde. Quédate un momento conmigo.",
+      "statusHello": "¡Hola! Mucho gusto.",
+      "statusMiss": "¡Volviste!",
+      "statusSleepy": "Shhh… tengo sueño.",
+      "relationsEyebrow": "Elige a tu compañero",
+      "relationsHint": "Cada modo cambia el aspecto y el brillo de tu mascota."
+    },
+    "features": {
+      "title": "Diseñado para parejas reales",
+      "subtitle": "Cada función está pensada para acercarlos, sin importar la distancia.",
+      "sharedJournal": {
+        "title": "Check-in diario",
+        "desc": "5 minutos de preguntas diseñadas por psicólogos para construir intimidad emocional, día a día."
+      },
+      "moodTracker": {
+        "title": "Cápsulas del tiempo",
+        "desc": "Guarda fotos, notas de voz y cartas para abrir en un futuro aniversario. Su cofre de recuerdos privado."
+      },
+      "dreamWall": {
+        "title": "Mascota virtual",
+        "desc": "Críen una mascota juntos completando desafíos diarios. Vean cómo crece con su relación – la prueba más tierna de su inversión."
+      },
+      "dailyGratitude": {
+        "title": "Comunidad anónima",
+        "desc": "Compartan historias anónimamente con parejas de todo el mundo. Pidan consejo, celebren hitos, siéntanse acompañados."
+      },
+      "petAdoption": {
+        "title": "Diario compartido",
+        "desc": "Escriban juntos, reflexionen juntos. Un espacio privado para su historia compartida."
+      },
+      "timeCapsule": {
+        "title": "Muro de sueños",
+        "desc": "Fijen sus sueños, metas y deseos en el muro – construyan su futuro juntos."
+      }
+    },
+    "companions": {
+      "title": "Compañeros Togthr",
+      "subtitle": "Envía stickers adorables con 1 toque",
+      "cta": "Próximamente en el chat",
+      "cards": {
+        "feeding": {
+          "title": "Hora de comer",
+          "desc": "Envía un corazón y míralo brillar de satisfacción"
+        },
+        "capsule": {
+          "title": "Cápsula del tiempo · Excavar",
+          "desc": "Entierra una, tu mascota la desenterrará"
+        },
+        "symbiosis": {
+          "title": "Simbiosis",
+          "desc": "Una pequeña vida que refleja vuestro vínculo"
+        },
+        "blindbox": {
+          "title": "Caja sorpresa 6+1",
+          "desc": "Oferta primer pedido",
+          "badge": "Nuevo"
+        },
+        "nest": {
+          "title": "Construir el nido",
+          "desc": "Cada entrada del diario suma un ladrillo a vuestro hogar"
+        },
+        "soulmate": {
+          "title": "IA alma gemela",
+          "desc": "Habla cuando quieras — te escucha de verdad"
+        },
+        "treehole": {
+          "title": "Agujero del árbol",
+          "desc": "Notas anónimas, desaparecen en 24 h"
+        },
+        "focus": {
+          "title": "Modo Enfoque",
+          "desc": "Tu mascota estudia y trabaja a tu lado"
+        }
+      }
+    }
+  },
+  "pricing": {
+    "title": "Precios simples y transparentes",
+    "subtitle": "Elige lo que mejor se adapte a su viaje. Sin costos ocultos. Cancela cuando quieras.",
+    "monthly": "Mensual",
+    "quarterly": "Trimestral",
+    "yearly": "Anual",
+    "popular": "Más popular",
+    "save": "Ahorra {discount}%",
+    "tiers": {
+      "free": {
+        "name": "Gratis",
+        "price": "0€",
+        "features": [
+          "Check-in diario",
+          "3 cápsulas del tiempo",
+          "Mascota básica",
+          "Acceso a comunidad"
+        ]
+      },
+      "plus": {
+        "name": "Togthr Plus",
+        "price": "5,49€",
+        "period": "/mes",
+        "features": [
+          "Cápsulas ilimitadas",
+          "Skins premium",
+          "Álbum privado",
+          "Insights de relación"
+        ]
+      },
+      "premium": {
+        "name": "We2 Premium",
+        "price": "13,99€",
+        "period": "/trimestre",
+        "features": [
+          "Todo Plus",
+          "Soporte prioritario",
+          "Nombre personalizado",
+          "Exportar recuerdos"
+        ]
+      },
+      "lifetime": {
+        "name": "We2 Para Siempre",
+        "price": "39,99€",
+        "period": "/año",
+        "features": [
+          "Todo Premium",
+          "Actualizaciones de por vida",
+          "Contenido exclusivo",
+          "Acceso anticipado"
+        ]
+      },
+      "soulmate": {
+        "name": "Togthr Alma gemela",
+        "price": "",
+        "period": "/mes",
+        "features": [
+          "Todo de Plus",
+          "Estilo de habla IA",
+          "Habla como el otro",
+          "Sugerencias inteligentes de recuerdos",
+          "Soporte prioritario"
+        ]
+      },
+      "eternal": {
+        "name": "Togthr Eternal",
+        "tagline": "Todo incluido + exclusivo",
+        "features": [
+          "Todo de Plus",
+          "Todos los 50+ skins desbloqueados",
+          "Mascotas legendarias doradas",
+          "Soporte prioritario",
+          "Acceso anticipado a nuevas funciones"
+        ]
+      }
+    },
+    "cta": "Comenzar ahora",
+    "ctaFree": "Comenzar gratis",
+    "free": "Gratis",
+    "period": {
+      "monthly": "mes",
+      "quarterly": "trimestre",
+      "yearly": "año"
+    },
+    "per": {
+      "monthly": "mes",
+      "quarterly": "trim.",
+      "yearly": "año"
+    },
+    "promoPlaceholder": "Ingresa código promocional",
+    "promoApply": "Aplicar",
+    "promoHint": "¡Códigos promocionales próximamente!",
+    "secure": "Asegurado por PayPal",
+    "guarantee": "Garantía de devolución de 30 días",
+    "new": "Nuevo",
+    "theater": {
+      "eyebrow": "Elige tu camino",
+      "headline": "Desbloquea una vida que crece contigo",
+      "tagline": "Tres niveles. Una promesa: cada mascota que desbloquees se queda contigo para siempre.",
+      "guarantee": "Garantía de devolución de 30 días",
+      "secure": "Pagos seguros con PayPal · Alipay · AlipayHK"
+    },
+    "tierMeta": {
+      "free": {
+        "eyebrow": "Brote",
+        "tagline": "Empieza tu camino",
+        "peeking": "mascotas escondidas"
+      },
+      "plus": {
+        "eyebrow": "Compañero",
+        "tagline": "Elige tu alma",
+        "peeking": "mascotas emocionadas"
+      },
+      "eternal": {
+        "eyebrow": "Polvo de estrellas",
+        "tagline": "Vuélvete atemporal",
+        "peeking": "mascotas ascendidas"
+      }
+    },
+    "petMatrix": {
+      "free": {
+        "label": "3 compañeros básicos",
+        "sub": "Brotes, semillas, iniciadores"
+      },
+      "plus": {
+        "label": "Desbloquea 50+ atuendos",
+        "sub": "Profesión · Fiesta · Emoción · Fantasía"
+      },
+      "eternal": {
+        "label": "Todo incluido + exclusivo",
+        "sub": "Incluye la leyenda dorada"
+      }
+    },
+    "legendary": {
+      "label": "Leyenda dorada",
+      "odds": "1 / 72",
+      "hint": "Drop aleatorio de la caja Eternal"
+    },
+    "countdown": {
+      "label": "Edición Halloween · Acceso anticipado",
+      "endsIn": "Termina en",
+      "days": "d",
+      "hours": "h",
+      "minutes": "m",
+      "seconds": "s"
+    },
+    "ctaSubscribe": "Suscribirse",
+    "ctaStartFree": "Empezar gratis",
+    "ctaPopular": "Elegir compañero",
+    "ctaEternal": "Hacerse Eternal"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre Togthr",
+    "items": [
+      {
+        "question": "¿Qué es Togthr y cómo ayuda a las parejas?",
+        "answer": "Togthr es una app de crecimiento emocional diseñada con psicólogos. A través de checks diarios, cápsulas del tiempo y desafíos compartidos, ayuda a las parejas a construir hábitos emocionales duraderos."
+      },
+      {
+        "question": "¿Mis datos están privados y seguros?",
+        "answer": "Absolutamente. Usamos cifrado de extremo a extremo para todo el contenido personal. Sus momentos íntimos, fotos y mensajes permanecen solo entre ustedes dos. Nunca vendemos datos."
+      },
+      {
+        "question": "¿Puedo usar Togthr en una relación a distancia?",
+        "answer": "¡Sí! Togthr está diseñado para todo tipo de parejas, en la misma habitación o en lados opuestos del mundo. Las cápsulas del tiempo y checks diarios son perfectos para mantener la conexión."
+      },
+      {
+        "question": "¿Cómo funciona la mascota virtual?",
+        "answer": "Su mascota crece cuando ambos completan checks y desafíos diarios. Es una visualización divertida de su inversión en la relación. Nuevas mascotas y skins se desbloquean en hitos importantes."
+      },
+      {
+        "question": "¿Qué métodos de pago aceptan?",
+        "answer": "Aceptamos PayPal para todos los usuarios y Alipay para usuarios en China. Todas las transacciones son seguras y están cifradas."
+      },
+      {
+        "question": "¿Puedo cancelar mi membresía?",
+        "answer": "Sí, cancela cuando quieras. Tu membresía permanece activa hasta el final del período actual. También ofrecemos garantía de devolución de 30 días para nuevos suscriptores."
+      },
+      {
+        "question": "¿Cómo me conecto con mi pareja?",
+        "answer": "Después de registrarte, envía un código de invitación a tu pareja. Una vez que lo acepte, sus cuentas quedarán vinculadas y podrán disfrutar juntos de los checks, cápsulas y la mascota."
+      },
+      {
+        "question": "¿Hay una función de comunidad?",
+        "answer": "¡Sí! Nuestra comunidad anónima te permite compartir historias, pedir consejos y celebrar hitos con parejas de todo el mundo – de forma anónima o con tu perfil de pareja."
+      }
+    ]
+  },
+  "auth": {
+    "loginTitle": "Bienvenido de nuevo",
+    "loginSubtitle": "Inicia sesión para continuar su viaje juntos",
+    "registerTitle": "Comiencen su viaje",
+    "registerSubtitle": "Crea tu cuenta e invita a tu pareja",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Ingresa tu contraseña",
+    "displayNameLabel": "Nombre",
+    "displayNamePlaceholder": "Tu nombre",
+    "loginButton": "Iniciar sesión",
+    "registerButton": "Crear cuenta",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "registerLink": "Regístrate",
+    "loginLink": "Iniciar sesión",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "resetPasswordTitle": "Restablecer contraseña",
+    "resetPasswordSubtitle": "Ingresa tu correo para recibir un enlace",
+    "resetPasswordButton": "Enviar enlace",
+    "updatePasswordTitle": "Establecer nueva contraseña",
+    "updatePasswordSubtitle": "Ingresa tu nueva contraseña",
+    "updatePasswordButton": "Actualizar contraseña",
+    "orContinueWith": "O continuar con",
+    "google": "Google",
+    "github": "GitHub",
+    "checkEmail": "Revisa tu correo para el enlace de confirmación.",
+    "passwordUpdated": "Contraseña actualizada. Ya puedes iniciar sesión.",
+    "signOut": "Cerrar sesión",
+    "dashboard": "Panel"
+  },
+  "footer": {
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "cookie": "Cookies",
+    "help": "Ayuda",
+    "contact": "Contacto",
+    "copyright": "© {year} Togthr. Todos los derechos reservados."
+  },
+  "notFound": {
+    "title": "¿Perdido?",
+    "description": "Esta página se perdió. Tu mascota también la busca.",
+    "backHome": "Inicio",
+    "feedPet": "Alimentar",
+    "sayHi": "Saludar",
+    "pixelHint": "Momento 8-bit"
+  },
+  "payment": {
+    "title": "Completar compra",
+    "subtitle": "Elige un método de pago para desbloquear We2 Plus",
+    "periodLabel": "Período de facturación",
+    "monthly": "Mensual",
+    "quarterly": "Trimestral",
+    "yearly": "Anual",
+    "priceLabel": "Total",
+    "gatewayLabel": "Método de pago",
+    "paypal": "PayPal",
+    "alipayCn": "Alipay（China continental）",
+    "alipayHk": "AlipayHK（Hong Kong / Taiwán）",
+    "payButton": "Pagar con {gateway}",
+    "processing": "Procesando pago…",
+    "success": {
+      "title": "¡Pago exitoso!",
+      "message": "Gracias por suscribirte a We2 Plus. Redirigiendo al panel…"
+    },
+    "error": {
+      "title": "Pago fallido",
+      "message": "Ocurrió un error al procesar el pago. Por favor, inténtalo de nuevo.",
+      "retry": "Reintentar"
+    },
+    "cancel": {
+      "title": "Pago cancelado",
+      "message": "Has cancelado el pago. Puedes intentarlo de nuevo cuando quieras."
+    }
+  },
+  "upload": {
+    "dragOrClick": "Arrastra archivos aquí, o haz clic para seleccionar",
+    "dropHere": "Suelta los archivos aquí",
+    "constraints": "Máx. {maxSize}MB por archivo, hasta {maxFiles} archivos",
+    "statusSuccess": "Subido",
+    "remove": "Eliminar archivo",
+    "errorTooLarge": "El archivo supera el límite de {maxSize}MB",
+    "errorType": "Tipo de archivo no soportado. Aceptados: {types}",
+    "errorMaxFiles": "Máximo {max} archivos permitidos",
+    "errorUpload": "Carga fallida. Por favor, inténtalo de nuevo."
+  },
+  "features": {
+    "dailyCheckIn": {
+      "longDesc": "Empieza cada día con una pregunta reflexiva diseñada para profundizar vuestra conexión emocional. Responde en privado, luego revelad y comentad con tu pareja.",
+      "step1": "Recibe una pregunta diaria cada mañana",
+      "step2": "Responde en privado antes de ver la respuesta de tu pareja",
+      "step3": "Revelad ambas respuestas simultáneamente",
+      "step4": "Comentad y ganad puntos de amor para vuestra mascota virtual"
+    },
+    "timeCapsules": {
+      "longDesc": "Crea cápsulas del tiempo digitales con fotos, notas de voz y cartas de amor. Ciérralas y elige una fecha futura para abrirlas — perfecto para aniversarios o sorpresas.",
+      "step1": "Crea una cápsula con fotos, notas o mensajes de voz",
+      "step2": "Establece una fecha futura de apertura (aniversario, cumpleaños, etc.)",
+      "step3": "Ambos podéis añadir contenido hasta que la cápsula se selle",
+      "step4": "Recibe una notificación cuando sea el momento de abrirla juntos"
+    },
+    "virtualPet": {
+      "longDesc": "Conoce a vuestra mascota virtual compartida — un compañero adorable que crece con vuestra relación. Completad check-ins diarios para ganar puntos de amor y desbloquear skins.",
+      "step1": "Elegid y poned nombre a vuestra mascota juntos",
+      "step2": "Ganad puntos de amor completando check-ins diarios",
+      "step3": "Alimentad, jugad y cuidad a vuestra mascota en equipo",
+      "step4": "Desbloquead nuevas skins y evoluciones en hitos de relación"
+    },
+    "privateCommunity": {
+      "longDesc": "Únete a una comunidad anónima y solidaria de parejas de todo el mundo. Compartid vuestras historias, pedid consejo y celebrad hitos.",
+      "step1": "Cread vuestro perfil de pareja anónimo",
+      "step2": "Publicad historias, preguntas o hitos",
+      "step3": "Interactuad con publicaciones de otras parejas",
+      "step4": "Construid conexiones en un espacio solidario y moderado"
+    },
+    "sharedJournal": {
+      "longDesc": "Escribid vuestra historia juntos — literalmente. Un diario compartido donde ambos podéis añadir entradas y construir una línea de tiempo de vuestros momentos más preciosos.",
+      "step1": "Cread una nueva entrada en cualquier momento",
+      "step2": "Ambos podéis ver, editar y comentar",
+      "step3": "Añadid fotos y etiquetas de ubicación a las entradas",
+      "step4": "Desplazaos por vuestra línea de tiempo de relación juntos"
+    },
+    "dreamWall": {
+      "longDesc": "Fijad vuestros sueños, metas y lista de deseos compartidos en un tablero visual. Planead vuestro futuro juntos y marcadlos cuando los logréis.",
+      "step1": "Añadid sueños y metas a vuestro tablero compartido",
+      "step2": "Organizad por categoría (viajes, hogar, aventuras, etc.)",
+      "step3": "Estableced fechas objetivo y seguid el progreso juntos",
+      "step4": "Celebrad cada logro con una animación especial"
+    },
+    "backToFeatures": "Volver a funciones",
+    "howItWorks": "Cómo funciona",
+    "tryItOut": "Pruébalo"
+  },
+  "demo": {
+    "dailyCheckIn": {
+      "title": "Pregunta de hoy",
+      "placeholder": "Comparte tu momento...",
+      "save": "Guardar respuesta",
+      "saved": "¡Respuesta guardada!",
+      "nextQuestion": "Siguiente pregunta →",
+      "history": "Tus respuestas",
+      "empty": "Empieza tu primer check-in"
+    },
+    "timeCapsules": {
+      "title": "Cápsulas de memoria",
+      "titlePlaceholder": "Un título para nuestro futuro...",
+      "contentPlaceholder": "Escribe este momento...",
+      "lockCapsule": "Cerrar cápsula 🔒",
+      "empty": "Crea tu primera cápsula",
+      "unlocked": "Abierta",
+      "daysLeft": "{days} días restantes",
+      "noContent": "(Sin contenido)"
+    },
+    "virtualPet": {
+      "title": "Tu mascota",
+      "petName": "Luna",
+      "virtualCompanion": "Compañero virtual",
+      "level": "Nivel {level}",
+      "hunger": "Hambre",
+      "happiness": "Felicidad",
+      "intimacy": "Intimidad",
+      "feed": "Alimentar",
+      "play": "Jugar",
+      "cuddle": "Abrazo"
+    },
+    "privateCommunity": {
+      "title": "Historias de la comunidad"
+    },
+    "sharedJournal": {
+      "title": "Diario compartido",
+      "placeholder": "Escribe la entrada de hoy...",
+      "writeEntry": "Escribir entrada",
+      "you": "Tú",
+      "partner": "Pareja"
+    },
+    "dreamWall": {
+      "title": "Muro de sueños",
+      "placeholder": "Nuestro próximo gran sueño...",
+      "pin": "Fijar",
+      "empty": "Fija tu primer sueño en el muro"
+    }
+  },
+  "legal": {
+    "lastUpdated": "Última actualización: 1 de junio de 2026",
+    "privacy": {
+      "title": "Política de privacidad",
+      "subtitle": "Tu privacidad importa. Esta página explica qué datos recogemos, cómo los usamos y los derechos que tienes sobre tu información.",
+      "sections": [
+        {
+          "heading": "1. Information We Collect",
+          "body": "We collect only the information needed to provide Togthr's couple-wellness services: account email, encrypted password, profile details (nickname, avatar, anniversary date), and the content you create in the app (check-in answers, journal entries, time capsules, photos). We never sell your data to third parties."
+        },
+        {
+          "heading": "2. How We Use Your Data",
+          "body": "Your data is used to: (a) sync content between you and your partner, (b) deliver push notifications and daily reminders you have opted into, (c) generate aggregated, anonymized insights, and (d) provide customer support when you contact us. We do not use your private content for advertising or AI training."
+        },
+        {
+          "heading": "3. Data Storage & Security",
+          "body": "All data is stored encrypted at rest (AES-256) and in transit (TLS 1.3) on Supabase and Cloudflare infrastructure. Time capsules remain end-to-end encrypted and cannot be read by Togthr staff. We perform quarterly security audits and notify affected users of any breach within 72 hours."
+        },
+        {
+          "heading": "4. Your Rights",
+          "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@we2.com. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
+        },
+        {
+          "heading": "5. Contact",
+          "body": "For any privacy-related question, email privacy@we2.com. We respond within 7 business days."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Términos del servicio",
+      "subtitle": "Al usar Togthr aceptas los siguientes términos. Léelos con atención: te protegen a ti y a nosotros.",
+      "sections": [
+        {
+          "heading": "1. Eligibility",
+          "body": "You must be at least 16 years old (18 in some jurisdictions) to create a Togthr account. By signing up you confirm that you meet this requirement and that all information you provide is accurate."
+        },
+        {
+          "heading": "2. Account & Pairing",
+          "body": "Togthr works as a couple: you create a private pair by inviting your partner via email. Each pair shares a private space. You are responsible for keeping your login credentials secure. Sharing your account with non-parties is not permitted."
+        },
+        {
+          "heading": "3. Subscriptions & Payments",
+          "body": "We2 Plus subscriptions are billed via PayPal, Alipay, or Stripe. Prices are shown in your local currency. You can cancel at any time; access remains active until the end of the current billing period. Refunds follow the policy in section 4."
+        },
+        {
+          "heading": "4. Refund Policy",
+          "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@we2.com for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
+        },
+        {
+          "heading": "5. Acceptable Use",
+          "body": "You agree not to: upload illegal, hateful, or sexually explicit content; harass or threaten other users; attempt to reverse-engineer the app; use Togthr for commercial spam; or impersonate any person or entity. Violations may result in account suspension."
+        },
+        {
+          "heading": "6. Limitation of Liability",
+          "body": "Togthr is provided 'as is' without warranties. To the maximum extent permitted by law, our liability is limited to the amount you paid us in the past 12 months. We are not liable for indirect, incidental, or consequential damages."
+        },
+        {
+          "heading": "7. Changes",
+          "body": "We may update these terms from time to time. Material changes will be announced by email at least 30 days in advance. Continued use after the effective date constitutes acceptance."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Política de cookies",
+      "subtitle": "Usamos un conjunto mínimo de cookies para que Togthr funcione sin problemas. Aquí ves exactamente cuáles ponemos y por qué.",
+      "sections": [
+        {
+          "heading": "1. Essential Cookies",
+          "body": "These cookies are required for the site to work. They keep you logged in, remember your locale, and protect against CSRF attacks. They cannot be disabled because the site would not function without them."
+        },
+        {
+          "heading": "2. Analytics Cookies",
+          "body": "We use Cloudflare Web Analytics (privacy-first, no cross-site tracking) to understand which features are popular and where users get stuck. Analytics data is aggregated and does not identify you personally. You can opt out by enabling 'Do Not Track' in your browser."
+        },
+        {
+          "heading": "3. Payment Cookies",
+          "body": "When you complete a PayPal or Alipay payment, the payment provider may set its own cookies to process the transaction securely and prevent fraud. These cookies are governed by the payment provider's privacy policy, not ours."
+        },
+        {
+          "heading": "4. Managing Cookies",
+          "body": "You can clear or block cookies in your browser settings. Note that blocking essential cookies will prevent login from working. We do not use advertising or cross-site tracking cookies of any kind."
+        }
+      ]
+    },
+    "help": {
+      "title": "Centro de ayuda",
+      "subtitle": "Respuestas rápidas a las preguntas más comunes. ¿No encuentras lo que necesitas? Escríbenos y te ayudaremos con gusto.",
+      "sections": [
+        {
+          "heading": "Getting Started",
+          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional — every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
+        },
+        {
+          "heading": "Subscription & Billing",
+          "body": "Manage your Plus subscription from Settings > Billing. You can switch between monthly, quarterly, and yearly plans at any time. Cancellations take effect at the end of the current billing period. Refund requests submitted within 14 days of your first Plus purchase are processed within 5 business days."
+        },
+        {
+          "heading": "Privacy & Security",
+          "body": "Your private content (time capsules, journal entries, photos) is end-to-end encrypted. Togthr staff cannot read it. Enable two-factor authentication from Settings > Security for an extra layer of protection. To delete your account permanently, go to Settings > Privacy > Delete Account."
+        },
+        {
+          "heading": "Report a Bug",
+          "body": "Found something broken? Email bugs@we2.com with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
+        },
+        {
+          "heading": "International Support",
+          "body": "Togthr is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "subtitle": "Nos encantaría saber de ti. Elige el canal que mejor se adapte a tu pregunta.",
+      "sections": [
+        {
+          "heading": "General Support",
+          "body": "Questions, feedback, or feature requests. Email support@we2.com. We typically respond within 24 hours on business days."
+        },
+        {
+          "heading": "Privacy & Data",
+          "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@we2.com. We respond within 7 business days."
+        },
+        {
+          "heading": "Bug Reports",
+          "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@we2.com with your device model and OS version. We respond within 48 hours."
+        }
+      ]
+    }
+  },
+  "store": {
+    "title": "Compañeros Togthr",
+    "subtitle": "Caja misterio 6+1, 1 de 72 para la dorada",
+    "firstOrder": "Primera compra",
+    "regular": "Precio regular",
+    "save": "Ahorra 50%",
+    "blindboxTitle": "Compañeros Togthr — Caja misterio 6+1",
+    "blindboxDesc": "Una sorpresa por caja: Programador, Médico, Astronauta, Cocinero, Bombero, Policía... y 1 de 72 para la legendaria Togthr dorada.",
+    "ctaBuy": "Comprar caja",
+    "ctaTrySoulmate": "1 mes de Soulmate AI incluido",
+    "odds": "Probabilidad",
+    "oddsGolden": "1 / 72",
+    "oddsCommon": "71 / 72",
+    "perma": "Desbloqueo permanente",
+    "checkoutNote": "PayPal sandbox · 50% primera compra",
+    "checkoutNote2": "Sin suscripción · Pago único · Para siempre",
+    "successTitle": "¡Pedido recibido!",
+    "successSubtitle": "Tu Compañero Togthr está en camino. PayPal está procesando tu pago — recibirás un recibo por correo.",
+    "successNote": "Tu skin se desbloqueará en unos minutos una vez PayPal confirme el pago.",
+    "successHint": "Si tu skin no aparece en 10 minutos, contáctanos con tu número de pedido.",
+    "secureNotice": "Pagos seguros con PayPal. Nunca vemos los datos de tu tarjeta."
+  },
+  "daily": {
+    "title": "Alimentación diaria",
+    "q": "¿Está contigo hoy?",
+    "withBtn": "💕 Juntos",
+    "apartBtn": "🌙 Lejos",
+    "hunger": "Hambre",
+    "streak": "🔥 {n} días seguidos",
+    "bubbleIdle": "Jeje, espera~",
+    "bubbleWith": "¡Juntos!",
+    "bubbleApart": "Te extraño...",
+    "bubbleFeed": "¡Dame de comer!",
+    "bubbleFull": "¡Estoy lleno!",
+    "bubbleMore": "Quiero más~",
+    "again": "Otra vez",
+    "dragHint": "Arrastra a la mascota",
+    "streakDays": "{n} días seguidos",
+    "treasureTitle": "¡Cofre del tesoro! 🎁",
+    "treasureDesc": "¡Racha de 7 días! Tu mascota desenterró un cofre misterioso~"
+  },
+  "capsule": {
+    "title": "Cápsula del tiempo · Búsqueda del tesoro",
+    "subtitle": "Toca una casilla enterrada — tu mascota va y la desentierra.",
+    "buried": "enterradas",
+    "opened": "abiertas",
+    "openedOn": "Enterrada:",
+    "close": "¡Tesoro!",
+    "cancel": "Cancelar",
+    "write": "Enterrar una cápsula",
+    "writeTitle": "Título",
+    "writePlaceholder": "Un mensaje para tu yo futuro...",
+    "save": "Enterrar"
+  },
+  "pet": {
+    "title": "Mi mascota",
+    "subtitle": "La mascota refleja tu relación. Elige un estado de ánimo.",
+    "pickMood": "¿Cómo se siente tu mascota hoy?",
+    "status": "Togthr está",
+    "day": "Día {n} juntos",
+    "mood": {
+      "happy": "Dulce",
+      "sad": "Pelea",
+      "thinking": "Pensando",
+      "sleeping": "Durmiendo",
+      "sweet": "Dulce",
+      "fight": "Pelea",
+      "think": "Pensando",
+      "sleep": "Durmiendo"
+    },
+    "rarity": {
+      "common": "Común",
+      "rare": "Rara",
+      "epic": "Épica",
+      "legendary": "Legendaria"
+    },
+    "series": {
+      "basic": "Básica",
+      "career": "Profesión",
+      "festival": "Fiesta",
+      "emotion": "Emoción",
+      "fantasy": "Fantasía",
+      "legendary": "Legendaria"
+    },
+    "tier": {
+      "free": "Gratis",
+      "plus": "Togthr Plus",
+      "eternal": "Togthr Eternal"
+    },
+    "card": {
+      "current": "Actual"
+    },
+    "altar": {
+      "title": "Invoca a tu compañero del alma",
+      "back": "Atrás",
+      "close": "Cerrar",
+      "hint": "Toca una mascota desbloqueada para previsualizar. En una bloqueada verás cómo desbloquearla.",
+      "summon": "Invocar",
+      "summoned": "ha llegado",
+      "current": "En uso"
+    },
+    "petting": "Acaríciame~",
+    "statusHello": "¡Hola!",
+    "statusSleepy": "Zzz…",
+    "statusMiss": "Te extraño",
+    "changePet": "Cambiar aspecto",
+    "changePetBadge": "Altar de invocación",
+    "lockHint": "Las mascotas bloqueadas también se previsualizan — suscríbete o abre cajas sorpresa para desbloquearlas",
+    "info": {
+      "days": "Días juntos",
+      "interactions": "Interacciones",
+      "growth": "Crecimiento"
+    },
+    "actions": {
+      "journal": "Diario",
+      "history": "Historial",
+      "share": "Compartir"
+    },
+    "festival": {
+      "newyear": "Año Nuevo",
+      "easter": "Pascua",
+      "thanksgiving": "Acción de Gracias",
+      "mothersday": "Día de la Madre",
+      "fathersday": "Día del Padre",
+      "qixi": "Festival Qixi",
+      "dragonboat": "Festival del Bote del Dragón",
+      "lantern": "Festival de los Faroles",
+      "qingming": "Festival Qingming",
+      "chongyang": "Festival Chongyang",
+      "blackfriday": "Black Friday",
+      "cybermonday": "Cyber Monday",
+      "arborday": "Día del Árbol",
+      "earthday": "Día de la Tierra",
+      "environment": "Día Mundial del Medio Ambiente",
+      "aprilfool": "Día de los Inocentes",
+      "graduation": "Graduación",
+      "wedding": "Boda",
+      "babyshower": "Baby Shower",
+      "birthday": "Cumpleaños",
+      "anniversary": "Aniversario",
+      "pride": "Mes del Orgullo",
+      "diwali": "Diwali",
+      "carnival": "Carnaval"
+    }
+  },
+  "journal": {
+    "title": "Nuestro nido",
+    "subtitle": "Cada entrada del diario añade a vuestro nido compartido. Míralo crecer.",
+    "stage": "Etapa",
+    "nextStage": "Siguiente: {next}",
+    "complete": "¡Nido completo!",
+    "entriesCount": "{n} entradas",
+    "writePlaceholder": "Escribe algo sobre hoy...",
+    "save": "Añadir al nido",
+    "mood": {
+      "warm": "Cálido",
+      "cool": "Fresco",
+      "festive": "Festivo"
+    },
+    "stageName": {
+      "empty": "Solar vacío",
+      "seed": "Semilla",
+      "sprout": "Brote",
+      "tree": "Árbol",
+      "full-nest": "Nido lleno"
+    },
+    "seedEntries": {
+      "e1": {
+        "text": "Buen tiempo hoy, salimos a caminar un rato.",
+        "mood": "warm"
+      },
+      "e2": {
+        "text": "¡Por fin nieve! Estamos emocionados.",
+        "mood": "cool"
+      },
+      "e3": {
+        "text": "Nuestra primera Navidad juntos 🎄",
+        "mood": "festive"
+      }
+    }
+  },
+  "chat": {
+    "title": "Alma gemela",
+    "online": "Siempre aquí",
+    "placeholder": "Di algo...",
+    "mockNotice": "Mock Día 1 — IA real Día 2",
+    "typing": "El compañero está escribiendo...",
+    "nightMode": "Modo nocturno",
+    "anniversary": "100 mensajes — un capítulo completo",
+    "mood": {
+      "sweet": "Dulce",
+      "calm": "Calma",
+      "think": "Pensar",
+      "sleepy": "Adormilado",
+      "fight": "Pelea"
+    }
+  },
+  "onboarding": {
+    "back": "Atrás",
+    "next": "Siguiente",
+    "finish": "Listo",
+    "welcome": {
+      "title": "Siempre aquí",
+      "subtitle": "Tu pequeño robot está aquí - un compañero que crece contigo.",
+      "cta": "Empezar"
+    },
+    "name": {
+      "title": "Nombra a tu Togthr",
+      "subtitle": "Un nombre para el pequeño robot que estará contigo.",
+      "placeholder": "ej. Pixel, Mimi, Beibei..."
+    },
+    "mode": {
+      "title": "¿Cómo viajarás?",
+      "subtitle": "Puedes cambiar esto en cualquier momento.",
+      "solo": {
+        "title": "Solo",
+        "desc": "Un compañero para ti, con chat IA."
+      },
+      "together": {
+        "title": "Con alguien",
+        "desc": "Rituales compartidos, cápsulas, una mascota común."
+      }
+    },
+    "done": {
+      "title": "¡{name} está listo!",
+      "soloNote": "Tu mascota está aquí. Aliméntala, chatea, envía stickers.",
+      "togetherNote": "Tu mascota está aquí. Envía la primera cápsula.",
+      "feedPet": "Alimentar a {name}",
+      "sayHi": "Saludar",
+      "startOver": "Empezar de nuevo"
+    }
+  },
+  "community": {
+    "title": "El Hoyo del Árbol",
+    "subtitle": "Notas anónimas. Abrazos en lugar de likes. Sin nombres, sin juicios.",
+    "rule1": "Sin nombres reales",
+    "rule2": "Abrazos en lugar de likes",
+    "rule3": "Auto-borrado 24h",
+    "composer": {
+      "placeholder": "Escribe algo. Lo que sea. ~280 caracteres.",
+      "send": "Soltar en el hoyo"
+    },
+    "mood": {
+      "calm": "Calma",
+      "warm": "Cálido",
+      "reflect": "Reflexivo",
+      "light": "Ligero"
+    },
+    "hug": "Abrazo",
+    "autoPurgeHint": "desaparece en {hours}h",
+    "empty": "Aún no hay notas. Sé el primero.",
+    "mockNotice": "Mock Día 1 — auto-borrado en Día 2."
+  },
+  "errorPage": {
+    "title": "Algo salió mal",
+    "message": "La página encontró un problema. Tu mascota está en ello.",
+    "tryAgain": "Intentar de nuevo",
+    "home": "Inicio",
+    "errorId": "ID de error"
+  },
+  "paywallHint": {
+    "title": "¡Tu compa quiere un nuevo atuendo! ✨",
+    "cta": "Echar un vistazo",
+    "dismiss": "Seguir gratis"
+  },
+  "focus": {
+    "title": "Modo Enfoque",
+    "subtitle": "Un pequeño robot te acompaña mientras trabajas.",
+    "chooseDuration": "¿Cuánto tiempo nos concentramos juntos?",
+    "minutes": "{minutes} min",
+    "start": "Empezar a enfocar",
+    "giveUp": "Terminar esta sesión",
+    "awayNotice": "Te estoy esperando…",
+    "welcomeBack": "¡Bienvenido de nuevo — sigamos!",
+    "completeTitle": "¡Lo lograste!",
+    "completeDesc": "{minutes} minutos de enfoque tranquilo, juntos.",
+    "streak": "{days} días seguidos",
+    "again": "Otra ronda",
+    "lockedPlus": "🔒 Desbloquea sesiones más largas con Plus",
+    "interruptedNote": "Esta sesión hizo una pequeña pausa — no pasa nada, empezamos de nuevo.",
+    "phrase1": "Estoy aquí contigo.",
+    "phrase2": "Un pequeño paso cada vez.",
+    "phrase3": "Tú puedes.",
+    "phrase4": "Crezcamos juntos, en calma."
+  },
+  "paymentSuccess": {
+    "title": "[es] Payment successful 🎉",
+    "subtitle": "[es] Your companion felt that. Membership is now active.",
+    "noteTitle": "[es] What happens next",
+    "noteBody": "[es] Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "hint": "[es] If anything looks missing, give it a moment and refresh the pet page.",
+    "ctaPet": "[es] 🐾 Meet your pet",
+    "ctaPricing": "[es] ← Back to pricing",
+    "secureNotice": "[es] Payments processed securely."
+  }
+}

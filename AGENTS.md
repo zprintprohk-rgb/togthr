@@ -156,7 +156,7 @@ wrangler.toml
    node scripts/check-translation-completeness.js
    node scripts/check-locale-placeholders.js
    ```
-2. 验证 build（本地可能因 SWC SIGBUS 失败，可跳过，CI 会重跑）: `npm run cf-build`
+2. **强制本地 build 验证**: `npm run cf-build`。必须跑，不允许跳过。SWC SIGBUS 不是"已知 Windows 环境问题就没事"——超大 i18n 对象、循环引用、特定 JSX 结构也可能触发 SIGBUS，跳过本地 build 等于在本地主动放弃发现真 bug 的机会。如果 SIGBUS 发生，排查并修复根因（而非依赖 CI 兜底）。
 3. `git add -A && git commit -m "<type>(<scope>): <subject>"` — **不 push**
 4. 通知 user review diff
 5. User 确认后 user 自己 push

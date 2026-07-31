@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import os
 import random
 from pathlib import Path
@@ -16,38 +17,38 @@ TEXT_MAX_WIDTH = 700
 COVER_DIR = Path("public/blog-covers")
 PET_DIR = Path("public/pets")
 
-TITLE_MAP: Dict[str, Dict[str, str]] = {
-    "tamagotchi-app-2026": {
-        "en": "The Tamagotchi App in 2026: The 90s Egg Grew Up and Moved Into Your Relationship",
-        "zh-cn": "2026 年的电子宠物 App:90 年代那颗蛋长大了,搬进了你们的关系里",
-        "zh-tw": "2026 年的電子寵物 App:90 年代那顆蛋長大了,搬進了你們的關係裡",
-        "ja": "2026 年のたまごっちアプリ:90 年代のたまごは育って、二人の関係に引っ越してきた",
-        "ko": "2026년의 다마고치 앱: 90년대의 알은 자라서 두 사람의 관계로 이사 왔다",
-        "de": "Die Tamagotchi-App 2026: Das 90er-Ei ist erwachsen geworden und in eure Beziehung gezogen",
-        "fr": "L'application tamagotchi en 2026 : l'œuf des années 90 a grandi et a emménagé dans votre relation",
-        "es": "La app tamagotchi en 2026: el huevo de los 90 creció y se mudó a tu relación",
-    },
-    "things-to-do-with-long-distance-boyfriend": {
-        "en": "15 Things to Do With Your Long-Distance Boyfriend That Are Not \"Watch a Movie Together\"",
-        "zh-cn": "和异地恋男友可以做的 15 件小事(不是\"一起看电影\"那种清单)",
-        "zh-tw": "和遠距離男友可以做的 15 件小事(不是「一起看電影」那種清單)",
-        "ja": "遠距離の彼氏とできる 15 のこと(\"一緒に映画を観る\"じゃないリスト)",
-        "ko": "장거리 남자친구와 할 수 있는 15가지(\"같이 영화 보기\" 말고)",
-        "de": "15 Dinge, die ihr mit eurem Fernbeziehungs-Freund tun könnt (nicht \"zusammen einen Film schauen\")",
-        "fr": "15 choses à faire avec votre copain à distance (pas \"regarder un film ensemble\")",
-        "es": "15 cosas para hacer con tu novio a distancia (que no sean \"ver una película juntos\")",
-    },
-    "best-virtual-pet-apps-2026": {
-        "en": "The Best Virtual Pet Apps of 2026, Honestly Compared (We Make One of Them)",
-        "zh-cn": "2026 最佳虚拟宠物 App 诚实横评(其中一个是我们做的)",
-        "zh-tw": "2026 最佳虛擬寵物 App 誠實橫評(其中一個是我們做的)",
-        "ja": "2026 年ベスト・バーチャルペットアプリ、正直な比較(一つは私たちが作りました)",
-        "ko": "2026년 최고의 가상 펫 앱, 솔직한 비교(하나는 우리가 만들었습니다)",
-        "de": "Die besten virtuellen Haustier-Apps 2026, ehrlich verglichen (eine davon haben wir gebaut)",
-        "fr": "Les meilleures applications d'animaux virtuels de 2026, comparées honnêtement (l'une d'elles est de nous)",
-        "es": "Las mejores apps de mascotas virtuales de 2026, comparadas con honestidad (una de ellas es nuestra)",
-    },
-}
+# Auto-load title map from blog-posts.ts registry (exported via `npx tsx export-blog-titles.ts`)
+# Falls back to built-in entries if the JSON export is missing.
+_BLOG_TITLES_PATH = Path(".openclaw/tmp/blog-titles.json")
+if _BLOG_TITLES_PATH.exists():
+    with open(_BLOG_TITLES_PATH, encoding="utf-8") as f:
+        TITLE_MAP: Dict[str, Dict[str, str]] = json.load(f)
+    print(f"[OK] Loaded {len(TITLE_MAP)} slugs from blog-titles.json (auto from blog-posts.ts)")
+else:
+    # Hardcoded fallback — rarely used; kept for one-shot manual runs without tsx.
+    TITLE_MAP: Dict[str, Dict[str, str]] = {
+        "tamagotchi-app-2026": {
+            "en": "The Tamagotchi App in 2026: The 90s Egg Grew Up and Moved Into Your Relationship",
+            "zh-cn": "2026 年的电子宠物 App:90 年代那颗蛋长大了,搬进了你们的关系里",
+            "zh-tw": "2026 年的電子寵物 App:90 年代那顆蛋長大了,搬進了你們的關係裡",
+            "ja": "2026 年のたまごっちアプリ:90 年代のたまごは育って、二人の関係に引っ越してきた",
+            "ko": "2026년의 다마고치 앱: 90년대의 알은 자라서 두 사람의 관계로 이사 왔다",
+            "de": "Die Tamagotchi-App 2026: Das 90er-Ei ist erwachsen geworden und in eure Beziehung gezogen",
+            "fr": "L'application tamagotchi en 2026 : l'œuf des années 90 a grandi et a emménagé dans votre relation",
+            "es": "La app tamagotchi en 2026: el huevo de los 90 creció y se mudó a tu relación",
+        },
+        "best-virtual-pet-apps-2026": {
+            "en": "The Best Virtual Pet Apps of 2026, Honestly Compared (We Make One of Them)",
+            "zh-cn": "2026 最佳虚拟宠物 App 诚实横评(其中一个是我们做的)",
+            "zh-tw": "2026 最佳虛擬寵物 App 誠實橫評(其中一個是我們做的)",
+            "ja": "2026 年ベスト・バーチャルペットアプリ、正直な比較(一つは私たちが作りました)",
+            "ko": "2026년 최고의 가상 펫 앱, 솔직한 비교(하나는 우리가 만들었습니다)",
+            "de": "Die besten virtuellen Haustier-Apps 2026, ehrlich verglichen (eine davon haben wir gebaut)",
+            "fr": "Les meilleures applications d'animaux virtuels de 2026, comparées honnêtement (l'une d'elles est de nous)",
+            "es": "Las mejores apps de mascotas virtuales de 2026, comparadas con honestidad (una de ellas es nuestra)",
+        },
+    }
+    print(f"[WARN] Loaded {len(TITLE_MAP)} hardcoded slugs (blog-titles.json not found)")
 
 EYEBROW_TEXT = {
     "en": "TOGTHR BLOG",
@@ -241,12 +242,17 @@ def main() -> None:
 
     generated = 0
     for slug, title_dict in TITLE_MAP.items():
-        pet_filename = PET_ASSETS[slug]
+        pet_filename = PET_ASSETS.get(slug, "robot-base.png")
         for locale in ["en", "zh-cn", "zh-tw", "ja", "ko", "de", "fr", "es"]:
-            title = title_dict[locale]
+            title = title_dict.get(locale)
+            if not title:
+                continue
+            cover_path = COVER_DIR / f"{slug}-{locale}.png"
+            if cover_path.exists():
+                continue  # skip existing covers
             build_cover(slug, locale, title, pet_filename)
             generated += 1
-    print(f"Total generated: {generated}")
+    print(f"Total generated (new+skipped): {generated}")
 
 
 if __name__ == "__main__":

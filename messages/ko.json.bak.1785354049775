@@ -1,0 +1,909 @@
+{
+  "siteName": "Togthr",
+  "tagline": "항상 함께",
+  "nav": {
+    "home": "홈",
+    "features": "기능",
+    "pricing": "요금제",
+    "community": "커뮤니티",
+    "login": "로그인",
+    "dashboard": "대시보드",
+    "daily": "밥주기",
+    "capsule": "캡슐",
+    "pet": "펫",
+    "journal": "둥지",
+    "store": "상점",
+    "chat": "채팅",
+    "faq": "자주 묻는 질문",
+    "blog": "블로그",
+    "focus": "집중"
+  },
+  "seo": {
+    "siteName": "Togthr",
+    "description": "당신의 기기 안의 작은 로봇이 함께하며, 다른 한 사람을 대신합니다. 매일의 의식을 만들고, 추억을 저장하며, 함께하는 가상 반려동물을 키우세요.",
+    "keywords": "반려동물 가상펫 추억 타임캡슐 매일의식 감정지원 소울메이트 장거리 픽셀펫 AI반려",
+    "tagline": "항상 함께"
+  },
+  "home": {
+    "hero": {
+      "title": "항상 함께",
+      "subtitle": "당신의 기기 안의 작은 로봇이 함께하며, 다른 한 사람을 대신합니다.",
+      "cta": "무료로 시작",
+      "secondary": "사용 방법 보기",
+      "socialProof": "전 세계 10,000명 이상의 사용자가 신뢰",
+      "eyebrow": "항상 함께 · 항상 신경 쓰고",
+      "welcomeFirst": "안녕! 방금 깼어. 계속 곁에 있을게.",
+      "welcomeBack": "돌아왔어! 기다리고 있었어.",
+      "sleepyGreeting": "쉿… 너무 늦었어. 잠깐만 같이 있자.",
+      "statusHello": "안녕! 만나서 반가워.",
+      "statusMiss": "다시 왔어!",
+      "statusSleepy": "쉿… 졸려.",
+      "relationsEyebrow": "동반자를 골라봐",
+      "relationsHint": "모드마다 펫의 모습과 빛이 달라져."
+    },
+    "features": {
+      "title": "진짜 커플을 위해 디자인했어요",
+      "subtitle": "거리에 상관없이 둘 사이를 더 가깝게 만드는 기능들.",
+      "sharedJournal": {
+        "title": "매일 체크인",
+        "desc": "관계 심리학자가 설계한 하루 5분 질문으로 감정 습관을 쌓아보세요."
+      },
+      "moodTracker": {
+        "title": "타임캡슐",
+        "desc": "사진, 음성 메모, 편지를 미래의 기념일에 열어볼 수 있도록 보관하세요. 둘만의 소중한 기억 보관함."
+      },
+      "dreamWall": {
+        "title": "가상 펫",
+        "desc": "매일 미션을 함께 완료하며 펫을 키워보세요. 관계가 깊어질수록 펫도 성장합니다."
+      },
+      "dailyGratitude": {
+        "title": "익명 커뮤니티",
+        "desc": "전 세계 커플들과 이야기를 나누고, 조언을 구하고, 기념일을 축하하세요."
+      },
+      "petAdoption": {
+        "title": "공유 일기",
+        "desc": "함께 쓰고 함께 돌아보는, 둘만의 프라이빗한 이야기 공간."
+      },
+      "timeCapsule": {
+        "title": "꿈의 벽",
+        "desc": "둘의 꿈, 목표, 소원을 벽에 걸어두고 함께 미래를 그려보세요."
+      }
+    },
+    "companions": {
+      "title": "Togthr 동반자",
+      "subtitle": "한 번의 탭으로 귀여운 스티커 전송",
+      "cta": "채팅에 곧 출시",
+      "cards": {
+        "feeding": {
+          "title": "밥 주는 시간",
+          "desc": "하트를 보내고 만족하는 모습을 지켜보세요"
+        },
+        "capsule": {
+          "title": "타임캡슐 · 발굴",
+          "desc": "하나 묻어두면 펫이 파내줘요"
+        },
+        "symbiosis": {
+          "title": "공생 폼",
+          "desc": "둘의 관계를 비추는 작은 생명"
+        },
+        "blindbox": {
+          "title": "6+1 블라인드 박스",
+          "desc": "첫 주문 특가",
+          "badge": "신규"
+        },
+        "nest": {
+          "title": "둥지 짓기",
+          "desc": "일기를 쓸 때마다 둘의 둥지가 자라요"
+        },
+        "soulmate": {
+          "title": "소울메이트 AI",
+          "desc": "언제든 대화, 진심으로 들어줘요"
+        },
+        "treehole": {
+          "title": "나무 구멍",
+          "desc": "익명 메시지, 24시간 후 사라짐"
+        },
+        "focus": {
+          "title": "포커스 모드",
+          "desc": "펫이 곁에서 함께 공부하고 일해요"
+        }
+      }
+    }
+  },
+  "pricing": {
+    "title": "투명하고 간단한 요금제",
+    "subtitle": "여러분에게 맞는 플랜을 선택하세요. 숨겨진 비용은 없으며 언제든 해지 가능합니다.",
+    "monthly": "월간",
+    "quarterly": "분기",
+    "yearly": "연간",
+    "popular": "인기",
+    "save": "{discount}% 절약",
+    "tiers": {
+      "free": {
+        "name": "무료",
+        "price": "₩0",
+        "features": [
+          "매일 체크인",
+          "타임캡슐 3개",
+          "기본 펫",
+          "커뮤니티 이용"
+        ]
+      },
+      "plus": {
+        "name": "Togthr Plus",
+        "price": "₩7,500",
+        "period": "/월",
+        "features": [
+          "무제한 캡슐",
+          "프리미엄 펫 스킨",
+          "비공개 앨범",
+          "관계 인사이트"
+        ]
+      },
+      "premium": {
+        "name": "We2 프리미엄",
+        "price": "₩19,000",
+        "period": "/분기",
+        "features": [
+          "Plus 전 기능",
+          "우선 지원",
+          "펫 이름 커스텀",
+          "추억 내보내기"
+        ]
+      },
+      "lifetime": {
+        "name": "We2 포에버",
+        "price": "₩55,000",
+        "period": "/년",
+        "features": [
+          "Premium 전 기능",
+          "평생 업데이트",
+          "독점 콘텐츠",
+          "신기능 선행 체험"
+        ]
+      },
+      "soulmate": {
+        "name": "Togthr 소울메이트",
+        "price": "",
+        "period": "/월",
+        "features": [
+          "Plus의 모든 기능",
+          "AI 말투 스타일",
+          "소중한 사람처럼 말하기",
+          "스마트 기억 추천",
+          "우선 지원"
+        ]
+      },
+      "eternal": {
+        "name": "Togthr 이터널",
+        "tagline": "전부 잠금해제 + 독점",
+        "features": [
+          "Plus 전 기능",
+          "전체 50+ 펫 슈트 해제",
+          "골든 레전드 펫",
+          "우선 지원",
+          "신기능 선행 체험"
+        ]
+      }
+    },
+    "cta": "지금 시작하기",
+    "ctaFree": "무료로 시작하기",
+    "free": "무료",
+    "period": {
+      "monthly": "개월",
+      "quarterly": "분기",
+      "yearly": "년"
+    },
+    "per": {
+      "monthly": "/월",
+      "quarterly": "/분기",
+      "yearly": "/년"
+    },
+    "promoPlaceholder": "프로모션 코드 입력",
+    "promoApply": "적용",
+    "promoHint": "프로모션 코드 곧 출시 예정!",
+    "secure": "PayPal 보안 결제",
+    "guarantee": "30일 환불 보장",
+    "new": "신규",
+    "theater": {
+      "eyebrow": "여정을 선택해",
+      "headline": "당신과 함께 자라는 삶을 열어 봐",
+      "tagline": "세 가지 등급, 한 가지 약속: 잠금해제한 펫은 영원히 곁에 남아.",
+      "guarantee": "30일 환불 보장",
+      "secure": "PayPal · Alipay · AlipayHK 안전 결제"
+    },
+    "tierMeta": {
+      "free": {
+        "eyebrow": "새싹",
+        "tagline": "여기서 시작해",
+        "peeking": "펫이 숨어있어"
+      },
+      "plus": {
+        "eyebrow": "동반자",
+        "tagline": "너의 영혼을 골라",
+        "peeking": "펫이 신나해"
+      },
+      "eternal": {
+        "eyebrow": "스타더스트",
+        "tagline": "영원이 되다",
+        "peeking": "펫이 승화했어"
+      }
+    },
+    "petMatrix": {
+      "free": {
+        "label": "기본 동반자 3종",
+        "sub": "봉우리 · 새싹 · 스타터"
+      },
+      "plus": {
+        "label": "50+ 스킨 잠금해제",
+        "sub": "직업 · 축제 · 감정 · 판타지"
+      },
+      "eternal": {
+        "label": "올 액세스 + 독점",
+        "sub": "골든 레전더리 포함"
+      }
+    },
+    "legendary": {
+      "label": "골든 레전더리",
+      "odds": "1 / 72",
+      "hint": "이터널 박스에서 랜덤 드랍"
+    },
+    "countdown": {
+      "label": "할로윈 한정 · 얼리 액세스",
+      "endsIn": "종료까지",
+      "days": "일",
+      "hours": "시간",
+      "minutes": "분",
+      "seconds": "초"
+    },
+    "ctaSubscribe": "지금 구독",
+    "ctaStartFree": "무료로 시작",
+    "ctaPopular": "동반자 선택",
+    "ctaEternal": "이터널이 되기"
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "subtitle": "Togthr에 대해 궁금한 점",
+    "items": [
+      {
+        "question": "Togthr는 어떤 앱인가요?",
+        "answer": "Togthr는 심리학자의 협력으로 설계된 커플 감정 성장 앱입니다. 매일 체크인, 타임캡슐, 공동 챌린지를 통해 일상 속에서 관계를 깊게 만들어갑니다."
+      },
+      {
+        "question": "개인정보는 안전하게 보호되나요?",
+        "answer": "물론입니다. 모든 개인 콘텐츠는 종단간 암호화로 보호됩니다. 소중한 순간, 사진, 메시지는 오직 두 분만 볼 수 있으며, 제3자에게 데이터를 판매하지 않습니다."
+      },
+      {
+        "question": "장거리 연애 중에도 사용할 수 있나요?",
+        "answer": "네! Togthr는 같은 방에 있든 세계 반대편에 있든 모든 커플을 위해 설계되었습니다. 타임캡슐과 매일 체크인은 거리를 초월한 연결을 유지하는 데 완벽합니다."
+      },
+      {
+        "question": "가상 펫은 어떻게 키우나요?",
+        "answer": "파트너와 함께 매일 체크인과 챌린지를 완료하면 펫이 성장합니다. 관계의 성장을 귀엽게 시각화한 것으로, 이정표마다 새로운 펫과 스킨이 해금됩니다."
+      },
+      {
+        "question": "어떤 결제 수단을 지원하나요?",
+        "answer": "한국에서는 PayPal과 해외 결제를 지원합니다. 모든 거래는 암호화되어 안전하게 처리됩니다."
+      },
+      {
+        "question": "멤버십을 해지할 수 있나요?",
+        "answer": "언제든 해지 가능합니다. 현재 기간이 끝날 때까지 멤버십이 유지됩니다. 신규 가입자에게는 30일 환불 보장도 제공합니다."
+      },
+      {
+        "question": "파트너와 어떻게 연결하나요?",
+        "answer": "회원가입 후 파트너에게 초대 코드를 보내세요. 상대방이 수락하면 계정이 연결되어 체크인, 캡슐, 펫 키우기를 함께 즐길 수 있습니다."
+      },
+      {
+        "question": "커뮤니티 기능이 있나요?",
+        "answer": "네! 익명 커뮤니티에서 전 세계 커플들과 이야기를 공유하고, 조언을 구하고, 기념일을 축하할 수 있습니다. 익명 또는 커플 프로필로 게시할 수 있습니다."
+      }
+    ]
+  },
+  "auth": {
+    "loginTitle": "돌아오신 것을 환영합니다",
+    "loginSubtitle": "로그인하여 두 분의 여정을 계속하세요",
+    "registerTitle": "두 분의 여정을 시작하세요",
+    "registerSubtitle": "계정을 만들고 파트너를 초대하세요",
+    "emailLabel": "이메일",
+    "emailPlaceholder": "your@example.com",
+    "passwordLabel": "비밀번호",
+    "passwordPlaceholder": "비밀번호 입력",
+    "displayNameLabel": "닉네임",
+    "displayNamePlaceholder": "이름",
+    "loginButton": "로그인",
+    "registerButton": "계정 만들기",
+    "noAccount": "계정이 없으신가요?",
+    "hasAccount": "이미 계정이 있으신가요?",
+    "registerLink": "회원가입",
+    "loginLink": "로그인",
+    "forgotPassword": "비밀번호를 잊으셨나요?",
+    "resetPasswordTitle": "비밀번호 재설정",
+    "resetPasswordSubtitle": "이메일을 입력하여 재설정 링크를 받으세요",
+    "resetPasswordButton": "재설정 링크 보내기",
+    "updatePasswordTitle": "새 비밀번호 설정",
+    "updatePasswordSubtitle": "새 비밀번호를 입력하세요",
+    "updatePasswordButton": "비밀번호 업데이트",
+    "orContinueWith": "또는 다음으로 계속하기",
+    "google": "Google",
+    "github": "GitHub",
+    "checkEmail": "이메일에서 확인 링크를 확인하세요.",
+    "passwordUpdated": "비밀번호가 업데이트되었습니다. 로그인할 수 있습니다.",
+    "signOut": "로그아웃",
+    "dashboard": "대시보드"
+  },
+  "footer": {
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관",
+    "cookie": "쿠키 설정",
+    "help": "고객센터",
+    "contact": "문의하기",
+    "copyright": "© {year} Togthr. 모든 권리 보유."
+  },
+  "notFound": {
+    "title": "길을 잃었나요?",
+    "description": "이 페이지는 어딘가로 사라졌어요. 펫도 찾고 있어요.",
+    "backHome": "홈",
+    "feedPet": "밥주기",
+    "sayHi": "인사하기",
+    "pixelHint": "픽셀 순간"
+  },
+  "payment": {
+    "title": "구매 완료하기",
+    "subtitle": "결제 수단을 선택하여 We2 Plus를 이용하세요",
+    "periodLabel": "청구 주기",
+    "monthly": "월간",
+    "quarterly": "분기",
+    "yearly": "연간",
+    "priceLabel": "합계",
+    "gatewayLabel": "결제 수단",
+    "paypal": "PayPal",
+    "alipayCn": "Alipay（중국 본토）",
+    "alipayHk": "AlipayHK（홍콩 / 대만）",
+    "payButton": "{gateway}(으)로 결제",
+    "processing": "결제 처리 중…",
+    "success": {
+      "title": "결제 성공!",
+      "message": "We2 Plus를 구독해주셔서 감사합니다. 대시보드로 이동합니다…"
+    },
+    "error": {
+      "title": "결제 실패",
+      "message": "결제 처리 중 오류가 발생했습니다. 다시 시도해주세요.",
+      "retry": "다시 시도"
+    },
+    "cancel": {
+      "title": "결제 취소됨",
+      "message": "결제가 취소되었습니다. 언제든지 다시 시도할 수 있습니다."
+    }
+  },
+  "upload": {
+    "dragOrClick": "파일을 여기로 드래그하거나 클릭하여 선택",
+    "dropHere": "파일을 놓으세요",
+    "constraints": "파일당 최대 {maxSize}MB, 최대 {maxFiles}개",
+    "statusSuccess": "업로드 완료",
+    "remove": "파일 제거",
+    "errorTooLarge": "파일이 {maxSize}MB 제한을 초과합니다",
+    "errorType": "지원되지 않는 파일 형식입니다. 허용: {types}",
+    "errorMaxFiles": "최대 {max}개 파일 허용",
+    "errorUpload": "업로드 실패. 다시 시도해 주세요."
+  },
+  "features": {
+    "dailyCheckIn": {
+      "longDesc": "감정적 유대를 깊게 하도록 설계된 사려 깊은 질문으로 매일을 시작하세요. 비공개로 답변한 후 파트너와 공유하고 이야기해 보세요.",
+      "step1": "매일 아침 데일리 질문을 받습니다",
+      "step2": "파트너의 답변을 보기 전에 비공개로 답변",
+      "step3": "두 답변을 동시에 공개",
+      "step4": "이야기하고 가상 펫을 위한 러브 포인트 획득"
+    },
+    "timeCapsules": {
+      "longDesc": "사진, 음성 메모, 러브레터로 디지털 타임캡슐을 만드세요. 미래의 개봉일을 설정하고 잠그세요 — 기념일이나 깜짝 선물에 완벽합니다.",
+      "step1": "사진, 메모, 음성 메모로 캡슐 만들기",
+      "step2": "미래 개봉일 설정 (기념일, 생일 등)",
+      "step3": "캡슐이 봉인될 때까지 두 파트너 모두 콘텐츠 추가 가능",
+      "step4": "함께 열 시간이 되면 알림 받기"
+    },
+    "virtualPet": {
+      "longDesc": "공유 가상 펫을 만나보세요 — 관계와 함께 성장하는 귀여운 동반자입니다. 매일 체크인을 완료하여 러브 포인트를 얻고 새로운 스킨을 잠금 해제하세요.",
+      "step1": "함께 펫을 선택하고 이름 짓기",
+      "step2": "매일 체크인을 완료하여 러브 포인트 획득",
+      "step3": "팀으로 펫에게 먹이를 주고, 놀고, 돌보기",
+      "step4": "관계 마일스톤에서 새로운 스킨과 진화 잠금 해제"
+    },
+    "privateCommunity": {
+      "longDesc": "전 세계 커플들의 익명의 지지 커뮤니티에 참여하세요. 이야기를 공유하고, 조언을 구하고, 마일스톤을 축하하세요.",
+      "step1": "익명 커플 프로필 만들기",
+      "step2": "이야기, 질문, 마일스톤 게시하기",
+      "step3": "다른 커플의 게시물에 참여하기",
+      "step4": "지지적이고 관리되는 공간에서 연결 구축하기"
+    },
+    "sharedJournal": {
+      "longDesc": "함께 이야기를 쓰세요 — 말 그대로입니다. 두 파트너가 모두 항목을 추가하고 가장 소중한 순간의 타임라인을 만들 수 있는 공유 저널입니다.",
+      "step1": "언제든지 새 저널 항목 만들기",
+      "step2": "두 파트너 모두 보기, 편집, 댓글 가능",
+      "step3": "항목에 사진과 위치 태그 추가하기",
+      "step4": "함께 관계 타임라인 스크롤하기"
+    },
+    "dreamWall": {
+      "longDesc": "공유된 꿈, 목표, 버킷리스트를 비주얼 보드에 핀하세요. 함께 미래를 계획하고 달성할 때 체크하세요.",
+      "step1": "공유 보드에 꿈과 목표 추가하기",
+      "step2": "카테고리별로 정리 (여행, 집, 모험 등)",
+      "step3": "목표 날짜를 설정하고 함께 진행 상황 추적하기",
+      "step4": "각 성취를 특별한 애니메이션으로 축하하기"
+    },
+    "backToFeatures": "기능으로 돌아가기",
+    "howItWorks": "사용 방법",
+    "tryItOut": "사용해 보기"
+  },
+  "demo": {
+    "dailyCheckIn": {
+      "title": "오늘의 질문",
+      "placeholder": "지금 마음을 나눠 봐...",
+      "save": "답변 저장",
+      "saved": "답변 저장 완료!",
+      "nextQuestion": "다음 질문 →",
+      "history": "나의 답변",
+      "empty": "첫 체크인을 시작해 봐"
+    },
+    "timeCapsules": {
+      "title": "추억 캡슐",
+      "titlePlaceholder": "미래의 우리를 위한 제목...",
+      "contentPlaceholder": "지금 이 순간을 적어 봐...",
+      "lockCapsule": "캡슐 잠그기 🔒",
+      "empty": "첫 추억 캡슐을 만들어 봐",
+      "unlocked": "잠금해제됨",
+      "daysLeft": "{days}일 남음",
+      "noContent": "(내용 없음)"
+    },
+    "virtualPet": {
+      "title": "내 펫",
+      "petName": "달이",
+      "virtualCompanion": "가상 동반자",
+      "level": "레벨 {level}",
+      "hunger": "배부름",
+      "happiness": "행복도",
+      "intimacy": "친밀도",
+      "feed": "먹이기",
+      "play": "놀기",
+      "cuddle": "안기"
+    },
+    "privateCommunity": {
+      "title": "커뮤니티 이야기"
+    },
+    "sharedJournal": {
+      "title": "공유 일기",
+      "placeholder": "오늘의 일기를 써 봐...",
+      "writeEntry": "일기 쓰기",
+      "you": "나",
+      "partner": "상대방"
+    },
+    "dreamWall": {
+      "title": "꿈 보드",
+      "placeholder": "우리의 다음 큰 꿈...",
+      "pin": "고정",
+      "empty": "보드에 첫 꿈을 고정해 봐"
+    }
+  },
+  "legal": {
+    "lastUpdated": "최종 업데이트: 2026년 6월 1일",
+    "privacy": {
+      "title": "개인정보 처리방침",
+      "subtitle": "당신의 사생활은 중요해요. 이 페이지는 우리가 어떤 데이터를 수집하고 어떻게 쓰는지, 그리고 정보에 대한 당신의 권리를 설명합니다.",
+      "sections": [
+        {
+          "heading": "1. Information We Collect",
+          "body": "We collect only the information needed to provide Togthr's couple-wellness services: account email, encrypted password, profile details (nickname, avatar, anniversary date), and the content you create in the app (check-in answers, journal entries, time capsules, photos). We never sell your data to third parties."
+        },
+        {
+          "heading": "2. How We Use Your Data",
+          "body": "Your data is used to: (a) sync content between you and your partner, (b) deliver push notifications and daily reminders you have opted into, (c) generate aggregated, anonymized insights, and (d) provide customer support when you contact us. We do not use your private content for advertising or AI training."
+        },
+        {
+          "heading": "3. Data Storage & Security",
+          "body": "All data is stored encrypted at rest (AES-256) and in transit (TLS 1.3) on Supabase and Cloudflare infrastructure. Time capsules remain end-to-end encrypted and cannot be read by Togthr staff. We perform quarterly security audits and notify affected users of any breach within 72 hours."
+        },
+        {
+          "heading": "4. Your Rights",
+          "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@we2.com. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
+        },
+        {
+          "heading": "5. Contact",
+          "body": "For any privacy-related question, email privacy@we2.com. We respond within 7 business days."
+        }
+      ]
+    },
+    "terms": {
+      "title": "이용약관",
+      "subtitle": "Togthr를 사용하면 아래 약관에 동의하는 것으로 간주됩니다. 당신과 우리 모두를 보호하는 약관이니 주의 깊게 읽어 주세요.",
+      "sections": [
+        {
+          "heading": "1. Eligibility",
+          "body": "You must be at least 16 years old (18 in some jurisdictions) to create a Togthr account. By signing up you confirm that you meet this requirement and that all information you provide is accurate."
+        },
+        {
+          "heading": "2. Account & Pairing",
+          "body": "Togthr works as a couple: you create a private pair by inviting your partner via email. Each pair shares a private space. You are responsible for keeping your login credentials secure. Sharing your account with non-parties is not permitted."
+        },
+        {
+          "heading": "3. Subscriptions & Payments",
+          "body": "We2 Plus subscriptions are billed via PayPal, Alipay, or Stripe. Prices are shown in your local currency. You can cancel at any time; access remains active until the end of the current billing period. Refunds follow the policy in section 4."
+        },
+        {
+          "heading": "4. Refund Policy",
+          "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@we2.com for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
+        },
+        {
+          "heading": "5. Acceptable Use",
+          "body": "You agree not to: upload illegal, hateful, or sexually explicit content; harass or threaten other users; attempt to reverse-engineer the app; use Togthr for commercial spam; or impersonate any person or entity. Violations may result in account suspension."
+        },
+        {
+          "heading": "6. Limitation of Liability",
+          "body": "Togthr is provided 'as is' without warranties. To the maximum extent permitted by law, our liability is limited to the amount you paid us in the past 12 months. We are not liable for indirect, incidental, or consequential damages."
+        },
+        {
+          "heading": "7. Changes",
+          "body": "We may update these terms from time to time. Material changes will be announced by email at least 30 days in advance. Continued use after the effective date constitutes acceptance."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "쿠키 정책",
+      "subtitle": "Togthr가 매끄럽게 돌아가도록 최소한의 쿠키를 사용합니다. 어떤 쿠키를 왜 쓰는지 정확히 알려드릴게요.",
+      "sections": [
+        {
+          "heading": "1. Essential Cookies",
+          "body": "These cookies are required for the site to work. They keep you logged in, remember your locale, and protect against CSRF attacks. They cannot be disabled because the site would not function without them."
+        },
+        {
+          "heading": "2. Analytics Cookies",
+          "body": "We use Cloudflare Web Analytics (privacy-first, no cross-site tracking) to understand which features are popular and where users get stuck. Analytics data is aggregated and does not identify you personally. You can opt out by enabling 'Do Not Track' in your browser."
+        },
+        {
+          "heading": "3. Payment Cookies",
+          "body": "When you complete a PayPal or Alipay payment, the payment provider may set its own cookies to process the transaction securely and prevent fraud. These cookies are governed by the payment provider's privacy policy, not ours."
+        },
+        {
+          "heading": "4. Managing Cookies",
+          "body": "You can clear or block cookies in your browser settings. Note that blocking essential cookies will prevent login from working. We do not use advertising or cross-site tracking cookies of any kind."
+        }
+      ]
+    },
+    "help": {
+      "title": "도움말 센터",
+      "subtitle": "가장 자주 묻는 질문의 빠른 답변을 찾아보세요. 원하는 답을 못 찾았다면 알려주세요 — 기꺼이 도와드릴게요.",
+      "sections": [
+        {
+          "heading": "Getting Started",
+          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional — every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
+        },
+        {
+          "heading": "Subscription & Billing",
+          "body": "Manage your Plus subscription from Settings > Billing. You can switch between monthly, quarterly, and yearly plans at any time. Cancellations take effect at the end of the current billing period. Refund requests submitted within 14 days of your first Plus purchase are processed within 5 business days."
+        },
+        {
+          "heading": "Privacy & Security",
+          "body": "Your private content (time capsules, journal entries, photos) is end-to-end encrypted. Togthr staff cannot read it. Enable two-factor authentication from Settings > Security for an extra layer of protection. To delete your account permanently, go to Settings > Privacy > Delete Account."
+        },
+        {
+          "heading": "Report a Bug",
+          "body": "Found something broken? Email bugs@we2.com with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
+        },
+        {
+          "heading": "International Support",
+          "body": "Togthr is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
+        }
+      ]
+    },
+    "contact": {
+      "title": "문의하기",
+      "subtitle": "당신의 의견을 듣고 싶어요. 질문에 가장 잘 맞는 채널을 골라 주세요.",
+      "sections": [
+        {
+          "heading": "General Support",
+          "body": "Questions, feedback, or feature requests. Email support@we2.com. We typically respond within 24 hours on business days."
+        },
+        {
+          "heading": "Privacy & Data",
+          "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@we2.com. We respond within 7 business days."
+        },
+        {
+          "heading": "Bug Reports",
+          "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@we2.com with your device model and OS version. We respond within 48 hours."
+        }
+      ]
+    }
+  },
+  "store": {
+    "title": "Togthr 동반자",
+    "subtitle": "6+1 미스터리 박스, 1/72 확률로 골든 등장",
+    "firstOrder": "첫 주문가",
+    "regular": "정가",
+    "save": "50% 할인",
+    "blindboxTitle": "Togthr 동반자 — 6+1 미스터리 박스",
+    "blindboxDesc": "프로그래머, 의사, 우주비행사, 셰프, 소방관, 경찰... 1/72 확률로 전설의 골든 Togthr 등장.",
+    "ctaBuy": "박스 구매",
+    "ctaTrySoulmate": "Soulmate AI 1개월 포함",
+    "odds": "확률",
+    "oddsGolden": "1 / 72",
+    "oddsCommon": "71 / 72",
+    "perma": "영구 해제",
+    "checkoutNote": "PayPal 테스트 모드 · 첫 주문 50% 할인",
+    "checkoutNote2": "구독 없음 · 일회 결제 · 영구 소유",
+    "successTitle": "주문 완료!",
+    "successSubtitle": "Toghr 동반자가 곧 도착합니다. PayPal이 결제를 처리 중입니다 — 이메일로 영수증을 받으실 거예요.",
+    "successNote": "PayPal 결제 확인 후 몇 분 내에 스킨이 해제됩니다.",
+    "successHint": "10분 내에 스킨이 나타나지 않으면 주문 ID와 함께 문의해 주세요.",
+    "secureNotice": "결제는 PayPal로 보호됩니다. 카드 정보는 당사가 보지 않습니다."
+  },
+  "daily": {
+    "title": "오늘의 밥주기",
+    "q": "오늘 TA가 곁에 있나요?",
+    "withBtn": "💕 함께",
+    "apartBtn": "🌙 떨어져",
+    "hunger": "포만감",
+    "streak": "🔥 연속 {n}일",
+    "bubbleIdle": "헤헤, 잠깐~",
+    "bubbleWith": "같이!",
+    "bubbleApart": "보고 싶어...",
+    "bubbleFeed": "먹여줘!",
+    "bubbleFull": "배불러!",
+    "bubbleMore": "더 줘~",
+    "again": "다시 하기",
+    "dragHint": "펫에게 드래그",
+    "streakDays": "{n}일 연속",
+    "treasureTitle": "보물상자 등장! 🎁",
+    "treasureDesc": "7일 연속! 펫이 보물상자를 찾았어요~"
+  },
+  "capsule": {
+    "title": "타임캡슐 · 보물찾기",
+    "subtitle": "埋まっている칸을 탭하면 펫이 걸어가서 파줄 거예요.",
+    "buried": "埋",
+    "opened": "開",
+    "openedOn": "埋めた日:",
+    "close": "宝箱!",
+    "cancel": "キャンセル",
+    "write": "新しいカプセルを埋める",
+    "writeTitle": "タイトル",
+    "writePlaceholder": "未来のあなたへ...",
+    "save": "埋める"
+  },
+  "pet": {
+    "title": "내 펫",
+    "subtitle": "펫은 관계를 비춥니다. 기분을 골라 변신을 보세요.",
+    "pickMood": "오늘 기분은?",
+    "status": "Togthr 지금",
+    "day": "함께한 지 {n}일",
+    "mood": {
+      "happy": "달콤",
+      "sad": "싸움",
+      "thinking": "생각중",
+      "sleeping": "잠자는중",
+      "sweet": "달콤",
+      "fight": "싸움",
+      "think": "생각 중",
+      "sleep": "잠자는 중"
+    },
+    "rarity": {
+      "common": "일반",
+      "rare": "레어",
+      "epic": "에픽",
+      "legendary": "레전더리"
+    },
+    "series": {
+      "basic": "기본",
+      "career": "직업",
+      "festival": "축제",
+      "emotion": "감정",
+      "fantasy": "판타지",
+      "legendary": "레전더리"
+    },
+    "tier": {
+      "free": "무료",
+      "plus": "Togthr Plus",
+      "eternal": "Togthr 이터널"
+    },
+    "card": {
+      "current": "사용 중"
+    },
+    "altar": {
+      "title": "영혼의 동반자를 소환",
+      "back": "뒤로",
+      "close": "닫기",
+      "hint": "잠금해제된 펫을 탭하면 미리보기. 잠긴 펫은 어떻게 해제하는지 볼 수 있어요.",
+      "summon": "소환",
+      "summoned": "도착했어요",
+      "current": "사용 중"
+    },
+    "petting": "쓰다듬어 줘~",
+    "statusHello": "안녕!",
+    "statusSleepy": "Zzz…",
+    "statusMiss": "보고 싶어",
+    "changePet": "모습 바꾸기",
+    "changePetBadge": "소환 제단",
+    "lockHint": "잠긴 펫도 미리보기는 가능 — 구독하거나 블라인드박스를 열어 해제해요",
+    "info": {
+      "days": "함께한 날",
+      "interactions": "상호작용",
+      "growth": "성장"
+    },
+    "actions": {
+      "journal": "저널",
+      "history": "기록",
+      "share": "공유"
+    },
+    "festival": {
+      "newyear": "새해",
+      "easter": "부활절",
+      "thanksgiving": "추수감사절",
+      "mothersday": "어머니날",
+      "fathersday": "아버지날",
+      "qixi": "칠석",
+      "dragonboat": "단오",
+      "lantern": "정월대보름",
+      "qingming": "청명",
+      "chongyang": "중양절",
+      "blackfriday": "블랙프라이데이",
+      "cybermonday": "사이버먼데이",
+      "arborday": "식목일",
+      "earthday": "지구의 날",
+      "environment": "세계 환경의 날",
+      "aprilfool": "만우절",
+      "graduation": "졸업",
+      "wedding": "결혼식",
+      "babyshower": "베이비 샤워",
+      "birthday": "생일",
+      "anniversary": "기념일",
+      "pride": "프라이드 월",
+      "diwali": "디왈리",
+      "carnival": "카니발"
+    }
+  },
+  "journal": {
+    "title": "우리 둥지",
+    "subtitle": "일기를 쓸 때마다 우리 둥지에 무언가가 더해져요. 자라는 걸 지켜보세요.",
+    "stage": "단계",
+    "nextStage": "다음: {next}",
+    "complete": "둥지 완성!",
+    "entriesCount": "{n}개의 일기",
+    "writePlaceholder": "오늘의 작은 일을...",
+    "save": "둥지에 추가",
+    "mood": {
+      "warm": "따뜻",
+      "cool": "시원",
+      "festive": "경사"
+    },
+    "stageName": {
+      "empty": "빈 땅",
+      "seed": "씨앗",
+      "sprout": "새싹",
+      "tree": "나무",
+      "full-nest": "둥지 완성"
+    },
+    "seedEntries": {
+      "e1": {
+        "text": "오늘 날씨 좋아서 산책 다녀왔어요.",
+        "mood": "warm"
+      },
+      "e2": {
+        "text": "눈이 왔어요! 남쪽 사람이 신났어요.",
+        "mood": "cool"
+      },
+      "e3": {
+        "text": "처음 함께한 크리스마스 🎄",
+        "mood": "festive"
+      }
+    }
+  },
+  "chat": {
+    "title": "소울메이트",
+    "online": "항상 함께",
+    "placeholder": "뭐든 말해보세요...",
+    "mockNotice": "Day 1 목업 — 실제 AI는 Day 2",
+    "typing": "동반자가 입력 중...",
+    "nightMode": "야간 모드",
+    "anniversary": "메시지 100개 — 한 챕터 완성",
+    "mood": {
+      "sweet": "달콤",
+      "calm": "차분",
+      "think": "생각",
+      "sleepy": "졸림",
+      "fight": "싸움"
+    }
+  },
+  "onboarding": {
+    "back": "뒤로",
+    "next": "다음",
+    "finish": "완료",
+    "welcome": {
+      "title": "항상 함께",
+      "subtitle": "당신의 작은 로봇이 왔어요 - 함께 자라나는 동반자.",
+      "cta": "시작"
+    },
+    "name": {
+      "title": "이름을 지어주세요",
+      "subtitle": "곁에 있을 작은 로봇의 이름.",
+      "placeholder": "예: 픽셀, 미미, 베이베이..."
+    },
+    "mode": {
+      "title": "어떻게 사용하실 건가요?",
+      "subtitle": "언제든 바꿀 수 있어요.",
+      "solo": {
+        "title": "혼자서",
+        "desc": "반려동물 + AI 채팅."
+      },
+      "together": {
+        "title": "누군가와",
+        "desc": "일상, 캡슐, 반려동물을 함께."
+      }
+    },
+    "done": {
+      "title": "{name} 준비 완료!",
+      "soloNote": "펫이 왔어요. 밥 주고, 대화하고, 스티커 보내기.",
+      "togetherNote": "펫이 왔어요. 첫 캡슐을 보내서 이야기를 시작하세요.",
+      "feedPet": "{name} 밥주기",
+      "sayHi": "인사하기",
+      "startOver": "다시 시작"
+    }
+  },
+  "community": {
+    "title": "나무 구멍",
+    "subtitle": "익명 메모. 좋아요 대신 포옹. 이름도, 판단도 없음.",
+    "rule1": "실명 없음",
+    "rule2": "포옹이 좋아요 대체",
+    "rule3": "24h 자동 삭제",
+    "composer": {
+      "placeholder": "뭐든 적어보세요. ~280자.",
+      "send": "구멍에 떨어뜨리기"
+    },
+    "mood": {
+      "calm": "차분",
+      "warm": "따뜻",
+      "reflect": "성찰",
+      "light": "가벼움"
+    },
+    "hug": "포옹",
+    "autoPurgeHint": "{hours}시간 후 사라짐",
+    "empty": "아직 메모가 없어요. 가장 먼저 하나 남겨보세요.",
+    "mockNotice": "Day 1 클라이언트 목업 — 자동 삭제는 Day 2."
+  },
+  "errorPage": {
+    "title": "문제가 발생했습니다",
+    "message": "페이지에 오류가 발생했습니다. 펫이 처리 중입니다.",
+    "tryAgain": "다시 시도",
+    "home": "홈",
+    "errorId": "오류 ID"
+  },
+  "paywallHint": {
+    "title": "네 친구가 새 옷을 입고 싶어해 ✨",
+    "cta": "보러 가기",
+    "dismiss": "무료로 계속하기"
+  },
+  "focus": {
+    "title": "포커스 모드",
+    "subtitle": "작은 로봇이 공부와 일에 곁에서 함께해요.",
+    "chooseDuration": "같이 얼마나 집중할까요?",
+    "minutes": "{minutes}분",
+    "start": "집중 시작",
+    "giveUp": "이번 세션 종료",
+    "awayNotice": "기다리고 있을게요…",
+    "welcomeBack": "다시 왔네요, 계속 힘내요!",
+    "completeTitle": "해냈어요!",
+    "completeDesc": "함께 다정하게 {minutes}분 집중했어요.",
+    "streak": "{days}일 연속 집중",
+    "again": "한 번 더",
+    "lockedPlus": "🔒 Plus로 더 긴 집중 시간 열기",
+    "interruptedNote": "잠시 멈췄지만 괜찮아요. 다시 함께 시작해요.",
+    "phrase1": "곁에 있을게요.",
+    "phrase2": "한 걸음씩 천천히.",
+    "phrase3": "할 수 있어요.",
+    "phrase4": "조용히 함께 성장해요."
+  },
+  "paymentSuccess": {
+    "title": "[ko] Payment successful 🎉",
+    "subtitle": "[ko] Your companion felt that. Membership is now active.",
+    "noteTitle": "[ko] What happens next",
+    "noteBody": "[ko] Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "hint": "[ko] If anything looks missing, give it a moment and refresh the pet page.",
+    "ctaPet": "[ko] 🐾 Meet your pet",
+    "ctaPricing": "[ko] ← Back to pricing",
+    "secureNotice": "[ko] Payments processed securely."
+  }
+}

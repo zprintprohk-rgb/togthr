@@ -3941,6 +3941,105 @@ const desktopTwinPosts: BlogPost[] = [
 ];
 
 // ───────────────────────────────────────────────────────────────────
+// Daily post: 2026-08-01 — pixel-buddy-for-study-sessions
+// ───────────────────────────────────────────────────────────────────
+
+const PIXEL_BUDDY_STUDY_DATE = '2026-08-01';
+const PIXEL_BUDDY_STUDY_SLUG = 'pixel-buddy-for-study-sessions';
+const PIXEL_BUDDY_STUDY_TAGS = ['study-companion', 'student-life', 'virtual-pet', 'pomodoro', 'focus-mode'];
+
+const pixelBuddyStudyPosts: BlogPost[] = [
+  {
+    slug: PIXEL_BUDDY_STUDY_SLUG,
+    locale: 'en',
+    title: 'A Pixel Buddy for Study Sessions: The Desk Companion That Sits Through Every Late Night',
+    description:
+      'Studying is lonely work. A pixel buddy does not read your textbook, but it sits on your taskbar through the long hours — the 10pm library session, the 2am thesis sprint — and that small steady presence makes the silence feel chosen, not imposed.',
+    date: PIXEL_BUDDY_STUDY_DATE,
+    cover: `/blog-covers/${PIXEL_BUDDY_STUDY_SLUG}-en.png`,
+    tags: PIXEL_BUDDY_STUDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: PIXEL_BUDDY_STUDY_SLUG,
+    locale: 'zh-cn',
+    title: '学习专用的像素伙伴:陪你度过每一个深夜的书桌伴侣',
+    description:
+      '学习是孤独的事。一只像素伙伴不会替你读书，但它会在漫长时间里坐在你的任务栏上——晚上十点的图书馆、凌晨两点的论文冲刺——而这小小的稳定存在，让安静不再像孤立，而更像你选择了宁静。',
+    date: PIXEL_BUDDY_STUDY_DATE,
+    cover: `/blog-covers/${PIXEL_BUDDY_STUDY_SLUG}-zh-cn.png`,
+    tags: PIXEL_BUDDY_STUDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: PIXEL_BUDDY_STUDY_SLUG,
+    locale: 'zh-tw',
+    title: '學習專用的像素夥伴:陪你度過每一個深夜的書桌伴侶',
+    description:
+      '學習是孤獨的事。一隻像素夥伴不會替你讀書，但它會在漫長時間裡坐在你的工作列上——晚上十點的圖書館、凌晨兩點的論文衝刺——而這小小的穩定存在，讓安靜不再像孤立，而更像你選擇了寧靜。',
+    date: PIXEL_BUDDY_STUDY_DATE,
+    cover: `/blog-covers/${PIXEL_BUDDY_STUDY_SLUG}-zh-tw.png`,
+    tags: PIXEL_BUDDY_STUDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: PIXEL_BUDDY_STUDY_SLUG,
+    locale: 'ja',
+    title: '勉強セッションのためのピクセルバディ:すべての深夜に寄り添うデスクコンパニオン',
+    description:
+      '勉強は孤独な仕事だ。ピクセルバディは教科書を読まないが、夜十時の図書館でも、朝二時の論文スプリントでも、タスクバーに座り続ける——その小さく安定した存在が、沈黙を孤立ではなく選ばれた静けさに変える。',
+    date: PIXEL_BUDDY_STUDY_DATE,
+    cover: `/blog-covers/${PIXEL_BUDDY_STUDY_SLUG}-ja.png`,
+    tags: PIXEL_BUDDY_STUDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: PIXEL_BUDDY_STUDY_SLUG,
+    locale: 'ko',
+    title: '공부 세션을 위한 픽셀 버디: 모든 늦은 밤을 함께하는 데스크 컴패니언',
+    description:
+      '공부는 외로운 일이다. 픽셀 버디는 교과서를 읽지 않지만, 밤 열 시 도서관에서도, 새벽 두 시 논문 스프린트에서도 작업 표시줄에 앉아 있다——그 작고 꾸준한 존재가 침묵을 고립이 아니라 선택된 고요로 만든다.',
+    date: PIXEL_BUDDY_STUDY_DATE,
+    cover: `/blog-covers/${PIXEL_BUDDY_STUDY_SLUG}-ko.png`,
+    tags: PIXEL_BUDDY_STUDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: PIXEL_BUDDY_STUDY_SLUG,
+    locale: 'de',
+    title: 'Ein Pixel-Buddy für Lernsessions: Der Schreibtischbegleiter, der jede lange Nacht mitsitzt',
+    description:
+      'Lernen ist einsame Arbeit. Ein Pixel-Buddy liest dein Lehrbuch nicht, aber er sitzt während der langen Stunden auf deiner Taskleiste — die Zehn-Uhr-Bibliothekssession, der Zwei-Uhr-morgens-Thesis-Sprint — und diese kleine stetige Präsenz lässt die Stille gewählt, nicht auferlegt erscheinen.',
+    date: PIXEL_BUDDY_STUDY_DATE,
+    cover: `/blog-covers/${PIXEL_BUDDY_STUDY_SLUG}-de.png`,
+    tags: PIXEL_BUDDY_STUDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: PIXEL_BUDDY_STUDY_SLUG,
+    locale: 'fr',
+    title: 'Un pixel buddy pour les sessions d\'étude : le compagnon de bureau qui reste à chaque nuit blanche',
+    description:
+      'Étudier est un travail solitaire. Un pixel buddy ne lit pas votre manuel, mais il reste sur votre barre des tâches pendant les longues heures — la session de bibliothèque de 22h, le sprint de thèse de 2h — et cette petite présence stable fait que le silence semble choisi, pas imposé.',
+    date: PIXEL_BUDDY_STUDY_DATE,
+    cover: `/blog-covers/${PIXEL_BUDDY_STUDY_SLUG}-fr.png`,
+    tags: PIXEL_BUDDY_STUDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: PIXEL_BUDDY_STUDY_SLUG,
+    locale: 'es',
+    title: 'Un pixel buddy para sesiones de estudio: el compañero de escritorio que se queda en cada trasnoche',
+    description:
+      'Estudiar es un trabajo solitario. Un pixel buddy no lee tu libro de texto, pero se queda en tu barra de tareas durante las largas horas — la sesión de biblioteca de las diez, el sprint de tesis de las dos — y esa pequeña presencia constante hace que el silencio se sienta elegido, no impuesto.',
+    date: PIXEL_BUDDY_STUDY_DATE,
+    cover: `/blog-covers/${PIXEL_BUDDY_STUDY_SLUG}-es.png`,
+    tags: PIXEL_BUDDY_STUDY_TAGS,
+    readingMinutes: 6,
+  },
+];
+
+// ───────────────────────────────────────────────────────────────────
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -3982,6 +4081,7 @@ export const blogPosts: BlogPost[] = [
   ...smallestRitualPosts,
   ...desktopTwinPosts,
   ...lonelyDeskCompanionPosts,
+  ...pixelBuddyStudyPosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────

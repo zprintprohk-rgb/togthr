@@ -1,0 +1,909 @@
+{
+  "siteName": "Togthr",
+  "tagline": "一直都在",
+  "nav": {
+    "home": "首頁",
+    "features": "功能",
+    "pricing": "方案",
+    "community": "社群",
+    "login": "登入",
+    "dashboard": "儀表板",
+    "daily": "餵食",
+    "capsule": "膠囊",
+    "pet": "寵物",
+    "journal": "築巢",
+    "store": "商店",
+    "chat": "聊天",
+    "faq": "常見問題",
+    "blog": "部落格",
+    "focus": "專注"
+  },
+  "seo": {
+    "siteName": "Togthr",
+    "description": "你設備裡的小機器人陪著你，也代表另一個 TA。一起建立日常儀式，珍藏回憶，養一隻屬於你們的虛擬伴侶。通用、私密、像素治癒。",
+    "keywords": "陪伴 虛擬寵物 回憶 時光膠囊 每日儀式 情感支持 靈魂伴侶 異地 像素寵物 AI陪伴",
+    "tagline": "一直都在"
+  },
+  "home": {
+    "hero": {
+      "title": "一直都在",
+      "subtitle": "你設備裡的小機器人陪著你，也代表另一個 TA。一起建立每日儀式，珍藏回憶，養一隻屬於你們的虛擬伴侶。",
+      "cta": "免費開始 — 無需信用卡",
+      "secondary": "看看怎麼用",
+      "socialProof": "全球 10,000+ 用戶信賴",
+      "eyebrow": "一直都在 · 一直都在意",
+      "welcomeFirst": "嗨，我啱啱醒。我會一直喺度㗎。",
+      "welcomeBack": "你返嚟啦！我等咗你好耐喇。",
+      "sleepyGreeting": "嘘…夜啦。陪我多坐一陣啦。",
+      "statusHello": "嗨！你好呀。",
+      "statusMiss": "你返嚟啦！",
+      "statusSleepy": "嘘…我眼瞓喇。",
+      "relationsEyebrow": "揀一個陪你嘅佢",
+      "relationsHint": "每種模式都會改變寵物嘅樣同光環。"
+    },
+    "features": {
+      "title": "為真實的情侶關係設計",
+      "subtitle": "每個功能，都為拉近你們的距離而生，無論相隔多遠。",
+      "sharedJournal": {
+        "title": "每日打卡",
+        "desc": "每天 5 分鐘的心理學互動問答，幫你們建立情感節奏，一天一天累積感情的厚度。"
+      },
+      "moodTracker": {
+        "title": "時光膠囊",
+        "desc": "把照片、語音、手寫信封存起來，設定未來的紀念日開啟——只屬於你們的記憶寶庫。"
+      },
+      "dreamWall": {
+        "title": "虛擬寵物",
+        "desc": "一起完成每日任務，養大一隻寵物。看著牠隨著你們的感情成長——這是最可愛的感情存款。"
+      },
+      "dailyGratitude": {
+        "title": "匿名社群",
+        "desc": "和全球情侶匿名分享故事、尋求建議、慶祝里程碑——你們不是一個人在經營感情。"
+      },
+      "petAdoption": {
+        "title": "共享日記",
+        "desc": "一起寫、一起回顧。記錄屬於你們的專屬故事，只有彼此看得見。"
+      },
+      "timeCapsule": {
+        "title": "夢想牆",
+        "desc": "把你們的夢想、目標、心願釘在牆上——一起規劃未來的藍圖。"
+      }
+    },
+    "companions": {
+      "title": "Togthr 萌寵",
+      "subtitle": "一鍵發送萌系表情給 TA",
+      "cta": "即將上線到聊天",
+      "cards": {
+        "feeding": {
+          "title": "餵食時間",
+          "desc": "給 TA 一顆心，看牠滿足的樣子"
+        },
+        "capsule": {
+          "title": "時光膠囊 · 挖寶",
+          "desc": "埋下一個，寵物幫你挖出來"
+        },
+        "symbiosis": {
+          "title": "共生形態",
+          "desc": "會反映你們關係的小生命"
+        },
+        "blindbox": {
+          "title": "6+1 盲盒",
+          "desc": "首單特價",
+          "badge": "新"
+        },
+        "nest": {
+          "title": "築巢",
+          "desc": "每條日記，都給你們的共同小窩添磚加瓦"
+        },
+        "soulmate": {
+          "title": "靈魂伴侶 AI",
+          "desc": "聊聊天，聽你說話"
+        },
+        "treehole": {
+          "title": "樹洞",
+          "desc": "匿名留言，24h 自動消失"
+        },
+        "focus": {
+          "title": "專注模式",
+          "desc": "公仔陪你一起學習工作"
+        }
+      }
+    }
+  },
+  "pricing": {
+    "title": "簡單透明的方案選擇",
+    "subtitle": "選一個適合你們的方案，沒有隱藏費用，隨時可取消。",
+    "monthly": "按月",
+    "quarterly": "按季",
+    "yearly": "按年",
+    "popular": "最熱門",
+    "save": "省 {discount}%",
+    "tiers": {
+      "free": {
+        "name": "免費版",
+        "price": "HK$0",
+        "features": [
+          "每日打卡",
+          "3 個時光膠囊",
+          "基礎寵物",
+          "社群存取"
+        ]
+      },
+      "plus": {
+        "name": "Togthr Plus",
+        "price": "HK$43",
+        "period": "/月",
+        "features": [
+          "無限膠囊",
+          "進階寵物造型",
+          "私密相簿",
+          "關係洞察報告"
+        ]
+      },
+      "premium": {
+        "name": "We2 高級版",
+        "price": "HK$108",
+        "period": "/季",
+        "features": [
+          "Plus 所有功能",
+          "優先客服",
+          "自訂寵物名字",
+          "匯出回憶"
+        ]
+      },
+      "lifetime": {
+        "name": "We2 永久版",
+        "price": "HK$310",
+        "period": "/年",
+        "features": [
+          "Premium 所有功能",
+          "終身更新",
+          "獨家內容",
+          "提前體驗新功能"
+        ]
+      },
+      "soulmate": {
+        "name": "Togthr 靈魂伴侶",
+        "price": "",
+        "period": "/月",
+        "features": [
+          "包含 Plus 全部功能",
+          "AI 語料風格",
+          "像 TA 一樣說話",
+          "智能回憶推薦",
+          "優先客服"
+        ]
+      },
+      "eternal": {
+        "name": "Togthr 至尊",
+        "tagline": "全部解鎖 + 獨家",
+        "features": [
+          "Plus 所有功能",
+          "解鎖全部 50+ 造型",
+          "金色傳說寵物",
+          "優先客服",
+          "搶先體驗新功能"
+        ]
+      }
+    },
+    "cta": "立即加入",
+    "ctaFree": "免費開始",
+    "free": "免費",
+    "period": {
+      "monthly": "月",
+      "quarterly": "季",
+      "yearly": "年"
+    },
+    "per": {
+      "monthly": "/月",
+      "quarterly": "/季",
+      "yearly": "/年"
+    },
+    "promoPlaceholder": "輸入優惠碼",
+    "promoApply": "使用",
+    "promoHint": "優惠碼功能即將推出！",
+    "secure": "由 PayPal 安全支付",
+    "guarantee": "30 天無條件退款保證",
+    "new": "新上線",
+    "theater": {
+      "eyebrow": "揀你嘅旅程",
+      "headline": "解鎖一段同你一齊成長嘅生活",
+      "tagline": "三個方案，一個承諾：你解鎖嘅每一隻寵物都會永遠陪住你。",
+      "guarantee": "30 日無條件退款保證",
+      "secure": "由 PayPal · 支付寶 · AlipayHK 安全支付"
+    },
+    "tierMeta": {
+      "free": {
+        "eyebrow": "小種子",
+        "tagline": "由呢度開始",
+        "peeking": "小寵物匿埋咗"
+      },
+      "plus": {
+        "eyebrow": "同行者",
+        "tagline": "揀你鍾意嘅靈魂",
+        "peeking": "寵物好興奮"
+      },
+      "eternal": {
+        "eyebrow": "星塵",
+        "tagline": "成為永恆",
+        "peeking": "寵物已昇華"
+      }
+    },
+    "petMatrix": {
+      "free": {
+        "label": "3 隻基礎小夥伴",
+        "sub": "小芽、小苗、新手"
+      },
+      "plus": {
+        "label": "解鎖 50+ 造型",
+        "sub": "職業 · 節日 · 表情 · 奇幻"
+      },
+      "eternal": {
+        "label": "全部解鎖 + 獨家",
+        "sub": "包括金色傳說"
+      }
+    },
+    "legendary": {
+      "label": "金色傳說",
+      "odds": "1 / 72",
+      "hint": "由至尊盲盒隨機掉落"
+    },
+    "countdown": {
+      "label": "萬聖節限定 · 搶先解鎖",
+      "endsIn": "倒數",
+      "days": "日",
+      "hours": "時",
+      "minutes": "分",
+      "seconds": "秒"
+    },
+    "ctaSubscribe": "即刻訂閱",
+    "ctaStartFree": "免費開始",
+    "ctaPopular": "揀同行者",
+    "ctaEternal": "成為至尊"
+  },
+  "faq": {
+    "title": "常見問題",
+    "subtitle": "你想知道的，都在這裡",
+    "items": [
+      {
+        "question": "Togthr 是什麼？對情侶有什麼幫助？",
+        "answer": "Togthr 是一款幫助情侶建立情感習慣的成長應用，由心理學家參與設計。透過每日打卡、時光膠囊和共同挑戰，讓感情在日常中慢慢升溫。"
+      },
+      {
+        "question": "我的資料安全嗎？有隱私保障嗎？",
+        "answer": "當然有。我們對所有個人內容使用端到端加密。你們的私密瞬間、照片和對話只有你們兩人看得到，我們絕不會出售任何使用者資料。"
+      },
+      {
+        "question": "遠距離關係能用 Togthr 嗎？",
+        "answer": "當然可以！Togthr 就是為所有形式的情侶關係設計的。時光膠囊和每日打卡尤其適合跨地域維持情感連結。"
+      },
+      {
+        "question": "虛擬寵物怎麼玩？",
+        "answer": "你和另一半一起完成每日打卡和挑戰，寵物就會成長。牠是你們感情投入的可愛視覺化回饋，不同的寵物和造型會在里程碑時解鎖。"
+      },
+      {
+        "question": "支援哪些付款方式？",
+        "answer": "台灣和香港用戶可以使用 AlipayHK 和 PayPal 付款，其他地區支援 PayPal 和國際支付。所有交易皆為加密安全。"
+      },
+      {
+        "question": "可以取消會員嗎？",
+        "answer": "可以，隨時取消。你的會員權益會持續到當前付費週期結束。新使用者還有 30 天無條件退款保證。"
+      },
+      {
+        "question": "怎麼和另一半連結？",
+        "answer": "註冊後，發送專屬邀請碼給你的另一半。對方接受後，兩個帳號就綁定在一起，你們可以一起打卡、存膠囊、養寵物。"
+      },
+      {
+        "question": "有社群功能嗎？",
+        "answer": "有的！我們的匿名社群讓你可以和全球情侶分享故事、尋求建議、慶祝里程碑。你可以選擇匿名發文或用情侶身分展示。"
+      }
+    ]
+  },
+  "auth": {
+    "loginTitle": "歡迎回來",
+    "loginSubtitle": "登入後繼續你們的情感之旅",
+    "registerTitle": "開始你們的旅程",
+    "registerSubtitle": "註冊帳號，邀請你的另一半",
+    "emailLabel": "電子郵件",
+    "emailPlaceholder": "your@example.com",
+    "passwordLabel": "密碼",
+    "passwordPlaceholder": "輸入密碼",
+    "displayNameLabel": "暱稱",
+    "displayNamePlaceholder": "你的名字",
+    "loginButton": "登入",
+    "registerButton": "創建帳號",
+    "noAccount": "還沒有帳號？",
+    "hasAccount": "已有帳號？",
+    "registerLink": "立即註冊",
+    "loginLink": "去登入",
+    "forgotPassword": "忘記密碼？",
+    "resetPasswordTitle": "重設密碼",
+    "resetPasswordSubtitle": "輸入電子郵件以接收重設連結",
+    "resetPasswordButton": "發送重設連結",
+    "updatePasswordTitle": "設定新密碼",
+    "updatePasswordSubtitle": "輸入新的密碼",
+    "updatePasswordButton": "更新密碼",
+    "orContinueWith": "或使用以下方式繼續",
+    "google": "Google",
+    "github": "GitHub",
+    "checkEmail": "請查看電子郵件中的確認連結。",
+    "passwordUpdated": "密碼已更新，現在可以登入了。",
+    "signOut": "登出",
+    "dashboard": "儀表板"
+  },
+  "footer": {
+    "privacy": "隱私政策",
+    "terms": "服務條款",
+    "cookie": "Cookie 設定",
+    "help": "幫助中心",
+    "contact": "聯絡我們",
+    "copyright": "© {year} Togthr. 保留所有權利。"
+  },
+  "notFound": {
+    "title": "走丟了？",
+    "description": "這個頁面不知道跑哪去了。你的寵物也在找它。",
+    "backHome": "回家",
+    "feedPet": "餵寵物",
+    "sayHi": "打個招呼",
+    "pixelHint": "像素時刻"
+  },
+  "payment": {
+    "title": "完成購買",
+    "subtitle": "選擇付款方式，解鎖 We2 Plus",
+    "periodLabel": "計費週期",
+    "monthly": "按月",
+    "quarterly": "按季",
+    "yearly": "按年",
+    "priceLabel": "合計",
+    "gatewayLabel": "付款方式",
+    "paypal": "PayPal",
+    "alipayCn": "Alipay（中國大陸）",
+    "alipayHk": "AlipayHK（香港 / 台灣）",
+    "payButton": "使用 {gateway} 付款",
+    "processing": "正在處理付款…",
+    "success": {
+      "title": "付款成功！",
+      "message": "感謝訂閱 We2 Plus。正在重新導向至儀表板…"
+    },
+    "error": {
+      "title": "付款失敗",
+      "message": "付款過程中發生問題，請再試一次。",
+      "retry": "重新付款"
+    },
+    "cancel": {
+      "title": "付款已取消",
+      "message": "您已取消付款，隨時可以重新嘗試。"
+    }
+  },
+  "upload": {
+    "dragOrClick": "拖曳檔案到此處，或點擊選擇檔案",
+    "dropHere": "釋放檔案以上傳",
+    "constraints": "單檔案最大 {maxSize}MB，最多 {maxFiles} 個檔案",
+    "statusSuccess": "上傳成功",
+    "remove": "移除檔案",
+    "errorTooLarge": "檔案超過 {maxSize}MB 限制",
+    "errorType": "不支援的檔案類型。允許：{types}",
+    "errorMaxFiles": "最多允許 {max} 個檔案",
+    "errorUpload": "上傳失敗，請重試"
+  },
+  "features": {
+    "dailyCheckIn": {
+      "longDesc": "以一個深思熟慮的問題開始每一天，旨在加深你們的情感連結。私下回答，然後與伴侶揭示並討論。",
+      "step1": "每天早上接收每日提問",
+      "step2": "在查看伴侶的回覆前私下回答",
+      "step3": "同時揭示雙方的答案",
+      "step4": "討論並為你們的虛擬寵物賺取愛心點數"
+    },
+    "timeCapsules": {
+      "longDesc": "創建包含照片、語音備忘錄和情書的數位時光膠囊。封存它們並設定未來的開啟日期——非常適合紀念日或驚喜。",
+      "step1": "用照片、筆記或語音備忘錄創建膠囊",
+      "step2": "設定未來的開啟日期（紀念日、生日等）",
+      "step3": "雙方都可以在膠囊封存前新增內容",
+      "step4": "在該一起打開時收到通知"
+    },
+    "virtualPet": {
+      "longDesc": "認識你們共養的虛擬寵物——一個隨著你們關係成長的可愛夥伴。完成每日打卡和挑戰來賺取愛心點數，解鎖新造型。",
+      "step1": "一起選擇並為你們的寵物命名",
+      "step2": "透過完成每日打卡來賺取愛心點數",
+      "step3": "組隊餵養、玩耍和照顧你們的寵物",
+      "step4": "在關係里程碑解鎖新造型和進化"
+    },
+    "privateCommunity": {
+      "longDesc": "加入一個來自世界各地的情侶匿名互助社群。分享你們的故事、尋求建議、慶祝里程碑。",
+      "step1": "建立你們的匿名情侶檔案",
+      "step2": "發布故事、問題或里程碑",
+      "step3": "與其他情侶的貼文互動",
+      "step4": "在一個充滿支持且受管理的空間中建立聯繫"
+    },
+    "sharedJournal": {
+      "longDesc": "一起書寫你們的故事——名副其實。一個共享日記，雙方都可以新增條目，並建立你們關係中最珍貴時刻的時間軸。",
+      "step1": "隨時建立新的日記條目",
+      "step2": "雙方都可以檢視、編輯和留言",
+      "step3": "為條目新增照片和位置標籤",
+      "step4": "一起瀏覽你們的關係時間軸"
+    },
+    "dreamWall": {
+      "longDesc": "將你們共享的夢想、目標和願望清單釘在視覺化看板上。一起規劃未來，並在實現時打勾。",
+      "step1": "將夢想和目標新增到你們的共享看板",
+      "step2": "按類別整理（旅行、家居、冒險等）",
+      "step3": "設定目標日期並一起追蹤進度",
+      "step4": "用特殊動畫慶祝每一項成就"
+    },
+    "backToFeatures": "返回功能",
+    "howItWorks": "運作方式",
+    "tryItOut": "試一試"
+  },
+  "demo": {
+    "dailyCheckIn": {
+      "title": "今日嘅問題",
+      "placeholder": "分享你嘅心情...",
+      "save": "儲存答案",
+      "saved": "答案已儲存！",
+      "nextQuestion": "下一題 →",
+      "history": "你嘅答案",
+      "empty": "開始你嘅第一次打卡"
+    },
+    "timeCapsules": {
+      "title": "回憶膠囊",
+      "titlePlaceholder": "為我哋嘅將來起個名...",
+      "contentPlaceholder": "寫低呢個時刻...",
+      "lockCapsule": "封存膠囊 🔒",
+      "empty": "建立你嘅第一個回憶膠囊",
+      "unlocked": "已解鎖",
+      "daysLeft": "仲有 {days} 日",
+      "noContent": "（未有內容）"
+    },
+    "virtualPet": {
+      "title": "你嘅寵物",
+      "petName": "小月",
+      "virtualCompanion": "虛擬同伴",
+      "level": "等級 {level}",
+      "hunger": "飽肚度",
+      "happiness": "開心度",
+      "intimacy": "親密度",
+      "feed": "餵食",
+      "play": "玩耍",
+      "cuddle": "攬吓"
+    },
+    "privateCommunity": {
+      "title": "社群故事"
+    },
+    "sharedJournal": {
+      "title": "共享日記",
+      "placeholder": "寫低今日嘅日記...",
+      "writeEntry": "寫一篇",
+      "you": "你",
+      "partner": "另一半"
+    },
+    "dreamWall": {
+      "title": "夢想牆",
+      "placeholder": "我哋下一個大夢想...",
+      "pin": "釘上",
+      "empty": "釘低你哋嘅第一個夢想"
+    }
+  },
+  "legal": {
+    "lastUpdated": "最後更新：2026 年 6 月 1 日",
+    "privacy": {
+      "title": "私隱政策",
+      "subtitle": "你嘅私隱好重要。呢頁會講解我哋收集咩資料、點樣用，同埋你對自己資料擁有嘅權利。",
+      "sections": [
+        {
+          "heading": "1. Information We Collect",
+          "body": "We collect only the information needed to provide Togthr's couple-wellness services: account email, encrypted password, profile details (nickname, avatar, anniversary date), and the content you create in the app (check-in answers, journal entries, time capsules, photos). We never sell your data to third parties."
+        },
+        {
+          "heading": "2. How We Use Your Data",
+          "body": "Your data is used to: (a) sync content between you and your partner, (b) deliver push notifications and daily reminders you have opted into, (c) generate aggregated, anonymized insights, and (d) provide customer support when you contact us. We do not use your private content for advertising or AI training."
+        },
+        {
+          "heading": "3. Data Storage & Security",
+          "body": "All data is stored encrypted at rest (AES-256) and in transit (TLS 1.3) on Supabase and Cloudflare infrastructure. Time capsules remain end-to-end encrypted and cannot be read by Togthr staff. We perform quarterly security audits and notify affected users of any breach within 72 hours."
+        },
+        {
+          "heading": "4. Your Rights",
+          "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@we2.com. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
+        },
+        {
+          "heading": "5. Contact",
+          "body": "For any privacy-related question, email privacy@we2.com. We respond within 7 business days."
+        }
+      ]
+    },
+    "terms": {
+      "title": "使用條款",
+      "subtitle": "使用 Togthr 即代表你同意以下條款。請仔細閱讀——佢哋保護你，亦保護我哋。",
+      "sections": [
+        {
+          "heading": "1. Eligibility",
+          "body": "You must be at least 16 years old (18 in some jurisdictions) to create a Togthr account. By signing up you confirm that you meet this requirement and that all information you provide is accurate."
+        },
+        {
+          "heading": "2. Account & Pairing",
+          "body": "Togthr works as a couple: you create a private pair by inviting your partner via email. Each pair shares a private space. You are responsible for keeping your login credentials secure. Sharing your account with non-parties is not permitted."
+        },
+        {
+          "heading": "3. Subscriptions & Payments",
+          "body": "We2 Plus subscriptions are billed via PayPal, Alipay, or Stripe. Prices are shown in your local currency. You can cancel at any time; access remains active until the end of the current billing period. Refunds follow the policy in section 4."
+        },
+        {
+          "heading": "4. Refund Policy",
+          "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@we2.com for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
+        },
+        {
+          "heading": "5. Acceptable Use",
+          "body": "You agree not to: upload illegal, hateful, or sexually explicit content; harass or threaten other users; attempt to reverse-engineer the app; use Togthr for commercial spam; or impersonate any person or entity. Violations may result in account suspension."
+        },
+        {
+          "heading": "6. Limitation of Liability",
+          "body": "Togthr is provided 'as is' without warranties. To the maximum extent permitted by law, our liability is limited to the amount you paid us in the past 12 months. We are not liable for indirect, incidental, or consequential damages."
+        },
+        {
+          "heading": "7. Changes",
+          "body": "We may update these terms from time to time. Material changes will be announced by email at least 30 days in advance. Continued use after the effective date constitutes acceptance."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie 政策",
+      "subtitle": "我哋用最少嘅 Cookie 嚟維持 Togthr 順暢運作。呢度會列明我哋設定咗咩 Cookie 同埋點解。",
+      "sections": [
+        {
+          "heading": "1. Essential Cookies",
+          "body": "These cookies are required for the site to work. They keep you logged in, remember your locale, and protect against CSRF attacks. They cannot be disabled because the site would not function without them."
+        },
+        {
+          "heading": "2. Analytics Cookies",
+          "body": "We use Cloudflare Web Analytics (privacy-first, no cross-site tracking) to understand which features are popular and where users get stuck. Analytics data is aggregated and does not identify you personally. You can opt out by enabling 'Do Not Track' in your browser."
+        },
+        {
+          "heading": "3. Payment Cookies",
+          "body": "When you complete a PayPal or Alipay payment, the payment provider may set its own cookies to process the transaction securely and prevent fraud. These cookies are governed by the payment provider's privacy policy, not ours."
+        },
+        {
+          "heading": "4. Managing Cookies",
+          "body": "You can clear or block cookies in your browser settings. Note that blocking essential cookies will prevent login from working. We do not use advertising or cross-site tracking cookies of any kind."
+        }
+      ]
+    },
+    "help": {
+      "title": "幫助中心",
+      "subtitle": "搵到最常見問題嘅快速解答。搵唔到你要嘅嘢？聯絡我哋，我哋好樂意幫手。",
+      "sections": [
+        {
+          "heading": "Getting Started",
+          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional — every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
+        },
+        {
+          "heading": "Subscription & Billing",
+          "body": "Manage your Plus subscription from Settings > Billing. You can switch between monthly, quarterly, and yearly plans at any time. Cancellations take effect at the end of the current billing period. Refund requests submitted within 14 days of your first Plus purchase are processed within 5 business days."
+        },
+        {
+          "heading": "Privacy & Security",
+          "body": "Your private content (time capsules, journal entries, photos) is end-to-end encrypted. Togthr staff cannot read it. Enable two-factor authentication from Settings > Security for an extra layer of protection. To delete your account permanently, go to Settings > Privacy > Delete Account."
+        },
+        {
+          "heading": "Report a Bug",
+          "body": "Found something broken? Email bugs@we2.com with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
+        },
+        {
+          "heading": "International Support",
+          "body": "Togthr is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
+        }
+      ]
+    },
+    "contact": {
+      "title": "聯絡我哋",
+      "subtitle": "我哋好樂意聽到你嘅聲音。揀最適合你問題嘅渠道就得。",
+      "sections": [
+        {
+          "heading": "General Support",
+          "body": "Questions, feedback, or feature requests. Email support@we2.com. We typically respond within 24 hours on business days."
+        },
+        {
+          "heading": "Privacy & Data",
+          "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@we2.com. We respond within 7 business days."
+        },
+        {
+          "heading": "Bug Reports",
+          "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@we2.com with your device model and OS version. We respond within 48 hours."
+        }
+      ]
+    }
+  },
+  "store": {
+    "title": "Togthr 萌寵盲盒",
+    "subtitle": "6+1 神秘盲盒，1/72 概率開出隱藏金色款",
+    "firstOrder": "首單價",
+    "regular": "原價",
+    "save": "立減 50%",
+    "blindboxTitle": "Togthr 萌寵 — 6+1 神秘盲盒",
+    "blindboxDesc": "每盒隨機一款萌寵皮膚：程序員、醫生、太空人、廚師、消防員、警察... 1/72 概率開出傳說級金色款。",
+    "ctaBuy": "立即購買",
+    "ctaTrySoulmate": "含 1 個月 Soulmate AI 試用",
+    "odds": "概率",
+    "oddsGolden": "1 / 72",
+    "oddsCommon": "71 / 72",
+    "perma": "永久解鎖",
+    "checkoutNote": "PayPal 測試模式 · 首單 5 折",
+    "checkoutNote2": "無訂閱 · 一次購買 · 永久擁有",
+    "successTitle": "下單成功！",
+    "successSubtitle": "你的 Togthr 萌寵正在路上。PayPal 正在處理你的支付 — 稍後會收到郵件回執。",
+    "successNote": "皮膚會在 PayPal 確認支付後幾分鐘內自動解鎖。",
+    "successHint": "如果 10 分鐘內皮膚未出現，請聯繫我們並提供訂單號。",
+    "secureNotice": "支付由 PayPal 保障，我們不會看到你的銀行卡資訊。"
+  },
+  "daily": {
+    "title": "每日餵食",
+    "q": "今天，TA 在你身邊嗎？",
+    "withBtn": "💕 在一起",
+    "apartBtn": "🌙 異地",
+    "hunger": "飽腹度",
+    "streak": "🔥 連續 {n} 天投餵",
+    "bubbleIdle": "嘿嘿，等我一下~",
+    "bubbleWith": "一起呀！",
+    "bubbleApart": "想 TA 了...",
+    "bubbleFeed": "餵我！",
+    "bubbleFull": "吃飽啦！",
+    "bubbleMore": "嗯嗯~ 還想要！",
+    "again": "再來一次",
+    "dragHint": "拖到寵物嘴邊",
+    "streakDays": "連續 {n} 天打卡",
+    "treasureTitle": "寶箱出現！🎁",
+    "treasureDesc": "連續 7 天打卡，寵物為你挖出一個神秘寶箱~"
+  },
+  "capsule": {
+    "title": "時光膠囊 · 挖寶",
+    "subtitle": "點擊埋著的格子，寵物走過去幫你挖開。",
+    "buried": "待挖",
+    "opened": "已開",
+    "openedOn": "埋藏於:",
+    "close": "收下啦",
+    "cancel": "取消",
+    "write": "埋一個膠囊",
+    "writeTitle": "膠囊標題",
+    "writePlaceholder": "寫給未來的你...",
+    "save": "埋下"
+  },
+  "pet": {
+    "title": "我的寵物",
+    "subtitle": "寵物會反映你們的關係。挑一個心情看它變化。",
+    "pickMood": "今天 TA 心情如何？",
+    "status": "Togthr 現在",
+    "day": "在一起 {n} 天",
+    "mood": {
+      "happy": "甜蜜",
+      "sad": "吵架",
+      "thinking": "思考",
+      "sleeping": "睡覺",
+      "sweet": "甜蜜",
+      "fight": "嗌交",
+      "think": "諗緊嘢",
+      "sleep": "瞓覺"
+    },
+    "rarity": {
+      "common": "普通",
+      "rare": "稀有",
+      "epic": "史詩",
+      "legendary": "傳說"
+    },
+    "series": {
+      "basic": "基礎",
+      "career": "職業",
+      "festival": "節日",
+      "emotion": "表情",
+      "fantasy": "奇幻",
+      "legendary": "傳說"
+    },
+    "tier": {
+      "free": "免費版",
+      "plus": "Togthr Plus",
+      "eternal": "Togthr 至尊"
+    },
+    "card": {
+      "current": "使用中"
+    },
+    "altar": {
+      "title": "召喚你嘅靈魂同伴",
+      "back": "返回",
+      "close": "關閉",
+      "hint": "撳未鎖嘅寵物可以預覽；撳鎖住嘅睇下點樣解鎖。",
+      "summon": "召喚",
+      "summoned": "已經到咗",
+      "current": "用緊"
+    },
+    "petting": "摸下我~",
+    "statusHello": "嗨，你好！",
+    "statusSleepy": "Zzz…",
+    "statusMiss": "掛住你",
+    "changePet": "換樣",
+    "changePetBadge": "召喚台",
+    "lockHint": "未解鎖嘅寵物都可以預覽——訂閱或者開盲盒就可以拎到",
+    "info": {
+      "days": "一齊嘅日子",
+      "interactions": "互動次數",
+      "growth": "成長值"
+    },
+    "actions": {
+      "journal": "日記",
+      "history": "歷史",
+      "share": "分享"
+    },
+    "festival": {
+      "newyear": "元旦",
+      "easter": "復活節",
+      "thanksgiving": "感恩節",
+      "mothersday": "母親節",
+      "fathersday": "父親節",
+      "qixi": "七夕",
+      "dragonboat": "端午",
+      "lantern": "元宵",
+      "qingming": "清明",
+      "chongyang": "重陽",
+      "blackfriday": "黑五",
+      "cybermonday": "網購星期一",
+      "arborday": "植樹日",
+      "earthday": "地球日",
+      "environment": "世界環境日",
+      "aprilfool": "愚人節",
+      "graduation": "畢業",
+      "wedding": "婚禮",
+      "babyshower": "迎嬰派對",
+      "birthday": "生日",
+      "anniversary": "紀念日",
+      "pride": "同志驕傲月",
+      "diwali": "排燈節",
+      "carnival": "嘉年華"
+    }
+  },
+  "journal": {
+    "title": "我們的築巢",
+    "subtitle": "每條日記都在為你們的共同小窩添磚加瓦。看它慢慢長大。",
+    "stage": "階段",
+    "nextStage": "下一階段：{next}",
+    "complete": "築巢完成！",
+    "entriesCount": "共 {n} 條",
+    "writePlaceholder": "寫下今天的小事...",
+    "save": "放入小窩",
+    "mood": {
+      "warm": "溫暖",
+      "cool": "清涼",
+      "festive": "節日"
+    },
+    "stageName": {
+      "empty": "空地",
+      "seed": "種子",
+      "sprout": "嫩芽",
+      "tree": "小樹",
+      "full-nest": "滿巢"
+    },
+    "seedEntries": {
+      "e1": {
+        "text": "今天天氣很好，出去走了走。",
+        "mood": "warm"
+      },
+      "e2": {
+        "text": "下雪了！南方人激動壞了。",
+        "mood": "cool"
+      },
+      "e3": {
+        "text": "第一次一起過聖誕 🎄",
+        "mood": "festive"
+      }
+    }
+  },
+  "chat": {
+    "title": "靈魂伴侶",
+    "online": "一直都在",
+    "placeholder": "說點什麼吧...",
+    "mockNotice": "Day 1 mock 模式 — 真實 AI Day 2 接入",
+    "typing": "同伴打緊字…",
+    "nightMode": "深夜模式",
+    "anniversary": "100 個訊息——一章完咗",
+    "mood": {
+      "sweet": "甜蜜",
+      "calm": "平靜",
+      "think": "諗嘢",
+      "sleepy": "眼瞓",
+      "fight": "嗌交"
+    }
+  },
+  "onboarding": {
+    "back": "上一步",
+    "next": "下一步",
+    "finish": "完成",
+    "welcome": {
+      "title": "一直都在",
+      "subtitle": "你的小機器人來了 - 一個陪你一起長大的夥伴。",
+      "cta": "開始"
+    },
+    "name": {
+      "title": "給 TA 起個名字",
+      "subtitle": "為這隻陪你左右的小機器人取名。",
+      "placeholder": "比如：皮蛋、米米、北北..."
+    },
+    "mode": {
+      "title": "想怎麼用？",
+      "subtitle": "隨時可以改。",
+      "solo": {
+        "title": "自己一個人",
+        "desc": "一隻陪伴你的寵物 + AI 聊天支援。"
+      },
+      "together": {
+        "title": "和 TA 一起",
+        "desc": "分享日常、膠囊、共同養一隻寵物。"
+      }
+    },
+    "done": {
+      "title": "{name} 準備好啦！",
+      "soloNote": "你的寵物來了。餵它、跟它聊天、發貼圖。",
+      "togetherNote": "你的寵物來了。發第一個膠囊，開始你們的故事。",
+      "feedPet": "餵 {name}",
+      "sayHi": "打個招呼",
+      "startOver": "重新開始"
+    }
+  },
+  "community": {
+    "title": "樹洞",
+    "subtitle": "匿名留言。用抱抱代替點讚。沒有名字，沒有評判。",
+    "rule1": "不用真名",
+    "rule2": "抱抱代替點讚",
+    "rule3": "24h 自動消失",
+    "composer": {
+      "placeholder": "寫點什麼吧。任何事。~280 字。",
+      "send": "丟進樹洞"
+    },
+    "mood": {
+      "calm": "平靜",
+      "warm": "溫暖",
+      "reflect": "沉思",
+      "light": "輕盈"
+    },
+    "hug": "抱抱",
+    "autoPurgeHint": "{hours}小時後消失",
+    "empty": "還沒有留言。第一個來留個腳印。",
+    "mockNotice": "Day 1 客戶端 mock — 服務端自動清理 Day 2 上線。"
+  },
+  "errorPage": {
+    "title": "出了點小狀況",
+    "message": "頁面遇到了小問題。你的寵物正在處理。",
+    "tryAgain": "重試",
+    "home": "首頁",
+    "errorId": "錯誤 ID"
+  },
+  "paywallHint": {
+    "title": "你的小夥伴想換上新衣服啦 ✨",
+    "cta": "去看看",
+    "dismiss": "繼續用免費的"
+  },
+  "focus": {
+    "title": "專注模式",
+    "subtitle": "有一隻小機器人，陪你一起工作學習。",
+    "chooseDuration": "想一起專注多久？",
+    "minutes": "{minutes} 分鐘",
+    "start": "開始專注",
+    "giveUp": "結束本次",
+    "awayNotice": "我等你回來…",
+    "welcomeBack": "歡迎回來，繼續加油！",
+    "completeTitle": "完成啦！",
+    "completeDesc": "一起溫柔地專注了 {minutes} 分鐘。",
+    "streak": "連續專注 {days} 天",
+    "again": "再來一輪",
+    "lockedPlus": "🔒 Plus 解鎖更長專注",
+    "interruptedNote": "本次專注中途暫停了一會兒——沒關係，我們重新開始。",
+    "phrase1": "我就在這裡陪你。",
+    "phrase2": "一小步一小步來。",
+    "phrase3": "你可以的。",
+    "phrase4": "一起安靜地成長。"
+  },
+  "paymentSuccess": {
+    "title": "[zh-tw] Payment successful 🎉",
+    "subtitle": "[zh-tw] Your companion felt that. Membership is now active.",
+    "noteTitle": "[zh-tw] What happens next",
+    "noteBody": "[zh-tw] Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "hint": "[zh-tw] If anything looks missing, give it a moment and refresh the pet page.",
+    "ctaPet": "[zh-tw] 🐾 Meet your pet",
+    "ctaPricing": "[zh-tw] ← Back to pricing",
+    "secureNotice": "[zh-tw] Payments processed securely."
+  }
+}
