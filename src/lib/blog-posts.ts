@@ -3741,6 +3741,108 @@ const smallestRitualPosts: BlogPost[] = [
 // 8 locales × 1 post
 // Topic: desktop tamagotchi + windows + taskbar — the return of the
 //        tamagotchi as a Windows desktop companion.
+
+// ──────────────────────────────────────────────────────────────────────
+// Daily post: 2026-07-31 — lonely-desk-companion
+// ──────────────────────────────────────────────────────────────────────
+
+const LONELY_DESK_COMPANION_DATE = '2026-07-31';
+const LONELY_DESK_COMPANION_SLUG = 'lonely-desk-companion';
+const LONELY_DESK_COMPANION_TAGS = ['desk-companion', 'remote-work', 'virtual-pet', 'loneliness', 'focus-mode'];
+
+const lonelyDeskCompanionPosts: BlogPost[] = [
+  {
+    slug: LONELY_DESK_COMPANION_SLUG,
+    locale: 'en',
+    title: 'The Lonely Desk Companion: When Your Taskbar Becomes the Quietest Kind of Company',
+    description:
+      'Your desk is where you spend eight hours a day. Sometimes the silence feels less like focus and more like being alone. A small pixel companion on your taskbar fills a corner of your screen in a way that makes the quiet feel chosen, not imposed.',
+    date: LONELY_DESK_COMPANION_DATE,
+    cover: `/blog-covers/${LONELY_DESK_COMPANION_SLUG}-en.png`,
+    tags: LONELY_DESK_COMPANION_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: LONELY_DESK_COMPANION_SLUG,
+    locale: 'zh-cn',
+    title: '桌面上的孤独伴侣:当任务栏成了最安静的那种陪伴',
+    description:
+      '你的桌子是你每天待八个小时的地方。有时候那种安静感觉不像专注,更像孤独。任务栏上一只小小的像素伴侣,填满屏幕上一个小小的角落,用一种让安静变成"你选的"而不是"被迫的"的方式。',
+    date: LONELY_DESK_COMPANION_DATE,
+    cover: `/blog-covers/${LONELY_DESK_COMPANION_SLUG}-zh-cn.png`,
+    tags: LONELY_DESK_COMPANION_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: LONELY_DESK_COMPANION_SLUG,
+    locale: 'zh-tw',
+    title: '桌面上的孤獨伴侶:當工作列成了最安靜的那種陪伴',
+    description:
+      '你的桌子是你每天待八個小時的地方。有時候那種安靜感覺不像專注,更像孤獨。工作列上一隻小小的像素伴侶,填滿螢幕上一個小小的角落,用一種讓安靜變成「你選的」而不是「被迫的」的方式。',
+    date: LONELY_DESK_COMPANION_DATE,
+    cover: `/blog-covers/${LONELY_DESK_COMPANION_SLUG}-zh-tw.png`,
+    tags: LONELY_DESK_COMPANION_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: LONELY_DESK_COMPANION_SLUG,
+    locale: 'ja',
+    title: '孤独なデスクの相棒:タスクバーが一番静かな種類の仲間になるとき',
+    description:
+      'あなたの机は、一日八時間を過ごす場所だ。その静けさが時に、集中というより孤独に感じられる。タスクバーに住む小さなドットのペットが、画面の小さな隅を埋めてくれる——静けさを「強いられたもの」ではなく「選んだもの」に感じさせるやり方で。',
+    date: LONELY_DESK_COMPANION_DATE,
+    cover: `/blog-covers/${LONELY_DESK_COMPANION_SLUG}-ja.png`,
+    tags: LONELY_DESK_COMPANION_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: LONELY_DESK_COMPANION_SLUG,
+    locale: 'ko',
+    title: '외로운 책상의 동반자: 작업 표시줄이 가장 조용한 종류의 동료가 될 때',
+    description:
+      '당신의 책상은 하루 여덟 시간을 보내는 곳이다. 그 고요함이 때로는 집중보다 외로움에 가깝게 느껴진다. 작업 표시줄에 사는 작은 픽셀 펫이, 화면의 작은 한구석을 채워준다——고요함을 "강요된 것"이 아니라 "내가 선택한 것"으로 느끼게 하는 방식으로.',
+    date: LONELY_DESK_COMPANION_DATE,
+    cover: `/blog-covers/${LONELY_DESK_COMPANION_SLUG}-ko.png`,
+    tags: LONELY_DESK_COMPANION_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: LONELY_DESK_COMPANION_SLUG,
+    locale: 'de',
+    title: 'Der einsame Schreibtischbegleiter: Wenn die Taskleiste zur leisesten Art von Gesellschaft wird',
+    description:
+      'Dein Schreibtisch ist der Ort, an dem du acht Stunden am Tag verbringst. Manchmal fühlt sich die Stille weniger nach Konzentration an als nach Alleinsein. Ein kleiner Pixel-Begleiter in deiner Taskleiste füllt eine Ecke deines Bildschirms auf eine Weise, die die Stille gewählt und nicht auferlegt erscheinen lässt.',
+    date: LONELY_DESK_COMPANION_DATE,
+    cover: `/blog-covers/${LONELY_DESK_COMPANION_SLUG}-de.png`,
+    tags: LONELY_DESK_COMPANION_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: LONELY_DESK_COMPANION_SLUG,
+    locale: 'fr',
+    title: 'Le compagnon de bureau solitaire : quand la barre des tâches devient la plus silencieuse des présences',
+    description:
+      'Votre bureau est l\'endroit où vous passez huit heures par jour. Parfois le silence ressemble moins à de la concentration qu\'à de la solitude. Un petit compagnon pixel dans votre barre des tâches remplit un coin de votre écran d\'une manière qui donne au silence un air choisi plutôt qu\'imposé.',
+    date: LONELY_DESK_COMPANION_DATE,
+    cover: `/blog-covers/${LONELY_DESK_COMPANION_SLUG}-fr.png`,
+    tags: LONELY_DESK_COMPANION_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: LONELY_DESK_COMPANION_SLUG,
+    locale: 'es',
+    title: 'El compañero de escritorio solitario: cuando la barra de tareas se convierte en la compañía más silenciosa',
+    description:
+      'Tu escritorio es donde pasas ocho horas al día. A veces el silencio se siente menos como concentración y más como soledad. Un pequeño compañero pixel en tu barra de tareas llena una esquina de tu pantalla de un modo que hace que el silencio se sienta elegido, no impuesto.',
+    date: LONELY_DESK_COMPANION_DATE,
+    cover: `/blog-covers/${LONELY_DESK_COMPANION_SLUG}-es.png`,
+    tags: LONELY_DESK_COMPANION_TAGS,
+    readingMinutes: 5,
+  },
+];
+
+// ──────────────────────────────────────────────────────────────────────
+// Daily post: 2026-07-29 — desktop tamagotchi windows
 // ──────────────────────────────────────────────────────────────────────
 
 const DESKTOP_TAMAGOTCHI_DATE = '2026-07-29';
@@ -3838,6 +3940,7 @@ const desktopTwinPosts: BlogPost[] = [
   },
 ];
 
+// ───────────────────────────────────────────────────────────────────
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
   ...dailyPosts,
@@ -3878,6 +3981,7 @@ export const blogPosts: BlogPost[] = [
   ...quietCompanionAppNoChatPosts,
   ...smallestRitualPosts,
   ...desktopTwinPosts,
+  ...lonelyDeskCompanionPosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
