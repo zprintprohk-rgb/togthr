@@ -273,7 +273,7 @@ export default async function BlogPostPage({
         </header>
         <section aria-label="Summary" className="mt-6 rounded-xl border border-pink-500/20 bg-pink-500/5 px-5 py-4">
           <p className="text-sm leading-relaxed text-zinc-400">
-            Togthr is a $5.49/month pixel pet that grows through 5 stages from baby to legend in your browser without requiring conversation. Replika ($4.99/month) is an AI chatbot that learns from user text exchanges. This article compares visual companionship (Togthr) with conversational AI companionship (Replika).
+            Togthr vs Replika compares an AI chatbot companion to a silent pixel pet that grows through 5 stages without requiring conversation. Togthr costs $5.49/month or $37.99/year and lives in the browser tab.
           </p>
         </section>
         <div className="prose prose-invert mt-8 max-w-none">

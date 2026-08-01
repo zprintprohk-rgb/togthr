@@ -1,9 +1,9 @@
-// src/app/[locale]/p/pixel-pet-for-couples/page.tsx
+﻿// src/app/[locale]/p/pixel-pet-for-couples/page.tsx
 //
-// Phase 1 pSEO — programmatic landing page.
+// Phase 1 pSEO 鈥?programmatic landing page.
 // Single-file 8-locale page (single Body used for all locales per task brief:
-// "本批只做 EN 正文, 其余 7 locale 复用 EN 内容").
-// CTA: "Start free in your browser" — Togthr is a pure web app, no native clients.
+// "鏈壒鍙仛 EN 姝ｆ枃, 鍏朵綑 7 locale 澶嶇敤 EN 鍐呭").
+// CTA: "Start free in your browser" 鈥?Togthr is a pure web app, no native clients.
 
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -13,10 +13,11 @@ import { routing, type Locale } from '@/i18n/routing'
 import { getLandingBody } from '@/lib/landing-pages-bodies'
 import { getLandingEntry, getLandingGroup, getLandingHero, getLandingUrl, SITE_URL } from '@/lib/landing-pages'
 import { siteConfig } from '@/lib/seo'
+import RelatedLinks from '@/components/relatedlinks'
 
 const SLUG = `pixel-pet-for-couples`
 const HERO_IMG = `/pets/scene-progress.png`
-const META_TITLE = `A Pixel Pet for Couples — Togthr`
+const META_TITLE = `A Pixel Pet for Couples 鈥?Togthr`
 const META_DESC = `A pixel pet for couples that runs in your browser, grows in 5 stages, and unlocks 6 hidden career skins. No native app to install, no ads.`
 
 // Reused for all 8 locales (EN content only this batch). hreflang points
@@ -134,7 +135,7 @@ export default async function Page({
 
       <figure className="mb-10 overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/40">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={HERO_IMG} alt={META_TITLE} className="w-full" loading="lazy" decoding="async" />
+        <img src={HERO_IMG} alt={META_TITLE} className="w-full" loading="lazy" decoding="async"  width="1024" height="1024" />
         <figcaption className="px-4 py-3 text-sm text-zinc-400">{body.heroCopy}</figcaption>
       </figure>
 
@@ -154,13 +155,17 @@ export default async function Page({
           </div>
         ))}
 
-        <p className="mt-10 text-pink-400">
+              <RelatedLinks slug={SLUG} locale={locale as Locale} />
+
+<p className="mt-10 text-pink-400">
           {body.cta}{' '}
           <Link href={homeHref} className="underline">
-            Start free in your browser →
-          </Link>
+            Start free in your browser 鈫?          </Link>
         </p>
       </section>
     </article>
   )
 }
+
+
+
