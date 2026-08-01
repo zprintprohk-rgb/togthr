@@ -4039,6 +4039,93 @@ const pixelBuddyStudyPosts: BlogPost[] = [
   },
 ];
 
+const VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_DATE = '2026-07-26';
+const VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_SLUG = 'virtual-pet-that-grows-up-like-tamagotchi';
+const VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_TAGS = ['tamagotchi', 'growth', 'virtual-pet', 'desktop-companion', 'nostalgia'];
+
+const virtualPetGrowsUpLikeTamagotchiPosts: BlogPost[] = [
+  {
+    slug: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'en',
+    title: 'A Virtual Pet That Grows Up Like Tamagotchi — Five Stages, Zero Death, One Small Robot',
+    description: 'Five growth stages, zero death mechanics, and a pixel pet that remembers every day you show up. The tamagotchi formula, thirty years later — now on your desktop, not your keychain.',
+    date: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/virtual-pet-that-grows-up-like-tamagotchi-en.png`,
+    tags: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'zh-cn',
+    title: '像拓麻歌子一样长大的虚拟宠物——五个阶段,不再死亡,一只小机器人',
+    description: '五个成长阶段,没有死亡惩罚,一只记得你每一天都出现过的像素宠物。拓麻歌子的公式,三十年之后——不再在你的钥匙扣上,而在你的桌面上。',
+    date: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/virtual-pet-that-grows-up-like-tamagotchi-zh-cn.png`,
+    tags: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'zh-tw',
+    title: '像拓麻歌子一樣長大的虛擬寵物——五個階段,不再死亡,一隻小機器人',
+    description: '五個成長階段,沒有死亡懲罰,一隻記得你每一天都出現過的像素寵物。拓麻歌子的公式,三十年之後——不再在你的鑰匙圈上,而在你的桌面上。',
+    date: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/virtual-pet-that-grows-up-like-tamagotchi-zh-tw.png`,
+    tags: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'ja',
+    title: 'たまごっちのように育つバーチャルペット——5段階、死なない、小さなロボット',
+    description: '5つの成長段階、死のメカニクスなし、あなたが来たすべての日を覚えているドットペット。たまごっちの公式、30年後——今はキーホルダーではなく、あなたのデスクトップに。',
+    date: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/virtual-pet-that-grows-up-like-tamagotchi-ja.png`,
+    tags: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'ko',
+    title: '다마고치처럼 자라는 가상 펫——5단계, 죽지 않는, 작은 로봇',
+    description: '5가지 성장 단계, 죽음 메커니즘 없음, 당신이 나타난 모든 날을 기억하는 픽셀 펫. 다마고치 공식, 30년 후——이제 열쇠고리가 아닌 데스크톱에서.',
+    date: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/virtual-pet-that-grows-up-like-tamagotchi-ko.png`,
+    tags: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'de',
+    title: 'Ein virtuelles Haustier, das wie Tamagotchi heranwächst — fünf Stufen, kein Tod, ein kleiner Roboter',
+    description: 'Fünf Wachstumsstufen, keine Todesmechanik, ein Pixel-Haustier, das sich an jeden Tag erinnert, an dem du da warst. Die Tamagotchi-Formel, dreißig Jahre später — jetzt auf deinem Desktop statt am Schlüsselanhänger.',
+    date: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/virtual-pet-that-grows-up-like-tamagotchi-de.png`,
+    tags: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'fr',
+    title: 'Un animal virtuel qui grandit comme un Tamagotchi — cinq étapes, zéro mort, un petit robot',
+    description: "Cinq étapes de croissance, aucun mécanisme de mort, un animal pixel qui se souvient de chaque jour où vous êtes venu. La formule Tamagotchi, trente ans plus tard — maintenant sur votre bureau, pas sur votre porte-clés.",
+    date: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/virtual-pet-that-grows-up-like-tamagotchi-fr.png`,
+    tags: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+  {
+    slug: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_SLUG,
+    locale: 'es',
+    title: 'Una mascota virtual que crece como un Tamagotchi — cinco etapas, cero muertes, un pequeño robot',
+    description: 'Cinco etapas de crecimiento, sin mecánica de muerte, una mascota pixel que recuerda cada día que apareciste. La fórmula Tamagotchi, treinta años después — ahora en tu escritorio, no en tu llavero.',
+    date: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_DATE,
+    cover: `/blog-covers/virtual-pet-that-grows-up-like-tamagotchi-es.png`,
+    tags: VIRTUAL_PET_GROWS_UP_LIKE_TAMAGOTCHI_TAGS,
+    readingMinutes: 5,
+  },
+];
+
 // ───────────────────────────────────────────────────────────────────
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
@@ -4082,6 +4169,7 @@ export const blogPosts: BlogPost[] = [
   ...desktopTwinPosts,
   ...lonelyDeskCompanionPosts,
   ...pixelBuddyStudyPosts,
+  ...virtualPetGrowsUpLikeTamagotchiPosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────

@@ -152,7 +152,7 @@ wrangler.toml
 1. 验证 4 i18n 闸门全绿:
    ```bash
    node scripts/check-locale-syntax.js
-   node scripts/check-locale-pollution.js
+   node scripts/check-no-locale-prefix.js
    node scripts/check-translation-completeness.js
    node scripts/check-locale-placeholders.js
    ```
@@ -185,6 +185,7 @@ wrangler.toml
 - Meta tag 在 `src/app/layout.tsx` 的 `metadata.other.msvalidate.01`
 - 拿到真 code 后从 bing.com/webmasters → Add site → HTML meta tag 复制 content 值替换
 - 验证失败排查: (1) 用户是否在 Bing WMT 注册了此 code；(2) Bing 验证有 24-48h 延迟
+
 
 
 
