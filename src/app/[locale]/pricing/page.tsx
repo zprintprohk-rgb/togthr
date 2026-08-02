@@ -31,6 +31,7 @@ import {
 import type { CountryCode } from '@/lib/types'
 import { ts, ta } from '@/lib/safe-t'
 import { StructuredData } from '@/components/StructuredData'
+import FeedbackForm from '@/components/feedbackform'
 import { PricingTheater } from './PricingTheater'
 
 // ─── Static params ────────────────────────────────────────────────────────
@@ -293,6 +294,10 @@ export default async function PricingPage({
           copy={copy}
           formatted={formatted}
         />
+
+        <div className="mx-auto max-w-3xl px-4 pb-16">
+          <FeedbackForm />
+        </div>
       </>
     )
   } catch (error) {
