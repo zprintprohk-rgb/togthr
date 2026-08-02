@@ -905,5 +905,23 @@
     "ctaPet": "🐾 Meet your pet",
     "ctaPricing": "← Back to pricing",
     "secureNotice": "Payments processed securely."
+  },
+  "feedback": {
+    "title": "有反馈？",
+    "typeLabel": "类型",
+    "messageLabel": "你想说什么？",
+    "messagePlaceholder": "告诉我们你想看到什么，或者哪里坏了...",
+    "emailLabel": "你的邮箱（选填，用于后续回复）",
+    "emailPlaceholder": "you@example.com",
+    "send": "发送反馈",
+    "sending": "发送中…",
+    "sentTitle": "谢谢 — 已收到你的消息，48 小时内回复。",
+    "error": "出了点问题。请再试一次。",
+    "types": {
+      "bug": "Bug 报告",
+      "feature": "功能建议",
+      "billing": "支付问题",
+      "general": "通用反馈"
+    }
   }
 }

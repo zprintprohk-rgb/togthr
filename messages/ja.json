@@ -905,5 +905,23 @@
     "ctaPet": "🐾 Meet your pet",
     "ctaPricing": "← Back to pricing",
     "secureNotice": "Payments processed securely."
+  },
+  "feedback": {
+    "title": "フィードバックがありますか？",
+    "typeLabel": "種類",
+    "messageLabel": "何をお考えですか？",
+    "messagePlaceholder": "見たい機能や、壊れているところを教えてください...",
+    "emailLabel": "メールアドレス（任意、返信用）",
+    "emailPlaceholder": "you@example.com",
+    "send": "フィードバックを送信",
+    "sending": "送信中…",
+    "sentTitle": "ありがとうございます — メッセージを受け取りました。48時間以内に返信します。",
+    "error": "問題が発生しました。もう一度お試しください。",
+    "types": {
+      "bug": "バグ報告",
+      "feature": "機能リクエスト",
+      "billing": "お支払いについて",
+      "general": "一般的なフィードバック"
+    }
   }
 }

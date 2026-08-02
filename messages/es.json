@@ -905,5 +905,23 @@
     "ctaPet": "🐾 Meet your pet",
     "ctaPricing": "← Back to pricing",
     "secureNotice": "Payments processed securely."
+  },
+  "feedback": {
+    "title": "¿Tienes feedback?",
+    "typeLabel": "Tipo",
+    "messageLabel": "¿Qué tienes en mente?",
+    "messagePlaceholder": "Dinos qué te gustaría ver, o qué está roto...",
+    "emailLabel": "Tu email (opcional, para respuesta)",
+    "emailPlaceholder": "you@example.com",
+    "send": "Enviar feedback",
+    "sending": "Enviando…",
+    "sentTitle": "Gracias — recibimos tu mensaje y te responderemos en 48 horas.",
+    "error": "Algo salió mal. Inténtalo de nuevo.",
+    "types": {
+      "bug": "Reportar bug",
+      "feature": "Sugerencia",
+      "billing": "Consulta de pago",
+      "general": "Feedback general"
+    }
   }
 }

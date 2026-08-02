@@ -905,5 +905,23 @@
     "ctaPet": "🐾 Meet your pet",
     "ctaPricing": "← Back to pricing",
     "secureNotice": "Payments processed securely."
+  },
+  "feedback": {
+    "title": "피드백이 있으신가요?",
+    "typeLabel": "유형",
+    "messageLabel": "무슨 생각을 하고 계신가요?",
+    "messagePlaceholder": "보고 싶은 기능이나, 고장난 부분을 알려주세요...",
+    "emailLabel": "이메일 (선택, 답변용)",
+    "emailPlaceholder": "you@example.com",
+    "send": "피드백 보내기",
+    "sending": "보내는 중…",
+    "sentTitle": "감사합니다 — 메시지를 받았습니다. 48시간 내에 답변 드리겠습니다.",
+    "error": "문제가 발생했습니다. 다시 시도해 주세요.",
+    "types": {
+      "bug": "버그 신고",
+      "feature": "기능 요청",
+      "billing": "결제 문의",
+      "general": "일반 피드백"
+    }
   }
 }
