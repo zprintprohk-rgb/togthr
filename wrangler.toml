@@ -28,6 +28,10 @@ ALIPAY_APP_ID = ""
 VAPID_PUBLIC_KEY = ""
 # Google Analytics 4 — Measurement ID (7/28 唐总已创建)
 NEXT_PUBLIC_GA4_ID = "G-TNKXQ7V351"
+# Cloudflare Turnstile — 8/3 K3 拍板, 防 bot 刷 feedback form
+# 拿到后: 替换占位 (1× Site Key 公开 + 1× Secret 私有 wrangler secret)
+NEXT_PUBLIC_TURNSTILE_SITE_KEY = "REPLACE_WITH_CF_TURNSTILE_SITE_KEY"
+# TURNSTILE_SECRET_KEY — set via: npx wrangler secret put TURNSTILE_SECRET_KEY
 # CRON_SECRET — protects /api/cron/* endpoints. Set via: npx wrangler secret put CRON_SECRET
 CRON_SECRET = ""
 
