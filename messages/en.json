@@ -1,4 +1,4 @@
-﻿{
+{
   "siteName": "Togthr",
   "tagline": "Always Here",
   "nav": {
@@ -28,16 +28,16 @@
     "hero": {
       "title": "Always Here",
       "subtitle": "A small robot in your device, accompanying you and representing the one you care about. Daily rituals, memory capsules, and a virtual companion that grows with you.",
-      "welcomeFirst": "Hi 鈥?I just woke up. I will be here, always.",
+      "welcomeFirst": "Hi — I just woke up. I will be here, always.",
       "welcomeBack": "You came back! I have been waiting for you.",
-      "sleepyGreeting": "Shhh鈥?it is late. Stay with me for a moment.",
-      "cta": "Start Free 鈥?No Credit Card",
+      "sleepyGreeting": "Shhh… it is late. Stay with me for a moment.",
+      "cta": "Start Free — No Credit Card",
       "secondary": "See How It Works",
       "socialProof": "Trusted by 10,000+ users worldwide",
-      "eyebrow": "Always Here 路 Always Caring",
+      "eyebrow": "Always Here · Always Caring",
       "statusHello": "Hi! Nice to meet you.",
       "statusMiss": "You came back!",
-      "statusSleepy": "Shhh鈥?sleepy now.",
+      "statusSleepy": "Shhh… sleepy now.",
       "relationsEyebrow": "Choose your companion",
       "relationsHint": "Each mode changes how your pet looks and glows."
     },
@@ -66,7 +66,7 @@
       },
       "timeCapsule": {
         "title": "Dream Wall",
-        "desc": "Pin your dreams, goals, and wishes 鈥?build your future together."
+        "desc": "Pin your dreams, goals, and wishes — build your future together."
       }
     },
     "companions": {
@@ -79,7 +79,7 @@
           "desc": "Send a heart, watch it glow with contentment"
         },
         "capsule": {
-          "title": "Time Capsule 路 Dig",
+          "title": "Time Capsule · Dig",
           "desc": "Bury one today, your pet digs it up later"
         },
         "symbiosis": {
@@ -97,7 +97,7 @@
         },
         "soulmate": {
           "title": "Soulmate AI",
-          "desc": "Talk anytime 鈥?it truly listens"
+          "desc": "Talk anytime — it truly listens"
         },
         "treehole": {
           "title": "Tree Hole",
@@ -210,7 +210,7 @@
       "headline": "Unlock a life that grows with you",
       "tagline": "Three tiers. One promise: every pet you unlock stays with you forever.",
       "guarantee": "30-day money-back guarantee",
-      "secure": "Secured by PayPal 路 Alipay 路 AlipayHK"
+      "secure": "Secured by PayPal · Alipay · AlipayHK"
     },
     "tierMeta": {
       "free": {
@@ -236,7 +236,7 @@
       },
       "plus": {
         "label": "Unlock 50+ Suits",
-        "sub": "Career 路 Festival 路 Emotion 路 Fantasy"
+        "sub": "Career · Festival · Emotion · Fantasy"
       },
       "eternal": {
         "label": "All Access + Exclusive",
@@ -249,7 +249,7 @@
       "hint": "Random drop from Eternal box"
     },
     "countdown": {
-      "label": "Halloween Limited 路 Early Access",
+      "label": "Halloween Limited · Early Access",
       "endsIn": "Ends in",
       "days": "d",
       "hours": "h",
@@ -337,7 +337,7 @@
     "cookie": "Cookie Settings",
     "help": "Help Center",
     "contact": "Contact Us",
-    "copyright": "漏 {year} Togthr. All rights reserved."
+    "copyright": "© {year} Togthr. All rights reserved."
   },
   "notFound": {
     "title": "Where am I?",
@@ -360,10 +360,10 @@
     "alipayCn": "Alipay (China Mainland)",
     "alipayHk": "AlipayHK (Hong Kong / Taiwan)",
     "payButton": "Pay with {gateway}",
-    "processing": "Processing payment鈥?,
+    "processing": "Processing payment…",
     "success": {
       "title": "Payment Successful!",
-      "message": "Thank you for subscribing to We2 Plus. Redirecting to your dashboard鈥?
+      "message": "Thank you for subscribing to We2 Plus. Redirecting to your dashboard…"
     },
     "error": {
       "title": "Payment Failed",
@@ -398,35 +398,35 @@
       "step4": "Discuss and earn love points for your virtual pet"
     },
     "timeCapsules": {
-      "longDesc": "Create digital time capsules filled with photos, voice memos, and love letters. Lock them away and set a future unlock date 鈥?perfect for anniversaries, milestones, or just a surprise on a random Tuesday.",
+      "longDesc": "Create digital time capsules filled with photos, voice memos, and love letters. Lock them away and set a future unlock date — perfect for anniversaries, milestones, or just a surprise on a random Tuesday.",
       "step1": "Create a capsule with photos, notes, or voice memos",
       "step2": "Set a future unlock date (anniversary, birthday, etc.)",
       "step3": "Both partners can add content until the capsule is sealed",
       "step4": "Receive a notification when it's time to unlock together"
     },
     "virtualPet": {
-      "longDesc": "Meet your shared virtual pet 鈥?a cute companion that grows as your relationship grows. Complete daily check-ins and challenges to earn love points, unlock new skins, and watch your pet evolve.",
+      "longDesc": "Meet your shared virtual pet — a cute companion that grows as your relationship grows. Complete daily check-ins and challenges to earn love points, unlock new skins, and watch your pet evolve.",
       "step1": "Choose and name your pet together",
       "step2": "Earn love points by completing daily check-ins",
       "step3": "Feed, play, and care for your pet as a team",
       "step4": "Unlock new skins and evolutions at relationship milestones"
     },
     "privateCommunity": {
-      "longDesc": "Join an anonymous, supportive community of couples from around the world. Share your stories, ask for advice, and celebrate milestones 鈥?all in a safe, private space.",
+      "longDesc": "Join an anonymous, supportive community of couples from around the world. Share your stories, ask for advice, and celebrate milestones — all in a safe, private space.",
       "step1": "Create your anonymous couple profile",
       "step2": "Post stories, questions, or milestones",
       "step3": "Engage with posts from other couples",
       "step4": "Build connections in a supportive, moderated space"
     },
     "sharedJournal": {
-      "longDesc": "Write your story together 鈥?literally. A shared journal where both partners can add entries, reflect on memories, and build a timeline of your relationship's most precious moments.",
+      "longDesc": "Write your story together — literally. A shared journal where both partners can add entries, reflect on memories, and build a timeline of your relationship's most precious moments.",
       "step1": "Create a new journal entry anytime",
       "step2": "Both partners can view, edit, and comment",
       "step3": "Add photos and location tags to entries",
       "step4": "Scroll through your relationship timeline together"
     },
     "dreamWall": {
-      "longDesc": "Pin your shared dreams, goals, and bucket list items on a visual board. Plan your future together 鈥?from your next vacation to your dream home 鈥?and check them off as you achieve them.",
+      "longDesc": "Pin your shared dreams, goals, and bucket list items on a visual board. Plan your future together — from your next vacation to your dream home — and check them off as you achieve them.",
       "step1": "Add dreams and goals to your shared board",
       "step2": "Organize by category (travel, home, adventures, etc.)",
       "step3": "Set target dates and track progress together",
@@ -439,7 +439,7 @@
       "placeholder": "Share your moment...",
       "save": "Save Answer",
       "saved": "Answer saved!",
-      "nextQuestion": "Next question 鈫?,
+      "nextQuestion": "Next question →",
       "history": "Your Answers",
       "empty": "Start your first check-in"
     },
@@ -447,7 +447,7 @@
       "title": "Memory Capsules",
       "titlePlaceholder": "A title for our future...",
       "contentPlaceholder": "Write down this moment...",
-      "lockCapsule": "Lock Capsule 馃敀",
+      "lockCapsule": "Lock Capsule 🔒",
       "empty": "Create your first memory capsule",
       "unlocked": "Unlocked",
       "daysLeft": "{days} days left",
@@ -512,7 +512,7 @@
     },
     "terms": {
       "title": "Terms of Service",
-      "subtitle": "By using Togthr you agree to the following terms. Please read them carefully 鈥?they protect both you and us.",
+      "subtitle": "By using Togthr you agree to the following terms. Please read them carefully — they protect both you and us.",
       "sections": [
         {
           "heading": "1. Eligibility",
@@ -572,7 +572,7 @@
       "sections": [
         {
           "heading": "Getting Started",
-          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional 鈥?every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
+          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional — every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
         },
         {
           "heading": "Subscription & Billing",
@@ -588,7 +588,7 @@
         },
         {
           "heading": "International Support",
-          "body": "Togthr is available in 8 languages: English, 绠€浣撲腑鏂? 绻侀珨涓枃, 鏃ユ湰瑾? 頃滉淡鞏? Espa帽ol, Fran莽ais, and Deutsch. Support email replies are in English by default 鈥?let us know if you'd prefer another language and we will do our best."
+          "body": "Togthr is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
         }
       ]
     },
@@ -617,7 +617,7 @@
     "firstOrder": "First order",
     "regular": "Regular price",
     "save": "Save 50%",
-    "blindboxTitle": "Togthr Companions 鈥?6+1 Mystery Box",
+    "blindboxTitle": "Togthr Companions — 6+1 Mystery Box",
     "blindboxDesc": "A surprise skin in every box. Programmer, Doctor, Astronaut, Chef, Firefighter, Police... and a 1 in 72 chance for the legendary Golden Togthr.",
     "ctaBuy": "Buy Blind Box",
     "ctaTrySoulmate": "Includes 1 month Soulmate AI",
@@ -625,10 +625,10 @@
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
     "perma": "Permanent unlock",
-    "checkoutNote": "PayPal sandbox 路 50% off first order",
-    "checkoutNote2": "No subscription 路 Pay once 路 Yours forever",
+    "checkoutNote": "PayPal sandbox · 50% off first order",
+    "checkoutNote2": "No subscription · Pay once · Yours forever",
     "successTitle": "Order received!",
-    "successSubtitle": "Your Togthr Companion is on its way. PayPal is processing your payment 鈥?you will receive an email receipt shortly.",
+    "successSubtitle": "Your Togthr Companion is on its way. PayPal is processing your payment — you will receive an email receipt shortly.",
     "successNote": "Your skin unlocks within a few minutes once PayPal confirms the payment.",
     "successHint": "If your skin does not appear within 10 minutes, please contact us with your order ID.",
     "secureNotice": "Payments secured by PayPal. We never see your card details."
@@ -636,10 +636,10 @@
   "daily": {
     "title": "Daily Feeding Time",
     "q": "Is the other one with you today?",
-    "withBtn": "馃挄 Together",
-    "apartBtn": "馃寵 Apart",
+    "withBtn": "💕 Together",
+    "apartBtn": "🌙 Apart",
     "hunger": "Hunger",
-    "streak": "馃敟 {n} day streak",
+    "streak": "🔥 {n} day streak",
     "bubbleIdle": "Hehe, wait~",
     "bubbleWith": "Yay!",
     "bubbleApart": "Missing them...",
@@ -649,12 +649,12 @@
     "again": "Do it again",
     "dragHint": "Drag to the pet",
     "streakDays": "{n} day streak",
-    "treasureTitle": "Treasure Chest! 馃巵",
+    "treasureTitle": "Treasure Chest! 🎁",
     "treasureDesc": "7-day streak! Your pet dug up a mystery chest~"
   },
   "capsule": {
     "title": "Treasure Hunt",
-    "subtitle": "Tap a buried patch 鈥?your pet walks over and digs it up.",
+    "subtitle": "Tap a buried patch — your pet walks over and digs it up.",
     "buried": "buried",
     "opened": "opened",
     "openedOn": "Bury date:",
@@ -744,7 +744,7 @@
     "statusMiss": "Miss you",
     "changePet": "Change Appearance",
     "changePetBadge": "Summon Altar",
-    "lockHint": "Locked pets are still previewed 鈥?subscribe or open blind boxes to unlock",
+    "lockHint": "Locked pets are still previewed — subscribe or open blind boxes to unlock",
     "info": {
       "days": "Days Together",
       "interactions": "Interactions",
@@ -787,7 +787,7 @@
         "mood": "cool"
       },
       "e3": {
-        "text": "Our first Christmas together 馃巹",
+        "text": "Our first Christmas together 🎄",
         "mood": "festive"
       }
     }
@@ -797,9 +797,9 @@
     "online": "Always here",
     "typing": "Companion is typing...",
     "placeholder": "Say something...",
-    "mockNotice": "Day 1 mock 鈥?wired to real AI in Day 2",
+    "mockNotice": "Day 1 mock — wired to real AI in Day 2",
     "nightMode": "Night mode",
-    "anniversary": "100 messages 鈥?a chapter complete",
+    "anniversary": "100 messages — a chapter complete",
     "mood": {
       "sweet": "Sweet",
       "calm": "Calm",
@@ -862,7 +862,7 @@
     "hug": "Hug",
     "autoPurgeHint": "vanishes in {hours}h",
     "empty": "No notes yet. Be the first to drop one.",
-    "mockNotice": "Day 1 client mock 鈥?server-purge in Day 2."
+    "mockNotice": "Day 1 client mock — server-purge in Day 2."
   },
   "errorPage": {
     "title": "Something went sideways",
@@ -872,7 +872,7 @@
     "errorId": "Error ID"
   },
   "paywallHint": {
-    "title": "Your buddy wants a new outfit! 鉁?,
+    "title": "Your buddy wants a new outfit! ✨",
     "cta": "Take a look",
     "dismiss": "Keep using free"
   },
@@ -883,27 +883,27 @@
     "minutes": "{minutes} min",
     "start": "Start focusing",
     "giveUp": "End this session",
-    "awayNotice": "I'm waiting for you鈥?,
-    "welcomeBack": "Welcome back 鈥?let's keep going!",
+    "awayNotice": "I'm waiting for you…",
+    "welcomeBack": "Welcome back — let's keep going!",
     "completeTitle": "You did it!",
     "completeDesc": "{minutes} minutes of gentle focus, together.",
     "streak": "{days}-day streak",
     "again": "One more round",
-    "lockedPlus": "馃敀 Unlock longer sessions with Plus",
-    "interruptedNote": "This session paused for a while 鈥?no worries, we'll start fresh.",
+    "lockedPlus": "🔒 Unlock longer sessions with Plus",
+    "interruptedNote": "This session paused for a while — no worries, we'll start fresh.",
     "phrase1": "I'm right here with you.",
     "phrase2": "One tiny step at a time.",
     "phrase3": "You've got this.",
     "phrase4": "Let's grow together, quietly."
   },
   "paymentSuccess": {
-    "title": "Payment successful 馃帀",
+    "title": "Payment successful 🎉",
     "subtitle": "Your companion felt that. Membership is now active.",
     "noteTitle": "What happens next",
-    "noteBody": "Your new pets, skins and member perks unlock within a few seconds 鈥?no restart needed.",
+    "noteBody": "Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
     "hint": "If anything looks missing, give it a moment and refresh the pet page.",
-    "ctaPet": "馃惥 Meet your pet",
-    "ctaPricing": "鈫?Back to pricing",
+    "ctaPet": "🐾 Meet your pet",
+    "ctaPricing": "← Back to pricing",
     "secureNotice": "Payments processed securely."
   },
   "feedback": {
@@ -914,8 +914,8 @@
     "emailLabel": "Your email (optional, for follow-up)",
     "emailPlaceholder": "you@example.com",
     "send": "Send feedback",
-    "sending": "Sending鈥?,
-    "sentTitle": "Thanks 鈥?we got your message and will get back within 48 hours.",
+    "sending": "Sending…",
+    "sentTitle": "Thanks — we got your message and will get back within 48 hours.",
     "error": "Something went wrong. Please try again.",
     "types": {
       "bug": "Bug report",
@@ -925,4 +925,3 @@
     }
   }
 }
-

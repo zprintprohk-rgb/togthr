@@ -1,492 +1,492 @@
-﻿{
+{
   "siteName": "Togthr",
-  "tagline": "銇氥仯銇ㄣ仢銇般伀",
+  "tagline": "ずっとそばに",
   "nav": {
-    "home": "銉涖兗銉?,
-    "features": "姗熻兘",
-    "pricing": "銉椼儵銉?,
-    "community": "銈炽儫銉ャ儖銉嗐偅",
-    "login": "銉偘銈ゃ兂",
-    "dashboard": "銉€銉冦偡銉ャ儨銉笺儔",
-    "daily": "銇堛仌",
-    "capsule": "銈儣銈汇儷",
-    "pet": "銉氥儍銉?,
-    "journal": "宸?,
-    "store": "銈枫儳銉冦儣",
-    "chat": "銉併儯銉冦儓",
-    "faq": "銈堛亸銇傘倠璩晱",
-    "blog": "銉栥儹銈?,
-    "focus": "闆嗕腑"
+    "home": "ホーム",
+    "features": "機能",
+    "pricing": "プラン",
+    "community": "コミュニティ",
+    "login": "ログイン",
+    "dashboard": "ダッシュボード",
+    "daily": "えさ",
+    "capsule": "カプセル",
+    "pet": "ペット",
+    "journal": "巣",
+    "store": "ショップ",
+    "chat": "チャット",
+    "faq": "よくある質問",
+    "blog": "ブログ",
+    "focus": "集中"
   },
   "seo": {
     "siteName": "Togthr",
-    "description": "銉囥儛銈ゃ偣銇腑銇皬銇曘仾銉儨銉冦儓銇屻亗銇仧銇ㄤ竴绶掋伀銆併倐銇嗕竴浜恒伄銇嬨仧銈忋倢銇с倐銇傘倞銇俱仚銆傛瘞鏃ャ伄鍎€寮忋倰浣溿倞銆佹€濄亜鍑恒倰淇濆瓨銇椼€佸叡鏈夈伄銉愩兗銉併儯銉偝銉炽儜銉嬨偑銉炽倰鑲层仸銇俱仐銈囥亞銆?,
-    "keywords": "銈炽兂銉戙儖銈兂 銉愩兗銉併儯銉儦銉冦儓 鎬濄亜鍑?銈裤偆銉犮偒銉椼偦銉?姣庢棩銇剙寮?鎰熸儏銈点儩銉笺儓 銈姐偊銉儭銈ゃ儓 閬犺窛闆?銉斻偗銈汇儷銉氥儍銉?AI銈炽兂銉戙儖銈兂",
-    "tagline": "銇氥仯銇ㄣ仢銇般伀"
+    "description": "デバイスの中の小さなロボットがあなたと一緒に、もう一人のかたわれでもあります。毎日の儀式を作り、思い出を保存し、共有のバーチャルコンパニオンを育てましょう。",
+    "keywords": "コンパニオン バーチャルペット 思い出 タイムカプセル 毎日の儀式 感情サポート ソウルメイト 遠距離 ピクセルペット AIコンパニオン",
+    "tagline": "ずっとそばに"
   },
   "home": {
     "hero": {
-      "title": "銇氥仯銇ㄣ仢銇般伀",
-      "subtitle": "銉囥儛銈ゃ偣銇腑銇皬銇曘仾銉儨銉冦儓銇屻亗銇仧銇ㄤ竴绶掋伀銆併倐銇嗕竴浜恒伄銇嬨仧銈忋倢銇с倐銇傘倞銇俱仚銆?,
-      "cta": "鐒℃枡銇у銈併倠",
-      "secondary": "浣裤亜鏂广倰瑕嬨倠",
-      "socialProof": "10,000浜轰互涓娿伄銉︺兗銈躲兗銇俊闋笺仌銈屻仸銇勩伨銇?,
-      "eyebrow": "銇氥仯銇ㄣ仢銇般伀 路 銇氥仯銇ㄦ皸銇亱銇戙仸",
-      "welcomeFirst": "銈勩亗銆併仭銈囥亞銇╄捣銇嶃仧銇ㄣ亾銈嶃仩銈堛€傘仛銇ｃ仺銇濄伆銇亜銈嬨伃銆?,
-      "welcomeBack": "銇娿亱銇堛倞锛佸緟銇ｃ仸銇熴倛銆?,
-      "sleepyGreeting": "銇椼仯鈥﹀鏇淬亱銇椼仩銇€傘倐銇嗗皯銇椼仩銇戙€併亜銇ｃ仐銈囥伀銇勩倛銇嗐€?,
-      "statusHello": "銈勩亗锛併伅銇樸倎銇俱仐銇︺€?,
-      "statusMiss": "銇娿亱銇堛倞锛?,
-      "statusSleepy": "銇椼仯鈥︾湢銇勩倛銆?,
-      "relationsEyebrow": "銇亱銇俱倰閬搞伡銇?,
-      "relationsHint": "銉兗銉夈仈銇ㄣ伀銉氥儍銉堛伄瑕嬨仧鐩仺鍏夈亴澶夈倧銈嬨倛銆?
+      "title": "ずっとそばに",
+      "subtitle": "デバイスの中の小さなロボットがあなたと一緒に、もう一人のかたわれでもあります。",
+      "cta": "無料で始める",
+      "secondary": "使い方を見る",
+      "socialProof": "10,000人以上のユーザーに信頼されています",
+      "eyebrow": "ずっとそばに · ずっと気にかけて",
+      "welcomeFirst": "やあ、ちょうど起きたところだよ。ずっとそばにいるね。",
+      "welcomeBack": "おかえり！待ってたよ。",
+      "sleepyGreeting": "しっ…夜更かしだね。もう少しだけ、いっしょにいよう。",
+      "statusHello": "やあ！はじめまして。",
+      "statusMiss": "おかえり！",
+      "statusSleepy": "しっ…眠いよ。",
+      "relationsEyebrow": "なかまを選ぼう",
+      "relationsHint": "モードごとにペットの見た目と光が変わるよ。"
     },
     "features": {
-      "title": "鏈墿銇偒銉冦儣銉伄銇熴倎銇?,
-      "subtitle": "璺濋洟銇枹淇傘仾銇忋€併伒銇熴倞銇祮銈掓繁銈併倠姗熻兘銇般亱銈娿€?,
+      "title": "本物のカップルのために",
+      "subtitle": "距離に関係なく、ふたりの絆を深める機能ばかり。",
       "sharedJournal": {
-        "title": "姣庢棩銉併偋銉冦偗銈ゃ兂",
-        "desc": "蹇冪悊瀛﹁€呫亴瑷▓銇椼仧 1 鏃?5 鍒嗐伄璩晱銇с€佸皯銇椼仛銇ゆ劅鎯呫伄缈掓叄銈掕偛銇︺倛銇嗐€?
+        "title": "毎日チェックイン",
+        "desc": "心理学者が設計した 1 日 5 分の質問で、少しずつ感情の習慣を育てよう。"
       },
       "moodTracker": {
-        "title": "銈裤偆銉犮偒銉椼偦銉?,
-        "desc": "鍐欑湡銆侀煶澹般€佹墜绱欍倰鏈潵銇蹇垫棩銇俱仹灏佸嵃銆傘伒銇熴倞銇犮亼銇ぇ鍒囥仾鎬濄亜鍑恒倰娈嬨仢銇嗐€?
+        "title": "タイムカプセル",
+        "desc": "写真、音声、手紙を未来の記念日まで封印。ふたりだけの大切な思い出を残そう。"
       },
       "dreamWall": {
-        "title": "銉愩兗銉併儯銉儦銉冦儓",
-        "desc": "姣庢棩銇儫銉冦偡銉с兂銈掍竴绶掋伀銈儶銈仐銇︺儦銉冦儓銈掕偛銇︺倛銇嗐€傘伒銇熴倞銇祮銇屾繁銇俱倠銇汇仼銆併儦銉冦儓銈傛垚闀枫仐銇俱仚銆?
+        "title": "バーチャルペット",
+        "desc": "毎日のミッションを一緒にクリアしてペットを育てよう。ふたりの絆が深まるほど、ペットも成長します。"
       },
       "dailyGratitude": {
-        "title": "鍖垮悕銈炽儫銉ャ儖銉嗐偅",
-        "desc": "涓栫晫涓伄銈儍銉椼儷銇ㄥ尶鍚嶃仹銈广儓銉笺儶銉笺倰鍏辨湁銇椼€併偄銉夈儛銈ゃ偣銈掋倐銈夈亜銆佺瘈鐩倰绁濄亰銇嗐€?
+        "title": "匿名コミュニティ",
+        "desc": "世界中のカップルと匿名でストーリーを共有し、アドバイスをもらい、節目を祝おう。"
       },
       "petAdoption": {
-        "title": "鍏辨湁鏃ヨ",
-        "desc": "涓€绶掋伀鏇搞亜銇︺€佷竴绶掋伀鎸倞杩斻倠銆傘伒銇熴倞銇犮亼銇墿瑾炪倰缍淬倠銉椼儵銈ゃ儥銉笺儓銇┖闁撱€?
+        "title": "共有日記",
+        "desc": "一緒に書いて、一緒に振り返る。ふたりだけの物語を綴るプライベートな空間。"
       },
       "timeCapsule": {
-        "title": "澶伄澹?,
-        "desc": "銇点仧銈娿伄澶€佺洰妯欍€侀銇勩仈銇ㄣ倰澹併伀銉斻兂鐣欍倎鈥斺€斾竴绶掋伀鏈潵銈掓弿銇撱亞銆?
+        "title": "夢の壁",
+        "desc": "ふたりの夢、目標、願いごとを壁にピン留め——一緒に未来を描こう。"
       }
     },
     "companions": {
-      "title": "Togthr 銈炽兂銉戙儖銈兂",
-      "subtitle": "銈裤儍銉?銇ゃ仹銇嬨倧銇勩亜銈广偪銉炽儣銈掗€佷俊",
-      "cta": "銉併儯銉冦儓銇繎鏃ョ櫥鍫?,
+      "title": "Togthr コンパニオン",
+      "subtitle": "タップ1つでかわいいスタンプを送信",
+      "cta": "チャットに近日登場",
       "cards": {
         "feeding": {
-          "title": "銇娿倓銇ゃ偪銈ゃ儬",
-          "desc": "銉忋兗銉堛倰閫併仯銇︺€佹簚瓒炽仢銇嗐仾濮裤倰瑕嬪畧銈嶃亞"
+          "title": "おやつタイム",
+          "desc": "ハートを送って、満足そうな姿を見守ろう"
         },
         "capsule": {
-          "title": "銈裤偆銉犮偒銉椼偦銉兓鐧烘帢",
-          "desc": "鍩嬨倎銇︺亰銇忋仺銆併儦銉冦儓銇屾帢銈婂嚭銇椼仸銇忋倢銈?
+          "title": "タイムカプセル・発掘",
+          "desc": "埋めておくと、ペットが掘り出してくれる"
         },
         "symbiosis": {
-          "title": "鍏辩敓銉曘偐銉笺儬",
-          "desc": "銇点仧銈娿伄闁總銈掓槧銇欏皬銇曘仾鍛?
+          "title": "共生フォーム",
+          "desc": "ふたりの関係を映す小さな命"
         },
         "blindbox": {
-          "title": "6+1 銉栥儵銈ゃ兂銉夈儨銉冦偗銈?,
-          "desc": "鍒濆洖闄愬畾銈儠銈°兗",
-          "badge": "鏂扮潃"
+          "title": "6+1 ブラインドボックス",
+          "desc": "初回限定オファー",
+          "badge": "新着"
         },
         "nest": {
-          "title": "宸ｃ仴銇忋倞",
-          "desc": "鏃ヨ銈掓浉銇忋仧銇炽€併伒銇熴倞銇罚銇岃偛銇?
+          "title": "巣づくり",
+          "desc": "日記を書くたび、ふたりの巣が育つ"
         },
         "soulmate": {
-          "title": "銈姐偊銉儭銈ゃ儓 AI",
-          "desc": "銇勩仱銇с倐瑭便仐銇嬨亼銇︺€佽仦銇勩仸銇忋倢銈?
+          "title": "ソウルメイト AI",
+          "desc": "いつでも話しかけて、聞いてくれる"
         },
         "treehole": {
-          "title": "鏈ㄣ伄銇嗐倣",
-          "desc": "鍖垮悕銉°儍銈汇兗銈搞€?4鏅傞枔銇ф秷銇堛倠"
+          "title": "木のうろ",
+          "desc": "匿名メッセージ、24時間で消える"
         },
         "focus": {
-          "title": "銉曘偐銉笺偒銈广儮銉笺儔",
-          "desc": "銉氥儍銉堛亴銇濄伆銇т竴绶掋伀鍕夊挤銉讳粫浜?
+          "title": "フォーカスモード",
+          "desc": "ペットがそばで一緒に勉強・仕事"
         }
       }
     }
   },
   "pricing": {
-    "title": "銈枫兂銉椼儷銇ф槑纰恒仾銉椼儵銉?,
-    "subtitle": "銇点仧銈娿伀鍚堛仯銇熴儣銉┿兂銈掋€傞殸銈屻仧璨荤敤銇仐銆併亜銇ゃ仹銈傝В绱勩仹銇嶃伨銇欍€?,
-    "monthly": "鏈堥",
-    "quarterly": "3銉舵湀",
-    "yearly": "骞撮枔",
-    "popular": "浜烘皸",
-    "save": "{discount}% 銇婂緱",
+    "title": "シンプルで明確なプラン",
+    "subtitle": "ふたりに合ったプランを。隠れた費用なし、いつでも解約できます。",
+    "monthly": "月額",
+    "quarterly": "3ヶ月",
+    "yearly": "年間",
+    "popular": "人気",
+    "save": "{discount}% お得",
     "tiers": {
       "free": {
-        "name": "鐒℃枡",
-        "price": "楼0",
+        "name": "無料",
+        "price": "¥0",
         "features": [
-          "姣庢棩銉併偋銉冦偗銈ゃ兂",
-          "3 銇ゃ伄銈裤偆銉犮偒銉椼偦銉?,
-          "鍩烘湰銉氥儍銉?,
-          "銈炽儫銉ャ儖銉嗐偅鍙傚姞"
+          "毎日チェックイン",
+          "3 つのタイムカプセル",
+          "基本ペット",
+          "コミュニティ参加"
         ]
       },
       "plus": {
         "name": "Togthr Plus",
-        "price": "楼780",
-        "period": "/鏈?,
+        "price": "¥780",
+        "period": "/月",
         "features": [
-          "銈儣銈汇儷鐒″埗闄?,
-          "銉椼儸銉熴偄銉犮儦銉冦儓銈广偔銉?,
-          "銉椼儵銈ゃ儥銉笺儓銈儷銉愩儬",
-          "闁總鎬с偆銉炽偟銈ゃ儓"
+          "カプセル無制限",
+          "プレミアムペットスキン",
+          "プライベートアルバム",
+          "関係性インサイト"
         ]
       },
       "premium": {
-        "name": "We2 銉椼儸銉熴偄銉?,
-        "price": "楼1,980",
-        "period": "/3銉舵湀",
+        "name": "We2 プレミアム",
+        "price": "¥1,980",
+        "period": "/3ヶ月",
         "features": [
-          "Plus 鍏ㄦ鑳?,
-          "鍎厛銈点儩銉笺儓",
-          "銉氥儍銉堛伄鍚嶅墠銈偣銈裤儬",
-          "鎬濄亜鍑恒偍銈偣銉濄兗銉?
+          "Plus 全機能",
+          "優先サポート",
+          "ペットの名前カスタム",
+          "思い出エクスポート"
         ]
       },
       "lifetime": {
-        "name": "We2 銉曘偐銉笺偍銉愩兗",
-        "price": "楼5,800",
-        "period": "/骞?,
+        "name": "We2 フォーエバー",
+        "price": "¥5,800",
+        "period": "/年",
         "features": [
-          "Premium 鍏ㄦ鑳?,
-          "鐢熸动銈儍銉椼儑銉笺儓",
-          "闄愬畾銈炽兂銉嗐兂銉?,
-          "鏂版鑳藉厛琛屼綋楱?
+          "Premium 全機能",
+          "生涯アップデート",
+          "限定コンテンツ",
+          "新機能先行体験"
         ]
       },
       "soulmate": {
-        "name": "Togthr 銈姐偊銉儭銈ゃ儓",
+        "name": "Togthr ソウルメイト",
         "price": "",
-        "period": "/鏈?,
+        "period": "/月",
         "features": [
-          "Plus銇叏姗熻兘",
-          "AI浼氳┍銈广偪銈ゃ儷",
-          "澶у垏銇汉銇倛銇嗐伀瑭便仚",
-          "銈广優銉笺儓瑷樻喍鎻愭",
-          "鍎厛銈点儩銉笺儓"
+          "Plusの全機能",
+          "AI会話スタイル",
+          "大切な人のように話す",
+          "スマート記憶提案",
+          "優先サポート"
         ]
       },
       "eternal": {
-        "name": "Togthr 銈ㄣ偪銉笺儕銉?,
-        "tagline": "銇欍伖銇﹁В绂?+ 闄愬畾",
+        "name": "Togthr エターナル",
+        "tagline": "すべて解禁 + 限定",
         "features": [
-          "Plus 鍏ㄦ鑳?,
-          "50+ 銉氥儍銉堛偣銉笺儎鍏ㄨВ鏀?,
-          "閲戣壊銉偢銈с兂銉€銉兗銉氥儍銉?,
-          "鍎厛銈点儩銉笺儓",
-          "鏂版鑳藉厛琛屼綋楱?
+          "Plus 全機能",
+          "50+ ペットスーツ全解放",
+          "金色レジェンダリーペット",
+          "優先サポート",
+          "新機能先行体験"
         ]
       }
     },
-    "cta": "浠娿仚銇愩伅銇樸倎銈?,
-    "ctaFree": "鐒℃枡銇у銈併倠",
-    "free": "鐒℃枡",
+    "cta": "今すぐはじめる",
+    "ctaFree": "無料で始める",
+    "free": "無料",
     "period": {
-      "monthly": "銉舵湀",
-      "quarterly": "鍥涘崐鏈?,
-      "yearly": "骞?
+      "monthly": "ヶ月",
+      "quarterly": "四半期",
+      "yearly": "年"
     },
     "per": {
-      "monthly": "/鏈?,
-      "quarterly": "/鍥涘崐鏈?,
-      "yearly": "/骞?
+      "monthly": "/月",
+      "quarterly": "/四半期",
+      "yearly": "/年"
     },
-    "promoPlaceholder": "銉椼儹銉偝銉笺儔銈掑叆鍔?,
-    "promoApply": "閬╃敤",
-    "promoHint": "銉椼儹銉偝銉笺儔銇繎鏃ュ叕闁嬩簣瀹氾紒",
-    "secure": "PayPal 銇倛銈嬪畨鍏ㄣ仾姹烘笀",
-    "guarantee": "30鏃ラ枔銇繑閲戜繚瑷间粯銇?,
-    "new": "鏂扮櫥鍫?,
+    "promoPlaceholder": "プロモコードを入力",
+    "promoApply": "適用",
+    "promoHint": "プロモコードは近日公開予定！",
+    "secure": "PayPal による安全な決済",
+    "guarantee": "30日間の返金保証付き",
+    "new": "新登場",
     "theater": {
-      "eyebrow": "銇傘仾銇熴伄鏃呫倰閬搞伡銇?,
-      "headline": "銇傘仾銇熴仺銇勩仯銇椼倗銇偛銇ょ敓娲汇倰銈兂銉儍銈?,
-      "tagline": "3銇ゃ伄銈炽兗銈广€併伈銇ㄣ仱銇磩鏉燂細銈兂銉儍銈仐銇熴儦銉冦儓銇仛銇ｃ仺銇傘仾銇熴伄銈傘仺銇搞€?,
-      "guarantee": "30鏃ラ枔杩旈噾淇濊",
-      "secure": "PayPal銉籄lipay銉籄lipayHK 銇у畨蹇冩焙娓?
+      "eyebrow": "あなたの旅を選ぼう",
+      "headline": "あなたといっしょに育つ生活をアンロック",
+      "tagline": "3つのコース、ひとつの約束：アンロックしたペットはずっとあなたのもとへ。",
+      "guarantee": "30日間返金保証",
+      "secure": "PayPal・Alipay・AlipayHK で安心決済"
     },
     "tierMeta": {
       "free": {
-        "eyebrow": "鑺藉惞銇?,
-        "tagline": "銇撱亾銇嬨倝濮嬨倎銈堛亞",
-        "peeking": "銉氥儍銉堛亴銇层仯銇濄倞"
+        "eyebrow": "芽吹き",
+        "tagline": "ここから始めよう",
+        "peeking": "ペットがひっそり"
       },
       "plus": {
-        "eyebrow": "銇亱銇?,
-        "tagline": "銇傘仾銇熴伄銈姐偊銉倰銇堛倝銇?,
-        "peeking": "銉氥儍銉堛亴銉偗銉偗"
+        "eyebrow": "なかま",
+        "tagline": "あなたのソウルをえらぶ",
+        "peeking": "ペットがワクワク"
       },
       "eternal": {
-        "eyebrow": "銈广偪銉笺儉銈广儓",
-        "tagline": "姘搁仩銇仾銈?,
-        "peeking": "銉氥儍銉堛亴鏄囧ぉ"
+        "eyebrow": "スターダスト",
+        "tagline": "永遠になる",
+        "peeking": "ペットが昇天"
       }
     },
     "petMatrix": {
       "free": {
-        "label": "3浣撱伄鍩虹銇亱銇?,
-        "sub": "銇ゃ伡銇裤兓鑺姐兓銈广偪銉笺偪銉?
+        "label": "3体の基礎なかま",
+        "sub": "つぼみ・芽・スターター"
       },
       "plus": {
-        "label": "50+ 銈广偔銉宠В鏀?,
-        "sub": "浠曚簨銉昏浜嬨兓琛ㄦ儏銉汇儠銈°兂銈裤偢銉?
+        "label": "50+ スキン解放",
+        "sub": "仕事・行事・表情・ファンタジー"
       },
       "eternal": {
-        "label": "鍏ㄩ儴鍏ャ倞 + 闄愬畾",
-        "sub": "銈淬兗銉儑銉炽伄浼濊鍚個"
+        "label": "全部入り + 限定",
+        "sub": "ゴールデンの伝説含む"
       }
     },
     "legendary": {
-      "label": "銈淬兗銉儑銉炽兓銉偢銈с兂銉?,
+      "label": "ゴールデン・レジェンド",
       "odds": "1 / 72",
-      "hint": "銈ㄣ偪銉笺儕銉儨銉冦偗銈广亱銈夈儵銉炽儉銉?
+      "hint": "エターナルボックスからランダム"
     },
     "countdown": {
-      "label": "銉忋儹銈︺偅銉抽檺瀹氥兓鍏堣銈偗銈汇偣",
-      "endsIn": "娈嬨倞",
-      "days": "鏃?,
-      "hours": "鏅傞枔",
-      "minutes": "鍒?,
-      "seconds": "绉?
+      "label": "ハロウィン限定・先行アクセス",
+      "endsIn": "残り",
+      "days": "日",
+      "hours": "時間",
+      "minutes": "分",
+      "seconds": "秒"
     },
-    "ctaSubscribe": "浠娿仚銇愮櫥閷?,
-    "ctaStartFree": "鐒℃枡銇у銈併倠",
-    "ctaPopular": "銇亱銇俱倰閬搞伓",
-    "ctaEternal": "銈ㄣ偪銉笺儕銉伕"
+    "ctaSubscribe": "今すぐ登録",
+    "ctaStartFree": "無料で始める",
+    "ctaPopular": "なかまを選ぶ",
+    "ctaEternal": "エターナルへ"
   },
   "faq": {
-    "title": "銈堛亸銇傘倠璩晱",
-    "subtitle": "Togthr 銇仱銇勩仸鐭ャ倞銇熴亜銇撱仺",
+    "title": "よくある質問",
+    "subtitle": "Togthr について知りたいこと",
     "items": [
       {
-        "question": "Togthr 銇ㄣ伅銇┿伄銈堛亞銇偄銉椼儶銇с仚銇嬶紵",
-        "answer": "Togthr 銇€佸績鐞嗗鑰呫伄鍗斿姏銈掑緱銇﹁ō瑷堛仌銈屻仧銈儍銉椼儷銇仧銈併伄鎰熸儏鎴愰暦銈儣銉仹銇欍€傛瘞鏃ャ伄銉併偋銉冦偗銈ゃ兂銆併偪銈ゃ儬銈儣銈汇儷銆佸叡閫氥伄銉併儯銉兂銈搞倰閫氥仒銇︺€佹棩甯搞伄銇亱銇ч枹淇傘倰娣便倎銇︺亜銇嶃伨銇欍€?
+        "question": "Togthr とはどのようなアプリですか？",
+        "answer": "Togthr は、心理学者の協力を得て設計されたカップルのための感情成長アプリです。毎日のチェックイン、タイムカプセル、共通のチャレンジを通じて、日常のなかで関係を深めていきます。"
       },
       {
-        "question": "銉囥兗銈裤伄銉椼儵銈ゃ儛銈枫兗銇畧銈夈倢銇俱仚銇嬶紵",
-        "answer": "銈傘仭銈嶃倱銇с仚銆傘仚銇广仸銇€嬩汉銈炽兂銉嗐兂銉勩伀銈ㄣ兂銉夈儎銉笺偍銉炽儔鏆楀彿鍖栥倰浣跨敤銇椼仸銇勩伨銇欍€傚ぇ鍒囥仾鐬枔銆佸啓鐪熴€併儭銉冦偦銉笺偢銇伒銇熴倞銇犮亼銇倐銇仹銇欍€傜涓夎€呫伀銉囥兗銈裤倰璨╁２銇欍倠銇撱仺銇竴鍒囥亗銈娿伨銇涖倱銆?
+        "question": "データのプライバシーは守られますか？",
+        "answer": "もちろんです。すべての個人コンテンツにエンドツーエンド暗号化を使用しています。大切な瞬間、写真、メッセージはふたりだけのものです。第三者にデータを販売することは一切ありません。"
       },
       {
-        "question": "閬犺窛闆㈡亱鎰涖仹銈備娇銇堛伨銇欍亱锛?,
-        "answer": "銇亜锛乀ogthr 銇€佸悓銇橀儴灞嬨伀銇勩仸銈備笘鐣屼腑銇┿亾銇亜銇︺倐銆併仚銇广仸銇偒銉冦儣銉伄銇熴倎銇ō瑷堛仌銈屻仸銇勩伨銇欍€傘偪銈ゃ儬銈儣銈汇儷銇ㄦ瘞鏃ャ伄銉併偋銉冦偗銈ゃ兂銇€佽窛闆倰瓒呫亪銇熴仱銇亴銈娿倰淇濄仱銇伀鏈€閬┿仹銇欍€?
+        "question": "遠距離恋愛でも使えますか？",
+        "answer": "はい！Togthr は、同じ部屋にいても世界中どこにいても、すべてのカップルのために設計されています。タイムカプセルと毎日のチェックインは、距離を超えたつながりを保つのに最適です。"
       },
       {
-        "question": "銉愩兗銉併儯銉儦銉冦儓銇仼銇倛銇嗐伀鑲层仭銇俱仚銇嬶紵",
-        "answer": "銉戙兗銉堛儕銉笺仺涓€绶掋伀姣庢棩銇儊銈с儍銈偆銉炽倓銉併儯銉兂銈搞倰瀹屼簡銇欍倠銇ㄣ€併儦銉冦儓銇屾垚闀枫仐銇俱仚銆傘伒銇熴倞銇枹淇傘伄鎴愰暦銈掋亱銈忋亜銇忚瑕氬寲銇椼仧銈傘伄銇с€佺瘈鐩仈銇ㄣ伀鏂般仐銇勩儦銉冦儓銈勩偣銈兂銇屻偄銉炽儹銉冦偗銇曘倢銇俱仚銆?
+        "question": "バーチャルペットはどのように育ちますか？",
+        "answer": "パートナーと一緒に毎日のチェックインやチャレンジを完了すると、ペットが成長します。ふたりの関係の成長をかわいく視覚化したもので、節目ごとに新しいペットやスキンがアンロックされます。"
       },
       {
-        "question": "銇┿伄銈堛亞銇敮鎵曘亜鏂规硶銇蹇溿仐銇︺亜銇俱仚銇嬶紵",
-        "answer": "鏃ユ湰銇с伅 PayPal 銇?Alipay 銈掋仈鍒╃敤銇勩仧銇犮亼銇俱仚銆傘仚銇广仸銇彇寮曘伅鏆楀彿鍖栥仌銈屻€佸畨鍏ㄣ伀鍑︾悊銇曘倢銇俱仚銆?
+        "question": "どのような支払い方法に対応していますか？",
+        "answer": "日本では PayPal と Alipay をご利用いただけます。すべての取引は暗号化され、安全に処理されます。"
       },
       {
-        "question": "銉°兂銉愩兗銈枫儍銉椼伅銈儯銉炽偦銉仹銇嶃伨銇欍亱锛?,
-        "answer": "銇勩仱銇с倐銈儯銉炽偦銉彲鑳姐仹銇欍€傜従鍦ㄣ伄鏈熼枔銇岀祩浜嗐仚銈嬨伨銇с儭銉炽儛銉笺偡銉冦儣銇湁鍔广仹銇欍€傛柊瑕忕櫥閷茶€呫伀銇?30 鏃ラ枔銇繑閲戜繚瑷笺倐銇旂敤鎰忋仐銇︺亜銇俱仚銆?
+        "question": "メンバーシップはキャンセルできますか？",
+        "answer": "いつでもキャンセル可能です。現在の期間が終了するまでメンバーシップは有効です。新規登録者には 30 日間の返金保証もご用意しています。"
       },
       {
-        "question": "銉戙兗銉堛儕銉笺仺銇┿亞銈勩仯銇︺仱銇亴銈娿伨銇欍亱锛?,
-        "answer": "鐧婚尣寰屻€併儜銉笺儓銉娿兗銇嫑寰呫偝銉笺儔銈掗€佷俊銇椼仸銇忋仩銇曘亜銆傜浉鎵嬨亴鎵胯獚銇欍倠銇ㄣ偄銈偊銉炽儓銇屻儶銉炽偗銇曘倢銆併儊銈с儍銈偆銉炽倓銈儣銈汇儷銆併儦銉冦儓鑲叉垚銈掍竴绶掋伀妤姐仐銈併伨銇欍€?
+        "question": "パートナーとどうやってつながりますか？",
+        "answer": "登録後、パートナーに招待コードを送信してください。相手が承認するとアカウントがリンクされ、チェックインやカプセル、ペット育成を一緒に楽しめます。"
       },
       {
-        "question": "銈炽儫銉ャ儖銉嗐偅姗熻兘銇亗銈娿伨銇欍亱锛?,
-        "answer": "銇亜锛佸尶鍚嶃偝銉熴儱銉嬨儐銈ｃ仹銇€佷笘鐣屼腑銇偒銉冦儣銉仺銈广儓銉笺儶銉笺倰鍏辨湁銇椼€併偄銉夈儛銈ゃ偣銈掓眰銈併€佺瘈鐩倰绁濄亞銇撱仺銇屻仹銇嶃伨銇欍€傚尶鍚嶃伨銇熴伅銈儍銉椼儷銉椼儹銉曘偅銉笺儷銇ф姇绋裤仹銇嶃伨銇欍€?
+        "question": "コミュニティ機能はありますか？",
+        "answer": "はい！匿名コミュニティでは、世界中のカップルとストーリーを共有し、アドバイスを求め、節目を祝うことができます。匿名またはカップルプロフィールで投稿できます。"
       }
     ]
   },
   "auth": {
-    "loginTitle": "銇娿亱銇堛倞銇仌銇?,
-    "loginSubtitle": "銉偘銈ゃ兂銇椼仸銇点仧銈娿伄鏃呫倰缍氥亼銈堛亞",
-    "registerTitle": "銇点仧銈娿伄鏃呫倰濮嬨倎銈堛亞",
-    "registerSubtitle": "銈偒銈︺兂銉堛倰浣滄垚銇椼仸銉戙兗銉堛儕銉笺倰鎷涘緟",
-    "emailLabel": "銉°兗銉偄銉夈儸銈?,
+    "loginTitle": "おかえりなさい",
+    "loginSubtitle": "ログインしてふたりの旅を続けよう",
+    "registerTitle": "ふたりの旅を始めよう",
+    "registerSubtitle": "アカウントを作成してパートナーを招待",
+    "emailLabel": "メールアドレス",
     "emailPlaceholder": "your@example.com",
-    "passwordLabel": "銉戙偣銉兗銉?,
-    "passwordPlaceholder": "銉戙偣銉兗銉夈倰鍏ュ姏",
-    "displayNameLabel": "琛ㄧず鍚?,
-    "displayNamePlaceholder": "銇傘仾銇熴伄鍚嶅墠",
-    "loginButton": "銉偘銈ゃ兂",
-    "registerButton": "銈偒銈︺兂銉堜綔鎴?,
-    "noAccount": "銈偒銈︺兂銉堛倰銇婃寔銇°仹銇亜銇с仚銇嬶紵",
-    "hasAccount": "銈偒銈︺兂銉堛倰銇婃寔銇°仹銇欍亱锛?,
-    "registerLink": "鏂拌鐧婚尣",
-    "loginLink": "銉偘銈ゃ兂",
-    "forgotPassword": "銉戙偣銉兗銉夈倰銇婂繕銈屻仹銇欍亱锛?,
-    "resetPasswordTitle": "銉戙偣銉兗銉夈倰銉偦銉冦儓",
-    "resetPasswordSubtitle": "銉°兗銉偄銉夈儸銈广倰鍏ュ姏銇椼仸銉偦銉冦儓銉兂銈倰鍙椼亼鍙栥倠",
-    "resetPasswordButton": "銉偦銉冦儓銉兂銈倰閫佷俊",
-    "updatePasswordTitle": "鏂般仐銇勩儜銈广儻銉笺儔銈掕ō瀹?,
-    "updatePasswordSubtitle": "鏂般仐銇勩儜銈广儻銉笺儔銈掑叆鍔涖仐銇︺亸銇犮仌銇?,
-    "updatePasswordButton": "銉戙偣銉兗銉夈倰鏇存柊",
-    "orContinueWith": "銇俱仧銇銇柟娉曘仹缍氥亼銈?,
+    "passwordLabel": "パスワード",
+    "passwordPlaceholder": "パスワードを入力",
+    "displayNameLabel": "表示名",
+    "displayNamePlaceholder": "あなたの名前",
+    "loginButton": "ログイン",
+    "registerButton": "アカウント作成",
+    "noAccount": "アカウントをお持ちでないですか？",
+    "hasAccount": "アカウントをお持ちですか？",
+    "registerLink": "新規登録",
+    "loginLink": "ログイン",
+    "forgotPassword": "パスワードをお忘れですか？",
+    "resetPasswordTitle": "パスワードをリセット",
+    "resetPasswordSubtitle": "メールアドレスを入力してリセットリンクを受け取る",
+    "resetPasswordButton": "リセットリンクを送信",
+    "updatePasswordTitle": "新しいパスワードを設定",
+    "updatePasswordSubtitle": "新しいパスワードを入力してください",
+    "updatePasswordButton": "パスワードを更新",
+    "orContinueWith": "または次の方法で続ける",
     "google": "Google",
     "github": "GitHub",
-    "checkEmail": "纰鸿獚銉兂銈倰銉°兗銉仹銇旂⒑瑾嶃亸銇犮仌銇勩€?,
-    "passwordUpdated": "銉戙偣銉兗銉夈亴鏇存柊銇曘倢銇俱仐銇熴€傘儹銈般偆銉炽仹銇嶃伨銇欍€?,
-    "signOut": "銉偘銈偊銉?,
-    "dashboard": "銉€銉冦偡銉ャ儨銉笺儔"
+    "checkEmail": "確認リンクをメールでご確認ください。",
+    "passwordUpdated": "パスワードが更新されました。ログインできます。",
+    "signOut": "ログアウト",
+    "dashboard": "ダッシュボード"
   },
   "footer": {
-    "privacy": "銉椼儵銈ゃ儛銈枫兗銉濄儶銈枫兗",
-    "terms": "鍒╃敤瑕忕磩",
-    "cookie": "Cookie 瑷畾",
-    "help": "銉樸儷銉椼偦銉炽偪銉?,
-    "contact": "銇婂晱銇勫悎銈忋仜",
-    "copyright": "漏 {year} Togthr. 鍏ㄨ憲浣滄ī鎵€鏈夈€?
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "cookie": "Cookie 設定",
+    "help": "ヘルプセンター",
+    "contact": "お問い合わせ",
+    "copyright": "© {year} Togthr. 全著作権所有。"
   },
   "notFound": {
-    "title": "杩峰瓙銇仾銇ｃ仭銈冦仯銇燂紵",
-    "description": "銇撱伄銉氥兗銈搞伅銇┿仯銇嬨伕琛屻仯銇°們銇ｃ仧銆傘儦銉冦儓銈傛帰銇椼仸銈嬨倛銆?,
-    "backHome": "銉涖兗銉?,
-    "feedPet": "銇堛仌",
-    "sayHi": "銇撱倱銇仭銇?,
-    "pixelHint": "銉斻偗銈汇儷銇灛闁?
+    "title": "迷子になっちゃった？",
+    "description": "このページはどっかへ行っちゃった。ペットも探してるよ。",
+    "backHome": "ホーム",
+    "feedPet": "えさ",
+    "sayHi": "こんにちは",
+    "pixelHint": "ピクセルな瞬間"
   },
   "payment": {
-    "title": "璩煎叆鎵嬬稓銇?,
-    "subtitle": "鏀墪銇勬柟娉曘倰閬告姙銇椼仸 We2 Plus 銈掋偄銉炽儹銉冦偗",
-    "periodLabel": "璜嬫眰鏈熼枔",
-    "monthly": "鏈堥",
-    "quarterly": "3銉舵湀",
-    "yearly": "骞撮枔",
-    "priceLabel": "鍚堣▓",
-    "gatewayLabel": "鏀墪銇勬柟娉?,
+    "title": "購入手続き",
+    "subtitle": "支払い方法を選択して We2 Plus をアンロック",
+    "periodLabel": "請求期間",
+    "monthly": "月額",
+    "quarterly": "3ヶ月",
+    "yearly": "年間",
+    "priceLabel": "合計",
+    "gatewayLabel": "支払い方法",
     "paypal": "PayPal",
-    "alipayCn": "Alipay锛堜腑鍥芥湰鍦熷悜銇戯級",
-    "alipayHk": "AlipayHK锛堥娓?/ 鍙版咕鍚戙亼锛?,
-    "payButton": "{gateway} 銇ф敮鎵曘亞",
-    "processing": "鏀墪銇勩倰鍑︾悊涓€?,
+    "alipayCn": "Alipay（中国本土向け）",
+    "alipayHk": "AlipayHK（香港 / 台湾向け）",
+    "payButton": "{gateway} で支払う",
+    "processing": "支払いを処理中…",
     "success": {
-      "title": "鏀墪銇勫畬浜嗭紒",
-      "message": "We2 Plus 銈掋仈璩艰銇勩仧銇犮亶銇傘倞銇屻仺銇嗐仈銇栥亜銇俱仚銆傘儉銉冦偡銉ャ儨銉笺儔銇儶銉€銈ゃ儸銈儓銇椼伨銇欌€?
+      "title": "支払い完了！",
+      "message": "We2 Plus をご購読いただきありがとうございます。ダッシュボードにリダイレクトします…"
     },
     "error": {
-      "title": "鏀墪銇勩伀澶辨晽銇椼伨銇椼仧",
-      "message": "鏀墪銇勫嚘鐞嗕腑銇偍銉┿兗銇岀櫤鐢熴仐銇俱仐銇熴€傘倐銇嗕竴搴︺亰瑭︺仐銇忋仩銇曘亜銆?,
-      "retry": "鍐嶈│琛?
+      "title": "支払いに失敗しました",
+      "message": "支払い処理中にエラーが発生しました。もう一度お試しください。",
+      "retry": "再試行"
     },
     "cancel": {
-      "title": "鏀墪銇勩倰銈儯銉炽偦銉仐銇俱仐銇?,
-      "message": "鏀墪銇勩亴銈儯銉炽偦銉仌銈屻伨銇椼仧銆傘亜銇ゃ仹銈傚啀瑭﹁銇с亶銇俱仚銆?
+      "title": "支払いをキャンセルしました",
+      "message": "支払いがキャンセルされました。いつでも再試行できます。"
     }
   },
   "upload": {
-    "dragOrClick": "銉曘偂銈ゃ儷銈掋亾銇撱伀銉夈儵銉冦偘锛嗐儔銉儍銉椼仚銈嬨亱銆併偗銉儍銈仐銇﹂伕鎶?,
-    "dropHere": "銇撱亾銇儠銈°偆銉倰銉夈儹銉冦儣",
-    "constraints": "銉曘偂銈ゃ儷銇傘仧銈婃渶澶?{maxSize}MB銆佹渶澶?{maxFiles} 銉曘偂銈ゃ儷",
-    "statusSuccess": "銈儍銉椼儹銉笺儔瀹屼簡",
-    "remove": "銉曘偂銈ゃ儷銈掑墛闄?,
-    "errorTooLarge": "銉曘偂銈ゃ儷銈点偆銈恒亴 {maxSize}MB 銈掕秴銇堛仸銇勩伨銇?,
-    "errorType": "銈点儩銉笺儓銇曘倢銇︺亜銇亜銉曘偂銈ゃ儷褰㈠紡銇с仚銆傝ū鍙細{types}",
-    "errorMaxFiles": "鏈€澶?{max} 銉曘偂銈ゃ儷銇俱仹",
-    "errorUpload": "銈儍銉椼儹銉笺儔銇け鏁椼仐銇俱仐銇熴€傚啀瑭﹁銇椼仸銇忋仩銇曘亜銆?
+    "dragOrClick": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+    "dropHere": "ここにファイルをドロップ",
+    "constraints": "ファイルあたり最大 {maxSize}MB、最大 {maxFiles} ファイル",
+    "statusSuccess": "アップロード完了",
+    "remove": "ファイルを削除",
+    "errorTooLarge": "ファイルサイズが {maxSize}MB を超えています",
+    "errorType": "サポートされていないファイル形式です。許可：{types}",
+    "errorMaxFiles": "最大 {max} ファイルまで",
+    "errorUpload": "アップロードに失敗しました。再試行してください。"
   },
   "features": {
     "dailyCheckIn": {
-      "longDesc": "鎰熸儏鐨勩仾銇ゃ仾銇屻倞銈掓繁銈併倠銇熴倎銇ō瑷堛仌銈屻仧鎬濄亜銈勩倞銇亗銈嬭唱鍟忋仹姣庢棩銈掑銈併伨銇椼倗銇嗐€傞潪鍏枊銇у洖绛斻仐銆併仢銇緦銉戙兗銉堛儕銉笺仺鍏辨湁銇椼仸瑭便仐鍚堛亜銇俱仚銆?,
-      "step1": "姣庢湞銉囥偆銉兗銈偍銈广儊銉с兂銈掑彈銇戝彇銈娿伨銇?,
-      "step2": "銉戙兗銉堛儕銉笺伄鍥炵瓟銈掕銈嬪墠銇潪鍏枊銇у洖绛?,
-      "step3": "涓℃柟銇洖绛斻倰鍚屾檪銇叕闁?,
-      "step4": "瑭便仐鍚堛仯銇︺儛銉笺儊銉ｃ儷銉氥儍銉堛伄銉┿儢銉濄偆銉炽儓銈掔嵅寰?
+      "longDesc": "感情的なつながりを深めるために設計された思いやりのある質問で毎日を始めましょう。非公開で回答し、その後パートナーと共有して話し合います。",
+      "step1": "毎朝デイリークエスチョンを受け取ります",
+      "step2": "パートナーの回答を見る前に非公開で回答",
+      "step3": "両方の回答を同時に公開",
+      "step4": "話し合ってバーチャルペットのラブポイントを獲得"
     },
     "timeCapsules": {
-      "longDesc": "鍐欑湡銆併儨銈ゃ偣銉°儮銆併儵銉栥儸銈裤兗銈掕┌銈併仧銉囥偢銈裤儷銈裤偆銉犮偒銉椼偦銉倰浣滄垚銆傛湭鏉ャ伄闁嬪皝鏃ャ倰瑷畾銇椼仸銉儍銈?鈥?瑷樺康鏃ャ倓銈点儣銉┿偆銈恒伀鏈€閬┿仹銇欍€?,
-      "step1": "鍐欑湡銆併儭銉€併儨銈ゃ偣銉°儮銇с偒銉椼偦銉倰浣滄垚",
-      "step2": "鏈潵銇枊灏佹棩銈掕ō瀹氾紙瑷樺康鏃ャ€佽獣鐢熸棩銇仼锛?,
-      "step3": "銈儣銈汇儷銇屽皝鍗般仌銈屻倠銇俱仹涓℃柟銇儜銉笺儓銉娿兗銇屻偝銉炽儐銉炽儎銈掕拷鍔犲彲鑳?,
-      "step4": "涓€绶掋伀闁嬨亼銈嬫檪銇€氱煡銈掑彈銇戝彇銈?
+      "longDesc": "写真、ボイスメモ、ラブレターを詰めたデジタルタイムカプセルを作成。未来の開封日を設定してロック — 記念日やサプライズに最適です。",
+      "step1": "写真、メモ、ボイスメモでカプセルを作成",
+      "step2": "未来の開封日を設定（記念日、誕生日など）",
+      "step3": "カプセルが封印されるまで両方のパートナーがコンテンツを追加可能",
+      "step4": "一緒に開ける時の通知を受け取る"
     },
     "virtualPet": {
-      "longDesc": "鍏辨湁銇儛銉笺儊銉ｃ儷銉氥儍銉堛伀鍑轰細銇勩伨銇椼倗銇?鈥?闁總鎬с仺銇ㄣ倐銇垚闀枫仚銈嬨亱銈忋亜銇勪徊闁撱仹銇欍€傛瘞鏃ャ伄銉併偋銉冦偗銈ゃ兂銇с儵銉栥儩銈ゃ兂銉堛倰鐛插緱銇椼€佹柊銇椼亜銈广偔銉炽倰銈兂銉儍銈€?,
-      "step1": "涓€绶掋伀銉氥儍銉堛倰閬搞倱銇у悕鍓嶃倰銇ゃ亼銈?,
-      "step2": "姣庢棩銇儊銈с儍銈偆銉炽倰瀹屼簡銇椼仸銉┿儢銉濄偆銉炽儓銈掔嵅寰?,
-      "step3": "銉併兗銉犮仹銉氥儍銉堛伀椁屻倰銇傘亽銆侀亰銇炽€佷笘瑭便倰銇欍倠",
-      "step4": "闁總銇優銈ゃ儷銈广儓銉笺兂銇ф柊銇椼亜銈广偔銉炽仺閫插寲銈掋偄銉炽儹銉冦偗"
+      "longDesc": "共有のバーチャルペットに出会いましょう — 関係性とともに成長するかわいい仲間です。毎日のチェックインでラブポイントを獲得し、新しいスキンをアンロック。",
+      "step1": "一緒にペットを選んで名前をつける",
+      "step2": "毎日のチェックインを完了してラブポイントを獲得",
+      "step3": "チームでペットに餌をあげ、遊び、世話をする",
+      "step4": "関係のマイルストーンで新しいスキンと進化をアンロック"
     },
     "privateCommunity": {
-      "longDesc": "涓栫晫涓伄銈儍銉椼儷銇岄泦銇俱倠鍖垮悕銇с偟銉濄兗銉堢殑銇偝銉熴儱銉嬨儐銈ｃ伀鍙傚姞銆傘偣銉堛兗銉兗銈掑叡鏈夈仐銆併偄銉夈儛銈ゃ偣銈掓眰銈併€併優銈ゃ儷銈广儓銉笺兂銈掔銇勩伨銇椼倗銇嗐€?,
-      "step1": "鍖垮悕銇偒銉冦儣銉儣銉儠銈ｃ兗銉倰浣滄垚",
-      "step2": "銈广儓銉笺儶銉笺€佽唱鍟忋€併優銈ゃ儷銈广儓銉笺兂銈掓姇绋?,
-      "step3": "浠栥伄銈儍銉椼儷銇姇绋裤伀浜ゆ祦",
-      "step4": "銈点儩銉笺儓鐨勩仹銉儑銉兗銉堛仌銈屻仧绌洪枔銇с仱銇亴銈娿倰妲嬬瘔"
+      "longDesc": "世界中のカップルが集まる匿名でサポート的なコミュニティに参加。ストーリーを共有し、アドバイスを求め、マイルストーンを祝いましょう。",
+      "step1": "匿名のカップルプロフィールを作成",
+      "step2": "ストーリー、質問、マイルストーンを投稿",
+      "step3": "他のカップルの投稿に交流",
+      "step4": "サポート的でモデレートされた空間でつながりを構築"
     },
     "sharedJournal": {
-      "longDesc": "涓€绶掋伀銇傘仾銇熴仧銇°伄銈广儓銉笺儶銉笺倰鏇搞亶銇俱仐銈囥亞銆備浮鏂广伄銉戙兗銉堛儕銉笺亴銈ㄣ兂銉堛儶銉笺倰杩藉姞銇椼€佸ぇ鍒囥仾鐬枔銇偪銈ゃ儬銉┿偆銉炽倰绡夈亼銈嬪叡鏈夈偢銉ｃ兗銉娿儷銇с仚銆?,
-      "step1": "銇勩仱銇с倐鏂般仐銇勩偢銉ｃ兗銉娿儷銈ㄣ兂銉堛儶銉笺倰浣滄垚",
-      "step2": "涓℃柟銇儜銉笺儓銉娿兗銇岄柌瑕с€佺法闆嗐€併偝銉°兂銉堝彲鑳?,
-      "step3": "銈ㄣ兂銉堛儶銉笺伀鍐欑湡銇ㄥ牬鎵€銈裤偘銈掕拷鍔?,
-      "step4": "涓€绶掋伀闁總銇偪銈ゃ儬銉┿偆銉炽倰銈广偗銉兗銉?
+      "longDesc": "一緒にあなたたちのストーリーを書きましょう。両方のパートナーがエントリーを追加し、大切な瞬間のタイムラインを築ける共有ジャーナルです。",
+      "step1": "いつでも新しいジャーナルエントリーを作成",
+      "step2": "両方のパートナーが閲覧、編集、コメント可能",
+      "step3": "エントリーに写真と場所タグを追加",
+      "step4": "一緒に関係のタイムラインをスクロール"
     },
     "dreamWall": {
-      "longDesc": "鍏辨湁銇あ銆佺洰妯欍€併儛銈便儍銉堛儶銈广儓銈掋儞銈搞儱銈儷銉溿兗銉夈伀銉斻兂鐣欍倎銆備竴绶掋伀鏈潵銈掕▓鐢汇仐銆侀仈鎴愩仐銇熴倝銉併偋銉冦偗銇椼伨銇椼倗銇嗐€?,
-      "step1": "鍏辨湁銉溿兗銉夈伀澶仺鐩銈掕拷鍔?,
-      "step2": "銈儐銈淬儶銉煎垾銇暣鐞嗭紙鏃呰銆佸銆佸啋闄恒仾銇╋級",
-      "step3": "鐩鏃ャ倰瑷畾銇椼€佷竴绶掋伀閫叉崡銈掕拷璺?,
-      "step4": "鍚勯仈鎴愩倰鐗瑰垾銇偄銉嬨儭銉笺偡銉с兂銇с亰绁濄亜"
+      "longDesc": "共有の夢、目標、バケットリストをビジュアルボードにピン留め。一緒に未来を計画し、達成したらチェックしましょう。",
+      "step1": "共有ボードに夢と目標を追加",
+      "step2": "カテゴリー別に整理（旅行、家、冒険など）",
+      "step3": "目標日を設定し、一緒に進捗を追跡",
+      "step4": "各達成を特別なアニメーションでお祝い"
     },
-    "backToFeatures": "姗熻兘涓€瑕с伀鎴汇倠",
-    "howItWorks": "浣裤亜鏂?,
-    "tryItOut": "瑭︺仐銇︺伩銈?
+    "backToFeatures": "機能一覧に戻る",
+    "howItWorks": "使い方",
+    "tryItOut": "試してみる"
   },
   "demo": {
     "dailyCheckIn": {
-      "title": "浠婃棩銇唱鍟?,
-      "placeholder": "銇傘仾銇熴伄浠娿伄姘楁寔銇°倰鈥?,
-      "save": "鍥炵瓟銈掍繚瀛?,
-      "saved": "淇濆瓨銇椼伨銇椼仧锛?,
-      "nextQuestion": "娆°伄璩晱銇?鈫?,
-      "history": "銇傘仾銇熴伄鍥炵瓟",
-      "empty": "鏈€鍒濄伄銉併偋銉冦偗銈ゃ兂銈掑銈併伨銇椼倗銇?
+      "title": "今日の質問",
+      "placeholder": "あなたの今の気持ちを…",
+      "save": "回答を保存",
+      "saved": "保存しました！",
+      "nextQuestion": "次の質問へ →",
+      "history": "あなたの回答",
+      "empty": "最初のチェックインを始めましょう"
     },
     "timeCapsules": {
-      "title": "鎬濄亜鍑恒伄銈裤偆銉犮偒銉椼偦銉?,
-      "titlePlaceholder": "鏈潵銇伒銇熴倞銇搞伄銈裤偆銉堛儷鈥?,
-      "contentPlaceholder": "銇撱伄鐬枔銈掓浉銇嶇暀銈併仸鈥?,
-      "lockCapsule": "銈儣銈汇儷銈掑皝鍗?馃敀",
-      "empty": "鏈€鍒濄伄銈儣銈汇儷銈掍綔銈嶃亞",
-      "unlocked": "闁嬪皝娓堛伩",
-      "daysLeft": "銇傘仺 {days} 鏃?,
-      "noContent": "锛堝唴瀹广仾銇楋級"
+      "title": "思い出のタイムカプセル",
+      "titlePlaceholder": "未来のふたりへのタイトル…",
+      "contentPlaceholder": "この瞬間を書き留めて…",
+      "lockCapsule": "カプセルを封印 🔒",
+      "empty": "最初のカプセルを作ろう",
+      "unlocked": "開封済み",
+      "daysLeft": "あと {days} 日",
+      "noContent": "（内容なし）"
     },
     "virtualPet": {
-      "title": "銇傘仾銇熴伄銉氥儍銉?,
-      "petName": "銉儕",
-      "virtualCompanion": "銉愩兗銉併儯銉儜銉笺儓銉娿兗",
-      "level": "銉儥銉?{level}",
-      "hunger": "銇娿仾銇?,
-      "happiness": "銇椼亗銈忋仜",
-      "intimacy": "瑕瘑搴?,
-      "feed": "銇斻伅銈?,
-      "play": "銇傘仢銇?,
-      "cuddle": "銇仹銈?
+      "title": "あなたのペット",
+      "petName": "ルナ",
+      "virtualCompanion": "バーチャルパートナー",
+      "level": "レベル {level}",
+      "hunger": "おなか",
+      "happiness": "しあわせ",
+      "intimacy": "親密度",
+      "feed": "ごはん",
+      "play": "あそぶ",
+      "cuddle": "なでる"
     },
     "privateCommunity": {
-      "title": "銈炽儫銉ャ儖銉嗐偅銇墿瑾?
+      "title": "コミュニティの物語"
     },
     "sharedJournal": {
-      "title": "銇点仧銈娿伄鏃ヨ",
-      "placeholder": "浠婃棩銇嚭鏉ヤ簨銈掓浉銇勩仸鈥?,
-      "writeEntry": "鏃ヨ銈掓浉銇?,
-      "you": "銇傘仾銇?,
-      "partner": "銉戙兗銉堛儕銉?
+      "title": "ふたりの日記",
+      "placeholder": "今日の出来事を書いて…",
+      "writeEntry": "日記を書く",
+      "you": "あなた",
+      "partner": "パートナー"
     },
     "dreamWall": {
-      "title": "澶伄澹?,
-      "placeholder": "銇点仧銈娿伄娆°伄澶с亶銇あ鈥?,
-      "pin": "銉斻兂鐣欍倎",
-      "empty": "鏈€鍒濄伄澶倰銉斻兂鐣欍倎銇椼倛銇?
+      "title": "夢の壁",
+      "placeholder": "ふたりの次の大きな夢…",
+      "pin": "ピン留め",
+      "empty": "最初の夢をピン留めしよう"
     }
   },
   "legal": {
-    "lastUpdated": "鏈€绲傛洿鏂版棩锛?026骞?鏈?鏃?,
+    "lastUpdated": "最終更新日：2026年6月1日",
     "privacy": {
-      "title": "銉椼儵銈ゃ儛銈枫兗銉濄儶銈枫兗",
-      "subtitle": "銇傘仾銇熴伄銉椼儵銈ゃ儛銈枫兗銇ぇ鍒囥仹銇欍€傘亾銇儦銉笺偢銇с伅銆佸綋绀俱亴鍙庨泦銇欍倠銉囥兗銈裤€併仢銇娇鐢ㄦ柟娉曘€併亰銈堛伋銇婂妲樸伄鎯呭牨銇枹銇欍倠妯╁埄銇仱銇勩仸瑾槑銇椼伨銇欍€?,
+      "title": "プライバシーポリシー",
+      "subtitle": "あなたのプライバシーは大切です。このページでは、当社が収集するデータ、その使用方法、およびお客様の情報に関する権利について説明します。",
       "sections": [
         {
           "heading": "1. Information We Collect",
@@ -511,8 +511,8 @@
       ]
     },
     "terms": {
-      "title": "鍒╃敤瑕忕磩",
-      "subtitle": "Togthr 銈掋仈鍒╃敤銇勩仧銇犮亸銇撱仺銇с€佷互涓嬨伄瑕忕磩銇悓鎰忋仐銇熴亾銇ㄣ伀銇倞銇俱仚銆傘倛銇忋亰瑾伩銇忋仩銇曘亜鈥斺€斻亾銈屻倝銇亰瀹㈡銇ㄥ綋绀俱伄涓℃柟銈掍繚璀枫仐銇俱仚銆?,
+      "title": "利用規約",
+      "subtitle": "Togthr をご利用いただくことで、以下の規約に同意したことになります。よくお読みください——これらはお客様と当社の両方を保護します。",
       "sections": [
         {
           "heading": "1. Eligibility",
@@ -545,8 +545,8 @@
       ]
     },
     "cookies": {
-      "title": "Cookie 銉濄儶銈枫兗",
-      "subtitle": "Togthr 銈掑揩閬┿伀鍕曚綔銇曘仜銈嬨仧銈併伀銆佹渶灏忛檺銇?Cookie 銈掍娇鐢ㄣ仐銇︺亜銇俱仚銆備互涓嬨伅褰撶ぞ銇岃ō瀹氥仚銈嬨仚銇广仸銇?Cookie 銇ㄣ仢銇悊鐢便仹銇欍€?,
+      "title": "Cookie ポリシー",
+      "subtitle": "Togthr を快適に動作させるために、最小限の Cookie を使用しています。以下は当社が設定するすべての Cookie とその理由です。",
       "sections": [
         {
           "heading": "1. Essential Cookies",
@@ -567,12 +567,12 @@
       ]
     },
     "help": {
-      "title": "銉樸儷銉椼偦銉炽偪銉?,
-      "subtitle": "銈堛亸銇傘倠璩晱銇搞伄鍥炵瓟銈掔啊鍗樸伀瑕嬨仱銇戙倝銈屻伨銇欍€傘亰鎺仐銇儏鍫便亴瑕嬨仱銇嬨倝銇亜鍫村悎銇€併亰姘楄唤銇亰鍟忋亜鍚堛倧銇涖亸銇犮仌銇勩€?,
+      "title": "ヘルプセンター",
+      "subtitle": "よくある質問への回答を簡単に見つけられます。お探しの情報が見つからない場合は、お気軽にお問い合わせください。",
       "sections": [
         {
           "heading": "Getting Started",
-          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional 鈥?every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
+          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional — every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
         },
         {
           "heading": "Subscription & Billing",
@@ -588,13 +588,13 @@
         },
         {
           "heading": "International Support",
-          "body": "Togthr is available in 8 languages: English, 绠€浣撲腑鏂? 绻侀珨涓枃, 鏃ユ湰瑾? 頃滉淡鞏? Espa帽ol, Fran莽ais, and Deutsch. Support email replies are in English by default 鈥?let us know if you'd prefer another language and we will do our best."
+          "body": "Togthr is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
         }
       ]
     },
     "contact": {
-      "title": "銇婂晱銇勫悎銈忋仜",
-      "subtitle": "銇旀剰瑕嬨倰銇婂緟銇°仐銇︺亰銈娿伨銇欍€傘仈璩晱銇渶閬┿仾銉併儯銉嶃儷銈掋亰閬搞伋銇忋仩銇曘亜銆?,
+      "title": "お問い合わせ",
+      "subtitle": "ご意見をお待ちしております。ご質問に最適なチャネルをお選びください。",
       "sections": [
         {
           "heading": "General Support",
@@ -612,317 +612,316 @@
     }
   },
   "store": {
-    "title": "Togthr 銈炽兂銉戙儖銈兂",
-    "subtitle": "6+1 銉熴偣銉嗐儶銉笺儨銉冦偗銈广€?/72銇⒑鐜囥仹閲戣壊銇屽嚭鐝?,
-    "firstOrder": "鍒濆洖渚℃牸",
-    "regular": "閫氬父渚℃牸",
-    "save": "50%銈儠",
-    "blindboxTitle": "Togthr 銈炽兂銉戙儖銈兂 鈥?6+1 銉熴偣銉嗐儶銉笺儨銉冦偗銈?,
-    "blindboxDesc": "銉椼儹銈般儵銉炪兗銆併儔銈偪銉笺€佸畤瀹欓琛屽＋銆併偡銈с儠銆佹秷闃插＋銆佽瀵?.. 1/72銇⒑鐜囥仹浼濊銇噾鑹?Togthr 銇屽嚭鐝俱€?,
-    "ctaBuy": "銉溿儍銈偣銈掕臣鍏?,
-    "ctaTrySoulmate": "Soulmate AI 1銉舵湀鍒嗕粯銇?,
-    "odds": "纰虹巼",
+    "title": "Togthr コンパニオン",
+    "subtitle": "6+1 ミステリーボックス、1/72の確率で金色が出現",
+    "firstOrder": "初回価格",
+    "regular": "通常価格",
+    "save": "50%オフ",
+    "blindboxTitle": "Togthr コンパニオン — 6+1 ミステリーボックス",
+    "blindboxDesc": "プログラマー、ドクター、宇宙飛行士、シェフ、消防士、警察... 1/72の確率で伝説の金色 Togthr が出現。",
+    "ctaBuy": "ボックスを購入",
+    "ctaTrySoulmate": "Soulmate AI 1ヶ月分付き",
+    "odds": "確率",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
-    "perma": "姘镐箙銈兂銉儍銈?,
-    "checkoutNote": "PayPal 銉嗐偣銉堛儮銉笺儔 路 鍒濆洖50%銈儠",
-    "checkoutNote2": "銈点儢銈广偗銇仐 路 涓€搴︺仩銇?路 姘镐箙",
-    "successTitle": "娉ㄦ枃瀹屼簡锛?,
-    "successSubtitle": "Togthr 銈炽兂銉戙儖銈兂銇伨銈傘仾銇忓埌鐫€銇椼伨銇欍€侾ayPal 銇屾焙娓堝嚘鐞嗕腑銇с仚 鈥?銉°兗銉亴灞娿亶銇俱仚銆?,
-    "successNote": "PayPal 銇焙娓堢⒑瑾嶅緦銆佹暟鍒嗐仹銈广偔銉炽亴銈兂銉儍銈仌銈屻伨銇欍€?,
-    "successHint": "10鍒嗕互鍐呫伀銈广偔銉炽亴琛ㄧず銇曘倢銇亜鍫村悎銇€佹敞鏂嘔D銈掓坊銇堛仸銇婂晱銇勫悎銈忋仜銇忋仩銇曘亜銆?,
-    "secureNotice": "姹烘笀銇疨ayPal銇т繚璀枫仌銈屻仸銇勩伨銇欍€傚綋绀俱伅銈兗銉夋儏鍫便倰纰鸿獚銇椼伨銇涖倱銆?
+    "perma": "永久アンロック",
+    "checkoutNote": "PayPal テストモード · 初回50%オフ",
+    "checkoutNote2": "サブスクなし · 一度だけ · 永久",
+    "successTitle": "注文完了！",
+    "successSubtitle": "Togthr コンパニオンはまもなく到着します。PayPal が決済処理中です — メールが届きます。",
+    "successNote": "PayPal の決済確認後、数分でスキンがアンロックされます。",
+    "successHint": "10分以内にスキンが表示されない場合は、注文IDを添えてお問い合わせください。",
+    "secureNotice": "決済はPayPalで保護されています。当社はカード情報を確認しません。"
   },
   "daily": {
-    "title": "浠婃棩銇亪銇曘倓銈?,
-    "q": "浠婃棩銆乀A 銇仢銇般伀銇勩倠锛?,
-    "withBtn": "馃挄 涓€绶?,
-    "apartBtn": "馃寵 闆倢",
-    "hunger": "婧€鑵瑰害",
-    "streak": "馃敟 閫ｇ稓 {n} 鏃?,
-    "bubbleIdle": "銇堛伕銇搞€佸緟銇ｃ仸~",
-    "bubbleWith": "涓€绶掞紒",
-    "bubbleApart": "浼氥亜銇熴亜銇?..",
-    "bubbleFeed": "銇斻伅銈撱仭銈囥亞銇犮亜锛?,
-    "bubbleFull": "婧€鑵癸紒",
-    "bubbleMore": "銈傘仯銇ㄣ仭銈囥亞銇犮亜~",
-    "again": "銈傘亞涓€搴?,
-    "dragHint": "銉氥儍銉堛伀銉夈儵銉冦偘",
-    "streakDays": "{n}鏃ラ€ｇ稓",
-    "treasureTitle": "瀹濈銇岀従銈屻仧锛侌煄?,
-    "treasureDesc": "7鏃ラ€ｇ稓锛併儦銉冦儓銇屽疂绠便倰鎺樸倞鍑恒仐銇熴倛~"
+    "title": "今日のえさやり",
+    "q": "今日、TA はそばにいる？",
+    "withBtn": "💕 一緒",
+    "apartBtn": "🌙 離れ",
+    "hunger": "満腹度",
+    "streak": "🔥 連続 {n} 日",
+    "bubbleIdle": "えへへ、待って~",
+    "bubbleWith": "一緒！",
+    "bubbleApart": "会いたいな...",
+    "bubbleFeed": "ごはんちょうだい！",
+    "bubbleFull": "満腹！",
+    "bubbleMore": "もっとちょうだい~",
+    "again": "もう一度",
+    "dragHint": "ペットにドラッグ",
+    "streakDays": "{n}日連続",
+    "treasureTitle": "宝箱が現れた！🎁",
+    "treasureDesc": "7日連続！ペットが宝箱を掘り出したよ~"
   },
   "capsule": {
-    "title": "銈裤偆銉犮偒銉椼偦銉?路 瀹濇帰銇?,
-    "subtitle": "鍩嬨伨銇ｃ仸銇勩倠銉炪偣銈掋偪銉冦儣銆傘儦銉冦儓銇屾銇勩仸鎺樸倞鍑恒仐銇俱仚銆?,
-    "buried": "鍩?,
-    "opened": "闁?,
-    "openedOn": "鍩嬨倎銇熸棩:",
-    "close": "瀹濈!",
-    "cancel": "銈儯銉炽偦銉?,
-    "write": "鏂般仐銇勩偒銉椼偦銉倰鍩嬨倎銈?,
-    "writeTitle": "銈裤偆銉堛儷",
-    "writePlaceholder": "鏈潵銇亗銇仧銇?..",
-    "save": "鍩嬨倎銈?
+    "title": "タイムカプセル · 宝探し",
+    "subtitle": "埋まっているマスをタップ。ペットが歩いて掘り出します。",
+    "buried": "埋",
+    "opened": "開",
+    "openedOn": "埋めた日:",
+    "close": "宝箱!",
+    "cancel": "キャンセル",
+    "write": "新しいカプセルを埋める",
+    "writeTitle": "タイトル",
+    "writePlaceholder": "未来のあなたへ...",
+    "save": "埋める"
   },
   "pet": {
-    "title": "銉炪偆銉氥儍銉?,
-    "subtitle": "銉氥儍銉堛伅闁總銈掓槧銇欓彙銆傛皸鍒嗐倰閬搞倱銇у韬倰瑕嬨倛銇嗐€?,
-    "pickMood": "浠婃棩銇皸鍒嗐伅锛?,
-    "status": "Togthr 銇粖",
-    "day": "涓€绶?{n} 鏃ョ洰",
+    "title": "マイペット",
+    "subtitle": "ペットは関係を映す鏡。気分を選んで変身を見よう。",
+    "pickMood": "今日の気分は？",
+    "status": "Togthr は今",
+    "day": "一緒 {n} 日目",
     "mood": {
-      "happy": "鐢樸亜",
-      "sad": "鍠у槱",
-      "thinking": "鑰冦亪涓?,
-      "sleeping": "鐫＄湢",
-      "sweet": "鐢樸亜",
-      "fight": "銈便兂銈?,
-      "think": "鑰冦亪涓?,
-      "sleep": "銇娿倓銇欍伩"
+      "happy": "甘い",
+      "sad": "喧嘩",
+      "thinking": "考え中",
+      "sleeping": "睡眠",
+      "sweet": "甘い",
+      "fight": "ケンカ",
+      "think": "考え中",
+      "sleep": "おやすみ"
     },
     "rarity": {
-      "common": "銈炽儮銉?,
-      "rare": "銉偄",
-      "epic": "銈ㄣ償銉冦偗",
-      "legendary": "銉偢銈с兂銉€銉兗"
+      "common": "コモン",
+      "rare": "レア",
+      "epic": "エピック",
+      "legendary": "レジェンダリー"
     },
     "series": {
-      "basic": "銉欍兗銈枫儍銈?,
-      "career": "銇椼仈銇?,
-      "festival": "琛屼簨",
-      "emotion": "銇嶃倐銇?,
-      "fantasy": "銉曘偂銉炽偪銈搞兗",
-      "legendary": "銉偢銈с兂銉?
+      "basic": "ベーシック",
+      "career": "しごと",
+      "festival": "行事",
+      "emotion": "きもち",
+      "fantasy": "ファンタジー",
+      "legendary": "レジェンド"
     },
     "tier": {
-      "free": "銉曘儶銉?,
+      "free": "フリー",
       "plus": "Togthr Plus",
-      "eternal": "Togthr 銈ㄣ偪銉笺儕銉?
+      "eternal": "Togthr エターナル"
     },
     "card": {
-      "current": "浣跨敤涓?
+      "current": "使用中"
     },
     "altar": {
-      "title": "銈姐偊銉伄銇亱銇俱倰鍙枤",
-      "back": "鎴汇倠",
-      "close": "闁夈仒銈?,
-      "hint": "瑙ｆ斁娓堛伩銉氥儍銉堛倰銈裤儍銉椼仹銉椼儸銉撱儱銉笺€傘儹銉冦偗涓伅瑙ｆ斁鏂规硶銈掔⒑瑾嶃仹銇嶃伨銇欍€?,
-      "summon": "鍙枤",
-      "summoned": "銇屻倓銇ｃ仸銇嶃仧",
-      "current": "浣跨敤涓?
+      "title": "ソウルのなかまを召喚",
+      "back": "戻る",
+      "close": "閉じる",
+      "hint": "解放済みペットをタップでプレビュー。ロック中は解放方法を確認できます。",
+      "summon": "召喚",
+      "summoned": "がやってきた",
+      "current": "使用中"
     },
-    "petting": "銇仹銇",
-    "statusHello": "銈勩亗锛?,
-    "statusSleepy": "Zzz鈥?,
-    "statusMiss": "浼氥亜銇熴亜銇?,
-    "changePet": "瑕嬨仧鐩倰澶夈亪銈?,
-    "changePetBadge": "鍙枤绁",
-    "lockHint": "銉儍銈腑銇儦銉冦儓銈傘儣銉儞銉ャ兗鍙兘 鈥?璩艰銇嬨偓銉併儯銇цВ鏀?,
+    "petting": "なでて~",
+    "statusHello": "やあ！",
+    "statusSleepy": "Zzz…",
+    "statusMiss": "会いたいな",
+    "changePet": "見た目を変える",
+    "changePetBadge": "召喚祭壇",
+    "lockHint": "ロック中のペットもプレビュー可能 — 購読かガチャで解放",
     "info": {
-      "days": "銇勩仯銇椼倗銇亷銇斻仐銇熸棩",
-      "interactions": "銇点倢銇傘亜銇洖鏁?,
-      "growth": "鎴愰暦"
+      "days": "いっしょに過ごした日",
+      "interactions": "ふれあいの回数",
+      "growth": "成長"
     },
     "actions": {
-      "journal": "銈搞儯銉笺儕銉?,
-      "history": "灞ユ",
-      "share": "銈枫偋銈?
+      "journal": "ジャーナル",
+      "history": "履歴",
+      "share": "シェア"
     },
     "festival": {
-      "newyear": "銉嬨儱銉笺偆銉ゃ兗",
-      "easter": "銈ゃ兗銈广偪銉?,
-      "thanksgiving": "鎰熻瑵绁?,
-      "mothersday": "姣嶃伄鏃?,
-      "fathersday": "鐖躲伄鏃?,
-      "qixi": "涓冨",
-      "dragonboat": "绔崍銇瘈鍙?,
-      "lantern": "鍏冨绡€",
-      "qingming": "娓呮槑绡€",
-      "chongyang": "閲嶉櫧绡€",
-      "blackfriday": "銉栥儵銉冦偗銉曘儵銈ゃ儑銉?,
-      "cybermonday": "銈点偆銉愩兗銉炪兂銉囥兗",
-      "arborday": "妞嶆ü绁?,
-      "earthday": "銈兗銈广儑銈?,
-      "environment": "涓栫晫鐠板銉囥兗",
-      "aprilfool": "銈ㄣ偆銉椼儶銉儠銉笺儷",
-      "graduation": "鍗掓キ",
-      "wedding": "銈︺偋銉囥偅銉炽偘",
-      "babyshower": "銉欍儞銉笺偡銉ｃ儻銉?,
-      "birthday": "瑾曠敓鏃?,
-      "anniversary": "瑷樺康鏃?,
-      "pride": "銉椼儵銈ゃ儔鏈堥枔",
-      "diwali": "銉囥偅銉儶",
-      "carnival": "銈兗銉嬨儛銉?
+      "newyear": "ニューイヤー",
+      "easter": "イースター",
+      "thanksgiving": "感謝祭",
+      "mothersday": "母の日",
+      "fathersday": "父の日",
+      "qixi": "七夕",
+      "dragonboat": "端午の節句",
+      "lantern": "元宵節",
+      "qingming": "清明節",
+      "chongyang": "重陽節",
+      "blackfriday": "ブラックフライデー",
+      "cybermonday": "サイバーマンデー",
+      "arborday": "植樹祭",
+      "earthday": "アースデイ",
+      "environment": "世界環境デー",
+      "aprilfool": "エイプリルフール",
+      "graduation": "卒業",
+      "wedding": "ウェディング",
+      "babyshower": "ベビーシャワー",
+      "birthday": "誕生日",
+      "anniversary": "記念日",
+      "pride": "プライド月間",
+      "diwali": "ディワリ",
+      "carnival": "カーニバル"
     }
   },
   "journal": {
-    "title": "绉併仧銇°伄宸?,
-    "subtitle": "鏃ヨ銈掓浉銇忋仺銆佸叡鏈夈伄宸ｃ伀浣曘亱銇屽姞銈忋倠銆傛垚闀枫倰瑕嬪畧銈嶃亞銆?,
-    "stage": "銈广儐銉笺偢",
-    "nextStage": "娆★細{next}",
-    "complete": "宸ｅ畬鎴愶紒",
-    "entriesCount": "{n} 浠躲伄鏃ヨ",
-    "writePlaceholder": "浠婃棩銇皬銇曘仾鍑烘潵浜嬨倰...",
-    "save": "宸ｃ伀杩藉姞",
+    "title": "私たちの巣",
+    "subtitle": "日記を書くと、共有の巣に何かが加わる。成長を見守ろう。",
+    "stage": "ステージ",
+    "nextStage": "次：{next}",
+    "complete": "巣完成！",
+    "entriesCount": "{n} 件の日記",
+    "writePlaceholder": "今日の小さな出来事を...",
+    "save": "巣に追加",
     "mood": {
-      "warm": "鏆栥亱銇?,
-      "cool": "娑笺仐銇?,
-      "festive": "銇婄銇?
+      "warm": "暖かい",
+      "cool": "涼しい",
+      "festive": "お祝い"
     },
     "stageName": {
-      "empty": "绌恒亶鍦?,
-      "seed": "绋?,
-      "sprout": "鑺?,
-      "tree": "鏈?,
-      "full-nest": "宸ｅ畬鎴?
+      "empty": "空き地",
+      "seed": "種",
+      "sprout": "芽",
+      "tree": "木",
+      "full-nest": "巣完成"
     },
     "seedEntries": {
       "e1": {
-        "text": "浠婃棩銇亜銇勫ぉ姘椼€傛暎姝┿伀鍑恒亱銇戙仧銆?,
+        "text": "今日はいい天気。散歩に出かけた。",
         "mood": "warm"
       },
       "e2": {
-        "text": "闆亴闄嶃仯銇︺亶銇燂紒鍗楀浗銇汉銇ぇ鑸堝ギ銆?,
+        "text": "雪が降ってきた！南国の人は大興奮。",
         "mood": "cool"
       },
       "e3": {
-        "text": "鍒濄倎銇︺伄銈儶銈广優銈广倰涓€绶掋伀 馃巹",
+        "text": "初めてのクリスマスを一緒に 🎄",
         "mood": "festive"
       }
     }
   },
   "chat": {
-    "title": "銈姐偊銉儭銈ゃ儓",
-    "online": "銇氥仯銇ㄣ仢銇般伀",
-    "placeholder": "浣曘亱瑭便仐銇嬨亼銇?..",
-    "mockNotice": "Day 1 銉儍銈?鈥?瀹熼殯銇瓵I銇疍ay 2",
-    "typing": "銇亱銇俱亴鍏ュ姏涓€?,
-    "nightMode": "銉娿偆銉堛儮銉笺儔",
-    "anniversary": "100閫氥伄銉°儍銈汇兗銈?鈥?銇层仺銇ゃ伄绔犮亴瀹岀祼",
+    "title": "ソウルメイト",
+    "online": "ずっとそばに",
+    "placeholder": "何か話しかけて...",
+    "mockNotice": "Day 1 モック — 実際のAIはDay 2",
+    "typing": "なかまが入力中…",
+    "nightMode": "ナイトモード",
+    "anniversary": "100通のメッセージ — ひとつの章が完結",
     "mood": {
-      "sweet": "鐢樸亜",
-      "calm": "銇娿仩銈勩亱",
-      "think": "鑰冦亪涓?,
-      "sleepy": "鐪犮亜",
-      "fight": "銈便兂銈?
+      "sweet": "甘い",
+      "calm": "おだやか",
+      "think": "考え中",
+      "sleepy": "眠い",
+      "fight": "ケンカ"
     }
   },
   "onboarding": {
-    "back": "鎴汇倠",
-    "next": "娆°伕",
-    "finish": "瀹屼簡",
+    "back": "戻る",
+    "next": "次へ",
+    "finish": "完了",
     "welcome": {
-      "title": "銇氥仯銇ㄣ仢銇般伀",
-      "subtitle": "銇傘仾銇熴伄灏忋仌銇儹銉溿儍銉堛亴鏉ャ伨銇椼仧 - 涓€绶掋伀鎴愰暦銇欍倠鐩告銆?,
-      "cta": "銇仒銈併倠"
+      "title": "ずっとそばに",
+      "subtitle": "あなたの小さなロボットが来ました - 一緒に成長する相棒。",
+      "cta": "はじめる"
     },
     "name": {
-      "title": "Togthr銇悕鍓嶃倰",
-      "subtitle": "銇濄伆銇亜銈嬪皬銇曘仾銉儨銉冦儓銇悕鍓嶃€?,
-      "placeholder": "渚嬶細銉斻偗銈汇儷銆併伩銇裤€併伖銇勩伖銇?.."
+      "title": "Togthrに名前を",
+      "subtitle": "そばにいる小さなロボットの名前。",
+      "placeholder": "例：ピクセル、みみ、べいべい..."
     },
     "mode": {
-      "title": "銇┿倱銇梾銈掞紵",
-      "subtitle": "銇勩仱銇с倐澶夋洿銇с亶銇俱仚銆?,
+      "title": "どんな旅を？",
+      "subtitle": "いつでも変更できます。",
       "solo": {
-        "title": "銇层仺銈娿仹",
-        "desc": "銇傘仾銇熴倰瑕嬪畧銈嬨儦銉冦儓 + AI 銉併儯銉冦儓銆?
+        "title": "ひとりで",
+        "desc": "あなたを見守るペット + AI チャット。"
       },
       "together": {
-        "title": "瑾般亱銇?,
-        "desc": "鏃ュ父銆併偒銉椼偦銉€併儦銉冦儓銈掑垎銇嬨仭鍚堛亞銆?
+        "title": "誰かと",
+        "desc": "日常、カプセル、ペットを分かち合う。"
       }
     },
     "done": {
-      "title": "{name} 銇簴鍌欏畬浜嗭紒",
-      "soloNote": "銉氥儍銉堛亴鏉ャ伨銇椼仧銆傘偍銈点倰銇傘亽銇︺€佽┍銇椼仸銆併偣銈裤兂銉椼倰閫併倣銇嗐€?,
-      "togetherNote": "銉氥儍銉堛亴鏉ャ伨銇椼仧銆傛渶鍒濄伄銈儣銈汇儷銈掗€併仯銇︺€佺墿瑾炪倰濮嬨倎銈堛亞銆?,
-      "feedPet": "{name} 銇亪銇?,
-      "sayHi": "銇撱倱銇仭銇?,
-      "startOver": "銈勩倞鐩淬仚"
+      "title": "{name} の準備完了！",
+      "soloNote": "ペットが来ました。エサをあげて、話して、スタンプを送ろう。",
+      "togetherNote": "ペットが来ました。最初のカプセルを送って、物語を始めよう。",
+      "feedPet": "{name} にえさ",
+      "sayHi": "こんにちは",
+      "startOver": "やり直す"
     }
   },
   "community": {
-    "title": "鏈ㄣ伄娲?,
-    "subtitle": "鍖垮悕銇儭銉€傘亜銇勩伃銇唬銈忋倞銇儚銈般€傚悕鍓嶃仾銇椼€佹壒鍒ゃ仾銇椼€?,
-    "rule1": "瀹熷悕銇仐",
-    "rule2": "銉忋偘銇屻亜銇勩伃銇唬銈忋倞",
-    "rule3": "24h銇ц嚜鍕曟秷鍘?,
+    "title": "木の洞",
+    "subtitle": "匿名のメモ。いいねの代わりにハグ。名前なし、批判なし。",
+    "rule1": "実名なし",
+    "rule2": "ハグがいいねの代わり",
+    "rule3": "24hで自動消去",
     "composer": {
-      "placeholder": "浣曘亱鏇搞亜銇︺亸銇犮仌銇勩€倊280鏂囧瓧銆?,
-      "send": "娲炪伀钀姐仺銇?
+      "placeholder": "何か書いてください。~280文字。",
+      "send": "洞に落とす"
     },
     "mood": {
-      "calm": "绌忋倓銇?,
-      "warm": "娓┿亱銇?,
-      "reflect": "鎬濈储",
-      "light": "杌姐倓銇?
+      "calm": "穏やか",
+      "warm": "温かい",
+      "reflect": "思索",
+      "light": "軽やか"
     },
-    "hug": "銉忋偘",
-    "autoPurgeHint": "{hours}鏅傞枔寰屻伀娑堛亪銇俱仚",
-    "empty": "銇俱仩銉°儮銇屻亗銈娿伨銇涖倱銆傛渶鍒濄伀涓€銇よ惤銇ㄣ仐銇俱仐銈囥亞銆?,
-    "mockNotice": "Day 1 銈儵銈ゃ偄銉炽儓銉儍銈?鈥?鑷嫊娑堝幓銇?Day 2銆?
+    "hug": "ハグ",
+    "autoPurgeHint": "{hours}時間後に消えます",
+    "empty": "まだメモがありません。最初に一つ落としましょう。",
+    "mockNotice": "Day 1 クライアントモック — 自動消去は Day 2。"
   },
   "errorPage": {
-    "title": "鍟忛銇岀櫤鐢熴仐銇俱仐銇?,
-    "message": "銉氥兗銈搞仹銈ㄣ儵銉笺亴鐧虹敓銇椼伨銇椼仧銆傘儦銉冦儓銇屽蹇滀腑銇с仚銆?,
-    "tryAgain": "鍐嶈│琛?,
-    "home": "銉涖兗銉?,
-    "errorId": "銈ㄣ儵銉?ID"
+    "title": "問題が発生しました",
+    "message": "ページでエラーが発生しました。ペットが対応中です。",
+    "tryAgain": "再試行",
+    "home": "ホーム",
+    "errorId": "エラー ID"
   },
   "paywallHint": {
-    "title": "鐩告銇屾柊銇椼亜鏈嶃倰鐫€銇熴亴銇ｃ仸銈嬨倛 鉁?,
-    "cta": "瑕嬨伀琛屻亸",
-    "dismiss": "鐒℃枡銇х稓銇戙倠"
+    "title": "相棒が新しい服を着たがってるよ ✨",
+    "cta": "見に行く",
+    "dismiss": "無料で続ける"
   },
   "focus": {
-    "title": "銉曘偐銉笺偒銈广儮銉笺儔",
-    "subtitle": "灏忋仌銇儹銉溿儍銉堛亴銆併亰浠曚簨銈勫媺寮枫伀瀵勩倞娣汇亜銇俱仚銆?,
-    "chooseDuration": "涓€绶掋伀銇┿伄銇忋倝銇勯泦涓仐銈堛亞锛?,
-    "minutes": "{minutes} 鍒?,
-    "start": "闆嗕腑銈掋伅銇樸倎銈?,
-    "giveUp": "浠婂洖銇亾銇撱伨銇?,
-    "awayNotice": "寰呫仯銇︺倠銈堚€?,
-    "welcomeBack": "銇娿亱銇堛倞锛併亴銈撱伆銈嶃亞锛?,
-    "completeTitle": "銈勩仯銇熴伃锛?,
-    "completeDesc": "涓€绶掋伀銈勩仌銇椼亸 {minutes} 鍒嗛泦涓仹銇嶃仧銈堛€?,
-    "streak": "{days} 鏃ラ€ｇ稓",
-    "again": "銈傘亞涓€鍥?,
-    "lockedPlus": "馃敀 Plus銇с倐銇ｃ仺闀枫亸闆嗕腑",
-    "interruptedNote": "閫斾腑銇у皯銇椼亰銈勩仚銇裤仐銇熴亼銇┿€佸ぇ涓堝か銆傘伨銇熶竴绶掋伀濮嬨倎銈堛亞銆?,
-    "phrase1": "銇濄伆銇亜銈嬨倛銆?,
-    "phrase2": "涓€姝┿仛銇ら€层倐銇嗐€?,
-    "phrase3": "銇嶃伩銇倝銇с亶銈嬨€?,
-    "phrase4": "闈欍亱銇竴绶掋伀鑲层仺銇嗐€?
+    "title": "フォーカスモード",
+    "subtitle": "小さなロボットが、お仕事や勉強に寄り添います。",
+    "chooseDuration": "一緒にどのくらい集中しよう？",
+    "minutes": "{minutes} 分",
+    "start": "集中をはじめる",
+    "giveUp": "今回はここまで",
+    "awayNotice": "待ってるよ…",
+    "welcomeBack": "おかえり！がんばろう！",
+    "completeTitle": "やったね！",
+    "completeDesc": "一緒にやさしく {minutes} 分集中できたよ。",
+    "streak": "{days} 日連続",
+    "again": "もう一回",
+    "lockedPlus": "🔒 Plusでもっと長く集中",
+    "interruptedNote": "途中で少しおやすみしたけど、大丈夫。また一緒に始めよう。",
+    "phrase1": "そばにいるよ。",
+    "phrase2": "一歩ずつ進もう。",
+    "phrase3": "きみならできる。",
+    "phrase4": "静かに一緒に育とう。"
   },
   "paymentSuccess": {
-    "title": "Payment successful 馃帀",
+    "title": "Payment successful 🎉",
     "subtitle": "Your companion felt that. Membership is now active.",
     "noteTitle": "What happens next",
-    "noteBody": "Your new pets, skins and member perks unlock within a few seconds 鈥?no restart needed.",
+    "noteBody": "Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
     "hint": "If anything looks missing, give it a moment and refresh the pet page.",
-    "ctaPet": "馃惥 Meet your pet",
-    "ctaPricing": "鈫?Back to pricing",
+    "ctaPet": "🐾 Meet your pet",
+    "ctaPricing": "← Back to pricing",
     "secureNotice": "Payments processed securely."
   },
   "feedback": {
-    "title": "銉曘偅銉笺儔銉愩儍銈亴銇傘倞銇俱仚銇嬶紵",
-    "typeLabel": "绋",
-    "messageLabel": "浣曘倰銇婅€冦亪銇с仚銇嬶紵",
-    "messagePlaceholder": "瑕嬨仧銇勬鑳姐倓銆佸銈屻仸銇勩倠銇ㄣ亾銈嶃倰鏁欍亪銇︺亸銇犮仌銇?..",
-    "emailLabel": "銉°兗銉偄銉夈儸銈癸紙浠绘剰銆佽繑淇＄敤锛?,
+    "title": "フィードバックがありますか？",
+    "typeLabel": "種類",
+    "messageLabel": "何をお考えですか？",
+    "messagePlaceholder": "見たい機能や、壊れているところを教えてください...",
+    "emailLabel": "メールアドレス（任意、返信用）",
     "emailPlaceholder": "you@example.com",
-    "send": "銉曘偅銉笺儔銉愩儍銈倰閫佷俊",
-    "sending": "閫佷俊涓€?,
-    "sentTitle": "銇傘倞銇屻仺銇嗐仈銇栥亜銇俱仚 鈥?銉°儍銈汇兗銈搞倰鍙椼亼鍙栥倞銇俱仐銇熴€?8鏅傞枔浠ュ唴銇繑淇°仐銇俱仚銆?,
-    "error": "鍟忛銇岀櫤鐢熴仐銇俱仐銇熴€傘倐銇嗕竴搴︺亰瑭︺仐銇忋仩銇曘亜銆?,
+    "send": "フィードバックを送信",
+    "sending": "送信中…",
+    "sentTitle": "ありがとうございます — メッセージを受け取りました。48時間以内に返信します。",
+    "error": "問題が発生しました。もう一度お試しください。",
     "types": {
-      "bug": "銉愩偘鍫卞憡",
-      "feature": "姗熻兘銉偗銈ㄣ偣銉?,
-      "billing": "銇婃敮鎵曘亜銇仱銇勩仸",
-      "general": "涓€鑸殑銇儠銈ｃ兗銉夈儛銉冦偗"
+      "bug": "バグ報告",
+      "feature": "機能リクエスト",
+      "billing": "お支払いについて",
+      "general": "一般的なフィードバック"
     }
   }
 }
-
