@@ -295,7 +295,7 @@ export function PricingTheater({
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-12 sm:py-16">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col overflow-auto px-4 py-12 sm:py-16">
         {/* Hero */}
         <header className="mx-auto max-w-3xl text-center">
           {/* 🎃 Halloween Limited-Time Drop — 10/1 → 10/31 */}

@@ -1,492 +1,492 @@
-{
+﻿{
   "siteName": "Togthr",
-  "tagline": "一直都在",
+  "tagline": "涓€鐩撮兘鍦?,
   "nav": {
-    "home": "首頁",
-    "features": "功能",
-    "pricing": "方案",
-    "community": "社群",
-    "login": "登入",
-    "dashboard": "儀表板",
-    "daily": "餵食",
-    "capsule": "膠囊",
-    "pet": "寵物",
-    "journal": "築巢",
-    "store": "商店",
-    "chat": "聊天",
-    "faq": "常見問題",
-    "blog": "部落格",
-    "focus": "專注"
+    "home": "棣栭爜",
+    "features": "鍔熻兘",
+    "pricing": "鏂规",
+    "community": "绀剧兢",
+    "login": "鐧诲叆",
+    "dashboard": "鍎€琛ㄦ澘",
+    "daily": "椁甸",
+    "capsule": "鑶犲泭",
+    "pet": "瀵电墿",
+    "journal": "绡夊发",
+    "store": "鍟嗗簵",
+    "chat": "鑱婂ぉ",
+    "faq": "甯歌鍟忛",
+    "blog": "閮ㄨ惤鏍?,
+    "focus": "灏堟敞"
   },
   "seo": {
     "siteName": "Togthr",
-    "description": "你設備裡的小機器人陪著你，也代表另一個 TA。一起建立日常儀式，珍藏回憶，養一隻屬於你們的虛擬伴侶。通用、私密、像素治癒。",
-    "keywords": "陪伴 虛擬寵物 回憶 時光膠囊 每日儀式 情感支持 靈魂伴侶 異地 像素寵物 AI陪伴",
-    "tagline": "一直都在"
+    "description": "浣犺ō鍌欒！鐨勫皬姗熷櫒浜洪櫔钁椾綘锛屼篃浠ｈ〃鍙︿竴鍊?TA銆備竴璧峰缓绔嬫棩甯稿剙寮忥紝鐝嶈棌鍥炴喍锛岄涓€闅诲爆鏂间綘鍊戠殑铏涙摤浼翠径銆傞€氱敤銆佺瀵嗐€佸儚绱犳不鐧掋€?,
+    "keywords": "闄即 铏涙摤瀵电墿 鍥炴喍 鏅傚厜鑶犲泭 姣忔棩鍎€寮?鎯呮劅鏀寔 闈堥瓊浼翠径 鐣板湴 鍍忕礌瀵电墿 AI闄即",
+    "tagline": "涓€鐩撮兘鍦?
   },
   "home": {
     "hero": {
-      "title": "一直都在",
-      "subtitle": "你設備裡的小機器人陪著你，也代表另一個 TA。一起建立每日儀式，珍藏回憶，養一隻屬於你們的虛擬伴侶。",
-      "cta": "免費開始 — 無需信用卡",
-      "secondary": "看看怎麼用",
-      "socialProof": "全球 10,000+ 用戶信賴",
-      "eyebrow": "一直都在 · 一直都在意",
-      "welcomeFirst": "嗨，我啱啱醒。我會一直喺度㗎。",
-      "welcomeBack": "你返嚟啦！我等咗你好耐喇。",
-      "sleepyGreeting": "嘘…夜啦。陪我多坐一陣啦。",
-      "statusHello": "嗨！你好呀。",
-      "statusMiss": "你返嚟啦！",
-      "statusSleepy": "嘘…我眼瞓喇。",
-      "relationsEyebrow": "揀一個陪你嘅佢",
-      "relationsHint": "每種模式都會改變寵物嘅樣同光環。"
+      "title": "涓€鐩撮兘鍦?,
+      "subtitle": "浣犺ō鍌欒！鐨勫皬姗熷櫒浜洪櫔钁椾綘锛屼篃浠ｈ〃鍙︿竴鍊?TA銆備竴璧峰缓绔嬫瘡鏃ュ剙寮忥紝鐝嶈棌鍥炴喍锛岄涓€闅诲爆鏂间綘鍊戠殑铏涙摤浼翠径銆?,
+      "cta": "鍏嶈不闁嬪 鈥?鐒￠渶淇＄敤鍗?,
+      "secondary": "鐪嬬湅鎬庨杭鐢?,
+      "socialProof": "鍏ㄧ悆 10,000+ 鐢ㄦ埗淇¤炒",
+      "eyebrow": "涓€鐩撮兘鍦?路 涓€鐩撮兘鍦ㄦ剰",
+      "welcomeFirst": "鍡紝鎴戝暠鍟遍啋銆傛垜鏈冧竴鐩村柡搴︺棊銆?,
+      "welcomeBack": "浣犺繑鍤熷暒锛佹垜绛夊挆浣犲ソ鑰愬枃銆?,
+      "sleepyGreeting": "鍢樷€﹀鍟︺€傞櫔鎴戝鍧愪竴闄ｅ暒銆?,
+      "statusHello": "鍡紒浣犲ソ鍛€銆?,
+      "statusMiss": "浣犺繑鍤熷暒锛?,
+      "statusSleepy": "鍢樷€︽垜鐪肩灀鍠囥€?,
+      "relationsEyebrow": "鎻€涓€鍊嬮櫔浣犲槄浣?,
+      "relationsHint": "姣忕ó妯″紡閮芥渻鏀硅畩瀵电墿鍢呮ǎ鍚屽厜鐠般€?
     },
     "features": {
-      "title": "為真實的情侶關係設計",
-      "subtitle": "每個功能，都為拉近你們的距離而生，無論相隔多遠。",
+      "title": "鐐虹湡瀵︾殑鎯呬径闂滀總瑷▓",
+      "subtitle": "姣忓€嬪姛鑳斤紝閮界偤鎷夎繎浣犲€戠殑璺濋洟鑰岀敓锛岀劇璜栫浉闅斿閬犮€?,
       "sharedJournal": {
-        "title": "每日打卡",
-        "desc": "每天 5 分鐘的心理學互動問答，幫你們建立情感節奏，一天一天累積感情的厚度。"
+        "title": "姣忔棩鎵撳崱",
+        "desc": "姣忓ぉ 5 鍒嗛悩鐨勫績鐞嗗浜掑嫊鍟忕瓟锛屽公浣犲€戝缓绔嬫儏鎰熺瘈濂忥紝涓€澶╀竴澶╃疮绌嶆劅鎯呯殑鍘氬害銆?
       },
       "moodTracker": {
-        "title": "時光膠囊",
-        "desc": "把照片、語音、手寫信封存起來，設定未來的紀念日開啟——只屬於你們的記憶寶庫。"
+        "title": "鏅傚厜鑶犲泭",
+        "desc": "鎶婄収鐗囥€佽獮闊炽€佹墜瀵俊灏佸瓨璧蜂締锛岃ō瀹氭湭渚嗙殑绱€蹇垫棩闁嬪暉鈥斺€斿彧灞柤浣犲€戠殑瑷樻喍瀵跺韩銆?
       },
       "dreamWall": {
-        "title": "虛擬寵物",
-        "desc": "一起完成每日任務，養大一隻寵物。看著牠隨著你們的感情成長——這是最可愛的感情存款。"
+        "title": "铏涙摤瀵电墿",
+        "desc": "涓€璧峰畬鎴愭瘡鏃ヤ换鍕欙紝椁婂ぇ涓€闅诲鐗┿€傜湅钁楃墵闅ㄨ憲浣犲€戠殑鎰熸儏鎴愰暦鈥斺€旈€欐槸鏈€鍙剾鐨勬劅鎯呭瓨娆俱€?
       },
       "dailyGratitude": {
-        "title": "匿名社群",
-        "desc": "和全球情侶匿名分享故事、尋求建議、慶祝里程碑——你們不是一個人在經營感情。"
+        "title": "鍖垮悕绀剧兢",
+        "desc": "鍜屽叏鐞冩儏渚跺尶鍚嶅垎浜晠浜嬨€佸皨姹傚缓璀般€佹叾绁濋噷绋嬬鈥斺€斾綘鍊戜笉鏄竴鍊嬩汉鍦ㄧ稉鐕熸劅鎯呫€?
       },
       "petAdoption": {
-        "title": "共享日記",
-        "desc": "一起寫、一起回顧。記錄屬於你們的專屬故事，只有彼此看得見。"
+        "title": "鍏变韩鏃ヨ",
+        "desc": "涓€璧峰銆佷竴璧峰洖椤с€傝閷勫爆鏂间綘鍊戠殑灏堝爆鏁呬簨锛屽彧鏈夊郊姝ょ湅寰楄銆?
       },
       "timeCapsule": {
-        "title": "夢想牆",
-        "desc": "把你們的夢想、目標、心願釘在牆上——一起規劃未來的藍圖。"
+        "title": "澶㈡兂鐗?,
+        "desc": "鎶婁綘鍊戠殑澶㈡兂銆佺洰妯欍€佸績椤橀嚇鍦ㄧ墕涓娾€斺€斾竴璧疯鍔冩湭渚嗙殑钘嶅湒銆?
       }
     },
     "companions": {
-      "title": "Togthr 萌寵",
-      "subtitle": "一鍵發送萌系表情給 TA",
-      "cta": "即將上線到聊天",
+      "title": "Togthr 钀屽",
+      "subtitle": "涓€閸电櫦閫佽悓绯昏〃鎯呯郸 TA",
+      "cta": "鍗冲皣涓婄窔鍒拌亰澶?,
       "cards": {
         "feeding": {
-          "title": "餵食時間",
-          "desc": "給 TA 一顆心，看牠滿足的樣子"
+          "title": "椁甸鏅傞枔",
+          "desc": "绲?TA 涓€椤嗗績锛岀湅鐗犳豢瓒崇殑妯ｅ瓙"
         },
         "capsule": {
-          "title": "時光膠囊 · 挖寶",
-          "desc": "埋下一個，寵物幫你挖出來"
+          "title": "鏅傚厜鑶犲泭 路 鎸栧",
+          "desc": "鍩嬩笅涓€鍊嬶紝瀵电墿骞綘鎸栧嚭渚?
         },
         "symbiosis": {
-          "title": "共生形態",
-          "desc": "會反映你們關係的小生命"
+          "title": "鍏辩敓褰㈡厠",
+          "desc": "鏈冨弽鏄犱綘鍊戦棞淇傜殑灏忕敓鍛?
         },
         "blindbox": {
-          "title": "6+1 盲盒",
-          "desc": "首單特價",
-          "badge": "新"
+          "title": "6+1 鐩茬洅",
+          "desc": "棣栧柈鐗瑰児",
+          "badge": "鏂?
         },
         "nest": {
-          "title": "築巢",
-          "desc": "每條日記，都給你們的共同小窩添磚加瓦"
+          "title": "绡夊发",
+          "desc": "姣忔鏃ヨ锛岄兘绲︿綘鍊戠殑鍏卞悓灏忕娣荤鍔犵摝"
         },
         "soulmate": {
-          "title": "靈魂伴侶 AI",
-          "desc": "聊聊天，聽你說話"
+          "title": "闈堥瓊浼翠径 AI",
+          "desc": "鑱婅亰澶╋紝鑱戒綘瑾┍"
         },
         "treehole": {
-          "title": "樹洞",
-          "desc": "匿名留言，24h 自動消失"
+          "title": "妯规礊",
+          "desc": "鍖垮悕鐣欒█锛?4h 鑷嫊娑堝け"
         },
         "focus": {
-          "title": "專注模式",
-          "desc": "公仔陪你一起學習工作"
+          "title": "灏堟敞妯″紡",
+          "desc": "鍏粩闄綘涓€璧峰缈掑伐浣?
         }
       }
     }
   },
   "pricing": {
-    "title": "簡單透明的方案選擇",
-    "subtitle": "選一個適合你們的方案，沒有隱藏費用，隨時可取消。",
-    "monthly": "按月",
-    "quarterly": "按季",
-    "yearly": "按年",
-    "popular": "最熱門",
-    "save": "省 {discount}%",
+    "title": "绨″柈閫忔槑鐨勬柟妗堥伕鎿?,
+    "subtitle": "閬镐竴鍊嬮仼鍚堜綘鍊戠殑鏂规锛屾矑鏈夐毐钘忚不鐢紝闅ㄦ檪鍙彇娑堛€?,
+    "monthly": "鎸夋湀",
+    "quarterly": "鎸夊",
+    "yearly": "鎸夊勾",
+    "popular": "鏈€鐔遍杸",
+    "save": "鐪?{discount}%",
     "tiers": {
       "free": {
-        "name": "免費版",
+        "name": "鍏嶈不鐗?,
         "price": "HK$0",
         "features": [
-          "每日打卡",
-          "3 個時光膠囊",
-          "基礎寵物",
-          "社群存取"
+          "姣忔棩鎵撳崱",
+          "3 鍊嬫檪鍏夎啝鍥?,
+          "鍩虹瀵电墿",
+          "绀剧兢瀛樺彇"
         ]
       },
       "plus": {
         "name": "Togthr Plus",
         "price": "HK$43",
-        "period": "/月",
+        "period": "/鏈?,
         "features": [
-          "無限膠囊",
-          "進階寵物造型",
-          "私密相簿",
-          "關係洞察報告"
+          "鐒￠檺鑶犲泭",
+          "閫查殠瀵电墿閫犲瀷",
+          "绉佸瘑鐩哥翱",
+          "闂滀總娲炲療鍫卞憡"
         ]
       },
       "premium": {
-        "name": "We2 高級版",
+        "name": "We2 楂樼礆鐗?,
         "price": "HK$108",
-        "period": "/季",
+        "period": "/瀛?,
         "features": [
-          "Plus 所有功能",
-          "優先客服",
-          "自訂寵物名字",
-          "匯出回憶"
+          "Plus 鎵€鏈夊姛鑳?,
+          "鍎厛瀹㈡湇",
+          "鑷▊瀵电墿鍚嶅瓧",
+          "鍖嚭鍥炴喍"
         ]
       },
       "lifetime": {
-        "name": "We2 永久版",
+        "name": "We2 姘镐箙鐗?,
         "price": "HK$310",
-        "period": "/年",
+        "period": "/骞?,
         "features": [
-          "Premium 所有功能",
-          "終身更新",
-          "獨家內容",
-          "提前體驗新功能"
+          "Premium 鎵€鏈夊姛鑳?,
+          "绲傝韩鏇存柊",
+          "鐛ㄥ鍏у",
+          "鎻愬墠楂旈鏂板姛鑳?
         ]
       },
       "soulmate": {
-        "name": "Togthr 靈魂伴侶",
+        "name": "Togthr 闈堥瓊浼翠径",
         "price": "",
-        "period": "/月",
+        "period": "/鏈?,
         "features": [
-          "包含 Plus 全部功能",
-          "AI 語料風格",
-          "像 TA 一樣說話",
-          "智能回憶推薦",
-          "優先客服"
+          "鍖呭惈 Plus 鍏ㄩ儴鍔熻兘",
+          "AI 瑾炴枡棰ㄦ牸",
+          "鍍?TA 涓€妯ｈ瑭?,
+          "鏅鸿兘鍥炴喍鎺ㄨ枽",
+          "鍎厛瀹㈡湇"
         ]
       },
       "eternal": {
-        "name": "Togthr 至尊",
-        "tagline": "全部解鎖 + 獨家",
+        "name": "Togthr 鑷冲皧",
+        "tagline": "鍏ㄩ儴瑙ｉ帠 + 鐛ㄥ",
         "features": [
-          "Plus 所有功能",
-          "解鎖全部 50+ 造型",
-          "金色傳說寵物",
-          "優先客服",
-          "搶先體驗新功能"
+          "Plus 鎵€鏈夊姛鑳?,
+          "瑙ｉ帠鍏ㄩ儴 50+ 閫犲瀷",
+          "閲戣壊鍌宠瀵电墿",
+          "鍎厛瀹㈡湇",
+          "鎼跺厛楂旈鏂板姛鑳?
         ]
       }
     },
-    "cta": "立即加入",
-    "ctaFree": "免費開始",
-    "free": "免費",
+    "cta": "绔嬪嵆鍔犲叆",
+    "ctaFree": "鍏嶈不闁嬪",
+    "free": "鍏嶈不",
     "period": {
-      "monthly": "月",
-      "quarterly": "季",
-      "yearly": "年"
+      "monthly": "鏈?,
+      "quarterly": "瀛?,
+      "yearly": "骞?
     },
     "per": {
-      "monthly": "/月",
-      "quarterly": "/季",
-      "yearly": "/年"
+      "monthly": "/鏈?,
+      "quarterly": "/瀛?,
+      "yearly": "/骞?
     },
-    "promoPlaceholder": "輸入優惠碼",
-    "promoApply": "使用",
-    "promoHint": "優惠碼功能即將推出！",
-    "secure": "由 PayPal 安全支付",
-    "guarantee": "30 天無條件退款保證",
-    "new": "新上線",
+    "promoPlaceholder": "杓稿叆鍎儬纰?,
+    "promoApply": "浣跨敤",
+    "promoHint": "鍎儬纰煎姛鑳藉嵆灏囨帹鍑猴紒",
+    "secure": "鐢?PayPal 瀹夊叏鏀粯",
+    "guarantee": "30 澶╃劇姊濅欢閫€娆句繚璀?,
+    "new": "鏂颁笂绶?,
     "theater": {
-      "eyebrow": "揀你嘅旅程",
-      "headline": "解鎖一段同你一齊成長嘅生活",
-      "tagline": "三個方案，一個承諾：你解鎖嘅每一隻寵物都會永遠陪住你。",
-      "guarantee": "30 日無條件退款保證",
-      "secure": "由 PayPal · 支付寶 · AlipayHK 安全支付"
+      "eyebrow": "鎻€浣犲槄鏃呯▼",
+      "headline": "瑙ｉ帠涓€娈靛悓浣犱竴榻婃垚闀峰槄鐢熸椿",
+      "tagline": "涓夊€嬫柟妗堬紝涓€鍊嬫壙璜撅細浣犺В閹栧槄姣忎竴闅诲鐗╅兘鏈冩案閬犻櫔浣忎綘銆?,
+      "guarantee": "30 鏃ョ劇姊濅欢閫€娆句繚璀?,
+      "secure": "鐢?PayPal 路 鏀粯瀵?路 AlipayHK 瀹夊叏鏀粯"
     },
     "tierMeta": {
       "free": {
-        "eyebrow": "小種子",
-        "tagline": "由呢度開始",
-        "peeking": "小寵物匿埋咗"
+        "eyebrow": "灏忕ó瀛?,
+        "tagline": "鐢卞憿搴﹂枊濮?,
+        "peeking": "灏忓鐗╁尶鍩嬪挆"
       },
       "plus": {
-        "eyebrow": "同行者",
-        "tagline": "揀你鍾意嘅靈魂",
-        "peeking": "寵物好興奮"
+        "eyebrow": "鍚岃鑰?,
+        "tagline": "鎻€浣犻嵕鎰忓槄闈堥瓊",
+        "peeking": "瀵电墿濂借垐濂?
       },
       "eternal": {
-        "eyebrow": "星塵",
-        "tagline": "成為永恆",
-        "peeking": "寵物已昇華"
+        "eyebrow": "鏄熷〉",
+        "tagline": "鎴愮偤姘告亞",
+        "peeking": "瀵电墿宸叉槆鑿?
       }
     },
     "petMatrix": {
       "free": {
-        "label": "3 隻基礎小夥伴",
-        "sub": "小芽、小苗、新手"
+        "label": "3 闅诲熀绀庡皬澶ヤ即",
+        "sub": "灏忚娊銆佸皬鑻椼€佹柊鎵?
       },
       "plus": {
-        "label": "解鎖 50+ 造型",
-        "sub": "職業 · 節日 · 表情 · 奇幻"
+        "label": "瑙ｉ帠 50+ 閫犲瀷",
+        "sub": "鑱锋キ 路 绡€鏃?路 琛ㄦ儏 路 濂囧够"
       },
       "eternal": {
-        "label": "全部解鎖 + 獨家",
-        "sub": "包括金色傳說"
+        "label": "鍏ㄩ儴瑙ｉ帠 + 鐛ㄥ",
+        "sub": "鍖呮嫭閲戣壊鍌宠"
       }
     },
     "legendary": {
-      "label": "金色傳說",
+      "label": "閲戣壊鍌宠",
       "odds": "1 / 72",
-      "hint": "由至尊盲盒隨機掉落"
+      "hint": "鐢辫嚦灏婄洸鐩掗毃姗熸帀钀?
     },
     "countdown": {
-      "label": "萬聖節限定 · 搶先解鎖",
-      "endsIn": "倒數",
-      "days": "日",
-      "hours": "時",
-      "minutes": "分",
-      "seconds": "秒"
+      "label": "钀仏绡€闄愬畾 路 鎼跺厛瑙ｉ帠",
+      "endsIn": "鍊掓暩",
+      "days": "鏃?,
+      "hours": "鏅?,
+      "minutes": "鍒?,
+      "seconds": "绉?
     },
-    "ctaSubscribe": "即刻訂閱",
-    "ctaStartFree": "免費開始",
-    "ctaPopular": "揀同行者",
-    "ctaEternal": "成為至尊"
+    "ctaSubscribe": "鍗冲埢瑷傞柋",
+    "ctaStartFree": "鍏嶈不闁嬪",
+    "ctaPopular": "鎻€鍚岃鑰?,
+    "ctaEternal": "鎴愮偤鑷冲皧"
   },
   "faq": {
-    "title": "常見問題",
-    "subtitle": "你想知道的，都在這裡",
+    "title": "甯歌鍟忛",
+    "subtitle": "浣犳兂鐭ラ亾鐨勶紝閮藉湪閫欒！",
     "items": [
       {
-        "question": "Togthr 是什麼？對情侶有什麼幫助？",
-        "answer": "Togthr 是一款幫助情侶建立情感習慣的成長應用，由心理學家參與設計。透過每日打卡、時光膠囊和共同挑戰，讓感情在日常中慢慢升溫。"
+        "question": "Togthr 鏄粈楹硷紵灏嶆儏渚舵湁浠€楹煎公鍔╋紵",
+        "answer": "Togthr 鏄竴娆惧公鍔╂儏渚跺缓绔嬫儏鎰熺繏鎱ｇ殑鎴愰暦鎳夌敤锛岀敱蹇冪悊瀛稿鍙冭垏瑷▓銆傞€忛亷姣忔棩鎵撳崱銆佹檪鍏夎啝鍥婂拰鍏卞悓鎸戞埌锛岃畵鎰熸儏鍦ㄦ棩甯镐腑鎱㈡參鍗囨韩銆?
       },
       {
-        "question": "我的資料安全嗎？有隱私保障嗎？",
-        "answer": "當然有。我們對所有個人內容使用端到端加密。你們的私密瞬間、照片和對話只有你們兩人看得到，我們絕不會出售任何使用者資料。"
+        "question": "鎴戠殑璩囨枡瀹夊叏鍡庯紵鏈夐毐绉佷繚闅滃棊锛?,
+        "answer": "鐣剁劧鏈夈€傛垜鍊戝皪鎵€鏈夊€嬩汉鍏у浣跨敤绔埌绔姞瀵嗐€備綘鍊戠殑绉佸瘑鐬枔銆佺収鐗囧拰灏嶈┍鍙湁浣犲€戝叐浜虹湅寰楀埌锛屾垜鍊戠禃涓嶆渻鍑哄敭浠讳綍浣跨敤鑰呰硣鏂欍€?
       },
       {
-        "question": "遠距離關係能用 Togthr 嗎？",
-        "answer": "當然可以！Togthr 就是為所有形式的情侶關係設計的。時光膠囊和每日打卡尤其適合跨地域維持情感連結。"
+        "question": "閬犺窛闆㈤棞淇傝兘鐢?Togthr 鍡庯紵",
+        "answer": "鐣剁劧鍙互锛乀ogthr 灏辨槸鐐烘墍鏈夊舰寮忕殑鎯呬径闂滀總瑷▓鐨勩€傛檪鍏夎啝鍥婂拰姣忔棩鎵撳崱灏ゅ叾閬╁悎璺ㄥ湴鍩熺董鎸佹儏鎰熼€ｇ祼銆?
       },
       {
-        "question": "虛擬寵物怎麼玩？",
-        "answer": "你和另一半一起完成每日打卡和挑戰，寵物就會成長。牠是你們感情投入的可愛視覺化回饋，不同的寵物和造型會在里程碑時解鎖。"
+        "question": "铏涙摤瀵电墿鎬庨杭鐜╋紵",
+        "answer": "浣犲拰鍙︿竴鍗婁竴璧峰畬鎴愭瘡鏃ユ墦鍗″拰鎸戞埌锛屽鐗╁氨鏈冩垚闀枫€傜墵鏄綘鍊戞劅鎯呮姇鍏ョ殑鍙剾瑕栬鍖栧洖楗嬶紝涓嶅悓鐨勫鐗╁拰閫犲瀷鏈冨湪閲岀▼纰戞檪瑙ｉ帠銆?
       },
       {
-        "question": "支援哪些付款方式？",
-        "answer": "台灣和香港用戶可以使用 AlipayHK 和 PayPal 付款，其他地區支援 PayPal 和國際支付。所有交易皆為加密安全。"
+        "question": "鏀彺鍝簺浠樻鏂瑰紡锛?,
+        "answer": "鍙扮仯鍜岄娓敤鎴跺彲浠ヤ娇鐢?AlipayHK 鍜?PayPal 浠樻锛屽叾浠栧湴鍗€鏀彺 PayPal 鍜屽湅闅涙敮浠樸€傛墍鏈変氦鏄撶殕鐐哄姞瀵嗗畨鍏ㄣ€?
       },
       {
-        "question": "可以取消會員嗎？",
-        "answer": "可以，隨時取消。你的會員權益會持續到當前付費週期結束。新使用者還有 30 天無條件退款保證。"
+        "question": "鍙互鍙栨秷鏈冨摗鍡庯紵",
+        "answer": "鍙互锛岄毃鏅傚彇娑堛€備綘鐨勬渻鍝℃瑠鐩婃渻鎸佺簩鍒扮暥鍓嶄粯璨婚€辨湡绲愭潫銆傛柊浣跨敤鑰呴倓鏈?30 澶╃劇姊濅欢閫€娆句繚璀夈€?
       },
       {
-        "question": "怎麼和另一半連結？",
-        "answer": "註冊後，發送專屬邀請碼給你的另一半。對方接受後，兩個帳號就綁定在一起，你們可以一起打卡、存膠囊、養寵物。"
+        "question": "鎬庨杭鍜屽彟涓€鍗婇€ｇ祼锛?,
+        "answer": "瑷诲唺寰岋紝鐧奸€佸皥灞個璜嬬⒓绲︿綘鐨勫彟涓€鍗娿€傚皪鏂规帴鍙楀緦锛屽叐鍊嬪赋铏熷氨缍佸畾鍦ㄤ竴璧凤紝浣犲€戝彲浠ヤ竴璧锋墦鍗°€佸瓨鑶犲泭銆侀瀵电墿銆?
       },
       {
-        "question": "有社群功能嗎？",
-        "answer": "有的！我們的匿名社群讓你可以和全球情侶分享故事、尋求建議、慶祝里程碑。你可以選擇匿名發文或用情侶身分展示。"
+        "question": "鏈夌ぞ缇ゅ姛鑳藉棊锛?,
+        "answer": "鏈夌殑锛佹垜鍊戠殑鍖垮悕绀剧兢璁撲綘鍙互鍜屽叏鐞冩儏渚跺垎浜晠浜嬨€佸皨姹傚缓璀般€佹叾绁濋噷绋嬬銆備綘鍙互閬告搰鍖垮悕鐧兼枃鎴栫敤鎯呬径韬垎灞曠ず銆?
       }
     ]
   },
   "auth": {
-    "loginTitle": "歡迎回來",
-    "loginSubtitle": "登入後繼續你們的情感之旅",
-    "registerTitle": "開始你們的旅程",
-    "registerSubtitle": "註冊帳號，邀請你的另一半",
-    "emailLabel": "電子郵件",
+    "loginTitle": "姝¤繋鍥炰締",
+    "loginSubtitle": "鐧诲叆寰岀辜绾屼綘鍊戠殑鎯呮劅涔嬫梾",
+    "registerTitle": "闁嬪浣犲€戠殑鏃呯▼",
+    "registerSubtitle": "瑷诲唺甯宠櫉锛岄個璜嬩綘鐨勫彟涓€鍗?,
+    "emailLabel": "闆诲瓙閮典欢",
     "emailPlaceholder": "your@example.com",
-    "passwordLabel": "密碼",
-    "passwordPlaceholder": "輸入密碼",
-    "displayNameLabel": "暱稱",
-    "displayNamePlaceholder": "你的名字",
-    "loginButton": "登入",
-    "registerButton": "創建帳號",
-    "noAccount": "還沒有帳號？",
-    "hasAccount": "已有帳號？",
-    "registerLink": "立即註冊",
-    "loginLink": "去登入",
-    "forgotPassword": "忘記密碼？",
-    "resetPasswordTitle": "重設密碼",
-    "resetPasswordSubtitle": "輸入電子郵件以接收重設連結",
-    "resetPasswordButton": "發送重設連結",
-    "updatePasswordTitle": "設定新密碼",
-    "updatePasswordSubtitle": "輸入新的密碼",
-    "updatePasswordButton": "更新密碼",
-    "orContinueWith": "或使用以下方式繼續",
+    "passwordLabel": "瀵嗙⒓",
+    "passwordPlaceholder": "杓稿叆瀵嗙⒓",
+    "displayNameLabel": "鏆辩ū",
+    "displayNamePlaceholder": "浣犵殑鍚嶅瓧",
+    "loginButton": "鐧诲叆",
+    "registerButton": "鍓靛缓甯宠櫉",
+    "noAccount": "閭勬矑鏈夊赋铏燂紵",
+    "hasAccount": "宸叉湁甯宠櫉锛?,
+    "registerLink": "绔嬪嵆瑷诲唺",
+    "loginLink": "鍘荤櫥鍏?,
+    "forgotPassword": "蹇樿瀵嗙⒓锛?,
+    "resetPasswordTitle": "閲嶈ō瀵嗙⒓",
+    "resetPasswordSubtitle": "杓稿叆闆诲瓙閮典欢浠ユ帴鏀堕噸瑷€ｇ祼",
+    "resetPasswordButton": "鐧奸€侀噸瑷€ｇ祼",
+    "updatePasswordTitle": "瑷畾鏂板瘑纰?,
+    "updatePasswordSubtitle": "杓稿叆鏂扮殑瀵嗙⒓",
+    "updatePasswordButton": "鏇存柊瀵嗙⒓",
+    "orContinueWith": "鎴栦娇鐢ㄤ互涓嬫柟寮忕辜绾?,
     "google": "Google",
     "github": "GitHub",
-    "checkEmail": "請查看電子郵件中的確認連結。",
-    "passwordUpdated": "密碼已更新，現在可以登入了。",
-    "signOut": "登出",
-    "dashboard": "儀表板"
+    "checkEmail": "璜嬫煡鐪嬮浕瀛愰兊浠朵腑鐨勭⒑瑾嶉€ｇ祼銆?,
+    "passwordUpdated": "瀵嗙⒓宸叉洿鏂帮紝鐝惧湪鍙互鐧诲叆浜嗐€?,
+    "signOut": "鐧诲嚭",
+    "dashboard": "鍎€琛ㄦ澘"
   },
   "footer": {
-    "privacy": "隱私政策",
-    "terms": "服務條款",
-    "cookie": "Cookie 設定",
-    "help": "幫助中心",
-    "contact": "聯絡我們",
-    "copyright": "© {year} Togthr. 保留所有權利。"
+    "privacy": "闅辩鏀跨瓥",
+    "terms": "鏈嶅嫏姊濇",
+    "cookie": "Cookie 瑷畾",
+    "help": "骞姪涓績",
+    "contact": "鑱怠鎴戝€?,
+    "copyright": "漏 {year} Togthr. 淇濈暀鎵€鏈夋瑠鍒┿€?
   },
   "notFound": {
-    "title": "走丟了？",
-    "description": "這個頁面不知道跑哪去了。你的寵物也在找它。",
-    "backHome": "回家",
-    "feedPet": "餵寵物",
-    "sayHi": "打個招呼",
-    "pixelHint": "像素時刻"
+    "title": "璧颁笩浜嗭紵",
+    "description": "閫欏€嬮爜闈笉鐭ラ亾璺戝摢鍘讳簡銆備綘鐨勫鐗╀篃鍦ㄦ壘瀹冦€?,
+    "backHome": "鍥炲",
+    "feedPet": "椁靛鐗?,
+    "sayHi": "鎵撳€嬫嫑鍛?,
+    "pixelHint": "鍍忕礌鏅傚埢"
   },
   "payment": {
-    "title": "完成購買",
-    "subtitle": "選擇付款方式，解鎖 We2 Plus",
-    "periodLabel": "計費週期",
-    "monthly": "按月",
-    "quarterly": "按季",
-    "yearly": "按年",
-    "priceLabel": "合計",
-    "gatewayLabel": "付款方式",
+    "title": "瀹屾垚璩艰卜",
+    "subtitle": "閬告搰浠樻鏂瑰紡锛岃В閹?We2 Plus",
+    "periodLabel": "瑷堣不閫辨湡",
+    "monthly": "鎸夋湀",
+    "quarterly": "鎸夊",
+    "yearly": "鎸夊勾",
+    "priceLabel": "鍚堣▓",
+    "gatewayLabel": "浠樻鏂瑰紡",
     "paypal": "PayPal",
-    "alipayCn": "Alipay（中國大陸）",
-    "alipayHk": "AlipayHK（香港 / 台灣）",
-    "payButton": "使用 {gateway} 付款",
-    "processing": "正在處理付款…",
+    "alipayCn": "Alipay锛堜腑鍦嬪ぇ闄革級",
+    "alipayHk": "AlipayHK锛堥娓?/ 鍙扮仯锛?,
+    "payButton": "浣跨敤 {gateway} 浠樻",
+    "processing": "姝ｅ湪铏曠悊浠樻鈥?,
     "success": {
-      "title": "付款成功！",
-      "message": "感謝訂閱 We2 Plus。正在重新導向至儀表板…"
+      "title": "浠樻鎴愬姛锛?,
+      "message": "鎰熻瑵瑷傞柋 We2 Plus銆傛鍦ㄩ噸鏂板皫鍚戣嚦鍎€琛ㄦ澘鈥?
     },
     "error": {
-      "title": "付款失敗",
-      "message": "付款過程中發生問題，請再試一次。",
-      "retry": "重新付款"
+      "title": "浠樻澶辨晽",
+      "message": "浠樻閬庣▼涓櫦鐢熷晱椤岋紝璜嬪啀瑭︿竴娆°€?,
+      "retry": "閲嶆柊浠樻"
     },
     "cancel": {
-      "title": "付款已取消",
-      "message": "您已取消付款，隨時可以重新嘗試。"
+      "title": "浠樻宸插彇娑?,
+      "message": "鎮ㄥ凡鍙栨秷浠樻锛岄毃鏅傚彲浠ラ噸鏂板槜瑭︺€?
     }
   },
   "upload": {
-    "dragOrClick": "拖曳檔案到此處，或點擊選擇檔案",
-    "dropHere": "釋放檔案以上傳",
-    "constraints": "單檔案最大 {maxSize}MB，最多 {maxFiles} 個檔案",
-    "statusSuccess": "上傳成功",
-    "remove": "移除檔案",
-    "errorTooLarge": "檔案超過 {maxSize}MB 限制",
-    "errorType": "不支援的檔案類型。允許：{types}",
-    "errorMaxFiles": "最多允許 {max} 個檔案",
-    "errorUpload": "上傳失敗，請重試"
+    "dragOrClick": "鎷栨洺妾旀鍒版铏曪紝鎴栭粸鎿婇伕鎿囨獢妗?,
+    "dropHere": "閲嬫斁妾旀浠ヤ笂鍌?,
+    "constraints": "鍠獢妗堟渶澶?{maxSize}MB锛屾渶澶?{maxFiles} 鍊嬫獢妗?,
+    "statusSuccess": "涓婂偝鎴愬姛",
+    "remove": "绉婚櫎妾旀",
+    "errorTooLarge": "妾旀瓒呴亷 {maxSize}MB 闄愬埗",
+    "errorType": "涓嶆敮鎻寸殑妾旀椤炲瀷銆傚厑瑷憋細{types}",
+    "errorMaxFiles": "鏈€澶氬厑瑷?{max} 鍊嬫獢妗?,
+    "errorUpload": "涓婂偝澶辨晽锛岃珛閲嶈│"
   },
   "features": {
     "dailyCheckIn": {
-      "longDesc": "以一個深思熟慮的問題開始每一天，旨在加深你們的情感連結。私下回答，然後與伴侶揭示並討論。",
-      "step1": "每天早上接收每日提問",
-      "step2": "在查看伴侶的回覆前私下回答",
-      "step3": "同時揭示雙方的答案",
-      "step4": "討論並為你們的虛擬寵物賺取愛心點數"
+      "longDesc": "浠ヤ竴鍊嬫繁鎬濈啛鎱殑鍟忛闁嬪姣忎竴澶╋紝鏃ㄥ湪鍔犳繁浣犲€戠殑鎯呮劅閫ｇ祼銆傜涓嬪洖绛旓紝鐒跺緦鑸囦即渚舵彮绀轰甫瑷庤珫銆?,
+      "step1": "姣忓ぉ鏃╀笂鎺ユ敹姣忔棩鎻愬晱",
+      "step2": "鍦ㄦ煡鐪嬩即渚剁殑鍥炶鍓嶇涓嬪洖绛?,
+      "step3": "鍚屾檪鎻ず闆欐柟鐨勭瓟妗?,
+      "step4": "瑷庤珫涓︾偤浣犲€戠殑铏涙摤瀵电墿璩哄彇鎰涘績榛炴暩"
     },
     "timeCapsules": {
-      "longDesc": "創建包含照片、語音備忘錄和情書的數位時光膠囊。封存它們並設定未來的開啟日期——非常適合紀念日或驚喜。",
-      "step1": "用照片、筆記或語音備忘錄創建膠囊",
-      "step2": "設定未來的開啟日期（紀念日、生日等）",
-      "step3": "雙方都可以在膠囊封存前新增內容",
-      "step4": "在該一起打開時收到通知"
+      "longDesc": "鍓靛缓鍖呭惈鐓х墖銆佽獮闊冲倷蹇橀寗鍜屾儏鏇哥殑鏁镐綅鏅傚厜鑶犲泭銆傚皝瀛樺畠鍊戜甫瑷畾鏈締鐨勯枊鍟熸棩鏈熲€斺€旈潪甯搁仼鍚堢磤蹇垫棩鎴栭鍠溿€?,
+      "step1": "鐢ㄧ収鐗囥€佺瓎瑷樻垨瑾為煶鍌欏繕閷勫壍寤鸿啝鍥?,
+      "step2": "瑷畾鏈締鐨勯枊鍟熸棩鏈燂紙绱€蹇垫棩銆佺敓鏃ョ瓑锛?,
+      "step3": "闆欐柟閮藉彲浠ュ湪鑶犲泭灏佸瓨鍓嶆柊澧炲収瀹?,
+      "step4": "鍦ㄨ┎涓€璧锋墦闁嬫檪鏀跺埌閫氱煡"
     },
     "virtualPet": {
-      "longDesc": "認識你們共養的虛擬寵物——一個隨著你們關係成長的可愛夥伴。完成每日打卡和挑戰來賺取愛心點數，解鎖新造型。",
-      "step1": "一起選擇並為你們的寵物命名",
-      "step2": "透過完成每日打卡來賺取愛心點數",
-      "step3": "組隊餵養、玩耍和照顧你們的寵物",
-      "step4": "在關係里程碑解鎖新造型和進化"
+      "longDesc": "瑾嶈瓨浣犲€戝叡椁婄殑铏涙摤瀵电墿鈥斺€斾竴鍊嬮毃钁椾綘鍊戦棞淇傛垚闀风殑鍙剾澶ヤ即銆傚畬鎴愭瘡鏃ユ墦鍗″拰鎸戞埌渚嗚澈鍙栨剾蹇冮粸鏁革紝瑙ｉ帠鏂伴€犲瀷銆?,
+      "step1": "涓€璧烽伕鎿囦甫鐐轰綘鍊戠殑瀵电墿鍛藉悕",
+      "step2": "閫忛亷瀹屾垚姣忔棩鎵撳崱渚嗚澈鍙栨剾蹇冮粸鏁?,
+      "step3": "绲勯殜椁甸銆佺帺鑰嶅拰鐓ч¨浣犲€戠殑瀵电墿",
+      "step4": "鍦ㄩ棞淇傞噷绋嬬瑙ｉ帠鏂伴€犲瀷鍜岄€插寲"
     },
     "privateCommunity": {
-      "longDesc": "加入一個來自世界各地的情侶匿名互助社群。分享你們的故事、尋求建議、慶祝里程碑。",
-      "step1": "建立你們的匿名情侶檔案",
-      "step2": "發布故事、問題或里程碑",
-      "step3": "與其他情侶的貼文互動",
-      "step4": "在一個充滿支持且受管理的空間中建立聯繫"
+      "longDesc": "鍔犲叆涓€鍊嬩締鑷笘鐣屽悇鍦扮殑鎯呬径鍖垮悕浜掑姪绀剧兢銆傚垎浜綘鍊戠殑鏁呬簨銆佸皨姹傚缓璀般€佹叾绁濋噷绋嬬銆?,
+      "step1": "寤虹珛浣犲€戠殑鍖垮悕鎯呬径妾旀",
+      "step2": "鐧煎竷鏁呬簨銆佸晱椤屾垨閲岀▼纰?,
+      "step3": "鑸囧叾浠栨儏渚剁殑璨兼枃浜掑嫊",
+      "step4": "鍦ㄤ竴鍊嬪厖婊挎敮鎸佷笖鍙楃鐞嗙殑绌洪枔涓缓绔嬭伅绻?
     },
     "sharedJournal": {
-      "longDesc": "一起書寫你們的故事——名副其實。一個共享日記，雙方都可以新增條目，並建立你們關係中最珍貴時刻的時間軸。",
-      "step1": "隨時建立新的日記條目",
-      "step2": "雙方都可以檢視、編輯和留言",
-      "step3": "為條目新增照片和位置標籤",
-      "step4": "一起瀏覽你們的關係時間軸"
+      "longDesc": "涓€璧锋浉瀵綘鍊戠殑鏁呬簨鈥斺€斿悕鍓叾瀵︺€備竴鍊嬪叡浜棩瑷橈紝闆欐柟閮藉彲浠ユ柊澧炴鐩紝涓﹀缓绔嬩綘鍊戦棞淇備腑鏈€鐝嶈泊鏅傚埢鐨勬檪闁撹桓銆?,
+      "step1": "闅ㄦ檪寤虹珛鏂扮殑鏃ヨ姊濈洰",
+      "step2": "闆欐柟閮藉彲浠ユ瑕栥€佺法杓拰鐣欒█",
+      "step3": "鐐烘鐩柊澧炵収鐗囧拰浣嶇疆妯欑堡",
+      "step4": "涓€璧风€忚浣犲€戠殑闂滀總鏅傞枔杌?
     },
     "dreamWall": {
-      "longDesc": "將你們共享的夢想、目標和願望清單釘在視覺化看板上。一起規劃未來，並在實現時打勾。",
-      "step1": "將夢想和目標新增到你們的共享看板",
-      "step2": "按類別整理（旅行、家居、冒險等）",
-      "step3": "設定目標日期並一起追蹤進度",
-      "step4": "用特殊動畫慶祝每一項成就"
+      "longDesc": "灏囦綘鍊戝叡浜殑澶㈡兂銆佺洰妯欏拰椤樻湜娓呭柈閲樺湪瑕栬鍖栫湅鏉夸笂銆備竴璧疯鍔冩湭渚嗭紝涓﹀湪瀵︾従鏅傛墦鍕俱€?,
+      "step1": "灏囧あ鎯冲拰鐩鏂板鍒颁綘鍊戠殑鍏变韩鐪嬫澘",
+      "step2": "鎸夐鍒ユ暣鐞嗭紙鏃呰銆佸灞呫€佸啋闅瓑锛?,
+      "step3": "瑷畾鐩鏃ユ湡涓︿竴璧疯拷韫ら€插害",
+      "step4": "鐢ㄧ壒娈婂嫊鐣叾绁濇瘡涓€闋呮垚灏?
     },
-    "backToFeatures": "返回功能",
-    "howItWorks": "運作方式",
-    "tryItOut": "試一試"
+    "backToFeatures": "杩斿洖鍔熻兘",
+    "howItWorks": "閬嬩綔鏂瑰紡",
+    "tryItOut": "瑭︿竴瑭?
   },
   "demo": {
     "dailyCheckIn": {
-      "title": "今日嘅問題",
-      "placeholder": "分享你嘅心情...",
-      "save": "儲存答案",
-      "saved": "答案已儲存！",
-      "nextQuestion": "下一題 →",
-      "history": "你嘅答案",
-      "empty": "開始你嘅第一次打卡"
+      "title": "浠婃棩鍢呭晱椤?,
+      "placeholder": "鍒嗕韩浣犲槄蹇冩儏...",
+      "save": "鍎插瓨绛旀",
+      "saved": "绛旀宸插劜瀛橈紒",
+      "nextQuestion": "涓嬩竴椤?鈫?,
+      "history": "浣犲槄绛旀",
+      "empty": "闁嬪浣犲槄绗竴娆℃墦鍗?
     },
     "timeCapsules": {
-      "title": "回憶膠囊",
-      "titlePlaceholder": "為我哋嘅將來起個名...",
-      "contentPlaceholder": "寫低呢個時刻...",
-      "lockCapsule": "封存膠囊 🔒",
-      "empty": "建立你嘅第一個回憶膠囊",
-      "unlocked": "已解鎖",
-      "daysLeft": "仲有 {days} 日",
-      "noContent": "（未有內容）"
+      "title": "鍥炴喍鑶犲泭",
+      "titlePlaceholder": "鐐烘垜鍝嬪槄灏囦締璧峰€嬪悕...",
+      "contentPlaceholder": "瀵綆鍛㈠€嬫檪鍒?..",
+      "lockCapsule": "灏佸瓨鑶犲泭 馃敀",
+      "empty": "寤虹珛浣犲槄绗竴鍊嬪洖鎲惰啝鍥?,
+      "unlocked": "宸茶В閹?,
+      "daysLeft": "浠叉湁 {days} 鏃?,
+      "noContent": "锛堟湭鏈夊収瀹癸級"
     },
     "virtualPet": {
-      "title": "你嘅寵物",
-      "petName": "小月",
-      "virtualCompanion": "虛擬同伴",
-      "level": "等級 {level}",
-      "hunger": "飽肚度",
-      "happiness": "開心度",
-      "intimacy": "親密度",
-      "feed": "餵食",
-      "play": "玩耍",
-      "cuddle": "攬吓"
+      "title": "浣犲槄瀵电墿",
+      "petName": "灏忔湀",
+      "virtualCompanion": "铏涙摤鍚屼即",
+      "level": "绛夌礆 {level}",
+      "hunger": "椋借倸搴?,
+      "happiness": "闁嬪績搴?,
+      "intimacy": "瑕瘑搴?,
+      "feed": "椁甸",
+      "play": "鐜╄€?,
+      "cuddle": "鏀悡"
     },
     "privateCommunity": {
-      "title": "社群故事"
+      "title": "绀剧兢鏁呬簨"
     },
     "sharedJournal": {
-      "title": "共享日記",
-      "placeholder": "寫低今日嘅日記...",
-      "writeEntry": "寫一篇",
-      "you": "你",
-      "partner": "另一半"
+      "title": "鍏变韩鏃ヨ",
+      "placeholder": "瀵綆浠婃棩鍢呮棩瑷?..",
+      "writeEntry": "瀵竴绡?,
+      "you": "浣?,
+      "partner": "鍙︿竴鍗?
     },
     "dreamWall": {
-      "title": "夢想牆",
-      "placeholder": "我哋下一個大夢想...",
-      "pin": "釘上",
-      "empty": "釘低你哋嘅第一個夢想"
+      "title": "澶㈡兂鐗?,
+      "placeholder": "鎴戝搵涓嬩竴鍊嬪ぇ澶㈡兂...",
+      "pin": "閲樹笂",
+      "empty": "閲樹綆浣犲搵鍢呯涓€鍊嬪あ鎯?
     }
   },
   "legal": {
-    "lastUpdated": "最後更新：2026 年 6 月 1 日",
+    "lastUpdated": "鏈€寰屾洿鏂帮細2026 骞?6 鏈?1 鏃?,
     "privacy": {
-      "title": "私隱政策",
-      "subtitle": "你嘅私隱好重要。呢頁會講解我哋收集咩資料、點樣用，同埋你對自己資料擁有嘅權利。",
+      "title": "绉侀毐鏀跨瓥",
+      "subtitle": "浣犲槄绉侀毐濂介噸瑕併€傚憿闋佹渻璎涜В鎴戝搵鏀堕泦鍜╄硣鏂欍€侀粸妯ｇ敤锛屽悓鍩嬩綘灏嶈嚜宸辫硣鏂欐搧鏈夊槄娆婂埄銆?,
       "sections": [
         {
           "heading": "1. Information We Collect",
@@ -502,17 +502,17 @@
         },
         {
           "heading": "4. Your Rights",
-          "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@we2.com. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
+          "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@togthr.life. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
         },
         {
           "heading": "5. Contact",
-          "body": "For any privacy-related question, email privacy@we2.com. We respond within 7 business days."
+          "body": "For any privacy-related question, email privacy@togthr.life. We respond within 7 business days."
         }
       ]
     },
     "terms": {
-      "title": "使用條款",
-      "subtitle": "使用 Togthr 即代表你同意以下條款。請仔細閱讀——佢哋保護你，亦保護我哋。",
+      "title": "浣跨敤姊濇",
+      "subtitle": "浣跨敤 Togthr 鍗充唬琛ㄤ綘鍚屾剰浠ヤ笅姊濇銆傝珛浠旂窗闁辫畝鈥斺€斾舰鍝嬩繚璀蜂綘锛屼害淇濊鎴戝搵銆?,
       "sections": [
         {
           "heading": "1. Eligibility",
@@ -528,7 +528,7 @@
         },
         {
           "heading": "4. Refund Policy",
-          "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@we2.com for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
+          "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@togthr.life for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
         },
         {
           "heading": "5. Acceptable Use",
@@ -545,8 +545,8 @@
       ]
     },
     "cookies": {
-      "title": "Cookie 政策",
-      "subtitle": "我哋用最少嘅 Cookie 嚟維持 Togthr 順暢運作。呢度會列明我哋設定咗咩 Cookie 同埋點解。",
+      "title": "Cookie 鏀跨瓥",
+      "subtitle": "鎴戝搵鐢ㄦ渶灏戝槄 Cookie 鍤熺董鎸?Togthr 闋嗘殺閬嬩綔銆傚憿搴︽渻鍒楁槑鎴戝搵瑷畾鍜楀挬 Cookie 鍚屽煁榛炶В銆?,
       "sections": [
         {
           "heading": "1. Essential Cookies",
@@ -567,12 +567,12 @@
       ]
     },
     "help": {
-      "title": "幫助中心",
-      "subtitle": "搵到最常見問題嘅快速解答。搵唔到你要嘅嘢？聯絡我哋，我哋好樂意幫手。",
+      "title": "骞姪涓績",
+      "subtitle": "鎼靛埌鏈€甯歌鍟忛鍢呭揩閫熻В绛斻€傛惖鍞斿埌浣犺鍢呭槩锛熻伅绲℃垜鍝嬶紝鎴戝搵濂芥▊鎰忓公鎵嬨€?,
       "sections": [
         {
           "heading": "Getting Started",
-          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional — every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
+          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional 鈥?every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
         },
         {
           "heading": "Subscription & Billing",
@@ -584,326 +584,327 @@
         },
         {
           "heading": "Report a Bug",
-          "body": "Found something broken? Email bugs@we2.com with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
+          "body": "Found something broken? Email bugs@togthr.life with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
         },
         {
           "heading": "International Support",
-          "body": "Togthr is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
+          "body": "Togthr is available in 8 languages: English, 绠€浣撲腑鏂? 绻侀珨涓枃, 鏃ユ湰瑾? 頃滉淡鞏? Espa帽ol, Fran莽ais, and Deutsch. Support email replies are in English by default 鈥?let us know if you'd prefer another language and we will do our best."
         }
       ]
     },
     "contact": {
-      "title": "聯絡我哋",
-      "subtitle": "我哋好樂意聽到你嘅聲音。揀最適合你問題嘅渠道就得。",
+      "title": "鑱怠鎴戝搵",
+      "subtitle": "鎴戝搵濂芥▊鎰忚伣鍒颁綘鍢呰伈闊炽€傛弨鏈€閬╁悎浣犲晱椤屽槄娓犻亾灏卞緱銆?,
       "sections": [
         {
           "heading": "General Support",
-          "body": "Questions, feedback, or feature requests. Email support@we2.com. We typically respond within 24 hours on business days."
+          "body": "Questions, feedback, or feature requests. Email support@togthr.life. We typically respond within 24 hours on business days."
         },
         {
           "heading": "Privacy & Data",
-          "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@we2.com. We respond within 7 business days."
+          "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@togthr.life. We respond within 7 business days."
         },
         {
           "heading": "Bug Reports",
-          "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@we2.com with your device model and OS version. We respond within 48 hours."
+          "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@togthr.life with your device model and OS version. We respond within 48 hours."
         }
       ]
     }
   },
   "store": {
-    "title": "Togthr 萌寵盲盒",
-    "subtitle": "6+1 神秘盲盒，1/72 概率開出隱藏金色款",
-    "firstOrder": "首單價",
-    "regular": "原價",
-    "save": "立減 50%",
-    "blindboxTitle": "Togthr 萌寵 — 6+1 神秘盲盒",
-    "blindboxDesc": "每盒隨機一款萌寵皮膚：程序員、醫生、太空人、廚師、消防員、警察... 1/72 概率開出傳說級金色款。",
-    "ctaBuy": "立即購買",
-    "ctaTrySoulmate": "含 1 個月 Soulmate AI 試用",
-    "odds": "概率",
+    "title": "Togthr 钀屽鐩茬洅",
+    "subtitle": "6+1 绁炵鐩茬洅锛?/72 姒傜巼闁嬪嚭闅辫棌閲戣壊娆?,
+    "firstOrder": "棣栧柈鍍?,
+    "regular": "鍘熷児",
+    "save": "绔嬫笡 50%",
+    "blindboxTitle": "Togthr 钀屽 鈥?6+1 绁炵鐩茬洅",
+    "blindboxDesc": "姣忕洅闅ㄦ涓€娆捐悓瀵电毊鑶氾細绋嬪簭鍝°€侀啱鐢熴€佸お绌轰汉銆佸粴甯€佹秷闃插摗銆佽瀵?.. 1/72 姒傜巼闁嬪嚭鍌宠绱氶噾鑹叉銆?,
+    "ctaBuy": "绔嬪嵆璩艰卜",
+    "ctaTrySoulmate": "鍚?1 鍊嬫湀 Soulmate AI 瑭︾敤",
+    "odds": "姒傜巼",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
-    "perma": "永久解鎖",
-    "checkoutNote": "PayPal 測試模式 · 首單 5 折",
-    "checkoutNote2": "無訂閱 · 一次購買 · 永久擁有",
-    "successTitle": "下單成功！",
-    "successSubtitle": "你的 Togthr 萌寵正在路上。PayPal 正在處理你的支付 — 稍後會收到郵件回執。",
-    "successNote": "皮膚會在 PayPal 確認支付後幾分鐘內自動解鎖。",
-    "successHint": "如果 10 分鐘內皮膚未出現，請聯繫我們並提供訂單號。",
-    "secureNotice": "支付由 PayPal 保障，我們不會看到你的銀行卡資訊。"
+    "perma": "姘镐箙瑙ｉ帠",
+    "checkoutNote": "PayPal 娓│妯″紡 路 棣栧柈 5 鎶?,
+    "checkoutNote2": "鐒¤▊闁?路 涓€娆¤臣璨?路 姘镐箙鎿佹湁",
+    "successTitle": "涓嬪柈鎴愬姛锛?,
+    "successSubtitle": "浣犵殑 Togthr 钀屽姝ｅ湪璺笂銆侾ayPal 姝ｅ湪铏曠悊浣犵殑鏀粯 鈥?绋嶅緦鏈冩敹鍒伴兊浠跺洖鍩枫€?,
+    "successNote": "鐨啔鏈冨湪 PayPal 纰鸿獚鏀粯寰屽咕鍒嗛悩鍏ц嚜鍕曡В閹栥€?,
+    "successHint": "濡傛灉 10 鍒嗛悩鍏х毊鑶氭湭鍑虹従锛岃珛鑱公鎴戝€戜甫鎻愪緵瑷傚柈铏熴€?,
+    "secureNotice": "鏀粯鐢?PayPal 淇濋殰锛屾垜鍊戜笉鏈冪湅鍒颁綘鐨勯妧琛屽崱璩囪▕銆?
   },
   "daily": {
-    "title": "每日餵食",
-    "q": "今天，TA 在你身邊嗎？",
-    "withBtn": "💕 在一起",
-    "apartBtn": "🌙 異地",
-    "hunger": "飽腹度",
-    "streak": "🔥 連續 {n} 天投餵",
-    "bubbleIdle": "嘿嘿，等我一下~",
-    "bubbleWith": "一起呀！",
-    "bubbleApart": "想 TA 了...",
-    "bubbleFeed": "餵我！",
-    "bubbleFull": "吃飽啦！",
-    "bubbleMore": "嗯嗯~ 還想要！",
-    "again": "再來一次",
-    "dragHint": "拖到寵物嘴邊",
-    "streakDays": "連續 {n} 天打卡",
-    "treasureTitle": "寶箱出現！🎁",
-    "treasureDesc": "連續 7 天打卡，寵物為你挖出一個神秘寶箱~"
+    "title": "姣忔棩椁甸",
+    "q": "浠婂ぉ锛孴A 鍦ㄤ綘韬倞鍡庯紵",
+    "withBtn": "馃挄 鍦ㄤ竴璧?,
+    "apartBtn": "馃寵 鐣板湴",
+    "hunger": "椋借吂搴?,
+    "streak": "馃敟 閫ｇ簩 {n} 澶╂姇椁?,
+    "bubbleIdle": "鍢垮樋锛岀瓑鎴戜竴涓媬",
+    "bubbleWith": "涓€璧峰憖锛?,
+    "bubbleApart": "鎯?TA 浜?..",
+    "bubbleFeed": "椁垫垜锛?,
+    "bubbleFull": "鍚冮＝鍟︼紒",
+    "bubbleMore": "鍡棷~ 閭勬兂瑕侊紒",
+    "again": "鍐嶄締涓€娆?,
+    "dragHint": "鎷栧埌瀵电墿鍢撮倞",
+    "streakDays": "閫ｇ簩 {n} 澶╂墦鍗?,
+    "treasureTitle": "瀵剁鍑虹従锛侌煄?,
+    "treasureDesc": "閫ｇ簩 7 澶╂墦鍗★紝瀵电墿鐐轰綘鎸栧嚭涓€鍊嬬绉樺绠眫"
   },
   "capsule": {
-    "title": "時光膠囊 · 挖寶",
-    "subtitle": "點擊埋著的格子，寵物走過去幫你挖開。",
-    "buried": "待挖",
-    "opened": "已開",
-    "openedOn": "埋藏於:",
-    "close": "收下啦",
-    "cancel": "取消",
-    "write": "埋一個膠囊",
-    "writeTitle": "膠囊標題",
-    "writePlaceholder": "寫給未來的你...",
-    "save": "埋下"
+    "title": "鏅傚厜鑶犲泭 路 鎸栧",
+    "subtitle": "榛炴搳鍩嬭憲鐨勬牸瀛愶紝瀵电墿璧伴亷鍘诲公浣犳寲闁嬨€?,
+    "buried": "寰呮寲",
+    "opened": "宸查枊",
+    "openedOn": "鍩嬭棌鏂?",
+    "close": "鏀朵笅鍟?,
+    "cancel": "鍙栨秷",
+    "write": "鍩嬩竴鍊嬭啝鍥?,
+    "writeTitle": "鑶犲泭妯欓",
+    "writePlaceholder": "瀵郸鏈締鐨勪綘...",
+    "save": "鍩嬩笅"
   },
   "pet": {
-    "title": "我的寵物",
-    "subtitle": "寵物會反映你們的關係。挑一個心情看它變化。",
-    "pickMood": "今天 TA 心情如何？",
-    "status": "Togthr 現在",
-    "day": "在一起 {n} 天",
+    "title": "鎴戠殑瀵电墿",
+    "subtitle": "瀵电墿鏈冨弽鏄犱綘鍊戠殑闂滀總銆傛寫涓€鍊嬪績鎯呯湅瀹冭畩鍖栥€?,
+    "pickMood": "浠婂ぉ TA 蹇冩儏濡備綍锛?,
+    "status": "Togthr 鐝惧湪",
+    "day": "鍦ㄤ竴璧?{n} 澶?,
     "mood": {
-      "happy": "甜蜜",
-      "sad": "吵架",
-      "thinking": "思考",
-      "sleeping": "睡覺",
-      "sweet": "甜蜜",
-      "fight": "嗌交",
-      "think": "諗緊嘢",
-      "sleep": "瞓覺"
+      "happy": "鐢滆湝",
+      "sad": "鍚垫灦",
+      "thinking": "鎬濊€?,
+      "sleeping": "鐫¤",
+      "sweet": "鐢滆湝",
+      "fight": "鍡屼氦",
+      "think": "璜楃穵鍢?,
+      "sleep": "鐬撹"
     },
     "rarity": {
-      "common": "普通",
-      "rare": "稀有",
-      "epic": "史詩",
-      "legendary": "傳說"
+      "common": "鏅€?,
+      "rare": "绋€鏈?,
+      "epic": "鍙茶┅",
+      "legendary": "鍌宠"
     },
     "series": {
-      "basic": "基礎",
-      "career": "職業",
-      "festival": "節日",
-      "emotion": "表情",
-      "fantasy": "奇幻",
-      "legendary": "傳說"
+      "basic": "鍩虹",
+      "career": "鑱锋キ",
+      "festival": "绡€鏃?,
+      "emotion": "琛ㄦ儏",
+      "fantasy": "濂囧够",
+      "legendary": "鍌宠"
     },
     "tier": {
-      "free": "免費版",
+      "free": "鍏嶈不鐗?,
       "plus": "Togthr Plus",
-      "eternal": "Togthr 至尊"
+      "eternal": "Togthr 鑷冲皧"
     },
     "card": {
-      "current": "使用中"
+      "current": "浣跨敤涓?
     },
     "altar": {
-      "title": "召喚你嘅靈魂同伴",
-      "back": "返回",
-      "close": "關閉",
-      "hint": "撳未鎖嘅寵物可以預覽；撳鎖住嘅睇下點樣解鎖。",
-      "summon": "召喚",
-      "summoned": "已經到咗",
-      "current": "用緊"
+      "title": "鍙枤浣犲槄闈堥瓊鍚屼即",
+      "back": "杩斿洖",
+      "close": "闂滈枆",
+      "hint": "鎾虫湭閹栧槄瀵电墿鍙互闋愯锛涙挸閹栦綇鍢呯潎涓嬮粸妯ｈВ閹栥€?,
+      "summon": "鍙枤",
+      "summoned": "宸茬稉鍒板挆",
+      "current": "鐢ㄧ穵"
     },
-    "petting": "摸下我~",
-    "statusHello": "嗨，你好！",
-    "statusSleepy": "Zzz…",
-    "statusMiss": "掛住你",
-    "changePet": "換樣",
-    "changePetBadge": "召喚台",
-    "lockHint": "未解鎖嘅寵物都可以預覽——訂閱或者開盲盒就可以拎到",
+    "petting": "鎽镐笅鎴憕",
+    "statusHello": "鍡紝浣犲ソ锛?,
+    "statusSleepy": "Zzz鈥?,
+    "statusMiss": "鎺涗綇浣?,
+    "changePet": "鎻涙ǎ",
+    "changePetBadge": "鍙枤鍙?,
+    "lockHint": "鏈В閹栧槄瀵电墿閮藉彲浠ラ爯瑕解€斺€旇▊闁辨垨鑰呴枊鐩茬洅灏卞彲浠ユ嫀鍒?,
     "info": {
-      "days": "一齊嘅日子",
-      "interactions": "互動次數",
-      "growth": "成長值"
+      "days": "涓€榻婂槄鏃ュ瓙",
+      "interactions": "浜掑嫊娆℃暩",
+      "growth": "鎴愰暦鍊?
     },
     "actions": {
-      "journal": "日記",
-      "history": "歷史",
-      "share": "分享"
+      "journal": "鏃ヨ",
+      "history": "姝峰彶",
+      "share": "鍒嗕韩"
     },
     "festival": {
-      "newyear": "元旦",
-      "easter": "復活節",
-      "thanksgiving": "感恩節",
-      "mothersday": "母親節",
-      "fathersday": "父親節",
-      "qixi": "七夕",
-      "dragonboat": "端午",
-      "lantern": "元宵",
-      "qingming": "清明",
-      "chongyang": "重陽",
-      "blackfriday": "黑五",
-      "cybermonday": "網購星期一",
-      "arborday": "植樹日",
-      "earthday": "地球日",
-      "environment": "世界環境日",
-      "aprilfool": "愚人節",
-      "graduation": "畢業",
-      "wedding": "婚禮",
-      "babyshower": "迎嬰派對",
-      "birthday": "生日",
-      "anniversary": "紀念日",
-      "pride": "同志驕傲月",
-      "diwali": "排燈節",
-      "carnival": "嘉年華"
+      "newyear": "鍏冩棪",
+      "easter": "寰╂椿绡€",
+      "thanksgiving": "鎰熸仼绡€",
+      "mothersday": "姣嶈Κ绡€",
+      "fathersday": "鐖惰Κ绡€",
+      "qixi": "涓冨",
+      "dragonboat": "绔崍",
+      "lantern": "鍏冨",
+      "qingming": "娓呮槑",
+      "chongyang": "閲嶉櫧",
+      "blackfriday": "榛戜簲",
+      "cybermonday": "缍茶臣鏄熸湡涓€",
+      "arborday": "妞嶆ü鏃?,
+      "earthday": "鍦扮悆鏃?,
+      "environment": "涓栫晫鐠板鏃?,
+      "aprilfool": "鎰氫汉绡€",
+      "graduation": "鐣㈡キ",
+      "wedding": "濠氱Ξ",
+      "babyshower": "杩庡娲惧皪",
+      "birthday": "鐢熸棩",
+      "anniversary": "绱€蹇垫棩",
+      "pride": "鍚屽織椹曞偛鏈?,
+      "diwali": "鎺掔噲绡€",
+      "carnival": "鍢夊勾鑿?
     }
   },
   "journal": {
-    "title": "我們的築巢",
-    "subtitle": "每條日記都在為你們的共同小窩添磚加瓦。看它慢慢長大。",
-    "stage": "階段",
-    "nextStage": "下一階段：{next}",
-    "complete": "築巢完成！",
-    "entriesCount": "共 {n} 條",
-    "writePlaceholder": "寫下今天的小事...",
-    "save": "放入小窩",
+    "title": "鎴戝€戠殑绡夊发",
+    "subtitle": "姣忔鏃ヨ閮藉湪鐐轰綘鍊戠殑鍏卞悓灏忕娣荤鍔犵摝銆傜湅瀹冩參鎱㈤暦澶с€?,
+    "stage": "闅庢",
+    "nextStage": "涓嬩竴闅庢锛歿next}",
+    "complete": "绡夊发瀹屾垚锛?,
+    "entriesCount": "鍏?{n} 姊?,
+    "writePlaceholder": "瀵笅浠婂ぉ鐨勫皬浜?..",
+    "save": "鏀惧叆灏忕",
     "mood": {
-      "warm": "溫暖",
-      "cool": "清涼",
-      "festive": "節日"
+      "warm": "婧殩",
+      "cool": "娓呮都",
+      "festive": "绡€鏃?
     },
     "stageName": {
-      "empty": "空地",
-      "seed": "種子",
-      "sprout": "嫩芽",
-      "tree": "小樹",
-      "full-nest": "滿巢"
+      "empty": "绌哄湴",
+      "seed": "绋瓙",
+      "sprout": "瀚╄娊",
+      "tree": "灏忔ü",
+      "full-nest": "婊垮发"
     },
     "seedEntries": {
       "e1": {
-        "text": "今天天氣很好，出去走了走。",
+        "text": "浠婂ぉ澶╂埃寰堝ソ锛屽嚭鍘昏蛋浜嗚蛋銆?,
         "mood": "warm"
       },
       "e2": {
-        "text": "下雪了！南方人激動壞了。",
+        "text": "涓嬮洩浜嗭紒鍗楁柟浜烘縺鍕曞浜嗐€?,
         "mood": "cool"
       },
       "e3": {
-        "text": "第一次一起過聖誕 🎄",
+        "text": "绗竴娆′竴璧烽亷鑱栬獣 馃巹",
         "mood": "festive"
       }
     }
   },
   "chat": {
-    "title": "靈魂伴侶",
-    "online": "一直都在",
-    "placeholder": "說點什麼吧...",
-    "mockNotice": "Day 1 mock 模式 — 真實 AI Day 2 接入",
-    "typing": "同伴打緊字…",
-    "nightMode": "深夜模式",
-    "anniversary": "100 個訊息——一章完咗",
+    "title": "闈堥瓊浼翠径",
+    "online": "涓€鐩撮兘鍦?,
+    "placeholder": "瑾粸浠€楹煎惂...",
+    "mockNotice": "Day 1 mock 妯″紡 鈥?鐪熷 AI Day 2 鎺ュ叆",
+    "typing": "鍚屼即鎵撶穵瀛椻€?,
+    "nightMode": "娣卞妯″紡",
+    "anniversary": "100 鍊嬭▕鎭€斺€斾竴绔犲畬鍜?,
     "mood": {
-      "sweet": "甜蜜",
-      "calm": "平靜",
-      "think": "諗嘢",
-      "sleepy": "眼瞓",
-      "fight": "嗌交"
+      "sweet": "鐢滆湝",
+      "calm": "骞抽潨",
+      "think": "璜楀槩",
+      "sleepy": "鐪肩灀",
+      "fight": "鍡屼氦"
     }
   },
   "onboarding": {
-    "back": "上一步",
-    "next": "下一步",
-    "finish": "完成",
+    "back": "涓婁竴姝?,
+    "next": "涓嬩竴姝?,
+    "finish": "瀹屾垚",
     "welcome": {
-      "title": "一直都在",
-      "subtitle": "你的小機器人來了 - 一個陪你一起長大的夥伴。",
-      "cta": "開始"
+      "title": "涓€鐩撮兘鍦?,
+      "subtitle": "浣犵殑灏忔鍣ㄤ汉渚嗕簡 - 涓€鍊嬮櫔浣犱竴璧烽暦澶х殑澶ヤ即銆?,
+      "cta": "闁嬪"
     },
     "name": {
-      "title": "給 TA 起個名字",
-      "subtitle": "為這隻陪你左右的小機器人取名。",
-      "placeholder": "比如：皮蛋、米米、北北..."
+      "title": "绲?TA 璧峰€嬪悕瀛?,
+      "subtitle": "鐐洪€欓毣闄綘宸﹀彸鐨勫皬姗熷櫒浜哄彇鍚嶃€?,
+      "placeholder": "姣斿锛氱毊铔嬨€佺背绫炽€佸寳鍖?.."
     },
     "mode": {
-      "title": "想怎麼用？",
-      "subtitle": "隨時可以改。",
+      "title": "鎯虫€庨杭鐢紵",
+      "subtitle": "闅ㄦ檪鍙互鏀广€?,
       "solo": {
-        "title": "自己一個人",
-        "desc": "一隻陪伴你的寵物 + AI 聊天支援。"
+        "title": "鑷繁涓€鍊嬩汉",
+        "desc": "涓€闅婚櫔浼翠綘鐨勫鐗?+ AI 鑱婂ぉ鏀彺銆?
       },
       "together": {
-        "title": "和 TA 一起",
-        "desc": "分享日常、膠囊、共同養一隻寵物。"
+        "title": "鍜?TA 涓€璧?,
+        "desc": "鍒嗕韩鏃ュ父銆佽啝鍥娿€佸叡鍚岄涓€闅诲鐗┿€?
       }
     },
     "done": {
-      "title": "{name} 準備好啦！",
-      "soloNote": "你的寵物來了。餵它、跟它聊天、發貼圖。",
-      "togetherNote": "你的寵物來了。發第一個膠囊，開始你們的故事。",
-      "feedPet": "餵 {name}",
-      "sayHi": "打個招呼",
-      "startOver": "重新開始"
+      "title": "{name} 婧栧倷濂藉暒锛?,
+      "soloNote": "浣犵殑瀵电墿渚嗕簡銆傞さ瀹冦€佽窡瀹冭亰澶┿€佺櫦璨煎湒銆?,
+      "togetherNote": "浣犵殑瀵电墿渚嗕簡銆傜櫦绗竴鍊嬭啝鍥婏紝闁嬪浣犲€戠殑鏁呬簨銆?,
+      "feedPet": "椁?{name}",
+      "sayHi": "鎵撳€嬫嫑鍛?,
+      "startOver": "閲嶆柊闁嬪"
     }
   },
   "community": {
-    "title": "樹洞",
-    "subtitle": "匿名留言。用抱抱代替點讚。沒有名字，沒有評判。",
-    "rule1": "不用真名",
-    "rule2": "抱抱代替點讚",
-    "rule3": "24h 自動消失",
+    "title": "妯规礊",
+    "subtitle": "鍖垮悕鐣欒█銆傜敤鎶辨姳浠ｆ浛榛炶畾銆傛矑鏈夊悕瀛楋紝娌掓湁瑭曞垽銆?,
+    "rule1": "涓嶇敤鐪熷悕",
+    "rule2": "鎶辨姳浠ｆ浛榛炶畾",
+    "rule3": "24h 鑷嫊娑堝け",
     "composer": {
-      "placeholder": "寫點什麼吧。任何事。~280 字。",
-      "send": "丟進樹洞"
+      "placeholder": "瀵粸浠€楹煎惂銆備换浣曚簨銆倊280 瀛椼€?,
+      "send": "涓熼€叉ü娲?
     },
     "mood": {
-      "calm": "平靜",
-      "warm": "溫暖",
-      "reflect": "沉思",
-      "light": "輕盈"
+      "calm": "骞抽潨",
+      "warm": "婧殩",
+      "reflect": "娌夋€?,
+      "light": "杓曠泩"
     },
-    "hug": "抱抱",
-    "autoPurgeHint": "{hours}小時後消失",
-    "empty": "還沒有留言。第一個來留個腳印。",
-    "mockNotice": "Day 1 客戶端 mock — 服務端自動清理 Day 2 上線。"
+    "hug": "鎶辨姳",
+    "autoPurgeHint": "{hours}灏忔檪寰屾秷澶?,
+    "empty": "閭勬矑鏈夌暀瑷€銆傜涓€鍊嬩締鐣欏€嬭叧鍗般€?,
+    "mockNotice": "Day 1 瀹㈡埗绔?mock 鈥?鏈嶅嫏绔嚜鍕曟竻鐞?Day 2 涓婄窔銆?
   },
   "errorPage": {
-    "title": "出了點小狀況",
-    "message": "頁面遇到了小問題。你的寵物正在處理。",
-    "tryAgain": "重試",
-    "home": "首頁",
-    "errorId": "錯誤 ID"
+    "title": "鍑轰簡榛炲皬鐙€娉?,
+    "message": "闋侀潰閬囧埌浜嗗皬鍟忛銆備綘鐨勫鐗╂鍦ㄨ檿鐞嗐€?,
+    "tryAgain": "閲嶈│",
+    "home": "棣栭爜",
+    "errorId": "閷 ID"
   },
   "paywallHint": {
-    "title": "你的小夥伴想換上新衣服啦 ✨",
-    "cta": "去看看",
-    "dismiss": "繼續用免費的"
+    "title": "浣犵殑灏忓ぅ浼存兂鎻涗笂鏂拌。鏈嶅暒 鉁?,
+    "cta": "鍘荤湅鐪?,
+    "dismiss": "绻肩簩鐢ㄥ厤璨荤殑"
   },
   "focus": {
-    "title": "專注模式",
-    "subtitle": "有一隻小機器人，陪你一起工作學習。",
-    "chooseDuration": "想一起專注多久？",
-    "minutes": "{minutes} 分鐘",
-    "start": "開始專注",
-    "giveUp": "結束本次",
-    "awayNotice": "我等你回來…",
-    "welcomeBack": "歡迎回來，繼續加油！",
-    "completeTitle": "完成啦！",
-    "completeDesc": "一起溫柔地專注了 {minutes} 分鐘。",
-    "streak": "連續專注 {days} 天",
-    "again": "再來一輪",
-    "lockedPlus": "🔒 Plus 解鎖更長專注",
-    "interruptedNote": "本次專注中途暫停了一會兒——沒關係，我們重新開始。",
-    "phrase1": "我就在這裡陪你。",
-    "phrase2": "一小步一小步來。",
-    "phrase3": "你可以的。",
-    "phrase4": "一起安靜地成長。"
+    "title": "灏堟敞妯″紡",
+    "subtitle": "鏈変竴闅诲皬姗熷櫒浜猴紝闄綘涓€璧峰伐浣滃缈掋€?,
+    "chooseDuration": "鎯充竴璧峰皥娉ㄥ涔咃紵",
+    "minutes": "{minutes} 鍒嗛悩",
+    "start": "闁嬪灏堟敞",
+    "giveUp": "绲愭潫鏈",
+    "awayNotice": "鎴戠瓑浣犲洖渚嗏€?,
+    "welcomeBack": "姝¤繋鍥炰締锛岀辜绾屽姞娌癸紒",
+    "completeTitle": "瀹屾垚鍟︼紒",
+    "completeDesc": "涓€璧锋韩鏌斿湴灏堟敞浜?{minutes} 鍒嗛悩銆?,
+    "streak": "閫ｇ簩灏堟敞 {days} 澶?,
+    "again": "鍐嶄締涓€杓?,
+    "lockedPlus": "馃敀 Plus 瑙ｉ帠鏇撮暦灏堟敞",
+    "interruptedNote": "鏈灏堟敞涓€旀毇鍋滀簡涓€鏈冨厭鈥斺€旀矑闂滀總锛屾垜鍊戦噸鏂伴枊濮嬨€?,
+    "phrase1": "鎴戝氨鍦ㄩ€欒！闄綘銆?,
+    "phrase2": "涓€灏忔涓€灏忔渚嗐€?,
+    "phrase3": "浣犲彲浠ョ殑銆?,
+    "phrase4": "涓€璧峰畨闈滃湴鎴愰暦銆?
   },
   "paymentSuccess": {
-    "title": "[zh-tw] Payment successful 🎉",
+    "title": "[zh-tw] Payment successful 馃帀",
     "subtitle": "[zh-tw] Your companion felt that. Membership is now active.",
     "noteTitle": "[zh-tw] What happens next",
-    "noteBody": "[zh-tw] Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "noteBody": "[zh-tw] Your new pets, skins and member perks unlock within a few seconds 鈥?no restart needed.",
     "hint": "[zh-tw] If anything looks missing, give it a moment and refresh the pet page.",
-    "ctaPet": "[zh-tw] 🐾 Meet your pet",
-    "ctaPricing": "[zh-tw] ← Back to pricing",
+    "ctaPet": "[zh-tw] 馃惥 Meet your pet",
+    "ctaPricing": "[zh-tw] 鈫?Back to pricing",
     "secureNotice": "[zh-tw] Payments processed securely."
   }
 }
+

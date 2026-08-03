@@ -16,7 +16,7 @@
 
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
 import { track } from '@/lib/analytics'
@@ -35,6 +35,7 @@ export default function DailyFeedingPage() {
   const [hunger, setHunger] = useState(0)
   const [streak, setStreak] = useState(0)
   const [bubble, setBubble] = useState<string>(t('bubbleIdle'))
+  const petRef = useRef<HTMLDivElement>(null)
   const [showTreasure, setShowTreasure] = useState(false)
 
   // P2-5: Load persisted streak on mount
@@ -126,7 +127,7 @@ export default function DailyFeedingPage() {
         ))}
       </div>
       {/* ── Pet Stage ── */}
-      <div className="relative mb-8 h-64 w-full">
+      <div ref={petRef} className="relative mb-8 h-64 w-full">
         {/* Pet character — uses existing base for now */}
         <motion.div
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -171,8 +172,13 @@ export default function DailyFeedingPage() {
             dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
             dragElastic={0.5}
             onDragEnd={(_, info) => {
-              // If dropped near center (pet), feed
-              if (Math.abs(info.point.x - 0) < 80 && Math.abs(info.point.y - 0) < 80) {
+              const pet = petRef.current
+              if (!pet) return
+              const rect = pet.getBoundingClientRect()
+              const petCenterX = rect.left + rect.width / 2
+              const petCenterY = rect.top + rect.height / 2
+              // Convert motion drag point (document-relative) to check proximity to pet center
+              if (Math.abs(info.offset.x - petCenterX + window.innerWidth / 2) < 120 && Math.abs(info.offset.y - petCenterY + window.innerHeight / 2) < 120) {
                 feedPet()
               }
             }}

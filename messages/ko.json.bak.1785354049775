@@ -1,492 +1,492 @@
-{
+﻿{
   "siteName": "Togthr",
-  "tagline": "항상 함께",
+  "tagline": "頃儊 頃粯",
   "nav": {
-    "home": "홈",
-    "features": "기능",
-    "pricing": "요금제",
-    "community": "커뮤니티",
-    "login": "로그인",
-    "dashboard": "대시보드",
-    "daily": "밥주기",
-    "capsule": "캡슐",
-    "pet": "펫",
-    "journal": "둥지",
-    "store": "상점",
-    "chat": "채팅",
-    "faq": "자주 묻는 질문",
-    "blog": "블로그",
-    "focus": "집중"
+    "home": "頇?,
+    "features": "旮半姤",
+    "pricing": "鞖旉笀鞝?,
+    "community": "旎る雼堩嫲",
+    "login": "搿滉犯鞚?,
+    "dashboard": "雽€鞁滊炒霌?,
+    "daily": "氚レ＜旮?,
+    "capsule": "旌§姁",
+    "pet": "韼?,
+    "journal": "霊レ",
+    "store": "靸侅爯",
+    "chat": "毂勴寘",
+    "faq": "鞛愳＜ 氍浑姅 歆堧",
+    "blog": "敫旊攴?,
+    "focus": "歆戩"
   },
   "seo": {
     "siteName": "Togthr",
-    "description": "당신의 기기 안의 작은 로봇이 함께하며, 다른 한 사람을 대신합니다. 매일의 의식을 만들고, 추억을 저장하며, 함께하는 가상 반려동물을 키우세요.",
-    "keywords": "반려동물 가상펫 추억 타임캡슐 매일의식 감정지원 소울메이트 장거리 픽셀펫 AI반려",
-    "tagline": "항상 함께"
+    "description": "雼轨嫚鞚?旮瓣赴 鞎堨潣 鞛戩潃 搿滊磭鞚?頃粯頃橂┌, 雼るジ 頃?靷瀸鞚?雽€鞁犿暕雼堧嫟. 毵れ澕鞚?鞚橃嫕鞚?毵岆摛瓿? 於旍柕鞚?鞝€鞛ロ晿氅? 頃粯頃橂姅 臧€靸?氚橂牑霃欕鞚?韨れ毎靹胳殧.",
+    "keywords": "氚橂牑霃欕 臧€靸來帿 於旍柕 韮€鞛勳骸鞀?毵れ澕鞚橃嫕 臧愳爼歆€鞗?靻岇毟氅旍澊韸?鞛リ卑毽?頂届厐韼?AI氚橂牑",
+    "tagline": "頃儊 頃粯"
   },
   "home": {
     "hero": {
-      "title": "항상 함께",
-      "subtitle": "당신의 기기 안의 작은 로봇이 함께하며, 다른 한 사람을 대신합니다.",
-      "cta": "무료로 시작",
-      "secondary": "사용 방법 보기",
-      "socialProof": "전 세계 10,000명 이상의 사용자가 신뢰",
-      "eyebrow": "항상 함께 · 항상 신경 쓰고",
-      "welcomeFirst": "안녕! 방금 깼어. 계속 곁에 있을게.",
-      "welcomeBack": "돌아왔어! 기다리고 있었어.",
-      "sleepyGreeting": "쉿… 너무 늦었어. 잠깐만 같이 있자.",
-      "statusHello": "안녕! 만나서 반가워.",
-      "statusMiss": "다시 왔어!",
-      "statusSleepy": "쉿… 졸려.",
-      "relationsEyebrow": "동반자를 골라봐",
-      "relationsHint": "모드마다 펫의 모습과 빛이 달라져."
+      "title": "頃儊 頃粯",
+      "subtitle": "雼轨嫚鞚?旮瓣赴 鞎堨潣 鞛戩潃 搿滊磭鞚?頃粯頃橂┌, 雼るジ 頃?靷瀸鞚?雽€鞁犿暕雼堧嫟.",
+      "cta": "氍措搿?鞁滌瀾",
+      "secondary": "靷毄 氚╇矔 氤搓赴",
+      "socialProof": "鞝?靹戈硠 10,000氇?鞚挫儊鞚?靷毄鞛愱皜 鞁犽",
+      "eyebrow": "頃儊 頃粯 路 頃儊 鞁犼步 鞊瓣碃",
+      "welcomeFirst": "鞎堧厱! 氚╆笀 旯检柎. 瓿勳啀 瓿侅棎 鞛堨潉瓴?",
+      "welcomeBack": "霃岇晞鞕旍柎! 旮半嫟毽碃 鞛堨棃鞏?",
+      "sleepyGreeting": "靿库€?雱堧 電棃鞏? 鞛犼箰毵?臧欖澊 鞛堨瀽.",
+      "statusHello": "鞎堧厱! 毵岆倶靹?氚橁皜鞗?",
+      "statusMiss": "雼れ嫓 鞕旍柎!",
+      "statusSleepy": "靿库€?臁鸽牑.",
+      "relationsEyebrow": "霃欕皹鞛愲ゼ 瓿澕氪?,
+      "relationsHint": "氇摐毵堧嫟 韼潣 氇姷瓿?牍涭澊 雼澕鞝?"
     },
     "features": {
-      "title": "진짜 커플을 위해 디자인했어요",
-      "subtitle": "거리에 상관없이 둘 사이를 더 가깝게 만드는 기능들.",
+      "title": "歆勳 旎ろ攲鞚?鞙勴暣 霐旍瀽鞚疙枅鞏挫殧",
+      "subtitle": "瓯半Μ鞐?靸侁磤鞐嗢澊 霊?靷澊毳?雿?臧€旯濌矊 毵岆摐電?旮半姤霌?",
       "sharedJournal": {
-        "title": "매일 체크인",
-        "desc": "관계 심리학자가 설계한 하루 5분 질문으로 감정 습관을 쌓아보세요."
+        "title": "毵れ澕 觳错伂鞚?,
+        "desc": "甏€瓿?鞁Μ頃欖瀽臧€ 靹り硠頃?頃橂（ 5攵?歆堧鞙茧 臧愳爼 鞀店磤鞚?鞂撿晞氤挫劯鞖?"
       },
       "moodTracker": {
-        "title": "타임캡슐",
-        "desc": "사진, 음성 메모, 편지를 미래의 기념일에 열어볼 수 있도록 보관하세요. 둘만의 소중한 기억 보관함."
+        "title": "韮€鞛勳骸鞀?,
+        "desc": "靷, 鞚岇劚 氅旊, 韼胳毳?氙鸽灅鞚?旮半厫鞚检棎 鞐挫柎氤?靾?鞛堧弰搿?氤搓磤頃橃劯鞖? 霊橂鞚?靻岇頃?旮办柕 氤搓磤頃?"
       },
       "dreamWall": {
-        "title": "가상 펫",
-        "desc": "매일 미션을 함께 완료하며 펫을 키워보세요. 관계가 깊어질수록 펫도 성장합니다."
+        "title": "臧€靸?韼?,
+        "desc": "毵れ澕 氙胳厴鞚?頃粯 鞕勲頃橂┌ 韼潉 韨れ泴氤挫劯鞖? 甏€瓿勱皜 旯婌柎歆堨垬搿?韼弰 靹膘灔頃╇媹雼?"
       },
       "dailyGratitude": {
-        "title": "익명 커뮤니티",
-        "desc": "전 세계 커플들과 이야기를 나누고, 조언을 구하고, 기념일을 축하하세요."
+        "title": "鞚惦獏 旎る雼堩嫲",
+        "desc": "鞝?靹戈硠 旎ろ攲霌り臣 鞚挫暭旮半ゼ 雮橂垊瓿? 臁办柛鞚?甑晿瓿? 旮半厫鞚检潉 於曧晿頃橃劯鞖?"
       },
       "petAdoption": {
-        "title": "공유 일기",
-        "desc": "함께 쓰고 함께 돌아보는, 둘만의 프라이빗한 이야기 공간."
+        "title": "瓿奠湢 鞚缄赴",
+        "desc": "頃粯 鞊瓣碃 頃粯 霃岇晞氤措姅, 霊橂鞚?頂勲澕鞚措箺頃?鞚挫暭旮?瓿店皠."
       },
       "timeCapsule": {
-        "title": "꿈의 벽",
-        "desc": "둘의 꿈, 목표, 소원을 벽에 걸어두고 함께 미래를 그려보세요."
+        "title": "昕堨潣 氩?,
+        "desc": "霊橃潣 昕? 氇╉憸, 靻岇洂鞚?氩届棎 瓯胳柎霊愱碃 頃粯 氙鸽灅毳?攴鸽牑氤挫劯鞖?"
       }
     },
     "companions": {
-      "title": "Togthr 동반자",
-      "subtitle": "한 번의 탭으로 귀여운 스티커 전송",
-      "cta": "채팅에 곧 출시",
+      "title": "Togthr 霃欕皹鞛?,
+      "subtitle": "頃?氩堨潣 韮溂搿?攴€鞐毚 鞀ろ嫲旎?鞝勳啞",
+      "cta": "毂勴寘鞐?瓿?於滌嫓",
       "cards": {
         "feeding": {
-          "title": "밥 주는 시간",
-          "desc": "하트를 보내고 만족하는 모습을 지켜보세요"
+          "title": "氚?欤茧姅 鞁滉皠",
+          "desc": "頃橅姼毳?氤措偞瓿?毵岇”頃橂姅 氇姷鞚?歆€旒滊炒靹胳殧"
         },
         "capsule": {
-          "title": "타임캡슐 · 발굴",
-          "desc": "하나 묻어두면 펫이 파내줘요"
+          "title": "韮€鞛勳骸鞀?路 氚滉荡",
+          "desc": "頃橂倶 氍混柎霊愲┐ 韼澊 韺岆偞欷橃殧"
         },
         "symbiosis": {
-          "title": "공생 폼",
-          "desc": "둘의 관계를 비추는 작은 생명"
+          "title": "瓿奠儩 韽?,
+          "desc": "霊橃潣 甏€瓿勲ゼ 牍勳稊電?鞛戩潃 靸濍獏"
         },
         "blindbox": {
-          "title": "6+1 블라인드 박스",
-          "desc": "첫 주문 특가",
-          "badge": "신규"
+          "title": "6+1 敫旊澕鞚鸽摐 氚曥姢",
+          "desc": "觳?欤茧 韸龟皜",
+          "badge": "鞁犼窚"
         },
         "nest": {
-          "title": "둥지 짓기",
-          "desc": "일기를 쓸 때마다 둘의 둥지가 자라요"
+          "title": "霊レ 歆撽赴",
+          "desc": "鞚缄赴毳?鞊?霑岆雼?霊橃潣 霊レ臧€ 鞛愲澕鞖?
         },
         "soulmate": {
-          "title": "소울메이트 AI",
-          "desc": "언제든 대화, 진심으로 들어줘요"
+          "title": "靻岇毟氅旍澊韸?AI",
+          "desc": "鞏胳牅霌?雽€頇? 歆勳嫭鞙茧 霌れ柎欷橃殧"
         },
         "treehole": {
-          "title": "나무 구멍",
-          "desc": "익명 메시지, 24시간 후 사라짐"
+          "title": "雮橂 甑",
+          "desc": "鞚惦獏 氅旍嫓歆€, 24鞁滉皠 頉?靷澕歆?
         },
         "focus": {
-          "title": "포커스 모드",
-          "desc": "펫이 곁에서 함께 공부하고 일해요"
+          "title": "韽护鞀?氇摐",
+          "desc": "韼澊 瓿侅棎靹?頃粯 瓿惦秬頃橁碃 鞚柬暣鞖?
         }
       }
     }
   },
   "pricing": {
-    "title": "투명하고 간단한 요금제",
-    "subtitle": "여러분에게 맞는 플랜을 선택하세요. 숨겨진 비용은 없으며 언제든 해지 가능합니다.",
-    "monthly": "월간",
-    "quarterly": "분기",
-    "yearly": "연간",
-    "popular": "인기",
-    "save": "{discount}% 절약",
+    "title": "韴獏頃橁碃 臧勲嫧頃?鞖旉笀鞝?,
+    "subtitle": "鞐煬攵勳棎瓴?毵炿姅 頂岆灉鞚?靹犿儩頃橃劯鞖? 靾波歆?牍勳毄鞚€ 鞐嗢溂氅?鞏胳牅霌?頃挫 臧€電ロ暕雼堧嫟.",
+    "monthly": "鞗旉皠",
+    "quarterly": "攵勱赴",
+    "yearly": "鞐瓣皠",
+    "popular": "鞚戈赴",
+    "save": "{discount}% 鞝堨暯",
     "tiers": {
       "free": {
-        "name": "무료",
-        "price": "₩0",
+        "name": "氍措",
+        "price": "鈧?",
         "features": [
-          "매일 체크인",
-          "타임캡슐 3개",
-          "기본 펫",
-          "커뮤니티 이용"
+          "毵れ澕 觳错伂鞚?,
+          "韮€鞛勳骸鞀?3臧?,
+          "旮半掣 韼?,
+          "旎る雼堩嫲 鞚挫毄"
         ]
       },
       "plus": {
         "name": "Togthr Plus",
-        "price": "₩7,500",
-        "period": "/월",
+        "price": "鈧?,500",
+        "period": "/鞗?,
         "features": [
-          "무제한 캡슐",
-          "프리미엄 펫 스킨",
-          "비공개 앨범",
-          "관계 인사이트"
+          "氍挫牅頃?旌§姁",
+          "頂勲Μ氙胳梽 韼?鞀ろ偍",
+          "牍勱车臧?鞎矓",
+          "甏€瓿?鞚胳偓鞚错姼"
         ]
       },
       "premium": {
-        "name": "We2 프리미엄",
-        "price": "₩19,000",
-        "period": "/분기",
+        "name": "We2 頂勲Μ氙胳梽",
+        "price": "鈧?9,000",
+        "period": "/攵勱赴",
         "features": [
-          "Plus 전 기능",
-          "우선 지원",
-          "펫 이름 커스텀",
-          "추억 내보내기"
+          "Plus 鞝?旮半姤",
+          "鞖办劆 歆€鞗?,
+          "韼?鞚措 旎れ姢韰€",
+          "於旍柕 雮措炒雮搓赴"
         ]
       },
       "lifetime": {
-        "name": "We2 포에버",
-        "price": "₩55,000",
-        "period": "/년",
+        "name": "We2 韽棎氩?,
+        "price": "鈧?5,000",
+        "period": "/雲?,
         "features": [
-          "Premium 전 기능",
-          "평생 업데이트",
-          "독점 콘텐츠",
-          "신기능 선행 체험"
+          "Premium 鞝?旮半姤",
+          "韽夓儩 鞐呺嵃鞚错姼",
+          "霃呾爯 旖橅厫旄?,
+          "鞁犼赴電?靹犿枆 觳错棙"
         ]
       },
       "soulmate": {
-        "name": "Togthr 소울메이트",
+        "name": "Togthr 靻岇毟氅旍澊韸?,
         "price": "",
-        "period": "/월",
+        "period": "/鞗?,
         "features": [
-          "Plus의 모든 기능",
-          "AI 말투 스타일",
-          "소중한 사람처럼 말하기",
-          "스마트 기억 추천",
-          "우선 지원"
+          "Plus鞚?氇摖 旮半姤",
+          "AI 毵愴埇 鞀ろ儉鞚?,
+          "靻岇頃?靷瀸觳橂熂 毵愴晿旮?,
+          "鞀る韸?旮办柕 於旍矞",
+          "鞖办劆 歆€鞗?
         ]
       },
       "eternal": {
-        "name": "Togthr 이터널",
-        "tagline": "전부 잠금해제 + 독점",
+        "name": "Togthr 鞚错劙雱?,
+        "tagline": "鞝勲秬 鞛犼笀頃挫牅 + 霃呾爯",
         "features": [
-          "Plus 전 기능",
-          "전체 50+ 펫 슈트 해제",
-          "골든 레전드 펫",
-          "우선 지원",
-          "신기능 선행 체험"
+          "Plus 鞝?旮半姤",
+          "鞝勳泊 50+ 韼?鞀堩姼 頃挫牅",
+          "瓿摖 霠堨爠霌?韼?,
+          "鞖办劆 歆€鞗?,
+          "鞁犼赴電?靹犿枆 觳错棙"
         ]
       }
     },
-    "cta": "지금 시작하기",
-    "ctaFree": "무료로 시작하기",
-    "free": "무료",
+    "cta": "歆€旮?鞁滌瀾頃橁赴",
+    "ctaFree": "氍措搿?鞁滌瀾頃橁赴",
+    "free": "氍措",
     "period": {
-      "monthly": "개월",
-      "quarterly": "분기",
-      "yearly": "년"
+      "monthly": "臧滌洈",
+      "quarterly": "攵勱赴",
+      "yearly": "雲?
     },
     "per": {
-      "monthly": "/월",
-      "quarterly": "/분기",
-      "yearly": "/년"
+      "monthly": "/鞗?,
+      "quarterly": "/攵勱赴",
+      "yearly": "/雲?
     },
-    "promoPlaceholder": "프로모션 코드 입력",
-    "promoApply": "적용",
-    "promoHint": "프로모션 코드 곧 출시 예정!",
-    "secure": "PayPal 보안 결제",
-    "guarantee": "30일 환불 보장",
-    "new": "신규",
+    "promoPlaceholder": "頂勲氇厴 旖旊摐 鞛呺牓",
+    "promoApply": "鞝侅毄",
+    "promoHint": "頂勲氇厴 旖旊摐 瓿?於滌嫓 鞓堨爼!",
+    "secure": "PayPal 氤挫晥 瓴办牅",
+    "guarantee": "30鞚?頇橂秷 氤挫灔",
+    "new": "鞁犼窚",
     "theater": {
-      "eyebrow": "여정을 선택해",
-      "headline": "당신과 함께 자라는 삶을 열어 봐",
-      "tagline": "세 가지 등급, 한 가지 약속: 잠금해제한 펫은 영원히 곁에 남아.",
-      "guarantee": "30일 환불 보장",
-      "secure": "PayPal · Alipay · AlipayHK 안전 결제"
+      "eyebrow": "鞐爼鞚?靹犿儩頃?,
+      "headline": "雼轨嫚瓿?頃粯 鞛愲澕電?靷鹅潉 鞐挫柎 氪?,
+      "tagline": "靹?臧€歆€ 霌标笁, 頃?臧€歆€ 鞎届啀: 鞛犼笀頃挫牅頃?韼潃 鞓侅洂頌?瓿侅棎 雮晞.",
+      "guarantee": "30鞚?頇橂秷 氤挫灔",
+      "secure": "PayPal 路 Alipay 路 AlipayHK 鞎堨爠 瓴办牅"
     },
     "tierMeta": {
       "free": {
-        "eyebrow": "새싹",
-        "tagline": "여기서 시작해",
-        "peeking": "펫이 숨어있어"
+        "eyebrow": "靸堨嫻",
+        "tagline": "鞐赴靹?鞁滌瀾頃?,
+        "peeking": "韼澊 靾柎鞛堨柎"
       },
       "plus": {
-        "eyebrow": "동반자",
-        "tagline": "너의 영혼을 골라",
-        "peeking": "펫이 신나해"
+        "eyebrow": "霃欕皹鞛?,
+        "tagline": "雱堨潣 鞓來樇鞚?瓿澕",
+        "peeking": "韼澊 鞁犽倶頃?
       },
       "eternal": {
-        "eyebrow": "스타더스트",
-        "tagline": "영원이 되다",
-        "peeking": "펫이 승화했어"
+        "eyebrow": "鞀ろ儉雿旍姢韸?,
+        "tagline": "鞓侅洂鞚?霅橂嫟",
+        "peeking": "韼澊 鞀鬼檾頄堨柎"
       }
     },
     "petMatrix": {
       "free": {
-        "label": "기본 동반자 3종",
-        "sub": "봉우리 · 새싹 · 스타터"
+        "label": "旮半掣 霃欕皹鞛?3膦?,
+        "sub": "氪夓毎毽?路 靸堨嫻 路 鞀ろ儉韯?
       },
       "plus": {
-        "label": "50+ 스킨 잠금해제",
-        "sub": "직업 · 축제 · 감정 · 판타지"
+        "label": "50+ 鞀ろ偍 鞛犼笀頃挫牅",
+        "sub": "歆侅梾 路 於曥牅 路 臧愳爼 路 韺愴儉歆€"
       },
       "eternal": {
-        "label": "올 액세스 + 독점",
-        "sub": "골든 레전더리 포함"
+        "label": "鞓?鞎§劯鞀?+ 霃呾爯",
+        "sub": "瓿摖 霠堨爠雿旊Μ 韽暔"
       }
     },
     "legendary": {
-      "label": "골든 레전더리",
+      "label": "瓿摖 霠堨爠雿旊Μ",
       "odds": "1 / 72",
-      "hint": "이터널 박스에서 랜덤 드랍"
+      "hint": "鞚错劙雱?氚曥姢鞐愳劀 霝滊崵 霌滊瀺"
     },
     "countdown": {
-      "label": "할로윈 한정 · 얼리 액세스",
-      "endsIn": "종료까지",
-      "days": "일",
-      "hours": "시간",
-      "minutes": "분",
-      "seconds": "초"
+      "label": "頃犽鞙?頃滌爼 路 鞏茧Μ 鞎§劯鞀?,
+      "endsIn": "膦呺旯岇",
+      "days": "鞚?,
+      "hours": "鞁滉皠",
+      "minutes": "攵?,
+      "seconds": "齑?
     },
-    "ctaSubscribe": "지금 구독",
-    "ctaStartFree": "무료로 시작",
-    "ctaPopular": "동반자 선택",
-    "ctaEternal": "이터널이 되기"
+    "ctaSubscribe": "歆€旮?甑弲",
+    "ctaStartFree": "氍措搿?鞁滌瀾",
+    "ctaPopular": "霃欕皹鞛?靹犿儩",
+    "ctaEternal": "鞚错劙雱愳澊 霅橁赴"
   },
   "faq": {
-    "title": "자주 묻는 질문",
-    "subtitle": "Togthr에 대해 궁금한 점",
+    "title": "鞛愳＜ 氍浑姅 歆堧",
+    "subtitle": "Togthr鞐?雽€頃?甓侁笀頃?鞝?,
     "items": [
       {
-        "question": "Togthr는 어떤 앱인가요?",
-        "answer": "Togthr는 심리학자의 협력으로 설계된 커플 감정 성장 앱입니다. 매일 체크인, 타임캡슐, 공동 챌린지를 통해 일상 속에서 관계를 깊게 만들어갑니다."
+        "question": "Togthr電?鞏措枻 鞎膘澑臧€鞖?",
+        "answer": "Togthr電?鞁Μ頃欖瀽鞚?順戨牓鞙茧 靹り硠霅?旎ろ攲 臧愳爼 靹膘灔 鞎膘瀰雼堧嫟. 毵れ澕 觳错伂鞚? 韮€鞛勳骸鞀? 瓿惦彊 毂岆Π歆€毳?韱淀暣 鞚检儊 靻嶌棎靹?甏€瓿勲ゼ 旯婈矊 毵岆摛鞏搓皯雼堧嫟."
       },
       {
-        "question": "개인정보는 안전하게 보호되나요?",
-        "answer": "물론입니다. 모든 개인 콘텐츠는 종단간 암호화로 보호됩니다. 소중한 순간, 사진, 메시지는 오직 두 분만 볼 수 있으며, 제3자에게 데이터를 판매하지 않습니다."
+        "question": "臧滌澑鞝曤炒電?鞎堨爠頃橁矊 氤错樃霅橂倶鞖?",
+        "answer": "氍茧鞛呺媹雼? 氇摖 臧滌澑 旖橅厫旄犽姅 膦呺嫧臧?鞎旐樃頇旊 氤错樃霅╇媹雼? 靻岇頃?靾滉皠, 靷, 氅旍嫓歆€電?鞓れ 霊?攵勲 氤?靾?鞛堨溂氅? 鞝?鞛愳棎瓴?雿办澊韯半ゼ 韺愲Г頃橃 鞎婌姷雼堧嫟."
       },
       {
-        "question": "장거리 연애 중에도 사용할 수 있나요?",
-        "answer": "네! Togthr는 같은 방에 있든 세계 반대편에 있든 모든 커플을 위해 설계되었습니다. 타임캡슐과 매일 체크인은 거리를 초월한 연결을 유지하는 데 완벽합니다."
+        "question": "鞛リ卑毽?鞐办暊 欷戩棎霃?靷毄頃?靾?鞛堧倶鞖?",
+        "answer": "雱? Togthr電?臧欖潃 氚╈棎 鞛堧摖 靹戈硠 氚橂寑韼胳棎 鞛堧摖 氇摖 旎ろ攲鞚?鞙勴暣 靹り硠霅橃棃鞀惦媹雼? 韮€鞛勳骸鞀愱臣 毵れ澕 觳错伂鞚胳潃 瓯半Μ毳?齑堨洈頃?鞐瓣舶鞚?鞙犾頃橂姅 雿?鞕勲步頃╇媹雼?"
       },
       {
-        "question": "가상 펫은 어떻게 키우나요?",
-        "answer": "파트너와 함께 매일 체크인과 챌린지를 완료하면 펫이 성장합니다. 관계의 성장을 귀엽게 시각화한 것으로, 이정표마다 새로운 펫과 스킨이 해금됩니다."
+        "question": "臧€靸?韼潃 鞏措柣瓴?韨れ毎雮橃殧?",
+        "answer": "韺岉姼雱堨檧 頃粯 毵れ澕 觳错伂鞚戈臣 毂岆Π歆€毳?鞕勲頃橂┐ 韼澊 靹膘灔頃╇媹雼? 甏€瓿勳潣 靹膘灔鞚?攴€鞐疥矊 鞁滉皝頇旐暅 瓴冹溂搿? 鞚挫爼響滊雼?靸堧鞖?韼臣 鞀ろ偍鞚?頃搓笀霅╇媹雼?"
       },
       {
-        "question": "어떤 결제 수단을 지원하나요?",
-        "answer": "한국에서는 PayPal과 해외 결제를 지원합니다. 모든 거래는 암호화되어 안전하게 처리됩니다."
+        "question": "鞏措枻 瓴办牅 靾橂嫧鞚?歆€鞗愴晿雮橃殧?",
+        "answer": "頃滉淡鞐愳劀電?PayPal瓿?頃挫櫢 瓴办牅毳?歆€鞗愴暕雼堧嫟. 氇摖 瓯半灅電?鞎旐樃頇旊悩鞏?鞎堨爠頃橁矊 觳橂Μ霅╇媹雼?"
       },
       {
-        "question": "멤버십을 해지할 수 있나요?",
-        "answer": "언제든 해지 가능합니다. 현재 기간이 끝날 때까지 멤버십이 유지됩니다. 신규 가입자에게는 30일 환불 보장도 제공합니다."
+        "question": "氅る矂鞁潉 頃挫頃?靾?鞛堧倶鞖?",
+        "answer": "鞏胳牅霌?頃挫 臧€電ロ暕雼堧嫟. 順勳灛 旮瓣皠鞚?雭濍偁 霑岅箤歆€ 氅る矂鞁澊 鞙犾霅╇媹雼? 鞁犼窚 臧€鞛呾瀽鞐愱矊電?30鞚?頇橂秷 氤挫灔霃?鞝滉车頃╇媹雼?"
       },
       {
-        "question": "파트너와 어떻게 연결하나요?",
-        "answer": "회원가입 후 파트너에게 초대 코드를 보내세요. 상대방이 수락하면 계정이 연결되어 체크인, 캡슐, 펫 키우기를 함께 즐길 수 있습니다."
+        "question": "韺岉姼雱堨檧 鞏措柣瓴?鞐瓣舶頃橂倶鞖?",
+        "answer": "須岇洂臧€鞛?頉?韺岉姼雱堨棎瓴?齑堧寑 旖旊摐毳?氤措偞靹胳殧. 靸侂寑氚╈澊 靾橂澖頃橂┐ 瓿勳爼鞚?鞐瓣舶霅橃柎 觳错伂鞚? 旌§姁, 韼?韨れ毎旮半ゼ 頃粯 歃愱父 靾?鞛堨姷雼堧嫟."
       },
       {
-        "question": "커뮤니티 기능이 있나요?",
-        "answer": "네! 익명 커뮤니티에서 전 세계 커플들과 이야기를 공유하고, 조언을 구하고, 기념일을 축하할 수 있습니다. 익명 또는 커플 프로필로 게시할 수 있습니다."
+        "question": "旎る雼堩嫲 旮半姤鞚?鞛堧倶鞖?",
+        "answer": "雱? 鞚惦獏 旎る雼堩嫲鞐愳劀 鞝?靹戈硠 旎ろ攲霌り臣 鞚挫暭旮半ゼ 瓿奠湢頃橁碃, 臁办柛鞚?甑晿瓿? 旮半厫鞚检潉 於曧晿頃?靾?鞛堨姷雼堧嫟. 鞚惦獏 霕愲姅 旎ろ攲 頂勲頃勲 瓴岇嫓頃?靾?鞛堨姷雼堧嫟."
       }
     ]
   },
   "auth": {
-    "loginTitle": "돌아오신 것을 환영합니다",
-    "loginSubtitle": "로그인하여 두 분의 여정을 계속하세요",
-    "registerTitle": "두 분의 여정을 시작하세요",
-    "registerSubtitle": "계정을 만들고 파트너를 초대하세요",
-    "emailLabel": "이메일",
+    "loginTitle": "霃岇晞鞓れ嫚 瓴冹潉 頇橃榿頃╇媹雼?,
+    "loginSubtitle": "搿滉犯鞚疙晿鞐?霊?攵勳潣 鞐爼鞚?瓿勳啀頃橃劯鞖?,
+    "registerTitle": "霊?攵勳潣 鞐爼鞚?鞁滌瀾頃橃劯鞖?,
+    "registerSubtitle": "瓿勳爼鞚?毵岆摛瓿?韺岉姼雱堧ゼ 齑堧寑頃橃劯鞖?,
+    "emailLabel": "鞚措鞚?,
     "emailPlaceholder": "your@example.com",
-    "passwordLabel": "비밀번호",
-    "passwordPlaceholder": "비밀번호 입력",
-    "displayNameLabel": "닉네임",
-    "displayNamePlaceholder": "이름",
-    "loginButton": "로그인",
-    "registerButton": "계정 만들기",
-    "noAccount": "계정이 없으신가요?",
-    "hasAccount": "이미 계정이 있으신가요?",
-    "registerLink": "회원가입",
-    "loginLink": "로그인",
-    "forgotPassword": "비밀번호를 잊으셨나요?",
-    "resetPasswordTitle": "비밀번호 재설정",
-    "resetPasswordSubtitle": "이메일을 입력하여 재설정 링크를 받으세요",
-    "resetPasswordButton": "재설정 링크 보내기",
-    "updatePasswordTitle": "새 비밀번호 설정",
-    "updatePasswordSubtitle": "새 비밀번호를 입력하세요",
-    "updatePasswordButton": "비밀번호 업데이트",
-    "orContinueWith": "또는 다음으로 계속하기",
+    "passwordLabel": "牍勲皜氩堩樃",
+    "passwordPlaceholder": "牍勲皜氩堩樃 鞛呺牓",
+    "displayNameLabel": "雼夒劋鞛?,
+    "displayNamePlaceholder": "鞚措",
+    "loginButton": "搿滉犯鞚?,
+    "registerButton": "瓿勳爼 毵岆摛旮?,
+    "noAccount": "瓿勳爼鞚?鞐嗢溂鞁犼皜鞖?",
+    "hasAccount": "鞚措 瓿勳爼鞚?鞛堨溂鞁犼皜鞖?",
+    "registerLink": "須岇洂臧€鞛?,
+    "loginLink": "搿滉犯鞚?,
+    "forgotPassword": "牍勲皜氩堩樃毳?鞛婌溂靺倶鞖?",
+    "resetPasswordTitle": "牍勲皜氩堩樃 鞛劋鞝?,
+    "resetPasswordSubtitle": "鞚措鞚检潉 鞛呺牓頃橃棳 鞛劋鞝?毵來伂毳?氚涭溂靹胳殧",
+    "resetPasswordButton": "鞛劋鞝?毵來伂 氤措偞旮?,
+    "updatePasswordTitle": "靸?牍勲皜氩堩樃 靹れ爼",
+    "updatePasswordSubtitle": "靸?牍勲皜氩堩樃毳?鞛呺牓頃橃劯鞖?,
+    "updatePasswordButton": "牍勲皜氩堩樃 鞐呺嵃鞚错姼",
+    "orContinueWith": "霕愲姅 雼れ潓鞙茧 瓿勳啀頃橁赴",
     "google": "Google",
     "github": "GitHub",
-    "checkEmail": "이메일에서 확인 링크를 확인하세요.",
-    "passwordUpdated": "비밀번호가 업데이트되었습니다. 로그인할 수 있습니다.",
-    "signOut": "로그아웃",
-    "dashboard": "대시보드"
+    "checkEmail": "鞚措鞚检棎靹?頇曥澑 毵來伂毳?頇曥澑頃橃劯鞖?",
+    "passwordUpdated": "牍勲皜氩堩樃臧€ 鞐呺嵃鞚错姼霅橃棃鞀惦媹雼? 搿滉犯鞚疙暊 靾?鞛堨姷雼堧嫟.",
+    "signOut": "搿滉犯鞎勳泝",
+    "dashboard": "雽€鞁滊炒霌?
   },
   "footer": {
-    "privacy": "개인정보처리방침",
-    "terms": "이용약관",
-    "cookie": "쿠키 설정",
-    "help": "고객센터",
-    "contact": "문의하기",
-    "copyright": "© {year} Togthr. 모든 권리 보유."
+    "privacy": "臧滌澑鞝曤炒觳橂Μ氚╈龚",
+    "terms": "鞚挫毄鞎疥磤",
+    "cookie": "炜犿偆 靹れ爼",
+    "help": "瓿犼皾靹柬劙",
+    "contact": "氍胳潣頃橁赴",
+    "copyright": "漏 {year} Togthr. 氇摖 甓岆Μ 氤挫湢."
   },
   "notFound": {
-    "title": "길을 잃었나요?",
-    "description": "이 페이지는 어딘가로 사라졌어요. 펫도 찾고 있어요.",
-    "backHome": "홈",
-    "feedPet": "밥주기",
-    "sayHi": "인사하기",
-    "pixelHint": "픽셀 순간"
+    "title": "旮胳潉 鞛冹棃雮橃殧?",
+    "description": "鞚?韼橃澊歆€電?鞏措敇臧€搿?靷澕臁岇柎鞖? 韼弰 彀娟碃 鞛堨柎鞖?",
+    "backHome": "頇?,
+    "feedPet": "氚レ＜旮?,
+    "sayHi": "鞚胳偓頃橁赴",
+    "pixelHint": "頂届厐 靾滉皠"
   },
   "payment": {
-    "title": "구매 완료하기",
-    "subtitle": "결제 수단을 선택하여 We2 Plus를 이용하세요",
-    "periodLabel": "청구 주기",
-    "monthly": "월간",
-    "quarterly": "분기",
-    "yearly": "연간",
-    "priceLabel": "합계",
-    "gatewayLabel": "결제 수단",
+    "title": "甑Г 鞕勲頃橁赴",
+    "subtitle": "瓴办牅 靾橂嫧鞚?靹犿儩頃橃棳 We2 Plus毳?鞚挫毄頃橃劯鞖?,
+    "periodLabel": "觳惮 欤缄赴",
+    "monthly": "鞗旉皠",
+    "quarterly": "攵勱赴",
+    "yearly": "鞐瓣皠",
+    "priceLabel": "頃╆硠",
+    "gatewayLabel": "瓴办牅 靾橂嫧",
     "paypal": "PayPal",
-    "alipayCn": "Alipay（중국 본토）",
-    "alipayHk": "AlipayHK（홍콩 / 대만）",
-    "payButton": "{gateway}(으)로 결제",
-    "processing": "결제 처리 중…",
+    "alipayCn": "Alipay锛堨甑?氤疙啝锛?,
+    "alipayHk": "AlipayHK锛堩檷旖?/ 雽€毵岋級",
+    "payButton": "{gateway}(鞙?搿?瓴办牅",
+    "processing": "瓴办牅 觳橂Μ 欷戔€?,
     "success": {
-      "title": "결제 성공!",
-      "message": "We2 Plus를 구독해주셔서 감사합니다. 대시보드로 이동합니다…"
+      "title": "瓴办牅 靹标车!",
+      "message": "We2 Plus毳?甑弲頃挫＜靺旍劀 臧愳偓頃╇媹雼? 雽€鞁滊炒霌滊 鞚措彊頃╇媹雼も€?
     },
     "error": {
-      "title": "결제 실패",
-      "message": "결제 처리 중 오류가 발생했습니다. 다시 시도해주세요.",
-      "retry": "다시 시도"
+      "title": "瓴办牅 鞁ろ尐",
+      "message": "瓴办牅 觳橂Μ 欷?鞓る臧€ 氚滌儩頄堨姷雼堧嫟. 雼れ嫓 鞁滊弰頃挫＜靹胳殧.",
+      "retry": "雼れ嫓 鞁滊弰"
     },
     "cancel": {
-      "title": "결제 취소됨",
-      "message": "결제가 취소되었습니다. 언제든지 다시 시도할 수 있습니다."
+      "title": "瓴办牅 旆唽霅?,
+      "message": "瓴办牅臧€ 旆唽霅橃棃鞀惦媹雼? 鞏胳牅霌犾 雼れ嫓 鞁滊弰頃?靾?鞛堨姷雼堧嫟."
     }
   },
   "upload": {
-    "dragOrClick": "파일을 여기로 드래그하거나 클릭하여 선택",
-    "dropHere": "파일을 놓으세요",
-    "constraints": "파일당 최대 {maxSize}MB, 최대 {maxFiles}개",
-    "statusSuccess": "업로드 완료",
-    "remove": "파일 제거",
-    "errorTooLarge": "파일이 {maxSize}MB 제한을 초과합니다",
-    "errorType": "지원되지 않는 파일 형식입니다. 허용: {types}",
-    "errorMaxFiles": "최대 {max}개 파일 허용",
-    "errorUpload": "업로드 실패. 다시 시도해 주세요."
+    "dragOrClick": "韺岇澕鞚?鞐赴搿?霌滊灅攴疙晿瓯半倶 韥措Ν頃橃棳 靹犿儩",
+    "dropHere": "韺岇澕鞚?雴撿溂靹胳殧",
+    "constraints": "韺岇澕雼?斓滊寑 {maxSize}MB, 斓滊寑 {maxFiles}臧?,
+    "statusSuccess": "鞐呺霌?鞕勲",
+    "remove": "韺岇澕 鞝滉卑",
+    "errorTooLarge": "韺岇澕鞚?{maxSize}MB 鞝滍暅鞚?齑堦臣頃╇媹雼?,
+    "errorType": "歆€鞗愲悩歆€ 鞎婋姅 韺岇澕 順曥嫕鞛呺媹雼? 項堨毄: {types}",
+    "errorMaxFiles": "斓滊寑 {max}臧?韺岇澕 項堨毄",
+    "errorUpload": "鞐呺霌?鞁ろ尐. 雼れ嫓 鞁滊弰頃?欤检劯鞖?"
   },
   "features": {
     "dailyCheckIn": {
-      "longDesc": "감정적 유대를 깊게 하도록 설계된 사려 깊은 질문으로 매일을 시작하세요. 비공개로 답변한 후 파트너와 공유하고 이야기해 보세요.",
-      "step1": "매일 아침 데일리 질문을 받습니다",
-      "step2": "파트너의 답변을 보기 전에 비공개로 답변",
-      "step3": "두 답변을 동시에 공개",
-      "step4": "이야기하고 가상 펫을 위한 러브 포인트 획득"
+      "longDesc": "臧愳爼鞝?鞙犽寑毳?旯婈矊 頃橂弰搿?靹り硠霅?靷牑 旯婌潃 歆堧鞙茧 毵れ澕鞚?鞁滌瀾頃橃劯鞖? 牍勱车臧滊 雼惦硛頃?頉?韺岉姼雱堨檧 瓿奠湢頃橁碃 鞚挫暭旮绊暣 氤挫劯鞖?",
+      "step1": "毵れ澕 鞎勳龚 雿办澕毽?歆堧鞚?氚涭姷雼堧嫟",
+      "step2": "韺岉姼雱堨潣 雼惦硛鞚?氤搓赴 鞝勳棎 牍勱车臧滊 雼惦硛",
+      "step3": "霊?雼惦硛鞚?霃欖嫓鞐?瓿店皽",
+      "step4": "鞚挫暭旮绊晿瓿?臧€靸?韼潉 鞙勴暅 霟笇 韽澑韸?須嶋摑"
     },
     "timeCapsules": {
-      "longDesc": "사진, 음성 메모, 러브레터로 디지털 타임캡슐을 만드세요. 미래의 개봉일을 설정하고 잠그세요 — 기념일이나 깜짝 선물에 완벽합니다.",
-      "step1": "사진, 메모, 음성 메모로 캡슐 만들기",
-      "step2": "미래 개봉일 설정 (기념일, 생일 등)",
-      "step3": "캡슐이 봉인될 때까지 두 파트너 모두 콘텐츠 추가 가능",
-      "step4": "함께 열 시간이 되면 알림 받기"
+      "longDesc": "靷, 鞚岇劚 氅旊, 霟笇霠堩劙搿?霐旍韯?韮€鞛勳骸鞀愳潉 毵岆摐靹胳殧. 氙鸽灅鞚?臧滊磯鞚检潉 靹れ爼頃橁碃 鞛犼犯靹胳殧 鈥?旮半厫鞚检澊雮?旯滌 靹犽鞐?鞕勲步頃╇媹雼?",
+      "step1": "靷, 氅旊, 鞚岇劚 氅旊搿?旌§姁 毵岆摛旮?,
+      "step2": "氙鸽灅 臧滊磯鞚?靹れ爼 (旮半厫鞚? 靸濎澕 霌?",
+      "step3": "旌§姁鞚?氪夓澑霅?霑岅箤歆€ 霊?韺岉姼雱?氇憪 旖橅厫旄?於旉皜 臧€電?,
+      "step4": "頃粯 鞐?鞁滉皠鞚?霅橂┐ 鞎岆 氚涥赴"
     },
     "virtualPet": {
-      "longDesc": "공유 가상 펫을 만나보세요 — 관계와 함께 성장하는 귀여운 동반자입니다. 매일 체크인을 완료하여 러브 포인트를 얻고 새로운 스킨을 잠금 해제하세요.",
-      "step1": "함께 펫을 선택하고 이름 짓기",
-      "step2": "매일 체크인을 완료하여 러브 포인트 획득",
-      "step3": "팀으로 펫에게 먹이를 주고, 놀고, 돌보기",
-      "step4": "관계 마일스톤에서 새로운 스킨과 진화 잠금 해제"
+      "longDesc": "瓿奠湢 臧€靸?韼潉 毵岆倶氤挫劯鞖?鈥?甏€瓿勳檧 頃粯 靹膘灔頃橂姅 攴€鞐毚 霃欕皹鞛愳瀰雼堧嫟. 毵れ澕 觳错伂鞚胳潉 鞕勲頃橃棳 霟笇 韽澑韸鸽ゼ 鞏魂碃 靸堧鞖?鞀ろ偍鞚?鞛犼笀 頃挫牅頃橃劯鞖?",
+      "step1": "頃粯 韼潉 靹犿儩頃橁碃 鞚措 歆撽赴",
+      "step2": "毵れ澕 觳错伂鞚胳潉 鞕勲頃橃棳 霟笇 韽澑韸?須嶋摑",
+      "step3": "韺€鞙茧 韼棎瓴?毹轨澊毳?欤缄碃, 雴€瓿? 霃岆炒旮?,
+      "step4": "甏€瓿?毵堨澕鞀ろ啢鞐愳劀 靸堧鞖?鞀ろ偍瓿?歆勴檾 鞛犼笀 頃挫牅"
     },
     "privateCommunity": {
-      "longDesc": "전 세계 커플들의 익명의 지지 커뮤니티에 참여하세요. 이야기를 공유하고, 조언을 구하고, 마일스톤을 축하하세요.",
-      "step1": "익명 커플 프로필 만들기",
-      "step2": "이야기, 질문, 마일스톤 게시하기",
-      "step3": "다른 커플의 게시물에 참여하기",
-      "step4": "지지적이고 관리되는 공간에서 연결 구축하기"
+      "longDesc": "鞝?靹戈硠 旎ろ攲霌れ潣 鞚惦獏鞚?歆€歆€ 旎る雼堩嫲鞐?彀胳棳頃橃劯鞖? 鞚挫暭旮半ゼ 瓿奠湢頃橁碃, 臁办柛鞚?甑晿瓿? 毵堨澕鞀ろ啢鞚?於曧晿頃橃劯鞖?",
+      "step1": "鞚惦獏 旎ろ攲 頂勲頃?毵岆摛旮?,
+      "step2": "鞚挫暭旮? 歆堧, 毵堨澕鞀ろ啢 瓴岇嫓頃橁赴",
+      "step3": "雼るジ 旎ろ攲鞚?瓴岇嫓氍检棎 彀胳棳頃橁赴",
+      "step4": "歆€歆€鞝侅澊瓿?甏€毽悩電?瓿店皠鞐愳劀 鞐瓣舶 甑稌頃橁赴"
     },
     "sharedJournal": {
-      "longDesc": "함께 이야기를 쓰세요 — 말 그대로입니다. 두 파트너가 모두 항목을 추가하고 가장 소중한 순간의 타임라인을 만들 수 있는 공유 저널입니다.",
-      "step1": "언제든지 새 저널 항목 만들기",
-      "step2": "두 파트너 모두 보기, 편집, 댓글 가능",
-      "step3": "항목에 사진과 위치 태그 추가하기",
-      "step4": "함께 관계 타임라인 스크롤하기"
+      "longDesc": "頃粯 鞚挫暭旮半ゼ 鞊办劯鞖?鈥?毵?攴鸽寑搿滌瀰雼堧嫟. 霊?韺岉姼雱堦皜 氇憪 頃鞚?於旉皜頃橁碃 臧€鞛?靻岇頃?靾滉皠鞚?韮€鞛勲澕鞚胳潉 毵岆摛 靾?鞛堧姅 瓿奠湢 鞝€雱愳瀰雼堧嫟.",
+      "step1": "鞏胳牅霌犾 靸?鞝€雱?頃 毵岆摛旮?,
+      "step2": "霊?韺岉姼雱?氇憪 氤搓赴, 韼胳, 雽撽竴 臧€電?,
+      "step3": "頃鞐?靷瓿?鞙勳箻 韮滉犯 於旉皜頃橁赴",
+      "step4": "頃粯 甏€瓿?韮€鞛勲澕鞚?鞀ろ伂搿ろ晿旮?
     },
     "dreamWall": {
-      "longDesc": "공유된 꿈, 목표, 버킷리스트를 비주얼 보드에 핀하세요. 함께 미래를 계획하고 달성할 때 체크하세요.",
-      "step1": "공유 보드에 꿈과 목표 추가하기",
-      "step2": "카테고리별로 정리 (여행, 집, 모험 등)",
-      "step3": "목표 날짜를 설정하고 함께 진행 상황 추적하기",
-      "step4": "각 성취를 특별한 애니메이션으로 축하하기"
+      "longDesc": "瓿奠湢霅?昕? 氇╉憸, 氩勴偡毽姢韸鸽ゼ 牍勳＜鞏?氤措摐鞐?頃€頃橃劯鞖? 頃粯 氙鸽灅毳?瓿勴殟頃橁碃 雼劚頃?霑?觳错伂頃橃劯鞖?",
+      "step1": "瓿奠湢 氤措摐鞐?昕堦臣 氇╉憸 於旉皜頃橁赴",
+      "step2": "旃错厡瓿犽Μ氤勲 鞝曤Μ (鞐枆, 歆? 氇棙 霌?",
+      "step3": "氇╉憸 雮犾毳?靹れ爼頃橁碃 頃粯 歆勴枆 靸來櫓 於旍爜頃橁赴",
+      "step4": "臧?靹膘法毳?韸闺硠頃?鞎犽媹氅旍澊靺橃溂搿?於曧晿頃橁赴"
     },
-    "backToFeatures": "기능으로 돌아가기",
-    "howItWorks": "사용 방법",
-    "tryItOut": "사용해 보기"
+    "backToFeatures": "旮半姤鞙茧 霃岇晞臧€旮?,
+    "howItWorks": "靷毄 氚╇矔",
+    "tryItOut": "靷毄頃?氤搓赴"
   },
   "demo": {
     "dailyCheckIn": {
-      "title": "오늘의 질문",
-      "placeholder": "지금 마음을 나눠 봐...",
-      "save": "답변 저장",
-      "saved": "답변 저장 완료!",
-      "nextQuestion": "다음 질문 →",
-      "history": "나의 답변",
-      "empty": "첫 체크인을 시작해 봐"
+      "title": "鞓る姌鞚?歆堧",
+      "placeholder": "歆€旮?毵堨潓鞚?雮橂垹 氪?..",
+      "save": "雼惦硛 鞝€鞛?,
+      "saved": "雼惦硛 鞝€鞛?鞕勲!",
+      "nextQuestion": "雼れ潓 歆堧 鈫?,
+      "history": "雮橃潣 雼惦硛",
+      "empty": "觳?觳错伂鞚胳潉 鞁滌瀾頃?氪?
     },
     "timeCapsules": {
-      "title": "추억 캡슐",
-      "titlePlaceholder": "미래의 우리를 위한 제목...",
-      "contentPlaceholder": "지금 이 순간을 적어 봐...",
-      "lockCapsule": "캡슐 잠그기 🔒",
-      "empty": "첫 추억 캡슐을 만들어 봐",
-      "unlocked": "잠금해제됨",
-      "daysLeft": "{days}일 남음",
-      "noContent": "(내용 없음)"
+      "title": "於旍柕 旌§姁",
+      "titlePlaceholder": "氙鸽灅鞚?鞖半Μ毳?鞙勴暅 鞝滊...",
+      "contentPlaceholder": "歆€旮?鞚?靾滉皠鞚?鞝侅柎 氪?..",
+      "lockCapsule": "旌§姁 鞛犼犯旮?馃敀",
+      "empty": "觳?於旍柕 旌§姁鞚?毵岆摛鞏?氪?,
+      "unlocked": "鞛犼笀頃挫牅霅?,
+      "daysLeft": "{days}鞚?雮潓",
+      "noContent": "(雮挫毄 鞐嗢潓)"
     },
     "virtualPet": {
-      "title": "내 펫",
-      "petName": "달이",
-      "virtualCompanion": "가상 동반자",
-      "level": "레벨 {level}",
-      "hunger": "배부름",
-      "happiness": "행복도",
-      "intimacy": "친밀도",
-      "feed": "먹이기",
-      "play": "놀기",
-      "cuddle": "안기"
+      "title": "雮?韼?,
+      "petName": "雼澊",
+      "virtualCompanion": "臧€靸?霃欕皹鞛?,
+      "level": "霠堧波 {level}",
+      "hunger": "氚半秬毽?,
+      "happiness": "頄夒车霃?,
+      "intimacy": "旃滊皜霃?,
+      "feed": "毹轨澊旮?,
+      "play": "雴€旮?,
+      "cuddle": "鞎堦赴"
     },
     "privateCommunity": {
-      "title": "커뮤니티 이야기"
+      "title": "旎る雼堩嫲 鞚挫暭旮?
     },
     "sharedJournal": {
-      "title": "공유 일기",
-      "placeholder": "오늘의 일기를 써 봐...",
-      "writeEntry": "일기 쓰기",
-      "you": "나",
-      "partner": "상대방"
+      "title": "瓿奠湢 鞚缄赴",
+      "placeholder": "鞓る姌鞚?鞚缄赴毳?鞃?氪?..",
+      "writeEntry": "鞚缄赴 鞊瓣赴",
+      "you": "雮?,
+      "partner": "靸侂寑氚?
     },
     "dreamWall": {
-      "title": "꿈 보드",
-      "placeholder": "우리의 다음 큰 꿈...",
-      "pin": "고정",
-      "empty": "보드에 첫 꿈을 고정해 봐"
+      "title": "昕?氤措摐",
+      "placeholder": "鞖半Μ鞚?雼れ潓 韥?昕?..",
+      "pin": "瓿犾爼",
+      "empty": "氤措摐鞐?觳?昕堨潉 瓿犾爼頃?氪?
     }
   },
   "legal": {
-    "lastUpdated": "최종 업데이트: 2026년 6월 1일",
+    "lastUpdated": "斓滌 鞐呺嵃鞚错姼: 2026雲?6鞗?1鞚?,
     "privacy": {
-      "title": "개인정보 처리방침",
-      "subtitle": "당신의 사생활은 중요해요. 이 페이지는 우리가 어떤 데이터를 수집하고 어떻게 쓰는지, 그리고 정보에 대한 당신의 권리를 설명합니다.",
+      "title": "臧滌澑鞝曤炒 觳橂Μ氚╈龚",
+      "subtitle": "雼轨嫚鞚?靷儩頇滌潃 欷戩殧頃挫殧. 鞚?韼橃澊歆€電?鞖半Μ臧€ 鞏措枻 雿办澊韯半ゼ 靾橃頃橁碃 鞏措柣瓴?鞊半姅歆€, 攴鸽Μ瓿?鞝曤炒鞐?雽€頃?雼轨嫚鞚?甓岆Μ毳?靹る獏頃╇媹雼?",
       "sections": [
         {
           "heading": "1. Information We Collect",
@@ -502,17 +502,17 @@
         },
         {
           "heading": "4. Your Rights",
-          "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@we2.com. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
+          "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@togthr.life. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
         },
         {
           "heading": "5. Contact",
-          "body": "For any privacy-related question, email privacy@we2.com. We respond within 7 business days."
+          "body": "For any privacy-related question, email privacy@togthr.life. We respond within 7 business days."
         }
       ]
     },
     "terms": {
-      "title": "이용약관",
-      "subtitle": "Togthr를 사용하면 아래 약관에 동의하는 것으로 간주됩니다. 당신과 우리 모두를 보호하는 약관이니 주의 깊게 읽어 주세요.",
+      "title": "鞚挫毄鞎疥磤",
+      "subtitle": "Togthr毳?靷毄頃橂┐ 鞎勲灅 鞎疥磤鞐?霃欖潣頃橂姅 瓴冹溂搿?臧勳＜霅╇媹雼? 雼轨嫚瓿?鞖半Μ 氇憪毳?氤错樃頃橂姅 鞎疥磤鞚措媹 欤检潣 旯婈矊 鞚届柎 欤检劯鞖?",
       "sections": [
         {
           "heading": "1. Eligibility",
@@ -528,7 +528,7 @@
         },
         {
           "heading": "4. Refund Policy",
-          "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@we2.com for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
+          "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@togthr.life for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
         },
         {
           "heading": "5. Acceptable Use",
@@ -545,8 +545,8 @@
       ]
     },
     "cookies": {
-      "title": "쿠키 정책",
-      "subtitle": "Togthr가 매끄럽게 돌아가도록 최소한의 쿠키를 사용합니다. 어떤 쿠키를 왜 쓰는지 정확히 알려드릴게요.",
+      "title": "炜犿偆 鞝曥眳",
+      "subtitle": "Togthr臧€ 毵る亜霟疥矊 霃岇晞臧€霃勲 斓滌唽頃滌潣 炜犿偆毳?靷毄頃╇媹雼? 鞏措枻 炜犿偆毳?鞕?鞊半姅歆€ 鞝曧檿頌?鞎岆牑霌滊Υ瓴岇殧.",
       "sections": [
         {
           "heading": "1. Essential Cookies",
@@ -567,12 +567,12 @@
       ]
     },
     "help": {
-      "title": "도움말 센터",
-      "subtitle": "가장 자주 묻는 질문의 빠른 답변을 찾아보세요. 원하는 답을 못 찾았다면 알려주세요 — 기꺼이 도와드릴게요.",
+      "title": "霃勳泙毵?靹柬劙",
+      "subtitle": "臧€鞛?鞛愳＜ 氍浑姅 歆堧鞚?牍犽ジ 雼惦硛鞚?彀眷晞氤挫劯鞖? 鞗愴晿電?雼奠潉 氇?彀眷晿雼る┐ 鞎岆牑欤检劯鞖?鈥?旮瓣杭鞚?霃勳檧霌滊Υ瓴岇殧.",
       "sections": [
         {
           "heading": "Getting Started",
-          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional — every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
+          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional 鈥?every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
         },
         {
           "heading": "Subscription & Billing",
@@ -584,326 +584,327 @@
         },
         {
           "heading": "Report a Bug",
-          "body": "Found something broken? Email bugs@we2.com with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
+          "body": "Found something broken? Email bugs@togthr.life with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
         },
         {
           "heading": "International Support",
-          "body": "Togthr is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
+          "body": "Togthr is available in 8 languages: English, 绠€浣撲腑鏂? 绻侀珨涓枃, 鏃ユ湰瑾? 頃滉淡鞏? Espa帽ol, Fran莽ais, and Deutsch. Support email replies are in English by default 鈥?let us know if you'd prefer another language and we will do our best."
         }
       ]
     },
     "contact": {
-      "title": "문의하기",
-      "subtitle": "당신의 의견을 듣고 싶어요. 질문에 가장 잘 맞는 채널을 골라 주세요.",
+      "title": "氍胳潣頃橁赴",
+      "subtitle": "雼轨嫚鞚?鞚橁铂鞚?霌ｊ碃 鞁鹅柎鞖? 歆堧鞐?臧€鞛?鞛?毵炿姅 毂勲剱鞚?瓿澕 欤检劯鞖?",
       "sections": [
         {
           "heading": "General Support",
-          "body": "Questions, feedback, or feature requests. Email support@we2.com. We typically respond within 24 hours on business days."
+          "body": "Questions, feedback, or feature requests. Email support@togthr.life. We typically respond within 24 hours on business days."
         },
         {
           "heading": "Privacy & Data",
-          "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@we2.com. We respond within 7 business days."
+          "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@togthr.life. We respond within 7 business days."
         },
         {
           "heading": "Bug Reports",
-          "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@we2.com with your device model and OS version. We respond within 48 hours."
+          "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@togthr.life with your device model and OS version. We respond within 48 hours."
         }
       ]
     }
   },
   "store": {
-    "title": "Togthr 동반자",
-    "subtitle": "6+1 미스터리 박스, 1/72 확률로 골든 등장",
-    "firstOrder": "첫 주문가",
-    "regular": "정가",
-    "save": "50% 할인",
-    "blindboxTitle": "Togthr 동반자 — 6+1 미스터리 박스",
-    "blindboxDesc": "프로그래머, 의사, 우주비행사, 셰프, 소방관, 경찰... 1/72 확률로 전설의 골든 Togthr 등장.",
-    "ctaBuy": "박스 구매",
-    "ctaTrySoulmate": "Soulmate AI 1개월 포함",
-    "odds": "확률",
+    "title": "Togthr 霃欕皹鞛?,
+    "subtitle": "6+1 氙胳姢韯半Μ 氚曥姢, 1/72 頇曤搿?瓿摖 霌膘灔",
+    "firstOrder": "觳?欤茧臧€",
+    "regular": "鞝曣皜",
+    "save": "50% 頃犾澑",
+    "blindboxTitle": "Togthr 霃欕皹鞛?鈥?6+1 氙胳姢韯半Μ 氚曥姢",
+    "blindboxDesc": "頂勲攴鸽灅毹? 鞚橃偓, 鞖办＜牍勴枆靷? 靺绊攧, 靻岆癌甏€, 瓴届鞍... 1/72 頇曤搿?鞝勳劋鞚?瓿摖 Togthr 霌膘灔.",
+    "ctaBuy": "氚曥姢 甑Г",
+    "ctaTrySoulmate": "Soulmate AI 1臧滌洈 韽暔",
+    "odds": "頇曤",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
-    "perma": "영구 해제",
-    "checkoutNote": "PayPal 테스트 모드 · 첫 주문 50% 할인",
-    "checkoutNote2": "구독 없음 · 일회 결제 · 영구 소유",
-    "successTitle": "주문 완료!",
-    "successSubtitle": "Toghr 동반자가 곧 도착합니다. PayPal이 결제를 처리 중입니다 — 이메일로 영수증을 받으실 거예요.",
-    "successNote": "PayPal 결제 확인 후 몇 분 내에 스킨이 해제됩니다.",
-    "successHint": "10분 내에 스킨이 나타나지 않으면 주문 ID와 함께 문의해 주세요.",
-    "secureNotice": "결제는 PayPal로 보호됩니다. 카드 정보는 당사가 보지 않습니다."
+    "perma": "鞓侁惮 頃挫牅",
+    "checkoutNote": "PayPal 韰岇姢韸?氇摐 路 觳?欤茧 50% 頃犾澑",
+    "checkoutNote2": "甑弲 鞐嗢潓 路 鞚柬殞 瓴办牅 路 鞓侁惮 靻岇湢",
+    "successTitle": "欤茧 鞕勲!",
+    "successSubtitle": "Toghr 霃欕皹鞛愱皜 瓿?霃勳癌頃╇媹雼? PayPal鞚?瓴办牅毳?觳橂Μ 欷戩瀰雼堧嫟 鈥?鞚措鞚茧 鞓侅垬歃濎潉 氚涭溂鞁?瓯办槇鞖?",
+    "successNote": "PayPal 瓴办牅 頇曥澑 頉?氇?攵?雮挫棎 鞀ろ偍鞚?頃挫牅霅╇媹雼?",
+    "successHint": "10攵?雮挫棎 鞀ろ偍鞚?雮橅儉雮橃 鞎婌溂氅?欤茧 ID鞕€ 頃粯 氍胳潣頃?欤检劯鞖?",
+    "secureNotice": "瓴办牅電?PayPal搿?氤错樃霅╇媹雼? 旃措摐 鞝曤炒電?雼轨偓臧€ 氤挫 鞎婌姷雼堧嫟."
   },
   "daily": {
-    "title": "오늘의 밥주기",
-    "q": "오늘 TA가 곁에 있나요?",
-    "withBtn": "💕 함께",
-    "apartBtn": "🌙 떨어져",
-    "hunger": "포만감",
-    "streak": "🔥 연속 {n}일",
-    "bubbleIdle": "헤헤, 잠깐~",
-    "bubbleWith": "같이!",
-    "bubbleApart": "보고 싶어...",
-    "bubbleFeed": "먹여줘!",
-    "bubbleFull": "배불러!",
-    "bubbleMore": "더 줘~",
-    "again": "다시 하기",
-    "dragHint": "펫에게 드래그",
-    "streakDays": "{n}일 연속",
-    "treasureTitle": "보물상자 등장! 🎁",
-    "treasureDesc": "7일 연속! 펫이 보물상자를 찾았어요~"
+    "title": "鞓る姌鞚?氚レ＜旮?,
+    "q": "鞓る姌 TA臧€ 瓿侅棎 鞛堧倶鞖?",
+    "withBtn": "馃挄 頃粯",
+    "apartBtn": "馃寵 霒柎鞝?,
+    "hunger": "韽臧?,
+    "streak": "馃敟 鞐办啀 {n}鞚?,
+    "bubbleIdle": "項ろ棨, 鞛犼箰~",
+    "bubbleWith": "臧欖澊!",
+    "bubbleApart": "氤搓碃 鞁鹅柎...",
+    "bubbleFeed": "毹轨棳欷?",
+    "bubbleFull": "氚半秷霟?",
+    "bubbleMore": "雿?欷榽",
+    "again": "雼れ嫓 頃橁赴",
+    "dragHint": "韼棎瓴?霌滊灅攴?,
+    "streakDays": "{n}鞚?鞐办啀",
+    "treasureTitle": "氤措靸侅瀽 霌膘灔! 馃巵",
+    "treasureDesc": "7鞚?鞐办啀! 韼澊 氤措靸侅瀽毳?彀眷晿鞏挫殧~"
   },
   "capsule": {
-    "title": "타임캡슐 · 보물찾기",
-    "subtitle": "埋まっている칸을 탭하면 펫이 걸어가서 파줄 거예요.",
-    "buried": "埋",
-    "opened": "開",
-    "openedOn": "埋めた日:",
-    "close": "宝箱!",
-    "cancel": "キャンセル",
-    "write": "新しいカプセルを埋める",
-    "writeTitle": "タイトル",
-    "writePlaceholder": "未来のあなたへ...",
-    "save": "埋める"
+    "title": "韮€鞛勳骸鞀?路 氤措彀娟赴",
+    "subtitle": "鍩嬨伨銇ｃ仸銇勩倠旃胳潉 韮晿氅?韼澊 瓯胳柎臧€靹?韺岇 瓯办槇鞖?",
+    "buried": "鍩?,
+    "opened": "闁?,
+    "openedOn": "鍩嬨倎銇熸棩:",
+    "close": "瀹濈!",
+    "cancel": "銈儯銉炽偦銉?,
+    "write": "鏂般仐銇勩偒銉椼偦銉倰鍩嬨倎銈?,
+    "writeTitle": "銈裤偆銉堛儷",
+    "writePlaceholder": "鏈潵銇亗銇仧銇?..",
+    "save": "鍩嬨倎銈?
   },
   "pet": {
-    "title": "내 펫",
-    "subtitle": "펫은 관계를 비춥니다. 기분을 골라 변신을 보세요.",
-    "pickMood": "오늘 기분은?",
-    "status": "Togthr 지금",
-    "day": "함께한 지 {n}일",
+    "title": "雮?韼?,
+    "subtitle": "韼潃 甏€瓿勲ゼ 牍勳顶雼堧嫟. 旮半秳鞚?瓿澕 氤€鞁犾潉 氤挫劯鞖?",
+    "pickMood": "鞓る姌 旮半秳鞚€?",
+    "status": "Togthr 歆€旮?,
+    "day": "頃粯頃?歆€ {n}鞚?,
     "mood": {
-      "happy": "달콤",
-      "sad": "싸움",
-      "thinking": "생각중",
-      "sleeping": "잠자는중",
-      "sweet": "달콤",
-      "fight": "싸움",
-      "think": "생각 중",
-      "sleep": "잠자는 중"
+      "happy": "雼饯",
+      "sad": "鞁胳泙",
+      "thinking": "靸濌皝欷?,
+      "sleeping": "鞛犾瀽電旍",
+      "sweet": "雼饯",
+      "fight": "鞁胳泙",
+      "think": "靸濌皝 欷?,
+      "sleep": "鞛犾瀽電?欷?
     },
     "rarity": {
-      "common": "일반",
-      "rare": "레어",
-      "epic": "에픽",
-      "legendary": "레전더리"
+      "common": "鞚茧皹",
+      "rare": "霠堨柎",
+      "epic": "鞐愴斀",
+      "legendary": "霠堨爠雿旊Μ"
     },
     "series": {
-      "basic": "기본",
-      "career": "직업",
-      "festival": "축제",
-      "emotion": "감정",
-      "fantasy": "판타지",
-      "legendary": "레전더리"
+      "basic": "旮半掣",
+      "career": "歆侅梾",
+      "festival": "於曥牅",
+      "emotion": "臧愳爼",
+      "fantasy": "韺愴儉歆€",
+      "legendary": "霠堨爠雿旊Μ"
     },
     "tier": {
-      "free": "무료",
+      "free": "氍措",
       "plus": "Togthr Plus",
-      "eternal": "Togthr 이터널"
+      "eternal": "Togthr 鞚错劙雱?
     },
     "card": {
-      "current": "사용 중"
+      "current": "靷毄 欷?
     },
     "altar": {
-      "title": "영혼의 동반자를 소환",
-      "back": "뒤로",
-      "close": "닫기",
-      "hint": "잠금해제된 펫을 탭하면 미리보기. 잠긴 펫은 어떻게 해제하는지 볼 수 있어요.",
-      "summon": "소환",
-      "summoned": "도착했어요",
-      "current": "사용 중"
+      "title": "鞓來樇鞚?霃欕皹鞛愲ゼ 靻岉櫂",
+      "back": "霋る",
+      "close": "雼赴",
+      "hint": "鞛犼笀頃挫牅霅?韼潉 韮晿氅?氙鸽Μ氤搓赴. 鞛犼复 韼潃 鞏措柣瓴?頃挫牅頃橂姅歆€ 氤?靾?鞛堨柎鞖?",
+      "summon": "靻岉櫂",
+      "summoned": "霃勳癌頄堨柎鞖?,
+      "current": "靷毄 欷?
     },
-    "petting": "쓰다듬어 줘~",
-    "statusHello": "안녕!",
-    "statusSleepy": "Zzz…",
-    "statusMiss": "보고 싶어",
-    "changePet": "모습 바꾸기",
-    "changePetBadge": "소환 제단",
-    "lockHint": "잠긴 펫도 미리보기는 가능 — 구독하거나 블라인드박스를 열어 해제해요",
+    "petting": "鞊半嫟霌柎 欷榽",
+    "statusHello": "鞎堧厱!",
+    "statusSleepy": "Zzz鈥?,
+    "statusMiss": "氤搓碃 鞁鹅柎",
+    "changePet": "氇姷 氚旉靖旮?,
+    "changePetBadge": "靻岉櫂 鞝滊嫧",
+    "lockHint": "鞛犼复 韼弰 氙鸽Μ氤搓赴電?臧€電?鈥?甑弲頃橁卑雮?敫旊澕鞚鸽摐氚曥姢毳?鞐挫柎 頃挫牅頃挫殧",
     "info": {
-      "days": "함께한 날",
-      "interactions": "상호작용",
-      "growth": "성장"
+      "days": "頃粯頃?雮?,
+      "interactions": "靸來樃鞛戩毄",
+      "growth": "靹膘灔"
     },
     "actions": {
-      "journal": "저널",
-      "history": "기록",
-      "share": "공유"
+      "journal": "鞝€雱?,
+      "history": "旮半",
+      "share": "瓿奠湢"
     },
     "festival": {
-      "newyear": "새해",
-      "easter": "부활절",
-      "thanksgiving": "추수감사절",
-      "mothersday": "어머니날",
-      "fathersday": "아버지날",
-      "qixi": "칠석",
-      "dragonboat": "단오",
-      "lantern": "정월대보름",
-      "qingming": "청명",
-      "chongyang": "중양절",
-      "blackfriday": "블랙프라이데이",
-      "cybermonday": "사이버먼데이",
-      "arborday": "식목일",
-      "earthday": "지구의 날",
-      "environment": "세계 환경의 날",
-      "aprilfool": "만우절",
-      "graduation": "졸업",
-      "wedding": "결혼식",
-      "babyshower": "베이비 샤워",
-      "birthday": "생일",
-      "anniversary": "기념일",
-      "pride": "프라이드 월",
-      "diwali": "디왈리",
-      "carnival": "카니발"
+      "newyear": "靸堩暣",
+      "easter": "攵€頇滌爤",
+      "thanksgiving": "於旍垬臧愳偓鞝?,
+      "mothersday": "鞏措ǜ雼堧偁",
+      "fathersday": "鞎勲矂歆€雮?,
+      "qixi": "旃犾劃",
+      "dragonboat": "雼槫",
+      "lantern": "鞝曥洈雽€氤措",
+      "qingming": "觳獏",
+      "chongyang": "欷戩枒鞝?,
+      "blackfriday": "敫旊灆頂勲澕鞚措嵃鞚?,
+      "cybermonday": "靷澊氩勲雿办澊",
+      "arborday": "鞁濍鞚?,
+      "earthday": "歆€甑潣 雮?,
+      "environment": "靹戈硠 頇橁步鞚?雮?,
+      "aprilfool": "毵岇毎鞝?,
+      "graduation": "臁胳梾",
+      "wedding": "瓴绊樇鞁?,
+      "babyshower": "氩犾澊牍?靸れ泴",
+      "birthday": "靸濎澕",
+      "anniversary": "旮半厫鞚?,
+      "pride": "頂勲澕鞚措摐 鞗?,
+      "diwali": "霐旍檲毽?,
+      "carnival": "旃措媹氚?
     }
   },
   "journal": {
-    "title": "우리 둥지",
-    "subtitle": "일기를 쓸 때마다 우리 둥지에 무언가가 더해져요. 자라는 걸 지켜보세요.",
-    "stage": "단계",
-    "nextStage": "다음: {next}",
-    "complete": "둥지 완성!",
-    "entriesCount": "{n}개의 일기",
-    "writePlaceholder": "오늘의 작은 일을...",
-    "save": "둥지에 추가",
+    "title": "鞖半Μ 霊レ",
+    "subtitle": "鞚缄赴毳?鞊?霑岆雼?鞖半Μ 霊レ鞐?氍挫柛臧€臧€ 雿旐暣鞝胳殧. 鞛愲澕電?瓯?歆€旒滊炒靹胳殧.",
+    "stage": "雼硠",
+    "nextStage": "雼れ潓: {next}",
+    "complete": "霊レ 鞕勳劚!",
+    "entriesCount": "{n}臧滌潣 鞚缄赴",
+    "writePlaceholder": "鞓る姌鞚?鞛戩潃 鞚检潉...",
+    "save": "霊レ鞐?於旉皜",
     "mood": {
-      "warm": "따뜻",
-      "cool": "시원",
-      "festive": "경사"
+      "warm": "霐半溁",
+      "cool": "鞁滌洂",
+      "festive": "瓴届偓"
     },
     "stageName": {
-      "empty": "빈 땅",
-      "seed": "씨앗",
-      "sprout": "새싹",
-      "tree": "나무",
-      "full-nest": "둥지 완성"
+      "empty": "牍?霑?,
+      "seed": "鞌晽",
+      "sprout": "靸堨嫻",
+      "tree": "雮橂",
+      "full-nest": "霊レ 鞕勳劚"
     },
     "seedEntries": {
       "e1": {
-        "text": "오늘 날씨 좋아서 산책 다녀왔어요.",
+        "text": "鞓る姌 雮犾敤 膦嬱晞靹?靷办眳 雼る厐鞕旍柎鞖?",
         "mood": "warm"
       },
       "e2": {
-        "text": "눈이 왔어요! 남쪽 사람이 신났어요.",
+        "text": "雸堨澊 鞕旍柎鞖? 雮 靷瀸鞚?鞁犽偓鞏挫殧.",
         "mood": "cool"
       },
       "e3": {
-        "text": "처음 함께한 크리스마스 🎄",
+        "text": "觳橃潓 頃粯頃?韥Μ鞀る鞀?馃巹",
         "mood": "festive"
       }
     }
   },
   "chat": {
-    "title": "소울메이트",
-    "online": "항상 함께",
-    "placeholder": "뭐든 말해보세요...",
-    "mockNotice": "Day 1 목업 — 실제 AI는 Day 2",
-    "typing": "동반자가 입력 중...",
-    "nightMode": "야간 모드",
-    "anniversary": "메시지 100개 — 한 챕터 완성",
+    "title": "靻岇毟氅旍澊韸?,
+    "online": "頃儊 頃粯",
+    "placeholder": "氕愲摖 毵愴暣氤挫劯鞖?..",
+    "mockNotice": "Day 1 氇╈梾 鈥?鞁れ牅 AI電?Day 2",
+    "typing": "霃欕皹鞛愱皜 鞛呺牓 欷?..",
+    "nightMode": "鞎缄皠 氇摐",
+    "anniversary": "氅旍嫓歆€ 100臧?鈥?頃?毂曧劙 鞕勳劚",
     "mood": {
-      "sweet": "달콤",
-      "calm": "차분",
-      "think": "생각",
-      "sleepy": "졸림",
-      "fight": "싸움"
+      "sweet": "雼饯",
+      "calm": "彀秳",
+      "think": "靸濌皝",
+      "sleepy": "臁鸽",
+      "fight": "鞁胳泙"
     }
   },
   "onboarding": {
-    "back": "뒤로",
-    "next": "다음",
-    "finish": "완료",
+    "back": "霋る",
+    "next": "雼れ潓",
+    "finish": "鞕勲",
     "welcome": {
-      "title": "항상 함께",
-      "subtitle": "당신의 작은 로봇이 왔어요 - 함께 자라나는 동반자.",
-      "cta": "시작"
+      "title": "頃儊 頃粯",
+      "subtitle": "雼轨嫚鞚?鞛戩潃 搿滊磭鞚?鞕旍柎鞖?- 頃粯 鞛愲澕雮橂姅 霃欕皹鞛?",
+      "cta": "鞁滌瀾"
     },
     "name": {
-      "title": "이름을 지어주세요",
-      "subtitle": "곁에 있을 작은 로봇의 이름.",
-      "placeholder": "예: 픽셀, 미미, 베이베이..."
+      "title": "鞚措鞚?歆€鞏挫＜靹胳殧",
+      "subtitle": "瓿侅棎 鞛堨潉 鞛戩潃 搿滊磭鞚?鞚措.",
+      "placeholder": "鞓? 頂届厐, 氙鸽, 氩犾澊氩犾澊..."
     },
     "mode": {
-      "title": "어떻게 사용하실 건가요?",
-      "subtitle": "언제든 바꿀 수 있어요.",
+      "title": "鞏措柣瓴?靷毄頃橃嫟 瓯搓皜鞖?",
+      "subtitle": "鞏胳牅霌?氚旉縺 靾?鞛堨柎鞖?",
       "solo": {
-        "title": "혼자서",
-        "desc": "반려동물 + AI 채팅."
+        "title": "順检瀽靹?,
+        "desc": "氚橂牑霃欕 + AI 毂勴寘."
       },
       "together": {
-        "title": "누군가와",
-        "desc": "일상, 캡슐, 반려동물을 함께."
+        "title": "雸勱蛋臧€鞕€",
+        "desc": "鞚检儊, 旌§姁, 氚橂牑霃欕鞚?頃粯."
       }
     },
     "done": {
-      "title": "{name} 준비 완료!",
-      "soloNote": "펫이 왔어요. 밥 주고, 대화하고, 스티커 보내기.",
-      "togetherNote": "펫이 왔어요. 첫 캡슐을 보내서 이야기를 시작하세요.",
-      "feedPet": "{name} 밥주기",
-      "sayHi": "인사하기",
-      "startOver": "다시 시작"
+      "title": "{name} 欷€牍?鞕勲!",
+      "soloNote": "韼澊 鞕旍柎鞖? 氚?欤缄碃, 雽€頇旐晿瓿? 鞀ろ嫲旎?氤措偞旮?",
+      "togetherNote": "韼澊 鞕旍柎鞖? 觳?旌§姁鞚?氤措偞靹?鞚挫暭旮半ゼ 鞁滌瀾頃橃劯鞖?",
+      "feedPet": "{name} 氚レ＜旮?,
+      "sayHi": "鞚胳偓頃橁赴",
+      "startOver": "雼れ嫓 鞁滌瀾"
     }
   },
   "community": {
-    "title": "나무 구멍",
-    "subtitle": "익명 메모. 좋아요 대신 포옹. 이름도, 판단도 없음.",
-    "rule1": "실명 없음",
-    "rule2": "포옹이 좋아요 대체",
-    "rule3": "24h 자동 삭제",
+    "title": "雮橂 甑",
+    "subtitle": "鞚惦獏 氅旊. 膦嬱晞鞖?雽€鞁?韽樄. 鞚措霃? 韺愲嫧霃?鞐嗢潓.",
+    "rule1": "鞁る獏 鞐嗢潓",
+    "rule2": "韽樄鞚?膦嬱晞鞖?雽€觳?,
+    "rule3": "24h 鞛愲彊 靷牅",
     "composer": {
-      "placeholder": "뭐든 적어보세요. ~280자.",
-      "send": "구멍에 떨어뜨리기"
+      "placeholder": "氕愲摖 鞝侅柎氤挫劯鞖? ~280鞛?",
+      "send": "甑鞐?霒柎霚Μ旮?
     },
     "mood": {
-      "calm": "차분",
-      "warm": "따뜻",
-      "reflect": "성찰",
-      "light": "가벼움"
+      "calm": "彀秳",
+      "warm": "霐半溁",
+      "reflect": "靹膘鞍",
+      "light": "臧€氩检泙"
     },
-    "hug": "포옹",
-    "autoPurgeHint": "{hours}시간 후 사라짐",
-    "empty": "아직 메모가 없어요. 가장 먼저 하나 남겨보세요.",
-    "mockNotice": "Day 1 클라이언트 목업 — 자동 삭제는 Day 2."
+    "hug": "韽樄",
+    "autoPurgeHint": "{hours}鞁滉皠 頉?靷澕歆?,
+    "empty": "鞎勳 氅旊臧€ 鞐嗢柎鞖? 臧€鞛?毹检爛 頃橂倶 雮波氤挫劯鞖?",
+    "mockNotice": "Day 1 韥措澕鞚挫柛韸?氇╈梾 鈥?鞛愲彊 靷牅電?Day 2."
   },
   "errorPage": {
-    "title": "문제가 발생했습니다",
-    "message": "페이지에 오류가 발생했습니다. 펫이 처리 중입니다.",
-    "tryAgain": "다시 시도",
-    "home": "홈",
-    "errorId": "오류 ID"
+    "title": "氍胳牅臧€ 氚滌儩頄堨姷雼堧嫟",
+    "message": "韼橃澊歆€鞐?鞓る臧€ 氚滌儩頄堨姷雼堧嫟. 韼澊 觳橂Μ 欷戩瀰雼堧嫟.",
+    "tryAgain": "雼れ嫓 鞁滊弰",
+    "home": "頇?,
+    "errorId": "鞓る ID"
   },
   "paywallHint": {
-    "title": "네 친구가 새 옷을 입고 싶어해 ✨",
-    "cta": "보러 가기",
-    "dismiss": "무료로 계속하기"
+    "title": "雱?旃滉惮臧€ 靸?鞓缝潉 鞛呹碃 鞁鹅柎頃?鉁?,
+    "cta": "氤措煬 臧€旮?,
+    "dismiss": "氍措搿?瓿勳啀頃橁赴"
   },
   "focus": {
-    "title": "포커스 모드",
-    "subtitle": "작은 로봇이 공부와 일에 곁에서 함께해요.",
-    "chooseDuration": "같이 얼마나 집중할까요?",
-    "minutes": "{minutes}분",
-    "start": "집중 시작",
-    "giveUp": "이번 세션 종료",
-    "awayNotice": "기다리고 있을게요…",
-    "welcomeBack": "다시 왔네요, 계속 힘내요!",
-    "completeTitle": "해냈어요!",
-    "completeDesc": "함께 다정하게 {minutes}분 집중했어요.",
-    "streak": "{days}일 연속 집중",
-    "again": "한 번 더",
-    "lockedPlus": "🔒 Plus로 더 긴 집중 시간 열기",
-    "interruptedNote": "잠시 멈췄지만 괜찮아요. 다시 함께 시작해요.",
-    "phrase1": "곁에 있을게요.",
-    "phrase2": "한 걸음씩 천천히.",
-    "phrase3": "할 수 있어요.",
-    "phrase4": "조용히 함께 성장해요."
+    "title": "韽护鞀?氇摐",
+    "subtitle": "鞛戩潃 搿滊磭鞚?瓿惦秬鞕€ 鞚检棎 瓿侅棎靹?頃粯頃挫殧.",
+    "chooseDuration": "臧欖澊 鞏茧雮?歆戩頃犼箤鞖?",
+    "minutes": "{minutes}攵?,
+    "start": "歆戩 鞁滌瀾",
+    "giveUp": "鞚措矆 靹胳厴 膦呺",
+    "awayNotice": "旮半嫟毽碃 鞛堨潉瓴岇殧鈥?,
+    "welcomeBack": "雼れ嫓 鞕旊劋鞖? 瓿勳啀 頌橂偞鞖?",
+    "completeTitle": "頃措儓鞏挫殧!",
+    "completeDesc": "頃粯 雼れ爼頃橁矊 {minutes}攵?歆戩頄堨柎鞖?",
+    "streak": "{days}鞚?鞐办啀 歆戩",
+    "again": "頃?氩?雿?,
+    "lockedPlus": "馃敀 Plus搿?雿?旮?歆戩 鞁滉皠 鞐搓赴",
+    "interruptedNote": "鞛犾嫓 氅堨穭歆€毵?甏滌爱鞎勳殧. 雼れ嫓 頃粯 鞁滌瀾頃挫殧.",
+    "phrase1": "瓿侅棎 鞛堨潉瓴岇殧.",
+    "phrase2": "頃?瓯胳潓鞌?觳滌矞頌?",
+    "phrase3": "頃?靾?鞛堨柎鞖?",
+    "phrase4": "臁办毄頌?頃粯 靹膘灔頃挫殧."
   },
   "paymentSuccess": {
-    "title": "[ko] Payment successful 🎉",
+    "title": "[ko] Payment successful 馃帀",
     "subtitle": "[ko] Your companion felt that. Membership is now active.",
     "noteTitle": "[ko] What happens next",
-    "noteBody": "[ko] Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "noteBody": "[ko] Your new pets, skins and member perks unlock within a few seconds 鈥?no restart needed.",
     "hint": "[ko] If anything looks missing, give it a moment and refresh the pet page.",
-    "ctaPet": "[ko] 🐾 Meet your pet",
-    "ctaPricing": "[ko] ← Back to pricing",
+    "ctaPet": "[ko] 馃惥 Meet your pet",
+    "ctaPricing": "[ko] 鈫?Back to pricing",
     "secureNotice": "[ko] Payments processed securely."
   }
 }
+

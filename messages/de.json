@@ -1,4 +1,4 @@
-{
+﻿{
   "siteName": "Togthr",
   "tagline": "Immer da",
   "nav": {
@@ -8,7 +8,7 @@
     "community": "Community",
     "login": "Anmelden",
     "dashboard": "Dashboard",
-    "daily": "Täglich",
+    "daily": "T盲glich",
     "capsule": "Kapsel",
     "pet": "Tier",
     "journal": "Nest",
@@ -20,67 +20,67 @@
   },
   "seo": {
     "siteName": "Togthr",
-    "description": "Ein kleiner Roboter in deinem Gerät, der bei dir ist und den anderen vertritt. Baue tägliche Rituale auf, bewahre Erinnerungen und züchte einen virtuellen Begleiter.",
-    "keywords": "Begleiter virtuelles Haustier Erinnerungen Zeitkapsel tägliches Ritual emotionale Unterstützung Seelenverwandter Fernbeziehung Pixel-Haustier KI-Begleiter",
+    "description": "Ein kleiner Roboter in deinem Ger盲t, der bei dir ist und den anderen vertritt. Baue t盲gliche Rituale auf, bewahre Erinnerungen und z眉chte einen virtuellen Begleiter.",
+    "keywords": "Begleiter virtuelles Haustier Erinnerungen Zeitkapsel t盲gliches Ritual emotionale Unterst眉tzung Seelenverwandter Fernbeziehung Pixel-Haustier KI-Begleiter",
     "tagline": "Immer da"
   },
   "home": {
     "hero": {
       "title": "Immer da",
-      "subtitle": "Ein kleiner Roboter in deinem Gerät, der bei dir ist und den anderen vertritt.",
+      "subtitle": "Ein kleiner Roboter in deinem Ger盲t, der bei dir ist und den anderen vertritt.",
       "cta": "Kostenlos starten",
       "secondary": "So funktioniert es",
-      "socialProof": "Über 10.000 Nutzer weltweit vertrauen uns",
-      "eyebrow": "Immer da · Immer fürsorglich",
-      "welcomeFirst": "Hi! Ich bin gerade aufgewacht. Ich bin immer für dich da.",
+      "socialProof": "脺ber 10.000 Nutzer weltweit vertrauen uns",
+      "eyebrow": "Immer da 路 Immer f眉rsorglich",
+      "welcomeFirst": "Hi! Ich bin gerade aufgewacht. Ich bin immer f眉r dich da.",
       "welcomeBack": "Da bist du wieder! Ich habe auf dich gewartet.",
-      "sleepyGreeting": "Pssst… es ist spät. Bleib noch einen Moment bei mir.",
-      "statusHello": "Hi! Schön, dich zu sehen.",
+      "sleepyGreeting": "Pssst鈥?es ist sp盲t. Bleib noch einen Moment bei mir.",
+      "statusHello": "Hi! Sch枚n, dich zu sehen.",
       "statusMiss": "Da bist du wieder!",
-      "statusSleepy": "Pssst… ich bin müde.",
-      "relationsEyebrow": "Wähle deine Begleitung",
-      "relationsHint": "Jeder Modus verändert Aussehen und Leuchten deines Pets."
+      "statusSleepy": "Pssst鈥?ich bin m眉de.",
+      "relationsEyebrow": "W盲hle deine Begleitung",
+      "relationsHint": "Jeder Modus ver盲ndert Aussehen und Leuchten deines Pets."
     },
     "features": {
-      "title": "Für echte Paare entwickelt",
-      "subtitle": "Jede Funktion wurde entwickelt, um euch näher zusammenzubringen – ganz egal, wie weit ihr entfernt seid.",
+      "title": "F眉r echte Paare entwickelt",
+      "subtitle": "Jede Funktion wurde entwickelt, um euch n盲her zusammenzubringen 鈥?ganz egal, wie weit ihr entfernt seid.",
       "sharedJournal": {
-        "title": "Täglicher Check-in",
-        "desc": "5-minütige tägliche Fragen, entwickelt von Beziehungspsychologen. Baut emotionale Intimität auf, Tag für Tag."
+        "title": "T盲glicher Check-in",
+        "desc": "5-min眉tige t盲gliche Fragen, entwickelt von Beziehungspsychologen. Baut emotionale Intimit盲t auf, Tag f眉r Tag."
       },
       "moodTracker": {
         "title": "Zeitkapseln",
-        "desc": "Verschließt Fotos, Sprachnachrichten und Briefe, um sie an zukünftigen Jahrestagen zu öffnen. Euer privater Erinnerungstresor."
+        "desc": "Verschlie脽t Fotos, Sprachnachrichten und Briefe, um sie an zuk眉nftigen Jahrestagen zu 枚ffnen. Euer privater Erinnerungstresor."
       },
       "dreamWall": {
         "title": "Virtuelles Haustier",
-        "desc": "Zieht gemeinsam ein Haustier groß, indem ihr tägliche Herausforderungen meistert. Seht zu, wie es mit eurer Beziehung wächst."
+        "desc": "Zieht gemeinsam ein Haustier gro脽, indem ihr t盲gliche Herausforderungen meistert. Seht zu, wie es mit eurer Beziehung w盲chst."
       },
       "dailyGratitude": {
         "title": "Private Community",
-        "desc": "Teilt anonym Geschichten mit Paaren weltweit. Holt euch Rat, feiert Meilensteine, fühlt euch weniger allein."
+        "desc": "Teilt anonym Geschichten mit Paaren weltweit. Holt euch Rat, feiert Meilensteine, f眉hlt euch weniger allein."
       },
       "petAdoption": {
         "title": "Gemeinsames Tagebuch",
-        "desc": "Schreibt zusammen, reflektiert zusammen. Ein privater Raum für eure gemeinsame Geschichte."
+        "desc": "Schreibt zusammen, reflektiert zusammen. Ein privater Raum f眉r eure gemeinsame Geschichte."
       },
       "timeCapsule": {
         "title": "Traumwand",
-        "desc": "Pinnt eure Träume, Ziele und Wünsche an die Wand – baut gemeinsam eure Zukunft."
+        "desc": "Pinnt eure Tr盲ume, Ziele und W眉nsche an die Wand 鈥?baut gemeinsam eure Zukunft."
       }
     },
     "companions": {
       "title": "Togthr Begleiter",
-      "subtitle": "Süße Sticker mit einem Tipp an deine Liebe",
-      "cta": "Demnächst im Chat",
+      "subtitle": "S眉脽e Sticker mit einem Tipp an deine Liebe",
+      "cta": "Demn盲chst im Chat",
       "cards": {
         "feeding": {
-          "title": "Fütterungszeit",
+          "title": "F眉tterungszeit",
           "desc": "Schenke ein Herz und sieh zu, wie es zufrieden leuchtet"
         },
         "capsule": {
-          "title": "Zeitkapsel · Schatzsuche",
-          "desc": "Vergrabe eine – dein Pet gräbt sie wieder aus"
+          "title": "Zeitkapsel 路 Schatzsuche",
+          "desc": "Vergrabe eine 鈥?dein Pet gr盲bt sie wieder aus"
         },
         "symbiosis": {
           "title": "Symbiose",
@@ -97,11 +97,11 @@
         },
         "soulmate": {
           "title": "Seelenpartner-KI",
-          "desc": "Rede jederzeit – es hört wirklich zu"
+          "desc": "Rede jederzeit 鈥?es h枚rt wirklich zu"
         },
         "treehole": {
-          "title": "Baumhöhle",
-          "desc": "Anonyme Nachrichten, nach 24 Std. gelöscht"
+          "title": "Baumh枚hle",
+          "desc": "Anonyme Nachrichten, nach 24 Std. gel枚scht"
         },
         "focus": {
           "title": "Fokus-Modus",
@@ -112,18 +112,18 @@
   },
   "pricing": {
     "title": "Einfache, transparente Preise",
-    "subtitle": "Wählt, was zu eurer Reise passt. Keine versteckten Gebühren. Jederzeit kündbar.",
+    "subtitle": "W盲hlt, was zu eurer Reise passt. Keine versteckten Geb眉hren. Jederzeit k眉ndbar.",
     "monthly": "Monatlich",
-    "quarterly": "Vierteljährlich",
-    "yearly": "Jährlich",
+    "quarterly": "Viertelj盲hrlich",
+    "yearly": "J盲hrlich",
     "popular": "Am beliebtesten",
     "save": "Spare {discount}%",
     "tiers": {
       "free": {
         "name": "Kostenlos",
-        "price": "0€",
+        "price": "0鈧?,
         "features": [
-          "Täglicher Check-in",
+          "T盲glicher Check-in",
           "3 Zeitkapseln",
           "Basis-Haustier",
           "Community-Zugang"
@@ -131,7 +131,7 @@
       },
       "plus": {
         "name": "Togthr Plus",
-        "price": "5,49€",
+        "price": "5,49鈧?,
         "period": "/Monat",
         "features": [
           "Unbegrenzte Kapseln",
@@ -142,24 +142,24 @@
       },
       "premium": {
         "name": "We2 Premium",
-        "price": "13,99€",
+        "price": "13,99鈧?,
         "period": "/Quartal",
         "features": [
           "Alles in Plus",
-          "Prioritäts-Support",
+          "Priorit盲ts-Support",
           "Eigene Haustier-Namen",
           "Erinnerungen exportieren"
         ]
       },
       "lifetime": {
         "name": "We2 Forever",
-        "price": "39,99€",
+        "price": "39,99鈧?,
         "period": "/Jahr",
         "features": [
           "Alles in Premium",
           "Lebenslange Updates",
           "Exklusive Inhalte",
-          "Früher Zugang zu Features"
+          "Fr眉her Zugang zu Features"
         ]
       },
       "soulmate": {
@@ -170,8 +170,8 @@
           "Alles aus Plus",
           "KI-Sprachstil",
           "Spricht wie der andere",
-          "Smart-Memory-Vorschläge",
-          "Prioritäts-Support"
+          "Smart-Memory-Vorschl盲ge",
+          "Priorit盲ts-Support"
         ]
       },
       "eternal": {
@@ -180,9 +180,9 @@
         "features": [
           "Alles in Plus",
           "Alle 50+ Haustier-Suits freigeschaltet",
-          "Goldene legendäre Haustiere",
-          "Prioritäts-Support",
-          "Früher Zugriff auf neue Funktionen"
+          "Goldene legend盲re Haustiere",
+          "Priorit盲ts-Support",
+          "Fr眉her Zugriff auf neue Funktionen"
         ]
       }
     },
@@ -202,25 +202,25 @@
     "promoPlaceholder": "Aktionscode eingeben",
     "promoApply": "Anwenden",
     "promoHint": "Aktionscodes kommen bald!",
-    "secure": "Geschützt durch PayPal",
-    "guarantee": "30-Tage-Geld-zurück-Garantie",
+    "secure": "Gesch眉tzt durch PayPal",
+    "guarantee": "30-Tage-Geld-zur眉ck-Garantie",
     "new": "Neu",
     "theater": {
-      "eyebrow": "Wähle deine Reise",
-      "headline": "Schalte ein Leben frei, das mit dir wächst",
-      "tagline": "Drei Stufen. Ein Versprechen: Jedes Pet, das du freischaltest, bleibt für immer bei dir.",
-      "guarantee": "30 Tage Geld-zurück-Garantie",
-      "secure": "Sicher bezahlt mit PayPal · Alipay · AlipayHK"
+      "eyebrow": "W盲hle deine Reise",
+      "headline": "Schalte ein Leben frei, das mit dir w盲chst",
+      "tagline": "Drei Stufen. Ein Versprechen: Jedes Pet, das du freischaltest, bleibt f眉r immer bei dir.",
+      "guarantee": "30 Tage Geld-zur眉ck-Garantie",
+      "secure": "Sicher bezahlt mit PayPal 路 Alipay 路 AlipayHK"
     },
     "tierMeta": {
       "free": {
-        "eyebrow": "Sämling",
+        "eyebrow": "S盲mling",
         "tagline": "Beginne deine Reise",
         "peeking": "Pets verstecken sich"
       },
       "plus": {
         "eyebrow": "Begleiter",
-        "tagline": "Wähle deine Seele",
+        "tagline": "W盲hle deine Seele",
         "peeking": "Pets sind aufgeregt"
       },
       "eternal": {
@@ -232,11 +232,11 @@
     "petMatrix": {
       "free": {
         "label": "3 Basis-Begleiter",
-        "sub": "Knospen, Sprösslinge, Starter"
+        "sub": "Knospen, Spr枚sslinge, Starter"
       },
       "plus": {
         "label": "50+ Outfits freischalten",
-        "sub": "Beruf · Fest · Emotion · Fantasie"
+        "sub": "Beruf 路 Fest 路 Emotion 路 Fantasie"
       },
       "eternal": {
         "label": "Voller Zugang + Exklusiv",
@@ -249,7 +249,7 @@
       "hint": "Zufalls-Drop aus der Eternal-Box"
     },
     "countdown": {
-      "label": "Halloween-Edition · Early Access",
+      "label": "Halloween-Edition 路 Early Access",
       "endsIn": "Endet in",
       "days": "T",
       "hours": "Std",
@@ -258,49 +258,49 @@
     },
     "ctaSubscribe": "Jetzt abonnieren",
     "ctaStartFree": "Kostenlos starten",
-    "ctaPopular": "Begleiter wählen",
+    "ctaPopular": "Begleiter w盲hlen",
     "ctaEternal": "Eternal werden"
   },
   "faq": {
-    "title": "Häufig gestellte Fragen",
-    "subtitle": "Alles, was ihr über Togthr wissen müsst",
+    "title": "H盲ufig gestellte Fragen",
+    "subtitle": "Alles, was ihr 眉ber Togthr wissen m眉sst",
     "items": [
       {
         "question": "Was ist Togthr und wie hilft es Paaren?",
-        "answer": "Togthr ist eine App für emotionales Beziehungswachstum, die Partnern hilft, durch tägliche Check-ins, Zeitkapseln und gemeinsame Herausforderungen emotionale Gewohnheiten zu entwickeln – entwickelt mit Psychologen."
+        "answer": "Togthr ist eine App f眉r emotionales Beziehungswachstum, die Partnern hilft, durch t盲gliche Check-ins, Zeitkapseln und gemeinsame Herausforderungen emotionale Gewohnheiten zu entwickeln 鈥?entwickelt mit Psychologen."
       },
       {
         "question": "Sind meine Daten privat und sicher?",
-        "answer": "Absolut. Wir nutzen Ende-zu-Ende-Verschlüsselung für alle persönlichen Inhalte. Eure intimen Momente, Fotos und Nachrichten bleiben nur zwischen euch beiden. Wir verkaufen niemals Daten an Dritte."
+        "answer": "Absolut. Wir nutzen Ende-zu-Ende-Verschl眉sselung f眉r alle pers枚nlichen Inhalte. Eure intimen Momente, Fotos und Nachrichten bleiben nur zwischen euch beiden. Wir verkaufen niemals Daten an Dritte."
       },
       {
         "question": "Kann ich Togthr in einer Fernbeziehung nutzen?",
-        "answer": "Ja! Togthr ist speziell für alle Paare entwickelt, ob im selben Raum oder am anderen Ende der Welt. Zeitkapseln und tägliche Check-ins sind perfekt, um Verbindung über Distanz zu halten."
+        "answer": "Ja! Togthr ist speziell f眉r alle Paare entwickelt, ob im selben Raum oder am anderen Ende der Welt. Zeitkapseln und t盲gliche Check-ins sind perfekt, um Verbindung 眉ber Distanz zu halten."
       },
       {
         "question": "Wie funktioniert das virtuelle Haustier?",
-        "answer": "Euer Haustier wächst, wenn ihr beide gemeinsam tägliche Check-ins und Herausforderungen abschließt. Es ist eine spielerische visuelle Darstellung eures Beziehungswachstums. Neue Haustiere und Skins schalten sich bei Meilensteinen frei."
+        "answer": "Euer Haustier w盲chst, wenn ihr beide gemeinsam t盲gliche Check-ins und Herausforderungen abschlie脽t. Es ist eine spielerische visuelle Darstellung eures Beziehungswachstums. Neue Haustiere und Skins schalten sich bei Meilensteinen frei."
       },
       {
         "question": "Welche Zahlungsmethoden akzeptiert ihr?",
-        "answer": "Wir akzeptieren PayPal für alle Nutzer sowie Alipay für Nutzer aus China. Alle Transaktionen sind sicher und verschlüsselt."
+        "answer": "Wir akzeptieren PayPal f眉r alle Nutzer sowie Alipay f眉r Nutzer aus China. Alle Transaktionen sind sicher und verschl眉sselt."
       },
       {
-        "question": "Kann ich meine Mitgliedschaft kündigen?",
-        "answer": "Ja, jederzeit kündbar. Eure Mitgliedschaft bleibt bis zum Ende des aktuellen Zeitraums aktiv. Wir bieten zudem eine 30-Tage-Geld-zurück-Garantie für neue Abonnenten."
+        "question": "Kann ich meine Mitgliedschaft k眉ndigen?",
+        "answer": "Ja, jederzeit k眉ndbar. Eure Mitgliedschaft bleibt bis zum Ende des aktuellen Zeitraums aktiv. Wir bieten zudem eine 30-Tage-Geld-zur眉ck-Garantie f眉r neue Abonnenten."
       },
       {
         "question": "Wie verbinde ich mich mit meinem Partner?",
-        "answer": "Nach der Anmeldung sendet deinem Partner einen Einladungscode. Sobald er diesen akzeptiert, sind eure Konten verknüpft und ihr könnt gemeinsam Check-ins, Kapseln und Haustierwachstum genießen."
+        "answer": "Nach der Anmeldung sendet deinem Partner einen Einladungscode. Sobald er diesen akzeptiert, sind eure Konten verkn眉pft und ihr k枚nnt gemeinsam Check-ins, Kapseln und Haustierwachstum genie脽en."
       },
       {
         "question": "Gibt es eine Community-Funktion?",
-        "answer": "Ja! Unsere anonyme Community erlaubt es euch, Geschichten zu teilen, Rat einzuholen und Meilensteine mit Paaren weltweit zu feiern – anonym oder mit eurem Paar-Profil."
+        "answer": "Ja! Unsere anonyme Community erlaubt es euch, Geschichten zu teilen, Rat einzuholen und Meilensteine mit Paaren weltweit zu feiern 鈥?anonym oder mit eurem Paar-Profil."
       }
     ]
   },
   "auth": {
-    "loginTitle": "Willkommen zurück",
+    "loginTitle": "Willkommen zur眉ck",
     "loginSubtitle": "Melde dich an, um eure gemeinsame Reise fortzusetzen",
     "registerTitle": "Beginnt eure Reise",
     "registerSubtitle": "Erstellt euer Konto und ladet euren Partner ein",
@@ -317,8 +317,8 @@
     "registerLink": "Jetzt registrieren",
     "loginLink": "Anmelden",
     "forgotPassword": "Passwort vergessen?",
-    "resetPasswordTitle": "Passwort zurücksetzen",
-    "resetPasswordSubtitle": "Gib deine E-Mail ein, um einen Link zum Zurücksetzen zu erhalten",
+    "resetPasswordTitle": "Passwort zur眉cksetzen",
+    "resetPasswordSubtitle": "Gib deine E-Mail ein, um einen Link zum Zur眉cksetzen zu erhalten",
     "resetPasswordButton": "Link senden",
     "updatePasswordTitle": "Neues Passwort festlegen",
     "updatePasswordSubtitle": "Gib dein neues Passwort ein",
@@ -326,7 +326,7 @@
     "orContinueWith": "Oder fortfahren mit",
     "google": "Google",
     "github": "GitHub",
-    "checkEmail": "Bitte überprüfe deine E-Mails auf den Bestätigungslink.",
+    "checkEmail": "Bitte 眉berpr眉fe deine E-Mails auf den Best盲tigungslink.",
     "passwordUpdated": "Passwort aktualisiert. Du kannst dich jetzt anmelden.",
     "signOut": "Abmelden",
     "dashboard": "Dashboard"
@@ -337,33 +337,33 @@
     "cookie": "Cookie-Einstellungen",
     "help": "Hilfe",
     "contact": "Kontakt",
-    "copyright": "© {year} Togthr. Alle Rechte vorbehalten."
+    "copyright": "漏 {year} Togthr. Alle Rechte vorbehalten."
   },
   "notFound": {
     "title": "Verlaufen?",
     "description": "Diese Seite ist weggelaufen. Dein Haustier sucht sie auch.",
     "backHome": "Start",
-    "feedPet": "Füttern",
+    "feedPet": "F眉ttern",
     "sayHi": "Sag hallo",
     "pixelHint": "8-Bit-Moment"
   },
   "payment": {
-    "title": "Kauf abschließen",
-    "subtitle": "Zahlungsmethode wählen, um We2 Plus freizuschalten",
+    "title": "Kauf abschlie脽en",
+    "subtitle": "Zahlungsmethode w盲hlen, um We2 Plus freizuschalten",
     "periodLabel": "Abrechnungszeitraum",
     "monthly": "Monatlich",
-    "quarterly": "Vierteljährlich",
-    "yearly": "Jährlich",
+    "quarterly": "Viertelj盲hrlich",
+    "yearly": "J盲hrlich",
     "priceLabel": "Gesamt",
     "gatewayLabel": "Zahlungsmethode",
     "paypal": "PayPal",
-    "alipayCn": "Alipay（Festland-China）",
-    "alipayHk": "AlipayHK（Hongkong / Taiwan）",
+    "alipayCn": "Alipay锛團estland-China锛?,
+    "alipayHk": "AlipayHK锛圚ongkong / Taiwan锛?,
     "payButton": "Mit {gateway} bezahlen",
-    "processing": "Zahlung wird verarbeitet…",
+    "processing": "Zahlung wird verarbeitet鈥?,
     "success": {
       "title": "Zahlung erfolgreich!",
-      "message": "Vielen Dank für dein We2 Plus Abo. Weiterleitung zum Dashboard…"
+      "message": "Vielen Dank f眉r dein We2 Plus Abo. Weiterleitung zum Dashboard鈥?
     },
     "error": {
       "title": "Zahlung fehlgeschlagen",
@@ -376,58 +376,58 @@
     }
   },
   "upload": {
-    "dragOrClick": "Dateien hierher ziehen oder klicken zum Auswählen",
+    "dragOrClick": "Dateien hierher ziehen oder klicken zum Ausw盲hlen",
     "dropHere": "Dateien hier ablegen",
     "constraints": "Max. {maxSize}MB pro Datei, bis zu {maxFiles} Dateien",
     "statusSuccess": "Hochgeladen",
     "remove": "Datei entfernen",
-    "errorTooLarge": "Datei überschreitet {maxSize}MB Limit",
-    "errorType": "Nicht unterstützter Dateityp. Erlaubt: {types}",
+    "errorTooLarge": "Datei 眉berschreitet {maxSize}MB Limit",
+    "errorType": "Nicht unterst眉tzter Dateityp. Erlaubt: {types}",
     "errorMaxFiles": "Maximal {max} Dateien erlaubt",
     "errorUpload": "Upload fehlgeschlagen. Bitte erneut versuchen."
   },
   "features": {
-    "backToFeatures": "Zurück zu den Funktionen",
+    "backToFeatures": "Zur眉ck zu den Funktionen",
     "howItWorks": "So funktioniert's",
     "tryItOut": "Ausprobieren",
     "dailyCheckIn": {
       "longDesc": "Starte jeden Tag mit einer durchdachten Frage, die eure emotionale Verbindung vertieft. Antworte privat, bevor du sie mit deinem Partner teilst und besprichst.",
-      "step1": "Erhalte jeden Morgen eine tägliche Frage",
+      "step1": "Erhalte jeden Morgen eine t盲gliche Frage",
       "step2": "Antworte privat, bevor du die Antwort deines Partners siehst",
-      "step3": "Enthüllt beide Antworten gleichzeitig",
-      "step4": "Diskutiert und sammelt Liebespunkte für euer virtuelles Haustier"
+      "step3": "Enth眉llt beide Antworten gleichzeitig",
+      "step4": "Diskutiert und sammelt Liebespunkte f眉r euer virtuelles Haustier"
     },
     "timeCapsules": {
-      "longDesc": "Erstelle digitale Zeitkapseln mit Fotos, Sprachnachrichten und Liebesbriefen. Verschließe sie und lege ein zukünftiges Öffnungsdatum fest – perfekt für Jubiläen oder Überraschungen.",
+      "longDesc": "Erstelle digitale Zeitkapseln mit Fotos, Sprachnachrichten und Liebesbriefen. Verschlie脽e sie und lege ein zuk眉nftiges 脰ffnungsdatum fest 鈥?perfekt f眉r Jubil盲en oder 脺berraschungen.",
       "step1": "Erstelle eine Kapsel mit Fotos, Notizen oder Sprachnachrichten",
-      "step2": "Lege ein zukünftiges Öffnungsdatum fest (Jubiläum, Geburtstag, etc.)",
-      "step3": "Beide Partner können Inhalte hinzufügen, bis die Kapsel versiegelt wird",
-      "step4": "Erhalte eine Benachrichtigung, wenn es Zeit ist, sie gemeinsam zu öffnen"
+      "step2": "Lege ein zuk眉nftiges 脰ffnungsdatum fest (Jubil盲um, Geburtstag, etc.)",
+      "step3": "Beide Partner k枚nnen Inhalte hinzuf眉gen, bis die Kapsel versiegelt wird",
+      "step4": "Erhalte eine Benachrichtigung, wenn es Zeit ist, sie gemeinsam zu 枚ffnen"
     },
     "virtualPet": {
-      "longDesc": "Lerne euer gemeinsames virtuelles Haustier kennen – einen niedlichen Begleiter, der mit eurer Beziehung wächst. Schließt tägliche Check-ins und Herausforderungen ab, um Liebespunkte zu sammeln.",
-      "step1": "Wählt und benennt euer Haustier gemeinsam",
-      "step2": "Verdient Liebespunkte durch tägliche Check-ins",
-      "step3": "Füttert, spielt und kümmert euch als Team um euer Haustier",
+      "longDesc": "Lerne euer gemeinsames virtuelles Haustier kennen 鈥?einen niedlichen Begleiter, der mit eurer Beziehung w盲chst. Schlie脽t t盲gliche Check-ins und Herausforderungen ab, um Liebespunkte zu sammeln.",
+      "step1": "W盲hlt und benennt euer Haustier gemeinsam",
+      "step2": "Verdient Liebespunkte durch t盲gliche Check-ins",
+      "step3": "F眉ttert, spielt und k眉mmert euch als Team um euer Haustier",
       "step4": "Schaltet neue Skins und Entwicklungen bei Beziehungsmeilensteinen frei"
     },
     "privateCommunity": {
-      "longDesc": "Tritt einer anonymen, unterstützenden Community von Paaren aus aller Welt bei. Teilt eure Geschichten, holt euch Rat und feiert Meilensteine.",
+      "longDesc": "Tritt einer anonymen, unterst眉tzenden Community von Paaren aus aller Welt bei. Teilt eure Geschichten, holt euch Rat und feiert Meilensteine.",
       "step1": "Erstellt euer anonymes Paar-Profil",
       "step2": "Postet Geschichten, Fragen oder Meilensteine",
-      "step3": "Interagiert mit Beiträgen anderer Paare",
-      "step4": "Knüpft Verbindungen in einem unterstützenden, moderierten Raum"
+      "step3": "Interagiert mit Beitr盲gen anderer Paare",
+      "step4": "Kn眉pft Verbindungen in einem unterst眉tzenden, moderierten Raum"
     },
     "sharedJournal": {
-      "longDesc": "Schreibt eure Geschichte zusammen – wortwörtlich. Ein gemeinsames Tagebuch, in dem beide Partner Einträge hinzufügen und eine Zeitlinie eurer kostbarsten Momente erstellen können.",
+      "longDesc": "Schreibt eure Geschichte zusammen 鈥?wortw枚rtlich. Ein gemeinsames Tagebuch, in dem beide Partner Eintr盲ge hinzuf眉gen und eine Zeitlinie eurer kostbarsten Momente erstellen k枚nnen.",
       "step1": "Erstelle jederzeit einen neuen Tagebucheintrag",
-      "step2": "Beide Partner können ansehen, bearbeiten und kommentieren",
-      "step3": "Füge Fotos und Ortsmarken zu Einträgen hinzu",
+      "step2": "Beide Partner k枚nnen ansehen, bearbeiten und kommentieren",
+      "step3": "F眉ge Fotos und Ortsmarken zu Eintr盲gen hinzu",
       "step4": "Scrollt gemeinsam durch eure Beziehungszeitlinie"
     },
     "dreamWall": {
-      "longDesc": "Pinnt eure gemeinsamen Träume, Ziele und Wunschlisten an eine visuelle Tafel. Plant gemeinsam eure Zukunft und hakt sie ab, wenn ihr sie erreicht.",
-      "step1": "Fügt Träume und Ziele zu eurer gemeinsamen Tafel hinzu",
+      "longDesc": "Pinnt eure gemeinsamen Tr盲ume, Ziele und Wunschlisten an eine visuelle Tafel. Plant gemeinsam eure Zukunft und hakt sie ab, wenn ihr sie erreicht.",
+      "step1": "F眉gt Tr盲ume und Ziele zu eurer gemeinsamen Tafel hinzu",
       "step2": "Organisiert nach Kategorie (Reisen, Zuhause, Abenteuer, etc.)",
       "step3": "Setzt Zieldaten und verfolgt gemeinsam den Fortschritt",
       "step4": "Feiert jeden Erfolg mit einer besonderen Animation"
@@ -439,15 +439,15 @@
       "placeholder": "Teile deinen Moment...",
       "save": "Antwort speichern",
       "saved": "Antwort gespeichert!",
-      "nextQuestion": "Nächste Frage →",
+      "nextQuestion": "N盲chste Frage 鈫?,
       "history": "Deine Antworten",
       "empty": "Starte dein erstes Check-in"
     },
     "timeCapsules": {
       "title": "Erinnerungskapseln",
-      "titlePlaceholder": "Ein Titel für unsere Zukunft...",
+      "titlePlaceholder": "Ein Titel f眉r unsere Zukunft...",
       "contentPlaceholder": "Schreib diesen Moment auf...",
-      "lockCapsule": "Kapsel verschließen 🔒",
+      "lockCapsule": "Kapsel verschlie脽en 馃敀",
       "empty": "Erstelle deine erste Erinnerungskapsel",
       "unlocked": "Entsperrt",
       "daysLeft": "Noch {days} Tage",
@@ -459,9 +459,9 @@
       "virtualCompanion": "Virtueller Begleiter",
       "level": "Level {level}",
       "hunger": "Hunger",
-      "happiness": "Glück",
-      "intimacy": "Intimität",
-      "feed": "Füttern",
+      "happiness": "Gl眉ck",
+      "intimacy": "Intimit盲t",
+      "feed": "F眉ttern",
       "play": "Spielen",
       "cuddle": "Kuscheln"
     },
@@ -477,7 +477,7 @@
     },
     "dreamWall": {
       "title": "Traumwand",
-      "placeholder": "Unser nächster großer Traum...",
+      "placeholder": "Unser n盲chster gro脽er Traum...",
       "pin": "Anheften",
       "empty": "Hefte deinen ersten Traum an die Wand"
     }
@@ -485,8 +485,8 @@
   "legal": {
     "lastUpdated": "Zuletzt aktualisiert: 1. Juni 2026",
     "privacy": {
-      "title": "Datenschutzerklärung",
-      "subtitle": "Deine Privatsphäre ist uns wichtig. Diese Seite erklärt, welche Daten wir erheben, wie wir sie nutzen und welche Rechte du an deinen Informationen hast.",
+      "title": "Datenschutzerkl盲rung",
+      "subtitle": "Deine Privatsph盲re ist uns wichtig. Diese Seite erkl盲rt, welche Daten wir erheben, wie wir sie nutzen und welche Rechte du an deinen Informationen hast.",
       "sections": [
         {
           "heading": "1. Information We Collect",
@@ -502,17 +502,17 @@
         },
         {
           "heading": "4. Your Rights",
-          "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@we2.com. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
+          "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@togthr.life. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
         },
         {
           "heading": "5. Contact",
-          "body": "For any privacy-related question, email privacy@we2.com. We respond within 7 business days."
+          "body": "For any privacy-related question, email privacy@togthr.life. We respond within 7 business days."
         }
       ]
     },
     "terms": {
       "title": "Nutzungsbedingungen",
-      "subtitle": "Mit der Nutzung von Togthr stimmst du den folgenden Bedingungen zu. Bitte lies sie sorgfältig — sie schützen dich und uns.",
+      "subtitle": "Mit der Nutzung von Togthr stimmst du den folgenden Bedingungen zu. Bitte lies sie sorgf盲ltig 鈥?sie sch眉tzen dich und uns.",
       "sections": [
         {
           "heading": "1. Eligibility",
@@ -528,7 +528,7 @@
         },
         {
           "heading": "4. Refund Policy",
-          "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@we2.com for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
+          "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@togthr.life for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
         },
         {
           "heading": "5. Acceptable Use",
@@ -546,7 +546,7 @@
     },
     "cookies": {
       "title": "Cookie-Richtlinie",
-      "subtitle": "Wir verwenden nur das Minimum an Cookies, damit Togthr reibungslos läuft. Hier siehst du genau, welche wir setzen und warum.",
+      "subtitle": "Wir verwenden nur das Minimum an Cookies, damit Togthr reibungslos l盲uft. Hier siehst du genau, welche wir setzen und warum.",
       "sections": [
         {
           "heading": "1. Essential Cookies",
@@ -568,11 +568,11 @@
     },
     "help": {
       "title": "Hilfe-Center",
-      "subtitle": "Schnelle Antworten auf die häufigsten Fragen. Du findest nicht, was du suchst? Melde dich — wir helfen dir gerne weiter.",
+      "subtitle": "Schnelle Antworten auf die h盲ufigsten Fragen. Du findest nicht, was du suchst? Melde dich 鈥?wir helfen dir gerne weiter.",
       "sections": [
         {
           "heading": "Getting Started",
-          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional — every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
+          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional 鈥?every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
         },
         {
           "heading": "Subscription & Billing",
@@ -584,29 +584,29 @@
         },
         {
           "heading": "Report a Bug",
-          "body": "Found something broken? Email bugs@we2.com with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
+          "body": "Found something broken? Email bugs@togthr.life with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
         },
         {
           "heading": "International Support",
-          "body": "Togthr is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
+          "body": "Togthr is available in 8 languages: English, 绠€浣撲腑鏂? 绻侀珨涓枃, 鏃ユ湰瑾? 頃滉淡鞏? Espa帽ol, Fran莽ais, and Deutsch. Support email replies are in English by default 鈥?let us know if you'd prefer another language and we will do our best."
         }
       ]
     },
     "contact": {
       "title": "Kontaktiere uns",
-      "subtitle": "Wir freuen uns von dir zu hören. Wähle den Kanal, der am besten zu deiner Frage passt.",
+      "subtitle": "Wir freuen uns von dir zu h枚ren. W盲hle den Kanal, der am besten zu deiner Frage passt.",
       "sections": [
         {
           "heading": "General Support",
-          "body": "Questions, feedback, or feature requests. Email support@we2.com. We typically respond within 24 hours on business days."
+          "body": "Questions, feedback, or feature requests. Email support@togthr.life. We typically respond within 24 hours on business days."
         },
         {
           "heading": "Privacy & Data",
-          "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@we2.com. We respond within 7 business days."
+          "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@togthr.life. We respond within 7 business days."
         },
         {
           "heading": "Bug Reports",
-          "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@we2.com with your device model and OS version. We respond within 48 hours."
+          "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@togthr.life with your device model and OS version. We respond within 48 hours."
         }
       ]
     }
@@ -614,78 +614,78 @@
   "store": {
     "title": "Togthr Begleiter",
     "subtitle": "6+1 Mystery-Box, 1/72 Chance auf die goldene Togthr",
-    "firstOrder": "Erstkäufer",
-    "regular": "Regulärer Preis",
+    "firstOrder": "Erstk盲ufer",
+    "regular": "Regul盲rer Preis",
     "save": "50% sparen",
-    "blindboxTitle": "Togthr Begleiter — 6+1 Mystery-Box",
-    "blindboxDesc": "Eine Überraschung pro Box: Programmierer, Arzt, Astronaut, Koch, Feuerwehrmann, Polizist... und 1/72 Chance auf die legendäre goldene Togthr.",
+    "blindboxTitle": "Togthr Begleiter 鈥?6+1 Mystery-Box",
+    "blindboxDesc": "Eine 脺berraschung pro Box: Programmierer, Arzt, Astronaut, Koch, Feuerwehrmann, Polizist... und 1/72 Chance auf die legend盲re goldene Togthr.",
     "ctaBuy": "Box kaufen",
     "ctaTrySoulmate": "1 Monat Soulmate AI inklusive",
     "odds": "Quote",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
     "perma": "Dauerhaft freischalten",
-    "checkoutNote": "PayPal Test-Modus · 50% Erstkäufer-Rabatt",
-    "checkoutNote2": "Kein Abo · Einmalzahlung · Für immer",
+    "checkoutNote": "PayPal Test-Modus 路 50% Erstk盲ufer-Rabatt",
+    "checkoutNote2": "Kein Abo 路 Einmalzahlung 路 F眉r immer",
     "successTitle": "Bestellung erhalten!",
-    "successSubtitle": "Dein Togthr Begleiter ist unterwegs. PayPal verarbeitet deine Zahlung — du erhältst gleich eine E-Mail-Quittung.",
-    "successNote": "Dein Skin wird innerhalb weniger Minuten freigeschaltet, sobald PayPal die Zahlung bestätigt.",
+    "successSubtitle": "Dein Togthr Begleiter ist unterwegs. PayPal verarbeitet deine Zahlung 鈥?du erh盲ltst gleich eine E-Mail-Quittung.",
+    "successNote": "Dein Skin wird innerhalb weniger Minuten freigeschaltet, sobald PayPal die Zahlung best盲tigt.",
     "successHint": "Wenn dein Skin nach 10 Minuten nicht erscheint, kontaktiere uns bitte mit deiner Bestellnummer.",
     "secureNotice": "Zahlungen durch PayPal gesichert. Wir sehen nie deine Kartendaten."
   },
   "daily": {
-    "title": "Tägliche Fütterung",
+    "title": "T盲gliche F眉tterung",
     "q": "Ist der andere heute bei dir?",
-    "withBtn": "💕 Zusammen",
-    "apartBtn": "🌙 Getrennt",
-    "hunger": "Sättigung",
-    "streak": "🔥 {n} Tage in Folge",
+    "withBtn": "馃挄 Zusammen",
+    "apartBtn": "馃寵 Getrennt",
+    "hunger": "S盲ttigung",
+    "streak": "馃敟 {n} Tage in Folge",
     "bubbleIdle": "Hehe, warte~",
     "bubbleWith": "Zusammen!",
     "bubbleApart": "Vermisse sie...",
-    "bubbleFeed": "Füttere mich!",
+    "bubbleFeed": "F眉ttere mich!",
     "bubbleFull": "Ich bin satt!",
     "bubbleMore": "Mehr bitte~",
     "again": "Nochmal",
     "dragHint": "Zum Haustier ziehen",
     "streakDays": "{n} Tage in Folge",
-    "treasureTitle": "Schatztruhe! 🎁",
+    "treasureTitle": "Schatztruhe! 馃巵",
     "treasureDesc": "7-Tage-Serie! Dein Haustier hat eine Schatztruhe ausgegraben~"
   },
   "capsule": {
-    "title": "Zeitkapsel · Schatzsuche",
-    "subtitle": "Tippe auf ein vergrabenes Feld — dein Haustier geht hin und gräbt es aus.",
+    "title": "Zeitkapsel 路 Schatzsuche",
+    "subtitle": "Tippe auf ein vergrabenes Feld 鈥?dein Haustier geht hin und gr盲bt es aus.",
     "buried": "vergraben",
-    "opened": "geöffnet",
+    "opened": "ge枚ffnet",
     "openedOn": "Vergraben am:",
     "close": "Schatz!",
     "cancel": "Abbrechen",
     "write": "Neue Kapsel vergraben",
     "writeTitle": "Titel",
-    "writePlaceholder": "Eine Nachricht für die Zukunft...",
+    "writePlaceholder": "Eine Nachricht f眉r die Zukunft...",
     "save": "Vergraben"
   },
   "pet": {
     "title": "Mein Haustier",
-    "subtitle": "Das Haustier spiegelt eure Beziehung. Wähle eine Stimmung.",
-    "pickMood": "Wie fühlt sich dein Haustier heute?",
+    "subtitle": "Das Haustier spiegelt eure Beziehung. W盲hle eine Stimmung.",
+    "pickMood": "Wie f眉hlt sich dein Haustier heute?",
     "status": "Togthr ist",
     "day": "Tag {n} zusammen",
     "mood": {
-      "happy": "Süß",
+      "happy": "S眉脽",
       "sad": "Streit",
       "thinking": "Denkend",
       "sleeping": "Schlafend",
-      "sweet": "Süß",
+      "sweet": "S眉脽",
       "fight": "Streit",
       "think": "Nachdenklich",
-      "sleep": "Schläft"
+      "sleep": "Schl盲ft"
     },
     "rarity": {
-      "common": "Gewöhnlich",
+      "common": "Gew枚hnlich",
       "rare": "Selten",
       "epic": "Episch",
-      "legendary": "Legendär"
+      "legendary": "Legend盲r"
     },
     "series": {
       "basic": "Basis",
@@ -693,7 +693,7 @@
       "festival": "Fest",
       "emotion": "Emotion",
       "fantasy": "Fantasie",
-      "legendary": "Legendär"
+      "legendary": "Legend盲r"
     },
     "tier": {
       "free": "Gratis",
@@ -704,21 +704,21 @@
       "current": "Aktuell"
     },
     "altar": {
-      "title": "Beschwöre deinen Seelen-Begleiter",
-      "back": "Zurück",
-      "close": "Schließen",
+      "title": "Beschw枚re deinen Seelen-Begleiter",
+      "back": "Zur眉ck",
+      "close": "Schlie脽en",
       "hint": "Tippe auf ein freigeschaltetes Pet zur Vorschau. Bei gesperrten Pets siehst du, wie du sie freischaltest.",
-      "summon": "Beschwören",
+      "summon": "Beschw枚ren",
       "summoned": "ist eingetroffen",
       "current": "In Benutzung"
     },
     "petting": "Streichle mich~",
     "statusHello": "Hi!",
-    "statusSleepy": "Zzz…",
+    "statusSleepy": "Zzz鈥?,
     "statusMiss": "Vermisse dich",
-    "changePet": "Aussehen ändern",
-    "changePetBadge": "Beschwörungsaltar",
-    "lockHint": "Gesperrte Pets sind weiterhin sichtbar — freischalten per Abo oder Blindbox",
+    "changePet": "Aussehen 盲ndern",
+    "changePetBadge": "Beschw枚rungsaltar",
+    "lockHint": "Gesperrte Pets sind weiterhin sichtbar 鈥?freischalten per Abo oder Blindbox",
     "info": {
       "days": "Tage zusammen",
       "interactions": "Interaktionen",
@@ -760,14 +760,14 @@
     "title": "Unser Nest",
     "subtitle": "Jeder Tagebuch-Eintrag erweitert euer gemeinsames Nest. Sieh es wachsen.",
     "stage": "Stufe",
-    "nextStage": "Nächste: {next}",
+    "nextStage": "N盲chste: {next}",
     "complete": "Nest vollendet!",
-    "entriesCount": "{n} Einträge",
-    "writePlaceholder": "Schreibe etwas über heute...",
+    "entriesCount": "{n} Eintr盲ge",
+    "writePlaceholder": "Schreibe etwas 眉ber heute...",
     "save": "Zum Nest",
     "mood": {
       "warm": "Warm",
-      "cool": "Kühl",
+      "cool": "K眉hl",
       "festive": "Festlich"
     },
     "stageName": {
@@ -779,7 +779,7 @@
     },
     "seedEntries": {
       "e1": {
-        "text": "Schönes Wetter heute, wir waren spazieren.",
+        "text": "Sch枚nes Wetter heute, wir waren spazieren.",
         "mood": "warm"
       },
       "e2": {
@@ -787,7 +787,7 @@
         "mood": "cool"
       },
       "e3": {
-        "text": "Unser erstes Weihnachten zusammen 🎄",
+        "text": "Unser erstes Weihnachten zusammen 馃巹",
         "mood": "festive"
       }
     }
@@ -796,38 +796,38 @@
     "title": "Seelenverwandter",
     "online": "Immer da",
     "placeholder": "Sag etwas...",
-    "mockNotice": "Day 1 Mock — Echte KI in Tag 2",
+    "mockNotice": "Day 1 Mock 鈥?Echte KI in Tag 2",
     "typing": "Begleiter tippt...",
     "nightMode": "Nachtmodus",
-    "anniversary": "100 Nachrichten — ein Kapitel vollendet",
+    "anniversary": "100 Nachrichten 鈥?ein Kapitel vollendet",
     "mood": {
-      "sweet": "Süß",
+      "sweet": "S眉脽",
       "calm": "Ruhig",
       "think": "Nachdenklich",
-      "sleepy": "Müde",
+      "sleepy": "M眉de",
       "fight": "Streit"
     }
   },
   "onboarding": {
-    "back": "Zurück",
+    "back": "Zur眉ck",
     "next": "Weiter",
     "finish": "Fertig",
     "welcome": {
       "title": "Immer da",
-      "subtitle": "Dein kleiner Roboter ist da - ein Begleiter, der mit dir wächst.",
+      "subtitle": "Dein kleiner Roboter ist da - ein Begleiter, der mit dir w盲chst.",
       "cta": "Starten"
     },
     "name": {
       "title": "Nenne deinen Togthr",
-      "subtitle": "Ein Name für den kleinen Roboter, der bei dir sein wird.",
+      "subtitle": "Ein Name f眉r den kleinen Roboter, der bei dir sein wird.",
       "placeholder": "z.B. Pixel, Mimi, Beibei..."
     },
     "mode": {
       "title": "Wie willst du reisen?",
-      "subtitle": "Du kannst dies jederzeit ändern.",
+      "subtitle": "Du kannst dies jederzeit 盲ndern.",
       "solo": {
         "title": "Allein",
-        "desc": "Ein Begleiter für dich, mit KI-Chat."
+        "desc": "Ein Begleiter f眉r dich, mit KI-Chat."
       },
       "together": {
         "title": "Mit jemandem",
@@ -836,9 +836,9 @@
     },
     "done": {
       "title": "{name} ist bereit!",
-      "soloNote": "Dein Haustier ist da. Füttere es, chatte, schicke Sticker.",
+      "soloNote": "Dein Haustier ist da. F眉ttere es, chatte, schicke Sticker.",
       "togetherNote": "Dein Haustier ist da. Sende die erste Kapsel.",
-      "feedPet": "{name} füttern",
+      "feedPet": "{name} f眉ttern",
       "sayHi": "Sag hallo",
       "startOver": "Neu starten"
     }
@@ -848,7 +848,7 @@
     "subtitle": "Anonyme Notizen. Umarmungen statt Likes. Keine Namen, kein Urteil.",
     "rule1": "Keine echten Namen",
     "rule2": "Umarmungen statt Likes",
-    "rule3": "24h Auto-Löschung",
+    "rule3": "24h Auto-L枚schung",
     "composer": {
       "placeholder": "Schreib etwas. Irgendetwas. ~280 Zeichen.",
       "send": "Ins Loch werfen"
@@ -862,17 +862,17 @@
     "hug": "Umarmen",
     "autoPurgeHint": "verschwindet in {hours}h",
     "empty": "Noch keine Notizen. Sei die erste.",
-    "mockNotice": "Day 1 Client-Mock — Auto-Löschung in Day 2."
+    "mockNotice": "Day 1 Client-Mock 鈥?Auto-L枚schung in Day 2."
   },
   "errorPage": {
     "title": "Etwas ist schiefgelaufen",
-    "message": "Die Seite hat ein Problem. Dein Haustier kümmert sich darum.",
+    "message": "Die Seite hat ein Problem. Dein Haustier k眉mmert sich darum.",
     "tryAgain": "Erneut versuchen",
     "home": "Startseite",
     "errorId": "Fehler-ID"
   },
   "paywallHint": {
-    "title": "Dein Kumpel möchte ein neues Outfit! ✨",
+    "title": "Dein Kumpel m枚chte ein neues Outfit! 鉁?,
     "cta": "Anschauen",
     "dismiss": "Kostenlos weiternutzen"
   },
@@ -883,39 +883,39 @@
     "minutes": "{minutes} Min.",
     "start": "Fokus starten",
     "giveUp": "Session beenden",
-    "awayNotice": "Ich warte auf dich…",
-    "welcomeBack": "Willkommen zurück — weiter geht's!",
+    "awayNotice": "Ich warte auf dich鈥?,
+    "welcomeBack": "Willkommen zur眉ck 鈥?weiter geht's!",
     "completeTitle": "Geschafft!",
     "completeDesc": "{minutes} Minuten sanfter Fokus, gemeinsam.",
     "streak": "{days} Tage in Folge",
     "again": "Noch eine Runde",
-    "lockedPlus": "🔒 Längere Sessions mit Plus freischalten",
-    "interruptedNote": "Diese Session hat kurz pausiert — kein Problem, wir fangen neu an.",
+    "lockedPlus": "馃敀 L盲ngere Sessions mit Plus freischalten",
+    "interruptedNote": "Diese Session hat kurz pausiert 鈥?kein Problem, wir fangen neu an.",
     "phrase1": "Ich bin hier bei dir.",
     "phrase2": "Ein kleiner Schritt nach dem anderen.",
     "phrase3": "Du schaffst das.",
     "phrase4": "Lass uns leise zusammen wachsen."
   },
   "paymentSuccess": {
-    "title": "Payment successful 🎉",
+    "title": "Payment successful 馃帀",
     "subtitle": "Your companion felt that. Membership is now active.",
     "noteTitle": "What happens next",
-    "noteBody": "Your new pets, skins and member perks unlock within a few seconds — no restart needed.",
+    "noteBody": "Your new pets, skins and member perks unlock within a few seconds 鈥?no restart needed.",
     "hint": "If anything looks missing, give it a moment and refresh the pet page.",
-    "ctaPet": "🐾 Meet your pet",
-    "ctaPricing": "← Back to pricing",
+    "ctaPet": "馃惥 Meet your pet",
+    "ctaPricing": "鈫?Back to pricing",
     "secureNotice": "Payments processed securely."
   },
   "feedback": {
     "title": "Feedback?",
     "typeLabel": "Typ",
     "messageLabel": "Was liegt Ihnen auf dem Herzen?",
-    "messagePlaceholder": "Sagen Sie uns, was Sie sehen möchten oder was kaputt ist...",
-    "emailLabel": "Ihre E-Mail (optional, für Rückfragen)",
+    "messagePlaceholder": "Sagen Sie uns, was Sie sehen m枚chten oder was kaputt ist...",
+    "emailLabel": "Ihre E-Mail (optional, f眉r R眉ckfragen)",
     "emailPlaceholder": "you@example.com",
     "send": "Feedback senden",
-    "sending": "Wird gesendet…",
-    "sentTitle": "Danke — wir haben Ihre Nachricht erhalten und melden uns innerhalb von 48 Stunden.",
+    "sending": "Wird gesendet鈥?,
+    "sentTitle": "Danke 鈥?wir haben Ihre Nachricht erhalten und melden uns innerhalb von 48 Stunden.",
     "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
     "types": {
       "bug": "Fehler melden",
@@ -925,3 +925,4 @@
     }
   }
 }
+

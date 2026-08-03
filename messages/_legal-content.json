@@ -1,4 +1,4 @@
-{
+﻿{
   "lastUpdated": "Last updated: June 1, 2026",
   "privacy": {
     "title": "Privacy Policy",
@@ -18,17 +18,17 @@
       },
       {
         "heading": "4. Your Rights",
-        "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@we2.com. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
+        "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@togthr.life. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
       },
       {
         "heading": "5. Contact",
-        "body": "For any privacy-related question, email privacy@we2.com. We respond within 7 business days."
+        "body": "For any privacy-related question, email privacy@togthr.life. We respond within 7 business days."
       }
     ]
   },
   "terms": {
     "title": "Terms of Service",
-    "subtitle": "By using Togthr you agree to the following terms. Please read them carefully — they protect both you and us.",
+    "subtitle": "By using Togthr you agree to the following terms. Please read them carefully 鈥?they protect both you and us.",
     "sections": [
       {
         "heading": "1. Eligibility",
@@ -44,7 +44,7 @@
       },
       {
         "heading": "4. Refund Policy",
-        "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@we2.com for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
+        "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@togthr.life for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
       },
       {
         "heading": "5. Acceptable Use",
@@ -88,7 +88,7 @@
     "sections": [
       {
         "heading": "Getting Started",
-        "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional — every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
+        "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional 鈥?every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
       },
       {
         "heading": "Subscription & Billing",
@@ -100,11 +100,11 @@
       },
       {
         "heading": "Report a Bug",
-        "body": "Found something broken? Email bugs@we2.com with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
+        "body": "Found something broken? Email bugs@togthr.life with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
       },
       {
         "heading": "International Support",
-        "body": "Togthr is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
+        "body": "Togthr is available in 8 languages: English, 绠€浣撲腑鏂? 绻侀珨涓枃, 鏃ユ湰瑾? 頃滉淡鞏? Espa帽ol, Fran莽ais, and Deutsch. Support email replies are in English by default 鈥?let us know if you'd prefer another language and we will do our best."
       }
     ]
   },
@@ -114,16 +114,17 @@
     "sections": [
       {
         "heading": "General Support",
-        "body": "Questions, feedback, or feature requests. Email support@we2.com. We typically respond within 24 hours on business days."
+        "body": "Questions, feedback, or feature requests. Email support@togthr.life. We typically respond within 24 hours on business days."
       },
       {
         "heading": "Privacy & Data",
-        "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@we2.com. We respond within 7 business days."
+        "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@togthr.life. We respond within 7 business days."
       },
       {
         "heading": "Bug Reports",
-        "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@we2.com with your device model and OS version. We respond within 48 hours."
+        "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@togthr.life with your device model and OS version. We respond within 48 hours."
       }
     ]
   }
 }
+
