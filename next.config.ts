@@ -35,7 +35,7 @@ const SECURITY_HEADERS = [
       "font-src 'self' data: https://fonts.gstatic.com",
       "img-src 'self' data: blob: https://*.r2.dev https://togthr-images.r2.cloudflarestorage.com https://cdn.hailuoai.com",
       "media-src 'self' blob:",
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://togthr.life https://*.paypal.com https://api.deepseek.com",
+      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.togthr.life https://togthr.life https://*.paypal.com https://api.deepseek.com",
       "frame-src https://www.paypal.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",

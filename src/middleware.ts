@@ -24,6 +24,14 @@ import { NextRequest, NextResponse } from 'next/server'
  */
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
+  const host = request.headers.get('host') ?? ''
+
+  // P1 — 308 permanent redirect: 裸域 → www（与 canonical / sitemap / GSC 统一）
+  if (host === 'togthr.life') {
+    const url = new URL(request.url)
+    url.hostname = 'www.togthr.life'
+    return NextResponse.redirect(url.toString(), 308)
+  }
 
   // Static assets — keep immutable, pass through.
   if (
