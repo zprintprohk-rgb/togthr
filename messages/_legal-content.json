@@ -18,11 +18,11 @@
       },
       {
         "heading": "4. Your Rights",
-        "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@togthr.life. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
+        "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing support@togthr.life. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
       },
       {
         "heading": "5. Contact",
-        "body": "For any privacy-related question, email privacy@togthr.life. We respond within 7 business days."
+        "body": "For any privacy-related question, email support@togthr.life. We respond within 7 business days."
       }
     ]
   },
@@ -100,7 +100,7 @@
       },
       {
         "heading": "Report a Bug",
-        "body": "Found something broken? Email bugs@togthr.life with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
+        "body": "Found something broken? Email support@togthr.life with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
       },
       {
         "heading": "International Support",
@@ -118,11 +118,11 @@
       },
       {
         "heading": "Privacy & Data",
-        "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@togthr.life. We respond within 7 business days."
+        "body": "Data export, deletion requests, and GDPR inquiries. Email support@togthr.life. We respond within 7 business days."
       },
       {
         "heading": "Bug Reports",
-        "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@togthr.life with your device model and OS version. We respond within 48 hours."
+        "body": "Technical issues, crashes, or unexpected behaviour. Email support@togthr.life with your device model and OS version. We respond within 48 hours."
       }
     ]
   }
