@@ -14,6 +14,15 @@
 
 'use client'
 
+import { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Welcome to Togthr',
+    robots: { index: false, follow: true },
+  }
+}
+
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/navigation'

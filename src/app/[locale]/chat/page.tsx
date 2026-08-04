@@ -1,5 +1,14 @@
 /**
  * /chat — Soulmate AI chat (Fusion v2)
+
+import { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Soulmate Chat - Togthr',
+    description: 'Togthr Soulmate is a private AI companion that listens without judgment. Quiet companionship, not endless chatting.',
+  }
+}
  *
  * Server entry — renders the interactive <ChatClient />.
  * Mood-responsive background + pet presence + capsule quick replies
