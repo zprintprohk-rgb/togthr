@@ -8,24 +8,11 @@
 
 | sitemap | 提交日期 | 状态 | 已发现 | 已索引 |
 |---|---|---|---|---|
-| sitemap.xml | 待提交 | — | 0 | 0 |
+| sitemap.xml (www property) | 8/5 | 成功 | 921 | 待出 |
+| sitemap.xml (domain property, 已无效) | 7/25 | — | 0 | 0 |
 
-## Top Queries（待用户截图）
+## 8/6 状态更新
 
-| 查询 | 曝光 | 点击 | CTR | 排名 |
-|---|---|---|---|---|
-| — | — | — | — | — |
-
-## Top Pages（待用户截图）
-
-| 页面 | 曝光 | 点击 |
-|---|---|---|
-| — | — | — |
-
-## 对比基线（8/12 复查）
-
-| 指标 | 8/5 | 8/12 | 变化 |
-|---|---|---|---|
-| 已发现 URL | 0 | ? | — |
-| 已索引 URL | 0 | ? | — |
-| Top 1 query 曝光 | 0 | ? | — |
+- www property: 已发现 921 > 897（Google 多发现了 24 个 URL，含 8/5 发布的蓝海#1 8 locale 变体）
+- TOP queries 已验证 3 个集群：shimejidesktoppets #5、productivity desktop pet #8、tamagotchi desktop pet #16、virtual pet for couples #31
+- 112 未编入 URL 需分类处理（discovered-not-indexed / crawled-not-indexed / duplicate）
