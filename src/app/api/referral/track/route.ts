@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
 
   // 3. Persist (Supabase)
   try {
-    const supabase = createServerClient()
+    const supabase = await createServerClient()
     const { data, error } = await supabase
       .from('referrals')
       .upsert(

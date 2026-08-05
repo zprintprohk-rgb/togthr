@@ -14,7 +14,7 @@ export async function GET(req: NextRequest) {
   const since = new Date(Date.now() - days * 24 * 60 * 60 * 1000).toISOString()
 
   try {
-    const supabase = createServerClient()
+    const supabase = await createServerClient()
     const { data, error } = await supabase
       .from('referrals')
       .select('inviter_id')

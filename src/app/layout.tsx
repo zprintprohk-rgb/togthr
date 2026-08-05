@@ -132,6 +132,7 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 // Google relies primarily on hreflang tags + meta content-language, not <html lang>.
 // Ref: docs/seo-geo-diagnostic-2026-08-04.md §Blind Spot #1
 // Plan: migrate to middleware cookie-based locale injection in next architecture iteration.
+export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (

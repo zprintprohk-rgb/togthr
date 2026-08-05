@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    const supabase = createServerClient()
+    const supabase = await createServerClient()
     const { data, error, count } = await supabase
       .from('referrals')
       .select('invitee_id, joined_at', { count: 'exact' })
