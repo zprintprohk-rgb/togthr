@@ -1,12 +1,5 @@
-import type { Metadata } from 'next'
-
+import { Metadata } from 'next'
 export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: 'Couples Community - Togthr',
-    description: 'Join the Togthr tree hole — an anonymous community where couples share stories, get advice, and feel less alone.',
-  }
+  return { title: 'Couples Community - Togthr', description: 'Join the Togthr tree hole — an anonymous community where couples share stories.' }
 }
-
-export default function CommunityLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
-}
+export default function CommunityLayout({ children }: { children: React.ReactNode }) { return children }
