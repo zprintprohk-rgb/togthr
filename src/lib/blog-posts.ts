@@ -4126,6 +4126,102 @@ const virtualPetGrowsUpLikeTamagotchiPosts: BlogPost[] = [
   },
 ];
 
+// Daily post: 2026-08-05 — low-pressure-companion-app
+const LOW_PRESSURE_COMPANION_DATE = '2026-08-05';
+const LOW_PRESSURE_COMPANION_SLUG = 'low-pressure-companion-app';
+const LOW_PRESSURE_COMPANION_TAGS = ['low-pressure', 'no-streak', 'gentle-design', 'virtual-pet', 'companion-app'];
+
+const lowPressureCompanionPosts: BlogPost[] = [
+  {
+    slug: LOW_PRESSURE_COMPANION_SLUG,
+    locale: 'en',
+    title: 'A Low-Pressure Companion App: No Streaks, No Guilt, Just a Pet That Is Happy to See You',
+    description:
+      'Most companion apps keep score. This one does not. No streak counters, no guilt notifications, no daily check-in demands — just a small pixel creature that is happy to see you whenever you show up.',
+    date: LOW_PRESSURE_COMPANION_DATE,
+    cover: `/blog-covers/${LOW_PRESSURE_COMPANION_SLUG}-en.png`,
+    tags: LOW_PRESSURE_COMPANION_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: LOW_PRESSURE_COMPANION_SLUG,
+    locale: 'zh-cn',
+    title: '低压陪伴应用：没有签到，没有内疚，只有一只见到你就开心的宠物',
+    description:
+      '大多数陪伴 App 在记分。这个不记。没有签到计数器，没有内疚通知，没有每日打卡要求——只有一只小像素生物，无论你什么时候出现，它都开心见到你。',
+    date: LOW_PRESSURE_COMPANION_DATE,
+    cover: `/blog-covers/${LOW_PRESSURE_COMPANION_SLUG}-zh-cn.png`,
+    tags: LOW_PRESSURE_COMPANION_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: LOW_PRESSURE_COMPANION_SLUG,
+    locale: 'zh-tw',
+    title: '低壓陪伴應用：沒有簽到，沒有內疚，只有一隻見到你就開心的寵物',
+    description:
+      '大多數陪伴 App 在記分。這個不記。沒有簽到計數器，沒有內疚通知，沒有每日打卡要求——只有一隻小像素生物，無論你什麼時候出現，牠都開心見到你。',
+    date: LOW_PRESSURE_COMPANION_DATE,
+    cover: `/blog-covers/${LOW_PRESSURE_COMPANION_SLUG}-zh-tw.png`,
+    tags: LOW_PRESSURE_COMPANION_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: LOW_PRESSURE_COMPANION_SLUG,
+    locale: 'ja',
+    title: '低プレッシャーコンパニオンアプリ：連続記録なし、罪悪感なし、ただ会えて嬉しいペット',
+    description:
+      'ほとんどのコンパニオンアプリはスコアをつける。これはつけない。連続記録カウンターも、罪悪感を誘う通知も、毎日のチェックイン要求もなし——ただ、いつ姿を見せても嬉しそうな小さなピクセルの生き物がいるだけ。',
+    date: LOW_PRESSURE_COMPANION_DATE,
+    cover: `/blog-covers/${LOW_PRESSURE_COMPANION_SLUG}-ja.png`,
+    tags: LOW_PRESSURE_COMPANION_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: LOW_PRESSURE_COMPANION_SLUG,
+    locale: 'ko',
+    title: '저압력 컴패니언 앱: 연속 기록 없이, 죄책감 없이, 그냥 만나서 반가운 펫',
+    description:
+      '대부분의 컴패니언 앱은 점수를 매긴다. 이 앱은 그러지 않는다. 연속 기록 카운터도, 죄책감 알림도, 매일 체크인 요구도 없다——언제 나타나든 반가워하는 작은 픽셀 생명체가 있을 뿐이다.',
+    date: LOW_PRESSURE_COMPANION_DATE,
+    cover: `/blog-covers/${LOW_PRESSURE_COMPANION_SLUG}-ko.png`,
+    tags: LOW_PRESSURE_COMPANION_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: LOW_PRESSURE_COMPANION_SLUG,
+    locale: 'de',
+    title: 'Eine druckfreie Begleiter-App: Keine Streaks, keine Schuld, nur ein Haustier, das sich freut dich zu sehen',
+    description:
+      'Die meisten Begleiter-Apps zählen Punkte. Diese nicht. Keine Streak-Zähler, keine Schuld-Benachrichtigungen, keine täglichen Check-in-Anforderungen — nur eine kleine Pixel-Kreatur, die sich freut, dich zu sehen, wann immer du auftauchst.',
+    date: LOW_PRESSURE_COMPANION_DATE,
+    cover: `/blog-covers/${LOW_PRESSURE_COMPANION_SLUG}-de.png`,
+    tags: LOW_PRESSURE_COMPANION_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: LOW_PRESSURE_COMPANION_SLUG,
+    locale: 'fr',
+    title: 'Une application compagnon sans pression : pas de séries, pas de culpabilité, juste un animal content de vous voir',
+    description:
+      "La plupart des applications compagnons comptent les points. Celle-ci ne le fait pas. Pas de compteur de série, pas de notification culpabilisante, pas d'exigence de check-in quotidien — juste une petite créature pixel qui est heureuse de vous voir, quand que vous apparaissiez.",
+    date: LOW_PRESSURE_COMPANION_DATE,
+    cover: `/blog-covers/${LOW_PRESSURE_COMPANION_SLUG}-fr.png`,
+    tags: LOW_PRESSURE_COMPANION_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: LOW_PRESSURE_COMPANION_SLUG,
+    locale: 'es',
+    title: 'Una aplicación de compañía sin presión: sin rachas, sin culpa, solo una mascota feliz de verte',
+    description:
+      'La mayoría de las aplicaciones de compañía llevan la cuenta. Esta no. Sin contadores de rachas, sin notificaciones de culpa, sin exigencias de check-in diario — solo una pequeña criatura pixel que se alegra de verte, cuando sea que aparezcas.',
+    date: LOW_PRESSURE_COMPANION_DATE,
+    cover: `/blog-covers/${LOW_PRESSURE_COMPANION_SLUG}-es.png`,
+    tags: LOW_PRESSURE_COMPANION_TAGS,
+    readingMinutes: 6,
+  },
+];
+
 // ───────────────────────────────────────────────────────────────────
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
@@ -4170,6 +4266,7 @@ export const blogPosts: BlogPost[] = [
   ...lonelyDeskCompanionPosts,
   ...pixelBuddyStudyPosts,
   ...virtualPetGrowsUpLikeTamagotchiPosts,
+  ...lowPressureCompanionPosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────

@@ -127,7 +127,11 @@ function start(){
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();`;
 
-export default function RootLayout({
+// NOTE: lang attribute is hardcoded "en" on <html> at root layout level.
+// This is a known limitation (root layout cannot read per-locale params).
+// Google relies primarily on hreflang tags + meta content-language, not <html lang>.
+// Ref: docs/seo-geo-diagnostic-2026-08-04.md §Blind Spot #1
+// Plan: migrate to middleware cookie-based locale injection in next architecture iteration.
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (

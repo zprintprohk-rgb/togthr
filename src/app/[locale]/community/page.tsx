@@ -15,15 +15,6 @@
 
 'use client'
 
-import { Metadata } from 'next'
-
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: 'Couples Community - Togthr',
-    description: 'Join the Togthr tree hole — an anonymous community where couples share stories, get advice, and feel less alone.',
-  }
-}
-
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
