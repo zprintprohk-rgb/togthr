@@ -34,7 +34,7 @@ CTX_FALLBACK = ssl._create_unverified_context()  # noqa: SLF001  (intentional fa
 # ─── HTTP helper ──────────────────────────────────────────────────────
 def http_get(url: str, *, timeout: int = 30) -> tuple[int, str, dict[str, str]]:
     """GET url, return (status, body, response_headers)."""
-    req = urllib.request.Request(url, headers={"User-Agent": "togthr-smoke/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"})
     try:
         with urllib.request.urlopen(req, timeout=timeout, context=CTX_VERIFIED) as r:
             body = r.read().decode("utf-8", errors="replace")

@@ -14,6 +14,7 @@
 //   5. /pricing keeps Alipay (CN region, in scope elsewhere).
 
 import Link from 'next/link'
+import { withUtm } from '@/lib/utm'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { setRequestLocale } from 'next-intl/server'
@@ -299,7 +300,7 @@ export default async function BlogPostPage({
         <p className="mt-10 text-base leading-relaxed text-zinc-300">{body.cta}</p>
         <nav className="mt-10 flex flex-wrap gap-3 text-sm">
           {body.links.map((l) => (
-            <Link key={l.href} href={l.href} className="rounded-full border border-zinc-700/40 px-4 py-2 text-zinc-200 hover:border-zinc-500">
+            <Link key={l.href} href={withUtm(l.href, SLUG)} className="rounded-full border border-zinc-700/40 px-4 py-2 text-zinc-200 hover:border-zinc-500">
               {l.label}
             </Link>
           ))}

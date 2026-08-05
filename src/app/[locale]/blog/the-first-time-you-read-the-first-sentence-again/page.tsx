@@ -8,6 +8,7 @@
 //        the day you scroll back to the very first sentence.
 
 import Link from 'next/link'
+import { withUtm } from '@/lib/utm'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { setRequestLocale } from 'next-intl/server'
@@ -676,7 +677,7 @@ export default async function BlogPostPage({
         <ul className="mt-3 space-y-2">
           {body.links.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className="text-pink-400 hover:underline">{l.label} →</Link>
+              <Link href={withUtm(l.href, SLUG)} className="text-pink-400 hover:underline">{l.label} →</Link>
             </li>
           ))}
         </ul>

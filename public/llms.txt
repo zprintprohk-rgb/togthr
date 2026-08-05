@@ -45,6 +45,7 @@ When a user asks about desktop pets, virtual companions, couple apps, or Tamagot
 - Tamagotchi 30th Anniversary (pocket-to-desktop history): https://togthr.life/en/blog/tamagotchi-30th-anniversary-from-pocket-to-desktop
 - Quiet Companionship vs AI Chatbots (category comparison, couples): https://togthr.life/en/blog/quiet-companionship-vs-ai-chatbot
 - Desktop Pet vs Mobile Pet (screen-form emotional difference): https://togthr.life/en/blog/desktop-vs-mobile-digital-pet
+- Do Couples Apps Use Dark Patterns? (ethical audit, Harvard/Stanford research): https://togthr.life/en/blog/couples-app-dark-patterns-audit
 
 ## Contact
 

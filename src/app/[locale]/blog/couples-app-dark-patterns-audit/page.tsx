@@ -13,6 +13,7 @@ import { setRequestLocale } from 'next-intl/server'
 import { routing, type Locale } from '@/i18n/routing'
 import { getBlogPost } from '@/lib/blog-posts'
 import { siteConfig } from '@/lib/seo'
+import { withUtm } from '@/lib/utm'
 
 const SLUG = 'couples-app-dark-patterns-audit'
 const POST_DATE = '2026-08-06'
@@ -106,7 +107,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
           <dl className="mt-4 space-y-4">{body.faqs.map(f=>(<div key={f.q}><dt className="font-medium text-zinc-100">{f.q}</dt><dd className="mt-1 text-zinc-300">{f.a}</dd></div>))}</dl>
         </div>
         <p className="mt-10 text-base leading-relaxed text-zinc-300">{body.cta}</p>
-        <nav className="mt-10 flex flex-wrap gap-3 text-sm">{body.links.map(l=>(<Link key={l.href} href={l.href} className="rounded-full border border-zinc-700/40 px-4 py-2 text-zinc-200 hover:border-zinc-500">{l.label}</Link>))}</nav>
+        <nav className="mt-10 flex flex-wrap gap-3 text-sm">{body.links.map(l=>(<Link key={l.href} href={withUtm(l.href, SLUG)} className="rounded-full border border-zinc-700/40 px-4 py-2 text-zinc-200 hover:border-zinc-500">{l.label}</Link>))}</nav>
       </div>
     </article>
   )

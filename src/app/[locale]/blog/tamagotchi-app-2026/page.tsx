@@ -14,6 +14,7 @@
 // Static folder takes precedence over the [slug] dynamic route.
 
 import Link from 'next/link'
+import { withUtm } from '@/lib/utm'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { setRequestLocale } from 'next-intl/server'
@@ -383,7 +384,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <ul className="mt-3 space-y-2">
           {body.links.map((l, i) => (
             <li key={i}>
-              <Link href={l.href} className="text-pink-400 hover:underline">{l.label} →</Link>
+              <Link href={withUtm(l.href, SLUG)} className="text-pink-400 hover:underline">{l.label} →</Link>
             </li>
           ))}
         </ul>
