@@ -754,7 +754,13 @@
       "pride": "同志驕傲月",
       "diwali": "排燈節",
       "carnival": "嘉年華"
-    }
+    },
+    "traceTitle": "伴侶動態",
+    "traceEmpty": "你們的第一次互動會出現在這裡。",
+    "signalThinking": "想你",
+    "signalHug": "抱抱",
+    "signalTired": "累了",
+    "streakFrozen": "連擊暫停中，一次互動即可喚醒。"
   },
   "journal": {
     "title": "我們的築巢",

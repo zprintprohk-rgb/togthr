@@ -754,7 +754,13 @@
       "pride": "Pride-Monat",
       "diwali": "Diwali",
       "carnival": "Karneval"
-    }
+    },
+    "traceTitle": "Aktivität deines Partners",
+    "traceEmpty": "Eure ersten gemeinsamen Momente erscheinen hier.",
+    "signalThinking": "Denk an dich",
+    "signalHug": "Umarmung",
+    "signalTired": "Müde",
+    "streakFrozen": "Serie pausiert — eine Interaktion weckt sie wieder auf."
   },
   "journal": {
     "title": "Unser Nest",

@@ -754,7 +754,13 @@
       "pride": "骄傲月",
       "diwali": "排灯节",
       "carnival": "狂欢节"
-    }
+    },
+    "traceTitle": "伴侣动态",
+    "traceEmpty": "你们的第一次互动会出现在这里。",
+    "signalThinking": "想你",
+    "signalHug": "抱抱",
+    "signalTired": "累了",
+    "streakFrozen": "连击暂停中，一次互动即可唤醒。"
   },
   "journal": {
     "title": "我们的筑巢",

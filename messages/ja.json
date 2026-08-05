@@ -754,7 +754,13 @@
       "pride": "プライド月間",
       "diwali": "ディワリ",
       "carnival": "カーニバル"
-    }
+    },
+    "traceTitle": "パートナーの動き",
+    "traceEmpty": "初めてのふれあいがここに表示されます。",
+    "signalThinking": "会いたい",
+    "signalHug": "ハグ",
+    "signalTired": "疲れた",
+    "streakFrozen": "連続記録が一時停止中 — 一度触れれば再開します。"
   },
   "journal": {
     "title": "私たちの巣",

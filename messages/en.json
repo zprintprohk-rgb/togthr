@@ -754,7 +754,13 @@
       "journal": "Journal",
       "history": "History",
       "share": "Share"
-    }
+    },
+    "traceTitle": "Your partner's activity",
+    "traceEmpty": "Your first shared moments will appear here.",
+    "signalThinking": "Thinking of you",
+    "signalHug": "Hug",
+    "signalTired": "Tired",
+    "streakFrozen": "Streak paused — one interaction wakes it up"
   },
   "journal": {
     "title": "Our Nest",

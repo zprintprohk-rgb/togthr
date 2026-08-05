@@ -754,7 +754,13 @@
       "pride": "Mes del Orgullo",
       "diwali": "Diwali",
       "carnival": "Carnaval"
-    }
+    },
+    "traceTitle": "Actividad de tu pareja",
+    "traceEmpty": "Sus primeros momentos compartidos aparecerán aquí.",
+    "signalThinking": "Pensando en ti",
+    "signalHug": "Abrazo",
+    "signalTired": "Cansado/a",
+    "streakFrozen": "Racha en pausa — una interacción la despierta."
   },
   "journal": {
     "title": "Nuestro nido",

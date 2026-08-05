@@ -754,7 +754,13 @@
       "pride": "프라이드 월",
       "diwali": "디왈리",
       "carnival": "카니발"
-    }
+    },
+    "traceTitle": "파트너 활동",
+    "traceEmpty": "첫 번째 상호작용이 여기에 표시됩니다.",
+    "signalThinking": "보고 싶어",
+    "signalHug": "포옹",
+    "signalTired": "피곤해",
+    "streakFrozen": "연속 기록이 일시 중지되었습니다 — 한 번 상호작용하면 다시 시작됩니다."
   },
   "journal": {
     "title": "우리 둥지",
