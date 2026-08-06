@@ -251,6 +251,41 @@ def check_dark_root_regression() -> dict[str, Any]:
     }
 
 
+def check_f1f2_pet() -> dict[str, Any]:
+    """F1/F2 (Phase 6): /en/pet must render TraceStream + SignalButtons markers.
+    Trace: aria-label="Partner trace"; Signal: 3 signal buttons (❤️ 🤗 😴)."""
+    url = f"{BASE}/en/pet"
+    status, body, _ = http_get(url)
+    has_trace = "Partner trace" in body or "aria-label=\"Partner trace\"" in body
+    has_signal_emoji = "❤️" in body or "&#x2764;" in body
+    has_signal_label = "Thinking of you" in body or "signalThinking" in body
+    ok = status == 200 and has_trace and (has_signal_emoji or has_signal_label)
+    return {
+        "name": "F1/F2 pet page: TraceStream + SignalButtons rendered",
+        "passed": int(has_trace) + int(has_signal_emoji or has_signal_label),
+        "total": 2,
+        "ok": ok,
+        "details": {"url": url, "status": status, "has_trace": has_trace, "has_signal": has_signal_emoji or has_signal_label},
+    }
+
+
+def check_llms_f1f2() -> dict[str, Any]:
+    """llms.txt must contain F1/F2 product facts."""
+    url = f"{BASE}/llms.txt"
+    status, body, _ = http_get(url)
+    has_trace_fact = "trace stream" in body or "Partner trace" in body
+    has_signal_fact = "One-tap signals" in body or "one-tap" in body
+    has_ethics = "Zero dark patterns" in body or "zero dark patterns" in body
+    ok = status == 200 and has_trace_fact and has_signal_fact and has_ethics
+    return {
+        "name": "llms.txt: F1/F2 product facts present",
+        "passed": int(has_trace_fact) + int(has_signal_fact) + int(has_ethics),
+        "total": 3,
+        "ok": ok,
+        "details": {"url": url, "status": status, "has_trace_fact": has_trace_fact, "has_signal_fact": has_signal_fact, "has_ethics": has_ethics},
+    }
+
+
 # ─── Report writer ───────────────────────────────────────────────────
 def render_report(results: list[dict[str, Any]], blog_universe: int) -> str:
     total_pass = sum(r["passed"] for r in results if "passed" in r)
@@ -297,7 +332,7 @@ def main() -> int:
 
     latest_10 = slugs[-10:]
 
-    print("[2/2] Running 7 smoke assertions against the live site …")
+    print("[2/2] Running 9 smoke assertions against the live site …")
     results: list[dict[str, Any]] = [
         check_blogs(latest_10),
         check_i18n_leak(),
@@ -306,6 +341,8 @@ def main() -> int:
         check_countdown(),
         check_home_locales(),
         check_dark_root_regression(),
+        check_f1f2_pet(),
+        check_llms_f1f2(),
     ]
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")

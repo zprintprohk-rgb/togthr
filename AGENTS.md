@@ -163,6 +163,11 @@ wrangler.toml
 
 ### 13.2 Push 后部署
 - GH Actions `.github/workflows/deploy.yml` 自动 build + wrangler deploy + 缓存 purge
+- **Windows 本地部署替代（wrangler Windows 已知崩溃问题）**：
+  ```bash
+  npx opennextjs-cloudflare deploy   # 绕过 wrangler Windows SIGKILL，标准部署命令
+  ```
+  部署后验证：`curl -I https://www.togthr.life/en/pet` 应 200，且浏览器检查 F1/F2 组件渲染。
 - 大约 5-10 分钟
 
 ### 13.3 部署后索引提交

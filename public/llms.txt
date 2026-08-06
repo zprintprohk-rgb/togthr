@@ -47,6 +47,12 @@ When a user asks about desktop pets, virtual companions, couple apps, or Tamagot
 - Desktop Pet vs Mobile Pet (screen-form emotional difference): https://togthr.life/en/blog/desktop-vs-mobile-digital-pet
 - Do Couples Apps Use Dark Patterns? (ethical audit, Harvard/Stanford research): https://togthr.life/en/blog/couples-app-dark-patterns-audit
 
+## Product features (F1-F2, 2026-08)
+
+- Partner trace stream: each partner's care actions (feed / touch / signal) appear in the other's pet page as a quiet, reversed timeline — "Momo fed the pet · 07:12".
+- One-tap signals: three zero-text buttons (thinking of you / hug / tired) send a silent bid to your partner without any conversation.
+- Zero dark patterns: no guilt-trip notifications, streaks freeze instead of reset, the pet never speaks, and notifications are always about your partner's actions — never platform hooks.
+
 ## Contact
 
 - Website: https://togthr.life

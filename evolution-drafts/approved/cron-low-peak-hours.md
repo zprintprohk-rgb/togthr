@@ -1,3 +1,30 @@
+# Evolution Proposal: 记录"定时任务优先安排在智谱算力低谷时段"的长期调度偏好，后续新增/调整 cron 任务时自动沿用，持续降低算力成本。
+
+- Proposal-ID: evo-2026-08-06-cron-low-peak-hours
+- Status: approved
+- Signature: cron-low-peak-hours
+- Created-At: 2026-08-06 19:06
+- Last-Seen-At: 2026-08-06 19:06
+- Target-File: MEMORY.md
+- Trigger-Type: preference
+- Confidence: medium
+
+## Why This Matters
+- 记录"定时任务优先安排在智谱算力低谷时段"的长期调度偏好，后续新增/调整 cron 任务时自动沿用，持续降低算力成本。
+
+## Evidence
+- Interactive proposal card was present in the session UI.
+- The original pending draft file was unavailable at approval time.
+- AutoClaw reconstructed this draft from the proposal payload so the review result can still be recorded.
+
+## Duplicate Check
+- Checked: pending draft path + signature/proposal fallback
+- Result: original draft file missing
+- Decision: create surrogate draft from proposal payload
+
+## Proposed Change
+### MEMORY.md 新增定时任务调度偏好
+
 # MEMORY.md — Durable Preferences & Lessons
 
 ## 交付物规则
@@ -22,3 +49,17 @@
 ## 定时任务调度偏好（成本优化）
 
 - **定时任务放在智谱算力低谷段**：7 个 cron 任务（日更博客 18:17 / pSEO 周一、四 18:43 / IndexNow 周二 19:11 / 线上 smoke 周三 19:37 / 竞品监控 周五 20:07 / 周报 周一 20:23 / GEO 自检）全部排在约 18:00-20:30（Asia/Shanghai）的算力低谷窗口以降低成本。以后新增或调整定时任务，同样优先排在该时段。
+
+## Apply Plan
+1. Keep this reconstructed draft as the approval artifact.
+2. Record the proposal content exactly as shown in the interactive card.
+3. Append an audit note after approval or rejection.
+
+## User Approval
+- Approve: 批准 evo-2026-08-06-cron-low-peak-hours
+- Reject: 拒绝 evo-2026-08-06-cron-low-peak-hours
+
+## Audit Note
+- Decision: **APPROVED**（2026-08-06 19:06 Asia/Shanghai，用户明确批准）
+- Applied: MEMORY.md 新增「定时任务调度偏好（成本优化）」小节，已写入。
+- Post-apply status: 内容已生效；后续新增/调整 cron 任务时自动沿用低谷时段偏好。
