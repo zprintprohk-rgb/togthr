@@ -4126,6 +4126,102 @@ const virtualPetGrowsUpLikeTamagotchiPosts: BlogPost[] = [
   },
 ];
 
+// Daily post: 2026-08-07 — cute-desktop-buddy-for-students
+const CUTE_DESKTOP_BUDDY_DATE = '2026-08-07';
+const CUTE_DESKTOP_BUDDY_SLUG = 'cute-desktop-buddy-for-students';
+const CUTE_DESKTOP_BUDDY_TAGS = ['study-companion', 'cuteness', 'student-life', 'desktop-buddy', 'focus-mode'];
+
+const cuteDesktopBuddyPosts: BlogPost[] = [
+  {
+    slug: CUTE_DESKTOP_BUDDY_SLUG,
+    locale: 'en',
+    title: 'A Cute Desktop Buddy for Students: The Tiny Pixel Friend for Long Library Nights',
+    description:
+      'The library at 11pm does not need another productivity app. It needs a small pixel friend sitting at the corner of your screen — cute, quiet, and on your side while you study alone.',
+    date: CUTE_DESKTOP_BUDDY_DATE,
+    cover: `/blog-covers/${CUTE_DESKTOP_BUDDY_SLUG}-en.png`,
+    tags: CUTE_DESKTOP_BUDDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: CUTE_DESKTOP_BUDDY_SLUG,
+    locale: 'zh-cn',
+    title: '学生专用的可爱桌面伙伴：陪伴你度过漫长图书馆之夜的小小像素朋友',
+    description:
+      '深夜的图书馆不需要又一个效率 App。它需要一只坐在你屏幕角落的小像素朋友——可爱、安静、在你独自学习时站在你这边。',
+    date: CUTE_DESKTOP_BUDDY_DATE,
+    cover: `/blog-covers/${CUTE_DESKTOP_BUDDY_SLUG}-zh-cn.png`,
+    tags: CUTE_DESKTOP_BUDDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: CUTE_DESKTOP_BUDDY_SLUG,
+    locale: 'zh-tw',
+    title: '學生專用的可愛桌面夥伴：陪伴你度過漫長圖書館之夜的小小像素朋友',
+    description:
+      '深夜的圖書館不需要又一個效率 App。它需要一隻坐在你螢幕角落的小像素朋友——可愛、安靜、在你獨自學習時站在你這邊。',
+    date: CUTE_DESKTOP_BUDDY_DATE,
+    cover: `/blog-covers/${CUTE_DESKTOP_BUDDY_SLUG}-zh-tw.png`,
+    tags: CUTE_DESKTOP_BUDDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: CUTE_DESKTOP_BUDDY_SLUG,
+    locale: 'ja',
+    title: '学生のための可愛いデスクトップバディ：長い図書館の夜に寄り添う小さなピクセルの友達',
+    description:
+      '深夜の図書館が必要としているのは、もう一つの生産性アプリではない。画面の隅に座る小さなピクセルの友達——可愛く、静かに、一人で勉強するあなたの味方だ。',
+    date: CUTE_DESKTOP_BUDDY_DATE,
+    cover: `/blog-covers/${CUTE_DESKTOP_BUDDY_SLUG}-ja.png`,
+    tags: CUTE_DESKTOP_BUDDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: CUTE_DESKTOP_BUDDY_SLUG,
+    locale: 'ko',
+    title: '학생을 위한 귀여운 데스크톱 버디: 긴 도서관의 밤을 함께하는 작은 픽셀 친구',
+    description:
+      '심야 도서관에 필요한 것은 또 하나의 생산성 앱이 아니다. 화면 구석에 앉은 작은 픽셀 친구——귀엽고, 조용하고, 혼자 공부하는 당신 편에 서 있는.',
+    date: CUTE_DESKTOP_BUDDY_DATE,
+    cover: `/blog-covers/${CUTE_DESKTOP_BUDDY_SLUG}-ko.png`,
+    tags: CUTE_DESKTOP_BUDDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: CUTE_DESKTOP_BUDDY_SLUG,
+    locale: 'de',
+    title: 'Ein niedlicher Schreibtisch-Buddy für Studierende: Der kleine Pixel-Freund für lange Bibliotheksnächte',
+    description:
+      'Die Bibliothek um 23 Uhr braucht keine weitere Produktivitäts-App. Sie braucht einen kleinen Pixel-Freund in der Ecke deines Bildschirms — niedlich, leise und auf deiner Seite, wenn du allein lernst.',
+    date: CUTE_DESKTOP_BUDDY_DATE,
+    cover: `/blog-covers/${CUTE_DESKTOP_BUDDY_SLUG}-de.png`,
+    tags: CUTE_DESKTOP_BUDDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: CUTE_DESKTOP_BUDDY_SLUG,
+    locale: 'fr',
+    title: 'Un buddy de bureau mignon pour les étudiants : le petit ami pixel des longues nuits à la bibliothèque',
+    description:
+      "La bibliothèque à 23h n'a pas besoin d'une autre app de productivité. Elle a besoin d'un petit ami pixel au coin de votre écran — mignon, silencieux et de votre côté quand vous étudiez seul.",
+    date: CUTE_DESKTOP_BUDDY_DATE,
+    cover: `/blog-covers/${CUTE_DESKTOP_BUDDY_SLUG}-fr.png`,
+    tags: CUTE_DESKTOP_BUDDY_TAGS,
+    readingMinutes: 6,
+  },
+  {
+    slug: CUTE_DESKTOP_BUDDY_SLUG,
+    locale: 'es',
+    title: 'Un buddy de escritorio mono para estudiantes: el pequeño amigo pixel para las largas noches de biblioteca',
+    description:
+      'La biblioteca a las 11 de la noche no necesita otra app de productividad. Necesita un pequeño amigo pixel en la esquina de tu pantalla — mono, silencioso y de tu lado mientras estudias solo.',
+    date: CUTE_DESKTOP_BUDDY_DATE,
+    cover: `/blog-covers/${CUTE_DESKTOP_BUDDY_SLUG}-es.png`,
+    tags: CUTE_DESKTOP_BUDDY_TAGS,
+    readingMinutes: 6,
+  },
+];
+
 // Daily post: 2026-08-05 — low-pressure-companion-app
 const LOW_PRESSURE_COMPANION_DATE = '2026-08-05';
 const LOW_PRESSURE_COMPANION_SLUG = 'low-pressure-companion-app';
@@ -4267,6 +4363,7 @@ export const blogPosts: BlogPost[] = [
   ...pixelBuddyStudyPosts,
   ...virtualPetGrowsUpLikeTamagotchiPosts,
   ...lowPressureCompanionPosts,
+  ...cuteDesktopBuddyPosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
