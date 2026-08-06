@@ -1,3 +1,30 @@
+# Evolution Proposal: 记录部署后必须确认生产状态、不留"状态不明"的验证规则——本次 CI 三次阻断 + wrangler 崩溃 + 绕过部署失败且 agent 中断导致生产状态不明，属反复出现的部署失败模式，值得沉淀。
+
+- Proposal-ID: evo-2026-08-07-deploy-verify-production
+- Status: approved
+- Signature: deploy-verify-production
+- Created-At: 2026-08-07 02:05
+- Last-Seen-At: 2026-08-07 02:05
+- Target-File: MEMORY.md
+- Trigger-Type: preference
+- Confidence: medium
+
+## Why This Matters
+- 记录部署后必须确认生产状态、不留"状态不明"的验证规则——本次 CI 三次阻断 + wrangler 崩溃 + 绕过部署失败且 agent 中断导致生产状态不明，属反复出现的部署失败模式，值得沉淀。
+
+## Evidence
+- Interactive proposal card was present in the session UI.
+- The original pending draft file was unavailable at approval time.
+- AutoClaw reconstructed this draft from the proposal payload so the review result can still be recorded.
+
+## Duplicate Check
+- Checked: pending draft path + signature/proposal fallback
+- Result: original draft file missing
+- Decision: create surrogate draft from proposal payload
+
+## Proposed Change
+### MEMORY.md 新增部署验证规则
+
 # MEMORY.md — Durable Preferences & Lessons
 
 ## 交付物规则
@@ -26,4 +53,12 @@
 ## 部署验证（生产状态不允许"不明"）
 
 - **部署后必须确认生产状态，不得留"状态不明"收工**：CI 阻断、wrangler Windows 崩溃或本地绕过部署后，必须立即用 `curl -I https://www.togthr.life/en/pet`（期望 200）+ 线上 smoke 验证；验证不了就明确报告"生产状态未知"并列为 P0 继续排查，绝不默认部署成功或中断离开。
-- **Windows 标准部署命令**：`npx opennextjs-cloudflare deploy`（绕过 wrangler Windows SIGKILL 已知问题）；部署后验证 `curl -I https://www.togthr.life/en/pet` 应 200，且浏览器检查 F1/F2 组件渲染。
+
+## Apply Plan
+1. Keep this reconstructed draft as the approval artifact.
+2. Record the proposal content exactly as shown in the interactive card.
+3. Append an audit note after approval or rejection.
+
+## User Approval
+- Approve: 批准 evo-2026-08-07-deploy-verify-production
+- Reject: 拒绝 evo-2026-08-07-deploy-verify-production
