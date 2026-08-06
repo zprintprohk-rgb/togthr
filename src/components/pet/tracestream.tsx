@@ -35,7 +35,13 @@ export default function TraceStream({ coupleId }: { coupleId: string }) {
     trackGa4Event('trace_view', { has_partner: !!coupleId })
   }, [coupleId])
 
-  if (loading) return <div className="animate-pulse h-32 rounded-xl bg-zinc-800/40" />
+  if (loading) {
+    return (
+      <section aria-label="Partner trace" className="mt-6 rounded-2xl border border-zinc-700/40 bg-zinc-900/40 p-5">
+        <div className="animate-pulse h-4 w-1/3 rounded bg-zinc-800/60" />
+      </section>
+    )
+  }
   if (events.length === 0) return (
     <section aria-label="Partner trace" className="mt-6 rounded-2xl border border-zinc-700/40 bg-zinc-900/40 p-5">
       <p className="text-sm text-zinc-400">{t('traceEmpty')}</p>
