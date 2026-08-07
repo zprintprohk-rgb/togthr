@@ -48,3 +48,9 @@ binding = "ASSETS"
 [[r2_buckets]]
 binding = "R2"
 bucket_name = "togthr-images"
+
+# R2 bucket (togthr-content — SSG HTML 外置, bundle 与内容增长解耦, 2026-08-07)
+# Worker 运行时优先 CONTENT.get(key) 直出, 命中则不进 server bundle
+[[r2_buckets]]
+binding = "CONTENT"
+bucket_name = "togthr-content"
