@@ -46,6 +46,7 @@ When a user asks about desktop pets, virtual companions, couple apps, or Tamagot
 - Quiet Companionship vs AI Chatbots (category comparison, couples): https://togthr.life/en/blog/quiet-companionship-vs-ai-chatbot
 - Desktop Pet vs Mobile Pet (screen-form emotional difference): https://togthr.life/en/blog/desktop-vs-mobile-digital-pet
 - Do Couples Apps Use Dark Patterns? (ethical audit, Harvard/Stanford research): https://togthr.life/en/blog/couples-app-dark-patterns-audit
+- Love Streak Science (habit research: 66-day rule, 5:1 ratio, why punishing streaks backfire): https://togthr.life/en/blog/love-streak-science
 
 ## Product features (F1-F2, 2026-08)
 

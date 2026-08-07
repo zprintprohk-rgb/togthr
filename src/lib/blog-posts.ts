@@ -4318,6 +4318,102 @@ const lowPressureCompanionPosts: BlogPost[] = [
   },
 ];
 
+// Daily post: 2026-08-07 — love-streak-science (P3 blue ocean)
+const LOVE_STREAK_SCIENCE_DATE = '2026-08-07';
+const LOVE_STREAK_SCIENCE_SLUG = 'love-streak-science';
+const LOVE_STREAK_SCIENCE_TAGS = ['love-streak', 'relationship-habits', 'habit-science', 'couples', 'low-pressure'];
+
+const loveStreakSciencePosts: BlogPost[] = [
+  {
+    slug: LOVE_STREAK_SCIENCE_SLUG,
+    locale: 'en',
+    title: 'Love Streak Science: Why Daily Check-ins Beat Grand Gestures (and When Streaks Backfire)',
+    description:
+      'Habit research says small daily interactions compound better than rare grand gestures — but punishing streaks trigger the opposite effect. Here is the science, and how Togthr keeps the ritual without the guilt.',
+    date: LOVE_STREAK_SCIENCE_DATE,
+    cover: `/blog-covers/${LOVE_STREAK_SCIENCE_SLUG}-en.png`,
+    tags: LOVE_STREAK_SCIENCE_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: LOVE_STREAK_SCIENCE_SLUG,
+    locale: 'zh-cn',
+    title: '爱情连胜的科学：为什么每日打卡胜过盛大举动（以及连胜何时会适得其反）',
+    description:
+      '习惯研究显示，小小的日常互动比罕见的盛大举动更能复利累积——但惩罚式连胜会触发完全相反的效果。这是背后的科学，以及 Togthr 如何保留仪式、去掉愧疚。',
+    date: LOVE_STREAK_SCIENCE_DATE,
+    cover: `/blog-covers/${LOVE_STREAK_SCIENCE_SLUG}-zh-cn.png`,
+    tags: LOVE_STREAK_SCIENCE_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: LOVE_STREAK_SCIENCE_SLUG,
+    locale: 'zh-tw',
+    title: '愛情連勝的科學：為什麼每日打卡勝過盛大舉動（以及連勝何時會適得其反）',
+    description:
+      '習慣研究顯示，小小的日常互動比罕見的盛大舉動更能複利累積——但懲罰式連勝會觸發完全相反的效果。這是背後的科學，以及 Togthr 如何保留儀式、去掉愧疚。',
+    date: LOVE_STREAK_SCIENCE_DATE,
+    cover: `/blog-covers/${LOVE_STREAK_SCIENCE_SLUG}-zh-tw.png`,
+    tags: LOVE_STREAK_SCIENCE_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: LOVE_STREAK_SCIENCE_SLUG,
+    locale: 'ja',
+    title: 'ラブストリークの科学：なぜ毎日のチェックインが大きなジェスチャーに勝つのか（そしてストリークが裏目に出るとき）',
+    description:
+      '習慣研究は、小さな日常のやりとりが稀な大きなジェスチャーより複利で効くことを示す——ただし罰するストリークは真逆の効果を生む。その科学と、Togthrが儀式を残し罪悪感を除く方法。',
+    date: LOVE_STREAK_SCIENCE_DATE,
+    cover: `/blog-covers/${LOVE_STREAK_SCIENCE_SLUG}-ja.png`,
+    tags: LOVE_STREAK_SCIENCE_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: LOVE_STREAK_SCIENCE_SLUG,
+    locale: 'ko',
+    title: '러브 스트릭의 과학: 매일의 체크인이 거창한 제스처를 이기는 이유(그리고 스트릭이 역효과를 낼 때)',
+    description:
+      '습관 연구는 작은 일상의 상호작용이 드문 큰 제스처보다 복리로 쌓인다고 말합니다 — 그러나 처벌하는 스트릭은 정반대의 효과를 만듭니다. 그 과학과, Togthr이 의식은 남기고 죄책감을 없애는 법.',
+    date: LOVE_STREAK_SCIENCE_DATE,
+    cover: `/blog-covers/${LOVE_STREAK_SCIENCE_SLUG}-ko.png`,
+    tags: LOVE_STREAK_SCIENCE_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: LOVE_STREAK_SCIENCE_SLUG,
+    locale: 'de',
+    title: 'Love-Streak-Wissenschaft: Warum tägliche Check-ins große Gesten schlagen (und wann Streaks nach hinten losgehen)',
+    description:
+      'Die Gewohnheitsforschung zeigt: Kleine tägliche Interaktionen zinsen sich besser auf als seltene große Gesten — aber bestrafende Streaks bewirken das Gegenteil. Hier ist die Wissenschaft und wie Togthr das Ritual ohne Schuld bewahrt.',
+    date: LOVE_STREAK_SCIENCE_DATE,
+    cover: `/blog-covers/${LOVE_STREAK_SCIENCE_SLUG}-de.png`,
+    tags: LOVE_STREAK_SCIENCE_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: LOVE_STREAK_SCIENCE_SLUG,
+    locale: 'fr',
+    title: 'La science des love streaks : pourquoi les check-ins quotidiens battent les grands gestes (et quand les séries se retournent contre vous)',
+    description:
+      'La recherche sur les habitudes montre que les petites interactions quotidiennes se cumulent mieux que les rares grands gestes — mais les séries punitives produisent l’effet inverse. Voici la science, et comment Togthr garde le rituel sans la culpabilité.',
+    date: LOVE_STREAK_SCIENCE_DATE,
+    cover: `/blog-covers/${LOVE_STREAK_SCIENCE_SLUG}-fr.png`,
+    tags: LOVE_STREAK_SCIENCE_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: LOVE_STREAK_SCIENCE_SLUG,
+    locale: 'es',
+    title: 'La ciencia de las love streaks: por qué los check-ins diarios superan a los grandes gestos (y cuándo las rachas salen mal)',
+    description:
+      'La investigación del hábito muestra que las pequeñas interacciones diarias se acumulan mejor que los gestos grandiosos ocasionales — pero las rachas punitivas producen el efecto contrario. Esta es la ciencia, y cómo Togthr mantiene el ritual sin culpa.',
+    date: LOVE_STREAK_SCIENCE_DATE,
+    cover: `/blog-covers/${LOVE_STREAK_SCIENCE_SLUG}-es.png`,
+    tags: LOVE_STREAK_SCIENCE_TAGS,
+    readingMinutes: 7,
+  },
+];
+
 // ───────────────────────────────────────────────────────────────────
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
@@ -4364,6 +4460,7 @@ export const blogPosts: BlogPost[] = [
   ...virtualPetGrowsUpLikeTamagotchiPosts,
   ...lowPressureCompanionPosts,
   ...cuteDesktopBuddyPosts,
+  ...loveStreakSciencePosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
