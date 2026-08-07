@@ -13,13 +13,14 @@
     "start": "next start",
     "lint": "eslint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "deploy": "opennextjs-cloudflare build && node scripts/patch-worker-r2.cjs && node scripts/size-guard.cjs && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && node scripts/upload-ssg-to-r2.cjs",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "cf-deploy": "npm run cf-build && wrangler deploy",
     "sync-messages": "tsx scripts/sync-messages.ts",
     "fix-messages": "tsx scripts/fix-messages.ts",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "verify-r2": "node scripts/verify-r2-keys.cjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
