@@ -16,7 +16,11 @@
     "chat": "Chat",
     "faq": "Preguntas",
     "blog": "Blog",
-    "focus": "Enfoque"
+    "focus": "Enfoque",
+    "companion": "Compañero",
+    "couples": "Parejas",
+    "solo": "Para mí",
+    "ethics": "Ética"
   },
   "seo": {
     "siteName": "Togthr",
@@ -26,8 +30,8 @@
   },
   "home": {
     "hero": {
-      "title": "el compañero silencioso",
-      "subtitle": "Él no habla. Él se queda.",
+      "title": "El Compañero Silencioso",
+      "subtitle": "No chatea. Solo está aquí.",
       "cta": "Empieza gratis — sin tarjeta",
       "secondary": "Ver cómo funciona",
       "socialProof": "Más de 10 000 usuarios en todo el mundo",
@@ -337,7 +341,8 @@
     "cookie": "Cookies",
     "help": "Ayuda",
     "contact": "Contacto",
-    "copyright": "© {year} Togthr. Todos los derechos reservados."
+    "copyright": "© {year} Togthr. Todos los derechos reservados.",
+    "notChatbot": "Togthr no es un chatbot. No chatea. Te recuerda."
   },
   "notFound": {
     "title": "¿Perdido?",

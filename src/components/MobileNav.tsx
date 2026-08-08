@@ -5,18 +5,11 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 export interface MobileNavLabels {
-  home: string
-  features: string
-  pricing: string
-  faq: string
-  blog: string
-  daily: string
-  capsule: string
-  pet: string
-  journal: string
-  store: string
-  chat: string
-  focus: string
+  companion: string
+  couples: string
+  solo: string
+  ethics: string
+  login: string
 }
 
 /**
@@ -33,18 +26,11 @@ export function MobileNav({ locale, labels }: { locale: string; labels: MobileNa
     setOpen(false)
   }, [pathname])
 
-  const items: Array<{ href: string; label: string; strong?: 'rose' | 'purple' | 'amber' }> = [
-    { href: `/${locale}`, label: labels.home },
-    { href: `/${locale}/features`, label: labels.features },
-    { href: `/${locale}/pricing`, label: labels.pricing },
-    { href: `/${locale}/focus`, label: `🎯 ${labels.focus}`, strong: 'amber' },
-    { href: `/${locale}/faq`, label: labels.faq },
-    { href: `/${locale}/blog`, label: labels.blog },
-    { href: `/${locale}/daily`, label: labels.daily },
-    { href: `/${locale}/capsule`, label: labels.capsule },
-    { href: `/${locale}/pet`, label: labels.pet },
-    { href: `/${locale}/journal`, label: labels.journal },
-    { href: `/${locale}/store`, label: `🛒 ${labels.store}`, strong: 'rose' },
+  const items: Array<{ href: string; label: string }> = [
+    { href: `/${locale}`, label: labels.companion },
+    { href: `/${locale}/couples`, label: labels.couples },
+    { href: `/${locale}/solo`, label: labels.solo },
+    { href: `/${locale}/ethics`, label: labels.ethics },
   ]
 
   return (
@@ -74,15 +60,7 @@ export function MobileNav({ locale, labels }: { locale: string; labels: MobileNa
               <Link
                 key={it.href}
                 href={it.href}
-                className={
-                  it.strong === 'rose'
-                    ? 'rounded-lg px-3 py-2.5 text-sm font-semibold text-rose-400'
-                    : it.strong === 'purple'
-                      ? 'rounded-lg px-3 py-2.5 text-sm font-semibold text-purple-400'
-                      : it.strong === 'amber'
-                        ? 'rounded-lg px-3 py-2.5 text-sm font-semibold text-amber-400'
-                        : 'rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-300 hover:bg-white/5 hover:text-zinc-100'
-                }
+                className="rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-300 hover:bg-white/5 hover:text-zinc-100"
               >
                 {it.label}
               </Link>

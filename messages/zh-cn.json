@@ -16,7 +16,11 @@
     "chat": "聊天",
     "faq": "常见问题",
     "blog": "博客",
-    "focus": "专注"
+    "focus": "专注",
+    "companion": "陪伴",
+    "couples": "情侣",
+    "solo": "独处",
+    "ethics": "伦理"
   },
   "seo": {
     "siteName": "Togthr",
@@ -26,8 +30,8 @@
   },
   "home": {
     "hero": {
-      "title": "安静的陪伴",
-      "subtitle": "他不聊天。他一直在。",
+      "title": "安静的陪伴者",
+      "subtitle": "他不聊天。他只是在。",
       "cta": "免费开始 — 无需信用卡",
       "secondary": "看看怎么用",
       "socialProof": "全球 10,000+ 用户信赖",
@@ -337,7 +341,8 @@
     "cookie": "Cookie 设置",
     "help": "帮助中心",
     "contact": "联系我们",
-    "copyright": "© {year} Togthr. 保留所有权利。"
+    "copyright": "© {year} Togthr. 保留所有权利。",
+    "notChatbot": "Togthr 不是聊天机器人。它不说话。它记得你。"
   },
   "notFound": {
     "title": "走丢了？",

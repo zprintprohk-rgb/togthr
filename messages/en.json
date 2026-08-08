@@ -16,7 +16,11 @@
     "journal": "Nest",
     "store": "Store",
     "chat": "Chat",
-    "focus": "Focus"
+    "focus": "Focus",
+    "companion": "Companion",
+    "couples": "For Couples",
+    "solo": "For Me",
+    "ethics": "Ethics"
   },
   "seo": {
     "siteName": "Togthr",
@@ -337,7 +341,8 @@
     "cookie": "Cookie Settings",
     "help": "Help Center",
     "contact": "Contact Us",
-    "copyright": "© {year} Togthr. All rights reserved."
+    "copyright": "© {year} Togthr. All rights reserved.",
+    "notChatbot": "Togthr is not a chatbot. It doesn't talk. It remembers you."
   },
   "notFound": {
     "title": "Where am I?",

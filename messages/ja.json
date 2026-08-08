@@ -16,7 +16,11 @@
     "chat": "チャット",
     "faq": "よくある質問",
     "blog": "ブログ",
-    "focus": "集中"
+    "focus": "集中",
+    "companion": "コンパニオン",
+    "couples": "カップル",
+    "solo": "ひとり",
+    "ethics": "倫理"
   },
   "seo": {
     "siteName": "Togthr",
@@ -26,8 +30,8 @@
   },
   "home": {
     "hero": {
-      "title": "静かなコンパニオン",
-      "subtitle": "彼は話さない。彼はそこにいる。",
+      "title": "静かな寄り添い",
+      "subtitle": "チャットしない。ただ、ここにいる。",
       "cta": "無料で始める — クレジットカード不要",
       "secondary": "使い方を見る",
       "socialProof": "10,000人以上のユーザーに信頼されています",
@@ -337,7 +341,8 @@
     "cookie": "Cookie 設定",
     "help": "ヘルプセンター",
     "contact": "お問い合わせ",
-    "copyright": "© {year} Togthr. 全著作権所有。"
+    "copyright": "© {year} Togthr. 全著作権所有。",
+    "notChatbot": "Togthr はチャットボットではありません。話しません。ただ、あなたを覚えています。"
   },
   "notFound": {
     "title": "迷子になっちゃった？",

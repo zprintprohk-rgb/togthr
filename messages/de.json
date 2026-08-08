@@ -16,7 +16,11 @@
     "chat": "Chat",
     "faq": "FAQ",
     "blog": "Blog",
-    "focus": "Fokus"
+    "focus": "Fokus",
+    "companion": "Begleiter",
+    "couples": "Paare",
+    "solo": "Für mich",
+    "ethics": "Ethik"
   },
   "seo": {
     "siteName": "Togthr",
@@ -26,8 +30,8 @@
   },
   "home": {
     "hero": {
-      "title": "der leise Begleiter",
-      "subtitle": "Er redet nicht. Er bleibt.",
+      "title": "Der Stille Begleiter",
+      "subtitle": "Er chattet nicht. Er bleibt.",
       "cta": "Kostenlos starten — ohne Kreditkarte",
       "secondary": "So funktioniert es",
       "socialProof": "Über 10.000 Nutzer weltweit vertrauen uns",
@@ -337,7 +341,8 @@
     "cookie": "Cookie-Einstellungen",
     "help": "Hilfe",
     "contact": "Kontakt",
-    "copyright": "© {year} Togthr. Alle Rechte vorbehalten."
+    "copyright": "© {year} Togthr. Alle Rechte vorbehalten.",
+    "notChatbot": "Togthr ist kein Chatbot. Er chattet nicht. Er erinnert sich an dich."
   },
   "notFound": {
     "title": "Verlaufen?",

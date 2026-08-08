@@ -16,7 +16,11 @@
     "chat": "채팅",
     "faq": "자주 묻는 질문",
     "blog": "블로그",
-    "focus": "집중"
+    "focus": "집중",
+    "companion": "컴패니언",
+    "couples": "커플",
+    "solo": "나만",
+    "ethics": "윤리"
   },
   "seo": {
     "siteName": "Togthr",
@@ -26,8 +30,8 @@
   },
   "home": {
     "hero": {
-      "title": "조용한 컴패니언",
-      "subtitle": "그는 말하지 않아요. 그는 거기에 있어요.",
+      "title": "조용한 동반자",
+      "subtitle": "채팅하지 않아요. 그냥 곁에 있어요.",
       "cta": "무료 시작 — 카드 불필요",
       "secondary": "사용 방법 보기",
       "socialProof": "전 세계 10,000명 이상의 사용자가 신뢰",
@@ -337,7 +341,8 @@
     "cookie": "쿠키 설정",
     "help": "고객센터",
     "contact": "문의하기",
-    "copyright": "© {year} Togthr. 모든 권리 보유."
+    "copyright": "© {year} Togthr. 모든 권리 보유.",
+    "notChatbot": "Togthr는 채팅봇이 아니에요. 말하지 않아요. 당신을 기억해요."
   },
   "notFound": {
     "title": "길을 잃었나요?",

@@ -93,6 +93,11 @@ export default async function LocaleLayout({ children, params }: Props) {
       store: t('nav.store'),
       chat: t('nav.chat'),
       focus: t('nav.focus'),
+      companion: t('nav.companion'),
+      couples: t('nav.couples'),
+      solo: t('nav.solo'),
+      ethics: t('nav.ethics'),
+      notChatbot: t('footer.notChatbot'),
     }
     const footer = {
       privacy: t('footer.privacy'),
@@ -177,67 +182,25 @@ export default async function LocaleLayout({ children, params }: Props) {
                   href={`/${locale}`}
                   className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
-                  {nav.home}
+                  {nav.companion}
                 </Link>
                 <Link
-                  href={`/${locale}/features`}
+                  href={`/${locale}/couples`}
                   className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
-                  {nav.features}
+                  {nav.couples}
                 </Link>
                 <Link
-                  href={`/${locale}/pricing`}
+                  href={`/${locale}/solo`}
                   className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
-                  {nav.pricing}
+                  {nav.solo}
                 </Link>
                 <Link
-                  href={`/${locale}/faq`}
+                  href={`/${locale}/ethics`}
                   className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
-                  FAQ
-                </Link>
-                <Link
-                  href={`/${locale}/blog`}
-                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
-                >
-                  {nav.blog}
-                </Link>
-                <Link
-                  href={`/${locale}/daily`}
-                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
-                >
-                  {nav.daily}
-                </Link>
-                <Link
-                  href={`/${locale}/capsule`}
-                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
-                >
-                  {nav.capsule}
-                </Link>
-                <Link
-                  href={`/${locale}/pet`}
-                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
-                >
-                  {nav.pet}
-                </Link>
-                <Link
-                  href={`/${locale}/journal`}
-                  className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
-                >
-                  {nav.journal}
-                </Link>
-                <Link
-                  href={`/${locale}/store`}
-                  className="text-sm font-semibold text-rose-400 hover:text-rose-300"
-                >
-                  🛒 {nav.store}
-                </Link>
-                <Link
-                  href={`/${locale}/focus`}
-                  className="text-sm font-semibold text-amber-400 hover:text-amber-300"
-                >
-                  🎯 {nav.focus}
+                  {nav.ethics}
                 </Link>
               </div>
             </div>
@@ -254,18 +217,11 @@ export default async function LocaleLayout({ children, params }: Props) {
               <MobileNav
                 locale={locale}
                 labels={{
-                  home: nav.home,
-                  features: nav.features,
-                  pricing: nav.pricing,
-                  faq: 'FAQ',
-                  blog: nav.blog,
-                  daily: nav.daily,
-                  capsule: nav.capsule,
-                  pet: nav.pet,
-                  journal: nav.journal,
-                  store: nav.store,
-                  focus: nav.focus,
-                  chat: nav.chat,
+                  companion: nav.companion,
+                  couples: nav.couples,
+                  solo: nav.solo,
+                  ethics: nav.ethics,
+                  login: nav.login,
                 }}
               />
             </div>
@@ -294,8 +250,8 @@ export default async function LocaleLayout({ children, params }: Props) {
               <p className="text-xs text-zinc-500">
                 Payments processed securely via PayPal.
               </p>
-              <p className="text-xs text-zinc-600">
-                Togthr is not a chatbot. It doesn't talk. It remembers you.
+              <p className="text-xs opacity-60 text-zinc-400">
+                {nav.notChatbot}
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-400">
                 <Link
