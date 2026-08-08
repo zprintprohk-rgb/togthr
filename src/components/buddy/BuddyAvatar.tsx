@@ -1,6 +1,6 @@
 // src/components/buddy/BuddyAvatar.tsx
 //
-// Togthr Buddy Module 1 — 核心渲染组件（K3 规范 v1.0 + 千问优化 v1.1）
+// Togthr Buddy Module 1 — 核心渲染组件（K3 规范 v1.0 + 千问优化 v1.1 + Module 0.5 重构）
 //
 // 功能：渲染 Togthr Buddy 像素公仔
 //   - 8 种动画状态（idle/breath/blink/greet/success/miss/sleep/sign）
@@ -8,6 +8,12 @@
 //   - 8 种配饰（Canvas 2D 程序化绘制，无 PNG 切片）
 //   - 情绪气泡（Framer Motion 淡入淡出，3s 自动消失）
 //   - 外发光（CSS drop-shadow，颜色随主题）
+//
+// Module 0.5 变更（K3 2026-08-09 拍板）：
+//   - 类型与帧映射外移至 `@/lib/buddy-asset-map`（被验收页 dev/buddy 共用）
+//   - 帧源统一从 STATE_FRAME_MAP 读取，禁直接引用异类图（greet 1-4 / sprite 表）
+//   - greet 过渡版用 success-1/2 + idle-1 三帧
+//   - miss 过渡版用 thinking-2 单帧
 //
 // 性能（千问 v1.1）：
 //   - 离屏缓存经 getProcessedAsset（Key = path-theme）
@@ -18,18 +24,14 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { getProcessedAsset, preloadAsset, type BuddyTheme } from '@/lib/image-utils'
+import {
+  STATE_FRAME_MAP,
+  type BuddyState,
+  type BuddyAccessory,
+} from '@/lib/buddy-asset-map'
 
-export type BuddyState =
-  | 'idle'
-  | 'breath'
-  | 'blink'
-  | 'greet'
-  | 'success'
-  | 'miss'
-  | 'sleep'
-  | 'sign'
-
-export type BuddyAccessory = 'scarf' | 'bell' | 'star' | 'moon' | 'leaf' | 'note' | 'heart' | null
+// 重导出类型，保持外部消费方 import 路径不变
+export type { BuddyState, BuddyAccessory } from '@/lib/buddy-asset-map'
 
 export interface BuddyAvatarProps {
   state: BuddyState
@@ -40,18 +42,6 @@ export interface BuddyAvatarProps {
   isGlowing?: boolean
   signText?: string
   size?: number
-}
-
-// state → 资产文件映射（无 frame 参数的 state 用单帧）
-const STATE_ASSETS: Record<BuddyState, string[]> = {
-  idle: ['anim-idle-1.png', 'anim-idle-2.png'],
-  breath: ['anim-breath.png'],
-  blink: ['anim-blink.png'],
-  greet: ['anim-greet-1.png', 'anim-greet-2.png', 'anim-greet-3.png', 'anim-greet-4.png'],
-  success: ['anim-success-1.png', 'anim-success-2.png'],
-  miss: ['anim-greet-4.png'],
-  sleep: ['anim-idle-2.png'],
-  sign: ['anim-idle-1.png'],
 }
 
 const GLOW_COLORS: Record<BuddyTheme, string> = {
@@ -89,7 +79,7 @@ export default function BuddyAvatar({
 
   // 帧动画循环（idle/breath 双帧，其余按序列）
   useEffect(() => {
-    const frames = STATE_ASSETS[state]
+    const frames = STATE_FRAME_MAP[state]
     if (frames.length <= 1) {
       setFrameIdx(0)
       return
@@ -107,7 +97,7 @@ export default function BuddyAvatar({
 
   // 加载当前帧资产（带缓存 + 主题叠加）
   useEffect(() => {
-    const frames = STATE_ASSETS[state]
+    const frames = STATE_FRAME_MAP[state]
     const file = frames[Math.min(frameIdx, frames.length - 1)]
     const path = `/pets/${file}`
     // 预加载下一帧

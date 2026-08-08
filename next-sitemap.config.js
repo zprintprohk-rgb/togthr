@@ -14,6 +14,7 @@ module.exports = {
     '/icon.png',
     '/favicon.ico',
     '/*/payment/*',
+    '/*/dev/*', // 内部 QA 页面（buddy showcase 等），不进入 sitemap
   ],
   // ⚠️ No alternateRefs — the locale layout already generates `<link rel="alternate">`
   // hreflang tags via Next.js metadata.out.alternates. Adding alternateRefs here

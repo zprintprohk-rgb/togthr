@@ -934,5 +934,71 @@
       "billing": "お支払いについて",
       "general": "一般的なフィードバック"
     }
+  },
+  "dev": {
+    "buddy": {
+      "title": "Buddy Avatar Visual QA",
+      "subtitle": "Switch state / theme / accessory / background to inspect avatar rendering and white-edge residue.",
+      "qaNote": "Internal QA only — not indexed, not in sitemap.",
+      "stateLabel": "State",
+      "themeLabel": "Theme",
+      "accessoryLabel": "Accessory",
+      "glowing": "Strong glow",
+      "speechLabel": "Speech (mood bubble)",
+      "speechPlaceholder": "Type speech text…",
+      "speechButton": "Show bubble",
+      "signLabel": "Sign text (sign state only)",
+      "signPlaceholder": "Sign text…",
+      "stageLabel": "Stage background",
+      "stageCosmic": "Dark cosmic",
+      "stageWhite": "Pure white (white-edge check)",
+      "assetWallTitle": "Asset Wall — All 76 PNGs",
+      "assetWallCount": "{count} assets audited",
+      "state": {
+        "idle": "Idle",
+        "breath": "Breath",
+        "blink": "Blink",
+        "greet": "Greet",
+        "success": "Success",
+        "miss": "Miss",
+        "sleep": "Sleep",
+        "sign": "Sign"
+      },
+      "theme": {
+        "lavender": "Lavender",
+        "mint": "Mint",
+        "sakura": "Sakura",
+        "moonlight": "Moonlight",
+        "warm": "Warm",
+        "charcoal": "Charcoal"
+      },
+      "accessory": {
+        "none": "None",
+        "scarf": "Scarf",
+        "bell": "Bell",
+        "star": "Star",
+        "moon": "Moon",
+        "leaf": "Leaf",
+        "note": "Note",
+        "heart": "Heart"
+      },
+      "category": {
+        "animBaseline": "Anim baseline",
+        "animAnomaly": "Anim anomaly (do not reference)",
+        "occupation": "Occupation (sprite table)",
+        "holidaySeason": "Holiday / Season",
+        "scene": "Scene",
+        "expression": "Expression",
+        "sticker": "Sticker",
+        "halloween": "Halloween skin",
+        "legend": "Legend"
+      },
+      "risk": {
+        "used": "Used in frame map",
+        "anomaly": "Anomaly",
+        "spriteTable": "Sprite table — do not reference",
+        "safe": "Safe"
+      }
+    }
   }
 }

@@ -934,5 +934,71 @@
       "billing": "支付问题",
       "general": "通用反馈"
     }
+  },
+  "dev": {
+    "buddy": {
+      "title": "Buddy 头像视觉验收",
+      "subtitle": "切换 state / theme / accessory / 背景，肉眼检查头像渲染与白边残留。",
+      "qaNote": "内部 QA 用，不被搜索引擎收录，不进 sitemap。",
+      "stateLabel": "状态",
+      "themeLabel": "主题",
+      "accessoryLabel": "配饰",
+      "glowing": "强光晕",
+      "speechLabel": "气泡文字",
+      "speechPlaceholder": "输入气泡文字…",
+      "speechButton": "显示气泡",
+      "signLabel": "举牌文字（仅 sign 状态有效）",
+      "signPlaceholder": "举牌文字…",
+      "stageLabel": "舞台背景",
+      "stageCosmic": "深色宇宙",
+      "stageWhite": "纯白（白边检查）",
+      "assetWallTitle": "资产墙 — 76 张 PNG 全审计",
+      "assetWallCount": "已审计 {count} 项资产",
+      "state": {
+        "idle": "待机",
+        "breath": "呼吸",
+        "blink": "眨眼",
+        "greet": "打招呼",
+        "success": "成功",
+        "miss": "想念",
+        "sleep": "睡觉",
+        "sign": "举牌"
+      },
+      "theme": {
+        "lavender": "薰衣草",
+        "mint": "薄荷",
+        "sakura": "樱花",
+        "moonlight": "月光",
+        "warm": "暖橙",
+        "charcoal": "炭灰"
+      },
+      "accessory": {
+        "none": "无",
+        "scarf": "围巾",
+        "bell": "铃铛",
+        "star": "星星",
+        "moon": "月亮",
+        "leaf": "叶子",
+        "note": "音符",
+        "heart": "爱心"
+      },
+      "category": {
+        "animBaseline": "动画基准",
+        "animAnomaly": "动画异类（勿直接引用）",
+        "occupation": "职业（sprite 表）",
+        "holidaySeason": "节日 / 季节",
+        "scene": "场景",
+        "expression": "表情",
+        "sticker": "贴纸",
+        "halloween": "万圣节皮肤",
+        "legend": "传说款"
+      },
+      "risk": {
+        "used": "已用于帧映射",
+        "anomaly": "异类",
+        "spriteTable": "Sprite 表 — 勿直接引用",
+        "safe": "安全"
+      }
+    }
   }
 }

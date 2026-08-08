@@ -147,6 +147,14 @@ main { background: #0B0B1A !important; flex: 1; }
 }
 
 /* ── Utility shortcuts ─────────────────────────────────────────────────── */
+
+/* 深色宇宙背景（dev/buddy 验收页舞台区用 + 未来 hero 复用）
+ *  径向渐变：上方紫雾（#1a0b2e）→ 中段深空（#0B0B1A）→ 底部深紫黑（#06030F）
+ *  与 body 背景 #0B0B1A 视觉一致但有更明显的上方辉光 */
+@utility cosmic-glow {
+  background: radial-gradient(ellipse at top, #1a0b2e 0%, #0B0B1A 40%, #06030F 100%);
+}
+
 @utility glass-card {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
