@@ -74,6 +74,11 @@ export default function DailyFeedingPage() {
     setHunger(newHunger)
     setStreak(newStreak)
     track('daily_checkin', { streak: newStreak })
+    try {
+      const w = window as unknown as Record<string, unknown>
+      const gtag = w.gtag as ((cmd: 'event', e: string, p?: Record<string, unknown>) => void) | undefined
+      if (gtag) gtag('event', 'care_action', { type: 'feed' })
+    } catch { /* noop */ }
     // Persist streak in localStorage
     try {
       localStorage.setItem('togthr.daily.streak', JSON.stringify({

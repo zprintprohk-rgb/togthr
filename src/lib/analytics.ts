@@ -53,3 +53,55 @@ export function identifyUser(id: string): void {
     // analytics must never throw
   }
 }
+
+
+// ── Day 3 (2026-08-09) GA4 事件埋点（与 PostHog 共存，SSR-safe） ──
+
+type GtagEventProps = Record<string, string | number | boolean>
+
+function getGtag() {
+  if (typeof window === 'undefined') return undefined
+  const w = window as unknown as Record<string, unknown>
+  return w.gtag as ((cmd: 'event', event: string, props?: GtagEventProps) => void) | undefined
+}
+
+/** 通用 GA4 事件发送（绝不抛错、绝不阻塞主线程） */
+export function trackEvent(event: string, props?: GtagEventProps) {
+  try {
+    const gtag = getGtag()
+    if (!gtag) return
+    gtag('event', event, props)
+  } catch {
+    /* analytics must never throw */
+  }
+}
+
+/** 邮箱订阅表单提交成功 */
+export function trackEmailSignup(source: 'couples' | 'solo' | 'landing' | 'build') {
+  trackEvent('email_signup', { source })
+}
+
+/** /couples 和 /solo 页面加载 */
+export function trackLandingView(page: 'couples' | 'solo', locale: string) {
+  trackEvent('landing_view', { page, locale })
+}
+
+/** /build 页面加载 */
+export function trackBuildStart(locale: string) {
+  trackEvent('build_start', { locale })
+}
+
+/** /build 完成揭晓 */
+export function trackBuildComplete(locale: string, steps: number) {
+  trackEvent('build_complete', { locale, steps })
+}
+
+/** 喂食/拥抱按钮点击 */
+export function trackCareAction(type: 'feed' | 'hug', locale: string) {
+  trackEvent('care_action', { type, locale })
+}
+
+/** 分享卡下载 */
+export function trackShareClick(format: 'png' | 'jpeg') {
+  trackEvent('share_click', { format })
+}

@@ -21,7 +21,14 @@ export default function SignalButtons({ coupleId, userId, locale }: { coupleId: 
   async function sendSignal(type: SignalType) {
     const supabase = createBrowserClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!)
     const { error } = await supabase.from('events').insert({ couple_id: coupleId, actor_id: userId, event_type: 'signal', metadata: { signal_type: type } })
-    if (!error) { setSent(type); trackGa4Event('signal_send', { signal_type: type, locale }); setTimeout(() => setSent(null), 2000) }
+    if (!error) {
+      setSent(type); trackGa4Event('signal_send', { signal_type: type, locale }); setTimeout(() => setSent(null), 2000)
+      try {
+        const w = window as unknown as Record<string, unknown>
+        const gtag = w.gtag as ((cmd: 'event', e: string, p?: Record<string, unknown>) => void) | undefined
+        if (gtag) gtag('event', 'care_action', { type: type === 'hug' ? 'hug' : 'feed', locale })
+      } catch { /* noop */ }
+    }
   }
 
   return (

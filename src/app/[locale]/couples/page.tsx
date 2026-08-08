@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { setRequestLocale } from 'next-intl/server'
 import { routing, type Locale } from '@/i18n/routing'
 import { siteConfig } from '@/lib/seo'
+import ViewTracker from '@/components/viewtracker'
 
 const SLUG = 'couples'
 
@@ -32,6 +33,7 @@ export default async function CouplesPage({ params }: { params: Promise<{ locale
 
   return (
     <div data-dark-root className="min-h-screen bg-[#0B0B1A] text-zinc-100">
+      <ViewTracker event="landing_view" props={{ page: 'couples', locale: loc }} />
       <div className="mx-auto max-w-2xl px-4 py-24 text-center">
         <p className="text-sm uppercase tracking-widest text-zinc-500">{t('nav.couples')}</p>
         <h1 className="mt-4 text-3xl font-semibold text-zinc-50">A quiet companion for two</h1>
