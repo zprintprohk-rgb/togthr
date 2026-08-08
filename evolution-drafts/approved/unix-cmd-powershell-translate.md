@@ -1,3 +1,30 @@
+# Evolution Proposal: 用户手册中的 Unix 命令（tmux/tail）在 Windows PowerShell 下直接执行导致本轮多次报错，沉淀转译规则以避免未来重复踩坑
+
+- Proposal-ID: evo-2026-08-08-unix-cmd-powershell-translate
+- Status: approved
+- Signature: unix-cmd-powershell-translate
+- Created-At: 2026-08-08 20:08
+- Last-Seen-At: 2026-08-08 20:08
+- Target-File: MEMORY.md
+- Trigger-Type: preference
+- Confidence: medium
+
+## Why This Matters
+- 用户手册中的 Unix 命令（tmux/tail）在 Windows PowerShell 下直接执行导致本轮多次报错，沉淀转译规则以避免未来重复踩坑
+
+## Evidence
+- Interactive proposal card was present in the session UI.
+- The original pending draft file was unavailable at approval time.
+- AutoClaw reconstructed this draft from the proposal payload so the review result can still be recorded.
+
+## Duplicate Check
+- Checked: pending draft path + signature/proposal fallback
+- Result: original draft file missing
+- Decision: create surrogate draft from proposal payload
+
+## Proposed Change
+### MEMORY.md：Unix 命令转译规则
+
 # MEMORY.md — Durable Preferences & Lessons
 
 ## 交付物规则
@@ -31,3 +58,12 @@
 ## Windows PowerShell 命令转译（Unix 手册命令不可直接执行）
 
 - **环境是 Windows PowerShell**：用户手册 / 文档里给的 Unix 风格命令（`tmux ls`、`tail -n 5 <file>`、`bash` 等）在本机不能原样执行，直接跑会报错。执行前必须先转译：后台进程是否退出用 `process` 工具 / 后台会话状态确认（替代 `tmux ls`）；看日志尾部用 `Get-Content <file> -Tail 5`（替代 `tail -n 5`）；`curl` 用 `curl.exe`（PowerShell 的 `curl` 是 Invoke-WebRequest 别名，参数不兼容）。收到含 Unix 命令的操作手册时，先整体转译再执行，不要逐条硬跑。
+
+## Apply Plan
+1. Keep this reconstructed draft as the approval artifact.
+2. Record the proposal content exactly as shown in the interactive card.
+3. Append an audit note after approval or rejection.
+
+## User Approval
+- Approve: 批准 evo-2026-08-08-unix-cmd-powershell-translate
+- Reject: 拒绝 evo-2026-08-08-unix-cmd-powershell-translate
