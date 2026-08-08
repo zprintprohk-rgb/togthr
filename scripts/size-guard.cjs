@@ -8,9 +8,9 @@ const path = require('path');
 const zlib = require('zlib');
 
 const ROOT = path.resolve(__dirname, '..');
-const HARD_LIMIT_MIB = 3.0;   // CF 免费档 3MiB
-const BLOCK_MIB = 2.9;        // 阻断线（95% of 3MiB）
-const WARN_MIB = 2.5;         // 警告线
+const HARD_LIMIT_MIB = 10.0;  // CF Paid 档 10MiB（2026-08-08 升级）
+const BLOCK_MIB = 9.0;        // 阻断线（留 1MiB 余量，~200 篇博客跑道）
+const WARN_MIB = 8.0;         // 警告线
 
 const bundleFiles = [
   '.open-next/worker.js',

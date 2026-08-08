@@ -11,6 +11,7 @@
 //   4. No ads. No death. No streak punishment. 8 languages.
 
 import Link from 'next/link'
+import BlogCtaBanner from '@/components/blogctabanner'
 import { withUtm } from '@/lib/utm'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
@@ -579,7 +580,9 @@ export default async function BlogPostPage({
         </div>
 
         <p className="mt-10 text-base leading-relaxed text-zinc-300">{body.cta}</p>
-        <nav className="mt-10 flex flex-wrap gap-3 text-sm">
+        <BlogCtaBanner slug={SLUG} />
+
+      <nav className="mt-10 flex flex-wrap gap-3 text-sm">
           {body.links.map((l) => (
             <Link key={l.href} href={withUtm(l.href, SLUG)} className="rounded-full border border-zinc-700/40 px-4 py-2 text-zinc-200 hover:border-zinc-500">
               {l.label}

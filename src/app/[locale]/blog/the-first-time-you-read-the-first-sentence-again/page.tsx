@@ -8,6 +8,7 @@
 //        the day you scroll back to the very first sentence.
 
 import Link from 'next/link'
+import BlogCtaBanner from '@/components/blogctabanner'
 import { withUtm } from '@/lib/utm'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
@@ -697,6 +698,7 @@ export default async function BlogPostPage({
           </ul>
         </section>
       ) : null}
+      <BlogCtaBanner slug={SLUG} />
     </article>
   )
 }

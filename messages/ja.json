@@ -96,7 +96,7 @@
           "desc": "日記を書くたび、ふたりの巣が育つ"
         },
         "soulmate": {
-          "title": "ソウルメイト AI",
+          "title": "Quiet Companion",
           "desc": "いつでも話しかけて、聞いてくれる"
         },
         "treehole": {
@@ -163,7 +163,7 @@
         ]
       },
       "soulmate": {
-        "name": "Togthr ソウルメイト",
+        "name": "Togthr Quiet Companion",
         "price": "",
         "period": "/月",
         "features": [
@@ -620,7 +620,7 @@
     "blindboxTitle": "Togthr コンパニオン — 6+1 ミステリーボックス",
     "blindboxDesc": "プログラマー、ドクター、宇宙飛行士、シェフ、消防士、警察... 1/72の確率で伝説の金色 Togthr が出現。",
     "ctaBuy": "ボックスを購入",
-    "ctaTrySoulmate": "Soulmate AI 1ヶ月分付き",
+    "ctaTrySoulmate": "Quiet Companion 1ヶ月分付き",
     "odds": "確率",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",

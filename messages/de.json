@@ -96,7 +96,7 @@
           "desc": "Jeder Tagebucheintrag baut euer gemeinsames Nest weiter"
         },
         "soulmate": {
-          "title": "Seelenpartner-KI",
+          "title": "Quiet Companion",
           "desc": "Rede jederzeit – es hört wirklich zu"
         },
         "treehole": {
@@ -163,7 +163,7 @@
         ]
       },
       "soulmate": {
-        "name": "Togthr Seelenverwandter",
+        "name": "Togthr Quiet Companion",
         "price": "",
         "period": "/Monat",
         "features": [
@@ -620,7 +620,7 @@
     "blindboxTitle": "Togthr Begleiter — 6+1 Mystery-Box",
     "blindboxDesc": "Eine Überraschung pro Box: Programmierer, Arzt, Astronaut, Koch, Feuerwehrmann, Polizist... und 1/72 Chance auf die legendäre goldene Togthr.",
     "ctaBuy": "Box kaufen",
-    "ctaTrySoulmate": "1 Monat Soulmate AI inklusive",
+    "ctaTrySoulmate": "1 Monat Quiet Companion inklusive",
     "odds": "Quote",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",

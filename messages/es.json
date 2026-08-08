@@ -96,7 +96,7 @@
           "desc": "Cada entrada del diario suma un ladrillo a vuestro hogar"
         },
         "soulmate": {
-          "title": "IA alma gemela",
+          "title": "Quiet Companion",
           "desc": "Habla cuando quieras — te escucha de verdad"
         },
         "treehole": {
@@ -163,7 +163,7 @@
         ]
       },
       "soulmate": {
-        "name": "Togthr Alma gemela",
+        "name": "Togthr Quiet Companion",
         "price": "",
         "period": "/mes",
         "features": [
@@ -620,7 +620,7 @@
     "blindboxTitle": "Compañeros Togthr — Caja misterio 6+1",
     "blindboxDesc": "Una sorpresa por caja: Programador, Médico, Astronauta, Cocinero, Bombero, Policía... y 1 de 72 para la legendaria Togthr dorada.",
     "ctaBuy": "Comprar caja",
-    "ctaTrySoulmate": "1 mes de Soulmate AI incluido",
+    "ctaTrySoulmate": "1 mes de Quiet Companion incluido",
     "odds": "Probabilidad",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",

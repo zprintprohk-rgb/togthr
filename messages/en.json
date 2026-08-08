@@ -21,7 +21,7 @@
   "seo": {
     "siteName": "Togthr",
     "description": "A small robot in your device, accompanying you and representing the one you care about. Build daily rituals, save memories, and grow a virtual companion together. Universal, private, and pixel-cute.",
-    "keywords": "companion app, virtual pet, memory keeper, time capsule, daily ritual, emotional support, soulmate, long distance, pixel pet, AI companion",
+    "keywords": "companion app, virtual pet, memory keeper, time capsule, daily ritual, emotional support, quiet companion, long distance, pixel pet, desktop pet",
     "tagline": "Always Here"
   },
   "home": {
@@ -96,7 +96,7 @@
           "desc": "Every journal entry adds a brick to your shared home"
         },
         "soulmate": {
-          "title": "Soulmate AI",
+          "title": "Quiet Companion",
           "desc": "Talk anytime — it truly listens"
         },
         "treehole": {
@@ -163,7 +163,7 @@
         ]
       },
       "soulmate": {
-        "name": "Togthr Soulmate",
+        "name": "Togthr Quiet Companion",
         "price": "",
         "period": "/month",
         "features": [
@@ -620,7 +620,7 @@
     "blindboxTitle": "Togthr Companions — 6+1 Mystery Box",
     "blindboxDesc": "A surprise skin in every box. Programmer, Doctor, Astronaut, Chef, Firefighter, Police... and a 1 in 72 chance for the legendary Golden Togthr.",
     "ctaBuy": "Buy Blind Box",
-    "ctaTrySoulmate": "Includes 1 month Soulmate AI",
+    "ctaTrySoulmate": "Includes 1 month of Quiet Companion",
     "odds": "Odds",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
@@ -799,7 +799,7 @@
     }
   },
   "chat": {
-    "title": "Soulmate",
+    "title": "Quiet Companion",
     "online": "Always here",
     "typing": "Companion is typing...",
     "placeholder": "Say something...",

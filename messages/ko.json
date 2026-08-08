@@ -96,7 +96,7 @@
           "desc": "일기를 쓸 때마다 둘의 둥지가 자라요"
         },
         "soulmate": {
-          "title": "소울메이트 AI",
+          "title": "Quiet Companion",
           "desc": "언제든 대화, 진심으로 들어줘요"
         },
         "treehole": {
@@ -163,7 +163,7 @@
         ]
       },
       "soulmate": {
-        "name": "Togthr 소울메이트",
+        "name": "Togthr Quiet Companion",
         "price": "",
         "period": "/월",
         "features": [
@@ -620,7 +620,7 @@
     "blindboxTitle": "Togthr 동반자 — 6+1 미스터리 박스",
     "blindboxDesc": "프로그래머, 의사, 우주비행사, 셰프, 소방관, 경찰... 1/72 확률로 전설의 골든 Togthr 등장.",
     "ctaBuy": "박스 구매",
-    "ctaTrySoulmate": "Soulmate AI 1개월 포함",
+    "ctaTrySoulmate": "Quiet Companion 1개월 포함",
     "odds": "확률",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",

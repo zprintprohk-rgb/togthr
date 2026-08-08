@@ -1,13 +1,12 @@
-// scripts/verify-r2-keys.cjs — key 存在性 diff（P0 缺口 1）
-// 本地 .next/server/app 970 个 HTML 路径清单 vs R2 桶内存在性（HEAD 探测）
-// 输出 missing 列表；missing = 0 才算上传完成。
+// scripts/verify-r2-keys.cjs — key 存在性 diff（并发 8 路版）
 const fs = require('fs');
 const path = require('path');
-const { execFileSync } = require('child_process');
+const { spawn } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
 const APP_DIR = path.join(ROOT, '.next', 'server', 'app');
 const BUCKET = process.env.R2_BUCKET || 'togthr-content';
+const CONCURRENCY = 8;
 
 function collectHtml(dir, prefix = '') {
   const out = [];
@@ -23,26 +22,31 @@ function collectHtml(dir, prefix = '') {
 }
 
 function keyExists(key) {
-  try {
+  return new Promise((resolve) => {
     const cmd = `npx wrangler r2 object get ${BUCKET}${key} --pipe`;
-    execFileSync('cmd.exe', ['/c', cmd], { cwd: ROOT, stdio: 'pipe', timeout: 20000, windowsHide: true });
-    return true;
-  } catch {
-    return false;
-  }
+    const child = spawn('cmd.exe', ['/c', cmd], { cwd: ROOT, stdio: 'ignore', windowsHide: true });
+    const timer = setTimeout(() => { try { child.kill(); } catch {} resolve(false); }, 15000);
+    child.on('exit', (code) => { clearTimeout(timer); resolve(code === 0); });
+    child.on('error', () => { clearTimeout(timer); resolve(false); });
+  });
 }
 
 async function main() {
   const pages = collectHtml(APP_DIR);
   console.log(`Local HTML files: ${pages.length}`);
-
   const missing = [];
-  let checked = 0;
-  for (const p of pages) {
-    if (!keyExists(p.key)) missing.push(p.key);
-    checked++;
-    if (checked % 200 === 0) console.log(`  checked ${checked}/${pages.length}, missing=${missing.length}`);
+  let checked = 0, idx = 0;
+
+  async function worker() {
+    while (idx < pages.length) {
+      const p = pages[idx++];
+      const exists = await keyExists(p.key);
+      if (!exists) missing.push(p.key);
+      checked++;
+      if (checked % 100 === 0) console.log(`  checked ${checked}/${pages.length}, missing=${missing.length}`);
+    }
   }
+  await Promise.all(Array.from({ length: CONCURRENCY }, worker));
 
   console.log(`\nChecked ${checked} keys.`);
   if (missing.length === 0) {

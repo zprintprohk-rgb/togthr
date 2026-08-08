@@ -26,6 +26,14 @@ export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   const host = request.headers.get('host') ?? ''
 
+  // P0 — 合规止血（2026-08-09 Day 1）：AI chat / Soulmate 页面全部 301 → /ethics
+  // 覆盖 8 locale + 裸路径；ethics 页 Day 4-5 上线，先落 301 规则
+  const chatMatch = pathname.match(/^(?:\/(?:en|zh-cn|zh-tw|ja|ko|de|fr|es))?\/(?:chat|soulmate)(?:\/|$)/)
+  if (chatMatch) {
+    const loc = chatMatch[1] ?? ''
+    return NextResponse.redirect(new URL(`${loc}/ethics`, request.url), 301)
+  }
+
   // P1 — 308 permanent redirect: 裸域 → www（与 canonical / sitemap / GSC 统一）
   if (host === 'togthr.life') {
     const url = new URL(request.url)

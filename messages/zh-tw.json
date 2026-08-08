@@ -96,7 +96,7 @@
           "desc": "每條日記，都給你們的共同小窩添磚加瓦"
         },
         "soulmate": {
-          "title": "靈魂伴侶 AI",
+          "title": "Quiet Companion",
           "desc": "聊聊天，聽你說話"
         },
         "treehole": {
@@ -163,7 +163,7 @@
         ]
       },
       "soulmate": {
-        "name": "Togthr 靈魂伴侶",
+        "name": "Togthr Quiet Companion",
         "price": "",
         "period": "/月",
         "features": [
@@ -620,7 +620,7 @@
     "blindboxTitle": "Togthr 萌寵 — 6+1 神秘盲盒",
     "blindboxDesc": "每盒隨機一款萌寵皮膚：程序員、醫生、太空人、廚師、消防員、警察... 1/72 概率開出傳說級金色款。",
     "ctaBuy": "立即購買",
-    "ctaTrySoulmate": "含 1 個月 Soulmate AI 試用",
+    "ctaTrySoulmate": "含 1 個月 Quiet Companion",
     "odds": "概率",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",

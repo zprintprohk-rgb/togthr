@@ -1,0 +1,24 @@
+# Cloudflare _redirects — Togthr compliance (Day 1, 2026-08-09)
+# 合规止血：AI chat / Soulmate 页面全部 301 → /ethics
+# 8 locale + 裸路径全覆盖
+
+/chat            /ethics              301
+/chat/*          /ethics              301
+/en/chat         /en/ethics           301
+/zh-cn/chat      /zh-cn/ethics        301
+/zh-tw/chat      /zh-tw/ethics        301
+/ja/chat         /ja/ethics           301
+/ko/chat         /ko/ethics           301
+/de/chat         /de/ethics           301
+/fr/chat         /fr/ethics           301
+/es/chat         /es/ethics           301
+/soulmate        /ethics              301
+/soulmate/*      /ethics              301
+/en/soulmate     /en/ethics           301
+/zh-cn/soulmate  /zh-cn/ethics        301
+/zh-tw/soulmate  /zh-tw/ethics        301
+/ja/soulmate     /ja/ethics           301
+/ko/soulmate     /ko/ethics           301
+/de/soulmate     /de/ethics           301
+/fr/soulmate     /fr/ethics           301
+/es/soulmate     /es/ethics           301

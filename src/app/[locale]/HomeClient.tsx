@@ -557,17 +557,6 @@ export function HomeClient({
             }
           />
           <BentoCard
-            href={`/${locale}/chat`}
-            hue="violet"
-            delay={0.5}
-            icon={<MessageCircle className="h-5 w-5" />}
-            title={tCompanions('cards.soulmate.title')}
-            description={tCompanions('cards.soulmate.desc')}
-            visual={
-              <div className="absolute right-3 top-3 text-3xl">💬</div>
-            }
-          />
-          <BentoCard
             href={`/${locale}/community`}
             hue="slate"
             delay={0.6}

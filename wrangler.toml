@@ -1,10 +1,10 @@
-name = "togthr-life"
+﻿name = "togthr-life"
 account_id = "32c174efaa22353f357c0fdff9d61b86"
 main = ".open-next/worker.js"
 compatibility_date = "2026-05-29"
 compatibility_flags = ["nodejs_compat"]
 
-# ─── Non-sensitive env vars (production defaults) ────────────────────────
+# 鈹€鈹€鈹€ Non-sensitive env vars (production defaults) 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
 # Sensitive vars (SUPABASE_SERVICE_ROLE_KEY, PAYPAL_CLIENT_SECRET, ALIPAY_*_KEY, etc.)
 # are set via CLI: npx wrangler secret put <KEY>
 # Source of truth: .env.production (not committed; do NOT commit anon key)
@@ -19,20 +19,20 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable_aDkUMB90QwGQAlcWAGT5Eg_Wf9o_Z69"
 # Public R2 CDN (safe to inline)
 # NOTE: If R2 public subdomain is enabled, use:
 # NEXT_PUBLIC_CDN_URL = "https://togthr-images.32c174efaa22353f357c0fdff9d61b86.r2.dev"
-# Falls back to NEXT_PUBLIC_SITE_URL in lib/r2.ts — safe to leave unset
+# Falls back to NEXT_PUBLIC_SITE_URL in lib/r2.ts 鈥?safe to leave unset
 NEXT_PUBLIC_CDN_URL = ""
 # PayPal client ID is technically public (used in browser SDK), kept here for convenience
 PAYPAL_CLIENT_ID = "BAAbewP1Eq2__waR1iMzrkxVUPbHme8_sx5hYHs9QXfA4yL6AFkGkyeI6s-lc_sXDnfQGmiF-6qHHpvsQI"
 ALIPAY_APP_ID = ""
 # VAPID public key is public (browser push subscription needs it)
 VAPID_PUBLIC_KEY = ""
-# Google Analytics 4 — Measurement ID (7/28 唐总已创建)
+# Google Analytics 4 鈥?Measurement ID (7/28 鍞愭€诲凡鍒涘缓)
 NEXT_PUBLIC_GA4_ID = "G-TNKXQ7V351"
-# Cloudflare Turnstile — 8/3 K3 拍板, 防 bot 刷 feedback form
-# 拿到后: 替换占位 (1× Site Key 公开 + 1× Secret 私有 wrangler secret)
+# Cloudflare Turnstile 鈥?8/3 K3 鎷嶆澘, 闃?bot 鍒?feedback form
+# 鎷垮埌鍚? 鏇挎崲鍗犱綅 (1脳 Site Key 鍏紑 + 1脳 Secret 绉佹湁 wrangler secret)
 NEXT_PUBLIC_TURNSTILE_SITE_KEY = "0x4AAAAAAEE42iuEAACI8lg2"
-# TURNSTILE_SECRET_KEY — set via: npx wrangler secret put TURNSTILE_SECRET_KEY
-# CRON_SECRET — protects /api/cron/* endpoints. Set via: npx wrangler secret put CRON_SECRET
+# TURNSTILE_SECRET_KEY 鈥?set via: npx wrangler secret put TURNSTILE_SECRET_KEY
+# CRON_SECRET 鈥?protects /api/cron/* endpoints. Set via: npx wrangler secret put CRON_SECRET
 CRON_SECRET = ""
 
 # Cron trigger: daily UTC 0:00 to check expired subscriptions
@@ -44,13 +44,15 @@ crons = ["0 0 * * *"]
 directory = ".open-next/assets"
 binding = "ASSETS"
 
-# R2 bucket (togthr-images — for skin sprites, capsule media, sticker PNGs)
+# R2 bucket (togthr-images 鈥?for skin sprites, capsule media, sticker PNGs)
 [[r2_buckets]]
 binding = "R2"
 bucket_name = "togthr-images"
 
-# R2 bucket (togthr-content — SSG HTML 外置, bundle 与内容增长解耦, 2026-08-07)
-# Worker 运行时优先 CONTENT.get(key) 直出, 命中则不进 server bundle
+# R2 bucket (togthr-content 鈥?SSG HTML 澶栫疆, bundle 涓庡唴瀹瑰闀胯В鑰? 2026-08-07)
+# Worker 杩愯鏃朵紭鍏?CONTENT.get(key) 鐩村嚭, 鍛戒腑鍒欎笉杩?server bundle
 [[r2_buckets]]
 binding = "CONTENT"
 bucket_name = "togthr-content"
+
+

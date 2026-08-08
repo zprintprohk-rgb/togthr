@@ -14,6 +14,7 @@
 //   - Article + Breadcrumb + FAQPage JSON-LD
 
 import Link from 'next/link'
+import BlogCtaBanner from '@/components/blogctabanner'
 import { withUtm } from '@/lib/utm'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
@@ -445,6 +446,7 @@ export default async function SmallestRitualPage({
           </ul>
         </section>
       ) : null}
+      <BlogCtaBanner slug={SLUG} />
     </article>
   )
 }

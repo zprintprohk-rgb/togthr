@@ -96,7 +96,7 @@
           "desc": "Chaque entrée de journal ajoute une brique à votre nid"
         },
         "soulmate": {
-          "title": "IA âme sœur",
+          "title": "Quiet Companion",
           "desc": "Parle quand tu veux — il écoute vraiment"
         },
         "treehole": {
@@ -163,7 +163,7 @@
         ]
       },
       "soulmate": {
-        "name": "Togthr Âme sœur",
+        "name": "Togthr Quiet Companion",
         "price": "",
         "period": "/mois",
         "features": [
@@ -620,7 +620,7 @@
     "blindboxTitle": "Compagnons Togthr — Boîte mystère 6+1",
     "blindboxDesc": "Une surprise par boîte : Programmeur, Médecin, Astronaute, Cuisinier, Pompier, Policier... et 1 chance sur 72 pour la légendaire Togthr dorée.",
     "ctaBuy": "Acheter la boîte",
-    "ctaTrySoulmate": "1 mois de Soulmate AI inclus",
+    "ctaTrySoulmate": "1 mois de Quiet Companion inclus",
     "odds": "Probabilité",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",

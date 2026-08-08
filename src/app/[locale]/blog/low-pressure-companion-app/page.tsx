@@ -11,6 +11,7 @@
 // Hook: Most companion apps keep score. This one does not.
 
 import Link from 'next/link'
+import BlogCtaBanner from '@/components/blogctabanner'
 import { withUtm } from '@/lib/utm'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
@@ -338,7 +339,9 @@ export default async function LowPressureCompanionAppPage({ params }: { params: 
           </div>
         ))}
 
-        <h2 className="mt-12 text-2xl font-semibold text-zinc-100">Keep reading</h2>
+        <BlogCtaBanner slug={SLUG} />
+
+      <h2 className="mt-12 text-2xl font-semibold text-zinc-100">Keep reading</h2>
         <ul className="mt-3 space-y-2">
           {body.links.map((l, i) => (
             <li key={i}>
