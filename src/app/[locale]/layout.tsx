@@ -33,10 +33,12 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     return {
       metadataBase: new URL('https://www.togthr.life'),
       title: {
-        template: `%s | ${t('siteName') || 'Togthr'}`,
-        default: `${t('siteName') || 'Togthr'} — ${t('tagline')}`,
+        template: `%s | ${t('siteName') || 'Togthr'} — The Quiet Companion`,
+        default: `${t('siteName') || 'Togthr'} — The Quiet Companion`,
       },
-      description: t('description'),
+      description:
+        t('description') ||
+        'A small presence on your screen that remembers you. No chat. No AI. Just stays.',
       keywords: t('keywords'),
       alternates: {
         canonical: getCanonicalUrl(locale),
@@ -237,12 +239,6 @@ export default async function LocaleLayout({ children, params }: Props) {
                 >
                   🎯 {nav.focus}
                 </Link>
-                <Link
-                  href={`/${locale}/chat`}
-                  className="text-sm font-semibold text-purple-400 hover:text-purple-300"
-                >
-                  💬 {nav.chat}
-                </Link>
               </div>
             </div>
 
@@ -268,8 +264,8 @@ export default async function LocaleLayout({ children, params }: Props) {
                   pet: nav.pet,
                   journal: nav.journal,
                   store: nav.store,
-                  chat: nav.chat,
                   focus: nav.focus,
+                  chat: nav.chat,
                 }}
               />
             </div>
@@ -297,6 +293,9 @@ export default async function LocaleLayout({ children, params }: Props) {
               </p>
               <p className="text-xs text-zinc-500">
                 Payments processed securely via PayPal.
+              </p>
+              <p className="text-xs text-zinc-600">
+                Togthr is not a chatbot. It doesn't talk. It remembers you.
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-400">
                 <Link

@@ -26,12 +26,12 @@
   },
   "home": {
     "hero": {
-      "title": "Toujours là",
-      "subtitle": "Un petit robot dans ton appareil, qui t'accompagne et représente l'autre.",
-      "cta": "Commencer gratuitement",
+      "title": "le compagnon silencieux",
+      "subtitle": "Il ne parle pas. Il reste.",
+      "cta": "Commencer gratuitement — sans carte",
       "secondary": "Voir comment",
       "socialProof": "Choisi par plus de 10 000 utilisateurs",
-      "eyebrow": "Toujours là · Toujours attentionné",
+      "eyebrow": "Silencieux · Présent · Mémoire",
       "welcomeFirst": "Salut ! Je viens de me réveiller. Je serai là, toujours.",
       "welcomeBack": "Tu es revenu·e ! Je t’attendais.",
       "sleepyGreeting": "Chut… il est tard. Reste un instant avec moi.",

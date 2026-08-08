@@ -45,7 +45,6 @@ export function MobileNav({ locale, labels }: { locale: string; labels: MobileNa
     { href: `/${locale}/pet`, label: labels.pet },
     { href: `/${locale}/journal`, label: labels.journal },
     { href: `/${locale}/store`, label: `🛒 ${labels.store}`, strong: 'rose' },
-    { href: `/${locale}/chat`, label: `💬 ${labels.chat}`, strong: 'purple' },
   ]
 
   return (
