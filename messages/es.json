@@ -1000,5 +1000,28 @@
         "safe": "Safe"
       }
     }
+  },
+  "build": {
+    "title": "Build your buddy",
+    "step1Title": "Choose their look",
+    "step1Hint": "This is how they'll look",
+    "next": "Next: Give them a name",
+    "step2Title": "What should I call you?",
+    "namePlaceholder": "Enter a name...",
+    "nameLabel": "One small thing they love",
+    "reveal": "Reveal your buddy",
+    "step3Day1": "Day 1 together",
+    "startCaring": "Start caring",
+    "share": "Share",
+    "noAccessory": "None",
+    "accessoryScarf": "Scarf",
+    "accessoryBell": "Bell",
+    "accessoryStar": "Star",
+    "accessoryMoon": "Moon",
+    "accessoryLeaf": "Leaf",
+    "accessoryNote": "Note",
+    "accessoryHeart": "Heart",
+    "memoryTitle": "Anything they should remember?",
+    "memoryHint": "Optional — a date and a note"
   }
 }

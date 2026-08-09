@@ -1000,5 +1000,28 @@
         "safe": "安全"
       }
     }
+  },
+  "build": {
+    "title": "建造你的 Buddy",
+    "step1Title": "选择他们的样子",
+    "step1Hint": "他们会这样出现",
+    "next": "下一步：给他们取名",
+    "step2Title": "我该怎么称呼你？",
+    "namePlaceholder": "输入一个名字...",
+    "nameLabel": "他们喜欢的一件小事",
+    "reveal": "揭晓你的 Buddy",
+    "step3Day1": "Day 1 together",
+    "startCaring": "开始照顾",
+    "share": "分享",
+    "noAccessory": "无",
+    "accessoryScarf": "围巾",
+    "accessoryBell": "铃铛",
+    "accessoryStar": "星星",
+    "accessoryMoon": "月亮",
+    "accessoryLeaf": "叶子",
+    "accessoryNote": "音符",
+    "accessoryHeart": "爱心",
+    "memoryTitle": "有什么需要他们记住的吗？",
+    "memoryHint": "选填 — 日期和文字"
   }
 }
