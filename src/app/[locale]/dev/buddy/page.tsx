@@ -36,7 +36,6 @@ export default function DevBuddyPage() {
   const [theme, setTheme] = useState<BuddyTheme>('lavender')
   const [accessory, setAccessory] = useState<BuddyAccessory>(null)
   const [isGlowing, setIsGlowing] = useState(false)
-  const [speech, setSpeech] = useState('Hello!')
   const [signText, setSignText] = useState('Hi')
   const [stageBg, setStageBg] = useState<StageBg>('cosmic')
 
@@ -156,16 +155,7 @@ export default function DevBuddyPage() {
             {t('glowing')}
           </label>
 
-          {/* speech */}
-          <div className="flex gap-2">
-            <input
-              type="text"
-              value={speech}
-              onChange={(e) => setSpeech(e.target.value)}
-              placeholder={t('speechPlaceholder')}
-              className="flex-1 rounded-md border border-zinc-700 bg-zinc-900/60 px-2 py-1 text-sm text-zinc-200 placeholder:text-zinc-600"
-            />
-          </div>
+          {/* 非语言情绪反馈 emoji（K3 V2.0: speech 输入已移除，quiet companion 不聊天） */}
 
           {/* sign */}
           <input
@@ -208,7 +198,7 @@ export default function DevBuddyPage() {
           theme={theme}
           accessory={accessory}
           isGlowing={isGlowing}
-          mood={{ emoji: '💬', speech }}
+          mood={{ emoji: '✨' }}
           signText={signText}
           size={220}
         />

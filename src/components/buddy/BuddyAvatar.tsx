@@ -6,7 +6,7 @@
 //   - 8 种动画状态（idle/breath/blink/greet/success/miss/sleep/sign）
 //   - 6 色主题（Canvas source-atop 叠加）
 //   - 8 种配饰（Canvas 2D 程序化绘制，无 PNG 切片）
-//   - 情绪气泡（Framer Motion 淡入淡出，3s 自动消失）
+//   - 非语言情绪反馈（emoji，K3 V2.0 起无气泡/无对话）
 //   - 外发光（CSS drop-shadow，颜色随主题）
 //
 // Module 0.5 变更（K3 2026-08-09 拍板）：
@@ -22,7 +22,7 @@
 'use client'
 
 import { useEffect, useRef, useState, useCallback } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { getProcessedAsset, preloadAsset, type BuddyTheme } from '@/lib/image-utils'
 import {
   STATE_FRAME_MAP,
@@ -38,7 +38,8 @@ export interface BuddyAvatarProps {
   theme: BuddyTheme
   accessory?: BuddyAccessory
   name?: string
-  mood?: { emoji: string; speech?: string }
+  // K3 V2.0: mood.emoji 已删除（quiet companion 不聊天纪律）— 情绪改非语言反馈
+  mood?: { emoji?: string }
   isGlowing?: boolean
   signText?: string
   size?: number
@@ -75,7 +76,6 @@ export default function BuddyAvatar({
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [assetUrl, setAssetUrl] = useState('')
   const [frameIdx, setFrameIdx] = useState(0)
-  const [bubbleVisible, setBubbleVisible] = useState(false)
 
   // 帧动画循环（idle/breath 双帧，其余按序列）
   useEffect(() => {
@@ -108,15 +108,8 @@ export default function BuddyAvatar({
       .catch(() => setAssetUrl(path)) // 失败时 fallback 原图
   }, [state, frameIdx, theme])
 
-  // 情绪气泡：mood.speech 存在时显示 3s 后淡出
-  useEffect(() => {
-    if (mood?.speech) {
-      setBubbleVisible(true)
-      const t = setTimeout(() => setBubbleVisible(false), 3000)
-      return () => clearTimeout(t)
-    }
-    setBubbleVisible(false)
-  }, [mood?.speech])
+  // K3 V2.0: 情绪气泡已删除（quiet companion 不聊天纪律），情绪用非语言反馈
+  // （emoji 图标 + 光晕脉冲），见下方 mood.emoji 渲染
 
   // 配饰绘制（Canvas 2D 程序化）
   const drawAccessory = useCallback(
@@ -224,19 +217,14 @@ export default function BuddyAvatar({
 
   return (
     <div className="relative inline-flex items-center justify-center" style={{ width: size, height: size }}>
-      {/* 情绪气泡 */}
-      <AnimatePresence>
-        {bubbleVisible && mood?.speech && (
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            className="absolute -top-14 left-1/2 -translate-x-1/2 rounded-lg border border-white/10 bg-slate-800/90 px-3 py-1.5 font-mono text-xs text-white"
-          >
-            {mood.speech}
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* K3 V2.0: 头部光晕（buddy-aura 替代天线，三色同源保留） */}
+      {isGlowing && (
+        <div
+          className="buddy-aura"
+          style={{ width: size * 0.38, height: size * 0.19 }}
+          aria-hidden="true"
+        />
+      )}
 
       {/* 主图 */}
       <motion.div
@@ -290,6 +278,19 @@ export default function BuddyAvatar({
           className="absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md border-2 border-slate-800 bg-white px-3 py-1 font-mono text-xs text-slate-800"
         >
           {signText}
+        </motion.div>
+      )}
+
+      {/* K3 V2.0: 非语言情绪反馈（emoji 图标，替代气泡） */}
+      {mood?.emoji && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.6 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, ease: 'easeInOut' }}
+          className="pointer-events-none absolute -top-6 left-1/2 -translate-x-1/2 text-xl"
+          aria-hidden="true"
+        >
+          {mood.emoji}
         </motion.div>
       )}
     </div>

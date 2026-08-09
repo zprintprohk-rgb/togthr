@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Togthr Buddy V2.0 — Mochi (Butter Cream Yellow) theme
+  ─────────────────────────────────────────────────────
+  6 主题色: Mochi #F5E6C8  |  Berry #F4C2C2  |  Cocoa #C8A88A
+            Sky   #A8C8D8  |  Forest #B8D4C8 |  Lavender #D4C4D9
+  规约: S≤30% L≥75% (HSL) | outline #5A4A42 (warm brown, NOT black)
+        白色 #FFFFFF ONLY for: 眼睛高光 (eye sparkle)
+        无天线, 灵光由 CSS filter: drop-shadow() 实现 (见 /styles/buddy-v2.css)
+        所有路径独立 fill, 透明背景, SVG-native 抗黑洞
+  viewBox: 128×128 (sprite 单元对齐 64×64 → 4× 放大)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Togthr Buddy Mochi theme">
+  <defs>
+    <!-- 身体底色 (CSS 主题切换入口) -->
+    <style>
+      .body-fill { fill: #F5E6C8; }   /* Mochi 黄油奶黄 */
+      .outline   { fill: none; stroke: #5A4A42; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+      .eye-main  { fill: #2D2D3A; }
+      .eye-spark { fill: #FFFFFF; }   /* 防黑洞关键: 独立路径, 不会与透明背景冲突 */
+      .blush     { fill: #FFB7C5; opacity: 0.6; }
+      .mouth     { fill: none; stroke: #5A4A42; stroke-width: 2; stroke-linecap: round; }
+      .foot      { fill: #5A4A42; opacity: 0.85; }
+    </style>
+  </defs>
+
+  <!-- ============= 脚 / 接地阴影 (在身体下层) ============= -->
+  <ellipse class="foot" cx="50" cy="120" rx="10" ry="3" />
+  <ellipse class="foot" cx="78" cy="120" rx="10" ry="3" />
+
+  <!-- ============= 短手 (在身体下层) ============= -->
+  <ellipse class="body-fill" cx="22" cy="86" rx="10" ry="14" />
+  <ellipse class="body-fill" cx="106" cy="86" rx="10" ry="14" />
+  <path class="outline" d="M22,72 a10,14 0 0 0 -8,16 M22,72 a10,14 0 0 1 8,-16" />
+  <path class="outline" d="M106,72 a10,14 0 0 1 8,16 M106,72 a10,14 0 0 0 -8,-16" />
+
+  <!-- ============= 身体 (蛋形, 略宽下半身) ============= -->
+  <ellipse class="body-fill" cx="64" cy="82" rx="32" ry="36" />
+  <path class="outline" d="M32,82 a32,36 0 0 1 64,0 a32,36 0 0 1 -64,0 Z" />
+
+  <!-- ============= 头部 (圆球, 略大于身体宽度的 70%) ============= -->
+  <circle class="body-fill" cx="64" cy="50" r="28" />
+  <circle class="outline" cx="64" cy="50" r="28" />
+
+  <!-- ============= 腮红 (独立路径, 在眼下方) ============= -->
+  <ellipse class="blush" cx="44" cy="60" rx="6" ry="4" />
+  <ellipse class="blush" cx="84" cy="60" rx="6" ry="4" />
+
+  <!-- ============= 眼睛 (主: 深灰黑) ============= -->
+  <circle class="eye-main" cx="54" cy="52" r="4.5" />
+  <circle class="eye-main" cx="74" cy="52" r="4.5" />
+
+  <!-- ============= 眼睛高光 (白点, 独立路径, 防黑洞) ============= -->
+  <circle class="eye-spark" cx="55.5" cy="50.5" r="1.6" />
+  <circle class="eye-spark" cx="75.5" cy="50.5" r="1.6" />
+
+  <!-- ============= 嘴 (暖棕弧线, 非直线) ============= -->
+  <path class="mouth" d="M56,64 Q64,70 72,64" />
+
+  <!-- ❌ 故意省略: 天线. 光晕由 CSS filter: drop-shadow() 提供, 详见 /styles/buddy-v2.css -->
+</svg>

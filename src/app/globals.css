@@ -229,3 +229,29 @@ main { background: #0B0B1A !important; flex: 1; }
 .scene-halloween {
   background-image: linear-gradient(to bottom, #1a0f0a, #0f0a05, #0a0501) !important;
 }
+
+/* ==========================================================================
+   K3 V2.0: Buddy Aura — 头部光晕（替代天线，K2.6 原始三色 DNA）
+   --------------------------------------------------------------------------
+   紫(#7C3AED)梦幻 + 粉(#F472B6)温暖 + 青(#2DD4BF)生机 = 1.0 视觉签名
+   从页面背景移到 Buddy 头部上方；4s 呼吸更灵敏；blur(2px) 模拟"灵光"
+   ========================================================================== */
+.buddy-aura {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 100%, rgba(124, 58, 237, 0.4) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 70% 80%, rgba(244, 114, 182, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 30% at 30% 70%, rgba(45, 212, 191, 0.2) 0%, transparent 50%);
+  animation: aura-breathe 4s ease-in-out infinite;
+  filter: blur(2px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes aura-breathe {
+  0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+  50%      { opacity: 1;   transform: translateX(-50%) scale(1.1); }
+}

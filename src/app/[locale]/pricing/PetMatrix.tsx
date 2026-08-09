@@ -6,7 +6,7 @@
  * Three visual modes keyed by tier (visual落差):
  *   - free    : 3 grayscale circles, plain, no glow
  *   - plus    : 10+ colorful glowing circles, marquee/scroll, slight up-peek on hover
- *   - eternal : all icons lit gold + legend ring + 1/72 badge
+ *   - eternal : all icons lit gold + legend ring + annual-limited badge
  *
  * The matrix is a 100% pure visual prop — no logic, no analytics, no
  * checkout. Tier-gating is communicated only by what we render.
@@ -91,9 +91,9 @@ export function PetMatrix({ tier, label, sub, isHovered = false }: PetMatrixProp
         {tier === 'eternal' && (
           <span
             className="rounded-full bg-amber-400/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-amber-200 ring-1 ring-amber-300/30"
-            aria-label="1 in 72 odds"
+            aria-label="Annual limited identity"
           >
-            1/72
+            Annual Limited
           </span>
         )}
       </div>
@@ -284,7 +284,7 @@ function EternalGrid({
         ))}
       </div>
       <div className="flex items-center justify-between text-[10px]">
-        <span className="text-amber-200/80">+ Legendary drop</span>
+        <span className="text-amber-200/80">+ Exclusive series</span>
         <span className="inline-flex items-center gap-1 text-amber-200">
           <span className="h-1 w-1 rounded-full bg-amber-300 animate-pulse" />
           {PRICING_PETS.length} total

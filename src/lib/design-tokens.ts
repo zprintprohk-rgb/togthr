@@ -169,7 +169,7 @@ export type PetSeries =
   | 'festival'      // 节日系列 8 款
   | 'emotion'       // 表情系列 10 款
   | 'fantasy'       // 奇幻系列 8 款
-  | 'legendary'     // 限定盲盒 1 款 (1/72)
+  | 'legendary'     //  年度限定身份 (annual limited)
 
 export const PET_SERIES: Record<PetSeries, {
   labelZh: string

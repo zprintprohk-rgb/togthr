@@ -456,9 +456,6 @@ function AstroRenderer({ stage, size, mood }: { stage: Stage; size: number; mood
       <rect x={-s * 0.15} y={s * 0.17} width={s * 0.3} height={s * 0.15} rx={s * 0.04} fill="#cbd5e1" stroke="#64748b" strokeWidth={1.5} />
       {/* backpack */}
       <rect x={-s * 0.18} y={s * 0.18} width={s * 0.06} height={s * 0.12} rx={3} fill="#94a3b8" />
-      {/* antenna */}
-      <line x1={0} y1={s * 0.2} x2={0} y2={s * 0.35} stroke="#64748b" strokeWidth={2} />
-      <circle cx={0} cy={s * 0.35} r={s * 0.04} fill="#facc15" className="animate-pulse" />
     </g>
   );
 }
