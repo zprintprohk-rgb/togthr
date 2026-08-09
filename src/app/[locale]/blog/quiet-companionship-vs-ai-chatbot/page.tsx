@@ -79,7 +79,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
     <article data-dark-root className="min-h-screen bg-[#0B0B1A] text-zinc-100">
       <div className="mx-auto max-w-3xl px-4 py-16">
         <header>
-          <h1 className="text-3xl md:text-4xl font-semibold leading-tight tracking-tight text-zinc-50">Quiet Companionship vs AI Chatbots: Why Couples Are Choosing the Companion That Doesn't Talk Back</h1>
+          <h1 className="text-3xl md:text-4xl font-semibold leading-tight tracking-tight text-zinc-50">Quiet Companionship vs AI Chatbots: Why Couples Are Choosing the Companion That Doesn&apos;t Talk Back</h1>
         </header>
         <section aria-label="Summary" className="mt-6 rounded-xl border border-pink-500/20 bg-pink-500/5 px-5 py-4">
           <p className="text-sm leading-relaxed text-zinc-400">AI chatbots simulate a conversation with one person. Quiet companionship apps build a shared, wordless ritual between two. For couples — especially long-distance ones — the second model creates more shared meaning with less emotional upkeep. This guide compares both honestly, and ends with a two-minute daily practice you can start tonight.</p>

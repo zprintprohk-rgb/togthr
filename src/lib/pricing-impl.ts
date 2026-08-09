@@ -405,9 +405,11 @@ export function getCountryFromRequest(requestOrHeaders: Request | Headers): Coun
 
   let headerValue: string | null = null
 
-  if ('get' in requestOrHeaders && typeof (requestOrHeaders as any).get === 'function') {
-    // Headers-like object (Next.js headers(), Web Headers, Workers Headers)
-    headerValue = (requestOrHeaders as Headers).get('CF-IPCountry')
+  // Type guard for Headers-like (Web Headers / Next.js headers() / Workers Headers)
+  // 避免在 Server/Edge runtime 边界上用 `as any` 强行收窄
+  if (isHeadersLike(requestOrHeaders)) {
+    // Headers-like object
+    headerValue = requestOrHeaders.get('CF-IPCountry')
   } else if ('headers' in requestOrHeaders && requestOrHeaders.headers) {
     // Standard Request object
     headerValue = requestOrHeaders.headers.get('CF-IPCountry')
@@ -415,6 +417,15 @@ export function getCountryFromRequest(requestOrHeaders: Request | Headers): Coun
 
   const code = headerValue?.trim().toUpperCase()
   return code && COUNTRY_SET.has(code) ? (code as CountryCode) : 'US'
+}
+
+/** Type guard: 是否是 Headers-like（有 get(name) 方法） */
+function isHeadersLike(v: unknown): v is { get(name: string): string | null } {
+  return (
+    typeof v === 'object' &&
+    v !== null &&
+    typeof (v as { get?: unknown }).get === 'function'
+  )
 }
 
 /** Calculate original price (monthly × count) for strikethrough display. */
