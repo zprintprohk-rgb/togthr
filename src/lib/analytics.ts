@@ -96,8 +96,8 @@ export function trackBuildComplete(locale: string, steps: number) {
   trackEvent('build_complete', { locale, steps })
 }
 
-/** 喂食/拥抱按钮点击 */
-export function trackCareAction(type: 'feed' | 'hug', locale: string) {
+/** 喂食/拥抱/晚安按钮点击 */
+export function trackCareAction(type: 'feed' | 'hug' | 'sleep', locale: string) {
   trackEvent('care_action', { type, locale })
 }
 
