@@ -185,7 +185,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                   {nav.companion}
                 </Link>
                 <Link
-                  href={`/${locale}/couples`}
+                  href={`/${locale}/companion`}
                   className="text-sm font-medium text-zinc-400 hover:text-zinc-100"
                 >
                   {nav.couples}

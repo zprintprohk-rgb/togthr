@@ -23,7 +23,7 @@ export default function BlogCtaBanner({ slug }: { slug: string }) {
         Want to build your little one together?
       </p>
       <Link
-        href="/couples"
+        href="/companion"
         onClick={() => trackCtaClick('blog-waitlist', slug)}
         className="mt-4 inline-block rounded-xl bg-amber-400/90 px-6 py-3 text-sm font-semibold text-zinc-900 transition-colors hover:bg-amber-300"
       >

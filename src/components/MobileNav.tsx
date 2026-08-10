@@ -28,7 +28,7 @@ export function MobileNav({ locale, labels }: { locale: string; labels: MobileNa
 
   const items: Array<{ href: string; label: string }> = [
     { href: `/${locale}`, label: labels.companion },
-    { href: `/${locale}/couples`, label: labels.couples },
+    { href: `/${locale}/companion`, label: labels.couples },
     { href: `/${locale}/solo`, label: labels.solo },
     { href: `/${locale}/ethics`, label: labels.ethics },
   ]
