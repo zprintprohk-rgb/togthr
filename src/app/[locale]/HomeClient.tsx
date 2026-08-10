@@ -36,7 +36,6 @@ import {
 } from 'lucide-react'
 import type { Feature } from '@/components/FeatureCard'
 import { PetCapsule } from '@/components/shared/PetCapsule'
-import { RelationModeSelector } from '@/components/shared/RelationModeSelector'
 import { EmotionParticles } from '@/components/shared/EmotionParticles'
 import { SafeImage } from '@/components/shared/SafeImage'
 import {
@@ -390,7 +389,7 @@ export function HomeClient({
             </motion.span>
           </motion.div>
 
-          {/* 关系模式选择器 (底部) */}
+          {/* 关系模式选择器已移除 (S1: AI-pet pivot) */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -400,12 +399,6 @@ export function HomeClient({
             <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-zinc-500 sm:text-xs">
               ✦ {heroRelationsEyebrow} ✦
             </p>
-            <RelationModeSelector
-              value={mode}
-              onChange={setMode}
-              locale={locale as Locale}
-              className="max-w-full"
-            />
             <p className="text-xs text-zinc-500">{heroRelationsHint}</p>
           </motion.div>
 

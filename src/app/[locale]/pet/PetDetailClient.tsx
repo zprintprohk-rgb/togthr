@@ -28,8 +28,6 @@ import { cn } from '@/lib/utils'
 import { PetSelectionModal } from './PetSelectionModal'
 import type { Pet } from './pet-data'
 import { PETS } from './pet-data'
-import TraceStream from '@/components/pet/tracestream'
-import SignalButtons from '@/components/pet/signalbuttons'
 
 /** 4 心情 → 粒子种类映射（方案要求） */
 const MOOD_PARTICLES: Record<Mood, ParticleKind[]> = {
@@ -332,9 +330,7 @@ export default function PetDetailClient() {
         </p>
       </div>
 
-      {/* ── F1/F2 (Phase 6): Partner trace + one-tap signals ── */}
-      <TraceStream coupleId="" />
-      <SignalButtons coupleId="" userId="" locale="en" />
+      {/* ── F1/F2 removed in S1 (AI-pet pivot): partner trace + one-tap signals ── */}
 
       {/* ── 全屏召唤阵 ── */}
       <PetSelectionModal
