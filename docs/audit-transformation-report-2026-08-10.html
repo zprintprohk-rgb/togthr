@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Togthr 全量代码审计报告 — AI 宠物转型</title>
+<style>
+  :root { --bg:#0B0B1A; --card:#151528; --border:#2a2a45; --text:#E8E8F0; --muted:#9a9ab0; --green:#4ade80; --amber:#fbbf24; --red:#f87171; --pink:#f472b6; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:"Segoe UI",-apple-system,sans-serif; line-height:1.6; padding:2rem 1rem; }
+  .wrap { max-width:1100px; margin:0 auto; }
+  h1 { font-size:1.6rem; margin-bottom:0.3rem; }
+  .sub { color:var(--muted); font-size:0.9rem; margin-bottom:2rem; }
+  h2 { font-size:1.2rem; margin:2.5rem 0 1rem; color:var(--pink); border-bottom:1px solid var(--border); padding-bottom:0.4rem; }
+  h3 { font-size:1rem; margin:1.5rem 0 0.6rem; color:#c4b5fd; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.2rem; margin-bottom:1rem; }
+  table { width:100%; border-collapse:collapse; font-size:0.82rem; margin:0.6rem 0; }
+  th { text-align:left; color:var(--muted); font-weight:600; padding:0.5rem; border-bottom:1px solid var(--border); }
+  td { padding:0.5rem; border-bottom:1px solid rgba(42,42,69,0.5); vertical-align:top; }
+  tr:hover td { background:rgba(255,255,255,0.02); }
+  code { background:#1e1e35; padding:0.1rem 0.35rem; border-radius:4px; font-size:0.78rem; color:#93c5fd; }
+  .badge { display:inline-block; padding:0.1rem 0.5rem; border-radius:99px; font-size:0.72rem; font-weight:600; }
+  .b-keep { background:rgba(74,222,128,0.15); color:var(--green); }
+  .b-ref { background:rgba(251,191,36,0.15); color:var(--amber); }
+  .b-del { background:rgba(248,113,113,0.15); color:var(--red); }
+  .metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:0.8rem; margin:1rem 0; }
+  .metric { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1rem; text-align:center; }
+  .metric .num { font-size:1.6rem; font-weight:700; color:var(--pink); }
+  .metric .lbl { font-size:0.78rem; color:var(--muted); }
+  pre.dep { background:#1e1e35; border:1px solid var(--border); border-radius:8px; padding:1rem; font-size:0.8rem; overflow-x:auto; color:#c4b5fd; }
+  .concl { background:rgba(196,181,253,0.06); border-left:3px solid #c4b5fd; padding:0.8rem 1rem; border-radius:0 8px 8px 0; margin:1rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Togthr 全量代码审计报告</h1>
+  <p class="sub">情侣记录 → AI 宠物（安静陪伴）转型 · 2026-08-10 · 2 路并行 Agent + 人工复核</p>
+
+  <div class="metrics">
+    <div class="metric"><div class="num">45+</div><div class="lbl">可复用模块（零改造）</div></div>
+    <div class="metric"><div class="num">20</div><div class="lbl">需改造模块</div></div>
+    <div class="metric"><div class="num">12 组</div><div class="lbl">需删除模块</div></div>
+    <div class="metric"><div class="num">~39h</div><div class="lbl">总工作量（约 5 工作日）</div></div>
+  </div>
+
+  <h2>一、技术栈识别</h2>
+  <div class="card">
+    <table>
+      <tr><th>维度</th><th>技术</th><th>转型判断</th></tr>
+      <tr><td>前端框架</td><td>Next.js 15.5.7 App Router + React 19.2.4 + Tailwind CSS 4</td><td><span class="badge b-keep">KEEP</span></td></tr>
+      <tr><td>后端</td><td>Cloudflare Workers（@opennextjs/cloudflare, Node.js runtime）</td><td><span class="badge b-keep">KEEP</span></td></tr>
+      <tr><td>数据库</td><td>Supabase PostgreSQL + Drizzle ORM（14 张表）</td><td><span class="badge b-keep">KEEP</span></td></tr>
+      <tr><td>存储</td><td>Cloudflare R2（R2 → my-we2-images + CONTENT → togthr-content）</td><td><span class="badge b-keep">KEEP</span></td></tr>
+      <tr><td>认证</td><td>Supabase Auth（OAuth + SSR cookie）</td><td><span class="badge b-keep">KEEP</span></td></tr>
+      <tr><td>支付</td><td>PayPal SDK + Alipay + 网关抽象层（13 国定价）</td><td><span class="badge b-keep">KEEP</span></td></tr>
+      <tr><td>分析</td><td>GA4（G-TNKXQ7V351）+ PostHog 双轨</td><td><span class="badge b-keep">KEEP</span></td></tr>
+      <tr><td>部署</td><td>GitHub Actions deploy.yml → wrangler/opennextjs</td><td><span class="badge b-keep">KEEP</span></td></tr>
+      <tr><td>依赖包</td><td>18 dependencies — 全部保留或已清理（@vercel/og / satori 已移除）</td><td><span class="badge b-keep">KEEP</span></td></tr>
+    </table>
+  </div>
+
+  <h2>二、可复用模块（KEEP — 45+）</h2>
+  <div class="card">
+    <h3>用户系统 / 认证</h3>
+    <table>
+      <tr><th>模块</th><th>路径</th></tr>
+      <tr><td>登录/注册/重置</td><td><code>src/app/[locale]/login|register|reset-password/</code></td></tr>
+      <tr><td>OAuth 回调</td><td><code>src/app/api/auth/callback/route.ts</code></td></tr>
+      <tr><td>用户表 / 认证埋点</td><td><code>schema.ts → profiles</code> / <code>AuthEventTracker.tsx</code></td></tr>
+    </table>
+    <h3>订阅 / 支付</h3>
+    <table>
+      <tr><th>模块</th><th>路径</th></tr>
+      <tr><td>PayPal / Alipay / 网关抽象</td><td><code>src/app/api/paypal|alipay|payments/</code></td></tr>
+      <tr><td>订阅 cron / 定价数据</td><td><code>api/cron/check-subscriptions/</code> / <code>lib/pricing-impl.ts</code></td></tr>
+      <tr><td>皮肤商店 / 支付成功页</td><td><code>[locale]/store/</code> / <code>[locale]/payment/success/</code></td></tr>
+    </table>
+    <h3>宠物核心（转型主力资产）</h3>
+    <table>
+      <tr><th>模块</th><th>路径</th></tr>
+      <tr><td>⭐ DesktopPet（IP 核心）</td><td><code>src/components/DesktopPet/index.tsx</code></td></tr>
+      <tr><td>BuddyAvatar / IdentitySelector / MemoryCard</td><td><code>src/components/buddy/</code></td></tr>
+      <tr><td>companion / build / focus / dev/buddy / memory 页</td><td><code>src/app/[locale]/</code></td></tr>
+      <tr><td>情绪粒子 / 喂食 / 休眠舱 / 加载动画</td><td><code>src/components/shared/</code></td></tr>
+    </table>
+    <h3>SEO / 部署 / 通用</h3>
+    <table>
+      <tr><th>模块</th><th>路径</th></tr>
+      <tr><td>seo.ts / StructuredData / relatedlinks / llms.txt / OG 图</td><td><code>src/lib|components|public/</code></td></tr>
+      <tr><td>deploy.yml / wrangler.toml / open-next.config.ts</td><td>根目录 / .github/</td></tr>
+      <tr><td>通用 UI（SafeImage/Accordion/LanguageSwitcher 等）</td><td><code>src/components/shared|ui/</code></td></tr>
+    </table>
+  </div>
+
+  <h2>三、需改造模块（REFACTOR — 20 个，~37h）</h2>
+  <div class="card">
+    <table>
+      <tr><th>模块</th><th>问题</th><th>建议</th><th>工时</th></tr>
+      <tr><td>首页 HomeClient</td><td>RelationModeSelector 情侣私密叙事</td><td>换宠物陪伴叙事</td><td>3h</td></tr>
+      <tr><td>daily 喂养</td><td>"Is the other one with you today?"</td><td>纯宠物喂食时刻</td><td>2h</td></tr>
+      <tr><td>journal 筑巢</td><td>shared journal 情侣私密</td><td>对宠物说的话 + 筑巢成长</td><td>3h</td></tr>
+      <tr><td>memory 记忆殿堂</td><td>anniversary + 伴侣缺席语义</td><td>删 anniversary，改"宠物想你了"</td><td>2h</td></tr>
+      <tr><td>pet 宠物主页</td><td>"召唤另一个TA"文案 + 引用将删组件</td><td>改文案 + 移除引用</td><td>2h</td></tr>
+      <tr><td>onboarding / features / for / p / blog</td><td>情侣模式选项 / 情侣 Demo / couples 条目</td><td>删情侣语义，保留机制</td><td>1.5-4h</td></tr>
+      <tr><td>pricing + pricing-impl</td><td>soulmate tier（AI 功能档）</td><td>移除 tier + PetMatrix 同步</td><td>1.5h</td></tr>
+      <tr><td>MobileNav / blogctabanner</td><td>/couples 链接</td><td>改 /pet 或 /companion</td><td>0.5h×2</td></tr>
+      <tr><td>couples / solo 落地页</td><td>情侣定位 / 对立叙事</td><td>couples 删除 301；solo 改陪伴叙事</td><td>1-2h</td></tr>
+      <tr><td>couples 表</td><td>情侣关系 schema</td><td>改单人 owner 语义</td><td>3h</td></tr>
+    </table>
+  </div>
+
+  <h2>四、需删除模块（DELETE — 12 组，~2h）</h2>
+  <div class="card">
+    <table>
+      <tr><th>模块</th><th>路径</th><th>原因</th></tr>
+      <tr><td>Soulmate Chat（12 文件）</td><td><code>src/app/[locale]/chat/</code></td><td>AI 聊天 + soulmate 定位</td></tr>
+      <tr><td>伴侣信号流 F1 / 一键信号 F2</td><td><code>components/pet/tracestream.tsx</code> / <code>signalbuttons.tsx</code></td><td>情侣私密功能</td></tr>
+      <tr><td>关系模式选择器</td><td><code>components/shared/RelationModeSelector.tsx</code></td><td>情侣私密叙事</td></tr>
+      <tr><td>couples 落地页</td><td><code>[locale]/couples/page.tsx</code></td><td>情侣定位 → 301 首页</td></tr>
+      <tr><td>OG API route</td><td><code>src/app/api/og/route.tsx</code></td><td>bundle 罪魁（og-generator 已替代）</td></tr>
+      <tr><td>情侣/soulmate 博客 ~15 篇</td><td><code>[locale]/blog/</code></td><td>主题冲突</td></tr>
+      <tr><td>情侣 pSEO ~20 条目</td><td><code>[locale]/p/</code> + 数据层</td><td>主题冲突</td></tr>
+      <tr><td>破损目录</td><td><code>src/app/[locale</code>（无 ]）</td><td>Windows 路径残留</td></tr>
+    </table>
+  </div>
+
+  <h2>五、依赖关系图</h2>
+  <div class="card">
+<pre class="dep">认证模块（profiles ← supabase ← middleware ← layout）
+   └── 登录/注册/重置页 ← AuthEventTracker
+支付模块（subscriptions ← paypal/alipay ← pricing-impl）
+   └── pricing 页 ← TierCard/PetMatrix ← store 商店
+宠物核心（DesktopPet/BuddyAvatar ← pets 资产 ← R2）
+   ├── companion 照顾循环 ← memory-engine ← localStorage
+   ├── build 建造仪式 ← buddy-asset-map ← IdentitySelector
+   └── daily/journal/capsule ← EmotionParticles/FeedingModal
+SEO 层（seo.ts ← layout generateMetadata ← llms.txt ← sitemap）
+   └── blog/p 内容页 ← relatedlinks ← BlogCtaBanner
+分析层（analytics.ts ← GA4 ← ViewTracker ← 各页面）
+删除线：chat(12) ← PetDetailClient ← tracestream/signalbuttons
+          ← RelationModeSelector ← HomeClient</pre>
+  </div>
+
+  <div class="concl">
+    <strong>核心结论：</strong>复用率极高（45+ 模块零改造），转型成本集中在语义改造（~37h）而非重写；18 个依赖无一需移除；风险点为 PetDetailClient 引用将删组件与 blogctabanner/MobileNav 的 /couples 链接，需同步清理。第 1 周先 DELETE 止血（2h），第 2-3 周 REFACTOR 核心页（10h），第 4-5 周清理内容层（4h）。
+  </div>
+</div>
+</body>
+</html>
