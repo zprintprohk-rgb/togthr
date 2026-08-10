@@ -39,7 +39,7 @@ export function websiteSchema(): Record<string, unknown> {
       price: '0',
       priceCurrency: 'USD',
     },
-    description: 'A private space for couples — shared journal, mood tracking, dream wall, and more.',
+    description: 'A quiet AI pet for self-care — a pixel virtual pet that grows as you show up for yourself. No chat, no pressure.',
     inLanguage: routing.locales.map((l) => l.replace('-', '_')),
   }
 }
@@ -61,15 +61,16 @@ export function faqSchema(items: { question: string; answer: string }[]): Record
 }
 
 // SoftwareApplication schema (per locale descriptions)
+// (S3 content cleanup 2026-08-11: couple → AI pet / self-care positioning)
 const softwareDescriptions: Partial<Record<Locale, string>> = {
-  en: 'A private space for couples — shared journal, mood tracking, dream wall, and digital pet companion.',
-  'zh-cn': '情侣专属私密空间——共享日记、心情追踪、梦想墙和数字宠物伴侣。',
-  'zh-tw': '情侶專屬私密空間——共享日記、心情追蹤、夢想牆和數位寵物伴侶。',
-  ja: 'カップルのためのプライベートスペース——共有日記、気分トラッキング、夢の壁、デジタルペット。',
-  ko: '커플을 위한 프라이빗 공간 — 공유 일기, 기분 추적, 꿈의 벽, 디지털 펫.',
-  de: 'Ein privater Raum für Paare — gemeinsames Tagebuch, Stimmungstracking, Traumwand und digitales Haustier.',
-  fr: 'Un espace privé pour les couples — journal partagé, suivi d\'humeur, mur de rêves et animal numérique.',
-  es: 'Un espacio privado para parejas — diario compartido, seguimiento de estado de ánimo, muro de sueños y mascota digital.',
+  en: 'A quiet AI pet for self-care — a pixel virtual pet that grows as you show up for yourself. No chat, no streaks, no pressure.',
+  'zh-cn': '安静的 AI 宠物自我关怀伴侣——像素虚拟宠物，在你为自己出现的每一天慢慢成长。不聊天、无压力。',
+  'zh-tw': '安靜的 AI 寵物自我關懷伴侶——像素虛擬寵物，在你為自己出現的每一天慢慢成長。不聊天、無壓力。',
+  ja: '静かな AI ペット・セルフケアコンパニオン——毎日少しずつ育つピクセル仮想ペット。チャットなし、プレッシャーなし。',
+  ko: '조용한 AI 펫 셀프케어 컴패니언 — 매일 조금씩 자라는 픽셀 가상 펫. 채팅 없음, 압박 없음.',
+  de: 'Ein leiser AI-Pet-Begleiter für Self-Care — ein Pixel-Virtual-Pet, das mit dir wächst. Kein Chat, kein Druck.',
+  fr: 'Un compagnon IA silencieux pour le self-care — un animal virtuel en pixels qui grandit avec vous. Pas de chat, pas de pression.',
+  es: 'Un compañero IA silencioso para el autocuidado — una mascota virtual de píxeles que crece contigo. Sin chat, sin presión.',
 }
 
 export function generateSoftwareSchema(locale: Locale): Record<string, unknown> {

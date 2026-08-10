@@ -130,9 +130,7 @@ export default async function HomePage({
         heroStatusHello={t('home.hero.statusHello')}
         heroStatusMiss={t('home.hero.statusMiss')}
         heroStatusSleepy={t('home.hero.statusSleepy')}
-        heroRelationsEyebrow={t('home.hero.relationsEyebrow')}
-        heroRelationsHint={t('home.hero.relationsHint')}
-        features={features}
+                        features={features}
       />
     </>
   )

@@ -1,6 +1,7 @@
 // src/app/[locale]/companion/page.tsx
 //
 // Togthr Buddy P5 — /companion 照顾循环（K3 V2.0）
+// AI 宠物自我关怀叙事：没有"伴侣"语义，全部围绕与 Buddy 的照顾循环。
 // 核心：
 //   - 饱腹度基于 lastFed 时间戳实时计算（禁止 setInterval 绝对衰减）
 //   - 48h 未互动 → miss 状态（非语言：低头 + 🥺 + 光晕暗淡）
@@ -195,7 +196,7 @@ export default function CompanionPage() {
           </button>
           <div className="text-center">
             <p className="font-medium text-zinc-100">{buddy.name}</p>
-            <p className="text-xs text-zinc-500">Day {day} together</p>
+            <p className="text-xs text-zinc-500">Day {day} with Buddy</p>
           </div>
           <div className="w-12" aria-hidden="true" />
         </div>

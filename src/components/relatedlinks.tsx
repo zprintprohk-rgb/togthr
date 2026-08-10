@@ -5,7 +5,7 @@
 //     - same-group pSEO siblings  ≥3
 //     - cross-group pSEO pages    ≥2
 //     - related blog posts        ≥1
-//   Shared component so all 48 pages render identically (one source of truth).
+//   Shared component so all 26 pages render identically (one source of truth).
 //
 // Usage: <RelatedLinks slug={SLUG} locale={locale} />
 
@@ -15,12 +15,8 @@ import { getBlogPostsBySlug } from '@/lib/blog-posts'
 import type { Locale } from '@/i18n/routing'
 
 // Blog post slugs relevant per landing group (hand-curated topic match).
+// (S3 cleanup: couple/rituals groups removed 2026-08-11)
 const BLOG_MAP: Record<string, string[]> = {
-  couple: [
-    'a-virtual-pet-in-a-long-relationship',
-    'things-to-do-with-long-distance-boyfriend',
-    'first-week-living-together-after-long-distance',
-  ],
   self: [
     'quiet-companion-app-no-chat',
     'two-minute-daily-check-in-ai-companion',
@@ -28,17 +24,13 @@ const BLOG_MAP: Record<string, string[]> = {
   ],
   bff: [
     'things-you-tell-your-virtual-pet',
-    'three-small-rituals-for-couples-who-live-apart',
+    'the-smallest-ritual-you-will-actually-keep',
   ],
   tmg: [
     'tamagotchi-30th-anniversary-from-pocket-to-desktop',
     'tamagotchi-alternative-for-adults',
     'pixel-pet-like-tamagotchi',
     'best-virtual-pet-apps-2026',
-  ],
-  rituals: [
-    'the-smallest-ritual-you-will-actually-keep',
-    'two-minute-daily-check-in-ai-companion',
   ],
   discovery: [
     'digital-pet-nostalgia-2026',

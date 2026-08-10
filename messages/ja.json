@@ -625,7 +625,6 @@
     "blindboxTitle": "Togthr コンパニオン — 6+1 ミステリーボックス",
     "blindboxDesc": "プログラマー、ドクター、宇宙飛行士、シェフ、消防士、警察... 1/72の確率で伝説の金色 Togthr が出現。",
     "ctaBuy": "ボックスを購入",
-    "ctaTrySoulmate": "Quiet Companion 1ヶ月分付き",
     "odds": "確率",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
@@ -636,24 +635,25 @@
     "successSubtitle": "Togthr コンパニオンはまもなく到着します。PayPal が決済処理中です — メールが届きます。",
     "successNote": "PayPal の決済確認後、数分でスキンがアンロックされます。",
     "successHint": "10分以内にスキンが表示されない場合は、注文IDを添えてお問い合わせください。",
-    "secureNotice": "決済はPayPalで保護されています。当社はカード情報を確認しません。"
+    "secureNotice": "決済はPayPalで保護されています。当社はカード情報を確認しません。",
+    "ctaTryBuddy": "Quiet Companion 1ヶ月分付き"
   },
   "daily": {
     "title": "今日のえさやり",
-    "q": "今日、TA はそばにいる？",
-    "withBtn": "💕 一緒",
-    "apartBtn": "🌙 離れ",
+    "q": "今日の気分はどう？",
+    "withBtn": "😊 いい感じ",
+    "apartBtn": "😔 あんまり",
     "hunger": "満腹度",
-    "streak": "🔥 連続 {n} 日",
+    "streak": "🔥 ペットと一緒に {n} 日",
     "bubbleIdle": "えへへ、待って~",
     "bubbleWith": "一緒！",
-    "bubbleApart": "会いたいな...",
+    "bubbleApart": "だいじょうぶ...そばにいるよ。",
     "bubbleFeed": "ごはんちょうだい！",
     "bubbleFull": "満腹！",
     "bubbleMore": "もっとちょうだい~",
     "again": "もう一度",
     "dragHint": "ペットにドラッグ",
-    "streakDays": "{n}日連続",
+    "streakDays": "ペットと一緒に {n} 日",
     "treasureTitle": "宝箱が現れた！🎁",
     "treasureDesc": "7日連続！ペットが宝箱を掘り出したよ~"
   },
@@ -672,7 +672,7 @@
   },
   "pet": {
     "title": "マイペット",
-    "subtitle": "ペットは関係を映す鏡。気分を選んで変身を見よう。",
+    "subtitle": "ペットはあなたの気分を映します。気分を選んで、変化を見てみよう。",
     "pickMood": "今日の気分は？",
     "status": "Togthr は今",
     "day": "一緒 {n} 日目",
@@ -682,7 +682,7 @@
       "thinking": "考え中",
       "sleeping": "睡眠",
       "sweet": "甘い",
-      "fight": "ケンカ",
+      "fight": "ふくれっ面",
       "think": "考え中",
       "sleep": "おやすみ"
     },
@@ -709,7 +709,7 @@
       "current": "使用中"
     },
     "altar": {
-      "title": "ソウルのなかまを召喚",
+      "title": "バディを召喚しよう",
       "back": "戻る",
       "close": "閉じる",
       "hint": "解放済みペットをタップでプレビュー。ロック中は解放方法を確認できます。",
@@ -760,22 +760,22 @@
       "diwali": "ディワリ",
       "carnival": "カーニバル"
     },
-    "traceTitle": "パートナーの動き",
-    "traceEmpty": "初めてのふれあいがここに表示されます。",
+    "traceTitle": "ペットのアクティビティ",
+    "traceEmpty": "ペットとのふれあいがここに表示されます。",
     "signalThinking": "会いたい",
     "signalHug": "ハグ",
     "signalTired": "疲れた",
     "streakFrozen": "連続記録が一時停止中 — 一度触れれば再開します。"
   },
   "journal": {
-    "title": "私たちの巣",
-    "subtitle": "日記を書くと、共有の巣に何かが加わる。成長を見守ろう。",
+    "title": "ぼくの巣",
+    "subtitle": "今日のことをペットに話そう。書くたびにペットの巣が育つよ。",
     "stage": "ステージ",
     "nextStage": "次：{next}",
     "complete": "巣完成！",
-    "entriesCount": "{n} 件の日記",
-    "writePlaceholder": "今日の小さな出来事を...",
-    "save": "巣に追加",
+    "entriesCount": "{n} つの思い出",
+    "writePlaceholder": "ペットに今日の出来事を話そう...",
+    "save": "ペットに話す",
     "mood": {
       "warm": "暖かい",
       "cool": "涼しい",
@@ -798,7 +798,7 @@
         "mood": "cool"
       },
       "e3": {
-        "text": "初めてのクリスマスを一緒に 🎄",
+        "text": "ペットと初めてのクリスマス 🎄",
         "mood": "festive"
       }
     }
@@ -834,8 +834,8 @@
       "placeholder": "例：ピクセル、みみ、べいべい..."
     },
     "mode": {
-      "title": "どんな旅を？",
-      "subtitle": "いつでも変更できます。",
+      "title": "孵化の準備はできた？",
+      "subtitle": "バディは卵の中で待っています。タップして会いに行こう。",
       "solo": {
         "title": "ひとりで",
         "desc": "あなたを見守るペット + AI チャット。"
@@ -843,7 +843,8 @@
       "together": {
         "title": "誰かと",
         "desc": "日常、カプセル、ペットを分かち合う。"
-      }
+      },
+      "hatchCta": "バディを孵そう"
     },
     "done": {
       "title": "{name} の準備完了！",

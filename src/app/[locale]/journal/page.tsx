@@ -1,10 +1,10 @@
 /**
- * /journal — Shared Journal → 筑巢 (scene-rewritten)
+ * /journal — 宠物成长日志 → 筑巢 (scene-rewritten)
  *
- * Each journal entry adds to the shared "nest" (background scene).
- * The nest evolves through 5 stages based on entry count, with different
- * decorations per stage. This is the visual representation of your
- * shared life growing together.
+ * Each journal entry is a memory you share with your pet, adding to its
+ * "nest" (background scene). The nest evolves through 5 stages based on
+ * entry count, with different decorations per stage. This is the visual
+ * representation of your bond with your pet growing.
  *
  * Stages:  empty → seed → sprout → tree → full nest
  * Decorations switch by mood tag: warm / cool / festive

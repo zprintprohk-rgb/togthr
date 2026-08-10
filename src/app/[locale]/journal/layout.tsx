@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: 'Shared Journal - Togthr',
-    description: 'Write your story together. Togthr shared journal is the private space where every entry adds a brick to your nest.',
+    title: 'Pet Journal - Togthr',
+    description: 'Tell your pet about your day. Every entry becomes a memory that grows your pet\'s nest on Togthr.',
   }
 }
 

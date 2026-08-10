@@ -8,7 +8,7 @@ import type {
 
 // ─── Pricing Table V2.5.1 ─────────────────────────────────────────────────
 // 12 country/region tiers with localised prices
-// 2 paid tiers: plus (customization) + soulmate (AI features)
+// 2 paid tiers: plus (single-user plan). soulmate rows kept for legacy data compatibility
 // Gateway priority: alipay_cn > alipay_hk > paypal
 // Quarterly discount = 1 - quarterly/(monthly*3), yearly discount = 1 - yearly/(monthly*12)
 // NOTE 2026-06-05: V2.5.1 = V2.5 - 10% (current purchasing power adjustment)
@@ -98,11 +98,11 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 5.19,
+        monthly: 5.49,
         quarterly: 13.99,
-        yearly: 39.39,
-        quarterlyDiscount: 0.17,  // (21.57-17.99)/21.57
-        yearlyDiscount: 0.38,     // (86.28-53.39)/86.28
+        yearly: 49.99,
+        quarterlyDiscount: 0.17,  // (21.96-17.99)/21.96
+        yearlyDiscount: 0.24,     // (65.88-49.99)/65.88
       },
         soulmate: {
         monthly: 7.39,

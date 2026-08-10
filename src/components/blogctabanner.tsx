@@ -2,7 +2,7 @@
 //
 // Day 1 (2026-08-09) Prompt 1-B: 文章详情页底部转化 CTA
 // 虚线边框、圆角、暖色背景；仅文章详情页渲染（不用于首页/列表页）
-// 文案与链接按 K3 指令：'Want to build your little one together?' + 'Join the waitlist' → /couples
+// 文案与链接按 K3 指令：'Want to build your little one together?' + 'Join the waitlist' → /companion
 //
 // 2026-08-09 fix: 加 'use client' — onClick 调 GA4 是 client-only 行为,
 // 6 个 blog 页 (Server Component) 渲染此组件会触发

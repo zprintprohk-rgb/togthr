@@ -1,10 +1,10 @@
 /**
- * /pet — Virtual Pet → 灵魂伴侣情感中枢 (Fusion v2)
+ * /pet — AI Pet 自我关怀中枢 (Fusion v2)
  *
  * Server entry：调用 setRequestLocale + getTranslations 注入 SEO metadata，
- * 实际交互（mood 切换 / 全屏召唤阵 / 抚摸）由 PetDetailClient 渲染。
+ * 实际交互（mood 切换 / 全屏选择 / 抚摸）由 PetDetailClient 渲染。
  *
- * 战略：选择宠物是"召唤灵魂伴侣"的仪式。宠物不是皮肤，是"另一个TA"。
+ * 战略：选择宠物是"与它相遇"的仪式。宠物不是皮肤，是陪你成长的 Buddy。
  *
  * 文件边界：src/app/[locale]/pet/**
  */
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   } catch {
     return {
       title: 'My Pet',
-      description: 'Summon your soul companion.',
+      description: 'Meet your AI pet buddy — always by your side.',
     }
   }
 }

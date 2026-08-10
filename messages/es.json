@@ -625,7 +625,6 @@
     "blindboxTitle": "Compañeros Togthr — Caja misterio 6+1",
     "blindboxDesc": "Una sorpresa por caja: Programador, Médico, Astronauta, Cocinero, Bombero, Policía... y 1 de 72 para la legendaria Togthr dorada.",
     "ctaBuy": "Comprar caja",
-    "ctaTrySoulmate": "1 mes de Quiet Companion incluido",
     "odds": "Probabilidad",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
@@ -636,24 +635,25 @@
     "successSubtitle": "Tu Compañero Togthr está en camino. PayPal está procesando tu pago — recibirás un recibo por correo.",
     "successNote": "Tu skin se desbloqueará en unos minutos una vez PayPal confirme el pago.",
     "successHint": "Si tu skin no aparece en 10 minutos, contáctanos con tu número de pedido.",
-    "secureNotice": "Pagos seguros con PayPal. Nunca vemos los datos de tu tarjeta."
+    "secureNotice": "Pagos seguros con PayPal. Nunca vemos los datos de tu tarjeta.",
+    "ctaTryBuddy": "1 mes de Quiet Companion incluido"
   },
   "daily": {
     "title": "Alimentación diaria",
-    "q": "¿Está contigo hoy?",
-    "withBtn": "💕 Juntos",
-    "apartBtn": "🌙 Lejos",
+    "q": "¿Cómo te sientes hoy?",
+    "withBtn": "😊 Me siento bien",
+    "apartBtn": "😔 No muy bien",
     "hunger": "Hambre",
-    "streak": "🔥 {n} días seguidos",
+    "streak": "🔥 {n} días con tu mascota",
     "bubbleIdle": "Jeje, espera~",
     "bubbleWith": "¡Juntos!",
-    "bubbleApart": "Te extraño...",
+    "bubbleApart": "Está bien... Estoy aquí contigo.",
     "bubbleFeed": "¡Dame de comer!",
     "bubbleFull": "¡Estoy lleno!",
     "bubbleMore": "Quiero más~",
     "again": "Otra vez",
     "dragHint": "Arrastra a la mascota",
-    "streakDays": "{n} días seguidos",
+    "streakDays": "{n} días con tu mascota",
     "treasureTitle": "¡Cofre del tesoro! 🎁",
     "treasureDesc": "¡Racha de 7 días! Tu mascota desenterró un cofre misterioso~"
   },
@@ -672,17 +672,17 @@
   },
   "pet": {
     "title": "Mi mascota",
-    "subtitle": "La mascota refleja tu relación. Elige un estado de ánimo.",
+    "subtitle": "Tu mascota refleja tu estado de ánimo. Elige uno y mírala transformarse.",
     "pickMood": "¿Cómo se siente tu mascota hoy?",
     "status": "Togthr está",
-    "day": "Día {n} juntos",
+    "day": "Día {n} con tu mascota",
     "mood": {
       "happy": "Dulce",
       "sad": "Pelea",
       "thinking": "Pensando",
       "sleeping": "Durmiendo",
       "sweet": "Dulce",
-      "fight": "Pelea",
+      "fight": "Gruñón",
       "think": "Pensando",
       "sleep": "Durmiendo"
     },
@@ -709,7 +709,7 @@
       "current": "Actual"
     },
     "altar": {
-      "title": "Invoca a tu compañero del alma",
+      "title": "Invoca a tu Buddy",
       "back": "Atrás",
       "close": "Cerrar",
       "hint": "Toca una mascota desbloqueada para previsualizar. En una bloqueada verás cómo desbloquearla.",
@@ -725,7 +725,7 @@
     "changePetBadge": "Altar de invocación",
     "lockHint": "Las mascotas bloqueadas también se previsualizan — suscríbete o abre cajas sorpresa para desbloquearlas",
     "info": {
-      "days": "Días juntos",
+      "days": "Días con tu mascota",
       "interactions": "Interacciones",
       "growth": "Crecimiento"
     },
@@ -760,22 +760,22 @@
       "diwali": "Diwali",
       "carnival": "Carnaval"
     },
-    "traceTitle": "Actividad de tu pareja",
-    "traceEmpty": "Sus primeros momentos compartidos aparecerán aquí.",
+    "traceTitle": "La actividad de tu mascota",
+    "traceEmpty": "Los pequeños momentos de tu mascota aparecerán aquí.",
     "signalThinking": "Pensando en ti",
     "signalHug": "Abrazo",
     "signalTired": "Cansado/a",
     "streakFrozen": "Racha en pausa — una interacción la despierta."
   },
   "journal": {
-    "title": "Nuestro nido",
-    "subtitle": "Cada entrada del diario añade a vuestro nido compartido. Míralo crecer.",
+    "title": "Mi nido",
+    "subtitle": "Cuéntale tu día a tu mascota: cada entrada hace crecer su nido.",
     "stage": "Etapa",
     "nextStage": "Siguiente: {next}",
     "complete": "¡Nido completo!",
-    "entriesCount": "{n} entradas",
-    "writePlaceholder": "Escribe algo sobre hoy...",
-    "save": "Añadir al nido",
+    "entriesCount": "{n} recuerdos",
+    "writePlaceholder": "Cuéntale algo sobre hoy a tu mascota...",
+    "save": "Compartir con mi mascota",
     "mood": {
       "warm": "Cálido",
       "cool": "Fresco",
@@ -790,15 +790,15 @@
     },
     "seedEntries": {
       "e1": {
-        "text": "Buen tiempo hoy, salimos a caminar un rato.",
+        "text": "Buen tiempo hoy, salí a caminar un rato.",
         "mood": "warm"
       },
       "e2": {
-        "text": "¡Por fin nieve! Estamos emocionados.",
+        "text": "¡Por fin nieve! Estoy emocionado.",
         "mood": "cool"
       },
       "e3": {
-        "text": "Nuestra primera Navidad juntos 🎄",
+        "text": "Mi primera Navidad con mi mascota 🎄",
         "mood": "festive"
       }
     }
@@ -834,8 +834,8 @@
       "placeholder": "ej. Pixel, Mimi, Beibei..."
     },
     "mode": {
-      "title": "¿Cómo viajarás?",
-      "subtitle": "Puedes cambiar esto en cualquier momento.",
+      "title": "¿Listo para eclosionar?",
+      "subtitle": "Tu buddy te espera dentro del huevo. Un toque y os conocéis.",
       "solo": {
         "title": "Solo",
         "desc": "Un compañero para ti, con chat IA."
@@ -843,7 +843,8 @@
       "together": {
         "title": "Con alguien",
         "desc": "Rituales compartidos, cápsulas, una mascota común."
-      }
+      },
+      "hatchCta": "Eclosionar a mi buddy"
     },
     "done": {
       "title": "¡{name} está listo!",

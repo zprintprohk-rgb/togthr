@@ -9,56 +9,56 @@
 import type { Locale } from '@/i18n/routing'
 
 // ── 关系模式（4 种，对应 4 种情感场景） ─────────────────────────────────
-export type RelationMode = 'couple' | 'bff' | 'bros' | 'self'
+export type PetState = 'idle' | 'working' | 'thinking' | 'success'
 
-export interface RelationModeConfig {
-  id: RelationMode
+export interface PetStateConfig {
+  id: PetState
   emoji: string
-  /** 中文/英文（其他 7 语言走 i18n） */
+  /** 中文/英文（其余 7 语言走 i18n） */
   labelZh: string
   labelEn: string
-  /** 渐变色 — 用于按钮/卡片描边 */
+  /** 渐变 — 用于按钮/卡片描边 */
   gradient: string
   /** 粒子主色 — 用于背景光晕 */
   arcColor: string
-  /** 该模式下推荐的宠物 sprite 路径 */
+  /** 该状态下的宠物 sprite 路径 */
   petSprite: string
 }
 
-export const RELATION_MODES: RelationModeConfig[] = [
+/** 宠物 4 状态 */
+export const PET_STATES: PetStateConfig[] = [
   {
-    id: 'couple',
-    emoji: '💕',
-    labelZh: '情侣',
-    labelEn: 'Couple',
+    id: 'idle',
+    emoji: '💜',
+    labelZh: '陪伴',
+    labelEn: 'Idle',
     gradient: 'linear-gradient(135deg, #7C3AED 0%, #F472B6 100%)',
     arcColor: 'rgba(244, 114, 182, 0.32)',
-    // FIX 2026-06-26: expression-loveyou.png 不存在于 public/pets/，改成 sticker-loveyou.png
     petSprite: '/pets/sticker-loveyou.png',
   },
   {
-    id: 'bff',
-    emoji: '👭',
-    labelZh: '闺蜜',
-    labelEn: 'Best Friends',
+    id: 'working',
+    emoji: '✨',
+    labelZh: '专注',
+    labelEn: 'Working',
     gradient: 'linear-gradient(135deg, #F472B6 0%, #FBBF24 100%)',
     arcColor: 'rgba(251, 191, 36, 0.28)',
     petSprite: '/pets/sticker-thumbsup.png',
   },
   {
-    id: 'bros',
-    emoji: '👬',
-    labelZh: '兄弟',
-    labelEn: 'Buddies',
+    id: 'thinking',
+    emoji: '🌙',
+    labelZh: '思考',
+    labelEn: 'Thinking',
     gradient: 'linear-gradient(135deg, #60A5FA 0%, #34D399 100%)',
     arcColor: 'rgba(96, 165, 250, 0.28)',
     petSprite: '/pets/sticker-fighting.png',
   },
   {
-    id: 'self',
-    emoji: '🧘',
-    labelZh: '自我',
-    labelEn: 'Self',
+    id: 'success',
+    emoji: '🕯',
+    labelZh: '成长',
+    labelEn: 'Success',
     gradient: 'linear-gradient(135deg, #A78BFA 0%, #2DD4BF 100%)',
     arcColor: 'rgba(45, 212, 191, 0.24)',
     petSprite: '/pets/expression-charging.png',
@@ -223,11 +223,11 @@ export function isNightMode(date: Date = new Date()): boolean {
 }
 
 // ── 关系模式（按 locale 拿 label） ───────────────────────────────────
-export function getRelationModeLabel(mode: RelationMode, locale: Locale): string {
+export function getPetStateLabel(state: PetState, locale: Locale): string {
   const isChinese = locale === 'zh-cn' || locale === 'zh-tw'
   return isChinese
-    ? RELATION_MODES.find((m) => m.id === mode)!.labelZh
-    : RELATION_MODES.find((m) => m.id === mode)!.labelEn
+    ? PET_STATES.find((s) => s.id === state)!.labelZh
+    : PET_STATES.find((s) => s.id === state)!.labelEn
 }
 
 // ── 配色（5 种情绪色） ──────────────────────────────────────────────

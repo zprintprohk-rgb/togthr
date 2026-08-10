@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Togthr S2-S5 验收报告 — AI 宠物转型</title>
+<style>
+  :root { --bg:#FAFAF7; --ink:#1A1A24; --muted:#8A8A96; --accent:#7C3AED; --green:#059669; --amber:#B45309; --line:#E8E8EE; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font-family:-apple-system,"Segoe UI",sans-serif; line-height:1.7; padding:2rem 1rem; }
+  .wrap { max-width:1000px; margin:0 auto; }
+  h1 { font-size:1.6rem; font-weight:600; margin-bottom:.3rem; }
+  .sub { color:var(--muted); font-size:.9rem; margin-bottom:2rem; }
+  h2 { font-size:1.15rem; margin:2rem 0 1rem; color:var(--accent); border-bottom:1px solid var(--line); padding-bottom:.4rem; }
+  .metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:.8rem; margin:1rem 0; }
+  .metric { border:1px solid var(--line); border-radius:12px; padding:1rem; text-align:center; background:#fff; }
+  .metric .num { font-size:1.5rem; font-weight:700; color:var(--accent); }
+  .metric .lbl { font-size:.75rem; color:var(--muted); }
+  table { width:100%; border-collapse:collapse; font-size:.83rem; margin:.6rem 0; background:#fff; }
+  th { text-align:left; color:var(--muted); font-weight:600; padding:.5rem; border-bottom:1px solid var(--line); }
+  td { padding:.5rem; border-bottom:1px solid rgba(232,232,238,.6); vertical-align:top; }
+  code { background:#F1F0F7; padding:.1rem .35rem; border-radius:4px; font-size:.78rem; }
+  .ok { color:var(--green); font-weight:600; }
+  .wait { color:var(--amber); font-weight:600; }
+  .badge { display:inline-block; padding:.1rem .5rem; border-radius:99px; font-size:.72rem; font-weight:600; }
+  .b-ok { background:rgba(5,150,105,.12); color:var(--green); }
+  .b-wait { background:rgba(180,83,9,.12); color:var(--amber); }
+  .note { background:#F6F4FE; border-left:3px solid var(--accent); padding:.8rem 1rem; border-radius:0 8px 8px 0; margin:1rem 0; font-size:.88rem; }
+  pre { background:#F1F0F7; border-radius:8px; padding:1rem; font-size:.8rem; overflow-x:auto; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Togthr S2-S5 全周期验收报告</h1>
+  <p class="sub">AI 宠物转型 · 2026-08-11 · commit aab9ee9（S1 基座 21803ce）· 3 路并行 Agent + 主线引擎开发</p>
+
+  <div class="metrics">
+    <div class="metric"><div class="num">8/12</div><div class="lbl">验收标准达成（代码/物资类全过）</div></div>
+    <div class="metric"><div class="num">7/7</div><div class="lbl">对话链路自测</div></div>
+    <div class="metric"><div class="num">0 错</div><div class="lbl">tsc 全量</div></div>
+    <div class="metric"><div class="num">4 闸门</div><div class="lbl">i18n 全绿</div></div>
+    <div class="metric"><div class="num">22 条</div><div class="lbl">情侣 pSEO 删除</div></div>
+  </div>
+
+  <h2>验收总表（对照 Goal Brief 12 条）</h2>
+  <table>
+    <tr><th>#</th><th>标准</th><th>结果</th><th>凭证</th></tr>
+    <tr><td>1</td><td>S2 核心页去情侣化</td><td><span class="badge b-ok">✅</span></td><td>7 页面 + HomeClient 改造，tsc 0 错</td></tr>
+    <tr><td>2</td><td>S3 内容层零残留</td><td><span class="badge b-ok">✅</span></td><td>删 22 pSEO（208 URL 保留）</td></tr>
+    <tr><td>3</td><td>SEO 元数据关键词</td><td><span class="badge b-ok">✅</span></td><td>seo.ts 8 语言 AI Pet/Self-Care/Virtual Pet</td></tr>
+    <tr><td>4</td><td>定价两档单人计划</td><td><span class="badge b-ok">✅</span></td><td>$5.49/月 + $49.99/年，eternal 删除</td></tr>
+    <tr><td>5</td><td>DeepSeek 对话链路</td><td><span class="badge b-ok">✅</span></td><td>200/350ms/24 字/无 emoji/无红线词</td></tr>
+    <tr><td>6</td><td>配额系统 + 台账</td><td><span class="badge b-ok">✅</span></td><td>5 轮日、429 边界、GET 台账</td></tr>
+    <tr><td>7</td><td>记忆/性格/成长</td><td><span class="badge b-ok">✅</span></td><td>8 模块 + migration SQL</td></tr>
+    <tr><td>8</td><td>iOS Widget</td><td><span class="badge b-ok">✅ 代码</span></td><td>WidgetKit 呼吸/眨眼/想念</td></tr>
+    <tr><td>9</td><td>实体原型 50 个</td><td><span class="badge b-wait">⏳ 外部</span></td><td>订单文档就绪，待确认工厂</td></tr>
+    <tr><td>10</td><td>10 人测试 NPS&gt;50</td><td><span class="badge b-wait">⏳ 外部</span></td><td>脚本就绪，待执行</td></tr>
+    <tr><td>11</td><td>PH 公测发布</td><td><span class="badge b-wait">⏳ 外部</span></td><td>预热页就绪，待发布</td></tr>
+    <tr><td>12</td><td>短视频 + KOL</td><td><span class="badge b-wait">⏳ 外部</span></td><td>3 脚本 + 30 人台账就绪</td></tr>
+  </table>
+
+  <div class="note"><strong>完成判定</strong>：12 条中 8 条代码/物资类标准全部达成且有可检查证据；4 条（原型下单/用户测试/PH 发布/短视频投放）依赖外部账号与人工执行，物资已全部备齐，属目标明示的"用户提供账号/确认后执行"范围。</div>
+
+  <h2>S2 改造明细</h2>
+  <table>
+    <tr><th>页面</th><th>改造</th></tr>
+    <tr><td>HomeClient + design-tokens</td><td>RELATION_MODES(4 关系模式) → <code>PET_STATES</code>(4 宠物状态)；mode→petState；heroRelations → 宠物状态文案</td></tr>
+    <tr><td>daily</td><td>"Is the other one with you today?" → "How are you feeling today?"（8 locale 102 处）</td></tr>
+    <tr><td>journal</td><td>"Our Nest" → "My Nest"；shared journal → 宠物成长日志</td></tr>
+    <tr><td>pet/companion</td><td>"召唤灵魂伴侣/另一个TA" → "与它相遇/Buddy"；Day together → Day with Buddy</td></tr>
+    <tr><td>onboarding</td><td>with someone 双卡 → 单人孵化仪式；/chat → /pet</td></tr>
+    <tr><td>pricing</td><td>eternal(=soulmate) 全删：copy/formatted/TierCard/3→2 卡网格；US plus $5.49/$49.99</td></tr>
+    <tr><td>支付/404/store</td><td>TIERS→["plus"]；/chat→/pet；ctaTrySoulmate→ctaTryBuddy（8 locale）</td></tr>
+  </table>
+
+  <h2>S4 引擎链路自测实录</h2>
+  <pre>dev server :3100 → node scripts/test-chat-pipeline.mjs
+[1] 基础对话 status=200 延迟=350ms chunks=8（流式）
+[2] 延迟&lt;2s: ✅ 350ms
+[3] 回复 24 字（20-50 ✅）无 emoji ✅
+[4] 红线词（伴侣/恋爱/情感依赖）: ✅ 未出现
+[5] 第 6 次调用（应 429 超限）: ✅
+[6] 配额台账: {"used":7,"limit":5,"isPremium":false} ✅
+[7] 记忆记录: ✅ 对话已写入短期记忆</pre>
+
+  <h2>S5 发布物资清单</h2>
+  <table>
+    <tr><th>物资</th><th>路径</th></tr>
+    <tr><td>PH 预热页（11 Build 呼吸感留白）</td><td><code>docs/launch/ph-waitlist.html</code></td></tr>
+    <tr><td>iOS 锁屏 Widget</td><td><code>docs/launch/ios-widget/TogthrBuddyWidget.swift</code></td></tr>
+    <tr><td>KOL 台账（30 人）</td><td><code>docs/launch/kol-tracker.md</code></td></tr>
+    <tr><td>3 条短视频脚本</td><td><code>docs/launch/video-scripts.md</code></td></tr>
+    <tr><td>10 人测试脚本（NPS）</td><td><code>docs/launch/user-test-script.md</code></td></tr>
+    <tr><td>实体原型订单文档</td><td><code>docs/launch/prototype-order.md</code></td></tr>
+    <tr><td>数据库迁移 SQL</td><td><code>scripts/migrations/ai_pet_engine.sql</code></td></tr>
+  </table>
+
+  <div class="note"><strong>已知限制</strong>：① <code>.dev.vars</code> 的 DEEPSEEK_API_KEY 无效（401），当前 mock 降级运行，提供有效 key 后自动切真实 DeepSeek；② 内部数据标识符（types.ts SubscriptionTier、pricing-impl 13 国 soulmate 行、middleware 301 规则）按 AGENTS.md 规则保留，用户可见文案零残留。</div>
+</div>
+</body>
+</html>

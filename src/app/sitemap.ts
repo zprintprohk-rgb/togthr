@@ -56,33 +56,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // Programmatic SEO landing pages (48 slugs × 8 locales = 384 routable URLs)
-  // Phase 1: 32 slugs, shipped 2026-07-22
-  const phase1 = ALL_SLUGS.slice(0, 32)
-  for (const slug of phase1) {
+  // Programmatic SEO landing pages (26 slugs × 8 locales = 208 routable URLs)
+  // (S3 cleanup 2026-08-11: 22 couple-themed slugs removed → 26 remaining)
+  for (const slug of ALL_SLUGS) {
     for (const locale of routing.locales) {
       const url = getLandingUrl(slug, locale)
       entries.push({
         url,
         lastModified: new Date('2026-07-22'),
-        changeFrequency: 'monthly',
-        priority: 0.6,
-        alternates: {
-          languages: Object.fromEntries(
-            routing.locales.map((l) => [l, getLandingUrl(slug, l)]),
-          ),
-        },
-      })
-    }
-  }
-  // Round 2: 16 slugs, shipped 2026-07-27
-  const round2 = ALL_SLUGS.slice(32)
-  for (const slug of round2) {
-    for (const locale of routing.locales) {
-      const url = getLandingUrl(slug, locale)
-      entries.push({
-        url,
-        lastModified: new Date('2026-07-27'),
         changeFrequency: 'monthly',
         priority: 0.6,
         alternates: {

@@ -60,40 +60,27 @@ export interface PricingTheaterProps {
     }
     ctaFree: string
     ctaPlus: string
-    ctaEternal: string
     periodMonthly: string
     periodQuarterly: string
     periodYearly: string
     saveTemplate: string
     freeName: string
     plusName: string
-    eternalName: string
     plusFeatures: string[]
-    eternalFeatures: string[]
     freeFeatures: string[]
     freePetLabel: string
     plusPetLabel: string
-    eternalPetLabel: string
     freePetSub: string
     plusPetSub: string
-    eternalPetSub: string
     popularBadge: string
     freeEyebrow: string
     plusEyebrow: string
-    eternalEyebrow: string
     freeTagline: string
     plusTagline: string
-    eternalTagline: string
   }
   /** All monetary values come from the pricing engine, pre-formatted */
   formatted: {
     plus: TierPriceData & {
-      monthlyFmt: string
-      quarterlyFmt: string
-      yearlyFmt: string
-      originalYearlyFmt: string
-    }
-    soulmate: TierPriceData & {
       monthlyFmt: string
       quarterlyFmt: string
       yearlyFmt: string
@@ -124,19 +111,17 @@ export function PricingTheater({
   // Burst trigger counters (per tier)
   const [burstTriggers, setBurstTriggers] = useState({
     plus: 0,
-    eternal: 0,
   })
 
   const fireBurst = (tier: PricingTier) => {
-    if (tier === 'free') return
-    setBurstTriggers((prev) => ({ ...prev, [tier]: prev[tier] + 1 }))
+    if (tier !== 'plus') return
+    setBurstTriggers((prev) => ({ ...prev, plus: prev.plus + 1 }))
     // Funnel: paid-tier CTA click → TierCard navigates to the order-creation
     // endpoint right after this, so this is the checkout_start point.
     track('checkout_start', {
-      tier: tier === 'eternal' ? 'soulmate' : tier,
+      tier,
       period,
-      amount:
-        tier === 'eternal' ? formatted.soulmate[period] : formatted.plus[period],
+      amount: formatted.plus[period],
       currency,
       provider: gateway === 'paypal' ? 'paypal' : 'alipay',
     })
@@ -166,31 +151,7 @@ export function PricingTheater({
 
   const plusOriginal = period === 'monthly' ? null : formatted.plus.originalYearlyFmt
 
-  const soulmatePrice = (() => {
-    if (period === 'monthly') return formatted.soulmate.monthlyFmt
-    if (period === 'quarterly') return formatted.soulmate.quarterlyFmt
-    return formatted.soulmate.yearlyFmt
-  })()
-
-  const soulmateSub = (() => {
-    if (period === 'monthly') return `/${copy.periodMonthly}`
-    if (period === 'quarterly') return `/${copy.periodQuarterly}`
-    return `/${copy.periodYearly}`
-  })()
-
-  const eternalSave = (() => {
-    if (period === 'monthly') return null
-    const pct =
-      period === 'yearly'
-        ? formatted.soulmate.yearlyDiscountPct
-        : formatted.soulmate.quarterlyDiscountPct
-    return copy.saveTemplate.replace('{discount}', String(pct))
-  })()
-
-  const eternalOriginal =
-    period === 'monthly' ? null : formatted.soulmate.originalYearlyFmt
-
-  const buildCheckoutHref = (tier: 'plus' | 'soulmate') =>
+  const buildCheckoutHref = (tier: 'plus') =>
     `/api/payments/${gateway}/create?country=${country}&tier=${tier}&period=${period}&locale=${locale}`
 
   // Build the three TierCard payloads
@@ -225,22 +186,6 @@ export function PricingTheater({
     checkoutHref: buildCheckoutHref('plus'),
   }
 
-  const eternalCard: TierCardData = {
-    tier: 'eternal',
-    eyebrow: copy.eternalEyebrow,
-    name: copy.eternalName,
-    tagline: copy.eternalTagline,
-    price: soulmatePrice,
-    priceSub: soulmateSub,
-    originalPrice: eternalOriginal ?? undefined,
-    saveLabel: eternalSave ?? undefined,
-    features: copy.eternalFeatures,
-    petLabel: copy.eternalPetLabel,
-    petSub: copy.eternalPetSub,
-    cta: copy.ctaEternal,
-    badge: 'Exclusive',
-    checkoutHref: buildCheckoutHref('soulmate'),
-  }
 
   return (
     <section
@@ -260,7 +205,7 @@ export function PricingTheater({
               'radial-gradient(ellipse 60% 70% at 50% 0%, rgba(168,85,247,0.22) 0%, rgba(244,114,182,0.10) 35%, transparent 70%)',
           }}
         />
-        {/* Petal/pink secondary glow under the Eternal column */}
+{/* Secondary glow */}
         <div
           aria-hidden="true"
           className="absolute right-[8%] top-[20%] h-[300px] w-[300px] rounded-full blur-3xl"
@@ -391,7 +336,7 @@ export function PricingTheater({
         </header>
 
         {/* Tier grid */}
-        <div className="mt-10 grid gap-5 sm:gap-6 md:grid-cols-3 md:gap-5 lg:gap-6">
+        <div className="mt-10 grid gap-5 sm:gap-6 md:grid-cols-2 md:gap-5 lg:gap-6">
           <TierCard
             {...freeCard}
             burstTrigger={0}
@@ -401,12 +346,6 @@ export function PricingTheater({
           <TierCard
             {...plusCard}
             burstTrigger={burstTriggers.plus}
-            onBurst={fireBurst}
-            period={period}
-          />
-          <TierCard
-            {...eternalCard}
-            burstTrigger={burstTriggers.eternal}
             onBurst={fireBurst}
             period={period}
           />

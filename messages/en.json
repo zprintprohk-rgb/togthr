@@ -625,7 +625,6 @@
     "blindboxTitle": "Togthr Companions — 6+1 Mystery Box",
     "blindboxDesc": "A surprise skin in every box. Programmer, Doctor, Astronaut, Chef, Firefighter, Police... and a 1 in 72 chance for the legendary Golden Togthr.",
     "ctaBuy": "Buy Blind Box",
-    "ctaTrySoulmate": "Includes 1 month of Quiet Companion",
     "odds": "Odds",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
@@ -636,24 +635,25 @@
     "successSubtitle": "Your Togthr Companion is on its way. PayPal is processing your payment — you will receive an email receipt shortly.",
     "successNote": "Your skin unlocks within a few minutes once PayPal confirms the payment.",
     "successHint": "If your skin does not appear within 10 minutes, please contact us with your order ID.",
-    "secureNotice": "Payments secured by PayPal. We never see your card details."
+    "secureNotice": "Payments secured by PayPal. We never see your card details.",
+    "ctaTryBuddy": "Includes 1 month of Quiet Companion"
   },
   "daily": {
     "title": "Daily Feeding Time",
-    "q": "Is the other one with you today?",
-    "withBtn": "💕 Together",
-    "apartBtn": "🌙 Apart",
+    "q": "How are you feeling today?",
+    "withBtn": "😊 Feeling good",
+    "apartBtn": "😔 Not so great",
     "hunger": "Hunger",
-    "streak": "🔥 {n} day streak",
+    "streak": "🔥 {n} days together",
     "bubbleIdle": "Hehe, wait~",
     "bubbleWith": "Yay!",
-    "bubbleApart": "Missing them...",
+    "bubbleApart": "It's okay... I'm here with you.",
     "bubbleFeed": "Feed me!",
     "bubbleFull": "I am full!",
     "bubbleMore": "More please~",
     "again": "Do it again",
     "dragHint": "Drag to the pet",
-    "streakDays": "{n} day streak",
+    "streakDays": "{n} days with your pet",
     "treasureTitle": "Treasure Chest! 🎁",
     "treasureDesc": "7-day streak! Your pet dug up a mystery chest~"
   },
@@ -672,17 +672,17 @@
   },
   "pet": {
     "title": "My Pet",
-    "subtitle": "The pet mirrors your relationship. Pick a mood to see it transform.",
+    "subtitle": "Your pet mirrors how you feel. Pick a mood and watch it transform.",
     "pickMood": "How is your pet feeling today?",
     "status": "Togthr is",
-    "day": "Day {n} together",
+    "day": "Day {n} with Buddy",
     "mood": {
       "happy": "Sweet",
       "sad": "Fighting",
       "thinking": "Thinking",
       "sleeping": "Sleeping",
       "sweet": "Sweet",
-      "fight": "Fighting",
+      "fight": "Grumpy",
       "think": "Thinking",
       "sleep": "Sleeping"
     },
@@ -735,7 +735,7 @@
       "carnival": "Carnival"
     },
     "altar": {
-      "title": "Summon Your Soul Companion",
+      "title": "Summon Your Buddy",
       "back": "Back",
       "close": "Close",
       "hint": "Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
@@ -751,7 +751,7 @@
     "changePetBadge": "Summon Altar",
     "lockHint": "Locked pets are still previewed — subscribe or open blind boxes to unlock",
     "info": {
-      "days": "Days Together",
+      "days": "Days with Buddy",
       "interactions": "Interactions",
       "growth": "Growth"
     },
@@ -760,22 +760,22 @@
       "history": "History",
       "share": "Share"
     },
-    "traceTitle": "Your partner's activity",
-    "traceEmpty": "Your first shared moments will appear here.",
+    "traceTitle": "Your pet's activity",
+    "traceEmpty": "Your pet's little moments will appear here.",
     "signalThinking": "Thinking of you",
     "signalHug": "Hug",
     "signalTired": "Tired",
     "streakFrozen": "Streak paused — one interaction wakes it up"
   },
   "journal": {
-    "title": "Our Nest",
-    "subtitle": "Every journal entry adds to your shared nest. Watch it grow.",
+    "title": "My Nest",
+    "subtitle": "Tell your pet about your day — every entry makes its nest grow.",
     "stage": "Stage",
     "nextStage": "Next: {next}",
     "complete": "Nest complete!",
-    "entriesCount": "{n} entries",
-    "writePlaceholder": "Write something about today...",
-    "save": "Add to nest",
+    "entriesCount": "{n} memories",
+    "writePlaceholder": "Tell your pet something about today...",
+    "save": "Share with my pet",
     "mood": {
       "warm": "Warm",
       "cool": "Cool",
@@ -798,7 +798,7 @@
         "mood": "cool"
       },
       "e3": {
-        "text": "Our first Christmas together 🎄",
+        "text": "First Christmas with my pet 🎄",
         "mood": "festive"
       }
     }
@@ -834,8 +834,8 @@
       "placeholder": "e.g. Pixel, Mimi, Beibei..."
     },
     "mode": {
-      "title": "How will you journey?",
-      "subtitle": "You can change this anytime.",
+      "title": "Ready to hatch?",
+      "subtitle": "Your buddy is waiting inside the egg. One tap to meet it.",
       "solo": {
         "title": "On my own",
         "desc": "A pet companion for you, with AI chat support."
@@ -843,7 +843,8 @@
       "together": {
         "title": "With someone",
         "desc": "Share rituals, capsules, and a pet together."
-      }
+      },
+      "hatchCta": "Hatch my buddy"
     },
     "done": {
       "title": "{name} is ready!",

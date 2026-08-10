@@ -32,7 +32,7 @@ const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!
 const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY!
 
 /* ─── whitelists ─── */
-const TIERS = new Set(["plus", "soulmate"])
+const TIERS = new Set(["plus"])
 const PERIODS = new Set(["monthly", "quarterly", "yearly"])
 const GATEWAYS = new Set(["paypal", "alipay"])
 const LOCALES = new Set<string>(routing.locales)

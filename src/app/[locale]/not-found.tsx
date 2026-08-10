@@ -109,7 +109,7 @@ export default function NotFoundPage() {
           🐾 {t('feedPet')}
         </Link>
         <Link
-          href="/chat"
+          href="/pet"
           className="inline-flex h-10 items-center rounded-full border border-zinc-700 bg-zinc-800 px-5 text-sm font-medium text-zinc-200 hover:bg-zinc-700"
         >
           💬 {t('sayHi')}

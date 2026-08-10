@@ -4,7 +4,7 @@
  * 3 steps:
  *  1. Welcome — meet the Togthr companion
  *  2. Name it — give your pet a name (universal, personalizes everything)
- *  3. Mode — solo / with someone (universal, no niche)
+ *  3. Hatch — single-player pet hatching ritual (AI pet self-care, solo only)
  *
  * MVP Day 1: stores choices in localStorage. Day 2: write to Supabase
  * user_profiles (pet_name, mode) on completion.
@@ -21,8 +21,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from '@/i18n/routing'
 import { track } from '@/lib/analytics'
 
-type Mode = 'solo' | 'together' | null
-type Step = 0 | 1 | 2 | 3 // 0 = welcome, 1 = name, 2 = mode, 3 = done
+type Step = 0 | 1 | 2 | 3 // 0 = welcome, 1 = name, 2 = hatch, 3 = done
 
 const STORAGE_KEY = 'togthr.onboarding.v1'
 
@@ -31,7 +30,6 @@ export default function OnboardingPage() {
   const router = useRouter()
   const [step, setStep] = useState<Step>(0)
   const [petName, setPetName] = useState('')
-  const [mode, setMode] = useState<Mode>(null)
   const [mounted, setMounted] = useState(false)
 
   // Hydrate from localStorage (Day 1: client-only persistence)
@@ -43,7 +41,6 @@ export default function OnboardingPage() {
       if (stored) {
         const data = JSON.parse(stored)
         if (data.petName) setPetName(data.petName)
-        if (data.mode) setMode(data.mode)
         // If already onboarded, jump to done
         if (data.completed) setStep(3)
       }
@@ -60,12 +57,12 @@ export default function OnboardingPage() {
   }
 
   function finish() {
-    if (!petName.trim() || !mode) return
-    track('onboarding_complete', { mode })
+    if (!petName.trim()) return
+    track('onboarding_complete', { mode: 'solo' })
     try {
       localStorage.setItem(
         STORAGE_KEY,
-        JSON.stringify({ petName: petName.trim(), mode, completed: true, ts: Date.now() }),
+        JSON.stringify({ petName: petName.trim(), mode: 'solo', completed: true, ts: Date.now() }),
       )
     } catch {
       // localStorage unavailable
@@ -78,13 +75,10 @@ export default function OnboardingPage() {
       localStorage.removeItem(STORAGE_KEY)
     } catch {}
     setPetName('')
-    setMode(null)
     setStep(0)
   }
 
-  const canProceed =
-    (step === 1 && petName.trim().length > 0) ||
-    (step === 2 && mode !== null)
+  const canProceed = step === 1 && petName.trim().length > 0
 
   if (!mounted) {
     return (
@@ -228,17 +222,17 @@ export default function OnboardingPage() {
           </motion.div>
         )}
 
-        {/* Step 2: Mode */}
+        {/* Step 2: Hatch — single-player ritual (AI pet self-care) */}
         {step === 2 && (
           <motion.div
-            key="mode"
+            key="hatch"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
             className="w-full text-center"
           >
-            <div className="text-6xl mb-4">🤝</div>
+            <div className="text-6xl mb-4">🐣</div>
             <h2 className="text-2xl font-bold sm:text-3xl text-zinc-900 dark:text-zinc-100">
               {t('mode.title')}
             </h2>
@@ -246,41 +240,16 @@ export default function OnboardingPage() {
               {t('mode.subtitle')}
             </p>
 
-            <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              <button
-                onClick={() => setMode('solo')}
-                className={`rounded-2xl border-2 p-6 text-left transition-all ${
-                  mode === 'solo'
-                    ? 'scale-105 border-rose-400 bg-rose-50 shadow-lg dark:border-purple-500 dark:bg-purple-950/40'
-                    : 'border-zinc-200 bg-white hover:scale-105 hover:border-rose-300 dark:border-zinc-700 dark:bg-zinc-800'
-                }`}
-              >
-                <div className="text-3xl mb-2">🐾</div>
-                <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
-                  {t('mode.solo.title')}
-                </h3>
-                <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
-                  {t('mode.solo.desc')}
-                </p>
-              </button>
-
-              <button
-                onClick={() => setMode('together')}
-                className={`rounded-2xl border-2 p-6 text-left transition-all ${
-                  mode === 'together'
-                    ? 'scale-105 border-rose-400 bg-rose-50 shadow-lg dark:border-purple-500 dark:bg-purple-950/40'
-                    : 'border-zinc-200 bg-white hover:scale-105 hover:border-rose-300 dark:border-zinc-700 dark:bg-zinc-800'
-                }`}
-              >
-                <div className="text-3xl mb-2">💞</div>
-                <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
-                  {t('mode.together.title')}
-                </h3>
-                <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
-                  {t('mode.together.desc')}
-                </p>
-              </button>
-            </div>
+            <button
+              onClick={finish}
+              className="mx-auto mt-8 block w-full max-w-sm rounded-2xl border-2 border-rose-300 bg-white p-6 text-left transition-all hover:scale-105 hover:border-rose-400 dark:border-purple-500 dark:bg-zinc-800 dark:hover:border-purple-400"
+            >
+              <div className="text-3xl mb-2">🥚</div>
+              <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
+                {t('mode.hatchCta')}
+              </h3>
+              <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">🐾</p>
+            </button>
 
             <div className="mt-8 flex items-center justify-center gap-3">
               <button
@@ -288,13 +257,6 @@ export default function OnboardingPage() {
                 className="rounded-full border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
               >
                 ← {t('back')}
-              </button>
-              <button
-                onClick={finish}
-                disabled={!mode}
-                className="rounded-full bg-linear-to-r from-rose-500 to-purple-600 px-6 py-2.5 text-sm font-semibold text-white shadow-lg hover:shadow-purple-500/50 disabled:opacity-50"
-              >
-                {t('finish')} 🎉
               </button>
             </div>
           </motion.div>
@@ -314,7 +276,7 @@ export default function OnboardingPage() {
               {t('done.title', { name: petName || 'Togthr' })}
             </h2>
             <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-400">
-              {mode === 'solo' ? t('done.soloNote') : t('done.togetherNote')}
+              {t('done.soloNote')}
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
@@ -325,10 +287,10 @@ export default function OnboardingPage() {
                 🐾 {t('done.feedPet')}
               </Link>
               <Link
-                href="/chat"
+                href="/pet"
                 className="rounded-full border border-zinc-300 bg-white px-6 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
               >
-                💬 {t('done.sayHi')}
+                🐾 {t('done.sayHi')}
               </Link>
             </div>
 

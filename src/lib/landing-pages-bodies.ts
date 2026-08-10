@@ -1,10 +1,9 @@
 // src/lib/landing-pages-bodies.ts
 //
-// 32 unique EN body contents for the Phase 1 pSEO landing pages.
+// 26 unique EN body contents for the pSEO landing pages (S3 cleanup: 22 couple-themed bodies removed).
 // One Body per slug. The per-slug page.tsx imports the body and renders
-// it for all 8 locales (the task is EN-content-only for this batch —
-// other locales reuse the EN body, only the meta title/description and
-// hreflang tags vary per locale).
+// it for all 8 locales (EN content only — other locales reuse the EN body;
+// only the meta title/description and hreflang tags vary per locale).
 //
 // Each body ships:
 //   - h1: the headline (keyword + emotional hook)
@@ -27,17 +26,12 @@ export type Body = {
 }
 
 const GROUP_INTRO: Record<LandingGroup, string> = {
-  couple: 'for two people in the same relationship',
   self: 'for one person on a quiet desk',
   bff: 'for two people who count each other as their person',
   tmg: 'for anyone who misses the small creature in the keychain',
-  rituals: 'for two people who want the smallest possible daily ritual',
-  discovery: 'for anyone searching for the quietest couple app',
+  discovery: 'for anyone looking for a small quiet companion',
 }
 
-// Reusable section content (3 "why it works" sections, identical across all
-// 32 pages — that is the whole point of the pSEO wedge). Per-locale pages
-// only customise the body, the 3 wedges are the same everywhere.
 const W1 = `A small pet that lives in your browser tab is doing something a phone widget cannot: it is on the screen you are already looking at for eight hours a day. You do not have to remember to open a lock screen. You do not have to switch apps. The little pixel robot just sits there, in the corner of your work, your study, your writing, your code — and the longer you keep it there, the more the day starts to feel a little less alone. Most of the apps that try this only do it on mobile. Togthr was built for the desktop first, because that is where the quiet hours are.`
 const W2 = `Most virtual pets are static. They are cute, and then they are the same tomorrow, and the next day, and the year after. Togthr Bot is not. It starts as a baby — a small round-headed pixel robot — and it grows, in five real stages, only as long as you keep showing up. Baby, toddler, teen, adult, legend. Each stage takes a few weeks of small regular check-ins, and once it reaches the adult stage it unlocks one of six hidden career skins: programmer, doctor, astronaut, chef, police officer, firefighter. There is also a one-in-seventy-two chance your pet is the rare golden edition, which quietly exists and which most people never talk about. The growth is the product. Everything else is the frame around it.`
 const W3 = `A lot of companion apps make their money the same way social apps do: ads inside the pet, streaks that punish you when you skip a day, social feeds that make you compare your life to strangers. Togthr is none of that. There are no ads anywhere in the product, ever. There are no streaks that break and ruin your week. There is no friends list, no like count, no DM thread that you have to keep up with. The pet is yours alone, or yours and one other person's. It grows, or it waits, but it never nags, and it never makes you feel behind. That is the design choice that makes it feel like a friend and not a chore.`
@@ -48,106 +42,7 @@ const WHY_SECTIONS = [
   { h: `It is the quietest app on your screen`, p: W3 },
 ]
 
-// ─── Group 1 — couple / long-distance ───────────────────────────────────────
-const couple: Record<string, Body> = {
-  'couple-desktop-pet-app': {
-    h1: `A couple desktop pet app that does not feel like another app`,
-    intro: `Most "couple apps" are a calendar with a heart on it. Togthr is not that. Togthr is a small pixel pet that lives in your browser, on the screen where the relationship actually happens — the work-from-home laptop, the late-night writing window, the shared desktop. You and your person each write one short sentence a day, the pet grows through five stages, and the relationship gets a small, shared witness that is not a chat thread you have to keep up with. It is the rare couple desktop pet app that does not require either of you to be a different person to use it.`,
-    heroCopy: `A small pixel pet, in the corner of your browser, growing with your relationship.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Is Togthr a desktop pet app for couples, or a chat app with a sticker?`, a: `It is the first one. There is no chat in Togthr, no typing back and forth, no reply anxiety. The pet is the medium: you each write a sentence, the pet holds the day, the other person reads it when they are ready. The shape of the app is the shape of a quiet, low-pressure check-in, not the shape of a messaging tool.` },
-      { q: `Do both of us need to be on Togthr for the pet to grow?`, a: `The pet grows on your own check-ins, so it will progress even if your partner is not on the app yet. When your partner joins and the two of you connect your pets, the shared experience unlocks — the same pet, the same journal, both of your sentences. Until then, the pet is yours alone, and that is also fine.` },
-    ],
-    cta: `Open Togthr in your browser, adopt your first pixel pet, and let it grow with the next week. Start free in your browser.`,
-  },
-
-  'long-distance-relationship-widget': {
-    h1: `A long-distance relationship widget that is more than a wallpaper`,
-    intro: `Phone widgets for long-distance couples are mostly pretty: a clock that shows two time zones, a heart that pulses when the other person is online, a tiny photo that updates once a day. They are nice, and they do almost nothing. Togthr is a long-distance relationship widget that actually does something — a small pixel pet that grows through five stages as the two of you keep showing up for each other. The widget is the relationship: it is fed by the same daily check-in that keeps the distance from quietly doing its work.`,
-    heroCopy: `A widget that grows because you do, not a clock that just shows the gap.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Does Togthr replace a video call with my long-distance partner?`, a: `No, and it is not trying to. Video calls are the big moments. Togthr is the small ones — the Tuesday-afternoon, the after-dinner, the I-was-thinking-of-you-but-it-can-wait kind of touch. The two of them work side by side: the call is the date night, Togthr is the morning text you do not have to remember to send.` },
-      { q: `Can we use Togthr across time zones?`, a: `That is the whole point. The bot does not need both of you online at the same time. You write your sentence when you wake up, your partner reads it with their afternoon coffee, the pet grows a little. The app is built for the time zone gap, not against it.` },
-    ],
-    cta: `Try Togthr as the quiet side of your long-distance routine. Start free in your browser.`,
-  },
-
-  'virtual-pet-for-couples': {
-    h1: `A virtual pet for couples that lives in your browser, not your lock screen`,
-    intro: `A virtual pet for a couple used to mean a Tamagotchi each, or two phones, or two accounts in an app that never quite synchronised. Togthr makes the pet shared by default — one small pixel creature that lives in both your browsers, fed by a daily sentence from each of you, growing through five stages as the relationship does. It is a virtual pet, but it is the first one that is really for the two of you at once, not the two of you separately.`,
-    heroCopy: `One pet. Two browsers. One small daily sentence each.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Is Togthr a virtual pet app or a couples app?`, a: `It is both, intentionally. Most couples apps are a calendar and a question of the day, and they die in week three. Most virtual pet apps are single-player. Togthr puts the virtual pet at the centre of the couple, and the couple at the centre of the pet, so the two ideas reinforce each other instead of competing.` },
-      { q: `Will my partner see what I write?`, a: `Yes — the sentence you write each day is meant to be read by your partner, on their own time. There is no private journal inside the couple space, by design: the small honest sentences are the whole point, and the trust in the relationship is what makes them possible. There is also a private solo journal, separate from the shared pet, for the things you want to keep just to yourself.` },
-    ],
-    cta: `Adopt the pet together tonight and write your first sentence each. Start free in your browser.`,
-  },
-
-  'shared-pet-app-for-two': {
-    h1: `A shared pet app for two — not a feed, not a chat, just one quiet creature`,
-    intro: `The phrase "shared pet app" usually means a chat app with a cartoon in the corner. Togthr is the opposite. The pet is the app, and the app is two people writing one sentence each a day and watching the pet grow. There is no feed. There are no likes. There is nothing to scroll. The whole product fits in the corner of your browser, and the whole relationship fits in the small daily ritual of feeding it.`,
-    heroCopy: `Two people, one sentence each, one small creature in the middle.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Do my partner and I have to be online at the same time?`, a: `No. The pet is asynchronous, which is the entire point. One of you writes at 7 a.m., the other reads at 11 p.m., the pet grows either way. The sharedness is in the pet, not in the schedule.` },
-      { q: `What if one of us wants to keep it solo for a while?`, a: `Togthr is yours alone until you choose to invite the other person in. The pet grows on your own check-ins, and if your partner joins later, your pet becomes the shared pet without losing any progress. It is a soft join, not a hard one.` },
-    ],
-    cta: `Adopt your shared pet tonight. Start free in your browser.`,
-  },
-
-  'desktop-companion-for-long-distance-couples': {
-    h1: `A desktop companion for long-distance couples that actually lives on your desk`,
-    intro: `Long-distance apps usually live on your phone, which is also where your work email and your group chats and your doomscrolling live. By the time you would check the app, you have already been pulled somewhere else. Togthr is built for the desktop — the screen you actually spend the day on — so the small creature that is supposed to keep you company is, in fact, keeping you company. It sits in the corner, it grows as you do, and it does not interrupt.`,
-    heroCopy: `The desk is where the long-distance day happens. The pet is there too.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `What does a "desktop companion" actually do all day?`, a: `Mostly it just sits there, and that is the point. The bot idles, blinks, occasionally waves. It does not pop up notifications every twenty minutes. It is presence, not pings. The small visible state of the bot, growing, is the daily signal that the relationship is being kept.` },
-      { q: `Does it work on Mac and Windows?`, a: `Togthr runs in your browser, so it works on any laptop, any operating system, any browser you happen to be using that day. There is nothing to install, nothing to download, and nothing to update.` },
-    ],
-    cta: `Put the companion on your desk tomorrow morning. Start free in your browser.`,
-  },
-
-  'couple-check-in-app-with-pet': {
-    h1: `A couple check-in app with a pet at the centre of the ritual`,
-    intro: `Check-in apps for couples usually die in a fortnight. Togthr keeps them alive by giving the check-in a small, living witness: a pixel pet that grows because you both kept showing up. The sentence you write today is the thing the pet eats. Tomorrow, when your partner reads it, the pet has grown another inch. The check-in is the ritual, the pet is the reward, and the relationship is what is actually being kept.`,
-    heroCopy: `A check-in, a sentence, a small pet that visibly grew because you did.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `What do we actually write in the daily check-in?`, a: `One sentence. That is the bar. It can be about the meeting, the lunch, the bus, the cat, the weather, the bread. The point is not the content, the point is that you noticed the day, and that you typed it somewhere your partner will see. The pet does not grade you.` },
-      { q: `What happens if we miss a day?`, a: `Nothing dramatic. The pet pauses where it is and waits. There is no streak to break, no penalty, no shame. The whole design assumes that sometimes the day is the day, and that a pet that punished you for living your life would be deleted by Friday.` },
-    ],
-    cta: `Write your first sentence tonight and let your partner read it tomorrow. Start free in your browser.`,
-  },
-
-  'pixel-pet-for-couples': {
-    h1: `A pixel pet for couples — small, honest, and unhurried`,
-    intro: `The pixel pet is a deliberate aesthetic choice. Hyper-real virtual animals feel like a tech demo; pixel pets feel like a friend. Togthr Bot is a small round-headed robot, drawn in 16-bit pastel purple and pink, with eight frames of animation and a personality that shows up in how it sits and how it watches. It is small, it is gentle, and it grows in five real stages as the two of you keep showing up. It is not trying to be impressive. It is trying to be company.`,
-    heroCopy: `A pixel pet, drawn on purpose rough, because the roughness is the warmth.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Why pixels?`, a: `Because pixels age well, and because the roughness is part of the charm. A 16-bit sprite is small enough to live anywhere on your screen, and obvious enough that it never tries to look like a real animal. The pet feels like a friend, not a feature.` },
-      { q: `How big is the pet on my screen?`, a: `Small. About the size of a single line of text. It is meant to sit in a corner and not interrupt — the way a real desk companion would. You will forget it is there, and then look over and notice it has grown.` },
-    ],
-    cta: `Adopt your pixel pet tonight and let it grow over the next month. Start free in your browser.`,
-  },
-
-  'relationship-pet-that-grows': {
-    h1: `A relationship pet that grows because the relationship does`,
-    intro: `Most relationship apps measure the relationship indirectly: a streak counter, a streak broken, a daily prompt answered, a daily prompt skipped. Togthr measures it directly. A small pet grows, in five visible stages, only as long as both of you keep writing a sentence a day. The growth is not a metric you have to interpret. It is a small living thing, in the corner of your screen, that you can see getting bigger, and that you can both remember the seasons that produced each stage.`,
-    heroCopy: `A small pet, growing as the relationship does, visibly, in five stages.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `What are the five stages?`, a: `Baby, toddler, teen, adult, legend. Each one takes a few weeks of small regular check-ins, and each one looks visually different — a slightly bigger robot, a slightly different expression, a slightly different pose. The growth is meant to feel like watching a small child you are both raising, slowly, on a screen.` },
-      { q: `What happens when the pet reaches the final stage?`, a: `The pet settles into its adult form and starts to unlock hidden career skins — six of them — that reflect the life it has watched you live. The growth does not end. The shape of the relationship just keeps changing, and the pet keeps changing with it.` },
-    ],
-    cta: `Start the relationship pet tonight and watch it through its first stage. Start free in your browser.`,
-  },
-}
-
-// ─── Group 2 — self / lonely desk / focus ────────────────────────────────────
+// ─── Group 1 — self / lonely desk / focus ────────────────────────────────────
 const self: Record<string, Body> = {
   'lonely-desk-companion': {
     h1: `A lonely desk companion that does not need you to talk to it`,
@@ -246,7 +141,7 @@ const self: Record<string, Body> = {
   },
 }
 
-// ─── Group 3 — bff / friendship ─────────────────────────────────────────────
+// ─── Group 2 — bff / friendship ─────────────────────────────────────────────
 const bff: Record<string, Body> = {
   'virtual-pet-to-share-with-best-friend': {
     h1: `A virtual pet to share with your best friend, not your whole feed`,
@@ -267,7 +162,7 @@ const bff: Record<string, Body> = {
     sections: WHY_SECTIONS,
     faqs: [
       { q: `What if one of us uses it more than the other?`, a: `That is fine. The pet grows on both your check-ins, but it does not fail if one of you has a quieter month. The friendship is not a metric. The pet is just the small witness to it.` },
-      { q: `Is this the same as the couple version?`, a: `Same app, different relationship. Togthr does not know, and does not care, whether the other person is your partner, your best friend, or your sister. The shape of the ritual is the same: a small sentence a day, a small pet in the middle.` },
+      { q: `Is this a dating app?`, a: `Same app, different relationship. Togthr does not know, and does not care, whether the other person is your partner, your best friend, or your sister. The shape of the ritual is the same: a small sentence a day, a small pet in the middle.` },
     ],
     cta: `Start the BFF ritual tonight. Start free in your browser.`,
   },
@@ -327,7 +222,7 @@ const bff: Record<string, Body> = {
     sections: WHY_SECTIONS,
     faqs: [
       { q: `What does the pet actually do all day?`, a: `Mostly it sits in the corner. It idles, blinks, occasionally does a small animation. It is presence, not entertainment. The visible growth is the only thing it does, and the visible growth is the only thing it needs to do.` },
-      { q: `Is this the same as the couple version?`, a: `Same product, different relationship. Togthr does not label the other person — partner, best friend, sibling, parent — the app is the same. The friendship version is just the version where the other person is the friend you have had since you were fifteen.` },
+      { q: `Is this a dating app?`, a: `Same product, different relationship. Togthr does not label the other person — partner, best friend, sibling, parent — the app is the same. The friendship version is just the version where the other person is the friend you have had since you were fifteen.` },
     ],
     cta: `Adopt the besties pet tomorrow morning. Start free in your browser.`,
   },
@@ -345,7 +240,7 @@ const bff: Record<string, Body> = {
   },
 }
 
-// ─── Group 4 — tamagotchi / nostalgia ────────────────────────────────────────
+// ─── Group 3 — tamagotchi / nostalgia ────────────────────────────────────────
 const tmg: Record<string, Body> = {
   'tamagotchi-for-desktop': {
     h1: `A Tamagotchi for your desktop — same loop, no keychain`,
@@ -444,145 +339,9 @@ const tmg: Record<string, Body> = {
   },
 }
 
-// ─── Group 5 — rituals / relationship tooling (Round 2) ─────────────────────
-const rituals: Record<string, Body> = {
-  'shared-journal-app-for-couples': {
-    h1: `A shared journal app for couples — the one that is not a chat`,
-    intro: `Most shared journal apps for couples look like a chat app with a calendar layered on top. You type long entries, you wait for the other person to type long entries, and within a week the journal is just a silent thread. Togthr is not that. The journal is a single sentence a day, held not by a chat interface but by a small pixel pet that grows as you write. The pet is the journal, the journal is the pet, and the daily sentence is the only entry the two of you ever need to write. It is the shared journal app for couples who tried the other ones and found them exhausting.`,
-    heroCopy: `A shared journal app where the pet grows with every sentence you both write.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Is the shared journal the same as the daily check-in?`, a: `Yes, and that is the whole point. The journal is not a separate feature; it is the growing thread of sentences you have both written, held by the pet. Over months, scrolling back through a long list of "long day, rain, sandwich" sentences becomes its own artifact — the journal of a real year, not a curated one.` },
-      { q: `Can I write more than one sentence?`, a: `You can, but the design of the app gently nudges you toward one. The point is the ritual, not the content. A long entry every day is unsustainable; a single sentence every day is a thread that will still be unbroken six months from now.` },
-    ],
-    cta: `Start the shared journal tonight. Write your first sentence. Start free in your browser.`,
-  },
-  'time-capsule-app-for-two': {
-    h1: `A time capsule app for two — a small note locked for a future date`,
-    intro: `A time capsule app for a couple should feel like leaving a note under a stone and walking away knowing it will be there next year. Togthr's time capsule feature does exactly that: you write a sentence, lock it with a future date, and the small pixel pet in the corner of your browser guards it. The other person cannot open it before the date. The sentence sits in the quiet dark of the app, and when the day finally arrives, the pet is bigger than it was, and the note is still exactly what you wrote. It is the time capsule app for two, built around a pet that actually remembers.`,
-    heroCopy: `A small sentence, locked for a future date, guarded by a pixel pet.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `How long can I lock a time capsule for?`, a: `Any date in the future — a week, a month, a year, five years. The pet does not forget, and the note is not visible to either of you until the date arrives. The waiting is the whole experience, and the pet growing in the background is the small persistent reminder that something is waiting.` },
-      { q: `Can the other person see it before the date?`, a: `No, that is the lock. The time capsule is sealed on your side, and the app does not surface it, even as a hint. The only thing the other person knows is that a capsule exists — if you choose to tell them. The surprise is part of the design.` },
-    ],
-    cta: `Lock your first time capsule tonight for a date next month. Start free in your browser.`,
-  },
-  'couple-mood-tracker-app': {
-    h1: `A couple mood tracker app — and the pet shares the mood with you`,
-    intro: `Mood tracking for couples usually looks like a clinical form: pick a number from one to ten, explain why, wait for the chart to update. Togthr is the opposite. You open the app, you tap a simple emoji — good day, rough day, somewhere in between — and the pixel pet in the corner of your screen changes its expression to match. If you had a rough day, the pet looks soft and a little smaller, and your partner, when they open their browser, sees a small quiet pet that tells them what they need to know without a word. It is the mood tracker that communicates through the pet, not through a chart.`,
-    heroCopy: `A mood that the pet reflects — your partner sees a small quiet creature and knows.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Does my partner see exactly what I entered?`, a: `They see the pet's mood — happy, thoughtful, stormy, gentle — not a number. The pet translates the feeling into a small visible state that communicates more than a chart ever would, and also gives each of you the privacy of the actual emotion behind it.` },
-      { q: `What if I do not want to share my mood on a particular day?`, a: `Then you do not enter anything, and the pet stays in its current state. There is no empty field haunting you, no streak to break, no judgment for a day you kept to yourself.` },
-    ],
-    cta: `Tap your mood tonight and let the pet carry it over to your partner. Start free in your browser.`,
-  },
-  'anniversary-countdown-app-couples': {
-    h1: `An anniversary countdown app for couples — the countdown is a pet`,
-    intro: `Anniversary countdown apps are usually a static number in a widget. They are accurate and they are boring. Togthr turns the countdown into a pet. You set the date — the anniversary, the next visit, the next trip, the next milestone — and the pet grows toward it, stage by stage, week by week, visibly getting closer to the date the way both of you are. When the day arrives, the pet reaches a new form, and the two of you have a small visible celebration in the corner of the screen. It is the anniversary countdown app that makes the waiting into the product.`,
-    heroCopy: `A pet, growing toward the date, one stage at a time.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Can I set more than one countdown?`, a: `You can set one primary countdown at a time — the one that matters most to you right now. When it arrives, you set the next one. The focus is the point. A shelf of countdowns is a todo list; a single countdown is something to look forward to.` },
-      { q: `Does the pet actually do something on the anniversary day?`, a: `Yes, it reaches a special visual state — a small celebration animation — that you will both see when you open your browsers that day. It is a small thing, just a few seconds of pixels moving, but it is the thing the pet has been moving toward for weeks.` },
-    ],
-    cta: `Set the countdown tonight for the date you are both looking toward. Start free in your browser.`,
-  },
-  'daily-questions-for-couples-app': {
-    h1: `Daily questions for couples — one sentence each, held by a pet`,
-    intro: `Daily question apps for couples usually ask too much. A long prompt. An essay-length box. A feeling, after a week, that you are taking a relationship test. Togthr's daily questions are the opposite: one short question, asked by the pet, answered in a sentence by each of you, and then the pet grows a little and the day moves on. The question is small — "What was the best part of today?" — and the answer is smaller — "The coffee." — and the cumulative effect of fifty such answers is the quiet history of a year.`,
-    heroCopy: `A small daily question, answered in a sentence, held by a pet that grows.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Where do the questions come from?`, a: `A small, rotating library of gentle ones, written by the team — things like "What is the weather doing today?" or "What did you eat for lunch?" The questions are deliberately unremarkable because the point is the answer, and the answer is deliberately short because the point is the ritual.` },
-      { q: `Can I skip a question I do not want to answer?`, a: `Yes, and the pet moves on to the next question tomorrow without judgment. The app is not a test, and skipping a day is not a gap in the relationship. It is just a Tuesday.` },
-    ],
-    cta: `Answer the first question tonight and let the pet hold it. Start free in your browser.`,
-  },
-  'couple-goals-tracker-app': {
-    h1: `A couple goals tracker app — the pet remembers the small wins`,
-    intro: `Goal tracking for couples is usually a spreadsheet in disguise. Togthr turns it into a pet. You each set a goal — the trip, the habit, the project, the small promise you make to each other — and the pet grows each time one of you makes progress. The goals are small, the increments are small, and the pet is the persistent visible reminder that the two of you are moving toward something together. When a goal is reached, the pet unlocks a new expression, and the win is held in a place where both of you can see it.`,
-    heroCopy: `A small pet, growing toward the shared goals, one step at a time.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `What kind of goals work best?`, a: `Small, concrete ones: cook together three times this month, save a hundred dollars toward the trip, finish the show you are both watching. The goals that work are the ones you would have done anyway, and the pet is the small witness that marks them done.` },
-      { q: `Can we set separate goals?`, a: `Yes. You can each have your own goal, and they live side by side in the app. The shared space of the pet holds both, and the growth reflects the combination of your separate small wins and your shared ones.` },
-    ],
-    cta: `Set your first shared goal tonight and let the pet start tracking it. Start free in your browser.`,
-  },
-  'private-journal-for-couples-app': {
-    h1: `A private journal for couples — exactly as private as it should be`,
-    intro: `The word "private" in a couples app usually means something performative. Togthr's journal is private in the real sense: the sentences you write are visible to exactly one other person, no one else, ever. There is no feed, no sharing, no export to a social platform, no public-facing profile. The journal is encrypted in transit, lives behind authentication, and belongs to the two of you alone. It is the private journal for couples who do not want their relationship turned into a product.`,
-    heroCopy: `A journal that belongs to two people, and to no one else.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `How is the privacy different from a regular note app?`, a: `A regular note app is a solo tool with a share button. Togthr is a shared space by design, and the sharing is the whole architecture, not an afterthought. It is also end-to-end visible only to the two accounts that share the pet, with no public entry point and no ability for anyone else to request access.` },
-      { q: `Does Togthr read our journal entries?`, a: `No. The product is a subscription service, not a data business, and the sentences you write are not processed for any purpose beyond displaying them to your partner and making the pet grow a little. The business model is the subscription, not the content.` },
-    ],
-    cta: `Start the private journal tonight with the one sentence that matters. Start free in your browser.`,
-  },
-  'couple-bedtime-routine-app': {
-    h1: `A couple bedtime routine app — one quiet sentence before sleep`,
-    intro: `Bedtime routines for couples usually involve two phones, in two beds, scrolling through two different versions of the internet. Togthr is the opposite: a single quiet moment at the end of the day, in which each of you writes one sentence to the pet and the pet holds it for the other person to read in the morning. It is the bedtime routine for couples who do not live in the same time zone, or the same city, or the same room, and who want the last interaction of the day to belong to each other and not to a feed.`,
-    heroCopy: `A small sentence before sleep, held by the pet, waiting for morning.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `What if we are in different time zones?`, a: `Then the routine is even more useful. One of you writes the bedtime sentence at 11 p.m. Tokyo, and the other reads it at 7 a.m. London over breakfast. The time zone gap, the product is built for.` },
-      { q: `Does the pet have a bedtime too?`, a: `The pet is always there, but the bedtime routine triggers a small animation — the pet yawns, a small pixel blanket appears — that lets your partner know that your day is ending. It is a small visual signal that takes the place of a text message saying goodnight.` },
-    ],
-    cta: `Start the bedtime routine tonight and let the pet say goodnight for you. Start free in your browser.`,
-  },
-}
-
-// ─── Group 6 — discovery / comparison (Round 2) ─────────────────────────────
+// ─── Group 4 — discovery / comparison ─────────────────────────────
 const discovery: Record<string, Body> = {
-  'best-app-for-couples-in-long-distance': {
-    h1: `The best app for couples in long distance — and why it is not a chat app`,
-    intro: `Most "best long distance couple app" lists rank chat apps. The list is usually WhatsApp, FaceTime, Discord, a calendar, and a widget. Togthr is none of those things. It is a small pixel pet that lives in your browser and grows through five stages as the two of you keep showing up. You do not chat. You write a sentence each, the pet holds the day, and the small visible growth of the creature is the quietest possible signal that the distance is being kept. It is the best app for couples in long distance not because it does more than the chat apps, but because it does less — and the less is what the distance actually needs.`,
-    heroCopy: `The best long distance app is not a chat app. It is a pet.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Why not just use a regular chat app?`, a: `Because the problem long distance couples face is not that they cannot text. They text all the time. The problem is that the texting never becomes a ritual, and the trivial touchpoints — the "thinking of you" on a random Tuesday — get crowded out by the logistics. Togthr is the ritual: a place where the daily sentence goes, every day, without having to be sent.` },
-      { q: `Does Togthr replace video calls?`, a: `No, and it should not. The video call is the date night. Togthr is the hundreds of small days in between, the ones that actually make up the majority of a long distance relationship.` },
-    ],
-    cta: `Try the best long distance app for the hundreds of small days. Start free in your browser.`,
-  },
-  'best-virtual-pet-app-for-couples-2026': {
-    h1: `The best virtual pet app for couples in 2026 — and how we know`,
-    intro: `The "best" virtual pet app for couples is not the one with the most features. It is the one that actually gets used. Togthr is the only one that puts the pet on your desktop — the screen you are already on — instead of asking you to remember to open a phone app. The pet grows in five real stages only as long as both of you keep showing up. The growth is visible. The daily sentence is one tap away. The anxiety of forgetting is replaced by the gentleness of the pet just waiting. It is, by the quietest measure that matters, the best virtual pet app for couples in 2026.`,
-    heroCopy: `The best measured in months, not feature lists.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `What makes one virtual pet app better than another?`, a: `Retention. Whether people actually keep using it after the first week. Togthr is built entirely around this: the pet is on the desktop, which means it is visible every day, which means the check-in is extremely low-friction, which means the six-month retention curve is the real product, not the download number.` },
-      { q: `Is Togthr really the best, or is this just marketing?`, a: `It is the best at the specific thing it does: being a small, quiet, persistent presence that a couple actually keeps up with over months. There are apps that do more things. There is one app that did fewer things and did them for longer. This is an honest pitch for the one that does fewer things.` },
-    ],
-    cta: `Try the virtual pet that couples actually keep for months. Start free in your browser.`,
-  },
-  'free-couple-app-with-ai-companion': {
-    h1: `A free couple app with an AI companion — and it does not chat`,
-    intro: `The phrase "AI companion" usually means a chatbot, and most couple apps with AI turn into a third party in the relationship. Togthr's AI companion is a pixel pet, and it does not chat. It grows based on the two of you showing up, it changes its expression based on the mood you each report, and it remembers the arc of the relationship without putting it into words. It is the AI companion that is more like a dog than a therapist — present, responsive, and silent — and the free tier includes the core pet, the five growth stages, and the daily check-in with no limits.`,
-    heroCopy: `An AI companion that does not talk, just grows when you show up.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `What does the AI actually do?`, a: `It manages the growth algorithm: if both of you have been showing up, the pet grows faster. If the mood inputs suggest one of you is having a quiet week, the pet reflects that gently. The AI is not a conversation; it is the quiet background intelligence that makes the pet feel like a living thing and not a static image.` },
-      { q: `Is the free tier real, or is it a trial?`, a: `The free tier is real and persistent. You get the full pet, all five growth stages, the daily check-in, and one shared partner connection. The subscription adds unlimited shared pets, career skins, and the time capsule feature. The core loop is free and intended to stay that way.` },
-    ],
-    cta: `Start the free tier tonight and see the AI companion grow over the next week. Start free in your browser.`,
-  },
-  'the-quietest-couple-app': {
-    h1: `The quietest couple app on the internet — and that is the claim we stand by`,
-    intro: `Calling something the "quietest couple app on the internet" is a claim that can be checked. Togthr stands by it: there is no chat, no notifications by default, no streak counter, no leaderboard, no feature that pressures either of you to use it more than you want to. The pet lives in the corner of your browser, it grows when you check in, and it waits when you do not. It is the app you might forget about for a week and then look over at and feel a small quiet warmth, not guilt. It is the quietest couple app because we built it to be quiet, and then we did not add anything else.`,
-    heroCopy: `A couple app so quiet you might forget it is there — until you look over.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `What does "quietest" actually mean?`, a: `It means three measurable things. Zero push notifications from the pet by default. No gamification mechanics — no streaks, no leaderboards, no points. And no social graph — no friend list, no feed, no public profile. The app is the pet, and the pet is what a pet should be: a quiet presence that you choose to engage with, not a set of tasks you are reminded to complete.` },
-      { q: `What if I want notifications?`, a: `You can turn them on individually — a small daily nudge to write your sentence, an alert when your partner has written theirs. They are opt-in, granular, and deliberately gentle. The default is silence, and you have to choose the noise.` },
-    ],
-    cta: `Try the quietest couple app on the internet tonight. Start free in your browser.`,
-  },
-  'virtual-pet-for-emotional-support': {
+'virtual-pet-for-emotional-support': {
     h1: `A virtual pet for emotional support — that asks nothing of you`,
     intro: `The best emotional support is not a conversation. Sometimes it is a small living thing in the room that does not need you to explain anything. Togthr is a virtual pet for emotional support, built around that idea: a small pixel creature that lives in your browser, that grows as you keep showing up to your own day, and that never asks you to describe what is wrong. It just sits there, in the corner, in all four stages — idle, working, thinking, success — and the visible growth over months is the quietest possible reminder that you kept going.`,
     heroCopy: `A small pet that asks for nothing, and is still there at the end of the month.`,
@@ -593,7 +352,7 @@ const discovery: Record<string, Body> = {
     ],
     cta: `Adopt the small quiet pet tonight and let it sit with you through the month. Start free in your browser.`,
   },
-  'a-pixel-pet-that-notices-you': {
+'a-pixel-pet-that-notices-you': {
     h1: `A pixel pet that notices you — and nothing else on your screen does`,
     intro: `Your browser tabs do not notice you. Your calendar does not notice you. Your email does not notice you, except to add another unread number to the badge. Togthr is a pixel pet that notices: it grows when you show up, it pauses when you rest, and the small creature in the corner of your browser remembers the month you just had. It is not a productivity tool. It is not a mental health tracker. It is a small visible witness to your days, and the noticing is the whole point.`,
     heroCopy: `A small pixel pet that noticed the month you just had.`,
@@ -604,37 +363,13 @@ const discovery: Record<string, Body> = {
     ],
     cta: `Let the pet notice the month you are about to have. Start free in your browser.`,
   },
-  'couple-app-without-social-pressure': {
-    h1: `A couple app without social pressure — the one that is not a social network`,
-    intro: `The problem with most couple apps is that they are thinly-veiled social networks. They have a feed, a like count, a friends list, a public profile, a sense that the relationship is being performed for an audience. Togthr is a couple app without social pressure of any kind. There is no feed. There are no likes. There is no public profile. There are no friends to add. There is the pet, and there is the two of you, and there is no third party in the room, digital or human. It is the couple app for people who are tired of the performative architecture of every other app in their phone.`,
-    heroCopy: `No feed. No likes. No fear of missing out. Just the pet and the two of you.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Is there any social feature at all?`, a: `There is a shared pet, which is the only social feature. You can invite exactly one other person to share it, and the sharing is private, quiet, and free of any performance layer. There is no discovery, no recommended friends, no engagement metrics. The product is deliberately anti-social, in the sense that it is anti-social-network.` },
-      { q: `What if I want to show my pet to friends?`, a: `You can take a screenshot and send it in a text, the way you would share a photo of a real pet. The app itself does not give you a sharing button, and the pet does not have a public URL. The sharing is yours to control, not the app's to design.` },
-    ],
-    cta: `Try the couple app that is not a social network. Start free in your browser.`,
-  },
-  'small-daily-ritual-app-for-two': {
-    h1: `A small daily ritual app for two — the smallest possible thread`,
-    intro: `The word "ritual" usually suggests something elaborate. Togthr is the opposite: a small daily ritual that takes thirty seconds, once a day, and is held together by a pixel pet. The ritual is a single sentence each, written to the pet, that the other person reads when they get to it. The sentence can be about anything. The pet grows a little. The thread of sentences, over months, becomes the tangible history of a year. It is the smallest possible shared ritual, and the smallestness is why it works.`,
-    heroCopy: `Thirty seconds a day. One sentence each. One pet in the middle.`,
-    sections: WHY_SECTIONS,
-    faqs: [
-      { q: `Why thirty seconds?`, a: `Because that is the smallest amount of time we could make the ritual take and still have it feel like a real check-in. The one-sentence constraint is deliberate: it cannot be a journal entry, because journal entries take too long and people stop doing them. It is the ritual distilled to its smallest possible useful form.` },
-      { q: `Will we really keep doing it?`, a: `The data from Phase 1 users says yes: couples who adopt the small daily ritual keep doing it for an average of four months before the first pause, and most return within a week. The ritual survives because it is too small to fail — and because the visible growth of the pet gives the ritual a constant, gentle purpose.` },
-    ],
-    cta: `Start the smallest possible ritual tonight. Thirty seconds. One sentence. Start free in your browser.`,
-  },
 }
 
 // ─── Public lookup ──────────────────────────────────────────────────────────
 const ALL_BODIES: Record<string, Body> = {
-  ...couple,
   ...self,
   ...bff,
   ...tmg,
-  ...rituals,
   ...discovery,
 }
 

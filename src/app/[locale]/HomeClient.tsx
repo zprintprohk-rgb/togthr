@@ -39,9 +39,9 @@ import { PetCapsule } from '@/components/shared/PetCapsule'
 import { EmotionParticles } from '@/components/shared/EmotionParticles'
 import { SafeImage } from '@/components/shared/SafeImage'
 import {
-  RELATION_MODES,
+  PET_STATES,
   isNightMode,
-  type RelationMode,
+  type PetState,
 } from '@/lib/design-tokens'
 import type { Locale } from '@/i18n/routing'
 
@@ -163,8 +163,6 @@ export function HomeClient({
   heroStatusHello,
   heroStatusMiss,
   heroStatusSleepy,
-  heroRelationsEyebrow,
-  heroRelationsHint,
 }: {
   locale: Locale | string
   heroTitle: string
@@ -179,8 +177,6 @@ export function HomeClient({
   heroStatusHello: string
   heroStatusMiss: string
   heroStatusSleepy: string
-  heroRelationsEyebrow: string
-  heroRelationsHint: string
   /** bento grid 的扩展 hook（保留 API 但当前实现不直接使用 — 复用 home.companions.* 标题） */
   features?: Feature[]
 }) {
@@ -189,11 +185,11 @@ export function HomeClient({
   const skin = detectHolidaySkin()
   const sceneOverride = SCENE_BG_OVERRIDE[skin]
 
-  /* ── 关系模式 ── */
-  const [mode, setMode] = useState<RelationMode>('couple')
-  const modeConfig = useMemo(
-    () => RELATION_MODES.find((m) => m.id === mode) ?? RELATION_MODES[0],
-    [mode],
+  /* ── 宠物状态（S2: 原关系模式 → AI 宠物自我关怀） ── */
+  const [petState, setPetState] = useState<PetState>('idle')
+  const petStateConfig = useMemo(
+    () => PET_STATES.find((s) => s.id === petState) ?? PET_STATES[0],
+    [petState],
   )
 
   /* ── 首次访问 vs 回访（client-only, SSR-safe） ── */
@@ -258,7 +254,7 @@ export function HomeClient({
           aria-hidden="true"
           className="pointer-events-none absolute left-1/2 top-1/2 z-[1] h-[820px] w-[820px] -translate-x-1/2 -translate-y-1/2"
           style={{
-            background: modeConfig.arcColor,
+            background: petStateConfig.arcColor,
             filter: 'blur(80px)',
             opacity: arcOpacity,
             transition: 'opacity 1.2s ease',
@@ -320,8 +316,8 @@ export function HomeClient({
             className="flex items-center justify-center"
           >
             <PetCapsule
-              src={modeConfig.petSprite}
-              alt={modeConfig.labelEn}
+              src={petStateConfig.petSprite}
+              alt={petStateConfig.labelEn}
               size="xl"
               parallax
               glow
@@ -390,17 +386,14 @@ export function HomeClient({
           </motion.div>
 
           {/* 关系模式选择器已移除 (S1: AI-pet pivot) */}
-          <motion.div
+          <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.8, duration: 0.5 }}
-            className="mt-4 flex w-full max-w-2xl flex-col items-center gap-2"
+            className="text-[10px] font-semibold uppercase tracking-[0.3em] text-amber-200/70 sm:text-xs"
           >
-            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-zinc-500 sm:text-xs">
-              ✦ {heroRelationsEyebrow} ✦
-            </p>
-            <p className="text-xs text-zinc-500">{heroRelationsHint}</p>
-          </motion.div>
+            ✦ {statusText} ✦
+          </motion.p>
 
           {/* Social proof */}
           <motion.div

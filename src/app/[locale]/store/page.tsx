@@ -172,7 +172,7 @@ export default async function StorePage({
       {/* ── Trust badges ── */}
       <div className="mt-10 flex flex-wrap items-center justify-center gap-3 text-sm text-zinc-600 dark:text-zinc-400">
         <span className="inline-flex items-center gap-1.5 rounded-full border border-rose-200 bg-white px-3 py-1 dark:border-purple-800 dark:bg-purple-950/40">
-          🤖 {t('store.ctaTrySoulmate')}
+          🤖 {t('store.ctaTryBuddy')}
         </span>
         <span className="inline-flex items-center gap-1.5 rounded-full border border-rose-200 bg-white px-3 py-1 dark:border-purple-800 dark:bg-purple-950/40">
           ♾️ {t('store.perma')}

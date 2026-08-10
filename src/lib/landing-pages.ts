@@ -1,20 +1,21 @@
 // src/lib/landing-pages.ts
 //
-// Phase 1 programmatic SEO — 32 long-tail landing pages
-// 4 scenario groups × 8 keywords = 32 pages × 8 locales = 256 routable URLs.
+// Programmatic SEO landing pages — 26 long-tail landing pages
+// (S3 content cleanup 2026-08-11: removed 22 couple-themed slugs;
+//  self 8 + bff 8 + tmg 8 + discovery 2 = 26 × 8 locales = 208 routable URLs).
 //
 // Layout:
-//   - /[locale]/p/{slug}  →  32 per-slug folders, each with a self-contained
+//   - /[locale]/p/{slug}  →  26 per-slug folders, each with a self-contained
 //     page.tsx that ships EN body content and reuses it for the 7 other locales
 //     (locales' <html lang> + meta title/description + hreflang still vary).
 //   - This registry provides metadata used by the sitemap + a centralised
 //     "all slugs" helper for any consumer that needs the full list.
 //
 // Scenario groups (one pet-image per group, used on the hero):
-//   - couple  :  for two people in a relationship, long-distance or close
-//   - self    :  solo, lonely desk, work-from-home, students
-//   - bff     :  best friend / friendship rituals
-//   - tmg     :  tamagotchi / nostalgia
+//   - self      :  solo, lonely desk, work-from-home, students
+//   - bff       :  best friend / friendship rituals
+//   - tmg       :  tamagotchi / nostalgia
+//   - discovery :  comparison / emotional support
 //
 // IMPORTANT (5 hard facts from K3 calibration, do NOT drift):
 //   1. CTA must be "Start free in your browser" — Togthr is a pure web app,
@@ -26,7 +27,7 @@
 
 import type { Locale } from '@/i18n/routing'
 
-export type LandingGroup = 'couple' | 'self' | 'bff' | 'tmg' | 'rituals' | 'discovery'
+export type LandingGroup = 'self' | 'bff' | 'tmg' | 'discovery'
 
 export type LandingEntry = {
   slug: string
@@ -39,20 +40,8 @@ export type LandingEntry = {
   description: string
 }
 
-// ─── All 48 slugs (Phase 1 32 + Round 2 16), in shipping order ────────────
-// Group 1 — couple / long-distance
-const coupleSlugs = [
-  'couple-desktop-pet-app',
-  'long-distance-relationship-widget',
-  'virtual-pet-for-couples',
-  'shared-pet-app-for-two',
-  'desktop-companion-for-long-distance-couples',
-  'couple-check-in-app-with-pet',
-  'pixel-pet-for-couples',
-  'relationship-pet-that-grows',
-]
-
-// Group 2 — self / lonely desk / focus
+// ─── All 26 slugs (post-S3 cleanup), in shipping order ──────────────────────
+// Group 1 — self / lonely desk / focus
 const selfSlugs = [
   'lonely-desk-companion',
   'pixel-pet-for-focus',
@@ -88,37 +77,17 @@ const tmgSlugs = [
   'tamagotchi-for-work-computer',
 ]
 
-// Group 5 — rituals / relationship tooling (Round 2)
-const ritualsSlugs = [
-  'shared-journal-app-for-couples',
-  'time-capsule-app-for-two',
-  'couple-mood-tracker-app',
-  'anniversary-countdown-app-couples',
-  'daily-questions-for-couples-app',
-  'couple-goals-tracker-app',
-  'private-journal-for-couples-app',
-  'couple-bedtime-routine-app',
-]
-
-// Group 6 — discovery / comparison (Round 2)
+// Group 5 — discovery / emotional support (was: rituals + discovery)
 const discoverySlugs = [
-  'best-app-for-couples-in-long-distance',
-  'best-virtual-pet-app-for-couples-2026',
-  'free-couple-app-with-ai-companion',
-  'the-quietest-couple-app',
   'virtual-pet-for-emotional-support',
   'a-pixel-pet-that-notices-you',
-  'couple-app-without-social-pressure',
-  'small-daily-ritual-app-for-two',
 ]
 
 // Hero image per group. We deliberately pick from /public/pets so no new assets.
 const GROUP_HERO: Record<LandingGroup, string> = {
-  couple: '/pets/scene-progress.png',
   self: '/pets/scene-rainy.png',
   bff: '/pets/scene-birthday.png',
   tmg: '/pets/anim-idle-1.png',
-  rituals: '/pets/scene-rainy.png',
   discovery: '/pets/character-sheet.png',
 }
 
@@ -127,15 +96,6 @@ const GROUP_HERO: Record<LandingGroup, string> = {
 // long-tail keyword the slug represents. No claims outside the product.
 
 const TITLES: Record<string, string> = {
-  // couple
-  'couple-desktop-pet-app': 'Couple Desktop Pet App — Togthr',
-  'long-distance-relationship-widget': 'Long-Distance Relationship Widget — Togthr',
-  'virtual-pet-for-couples': 'A Virtual Pet for Couples — Togthr',
-  'shared-pet-app-for-two': 'A Shared Pet App for Two — Togthr',
-  'desktop-companion-for-long-distance-couples': 'A Desktop Companion for Long-Distance Couples',
-  'couple-check-in-app-with-pet': 'A Couple Check-in App With a Pet — Togthr',
-  'pixel-pet-for-couples': 'A Pixel Pet for Couples — Togthr',
-  'relationship-pet-that-grows': 'A Relationship Pet That Grows With You — Togthr',
   // self
   'lonely-desk-companion': 'A Lonely Desk Companion That Actually Stays — Togthr',
   'pixel-pet-for-focus': 'A Pixel Pet That Helps You Focus — Togthr',
@@ -163,36 +123,12 @@ const TITLES: Record<string, string> = {
   'tamagotchi-30th-anniversary-app': 'A Tamagotchi 30th-Anniversary Companion — Togthr',
   'virtual-pet-that-grows-up-like-tamagotchi': 'A Virtual Pet That Grows Up Like Tamagotchi',
   'tamagotchi-for-work-computer': 'A Tamagotchi for Your Work Computer — Togthr',
-  // rituals (Round 2)
-  'shared-journal-app-for-couples': 'A Shared Journal App for Couples — Togthr',
-  'time-capsule-app-for-two': 'A Time Capsule App for Two — Togthr',
-  'couple-mood-tracker-app': 'A Couple Mood Tracker App — Togthr',
-  'anniversary-countdown-app-couples': 'An Anniversary Countdown App for Couples',
-  'daily-questions-for-couples-app': 'Daily Questions for Couples — A Gentle App',
-  'couple-goals-tracker-app': 'A Couple Goals Tracker App — Togthr',
-  'private-journal-for-couples-app': 'A Private Journal for Couples — Togthr',
-  'couple-bedtime-routine-app': 'A Couple Bedtime Routine App — Togthr',
-  // discovery (Round 2)
-  'best-app-for-couples-in-long-distance': 'Best App for Couples in Long Distance',
-  'best-virtual-pet-app-for-couples-2026': 'Best Virtual Pet App for Couples 2026',
-  'free-couple-app-with-ai-companion': 'A Free Couple App With an AI Companion',
-  'the-quietest-couple-app': 'The Quietest Couple App on the Internet',
+  // discovery
   'virtual-pet-for-emotional-support': 'A Virtual Pet for Emotional Support — Togthr',
   'a-pixel-pet-that-notices-you': 'A Pixel Pet That Notices You — Togthr',
-  'couple-app-without-social-pressure': 'A Couple App Without Social Pressure',
-  'small-daily-ritual-app-for-two': 'A Small Daily Ritual App for Two — Togthr',
 }
 
 const DESCRIPTIONS: Record<string, string> = {
-  // couple
-  'couple-desktop-pet-app': 'Togthr is a small pixel pet that lives in your browser and grows with your relationship. No ads, no streak pressure, no chat. Subscription: $5.49/mo.',
-  'long-distance-relationship-widget': 'A long-distance relationship widget that is more than a wallpaper: a shared pixel pet that grows as both of you keep showing up. Free to start.',
-  'virtual-pet-for-couples': 'A virtual pet for couples that lives in your browser, not your lock screen. It grows through 5 stages and remembers your relationship. Try it free.',
-  'shared-pet-app-for-two': 'A shared pet app for two people, not a chat app. You each write one sentence; the pet grows. No ads, no streaks. Subscription: $5.49/mo.',
-  'desktop-companion-for-long-distance-couples': 'A desktop companion for long-distance couples. Togthr sits on your screen, grows with your relationship, and keeps a shared journal for you.',
-  'couple-check-in-app-with-pet': 'A couple check-in app with a pet at the centre: one sentence each, then the pet grows. The quiet ritual that keeps curiosity alive.',
-  'pixel-pet-for-couples': 'A pixel pet for couples that runs in your browser, grows in 5 stages, and unlocks 6 hidden career skins. No native app to install, no ads.',
-  'relationship-pet-that-grows': 'A relationship pet that grows through 5 stages, baby to legend, only while both of you keep showing up. The quietest check-in we know.',
   // self
   'lonely-desk-companion': 'A lonely desk companion that does not ask for a conversation. A small pixel pet that just sits with you while you work. Free to start in browser.',
   'pixel-pet-for-focus': 'A pixel pet for focus: it works alongside you, cheers when you finish, and never nags. Lives in your browser, no install, no notifications storm.',
@@ -220,42 +156,25 @@ const DESCRIPTIONS: Record<string, string> = {
   'tamagotchi-30th-anniversary-app': 'A Tamagotchi 30th-anniversary companion: the care-and-grow loop, but in your browser, with 5 growth stages and a 1-in-72 golden edition.',
   'virtual-pet-that-grows-up-like-tamagotchi': 'A virtual pet that grows up like Tamagotchi, baby to legend, in 5 stages. Lives in your browser, never punishes, never dies. Free to start.',
   'tamagotchi-for-work-computer': 'A Tamagotchi for your work computer: a small pixel pet that sits beside you through the day and grows as you keep showing up. No install required.',
-  // rituals (Round 2)
-  'shared-journal-app-for-couples': 'A shared journal app for couples built around a pixel pet that grows as you write. No ads, no feed, no streaks. Free to start in your browser.',
-  'time-capsule-app-for-two': 'A time capsule app for two: write a sentence today, lock it, and open it together on a future date. The pet guards the capsule until then.',
-  'couple-mood-tracker-app': 'A couple mood tracker app with a pixel pet that changes its mood alongside yours. No typing required — just tap how you feel.',
-  'anniversary-countdown-app-couples': 'An anniversary countdown app for couples with a pet that grows toward the date alongside you. The countdown is the ritual, the pet is the reward.',
-  'daily-questions-for-couples-app': 'Daily questions for couples, answered in one sentence each, held by a small pixel pet that grows with every answer. No chat, no feed.',
-  'couple-goals-tracker-app': 'A couple goals tracker app where a small pet grows with each shared goal you reach. The pet remembers the wins, including the small ones.',
-  'private-journal-for-couples-app': 'A private journal for couples that lives in your browser. One sentence a day each, a pet that grows, and no-one else reading.',
-  'couple-bedtime-routine-app': 'A couple bedtime routine app: one quiet sentence before sleep, one pixel pet that grows, one small ritual that keeps the distance from growing.',
-  // discovery (Round 2)
-  'best-app-for-couples-in-long-distance': 'Looking for the best app for couples in long distance? Togthr is a pixel pet that grows as you two keep showing up, with no pressure.',
-  'best-virtual-pet-app-for-couples-2026': 'The best virtual pet app for couples in 2026. A small pixel pet, shared between two, growing through 5 stages. No ads, free to start.',
-  'free-couple-app-with-ai-companion': 'A free couple app with an AI companion that does not chat. A small pixel pet that grows, remembers, and keeps the relationship visible.',
-  'the-quietest-couple-app': 'The quietest couple app on the internet: a small pixel pet, one sentence a day, no chat, no feed, no streaks. Try it free in your browser.',
+  // discovery
   'virtual-pet-for-emotional-support': 'A virtual pet for emotional support that asks nothing of you. Lives in your browser, grows through 5 stages, waits when you are tired.',
   'a-pixel-pet-that-notices-you': 'A pixel pet that notices you: it grows when you show up, pauses when you rest, and the small creature in the corner remembers the month you just had.',
-  'couple-app-without-social-pressure': 'A couple app without social pressure: a small pixel pet, one sentence a day, no friends list, no like count, no feed. Just two people and a pet.',
-  'small-daily-ritual-app-for-two': 'A small daily ritual app for two: one sentence each, one growing pixel pet, one quiet thread that keeps the friendship from drifting.',
 }
 
 // ─── Slug → group map (derived) ─────────────────────────────────────────────
 
 const GROUP_OF: Record<string, LandingGroup> = (() => {
   const m: Record<string, LandingGroup> = {}
-  for (const s of coupleSlugs) m[s] = 'couple'
   for (const s of selfSlugs) m[s] = 'self'
   for (const s of bffSlugs) m[s] = 'bff'
   for (const s of tmgSlugs) m[s] = 'tmg'
-  for (const s of ritualsSlugs) m[s] = 'rituals'
   for (const s of discoverySlugs) m[s] = 'discovery'
   return m
 })()
 
 // ─── Public lookup helpers ──────────────────────────────────────────────────
 
-export const ALL_SLUGS: string[] = [...coupleSlugs, ...selfSlugs, ...bffSlugs, ...tmgSlugs, ...ritualsSlugs, ...discoverySlugs]
+export const ALL_SLUGS: string[] = [...selfSlugs, ...bffSlugs, ...tmgSlugs, ...discoverySlugs]
 
 export const SITE_URL = 'https://www.togthr.life'
 

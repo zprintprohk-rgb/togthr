@@ -1,17 +1,17 @@
 'use client'
 
 /**
- * /pet — Virtual Pet → 灵魂伴侣情感中枢 (Fusion v2)
+ * /pet — AI Pet 自我关怀中枢 (Fusion v2)
  *
- * 战略：选择宠物是"召唤灵魂伴侣"的仪式。宠物不是皮肤，是"另一个TA"。
+ * 战略：选择宠物是"与它相遇"的仪式。宠物不是皮肤，是陪你成长的 Buddy。
  *
  * 核心交互：
- * - 中央 300x300 PetCapsule xl 主展示（保留 4 心情切换：甜蜜/吵架/思考/睡觉）
+ * - 中央 300x300 PetCapsule xl 主展示（保留 4 心情切换：开心/闹脾气/思考/睡觉）
  * - 心情切换触发 EmotionParticles 爆发：sweet→star / fight→shard / think→ripple / sleep→dust
- * - "更换外观" → 全屏召唤阵 PetSelectionModal
+ * - "更换外观" → 全屏选择 PetSelectionModal
  * - 4 稀有度光效（来自 design-tokens RARITY_STYLES）
  * - 未解锁：灰度 + 🔒
- * - 召唤仪式：跃出动画 + 全屏预览 3 秒
+ * - 相遇仪式：跃出动画 + 全屏预览 3 秒
  * - 抚摸交互：鼠标在主展示宠物上移动 → 眯眼 + 蹭手（sprite 切换为 expression-happy）
  *
  * 文件边界：src/app/[locale]/pet/**
@@ -31,8 +31,8 @@ import { PETS } from './pet-data'
 
 /** 4 心情 → 粒子种类映射（方案要求） */
 const MOOD_PARTICLES: Record<Mood, ParticleKind[]> = {
-  sweet: ['star', 'bubble'], // 甜蜜 → 星星 + 气泡
-  fight: ['shard'], // 吵架 → 碎裂晶片
+  sweet: ['star', 'bubble'], // 开心 → 星星 + 气泡
+  fight: ['shard'], // 闹脾气 → 碎裂晶片
   calm: ['ripple'], // calm → 脉冲波纹（保留共享 MOODS 兼容）
   think: ['ripple'], // 思考 → 脉冲波纹
   sleepy: ['dust'], // 睡觉 → 微光尘埃
@@ -41,7 +41,7 @@ const MOOD_PARTICLES: Record<Mood, ParticleKind[]> = {
 /** 4 心情按钮配置（保留与原 page.tsx 视觉一致） */
 const MOOD_BUTTONS: { id: Mood; icon: string; key: 'sweet' | 'fight' | 'think' | 'sleep'; label: string }[] = [
   { id: 'sweet',  icon: '💕', key: 'sweet',  label: 'Sweet' },
-  { id: 'fight',  icon: '😤', key: 'fight',  label: 'Fight' },
+  { id: 'fight',  icon: '😤', key: 'fight',  label: 'Grumpy' },
   { id: 'think',  icon: '🤔', key: 'think',  label: 'Think' },
   { id: 'sleepy', icon: '😴', key: 'sleep',  label: 'Sleep' },
 ]
@@ -266,7 +266,7 @@ export default function PetDetailClient() {
         </div>
       </div>
 
-      {/* ── Info Bar（在一起 X 天、互动次数、成长值） ── */}
+      {/* ── Info Bar（陪伴 X 天、互动次数、成长值） ── */}
       <div className="relative z-10 mx-auto mt-6 max-w-2xl px-4">
         <div className="grid grid-cols-3 gap-2 rounded-2xl glass-card-emph p-4 text-center">
           <div>
@@ -332,7 +332,7 @@ export default function PetDetailClient() {
 
       {/* ── F1/F2 removed in S1 (AI-pet pivot): partner trace + one-tap signals ── */}
 
-      {/* ── 全屏召唤阵 ── */}
+      {/* ── 全屏选择（PetSelectionModal） ── */}
       <PetSelectionModal
         open={altarOpen}
         onClose={() => setAltarOpen(false)}

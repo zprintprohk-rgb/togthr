@@ -625,7 +625,6 @@
     "blindboxTitle": "Togthr 萌寵 — 6+1 神秘盲盒",
     "blindboxDesc": "每盒隨機一款萌寵皮膚：程序員、醫生、太空人、廚師、消防員、警察... 1/72 概率開出傳說級金色款。",
     "ctaBuy": "立即購買",
-    "ctaTrySoulmate": "含 1 個月 Quiet Companion",
     "odds": "概率",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
@@ -636,24 +635,25 @@
     "successSubtitle": "你的 Togthr 萌寵正在路上。PayPal 正在處理你的支付 — 稍後會收到郵件回執。",
     "successNote": "皮膚會在 PayPal 確認支付後幾分鐘內自動解鎖。",
     "successHint": "如果 10 分鐘內皮膚未出現，請聯繫我們並提供訂單號。",
-    "secureNotice": "支付由 PayPal 保障，我們不會看到你的銀行卡資訊。"
+    "secureNotice": "支付由 PayPal 保障，我們不會看到你的銀行卡資訊。",
+    "ctaTryBuddy": "含 1 個月 Quiet Companion"
   },
   "daily": {
     "title": "每日餵食",
-    "q": "今天，TA 在你身邊嗎？",
-    "withBtn": "💕 在一起",
-    "apartBtn": "🌙 異地",
+    "q": "今天，你感覺怎麼樣？",
+    "withBtn": "😊 還不錯",
+    "apartBtn": "😔 不太好",
     "hunger": "飽腹度",
-    "streak": "🔥 連續 {n} 天投餵",
+    "streak": "🔥 和寵物一起 {n} 天",
     "bubbleIdle": "嘿嘿，等我一下~",
     "bubbleWith": "一起呀！",
-    "bubbleApart": "想 TA 了...",
+    "bubbleApart": "沒關係...我一直陪著你。",
     "bubbleFeed": "餵我！",
     "bubbleFull": "吃飽啦！",
     "bubbleMore": "嗯嗯~ 還想要！",
     "again": "再來一次",
     "dragHint": "拖到寵物嘴邊",
-    "streakDays": "連續 {n} 天打卡",
+    "streakDays": "和寵物共度 {n} 天",
     "treasureTitle": "寶箱出現！🎁",
     "treasureDesc": "連續 7 天打卡，寵物為你挖出一個神秘寶箱~"
   },
@@ -672,17 +672,17 @@
   },
   "pet": {
     "title": "我的寵物",
-    "subtitle": "寵物會反映你們的關係。挑一個心情看它變化。",
+    "subtitle": "寵物會照見你的心情。揀一個心情，睇佢為你變化。",
     "pickMood": "今天 TA 心情如何？",
     "status": "Togthr 現在",
-    "day": "在一起 {n} 天",
+    "day": "陪伴 {n} 日",
     "mood": {
       "happy": "甜蜜",
       "sad": "吵架",
       "thinking": "思考",
       "sleeping": "睡覺",
       "sweet": "甜蜜",
-      "fight": "嗌交",
+      "fight": "鬧脾氣",
       "think": "諗緊嘢",
       "sleep": "瞓覺"
     },
@@ -709,7 +709,7 @@
       "current": "使用中"
     },
     "altar": {
-      "title": "召喚你嘅靈魂同伴",
+      "title": "召喚你嘅同伴",
       "back": "返回",
       "close": "關閉",
       "hint": "撳未鎖嘅寵物可以預覽；撳鎖住嘅睇下點樣解鎖。",
@@ -725,7 +725,7 @@
     "changePetBadge": "召喚台",
     "lockHint": "未解鎖嘅寵物都可以預覽——訂閱或者開盲盒就可以拎到",
     "info": {
-      "days": "一齊嘅日子",
+      "days": "陪伴日數",
       "interactions": "互動次數",
       "growth": "成長值"
     },
@@ -760,22 +760,22 @@
       "diwali": "排燈節",
       "carnival": "嘉年華"
     },
-    "traceTitle": "伴侶動態",
-    "traceEmpty": "你們的第一次互動會出現在這裡。",
+    "traceTitle": "寵物動態",
+    "traceEmpty": "寵物的點滴會出現在這裡。",
     "signalThinking": "想你",
     "signalHug": "抱抱",
     "signalTired": "累了",
     "streakFrozen": "連擊暫停中，一次互動即可喚醒。"
   },
   "journal": {
-    "title": "我們的築巢",
-    "subtitle": "每條日記都在為你們的共同小窩添磚加瓦。看它慢慢長大。",
+    "title": "我的小窩",
+    "subtitle": "把今天講給寵物聽——每一條記憶都會讓牠的小窩長大。",
     "stage": "階段",
     "nextStage": "下一階段：{next}",
     "complete": "築巢完成！",
-    "entriesCount": "共 {n} 條",
-    "writePlaceholder": "寫下今天的小事...",
-    "save": "放入小窩",
+    "entriesCount": "{n} 段記憶",
+    "writePlaceholder": "和寵物說說今天的小事...",
+    "save": "講給寵物聽",
     "mood": {
       "warm": "溫暖",
       "cool": "清涼",
@@ -798,7 +798,7 @@
         "mood": "cool"
       },
       "e3": {
-        "text": "第一次一起過聖誕 🎄",
+        "text": "和寵物一起過的第一個聖誕 🎄",
         "mood": "festive"
       }
     }
@@ -829,13 +829,13 @@
       "cta": "開始"
     },
     "name": {
-      "title": "給 TA 起個名字",
+      "title": "俾佢起個名",
       "subtitle": "為這隻陪你左右的小機器人取名。",
       "placeholder": "比如：皮蛋、米米、北北..."
     },
     "mode": {
-      "title": "想怎麼用？",
-      "subtitle": "隨時可以改。",
+      "title": "準備好孵化未？",
+      "subtitle": "你嘅同伴喺蛋入面等你。撳一下，同佢見面。",
       "solo": {
         "title": "自己一個人",
         "desc": "一隻陪伴你的寵物 + AI 聊天支援。"
@@ -843,7 +843,8 @@
       "together": {
         "title": "和 TA 一起",
         "desc": "分享日常、膠囊、共同養一隻寵物。"
-      }
+      },
+      "hatchCta": "孵出我嘅同伴"
     },
     "done": {
       "title": "{name} 準備好啦！",

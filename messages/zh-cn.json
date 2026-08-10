@@ -625,7 +625,6 @@
     "blindboxTitle": "Togthr 萌宠 — 6+1 神秘盲盒",
     "blindboxDesc": "每盒随机一款萌宠皮肤：程序员、医生、宇航员、厨师、消防员、警察... 1/72 概率开出传说级金色款。",
     "ctaBuy": "立即购买",
-    "ctaTrySoulmate": "含 1 个月 Quiet Companion",
     "odds": "概率",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
@@ -636,21 +635,22 @@
     "successSubtitle": "你的 Togthr 萌宠正在路上。PayPal 正在处理你的支付 — 稍后会收到邮件回执。",
     "successNote": "皮肤会在 PayPal 确认支付后几分钟内自动解锁。",
     "successHint": "如果 10 分钟内皮肤未出现，请联系我们并提供订单号。",
-    "secureNotice": "支付由 PayPal 保障，我们不会看到你的银行卡信息。"
+    "secureNotice": "支付由 PayPal 保障，我们不会看到你的银行卡信息。",
+    "ctaTryBuddy": "含 1 个月 Quiet Companion"
   },
   "daily": {
-    "streakDays": "连续 {n} 天打卡",
+    "streakDays": "和宠物共度 {n} 天",
     "treasureTitle": "宝箱出现！🎁",
     "treasureDesc": "连续 7 天打卡，宠物为你挖出一个神秘宝箱~",
     "title": "每日喂食",
-    "q": "今天，TA 在你身边吗？",
-    "withBtn": "💕 在一起",
-    "apartBtn": "🌙 异地",
+    "q": "今天，你感觉怎么样？",
+    "withBtn": "😊 还不错",
+    "apartBtn": "😔 不太好",
     "hunger": "饱腹度",
-    "streak": "🔥 连续 {n} 天投喂",
+    "streak": "🔥 和宠物一起 {n} 天",
     "bubbleIdle": "嘿嘿，等我一下~",
     "bubbleWith": "一起呀！",
-    "bubbleApart": "想 TA 了...",
+    "bubbleApart": "没关系...我一直陪着你。",
     "bubbleFeed": "喂我！",
     "bubbleFull": "吃饱啦！",
     "bubbleMore": "嗯嗯~ 还想要！",
@@ -672,17 +672,17 @@
   },
   "pet": {
     "title": "我的宠物",
-    "subtitle": "宠物会反映你们的关系。挑一个心情看它变化。",
+    "subtitle": "宠物会照见你的心情。挑一个心情，看它为你变化。",
     "pickMood": "今天 TA 心情如何？",
     "status": "Togthr 现在",
-    "day": "在一起 {n} 天",
+    "day": "陪伴 {n} 天",
     "mood": {
       "happy": "甜蜜",
       "sad": "吵架",
       "thinking": "思考",
       "sleeping": "睡觉",
       "sweet": "甜蜜",
-      "fight": "吵架",
+      "fight": "闹脾气",
       "think": "思考",
       "sleep": "睡觉"
     },
@@ -709,7 +709,7 @@
       "current": "当前"
     },
     "altar": {
-      "title": "召唤你的灵魂伙伴",
+      "title": "召唤你的伙伴",
       "back": "返回",
       "close": "关闭",
       "hint": "点未锁的宠物可以预览；点锁着的看怎么解锁。",
@@ -725,7 +725,7 @@
     "changePetBadge": "召唤台",
     "lockHint": "未解锁的宠物也可以预览——订阅或开盲盒即可解锁",
     "info": {
-      "days": "一起的天数",
+      "days": "陪伴天数",
       "interactions": "互动次数",
       "growth": "成长值"
     },
@@ -760,22 +760,22 @@
       "diwali": "排灯节",
       "carnival": "狂欢节"
     },
-    "traceTitle": "伴侣动态",
-    "traceEmpty": "你们的第一次互动会出现在这里。",
+    "traceTitle": "宠物的动态",
+    "traceEmpty": "宠物的点滴会出现在这里。",
     "signalThinking": "想你",
     "signalHug": "抱抱",
     "signalTired": "累了",
     "streakFrozen": "连击暂停中，一次互动即可唤醒。"
   },
   "journal": {
-    "title": "我们的筑巢",
-    "subtitle": "每条日记都在为你们的共同小窝添砖加瓦。看它慢慢长大。",
+    "title": "我的小窝",
+    "subtitle": "把今天讲给宠物听——每一条记忆都会让它的小窝长大。",
     "stage": "阶段",
     "nextStage": "下一阶段：{next}",
     "complete": "筑巢完成！",
-    "entriesCount": "共 {n} 条",
-    "writePlaceholder": "写下今天的小事...",
-    "save": "放入小窝",
+    "entriesCount": "{n} 段记忆",
+    "writePlaceholder": "和宠物说说今天的小事...",
+    "save": "讲给宠物听",
     "mood": {
       "warm": "温暖",
       "cool": "清凉",
@@ -798,7 +798,7 @@
         "mood": "cool"
       },
       "e3": {
-        "text": "第一次一起过圣诞 🎄",
+        "text": "和宠物一起过的第一个圣诞 🎄",
         "mood": "festive"
       }
     }
@@ -829,13 +829,13 @@
       "cta": "开始"
     },
     "name": {
-      "title": "给 TA 起个名字",
+      "title": "给它起个名字",
       "subtitle": "为这只陪你左右的小机器人取名。",
       "placeholder": "比如：皮蛋、米米、北北..."
     },
     "mode": {
-      "title": "想怎么用？",
-      "subtitle": "随时可以改。",
+      "title": "准备好孵化了吗？",
+      "subtitle": "你的伙伴就在蛋里等着。点一下，和它见面。",
       "solo": {
         "title": "自己一个人",
         "desc": "一只陪伴你的宠物 + AI 聊天支持。"
@@ -843,7 +843,8 @@
       "together": {
         "title": "和 TA 一起",
         "desc": "分享日常、胶囊、共同养一只宠物。"
-      }
+      },
+      "hatchCta": "孵出我的伙伴"
     },
     "done": {
       "title": "{name} 准备好啦！",

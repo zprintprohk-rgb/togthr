@@ -625,7 +625,6 @@
     "blindboxTitle": "Togthr Begleiter — 6+1 Mystery-Box",
     "blindboxDesc": "Eine Überraschung pro Box: Programmierer, Arzt, Astronaut, Koch, Feuerwehrmann, Polizist... und 1/72 Chance auf die legendäre goldene Togthr.",
     "ctaBuy": "Box kaufen",
-    "ctaTrySoulmate": "1 Monat Quiet Companion inklusive",
     "odds": "Quote",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
@@ -636,24 +635,25 @@
     "successSubtitle": "Dein Togthr Begleiter ist unterwegs. PayPal verarbeitet deine Zahlung — du erhältst gleich eine E-Mail-Quittung.",
     "successNote": "Dein Skin wird innerhalb weniger Minuten freigeschaltet, sobald PayPal die Zahlung bestätigt.",
     "successHint": "Wenn dein Skin nach 10 Minuten nicht erscheint, kontaktiere uns bitte mit deiner Bestellnummer.",
-    "secureNotice": "Zahlungen durch PayPal gesichert. Wir sehen nie deine Kartendaten."
+    "secureNotice": "Zahlungen durch PayPal gesichert. Wir sehen nie deine Kartendaten.",
+    "ctaTryBuddy": "1 Monat Quiet Companion inklusive"
   },
   "daily": {
     "title": "Tägliche Fütterung",
-    "q": "Ist der andere heute bei dir?",
-    "withBtn": "💕 Zusammen",
-    "apartBtn": "🌙 Getrennt",
+    "q": "Wie fühlst du dich heute?",
+    "withBtn": "😊 Mir geht's gut",
+    "apartBtn": "😔 Nicht so gut",
     "hunger": "Sättigung",
-    "streak": "🔥 {n} Tage in Folge",
+    "streak": "🔥 {n} Tage mit deinem Haustier",
     "bubbleIdle": "Hehe, warte~",
     "bubbleWith": "Zusammen!",
-    "bubbleApart": "Vermisse sie...",
+    "bubbleApart": "Ist okay... Ich bin bei dir.",
     "bubbleFeed": "Füttere mich!",
     "bubbleFull": "Ich bin satt!",
     "bubbleMore": "Mehr bitte~",
     "again": "Nochmal",
     "dragHint": "Zum Haustier ziehen",
-    "streakDays": "{n} Tage in Folge",
+    "streakDays": "{n} Tage mit deinem Haustier",
     "treasureTitle": "Schatztruhe! 🎁",
     "treasureDesc": "7-Tage-Serie! Dein Haustier hat eine Schatztruhe ausgegraben~"
   },
@@ -672,17 +672,17 @@
   },
   "pet": {
     "title": "Mein Haustier",
-    "subtitle": "Das Haustier spiegelt eure Beziehung. Wähle eine Stimmung.",
+    "subtitle": "Dein Haustier spiegelt deine Gefühle. Wähle eine Stimmung und sieh es sich verwandeln.",
     "pickMood": "Wie fühlt sich dein Haustier heute?",
     "status": "Togthr ist",
-    "day": "Tag {n} zusammen",
+    "day": "Tag {n} mit Buddy",
     "mood": {
       "happy": "Süß",
       "sad": "Streit",
       "thinking": "Denkend",
       "sleeping": "Schlafend",
       "sweet": "Süß",
-      "fight": "Streit",
+      "fight": "Schmollend",
       "think": "Nachdenklich",
       "sleep": "Schläft"
     },
@@ -709,7 +709,7 @@
       "current": "Aktuell"
     },
     "altar": {
-      "title": "Beschwöre deinen Seelen-Begleiter",
+      "title": "Beschwöre deinen Buddy",
       "back": "Zurück",
       "close": "Schließen",
       "hint": "Tippe auf ein freigeschaltetes Pet zur Vorschau. Bei gesperrten Pets siehst du, wie du sie freischaltest.",
@@ -725,7 +725,7 @@
     "changePetBadge": "Beschwörungsaltar",
     "lockHint": "Gesperrte Pets sind weiterhin sichtbar — freischalten per Abo oder Blindbox",
     "info": {
-      "days": "Tage zusammen",
+      "days": "Tage mit Buddy",
       "interactions": "Interaktionen",
       "growth": "Wachstum"
     },
@@ -760,22 +760,22 @@
       "diwali": "Diwali",
       "carnival": "Karneval"
     },
-    "traceTitle": "Aktivität deines Partners",
-    "traceEmpty": "Eure ersten gemeinsamen Momente erscheinen hier.",
+    "traceTitle": "Aktivität deines Haustiers",
+    "traceEmpty": "Die kleinen Momente deines Haustiers erscheinen hier.",
     "signalThinking": "Denk an dich",
     "signalHug": "Umarmung",
     "signalTired": "Müde",
     "streakFrozen": "Serie pausiert — eine Interaktion weckt sie wieder auf."
   },
   "journal": {
-    "title": "Unser Nest",
-    "subtitle": "Jeder Tagebuch-Eintrag erweitert euer gemeinsames Nest. Sieh es wachsen.",
+    "title": "Mein Nest",
+    "subtitle": "Erzähl deinem Haustier von deinem Tag – jeder Eintrag lässt sein Nest wachsen.",
     "stage": "Stufe",
     "nextStage": "Nächste: {next}",
     "complete": "Nest vollendet!",
-    "entriesCount": "{n} Einträge",
-    "writePlaceholder": "Schreibe etwas über heute...",
-    "save": "Zum Nest",
+    "entriesCount": "{n} Erinnerungen",
+    "writePlaceholder": "Erzähl deinem Haustier etwas über heute...",
+    "save": "Mit Haustier teilen",
     "mood": {
       "warm": "Warm",
       "cool": "Kühl",
@@ -790,15 +790,15 @@
     },
     "seedEntries": {
       "e1": {
-        "text": "Schönes Wetter heute, wir waren spazieren.",
+        "text": "Schönes Wetter heute, ich war spazieren.",
         "mood": "warm"
       },
       "e2": {
-        "text": "Schnee endlich! Wir sind ganz aufgeregt.",
+        "text": "Schnee endlich! Ich bin ganz aufgeregt.",
         "mood": "cool"
       },
       "e3": {
-        "text": "Unser erstes Weihnachten zusammen 🎄",
+        "text": "Erstes Weihnachten mit meinem Haustier 🎄",
         "mood": "festive"
       }
     }
@@ -834,8 +834,8 @@
       "placeholder": "z.B. Pixel, Mimi, Beibei..."
     },
     "mode": {
-      "title": "Wie willst du reisen?",
-      "subtitle": "Du kannst dies jederzeit ändern.",
+      "title": "Bereit zu schlüpfen?",
+      "subtitle": "Dein Buddy wartet im Ei. Ein Tippen und ihr trefft euch.",
       "solo": {
         "title": "Allein",
         "desc": "Ein Begleiter für dich, mit KI-Chat."
@@ -843,7 +843,8 @@
       "together": {
         "title": "Mit jemandem",
         "desc": "Geteilte Rituale, Kapseln, ein gemeinsames Tier."
-      }
+      },
+      "hatchCta": "Buddy schlüpfen lassen"
     },
     "done": {
       "title": "{name} ist bereit!",

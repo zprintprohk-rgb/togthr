@@ -2,12 +2,12 @@
  * /daily — 喂食时间 (Daily Check-in, scene-rewritten)
  *
  * Replaces the old 5-question check-in form with a single, pet-centered
- * moment: "Is the other one with you today?" → high-five + heart feed.
+ * moment: "How are you feeling today?" → high-five + heart feed.
  *
  * Flow:
  * 1. Pet sits in center, idle animation
- * 2. Single binary question (universal: works for any relationship)
- * 3. User taps "在一起" / "不在" → pet does 击掌 + drops heart feed
+ * 2. Single self-care question (universal: one question, no labels)
+ * 3. User shares their mood → pet does 击掌 + drops heart feed
  * 4. Drag the heart to the pet's mouth → pet eats → happiness meter +1
  * 5. Pet says a personalized bubble, mood shifts to success state
  *
@@ -22,7 +22,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { track } from '@/lib/analytics'
 
 type Mood = 'idle' | 'asking' | 'highfive' | 'feeding' | 'happy' | 'thinking'
-type Answer = 'with' | 'apart' | null
+type Answer = 'good' | 'low' | null
 
 const HEART_FEED = '❤️'
 const HIGHFIVE = '🖐️'
@@ -52,13 +52,13 @@ export default function DailyFeedingPage() {
     } catch { /* noop */ }
   }, [])
 
-  function startFeeding(ans: 'with' | 'apart') {
+  function startFeeding(ans: 'good' | 'low') {
     setAnswer(ans)
     setMood('asking')
-    setBubble(ans === 'with' ? t('bubbleWith') : t('bubbleApart'))
+    setBubble(ans === 'good' ? t('bubbleWith') : t('bubbleApart'))
     setTimeout(() => {
       setMood('highfive')
-      setBubble(ans === 'with' ? HIGHFIVE + ' ' + t('withBtn') : POKEMON_OK + ' ' + t('bubbleApart'))
+      setBubble(ans === 'good' ? HIGHFIVE + ' ' + t('bubbleWith') : POKEMON_OK + ' ' + t('bubbleApart'))
     }, 1200)
     setTimeout(() => {
       setMood('feeding')
@@ -259,13 +259,13 @@ export default function DailyFeedingPage() {
             )}
             <div className="grid grid-cols-2 gap-3">
               <button
-                onClick={() => startFeeding('with')}
+                onClick={() => startFeeding('good')}
                 className="rounded-2xl border-2 border-rose-200 bg-white px-4 py-4 text-sm font-semibold text-rose-600 transition-all hover:scale-105 hover:border-rose-400 hover:bg-rose-50 hover:shadow-lg dark:border-purple-800 dark:bg-zinc-800 dark:text-purple-300 dark:hover:bg-purple-900/50"
               >
                 {t('withBtn')}
               </button>
               <button
-                onClick={() => startFeeding('apart')}
+                onClick={() => startFeeding('low')}
                 className="rounded-2xl border-2 border-zinc-200 bg-white px-4 py-4 text-sm font-semibold text-zinc-600 transition-all hover:scale-105 hover:border-zinc-400 hover:bg-zinc-50 hover:shadow-lg dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700"
               >
                 {t('apartBtn')}

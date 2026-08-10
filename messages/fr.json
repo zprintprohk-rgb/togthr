@@ -625,7 +625,6 @@
     "blindboxTitle": "Compagnons Togthr — Boîte mystère 6+1",
     "blindboxDesc": "Une surprise par boîte : Programmeur, Médecin, Astronaute, Cuisinier, Pompier, Policier... et 1 chance sur 72 pour la légendaire Togthr dorée.",
     "ctaBuy": "Acheter la boîte",
-    "ctaTrySoulmate": "1 mois de Quiet Companion inclus",
     "odds": "Probabilité",
     "oddsGolden": "1 / 72",
     "oddsCommon": "71 / 72",
@@ -636,24 +635,25 @@
     "successSubtitle": "Votre Compagnon Togthr est en route. PayPal traite votre paiement — vous recevrez un reçu par e-mail.",
     "successNote": "Votre skin sera déverrouillé en quelques minutes une fois PayPal confirmé.",
     "successHint": "Si votre skin n'apparaît pas sous 10 minutes, contactez-nous avec votre numéro de commande.",
-    "secureNotice": "Paiements sécurisés par PayPal. Nous ne voyons jamais vos coordonnées bancaires."
+    "secureNotice": "Paiements sécurisés par PayPal. Nous ne voyons jamais vos coordonnées bancaires.",
+    "ctaTryBuddy": "1 mois de Quiet Companion inclus"
   },
   "daily": {
     "title": "Repas quotidien",
-    "q": "Est-il/elle avec toi aujourd'hui ?",
-    "withBtn": "💕 Ensemble",
-    "apartBtn": "🌙 Séparés",
+    "q": "Comment te sens-tu aujourd'hui ?",
+    "withBtn": "😊 Ça va bien",
+    "apartBtn": "😔 Pas terrible",
     "hunger": "Faim",
-    "streak": "🔥 {n} jours d'affilée",
+    "streak": "🔥 {n} jours avec ton compagnon",
     "bubbleIdle": "Héhé, attends~",
     "bubbleWith": "Ensemble !",
-    "bubbleApart": "Il/elle me manque...",
+    "bubbleApart": "C'est okay... Je suis là avec toi.",
     "bubbleFeed": "Donne-moi !",
     "bubbleFull": "J'ai assez mangé !",
     "bubbleMore": "Encore~",
     "again": "Refaire",
     "dragHint": "Glisse vers le compagnon",
-    "streakDays": "{n} jours de suite",
+    "streakDays": "{n} jours avec ton compagnon",
     "treasureTitle": "Coffre au trésor ! 🎁",
     "treasureDesc": "Série de 7 jours ! Ton animal a déterré un coffre mystère~"
   },
@@ -672,17 +672,17 @@
   },
   "pet": {
     "title": "Mon compagnon",
-    "subtitle": "Le compagnon reflète votre relation. Choisis une humeur.",
+    "subtitle": "Ton compagnon reflète ton humeur. Choisis une humeur et regarde-le se transformer.",
     "pickMood": "Comment se sent ton compagnon ?",
     "status": "Togthr est",
-    "day": "Jour {n} ensemble",
+    "day": "Jour {n} avec ton compagnon",
     "mood": {
       "happy": "Douce",
       "sad": "Dispute",
       "thinking": "Pensif",
       "sleeping": "Dormant",
       "sweet": "Douceur",
-      "fight": "Dispute",
+      "fight": "Boudeur",
       "think": "Réfléchit",
       "sleep": "Dort"
     },
@@ -709,7 +709,7 @@
       "current": "Actuel"
     },
     "altar": {
-      "title": "Invoque ton compagnon d’âme",
+      "title": "Invoque ton Buddy",
       "back": "Retour",
       "close": "Fermer",
       "hint": "Tape sur un pet débloqué pour l’apercevoir. Sur un pet verrouillé, tu verras comment le débloquer.",
@@ -725,7 +725,7 @@
     "changePetBadge": "Autel d’invocation",
     "lockHint": "Les pets verrouillés restent visibles — abonne-toi ou ouvre des blind boxes pour les débloquer",
     "info": {
-      "days": "Jours ensemble",
+      "days": "Jours avec ton compagnon",
       "interactions": "Interactions",
       "growth": "Croissance"
     },
@@ -760,22 +760,22 @@
       "diwali": "Diwali",
       "carnival": "Carnaval"
     },
-    "traceTitle": "Activité de votre partenaire",
-    "traceEmpty": "Vos premiers moments partagés apparaîtront ici.",
+    "traceTitle": "L'activité de ton compagnon",
+    "traceEmpty": "Les petits moments de ton compagnon apparaîtront ici.",
     "signalThinking": "Je pense à toi",
     "signalHug": "Câlin",
     "signalTired": "Fatigué(e)",
     "streakFrozen": "Série en pause — une interaction la réveille."
   },
   "journal": {
-    "title": "Notre nid",
-    "subtitle": "Chaque entrée de journal agrandit votre nid commun. Regarde-le grandir.",
+    "title": "Mon nid",
+    "subtitle": "Raconte ta journée à ton compagnon – chaque entrée fait grandir son nid.",
     "stage": "Étape",
     "nextStage": "Prochaine : {next}",
     "complete": "Nid complet !",
-    "entriesCount": "{n} entrées",
-    "writePlaceholder": "Écris quelque chose sur aujourd'hui...",
-    "save": "Ajouter au nid",
+    "entriesCount": "{n} souvenirs",
+    "writePlaceholder": "Raconte ta journée à ton compagnon...",
+    "save": "Partager avec mon compagnon",
     "mood": {
       "warm": "Chaleureux",
       "cool": "Frais",
@@ -790,15 +790,15 @@
     },
     "seedEntries": {
       "e1": {
-        "text": "Beau temps aujourd'hui, on est sortis marcher.",
+        "text": "Beau temps aujourd'hui, je suis sorti me promener.",
         "mood": "warm"
       },
       "e2": {
-        "text": "De la neige enfin ! On est tout excités.",
+        "text": "De la neige enfin ! Je suis tout excité.",
         "mood": "cool"
       },
       "e3": {
-        "text": "Notre premier Noël ensemble 🎄",
+        "text": "Mon premier Noël avec mon compagnon 🎄",
         "mood": "festive"
       }
     }
@@ -834,8 +834,8 @@
       "placeholder": "ex. Pixel, Mimi, Beibei..."
     },
     "mode": {
-      "title": "Comment vas-tu voyager ?",
-      "subtitle": "Tu peux changer à tout moment.",
+      "title": "Prêt à éclore ?",
+      "subtitle": "Ton buddy t'attend dans l'œuf. Une touche et vous vous rencontrez.",
       "solo": {
         "title": "Seul",
         "desc": "Un compagnon pour toi, avec chat IA."
@@ -843,7 +843,8 @@
       "together": {
         "title": "Avec quelqu'un",
         "desc": "Rituels partagés, capsules, un animal commun."
-      }
+      },
+      "hatchCta": "Faire éclore mon buddy"
     },
     "done": {
       "title": "{name} est prêt !",

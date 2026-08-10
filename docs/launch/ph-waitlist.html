@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Togthr — A quiet companion for your desktop</title>
+<meta name="description" content="Togthr is an AI pet that grows quietly on your desktop. No chat, no pressure — just a companion that stays. Product Hunt launch coming soon.">
+<style>
+  /* Build studio luxury minimalism — 70%+ whitespace, single accent, breathing rhythm */
+  :root {
+    --bg: #FAFAF7;
+    --ink: #1A1A24;
+    --muted: #8A8A96;
+    --accent: #7C3AED;
+    --line: #E8E8EE;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  /* ── Hero: 70% whitespace ── */
+  .hero { min-height: 88vh; display: flex; flex-direction: column; justify-content: center; padding: 120px 0 40px; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 32px; }
+  h1 { font-size: clamp(40px, 7vw, 72px); font-weight: 200; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 32px; }
+  h1 em { font-style: normal; color: var(--accent); font-weight: 400; }
+  .sub { font-size: clamp(17px, 2.4vw, 21px); color: var(--muted); max-width: 34em; margin-bottom: 56px; font-weight: 300; }
+  .form-row { display: flex; gap: 10px; max-width: 440px; }
+  input[type="email"] {
+    flex: 1; padding: 15px 20px; border: 1px solid var(--line); border-radius: 999px;
+    font-size: 15px; background: #fff; color: var(--ink); font-weight: 300; outline: none;
+    transition: border-color 0.3s;
+  }
+  input[type="email"]:focus { border-color: var(--accent); }
+  button {
+    padding: 15px 28px; border: none; border-radius: 999px; background: var(--accent); color: #fff;
+    font-size: 15px; font-weight: 400; cursor: pointer; transition: opacity 0.3s, transform 0.15s;
+  }
+  button:hover { opacity: 0.88; }
+  button:active { transform: scale(0.97); }
+  .form-note { font-size: 13px; color: var(--muted); margin-top: 14px; }
+  .form-note.ok { color: #059669; }
+  /* ── Stages: quiet timeline ── */
+  .section-title { font-size: 13px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin: 100px 0 40px; }
+  .stage { display: flex; gap: 24px; padding: 28px 0; border-top: 1px solid var(--line); }
+  .stage .num { font-size: 13px; color: var(--muted); width: 40px; font-weight: 400; padding-top: 6px; }
+  .stage h3 { font-size: 22px; font-weight: 400; margin-bottom: 8px; }
+  .stage p { color: var(--muted); font-size: 15px; max-width: 30em; }
+  /* ── Principles ── */
+  .principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin: 60px 0; }
+  .principle h4 { font-size: 15px; font-weight: 500; margin-bottom: 10px; }
+  .principle p { font-size: 14px; color: var(--muted); }
+  .footer { padding: 60px 0 40px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  @media (max-width: 560px) {
+    .form-row { flex-direction: column; }
+    button { width: 100%; }
+    .stage { flex-direction: column; gap: 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <section class="hero">
+    <p class="eyebrow">Product Hunt · Coming Soon</p>
+    <h1>A quiet companion<br>that <em>stays</em>.</h1>
+    <p class="sub">Togthr is a pixel pet that grows on your desktop across five stages. It doesn't chat. It doesn't judge. It's just there — softly, every day.</p>
+    <div class="form-row">
+      <input type="email" id="email" placeholder="you@example.com" aria-label="Email address" autocomplete="email">
+      <button id="subscribe">Get early access</button>
+    </div>
+    <p class="form-note" id="note">Join the waiting list — launch day access + exclusive starter skin.</p>
+  </section>
+
+  <p class="section-title">Five stages of quiet growth</p>
+  <div class="stage"><div class="num">01</div><div><h3>Egg</h3><p>It arrives as a tiny pixel egg on your desktop. No setup, no tutorial.</p></div></div>
+  <div class="stage"><div class="num">02</div><div><h3>Baby</h3><p>First blink. First yawn. It learns your working hours and curls up when you're busy.</p></div></div>
+  <div class="stage"><div class="num">03</div><div><h3>Teen</h3><p>It develops a personality — curious, calm, playful — shaped by how you care for it.</p></div></div>
+  <div class="stage"><div class="num">04</div><div><h3>Adult</h3><p>It remembers. Special days, long nights, small wins. It never forgets a thing you taught it.</p></div></div>
+  <div class="stage"><div class="num">05</div><div><h3>Mature</h3><p>After months together, it becomes a legend — a quiet witness to your journey.</p></div></div>
+
+  <p class="section-title">What it believes</p>
+  <div class="principles">
+    <div class="principle"><h4>No chat</h4><p>It never talks back. Companionship without conversation.</p></div>
+    <div class="principle"><h4>No streaks</h4><p>Miss a day? It misses you, but it never punishes you.</p></div>
+    <div class="principle"><h4>No ads</h4><p>One plan, no noise. $5.49/month or $49.99/year.</p></div>
+  </div>
+
+  <div class="footer">
+    <span>© 2026 Togthr · togthr.life</span>
+    <span>8 languages · 13 countries · Made quietly</span>
+  </div>
+
+</div>
+<script>
+  const btn = document.getElementById('subscribe')
+  const input = document.getElementById('email')
+  const note = document.getElementById('note')
+  btn.addEventListener('click', async () => {
+    const email = input.value.trim()
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      note.textContent = 'Please enter a valid email address.'
+      note.style.color = '#DC2626'
+      return
+    }
+    try {
+      // 邮箱收集（上线后接后端；此处本地存储做演示持久化）
+      const key = 'togthr.ph.waitlist'
+      const list = JSON.parse(localStorage.getItem(key) || '[]')
+      list.push({ email, at: new Date().toISOString() })
+      localStorage.setItem(key, JSON.stringify(list))
+      note.textContent = 'You are on the list. See you at launch. ' + '('.concat(list.length, ' waiting)')
+      note.className = 'form-note ok'
+      input.value = ''
+    } catch (e) {
+      note.textContent = 'Something went wrong — please try again.'
+    }
+  })
+</script>
+</body>
+</html>

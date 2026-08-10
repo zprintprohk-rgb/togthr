@@ -10,7 +10,7 @@
  * The 3 displayed tiers are:
  *   - free    : free card (no price)
  *   - plus    : the existing "plus" tier (Companion)
- *   - eternal : the existing "soulmate" tier, rebranded as "Eternal"
+ *   - plus : the single-user plan (monthly $5.49 / yearly $49.99)
  *               (this preserves the engine's 13-country price map and
  *                gives us the "All Access + Exclusive" visual identity)
  */
@@ -115,26 +115,18 @@ export default async function PricingPage({
       'Basic pet',
       'Community access',
     ])
-    // We have a dedicated "eternal" tier block now
-    const eternalFeatures = ta(t, 'pricing.tiers.eternal.features', [
-      'Everything in Plus',
-      'All 50+ pet suits unlocked',
-      'Golden legendary pets',
-      'Priority support',
-      'Early access to new features',
-    ])
 
     const copy = {
       eyebrow: ts(t, 'pricing.theater.eyebrow', 'Choose your journey'),
       headline: ts(
         t,
         'pricing.theater.headline',
-        'Unlock a life that grows with you',
+        'A quiet companion that grows with you',
       ),
       tagline: ts(
         t,
         'pricing.theater.tagline',
-        'Three tiers. One promise: every pet you unlock stays with you forever.',
+        'Two plans. One promise: every pet you unlock stays with you forever.',
       ),
       guarantee: ts(
         t,
@@ -161,7 +153,6 @@ export default async function PricingPage({
       },
       ctaFree: ts(t, 'pricing.ctaStartFree', 'Start Free'),
       ctaPlus: ts(t, 'pricing.ctaPopular', 'Choose Companion'),
-      ctaEternal: ts(t, 'pricing.ctaEternal', 'Become Eternal'),
       periodMonthly: ts(t, 'pricing.period.monthly', 'Monthly'),
       periodQuarterly: ts(t, 'pricing.period.quarterly', 'Quarterly'),
       periodYearly: ts(t, 'pricing.period.yearly', 'Yearly'),
@@ -170,9 +161,7 @@ export default async function PricingPage({
       }),
       freeName: ts(t, 'pricing.tiers.free.name', 'Free'),
       plusName: ts(t, 'pricing.tiers.plus.name', 'Togthr Plus'),
-      eternalName: ts(t, 'pricing.tiers.eternal.name', 'Togthr Eternal'),
       plusFeatures,
-      eternalFeatures,
       freeFeatures,
       freePetLabel: ts(
         t,
@@ -184,26 +173,15 @@ export default async function PricingPage({
         'pricing.petMatrix.plus.label',
         'Unlock 50+ Suits',
       ),
-      eternalPetLabel: ts(
-        t,
-        'pricing.petMatrix.eternal.label',
-        'All Access + Exclusive',
-      ),
       freePetSub: ts(t, 'pricing.petMatrix.free.sub', 'Buds, sprouts, starters'),
       plusPetSub: ts(
         t,
         'pricing.petMatrix.plus.sub',
         'Career · Festival · Emotion · Fantasy',
       ),
-      eternalPetSub: ts(
-        t,
-        'pricing.petMatrix.eternal.sub',
-        'Including Golden Legendary',
-      ),
       popularBadge: ts(t, 'pricing.popular', 'Most Popular'),
       freeEyebrow: ts(t, 'pricing.tierMeta.free.eyebrow', 'Seedling'),
       plusEyebrow: ts(t, 'pricing.tierMeta.plus.eyebrow', 'Companion'),
-      eternalEyebrow: ts(t, 'pricing.tierMeta.eternal.eyebrow', 'Stardust'),
       freeTagline: ts(
         t,
         'pricing.tierMeta.free.tagline',
@@ -212,18 +190,12 @@ export default async function PricingPage({
       plusTagline: ts(
         t,
         'pricing.tierMeta.plus.tagline',
-        'Choose your soul',
-      ),
-      eternalTagline: ts(
-        t,
-        'pricing.tierMeta.eternal.tagline',
-        'Become timeless',
+        'Quiet companionship',
       ),
     }
 
     // Formatted prices from the pricing engine
     const plus = pricing.tiers.plus
-    const soulmate = pricing.tiers.soulmate
     const formatted = {
       plus: {
         monthly: plus.monthly,
@@ -238,22 +210,6 @@ export default async function PricingPage({
           getOriginalPrice(country, 'yearly'),
           currency,
         ),
-      },
-      soulmate: {
-        monthly: soulmate.monthly,
-        quarterly: soulmate.quarterly,
-        yearly: soulmate.yearly,
-        quarterlyDiscountPct: Math.round(
-          (soulmate.quarterlyDiscount ?? 0) * 100,
-        ),
-        yearlyDiscountPct: Math.round((soulmate.yearlyDiscount ?? 0) * 100),
-        monthlyFmt: getDisplayPrice(soulmate.monthly, currency),
-        quarterlyFmt: getDisplayPrice(soulmate.quarterly, currency),
-        yearlyFmt: getDisplayPrice(soulmate.yearly, currency),
-        // soulmate's "original" is soulmate.monthly × 12 (it is its own
-        // tier, not derived from plus). getOriginalPrice() in pricing
-        // is plus-specific, so we compute soulmate's directly.
-        originalYearlyFmt: getDisplayPrice(soulmate.monthly * 12, currency),
       },
     }
 
@@ -273,7 +229,7 @@ export default async function PricingPage({
                 description: 'Monthly subscription',
               },
               {
-                price: '37.99',
+                price: '49.99',
                 priceCurrency: 'USD',
                 description: 'Annual subscription',
               },
