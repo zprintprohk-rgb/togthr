@@ -133,3 +133,6 @@ marketing/
 
 # Word/Office ��ʱ���ļ�
 ~$*
+
+# 视觉资产顶层孤儿文件 (legacy)
+public/visual-assets/pets/*.png

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Togthr 视觉资产总览 — v9.0 量产交付</title>
+<style>
+  :root { --bg:#F7F6F3; --card:#FFFFFF; --ink:#2A2A32; --muted:#8A8A96; --accent:#7C3AED; --line:#E6E4DE; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font-family:-apple-system,"Segoe UI",sans-serif; font-weight:300; line-height:1.7; padding:2rem 1rem; }
+  .wrap { max-width:1100px; margin:0 auto; }
+  h1 { font-size:1.7rem; font-weight:500; letter-spacing:-0.01em; }
+  .sub { color:var(--muted); font-size:.9rem; margin:.4rem 0 2rem; }
+  h2 { font-size:1.1rem; font-weight:500; margin:2.2rem 0 .8rem; color:var(--accent); }
+  .metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:.8rem; margin:1.2rem 0; }
+  .metric { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1rem; text-align:center; }
+  .metric .num { font-size:1.6rem; font-weight:500; color:var(--accent); }
+  .metric .lbl { font-size:.75rem; color:var(--muted); }
+  .theme-row { display:flex; gap:10px; margin:.8rem 0; flex-wrap:wrap; }
+  .pet-card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:.6rem; text-align:center; width:110px; }
+  .pet-card img { width:96px; height:96px; image-rendering:pixelated; }
+  .pet-card .nm { font-size:.68rem; color:var(--muted); margin-top:.3rem; }
+  .state-row { display:flex; gap:8px; flex-wrap:wrap; }
+  .state-cell { width:64px; text-align:center; }
+  .state-cell img { width:56px; height:56px; image-rendering:pixelated; border:1px solid var(--line); border-radius:10px; background:#fff; }
+  .state-cell .nm { font-size:.62rem; color:var(--muted); }
+  table { width:100%; border-collapse:collapse; font-size:.8rem; margin:.6rem 0; background:var(--card); }
+  th { text-align:left; color:var(--muted); font-weight:500; padding:.5rem; border-bottom:1px solid var(--line); }
+  td { padding:.5rem; border-bottom:1px solid rgba(230,228,222,.6); }
+  .ok { color:#059669; font-weight:500; }
+  .note { background:#F3F0FA; border-left:3px solid var(--accent); padding:.7rem 1rem; border-radius:0 10px 10px 0; margin:1rem 0; font-size:.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Togthr 视觉资产量产总览</h1>
+  <p class="sub">整合资产规范 v9.0 逐项执行 · 2026-08-11 · 553 项资产 · 合规校验 10/10</p>
+
+  <div class="metrics">
+    <div class="metric"><div class="num">468</div><div class="lbl">宠物帧（3物种×6主题×10状态）</div></div>
+    <div class="metric"><div class="num">56</div><div class="lbl">像素图标（8×6主题+黑白）</div></div>
+    <div class="metric"><div class="num">18</div><div class="lbl">128px 缩略图预览</div></div>
+    <div class="metric"><div class="num">5</div><div class="lbl">实体生产稿（300dpi CMYK）</div></div>
+    <div class="metric"><div class="num">13KB</div><div class="lbl">平均单帧大小（&lt;500KB 规范）</div></div>
+  </div>
+
+  <h2>六主题 × 三物种（idle 帧）</h2>
+  <div class="theme-row" id="themeGrid"></div>
+
+  <h2>状态帧序列（lavender/cat 示例）</h2>
+  <div class="state-row" id="stateRow"></div>
+
+  <h2>交付清单</h2>
+  <table>
+    <tr><th>产物</th><th>路径</th><th>状态</th></tr>
+    <tr><td>执行蓝图</td><td>docs/visual-assets/blueprint.md</td><td class="ok">✅</td></tr>
+    <tr><td>宠物帧资产 468 张</td><td>public/visual-assets/pets/{theme}/</td><td class="ok">✅</td></tr>
+    <tr><td>图标 + 预览 + 色板</td><td>public/visual-assets/</td><td class="ok">✅</td></tr>
+    <tr><td>实体生产稿 5 件</td><td>docs/visual-assets/physical/</td><td class="ok">✅</td></tr>
+    <tr><td>资产台账 553 条</td><td>docs/visual-assets/visual-assets-ledger.csv</td><td class="ok">✅</td></tr>
+    <tr><td>合规校验报告</td><td>docs/visual-assets/compliance-report.md</td><td class="ok">✅</td></tr>
+    <tr><td>交接指南</td><td>docs/visual-assets/handoff-guide.md</td><td class="ok">✅</td></tr>
+  </table>
+
+  <div class="note"><strong>冲突裁决</strong>：量产方案建议 3D 卡通渲染，v9.0 权威规范为像素风——按 Goal Brief 以 v9.0 为准，采用程序化硬边绘制；3D 卡通列为路线 B 备选（见 blueprint.md C1）。</div>
+</div>
+<script>
+  const THEMES = ['lavender','mint','sakura','moonlight','warmorange','charcoal'];
+  const SPECIES = ['cat','dog','fantasy'];
+  const grid = document.getElementById('themeGrid');
+  THEMES.forEach(t => {
+    SPECIES.forEach(s => {
+      const card = document.createElement('div');
+      card.className = 'pet-card';
+      card.innerHTML = `<img src="../../public/visual-assets/pets/${t}/pet-${s}-idle-1-1024.png" alt="${t} ${s}"><div class="nm">${t} · ${s}</div>`;
+      grid.appendChild(card);
+    });
+  });
+  const STATES = [['idle',1],['blink',2],['greet',1],['success',1],['miss',1],['sleep',1],['sign',1],['squeezed',1],['talking',1],['thinking',1]];
+  const row = document.getElementById('stateRow');
+  STATES.forEach(([st,fr]) => {
+    const cell = document.createElement('div');
+    cell.className = 'state-cell';
+    cell.innerHTML = `<img src="../../public/visual-assets/pets/lavender/pet-cat-${st}-${fr}-1024.png" alt="${st}"><div class="nm">${st}</div>`;
+    row.appendChild(cell);
+  });
+</script>
+</body>
+</html>

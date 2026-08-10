@@ -1,0 +1,66 @@
+{
+  "themes": {
+    "lavender": {
+      "body": {
+        "cat": "#C8B8D8",
+        "dog": "#B8A8D8",
+        "fantasy": "#E8C4D4"
+      },
+      "accent": "#FF8E72",
+      "highlight": "#E0D8F0",
+      "shadow": "#A098B8"
+    },
+    "mint": {
+      "body": {
+        "cat": "#6EE7B7",
+        "dog": "#5ED7A7",
+        "fantasy": "#8EF7C7"
+      },
+      "accent": "#4EC797",
+      "highlight": "#AAF5D2",
+      "shadow": "#46A07D"
+    },
+    "sakura": {
+      "body": {
+        "cat": "#F9A8D4",
+        "dog": "#E098C4",
+        "fantasy": "#FFB7C5"
+      },
+      "accent": "#D078B4",
+      "highlight": "#FFCDE6",
+      "shadow": "#C87DAA"
+    },
+    "moonlight": {
+      "body": {
+        "cat": "#93C5FD",
+        "dog": "#83B5ED",
+        "fantasy": "#A3D5FF"
+      },
+      "accent": "#6395CD",
+      "highlight": "#BEDCFF",
+      "shadow": "#6996CD"
+    },
+    "warmorange": {
+      "body": {
+        "cat": "#FDBA74",
+        "dog": "#EDAA64",
+        "fantasy": "#FFCA84"
+      },
+      "accent": "#DD8A44",
+      "highlight": "#FFD7A5",
+      "shadow": "#D29155"
+    },
+    "charcoal": {
+      "body": {
+        "cat": "#6B7280",
+        "dog": "#5B6270",
+        "fantasy": "#7B8290"
+      },
+      "accent": "#4B5250",
+      "highlight": "#8C94A2",
+      "shadow": "#4B5260"
+    }
+  },
+  "spec": "v9.0 §4.5",
+  "generated": "2026-08-11"
+}
