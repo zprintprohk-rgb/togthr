@@ -4414,6 +4414,107 @@ const loveStreakSciencePosts: BlogPost[] = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────
+// DAILY (2026-08-10): celebrating-small-wins-relationship
+// Buying Guide series — small wins + memory engine concept.
+// V4 compliance: quiet companion, no chat/AI conversation language.
+// ──────────────────────────────────────────────────────────────────────
+
+const CELEBRATING_SMALL_WINS_DATE = '2026-08-10';
+const CELEBRATING_SMALL_WINS_SLUG = 'celebrating-small-wins-relationship';
+const CELEBRATING_SMALL_WINS_TAGS = ['small-wins', 'relationship-rituals', 'memory', 'quiet-companion', 'togthr-tips'];
+
+const celebratingSmallWinsPosts: BlogPost[] = [
+  {
+    slug: CELEBRATING_SMALL_WINS_SLUG,
+    locale: 'en',
+    title: 'The Small Wins in Your Relationship Worth Celebrating (and Why Your Brain Forgets Them)',
+    description:
+      'Big moments get the photographs. Small wins get forgotten — and researchers say small wins are the ones that actually predict whether a relationship lasts. A guide to noticing the quiet victories, and how Togthr\'s memory engine remembers what your brain lets go.',
+    date: CELEBRATING_SMALL_WINS_DATE,
+    cover: `/blog-covers/${CELEBRATING_SMALL_WINS_SLUG}-en.png`,
+    tags: CELEBRATING_SMALL_WINS_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: CELEBRATING_SMALL_WINS_SLUG,
+    locale: 'zh-cn',
+    title: '关系里值得庆祝的小胜利（以及你的大脑为什么会忘记它们）',
+    description:
+      '大事有照片，小事被忘记 —— 而研究者说，正是这些小事才真正预测一段关系能否长久。一份关于如何注意到安静胜利的指南，以及 Togthr 的记忆引擎如何记住你大脑放手的东西。',
+    date: CELEBRATING_SMALL_WINS_DATE,
+    cover: `/blog-covers/${CELEBRATING_SMALL_WINS_SLUG}-zh-cn.png`,
+    tags: CELEBRATING_SMALL_WINS_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: CELEBRATING_SMALL_WINS_SLUG,
+    locale: 'zh-tw',
+    title: '關係裡值得慶祝的小勝利（以及你的大腦為什麼會忘記它們）',
+    description:
+      '大事有照片，小事被忘記 —— 而研究者說，正是這些小事才真正預測一段關係能否長久。一份關於如何注意到安靜勝利的指南，以及 Togthr 的記憶引擎如何記住你大腦放手的東西。',
+    date: CELEBRATING_SMALL_WINS_DATE,
+    cover: `/blog-covers/${CELEBRATING_SMALL_WINS_SLUG}-zh-tw.png`,
+    tags: CELEBRATING_SMALL_WINS_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: CELEBRATING_SMALL_WINS_SLUG,
+    locale: 'ja',
+    title: '関係の中で祝う価値のある小さな勝利（そして脳がそれを忘れる理由）',
+    description:
+      '大きな瞬間は写真に残る。小さな勝利は忘れられる —— そして研究者によれば、関係が続くかを実際に予測するのは小さな勝利の方だ。静かな勝利に気づくためのガイド、そして Togthr の記憶エンジンがあなたの脳が手放すものをどう覚えているか。',
+    date: CELEBRATING_SMALL_WINS_DATE,
+    cover: `/blog-covers/${CELEBRATING_SMALL_WINS_SLUG}-ja.png`,
+    tags: CELEBRATING_SMALL_WINS_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: CELEBRATING_SMALL_WINS_SLUG,
+    locale: 'ko',
+    title: '관계 속에서 축하할 가치가 있는 작은 승리 (그리고 뇌가 그것을 잊는 이유)',
+    description:
+      '큰 순간은 사진으로 남습니다. 작은 승리는 잊힙니다 — 그리고 연구자들에 따르면, 관계가 지속될지를 실제로 예측하는 것은 작은 승리입니다. 조용한 승리를 알아차리는 가이드, 그리고 Togthr의 기억 엔진이 뇌가 놓아주는 것을 어떻게 기억하는지.',
+    date: CELEBRATING_SMALL_WINS_DATE,
+    cover: `/blog-covers/${CELEBRATING_SMALL_WINS_SLUG}-ko.png`,
+    tags: CELEBRATING_SMALL_WINS_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: CELEBRATING_SMALL_WINS_SLUG,
+    locale: 'de',
+    title: 'Die kleinen Erfolge in deiner Beziehung, die es wert sind, gefeiert zu werden (und warum dein Gehirn sie vergisst)',
+    description:
+      'Große Momente bekommen die Fotos. Kleine Erfolge werden vergessen — und Forscher sagen, dass kleine Erfolge tatsächlich vorhersagen, ob eine Beziehung hält. Ein Leitfaden, um die leisen Siege zu bemerken, und wie Togthrs Erinnerungsmaschine behält, was dein Gehirn loslässt.',
+    date: CELEBRATING_SMALL_WINS_DATE,
+    cover: `/blog-covers/${CELEBRATING_SMALL_WINS_SLUG}-de.png`,
+    tags: CELEBRATING_SMALL_WINS_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: CELEBRATING_SMALL_WINS_SLUG,
+    locale: 'fr',
+    title: 'Les petites victoires qui méritent d\'être célébrées dans votre relation (et pourquoi votre cerveau les oublie)',
+    description:
+      'Les grands moments reçoivent les photos. Les petites victoires sont oubliées — et les chercheurs disent que ce sont les petites victoires qui prédisent si une relation dure. Un guide pour remarquer les victoires silencieuses, et comment le moteur de mémoire de Togthr garde ce que votre cerveau laisse filer.',
+    date: CELEBRATING_SMALL_WINS_DATE,
+    cover: `/blog-covers/${CELEBRATING_SMALL_WINS_SLUG}-fr.png`,
+    tags: CELEBRATING_SMALL_WINS_TAGS,
+    readingMinutes: 7,
+  },
+  {
+    slug: CELEBRATING_SMALL_WINS_SLUG,
+    locale: 'es',
+    title: 'Las pequeñas victorias en tu relación que merecen ser celebradas (y por qué tu cerebro las olvida)',
+    description:
+      'Los grandes momentos reciben las fotos. Las pequeñas victorias se olvidan — y los investigadores dicen que son las pequeñas victorias las que realmente predicen si una relación dura. Una guía para notar las victorias silenciosas, y cómo el motor de memoria de Togthr guarda lo que tu cerebro deja ir.',
+    date: CELEBRATING_SMALL_WINS_DATE,
+    cover: `/blog-covers/${CELEBRATING_SMALL_WINS_SLUG}-es.png`,
+    tags: CELEBRATING_SMALL_WINS_TAGS,
+    readingMinutes: 7,
+  },
+];
+
 // ───────────────────────────────────────────────────────────────────
 export const blogPosts: BlogPost[] = [
   ...launchPosts,
@@ -4461,6 +4562,7 @@ export const blogPosts: BlogPost[] = [
   ...lowPressureCompanionPosts,
   ...cuteDesktopBuddyPosts,
   ...loveStreakSciencePosts,
+  ...celebratingSmallWinsPosts,
 ];
 
 // ──────────────────────────────────────────────────────────────────────
